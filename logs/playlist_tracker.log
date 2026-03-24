@@ -1,0 +1,237 @@
+[2026-03-11 13:25:48] Scanning playlist: main (PLWHksn0KVTjLHcsf1aiYqL_VGis4Ycf4V)
+[2026-03-11 13:25:48] YouTube API error: Requests to this API youtube method youtube.api.v3.V3DataPlaylistItemService.List are blocked.
+[2026-03-11 13:25:48] API failed, trying Tavily fallback
+[2026-03-11 13:25:49] Tavily fallback: 1 results
+[2026-03-11 13:25:49] Tavily found 1 results (limited data)
+[2026-03-11 13:26:24] Scanning playlist: main (PLWHksn0KVTjLHcsf1aiYqL_VGis4Ycf4V)
+[2026-03-11 13:26:24] YouTube API error: Requests to this API youtube method youtube.api.v3.V3DataPlaylistItemService.List are blocked.
+[2026-03-11 13:26:24] API failed, trying Tavily fallback
+[2026-03-11 13:26:26] Tavily fallback: 0 videos extracted
+[2026-03-11 13:26:26] Both API and Tavily failed
+[2026-03-11 13:27:14] Scanning playlist: main (PLWHksn0KVTjLHcsf1aiYqL_VGis4Ycf4V)
+[2026-03-11 13:27:14] YouTube API error: Requests to this API youtube method youtube.api.v3.V3DataPlaylistItemService.List are blocked.
+[2026-03-11 13:27:14] API failed, trying yt-dlp fallback
+[2026-03-11 13:27:14] yt-dlp error: [Errno 2] No such file or directory: 'yt-dlp'
+[2026-03-11 13:27:14] Both API and yt-dlp failed
+[2026-03-11 13:27:53] Scanning playlist: main (PLWHksn0KVTjLHcsf1aiYqL_VGis4Ycf4V)
+[2026-03-11 13:27:53] YouTube API error: Requests to this API youtube method youtube.api.v3.V3DataPlaylistItemService.List are blocked.
+[2026-03-11 13:27:53] API failed, trying yt-dlp fallback
+[2026-03-11 13:27:54] yt-dlp: 42 videos extracted
+[2026-03-11 13:27:54] Fetched 42 videos from playlist
+[2026-03-11 13:27:55] Fetched stats for 0 videos
+[2026-03-11 13:27:55] Scan complete: 42 new
+[2026-03-11 13:27:55] Telegram alert sent
+[2026-03-11 14:44:03] Scanning playlist: main (PLWHksn0KVTjLHcsf1aiYqL_VGis4Ycf4V)
+[2026-03-11 14:44:04] YouTube API error: YouTube Data API v3 has not been used in project 65356642394 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/youtube.googleapis.com/overview?project=65356642394 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.
+[2026-03-11 14:44:04] API failed, trying yt-dlp fallback
+[2026-03-11 14:44:06] yt-dlp: 42 videos extracted
+[2026-03-11 14:44:06] Fetched 42 videos from playlist
+[2026-03-11 14:44:06] Fetched stats for 0 videos
+[2026-03-11 14:44:06] Scan complete: No changes
+[2026-03-11 14:52:07] Scanning playlist: main (PLWHksn0KVTjLHcsf1aiYqL_VGis4Ycf4V)
+[2026-03-11 14:52:07] No Google API key
+[2026-03-11 14:52:07] API failed, trying yt-dlp fallback
+[2026-03-11 14:52:08] yt-dlp: 42 videos extracted
+[2026-03-11 14:52:08] Fetched 42 videos from playlist
+[2026-03-11 14:52:08] Fetched stats for 0 videos
+[2026-03-11 14:52:08] Scan complete: No changes
+[2026-03-11 15:43:42] Scanning playlist: main (PLWHksn0KVTjLHcsf1aiYqL_VGis4Ycf4V)
+[2026-03-11 15:43:42] YouTube API error: YouTube Data API v3 has not been used in project 65356642394 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/youtube.googleapis.com/overview?project=65356642394 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.
+[2026-03-11 15:43:42] API failed, trying yt-dlp fallback
+[2026-03-11 15:43:44] yt-dlp: 42 videos extracted
+[2026-03-11 15:43:44] Fetched 42 videos from playlist
+[2026-03-11 15:43:44] Fetched stats for 0 videos
+[2026-03-11 15:43:44] Scan complete: No changes
+[2026-03-11 16:16:40] Scanning playlist: main (PLWHksn0KVTjLHcsf1aiYqL_VGis4Ycf4V)
+[2026-03-11 16:16:40] YouTube API error: YouTube Data API v3 has not been used in project 65356642394 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/youtube.googleapis.com/overview?project=65356642394 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.
+[2026-03-11 16:16:40] API failed, trying yt-dlp fallback
+[2026-03-11 16:16:42] yt-dlp: 42 videos extracted
+[2026-03-11 16:16:42] Fetched 42 videos from playlist
+[2026-03-11 16:16:42] Fetched stats for 0 videos
+[2026-03-11 16:16:42] Scan complete: No changes
+[2026-03-11 19:10:56] Scanning playlist: main (PLWHksn0KVTjLHcsf1aiYqL_VGis4Ycf4V)
+[2026-03-11 19:10:57] YouTube API error: YouTube Data API v3 has not been used in project 65356642394 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/youtube.googleapis.com/overview?project=65356642394 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.
+[2026-03-11 19:10:57] API failed, trying yt-dlp fallback
+[2026-03-11 19:10:59] yt-dlp: 42 videos extracted
+[2026-03-11 19:10:59] Fetched 42 videos from playlist
+[2026-03-11 19:10:59] Fetched stats for 0 videos
+[2026-03-11 19:10:59] Scan complete: No changes
+[2026-03-12 08:14:04] Scanning playlist: main (PLWHksn0KVTjLHcsf1aiYqL_VGis4Ycf4V)
+[2026-03-12 08:14:05] YouTube API error: YouTube Data API v3 has not been used in project 65356642394 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/youtube.googleapis.com/overview?project=65356642394 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.
+[2026-03-12 08:14:05] API failed, trying yt-dlp fallback
+[2026-03-12 08:14:07] yt-dlp: 42 videos extracted
+[2026-03-12 08:14:07] Fetched 42 videos from playlist
+[2026-03-12 08:14:07] Fetched stats for 0 videos
+[2026-03-12 08:14:07] Scan complete: No changes
+[2026-03-12 09:45:29] Scanning playlist: main (PLWHksn0KVTjLHcsf1aiYqL_VGis4Ycf4V)
+[2026-03-12 09:45:30] YouTube API error: YouTube Data API v3 has not been used in project 65356642394 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/youtube.googleapis.com/overview?project=65356642394 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.
+[2026-03-12 09:45:30] API failed, trying yt-dlp fallback
+[2026-03-12 09:45:32] yt-dlp: 42 videos extracted
+[2026-03-12 09:45:32] Fetched 42 videos from playlist
+[2026-03-12 09:45:32] Fetched stats for 0 videos
+[2026-03-12 09:45:32] Scan complete: No changes
+[2026-03-12 10:41:33] Scanning playlist: main (PLWHksn0KVTjLHcsf1aiYqL_VGis4Ycf4V)
+[2026-03-12 10:41:34] YouTube API error: YouTube Data API v3 has not been used in project 65356642394 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/youtube.googleapis.com/overview?project=65356642394 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.
+[2026-03-12 10:41:34] API failed, trying yt-dlp fallback
+[2026-03-12 10:41:36] yt-dlp: 42 videos extracted
+[2026-03-12 10:41:36] Fetched 42 videos from playlist
+[2026-03-12 10:41:36] Fetched stats for 0 videos
+[2026-03-12 10:41:36] Scan complete: No changes
+[2026-03-12 11:37:19] Scanning playlist: main (PLWHksn0KVTjLHcsf1aiYqL_VGis4Ycf4V)
+[2026-03-12 11:37:19] YouTube API error: Requests to this API youtube method youtube.api.v3.V3DataPlaylistItemService.List are blocked.
+[2026-03-12 11:37:19] API failed, trying yt-dlp fallback
+[2026-03-12 11:37:21] yt-dlp: 42 videos extracted
+[2026-03-12 11:37:21] Fetched 42 videos from playlist
+[2026-03-12 11:37:21] Fetched stats for 0 videos
+[2026-03-12 11:37:21] Scan complete: No changes
+[2026-03-12 12:39:24] Scanning playlist: main (PLWHksn0KVTjLHcsf1aiYqL_VGis4Ycf4V)
+[2026-03-12 12:39:24] YouTube API error: YouTube Data API v3 has not been used in project 65356642394 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/youtube.googleapis.com/overview?project=65356642394 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.
+[2026-03-12 12:39:24] API failed, trying yt-dlp fallback
+[2026-03-12 12:39:26] yt-dlp: 42 videos extracted
+[2026-03-12 12:39:26] Fetched 42 videos from playlist
+[2026-03-12 12:39:26] Fetched stats for 0 videos
+[2026-03-12 12:39:26] Scan complete: No changes
+[2026-03-12 13:37:49] Scanning playlist: main (PLWHksn0KVTjLHcsf1aiYqL_VGis4Ycf4V)
+[2026-03-12 13:37:49] YouTube API error: YouTube Data API v3 has not been used in project 65356642394 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/youtube.googleapis.com/overview?project=65356642394 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.
+[2026-03-12 13:37:49] API failed, trying yt-dlp fallback
+[2026-03-12 13:37:51] yt-dlp: 42 videos extracted
+[2026-03-12 13:37:51] Fetched 42 videos from playlist
+[2026-03-12 13:37:51] Fetched stats for 0 videos
+[2026-03-12 13:37:51] Scan complete: No changes
+[2026-03-12 14:38:16] Scanning playlist: main (PLWHksn0KVTjLHcsf1aiYqL_VGis4Ycf4V)
+[2026-03-12 14:38:17] YouTube API error: Requests to this API youtube method youtube.api.v3.V3DataPlaylistItemService.List are blocked.
+[2026-03-12 14:38:17] API failed, trying yt-dlp fallback
+[2026-03-12 14:38:19] yt-dlp: 42 videos extracted
+[2026-03-12 14:38:19] Fetched 42 videos from playlist
+[2026-03-12 14:38:19] Fetched stats for 0 videos
+[2026-03-12 14:38:19] Scan complete: No changes
+[2026-03-12 15:38:42] Scanning playlist: main (PLWHksn0KVTjLHcsf1aiYqL_VGis4Ycf4V)
+[2026-03-12 15:38:42] YouTube API error: Requests to this API youtube method youtube.api.v3.V3DataPlaylistItemService.List are blocked.
+[2026-03-12 15:38:42] API failed, trying yt-dlp fallback
+[2026-03-12 15:38:44] yt-dlp: 42 videos extracted
+[2026-03-12 15:38:44] Fetched 42 videos from playlist
+[2026-03-12 15:38:44] Fetched stats for 0 videos
+[2026-03-12 15:38:44] Scan complete: No changes
+[2026-03-12 16:12:48] Scanning playlist: main (PLWHksn0KVTjLHcsf1aiYqL_VGis4Ycf4V)
+[2026-03-12 16:12:49] YouTube API error: YouTube Data API v3 has not been used in project 65356642394 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/youtube.googleapis.com/overview?project=65356642394 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.
+[2026-03-12 16:12:49] API failed, trying yt-dlp fallback
+[2026-03-12 16:12:51] yt-dlp: 42 videos extracted
+[2026-03-12 16:12:51] Fetched 42 videos from playlist
+[2026-03-12 16:12:51] Fetched stats for 0 videos
+[2026-03-12 16:12:51] Scan complete: No changes
+[2026-03-12 19:06:54] Scanning playlist: main (PLWHksn0KVTjLHcsf1aiYqL_VGis4Ycf4V)
+[2026-03-12 19:06:55] YouTube API error: Requests to this API youtube method youtube.api.v3.V3DataPlaylistItemService.List are blocked.
+[2026-03-12 19:06:55] API failed, trying yt-dlp fallback
+[2026-03-12 19:06:56] yt-dlp: 42 videos extracted
+[2026-03-12 19:06:56] Fetched 42 videos from playlist
+[2026-03-12 19:06:57] Fetched stats for 0 videos
+[2026-03-12 19:06:57] Scan complete: No changes
+[2026-03-13 08:07:35] Scanning playlist: main (PLWHksn0KVTjLHcsf1aiYqL_VGis4Ycf4V)
+[2026-03-13 08:07:35] YouTube API error: Requests to this API youtube method youtube.api.v3.V3DataPlaylistItemService.List are blocked.
+[2026-03-13 08:07:35] API failed, trying yt-dlp fallback
+[2026-03-13 08:07:37] yt-dlp: 42 videos extracted
+[2026-03-13 08:07:37] Fetched 42 videos from playlist
+[2026-03-13 08:07:37] Fetched stats for 0 videos
+[2026-03-13 08:07:37] Scan complete: No changes
+[2026-03-13 09:42:20] Scanning playlist: main (PLWHksn0KVTjLHcsf1aiYqL_VGis4Ycf4V)
+[2026-03-13 09:42:20] YouTube API error: YouTube Data API v3 has not been used in project 65356642394 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/youtube.googleapis.com/overview?project=65356642394 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.
+[2026-03-13 09:42:20] API failed, trying yt-dlp fallback
+[2026-03-13 09:42:22] yt-dlp: 42 videos extracted
+[2026-03-13 09:42:22] Fetched 42 videos from playlist
+[2026-03-13 09:42:23] Fetched stats for 0 videos
+[2026-03-13 09:42:23] Scan complete: No changes
+[2026-03-13 10:54:18] Scanning playlist: main (PLWHksn0KVTjLHcsf1aiYqL_VGis4Ycf4V)
+[2026-03-13 10:54:18] YouTube API error: Requests to this API youtube method youtube.api.v3.V3DataPlaylistItemService.List are blocked.
+[2026-03-13 10:54:18] API failed, trying yt-dlp fallback
+[2026-03-13 10:54:20] yt-dlp: 42 videos extracted
+[2026-03-13 10:54:20] Fetched 42 videos from playlist
+[2026-03-13 10:54:20] Fetched stats for 0 videos
+[2026-03-13 10:54:20] Scan complete: No changes
+[2026-03-13 11:41:15] Scanning playlist: main (PLWHksn0KVTjLHcsf1aiYqL_VGis4Ycf4V)
+[2026-03-13 11:41:15] YouTube API error: Requests to this API youtube method youtube.api.v3.V3DataPlaylistItemService.List are blocked.
+[2026-03-13 11:41:15] API failed, trying yt-dlp fallback
+[2026-03-13 11:41:17] yt-dlp: 42 videos extracted
+[2026-03-13 11:41:17] Fetched 42 videos from playlist
+[2026-03-13 11:41:17] Fetched stats for 0 videos
+[2026-03-13 11:41:17] Scan complete: No changes
+[2026-03-13 12:39:35] Scanning playlist: main (PLWHksn0KVTjLHcsf1aiYqL_VGis4Ycf4V)
+[2026-03-13 12:39:36] YouTube API error: YouTube Data API v3 has not been used in project 65356642394 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/youtube.googleapis.com/overview?project=65356642394 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.
+[2026-03-13 12:39:36] API failed, trying yt-dlp fallback
+[2026-03-13 12:39:38] yt-dlp: 42 videos extracted
+[2026-03-13 12:39:38] Fetched 42 videos from playlist
+[2026-03-13 12:39:38] Fetched stats for 0 videos
+[2026-03-13 12:39:38] Scan complete: No changes
+[2026-03-13 13:40:28] Scanning playlist: main (PLWHksn0KVTjLHcsf1aiYqL_VGis4Ycf4V)
+[2026-03-13 13:40:28] YouTube API error: YouTube Data API v3 has not been used in project 65356642394 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/youtube.googleapis.com/overview?project=65356642394 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.
+[2026-03-13 13:40:28] API failed, trying yt-dlp fallback
+[2026-03-13 13:40:30] yt-dlp: 42 videos extracted
+[2026-03-13 13:40:30] Fetched 42 videos from playlist
+[2026-03-13 13:40:30] Fetched stats for 0 videos
+[2026-03-13 13:40:30] Scan complete: No changes
+[2026-03-13 14:40:29] Scanning playlist: main (PLWHksn0KVTjLHcsf1aiYqL_VGis4Ycf4V)
+[2026-03-13 14:40:29] YouTube API error: YouTube Data API v3 has not been used in project 65356642394 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/youtube.googleapis.com/overview?project=65356642394 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.
+[2026-03-13 14:40:29] API failed, trying yt-dlp fallback
+[2026-03-13 14:40:31] yt-dlp: 42 videos extracted
+[2026-03-13 14:40:31] Fetched 42 videos from playlist
+[2026-03-13 14:40:32] Fetched stats for 0 videos
+[2026-03-13 14:40:32] Scan complete: No changes
+[2026-03-13 15:38:27] Scanning playlist: main (PLWHksn0KVTjLHcsf1aiYqL_VGis4Ycf4V)
+[2026-03-13 15:38:27] YouTube API error: YouTube Data API v3 has not been used in project 65356642394 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/youtube.googleapis.com/overview?project=65356642394 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.
+[2026-03-13 15:38:27] API failed, trying yt-dlp fallback
+[2026-03-13 15:38:29] yt-dlp: 42 videos extracted
+[2026-03-13 15:38:29] Fetched 42 videos from playlist
+[2026-03-13 15:38:29] Fetched stats for 0 videos
+[2026-03-13 15:38:29] Scan complete: No changes
+[2026-03-13 16:11:19] Scanning playlist: main (PLWHksn0KVTjLHcsf1aiYqL_VGis4Ycf4V)
+[2026-03-13 16:11:19] YouTube API error: Requests to this API youtube method youtube.api.v3.V3DataPlaylistItemService.List are blocked.
+[2026-03-13 16:11:19] API failed, trying yt-dlp fallback
+[2026-03-13 16:11:21] yt-dlp: 42 videos extracted
+[2026-03-13 16:11:21] Fetched 42 videos from playlist
+[2026-03-13 16:11:22] Fetched stats for 0 videos
+[2026-03-13 16:11:22] Scan complete: No changes
+[2026-03-13 19:06:25] Scanning playlist: main (PLWHksn0KVTjLHcsf1aiYqL_VGis4Ycf4V)
+[2026-03-13 19:06:25] Fetched 42 videos from playlist
+[2026-03-13 19:06:25] Fetched stats for 42 videos
+[2026-03-13 19:06:25] Scan complete: No changes
+[2026-03-14 10:06:54] Scanning playlist: main (PLWHksn0KVTjLHcsf1aiYqL_VGis4Ycf4V)
+[2026-03-14 10:06:55] Fetched 42 videos from playlist
+[2026-03-14 10:06:55] Fetched stats for 42 videos
+[2026-03-14 10:06:55] Scan complete: 1 with view changes
+[2026-03-15 10:07:28] Scanning playlist: main (PLWHksn0KVTjLHcsf1aiYqL_VGis4Ycf4V)
+[2026-03-15 10:07:28] Fetched 42 videos from playlist
+[2026-03-15 10:07:28] Fetched stats for 42 videos
+[2026-03-15 10:07:28] Scan complete: 4 with view changes
+[2026-03-16 08:07:48] Scanning playlist: main (PLWHksn0KVTjLHcsf1aiYqL_VGis4Ycf4V)
+[2026-03-16 08:07:48] Fetched 42 videos from playlist
+[2026-03-16 08:07:49] Fetched stats for 42 videos
+[2026-03-16 08:07:49] Scan complete: 2 with view changes
+[2026-03-16 09:38:14] Scanning playlist: main (PLWHksn0KVTjLHcsf1aiYqL_VGis4Ycf4V)
+[2026-03-16 09:38:15] Fetched 42 videos from playlist
+[2026-03-16 09:38:15] Fetched stats for 42 videos
+[2026-03-16 09:38:15] Scan complete: No changes
+[2026-03-16 10:38:12] Scanning playlist: main (PLWHksn0KVTjLHcsf1aiYqL_VGis4Ycf4V)
+[2026-03-16 10:38:12] Fetched 42 videos from playlist
+[2026-03-16 10:38:12] Fetched stats for 42 videos
+[2026-03-16 10:38:12] Scan complete: No changes
+[2026-03-16 11:41:16] Scanning playlist: main (PLWHksn0KVTjLHcsf1aiYqL_VGis4Ycf4V)
+[2026-03-16 11:41:16] Fetched 42 videos from playlist
+[2026-03-16 11:41:17] Fetched stats for 42 videos
+[2026-03-16 11:41:17] Scan complete: No changes
+[2026-03-16 16:12:51] Scanning playlist: main (PLWHksn0KVTjLHcsf1aiYqL_VGis4Ycf4V)
+[2026-03-16 16:12:52] YouTube API error: The request cannot be completed because you have exceeded your <a href="/youtube/v3/getting-started#quota">quota</a>.
+[2026-03-16 16:12:52] API failed, trying yt-dlp fallback
+[2026-03-16 16:12:54] yt-dlp: 42 videos extracted
+[2026-03-16 16:12:54] Fetched 42 videos from playlist
+[2026-03-16 16:12:54] Fetched stats for 42 videos
+[2026-03-16 16:12:54] Scan complete: 1 with view changes
+[2026-03-16 19:07:45] Scanning playlist: main (PLWHksn0KVTjLHcsf1aiYqL_VGis4Ycf4V)
+[2026-03-16 19:07:45] YouTube API error: The request cannot be completed because you have exceeded your <a href="/youtube/v3/getting-started#quota">quota</a>.
+[2026-03-16 19:07:45] API failed, trying yt-dlp fallback
+[2026-03-16 19:07:47] yt-dlp: 42 videos extracted
+[2026-03-16 19:07:47] Fetched 42 videos from playlist
+[2026-03-16 19:07:48] Fetched stats for 42 videos
+[2026-03-16 19:07:48] Scan complete: No changes
+[2026-03-17 08:06:39] Scanning playlist: main (PLWHksn0KVTjLHcsf1aiYqL_VGis4Ycf4V)
+[2026-03-17 08:06:40] Fetched 42 videos from playlist
+[2026-03-17 08:06:40] Fetched stats for 42 videos
+[2026-03-17 08:06:40] Scan complete: 2 with view changes

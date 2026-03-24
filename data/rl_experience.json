@@ -1,0 +1,32 @@
+{
+  "experiences": [
+    {
+      "date": "2026-03-21",
+      "predicted_regime": "DISTRIBUTION",
+      "confidence": 0.8222,
+      "btc_price": 70280,
+      "all_probs": {
+        "ACCUMULATION": 0.0,
+        "MARKUP": 0.0,
+        "DISTRIBUTION": 0.8222,
+        "MARKDOWN": 0.1778
+      },
+      "outcome": null,
+      "outcome_date": null,
+      "reward": null,
+      "btc_price_outcome": null
+    }
+  ],
+  "confidence_adjustments": {
+    "ACCUMULATION": 1.0,
+    "MARKUP": 1.0,
+    "DISTRIBUTION": 1.0,
+    "MARKDOWN": 1.0
+  },
+  "rolling_accuracy": 1.0,
+  "total_predictions": 1,
+  "total_correct": 0,
+  "retrain_counter": 0,
+  "last_retrain": null,
+  "model_generation": 1
+}

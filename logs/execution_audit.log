@@ -1,0 +1,54 @@
+[2026-03-23 15:41:09] ============================================================
+[2026-03-23 15:41:09] EXECUTION PATH AUDIT — 2026-03-23 15:41
+[2026-03-23 15:41:09] ============================================================
+[2026-03-23 15:41:09] [1] Daemon: RUNNING (PID 71610)
+[2026-03-23 15:41:09] [2] Last eval: 2026-03-23 15:35 (0.1h ago)
+[2026-03-23 15:41:09] [3] Checking IBKR connection (clientId=91, readonly)...
+[2026-03-23 15:41:10]     IBKR: ✅ U15746102
+[2026-03-23 15:41:10] [4] Filters: Armed=False | BTC200W=None | StRSI=35.0 | Prem=0.0 | GreenWks=0/2 | Dipped=True
+[2026-03-23 15:41:10] [5] Capital: NLV=$0 | Deploy=$0 | ~0 shares @ $138.40 (source: state)
+[2026-03-23 15:41:10] [6] Circuit breaker: CLEAR
+[2026-03-23 15:41:10] [7] trader_v28_state.json: 6m ago
+[2026-03-23 15:41:10] [7] breaker_state.json: 13100m ago
+[2026-03-23 15:41:10] [7] regime_state.json: 3051m ago
+[2026-03-23 15:41:10] [7] btc_sentinel.json: 2m ago
+[2026-03-23 15:41:10] [8] LaunchAgent: ✅ registered
+[2026-03-23 15:41:10] Sending Telegram audit report (1 issues, 0 warnings)
+[2026-03-23 15:41:10] Telegram sent ✅
+[2026-03-23 15:41:10] ============================================================
+[2026-03-23 15:42:10] ============================================================
+[2026-03-23 15:42:10] EXECUTION PATH AUDIT — 2026-03-23 15:42
+[2026-03-23 15:42:10] ============================================================
+[2026-03-23 15:42:10] [1] Daemon: RUNNING (PID 71610)
+[2026-03-23 15:42:10] [2] Last eval: 2026-03-23 15:35 (0.1h ago)
+[2026-03-23 15:42:10] [3] Checking IBKR connection (clientId=91, readonly)...
+[2026-03-23 15:42:11]     IBKR: ✅ U15746102
+[2026-03-23 15:42:11] [4] Filters: Armed=False | BTC200W=True | StRSI=35.0 | Prem=0.7507677631485593 | GreenWks=0/2 | Dipped=True
+[2026-03-23 15:42:11] [5] Capital: NLV=$0 | Deploy=$0 | ~0 shares @ $138.40 (source: state)
+[2026-03-23 15:42:11] [6] Circuit breaker: CLEAR
+[2026-03-23 15:42:11] [7] trader_v28_state.json: 7m ago
+[2026-03-23 15:42:11] [7] breaker_state.json: 13101m ago
+[2026-03-23 15:42:11] [7] regime_state.json: 3052m ago
+[2026-03-23 15:42:11] [7] btc_sentinel.json: 3m ago
+[2026-03-23 15:42:11] [8] LaunchAgent: ✅ registered
+[2026-03-23 15:42:11] Sending Telegram audit report (1 issues, 0 warnings)
+[2026-03-23 15:42:11] Telegram sent ✅
+[2026-03-23 15:42:11] ============================================================
+[2026-03-23 15:43:13] ============================================================
+[2026-03-23 15:43:13] EXECUTION PATH AUDIT — 2026-03-23 15:43
+[2026-03-23 15:43:13] ============================================================
+[2026-03-23 15:43:13] [1] Daemon: RUNNING (PID 71610)
+[2026-03-23 15:43:13] [2] Last eval: 2026-03-23 15:35 (0.1h ago)
+[2026-03-23 15:43:13] [3] Checking IBKR connection (clientId=91, readonly)...
+[2026-03-23 15:43:13]     IBKR: ✅ U15746102
+[2026-03-23 15:43:13] [4] Filters: Armed=False | BTC200W=True | StRSI=35.0 | Prem=0.7507677631485593 | GreenWks=0/2 | Dipped=True
+[2026-03-23 15:43:13] [5] Capital: NLV=$7,826 | Deploy=$978 | ~7 shares @ $138.40 (source: dashboard-api)
+[2026-03-23 15:43:13] [6] Circuit breaker: CLEAR
+[2026-03-23 15:43:13] [7] trader_v28_state.json: 8m ago
+[2026-03-23 15:43:13] [7] breaker_state.json: 13102m ago
+[2026-03-23 15:43:13] [7] regime_state.json: 3053m ago
+[2026-03-23 15:43:13] [7] btc_sentinel.json: 4m ago
+[2026-03-23 15:43:13] [8] LaunchAgent: ✅ registered
+[2026-03-23 15:43:13] Sending Telegram audit report (0 issues, 0 warnings)
+[2026-03-23 15:43:14] Telegram sent ✅
+[2026-03-23 15:43:14] ============================================================

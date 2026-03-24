@@ -1,0 +1,62 @@
+[
+  {
+    "name": "heroku-session-affinity",
+    "value": "Q38DAQERU3RpY2t5U2Vzc2lvbkRhdGEB/4AAAQMBBUFwcElEAQwAAQhEeW5vTmFtZQEMAAEJRHlub0NvdW50AQQAAAAM/4ACBXdlYi4yAQgA1AXrSAf6xm02oplL1RXo1JmFaSyyIjyVAzfXWxKxQ6I=",
+    "domain": "cetient.com",
+    "path": "/",
+    "expires": -1,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "session",
+    "value": "Fe26.2*1*e2424ea93b5c648f341c4a1721638f088b71bb7bb47c0a6a94f82ac3914e24cb*1pKxgxgZPz_u5tBnSNqg0A*8dhxf4XsnTc52R7NiqQIERPEjFAbRNKPt1789_3ywXEMSUgxd8OHp_OJyvO6jhw8-5n7C7NmKIO6gqPXS3iouQ*1778275644709*3c6f9b8916df1ee8ca60f382191b633f14fffa61a808156a2c67cb559886d4c6*DKs4_uTIIZr18Sfcvc-VosWXAuOhaAW9HotBdlRUrGg~2",
+    "domain": "www.cetient.com",
+    "path": "/",
+    "expires": 1778275584.799059,
+    "httpOnly": true,
+    "secure": true,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "heroku-session-affinity",
+    "value": "Q38DAQERU3RpY2t5U2Vzc2lvbkRhdGEB/4AAAQMBBUFwcElEAQwAAQhEeW5vTmFtZQEMAAEJRHlub0NvdW50AQQAAAAM/4ACBXdlYi40AQgAUQzJyxjHn0ZvQQ4juNQS6p5tj5u9RraFsGFlaljJs+k=",
+    "domain": "www.cetient.com",
+    "path": "/",
+    "expires": -1,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "__Host-next-auth.csrf-token",
+    "value": "3e4a1d8a1362799881e2e4f7b9d3b12cb851b2b2f82b49d7a10bdaea9f6124e4%7Cea325c87e714d7dd1d43625e8cc08492be7698ef88fecb60661eb777b1ce0ed7",
+    "domain": "www.cetient.com",
+    "path": "/",
+    "expires": -1,
+    "httpOnly": true,
+    "secure": true,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "__Secure-next-auth.callback-url",
+    "value": "https%3A%2F%2Fwww.cetient.com%2F",
+    "domain": "www.cetient.com",
+    "path": "/",
+    "expires": -1,
+    "httpOnly": true,
+    "secure": true,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "__Secure-next-auth.session-token",
+    "value": "19623736-3244-48b0-aef5-c2e48f06043b",
+    "domain": "www.cetient.com",
+    "path": "/",
+    "expires": 1778275693.872511,
+    "httpOnly": true,
+    "secure": true,
+    "sameSite": "Lax"
+  }
+]

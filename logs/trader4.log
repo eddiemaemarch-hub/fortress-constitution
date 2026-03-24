@@ -1,0 +1,186 @@
+[2026-03-10 13:51:01] Trader4 — Short Squeeze OPTIONS Engine
+[2026-03-10 13:51:01] Universe: GME, AMC, SOFI, RIVN, LCID, COIN, MARA, RIOT, PLTR
+[2026-03-10 13:51:01] Capital: $10,000 | Max positions: 4 | ~$500/position
+[2026-03-10 13:51:01] Scanning...
+[2026-03-10 13:51:01]   SIGNAL: GME — Squeeze signal, score 4, vol 0.6x, gap -0.6%, momentum +3.2%
+[2026-03-10 13:51:01]   No signal: AMC — Below EMA21 $1.22
+[2026-03-10 13:51:02]   No signal: SOFI — Below EMA21 $19.61
+[2026-03-10 13:51:02]   SIGNAL: RIVN — Squeeze signal, score 4, vol 1.1x, gap +6.3%, momentum +13.1%
+[2026-03-10 13:51:02]   No signal: LCID — Score 1 < 3.0
+[2026-03-10 13:51:02]   No signal: COIN — Score 1 < 3.0
+[2026-03-10 13:51:02]   No signal: MARA — Score 1 < 3.0
+[2026-03-10 13:51:03]   No signal: RIOT — Below EMA21 $15.54
+[2026-03-10 13:51:03]   No signal: PLTR — Score 1 < 3.0
+[2026-03-10 13:51:03] Connected (client 40)
+[2026-03-10 13:51:04]   Found option: RIVN 20260320 $17.5C (10 DTE)
+[2026-03-10 13:51:07] ENTERING RIVN: 9 contracts 20260320 $17.5C @ $0.54 ($486)
+[2026-03-10 13:51:19]   FILLED: 9x RIVN 20260320 $17.5C @ $0.56
+[2026-03-10 13:51:19] Connected (client 40)
+[2026-03-10 13:51:20]   Found option: GME 20260320 $26.0C (10 DTE)
+[2026-03-10 13:51:23] ENTERING GME: 13 contracts 20260320 $26.0C @ $0.37 ($481)
+[2026-03-10 13:51:25]   FILLED: 13x GME 20260320 $26.0C @ $0.39
+[2026-03-10 14:30:14] Connected (client 41)
+[2026-03-10 14:30:21]   No signal: AMC — Below EMA21 $1.22
+[2026-03-10 14:30:21]   No signal: SOFI — Below EMA21 $19.60
+[2026-03-10 14:30:21]   No signal: LCID — Score 1 < 3.0
+[2026-03-10 14:30:21]   No signal: COIN — Score 1 < 3.0
+[2026-03-10 14:30:21]   No signal: MARA — Below EMA21 $8.59
+[2026-03-10 14:30:21]   No signal: RIOT — Below EMA21 $15.53
+[2026-03-10 14:30:21]   No signal: PLTR — Score 1 < 3.0
+[2026-03-10 15:30:14] Connected (client 41)
+[2026-03-10 15:30:21]   No signal: AMC — Below EMA21 $1.22
+[2026-03-10 15:30:21]   No signal: SOFI — Below EMA21 $19.60
+[2026-03-10 15:30:21]   No signal: LCID — Score 1 < 3.0
+[2026-03-10 15:30:21]   No signal: COIN — Score 1 < 3.0
+[2026-03-10 15:30:21]   No signal: MARA — Below EMA21 $8.59
+[2026-03-10 15:30:21]   No signal: RIOT — Below EMA21 $15.53
+[2026-03-10 15:30:21]   No signal: PLTR — Score 1 < 3.0
+[2026-03-10 20:47:26] Connected (client 41)
+[2026-03-10 20:47:33]   No signal: AMC — Below EMA21 $1.22
+[2026-03-10 20:47:33]   No signal: SOFI — Below EMA21 $19.58
+[2026-03-10 20:47:33]   No signal: LCID — Score 1 < 3.0
+[2026-03-10 20:47:33]   No signal: COIN — Score 1 < 3.0
+[2026-03-10 20:47:33]   No signal: MARA — Below EMA21 $8.59
+[2026-03-10 20:47:33]   No signal: RIOT — Below EMA21 $15.52
+[2026-03-10 20:47:33]   No signal: PLTR — Score 1 < 3.0
+[2026-03-11 12:30:25] Connected (client 41)
+[2026-03-11 12:30:31]   No signal: AMC — Below EMA21 $1.21
+[2026-03-11 12:30:31]   No signal: SOFI — Below EMA21 $19.46
+[2026-03-11 12:30:31]   SIGNAL: LCID — Squeeze signal, score 3, vol 0.3x, gap +1.5%, momentum +5.6%
+[2026-03-11 12:30:32]   No signal: COIN — Score 1 < 3.0
+[2026-03-11 12:30:32]   No signal: MARA — Below EMA21 $8.57
+[2026-03-11 12:30:32]   No signal: RIOT — Below EMA21 $15.43
+[2026-03-11 12:30:32]   No signal: PLTR — Score 1 < 3.0
+[2026-03-11 12:30:32] Connected (client 40)
+[2026-03-11 12:30:33]   Found option: LCID 20260327 $11.0C (16 DTE)
+[2026-03-11 12:30:36] ENTERING LCID: 9 contracts 20260327 $11.0C @ $0.53 ($477)
+[2026-03-11 12:30:40]   FILLED: 9x LCID 20260327 $11.0C @ $0.53
+[2026-03-11 13:30:16] Connected (client 41)
+[2026-03-11 13:30:26]   No signal: AMC — Below EMA21 $1.21
+[2026-03-11 13:30:26]   No signal: SOFI — Below EMA21 $19.47
+[2026-03-11 13:30:26]   No signal: COIN — Score 2 < 3.0
+[2026-03-11 13:30:26]   No signal: MARA — Below EMA21 $8.58
+[2026-03-11 13:30:26]   No signal: RIOT — Below EMA21 $15.45
+[2026-03-11 13:30:26]   No signal: PLTR — Score 1 < 3.0
+[2026-03-11 14:30:17] Connected (client 41)
+[2026-03-11 14:30:26]   No signal: AMC — Below EMA21 $1.21
+[2026-03-11 14:30:26]   No signal: SOFI — Below EMA21 $19.47
+[2026-03-11 14:30:26]   No signal: COIN — Score 1 < 3.0
+[2026-03-11 14:30:26]   No signal: MARA — Below EMA21 $8.58
+[2026-03-11 14:30:27]   No signal: RIOT — Below EMA21 $15.43
+[2026-03-11 14:30:27]   No signal: PLTR — Score 1 < 3.0
+[2026-03-11 15:30:17] Connected (client 41)
+[2026-03-11 15:30:26]   No signal: AMC — Below EMA21 $1.21
+[2026-03-11 15:30:26]   No signal: SOFI — Below EMA21 $19.47
+[2026-03-11 15:30:27]   No signal: COIN — Score 1 < 3.0
+[2026-03-11 15:30:27]   No signal: MARA — Below EMA21 $8.58
+[2026-03-11 15:30:27]   No signal: RIOT — Below EMA21 $15.43
+[2026-03-11 15:30:27]   No signal: PLTR — Score 1 < 3.0
+[2026-03-12 09:30:20] Connected (client 41)
+[2026-03-12 09:30:30]   No signal: AMC — Below EMA21 $1.20
+[2026-03-12 09:30:30]   No signal: SOFI — Below EMA21 $19.37
+[2026-03-12 09:30:30]   No signal: COIN — Score 1 < 3.0
+[2026-03-12 09:30:30]   No signal: MARA — Below EMA21 $8.57
+[2026-03-12 09:30:30]   No signal: RIOT — Below EMA21 $15.37
+[2026-03-12 09:30:31]   No signal: PLTR — Score 2 < 3.0
+[2026-03-12 10:30:18] Connected (client 41)
+[2026-03-12 10:30:27]   No signal: AMC — Below EMA21 $1.20
+[2026-03-12 10:30:28]   No signal: SOFI — Below EMA21 $19.35
+[2026-03-12 10:30:28]   No signal: COIN — Score 1 < 3.0
+[2026-03-12 10:30:28]   No signal: MARA — Below EMA21 $8.58
+[2026-03-12 10:30:28]   No signal: RIOT — Below EMA21 $15.32
+[2026-03-12 10:30:28]   No signal: PLTR — Score 2 < 3.0
+[2026-03-12 12:30:58] Connected (client 41)
+[2026-03-12 12:31:02] EXIT: RIVN 20260320 $17.5C — Stop loss hit (-66%)
+[2026-03-12 12:31:24]   No signal: AMC — Below EMA21 $1.20
+[2026-03-12 12:31:24]   No signal: SOFI — Below EMA21 $19.34
+[2026-03-12 12:31:24]   No signal: RIVN — Score 2 < 3.0
+[2026-03-12 12:31:24]   No signal: COIN — Score 1 < 3.0
+[2026-03-12 12:31:24]   No signal: MARA — Below EMA21 $8.58
+[2026-03-12 12:31:24]   No signal: RIOT — Below EMA21 $15.34
+[2026-03-12 12:31:24]   No signal: PLTR — Score 2 < 3.0
+[2026-03-12 13:30:15] Connected (client 41)
+[2026-03-12 13:30:22]   No signal: AMC — Below EMA21 $1.20
+[2026-03-12 13:30:22]   No signal: SOFI — Below EMA21 $19.33
+[2026-03-12 13:30:22]   No signal: RIVN — Score 2 < 3.0
+[2026-03-12 13:30:22]   No signal: COIN — Score 1 < 3.0
+[2026-03-12 13:30:22]   No signal: MARA — Below EMA21 $8.59
+[2026-03-12 13:30:22]   No signal: RIOT — Below EMA21 $15.36
+[2026-03-12 13:30:23]   No signal: PLTR — Score 2 < 3.0
+[2026-03-12 14:30:16] Connected (client 41)
+[2026-03-12 14:30:23]   No signal: AMC — Below EMA21 $1.20
+[2026-03-12 14:30:23]   No signal: SOFI — Below EMA21 $19.33
+[2026-03-12 14:30:23]   No signal: RIVN — Below EMA21 $15.63
+[2026-03-12 14:30:23]   No signal: COIN — Score 1 < 3.0
+[2026-03-12 14:30:23]   No signal: MARA — Below EMA21 $8.58
+[2026-03-12 14:30:23]   No signal: RIOT — Below EMA21 $15.38
+[2026-03-12 14:30:23]   No signal: PLTR — Score 2 < 3.0
+[2026-03-12 15:30:15] Connected (client 41)
+[2026-03-12 15:30:22]   No signal: AMC — Below EMA21 $1.20
+[2026-03-12 15:30:22]   No signal: SOFI — Below EMA21 $19.33
+[2026-03-12 15:30:22]   No signal: RIVN — Below EMA21 $15.62
+[2026-03-12 15:30:22]   No signal: COIN — Score 1 < 3.0
+[2026-03-12 15:30:22]   SIGNAL: MARA — Squeeze signal, score 3, vol 0.6x, gap +1.8%, momentum +8.6%
+[2026-03-12 15:30:22]   No signal: RIOT — Below EMA21 $15.38
+[2026-03-12 15:30:22]   No signal: PLTR — Score 2 < 3.0
+[2026-03-12 15:30:23] Connected (client 40)
+[2026-03-12 15:30:23]   Found option: MARA 20260327 $9.0C (15 DTE)
+[2026-03-13 09:30:27] Connected (client 41)
+[2026-03-13 09:30:30] EXIT: GME 20260320 $26.0C — Time exit (7 DTE remaining)
+[2026-03-13 09:30:49]   SIGNAL: GME — Squeeze signal, score 3, vol 0.0x, gap +0.3%, momentum -1.2%
+[2026-03-13 09:30:49]   No signal: AMC — Below EMA21 $1.19
+[2026-03-13 09:30:49]   No signal: SOFI — Below EMA21 $19.20
+[2026-03-13 09:30:50]   No signal: RIVN — Below EMA21 $15.59
+[2026-03-13 09:30:50]   SIGNAL: COIN — Squeeze signal, score 4, vol 0.1x, gap +6.4%, momentum +2.9%
+[2026-03-13 09:30:50]   SIGNAL: MARA — Squeeze signal, score 4, vol 0.0x, gap +6.1%, momentum +7.3%
+[2026-03-13 09:30:50]   No signal: RIOT — Below EMA21 $15.36
+[2026-03-13 09:30:50]   No signal: PLTR — Score 1 < 3.0
+[2026-03-13 09:30:50] Connected (client 40)
+[2026-03-13 09:30:51]   Found option: MARA 20260327 $10.0C (14 DTE)
+[2026-03-13 10:45:56] Connected (client 41)
+[2026-03-13 10:45:59]   SIGNAL: GME — Squeeze signal, score 3, vol 0.2x, gap -0.6%, momentum -2.1%
+[2026-03-13 10:45:59]   No signal: AMC — Below EMA21 $1.19
+[2026-03-13 10:46:00]   No signal: SOFI — Below EMA21 $19.20
+[2026-03-13 10:46:00]   No signal: RIVN — Below EMA21 $15.58
+[2026-03-13 10:46:00]   No signal: COIN — Score 2 < 3.0
+[2026-03-13 10:46:00]   SIGNAL: MARA — Squeeze signal, score 4, vol 0.5x, gap +12.1%, momentum +13.4%
+[2026-03-13 10:46:00]   No signal: RIOT — Below EMA21 $15.34
+[2026-03-13 10:46:00]   No signal: PLTR — Score 1 < 3.0
+[2026-03-13 10:46:00] Connected (client 40)
+[2026-03-13 10:46:01]   Found option: MARA 20260327 $10.5C (14 DTE)
+[2026-03-13 11:30:28] Connected (client 41)
+[2026-03-13 11:30:32]   SIGNAL: GME — Squeeze signal, score 3, vol 0.4x, gap -1.4%, momentum -2.8%
+[2026-03-13 11:30:32]   No signal: AMC — Below EMA21 $1.19
+[2026-03-13 11:30:32]   No signal: SOFI — Below EMA21 $19.19
+[2026-03-13 11:30:32]   No signal: RIVN — Below EMA21 $15.57
+[2026-03-13 11:30:32]   SIGNAL: COIN — Squeeze signal, score 3, vol 0.5x, gap +3.4%, momentum -0.0%
+[2026-03-13 11:30:33]   SIGNAL: MARA — Squeeze signal, score 4, vol 0.7x, gap +11.9%, momentum +13.2%
+[2026-03-13 11:30:33]   No signal: RIOT — Below EMA21 $15.34
+[2026-03-13 11:30:33]   No signal: PLTR — Score 1 < 3.0
+[2026-03-13 11:30:33] Connected (client 40)
+[2026-03-13 11:30:33]   Found option: MARA 20260327 $10.5C (14 DTE)
+[2026-03-13 11:30:36] ENTERING MARA: 9 contracts 20260327 $10.5C @ $0.55 ($495)
+[2026-03-13 11:30:51]   FILLED: 9x MARA 20260327 $10.5C @ $0.50
+[2026-03-13 11:30:53] TRAILING STOP: MARA $10.5C x9 | Trail $0.15 (30% of $0.50) | Status: PreSubmitted
+[2026-03-13 11:30:55] Connected (client 40)
+[2026-03-13 11:30:56]   Found option: COIN 20260327 $210.0C (14 DTE)
+[2026-03-13 11:30:59] ENTERING COIN: 1 contracts 20260327 $210.0C @ $7.30 ($730)
+[2026-03-13 11:31:25]   FILLED: 1x COIN 20260327 $210.0C @ $7.90
+[2026-03-13 11:31:27] TRAILING STOP: COIN $210.0C x1 | Trail $2.37 (30% of $7.90) | Status: PreSubmitted
+[2026-03-13 11:31:28] Connected (client 40)
+[2026-03-13 11:31:28]   Found option: GME 20260327 $25.5C (14 DTE)
+[2026-03-13 11:31:31] ENTERING GME: 8 contracts 20260327 $25.5C @ $0.56 ($448)
+[2026-03-13 11:31:38]   FILLED: 8x GME 20260327 $25.5C @ $0.58
+[2026-03-13 11:31:40] TRAILING STOP: GME $25.5C x8 | Trail $0.17 (30% of $0.58) | Status: PreSubmitted
+[2026-03-13 13:30:35] Connected (client 41)
+[2026-03-13 13:30:49] At max positions (4/4)
+[2026-03-13 14:30:21] Connected (client 41)
+[2026-03-13 14:30:34] At max positions (4/4)
+[2026-03-16 11:30:19] Connected (client 41)
+[2026-03-16 11:30:23] EXIT: LCID 20260327 $11.0C — Stop loss hit (-68%)
+[2026-03-16 11:30:35]   No signal: AMC — Below EMA21 $1.18
+[2026-03-16 11:30:35]   No signal: SOFI — Below EMA21 $19.07
+[2026-03-16 11:30:36]   No signal: RIVN — Below EMA21 $15.52
+[2026-03-16 11:30:36]   No signal: LCID — Below EMA21 $10.14
+[2026-03-16 11:30:36]   No signal: RIOT — Below EMA21 $15.17
+[2026-03-16 11:30:36]   No signal: PLTR — Score 1 < 3.0

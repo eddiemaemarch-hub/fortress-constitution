@@ -1,0 +1,68 @@
+[
+  {
+    "timestamp": "2026-03-23 15:49:27",
+    "type": "daily_audit",
+    "approved": true,
+    "violations": [],
+    "warnings": [],
+    "status": "CLEAN",
+    "trader1": {
+      "daemon": true,
+      "pid": "71610",
+      "launchctl": true,
+      "last_eval_hours": 0.1,
+      "armed": false,
+      "dipped": true,
+      "green_weeks": 0,
+      "in_position": false,
+      "position_qty": 0
+    },
+    "trader2": {
+      "daemon": true,
+      "pid": "78755",
+      "launchctl": true,
+      "position_active": false,
+      "expiry": ""
+    },
+    "trader3": {
+      "daemon": true,
+      "pid": "78766",
+      "launchctl": true,
+      "position_active": false,
+      "expiry": ""
+    }
+  },
+  {
+    "timestamp": "2026-03-23 16:00:01",
+    "type": "daily_audit",
+    "approved": true,
+    "violations": [],
+    "warnings": [],
+    "status": "CLEAN",
+    "trader1": {
+      "daemon": true,
+      "pid": "71610",
+      "launchctl": true,
+      "last_eval_hours": 0.2,
+      "armed": false,
+      "dipped": true,
+      "green_weeks": 0,
+      "in_position": false,
+      "position_qty": 0
+    },
+    "trader2": {
+      "daemon": true,
+      "pid": "78755",
+      "launchctl": true,
+      "position_active": false,
+      "expiry": ""
+    },
+    "trader3": {
+      "daemon": true,
+      "pid": "78766",
+      "launchctl": true,
+      "position_active": false,
+      "expiry": ""
+    }
+  }
+]

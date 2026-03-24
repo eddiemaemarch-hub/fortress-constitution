@@ -1,0 +1,50 @@
+{
+  "test_name": "Monte Carlo Path Dependency (Bootstrap Shuffle)",
+  "timestamp": "2026-03-20T12:51:57.511313",
+  "parameters": {
+    "n_simulations": 5000,
+    "n_weeks": 260,
+    "annual_vol": 0.8,
+    "annual_return": 0.5,
+    "weekly_vol": 0.1109,
+    "weekly_mu": 0.0078,
+    "fat_tail_df": 5
+  },
+  "max_drawdown_percentiles": {
+    "p5": 56.31,
+    "p25": 69.55,
+    "p50": 79.36,
+    "p75": 88.09,
+    "p95": 96.17,
+    "p99": 98.61
+  },
+  "final_return_percentiles": {
+    "p5": -86.84,
+    "p25": -22.77,
+    "p50": 152.08,
+    "p75": 790.32,
+    "p95": 5847.12
+  },
+  "drawdown_exceedance": {
+    "exceed_40pct": 99.92,
+    "exceed_50pct": 98.9,
+    "exceed_60pct": 91.78
+  },
+  "risk_limit_triggers": {
+    "daily_2pct_loss_trigger_pct": 100.0,
+    "consecutive_5_loss_trigger_pct": 91.98
+  },
+  "dip_reclaim_stats": {
+    "mean_fires_per_path": 0.7,
+    "median_fires": 0.0,
+    "paths_with_zero_fires_pct": 57.62
+  },
+  "barbell_analysis": {
+    "survives_95th_percentile": false,
+    "survives_99th_percentile": false,
+    "p95_max_dd": 96.17,
+    "p99_max_dd": 98.61,
+    "positive_return_pct": 69.64
+  },
+  "overall_verdict": "FAIL"
+}

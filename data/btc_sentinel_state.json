@@ -1,0 +1,16 @@
+{
+  "friday_close_btc": 70036,
+  "friday_close_time": "2026-03-20T16:52:14.222355-04:00",
+  "alerts_sent": [
+    "mnav_kill_risk"
+  ],
+  "btc_was_above_200w": true,
+  "last_check": "2026-03-23T22:24:43.252309",
+  "last_monday_summary": null,
+  "premium_at_close": 0.0,
+  "anchor_price": 70610,
+  "anchor_time": "2026-03-23T16:09:25.553143-04:00",
+  "premium_at_anchor": 0.7519260895643505,
+  "below_200w_alerted": false,
+  "last_price": 70570
+}

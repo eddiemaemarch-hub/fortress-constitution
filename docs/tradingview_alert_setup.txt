@@ -1,0 +1,118 @@
+═══════════════════════════════════════════════════════════════
+TRADINGVIEW ALERT SETUP — Rudy v2.2 Production
+═══════════════════════════════════════════════════════════════
+
+STEP 1: Load the Pine Script
+─────────────────────────────
+1. Open TradingView → MSTR chart → Daily timeframe
+2. Pine Editor (bottom panel) → Open → paste from:
+   ~/rudy/strategies/pinescript_mstr_cycle_low_entry.pine
+3. Click "Add to Chart"
+4. Verify dashboard shows "v2.2 Production" in row 35
+
+STEP 2: Set Input Parameters
+─────────────────────────────
+Right-click strategy on chart → Settings → Inputs:
+  • MSTR 200-Week SMA Length: 200
+  • Green Candles Above 200W to ARM: 2
+  • Dynamic LEAP Multiplier: 10.0
+  • Risk Capital (% of account): 25
+  • Panic Floor: 25 (enabled)
+  • Initial Floor: 30 (enabled)
+  • Stoch RSI Entry Threshold: 70
+  • Max Premium to Enter: 1.5
+  • Total LEAP Capital: 130000
+
+STEP 3: Create Alerts (Priority Order)
+───────────────────────────────────────
+Go to: Alert icon (bell) → Create Alert → Condition = strategy name
+
+CRITICAL ENTRY ALERTS (set these first):
+────────────────────────────────────────
+1. "MOONSHOT BUY" — All conditions met, FIRE entry
+   → Webhook: Telegram + Email
+   → Expiration: Open-ended
+
+2. "CONFLUENCE CONFIRMED" — 200W reclaim + SAR + RSI
+   → Webhook: Telegram + Email
+   → Expiration: Open-ended
+
+3. "MSTR 200W DIP" — Price dropped below 200W SMA
+   → Webhook: Telegram
+   → This is Phase 1 — dip flag set, watch for reclaim
+
+4. "MSTR 200W RECLAIM" — Price reclaiming after dip
+   → Webhook: Telegram
+   → Phase 2 — counting green candles
+
+5. "MSTR 200W ARMED" — 2+ green candles above 200W
+   → Webhook: Telegram + Email
+   → Entry gate OPEN — prepare LEAP orders
+
+CRITICAL EXIT ALERTS:
+─────────────────────
+6. "BTC DEATH CROSS EXIT" — BTC 50 SMA < 200 SMA
+   → Webhook: Telegram + Email + SMS
+   → EXIT ALL immediately
+
+7. "PANIC FLOOR HIT" — LEAP P&L < -25%
+   → Webhook: Telegram + Email + SMS
+   → Emergency exit
+
+8. "INITIAL FLOOR HIT" — Stock below entry - 30%
+   → Webhook: Telegram + Email
+   → Full exit before ladders activate
+
+9. "LADDER TRAIL STOP" — Trailing stop triggered
+   → Webhook: Telegram + Email
+   → Exit position
+
+PROFIT-TAKING ALERTS:
+─────────────────────
+10. "PT1 5x Hit" — Sell 25% at +500% LEAP
+11. "PT2 10x Hit" — Sell 25% at +1000% LEAP
+12. "PT3 20x Hit" — Sell 25% at +2000% LEAP
+13. "PT4 50x Hit" — Sell final 25% at +5000% LEAP
+
+WARNING ALERTS (nice to have):
+──────────────────────────────
+14. "PREMIUM EUPHORIA" — mNAV > 3x, consider partials
+15. "MACD DIVERGENCE" — Exhaustion warning
+16. "BTC 200-WEEK MA BREAK" — Cycle support broken
+17. "PREMIUM COMPRESSION" — Premium dropped >30% from peak
+18. "REGIME: BULL->BEAR" — BTC regime change
+19. "EUPHORIA PREMIUM SELL" — mNAV > 3.5x, sell 25%
+
+STEP 4: Webhook Setup (for Telegram delivery)
+──────────────────────────────────────────────
+TradingView Pro/Premium required for webhooks.
+
+Webhook URL (paste into alert):
+  https://api.telegram.org/bot<YOUR_BOT_TOKEN>/sendMessage?chat_id=<YOUR_CHAT_ID>&text={{strategy.order.alert_message}}
+
+Or use the paper_monitor.py script (no TV Pro needed):
+  ~/rudy/scripts/paper_monitor.py
+  Runs every 5 min, checks same conditions, sends Telegram alerts.
+
+STEP 5: Verify Dashboard
+─────────────────────────
+On the Daily MSTR chart, verify dashboard row values:
+  Row 30: LEAP Mult = 10.0x (no boost yet)
+  Row 31: Risk Capital = 25% of account
+  Row 32: Panic Floor = -25% LEAP
+  Row 33: QC Validated = +31.2% (Daily, 10x)
+  Row 34: Slippage = 0.5% stk (~5% LEAP) / 1.5%
+  Row 35: Version = v2.2 Production
+  Row 38: Base Case P&L = $13M-$19.5M (100-150x)
+  Row 40: Chart TF = Daily (PROD) in GREEN
+
+═══════════════════════════════════════════════════════════════
+CURRENT SIGNAL STATUS (as of March 15, 2026):
+  • MSTR 200W SMA: ~$150-165 (check exact on chart)
+  • Current MSTR: ~$290-310 range
+  • Status: ABOVE 200W SMA — waiting for next dip cycle
+  • Next entry opportunity: When MSTR dips below 200W SMA
+    then reclaims with 2+ green daily candles above
+  • BTC: Above 200W MA — filter PASSING
+  • Premium: Check mNAV — needs ≤ 1.5x for entry
+═══════════════════════════════════════════════════════════════

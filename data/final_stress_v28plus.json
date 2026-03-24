@@ -1,0 +1,648 @@
+{
+  "anti_trend": [
+    {
+      "confirm_weeks": 1,
+      "description": "1 week (ultra-aggressive \u2014 many false fires expected)",
+      "net": 207.131,
+      "dd": 49.4,
+      "sharpe": 0.363,
+      "orders": 135,
+      "sortino": 0.202,
+      "win_rate": 29.0,
+      "adder_alpha": 151.223
+    },
+    {
+      "confirm_weeks": 2,
+      "description": "2 weeks (aggressive \u2014 some false fires)",
+      "net": 159.123,
+      "dd": 48.0,
+      "sharpe": 0.305,
+      "orders": 135,
+      "sortino": 0.164,
+      "win_rate": 27.0,
+      "adder_alpha": 103.21499999999999
+    },
+    {
+      "confirm_weeks": 3,
+      "description": "3 weeks (moderate)",
+      "net": 108.203,
+      "dd": 49.5,
+      "sharpe": 0.224,
+      "orders": 135,
+      "sortino": 0.118,
+      "win_rate": 26.0,
+      "adder_alpha": 52.295
+    },
+    {
+      "confirm_weeks": 4,
+      "description": "4 weeks (current optimal)",
+      "net": 126.533,
+      "dd": 49.7,
+      "sharpe": 0.258,
+      "orders": 132,
+      "sortino": 0.14,
+      "win_rate": 27.0,
+      "adder_alpha": 70.625
+    },
+    {
+      "confirm_weeks": 6,
+      "description": "6 weeks (conservative)",
+      "net": 56.159,
+      "dd": 46.9,
+      "sharpe": 0.102,
+      "orders": 134,
+      "sortino": 0.052,
+      "win_rate": 30.0,
+      "adder_alpha": 0.25099999999999767
+    },
+    {
+      "confirm_weeks": 8,
+      "description": "8 weeks (ultra-conservative \u2014 may miss entries)",
+      "net": 62.715,
+      "dd": 43.5,
+      "sharpe": 0.118,
+      "orders": 126,
+      "sortino": 0.061,
+      "win_rate": 29.0,
+      "adder_alpha": 6.807000000000002
+    }
+  ],
+  "exposure_stacking": [
+    {
+      "capital_pct": 0.25,
+      "label": "25% adder capital",
+      "net": 126.533,
+      "dd": 49.7,
+      "sharpe": 0.258,
+      "orders": 132,
+      "sortino": 0.14,
+      "win_rate": 27.0,
+      "efficiency": 2.5459356136820923,
+      "dd_per_capital": 1.9880000000000002
+    },
+    {
+      "capital_pct": 0.3,
+      "label": "30% adder capital",
+      "net": 140.981,
+      "dd": 52.3,
+      "sharpe": 0.277,
+      "orders": 132,
+      "sortino": 0.151,
+      "win_rate": 25.0,
+      "efficiency": 2.695621414913958,
+      "dd_per_capital": 1.7433333333333332
+    },
+    {
+      "capital_pct": 0.35,
+      "label": "35% adder capital",
+      "net": 155.473,
+      "dd": 54.6,
+      "sharpe": 0.294,
+      "orders": 132,
+      "sortino": 0.16,
+      "win_rate": 25.0,
+      "efficiency": 2.8474908424908425,
+      "dd_per_capital": 1.56
+    },
+    {
+      "capital_pct": 0.4,
+      "label": "40% adder capital",
+      "net": 169.54,
+      "dd": 56.7,
+      "sharpe": 0.309,
+      "orders": 132,
+      "sortino": 0.169,
+      "win_rate": 25.0,
+      "efficiency": 2.990123456790123,
+      "dd_per_capital": 1.4175
+    },
+    {
+      "capital_pct": 0.5,
+      "label": "50% adder capital",
+      "net": 197.778,
+      "dd": 60.5,
+      "sharpe": 0.334,
+      "orders": 132,
+      "sortino": 0.183,
+      "win_rate": 25.0,
+      "efficiency": 3.269057851239669,
+      "dd_per_capital": 1.21
+    },
+    {
+      "capital_pct": 0.6,
+      "label": "60% adder capital",
+      "net": 225.457,
+      "dd": 63.7,
+      "sharpe": 0.354,
+      "orders": 132,
+      "sortino": 0.195,
+      "win_rate": 25.0,
+      "efficiency": 3.5393563579277862,
+      "dd_per_capital": 1.0616666666666668
+    },
+    {
+      "capital_pct": 0.75,
+      "label": "75% adder capital",
+      "net": 264.507,
+      "dd": 67.8,
+      "sharpe": 0.378,
+      "orders": 132,
+      "sortino": 0.21,
+      "win_rate": 25.0,
+      "efficiency": 3.901283185840708,
+      "dd_per_capital": 0.9039999999999999
+    }
+  ],
+  "start_date": [
+    {
+      "start_year": 2016,
+      "start_month": 1,
+      "description": "2016 (original \u2014 full history)",
+      "net": 126.533,
+      "dd": 49.7,
+      "sharpe": 0.258,
+      "orders": 132,
+      "sortino": 0.14,
+      "win_rate": 27.0
+    },
+    {
+      "start_year": 2016,
+      "start_month": 7,
+      "description": "2016 mid-year",
+      "net": 126.533,
+      "dd": 49.7,
+      "sharpe": 0.268,
+      "orders": 132,
+      "sortino": 0.149,
+      "win_rate": 27.0
+    },
+    {
+      "start_year": 2017,
+      "start_month": 1,
+      "description": "2017 (miss early data)",
+      "net": 62.481,
+      "dd": 38.4,
+      "sharpe": 0.133,
+      "orders": 56,
+      "sortino": 0.056,
+      "win_rate": 26.0
+    },
+    {
+      "start_year": 2017,
+      "start_month": 7,
+      "description": "2017 mid-year",
+      "net": 62.481,
+      "dd": 38.4,
+      "sharpe": 0.142,
+      "orders": 56,
+      "sortino": 0.061,
+      "win_rate": 26.0
+    },
+    {
+      "start_year": 2018,
+      "start_month": 1,
+      "description": "2018 (miss 2016-17 entirely)",
+      "net": 62.481,
+      "dd": 38.4,
+      "sharpe": 0.153,
+      "orders": 56,
+      "sortino": 0.068,
+      "win_rate": 26.0
+    },
+    {
+      "start_year": 2019,
+      "start_month": 1,
+      "description": "2019 (200W SMA barely ready by 2023)",
+      "net": 62.481,
+      "dd": 38.4,
+      "sharpe": 0.182,
+      "orders": 56,
+      "sortino": 0.087,
+      "win_rate": 26.0
+    }
+  ],
+  "perturbation": [
+    {
+      "trial": 1,
+      "perturbations": {
+        "trend_confirm_weeks": {
+          "baseline": 4,
+          "perturbed": 4,
+          "factor": 1.0557707193831534
+        },
+        "trend_convergence_pct": {
+          "baseline": 15.0,
+          "perturbed": 12.1501,
+          "factor": 0.8100043020890668
+        },
+        "trend_adder_capital_pct": {
+          "baseline": 0.25,
+          "perturbed": 0.2275,
+          "factor": 0.9100117273476477
+        },
+        "risk_capital_pct": {
+          "baseline": 0.25,
+          "perturbed": 0.2223,
+          "factor": 0.8892842952595291
+        },
+        "initial_floor_pct": {
+          "baseline": 0.65,
+          "perturbed": 0.7115,
+          "factor": 1.094588485665605
+        },
+        "panic_floor_pct": {
+          "baseline": -35.0,
+          "perturbed": -37.4738,
+          "factor": 1.0706797949691644
+        },
+        "green_weeks_threshold": {
+          "baseline": 2,
+          "perturbed": 2,
+          "factor": 1.1568718270819383
+        },
+        "stoch_rsi_entry_threshold": {
+          "baseline": 70,
+          "perturbed": 58,
+          "factor": 0.8347755330517664
+        },
+        "premium_cap": {
+          "baseline": 1.5,
+          "perturbed": 1.4532,
+          "factor": 0.9687687278741082
+        },
+        "max_hold_bars": {
+          "baseline": 567,
+          "perturbed": 460,
+          "factor": 0.8119188877752281
+        }
+      },
+      "net": 75.877,
+      "dd": 42.6,
+      "sharpe": 0.155,
+      "orders": 125,
+      "sortino": 0.082,
+      "win_rate": 25.0,
+      "survival_ratio": 0.5996617483186204
+    },
+    {
+      "trial": 2,
+      "perturbations": {
+        "trend_confirm_weeks": {
+          "baseline": 4,
+          "perturbed": 4,
+          "factor": 0.8874551899214413
+        },
+        "trend_convergence_pct": {
+          "baseline": 15.0,
+          "perturbed": 15.0321,
+          "factor": 1.002142115241345
+        },
+        "trend_adder_capital_pct": {
+          "baseline": 0.25,
+          "perturbed": 0.2027,
+          "factor": 0.8106143878735454
+        },
+        "risk_capital_pct": {
+          "baseline": 0.25,
+          "perturbed": 0.2199,
+          "factor": 0.8795350602746594
+        },
+        "initial_floor_pct": {
+          "baseline": 0.65,
+          "perturbed": 0.689,
+          "factor": 1.0599537751118093
+        },
+        "panic_floor_pct": {
+          "baseline": -35.0,
+          "perturbed": -35.6292,
+          "factor": 1.0179765922412867
+        },
+        "green_weeks_threshold": {
+          "baseline": 2,
+          "perturbed": 2,
+          "factor": 0.8881762488162787
+        },
+        "stoch_rsi_entry_threshold": {
+          "baseline": 70,
+          "perturbed": 72,
+          "factor": 1.0357062735503635
+        },
+        "premium_cap": {
+          "baseline": 1.5,
+          "perturbed": 1.6857,
+          "factor": 1.1237721826711307
+        },
+        "max_hold_bars": {
+          "baseline": 567,
+          "perturbed": 455,
+          "factor": 0.8025995038712244
+        }
+      },
+      "net": 106.27,
+      "dd": 44.6,
+      "sharpe": 0.226,
+      "orders": 137,
+      "sortino": 0.123,
+      "win_rate": 27.0,
+      "survival_ratio": 0.8398599574814475
+    },
+    {
+      "trial": 3,
+      "perturbations": {
+        "trend_confirm_weeks": {
+          "baseline": 4,
+          "perturbed": 4,
+          "factor": 1.1223277007331232
+        },
+        "trend_convergence_pct": {
+          "baseline": 15.0,
+          "perturbed": 16.1888,
+          "factor": 1.0792557579952908
+        },
+        "trend_adder_capital_pct": {
+          "baseline": 0.25,
+          "perturbed": 0.234,
+          "factor": 0.9361002066071967
+        },
+        "risk_capital_pct": {
+          "baseline": 0.25,
+          "perturbed": 0.2155,
+          "factor": 0.8621917999247126
+        },
+        "initial_floor_pct": {
+          "baseline": 0.65,
+          "perturbed": 0.7689,
+          "factor": 1.1828852288827125
+        },
+        "panic_floor_pct": {
+          "baseline": -35.0,
+          "perturbed": -32.7123,
+          "factor": 0.9346378180450508
+        },
+        "green_weeks_threshold": {
+          "baseline": 2,
+          "perturbed": 2,
+          "factor": 0.8370983373520592
+        },
+        "stoch_rsi_entry_threshold": {
+          "baseline": 70,
+          "perturbed": 59,
+          "factor": 0.8386865507333856
+        },
+        "premium_cap": {
+          "baseline": 1.5,
+          "perturbed": 1.7085,
+          "factor": 1.138997746538984
+        },
+        "max_hold_bars": {
+          "baseline": 567,
+          "perturbed": 591,
+          "factor": 1.0414904125467563
+        }
+      },
+      "net": 74.221,
+      "dd": 42.9,
+      "sharpe": 0.151,
+      "orders": 131,
+      "sortino": 0.081,
+      "win_rate": 24.0,
+      "survival_ratio": 0.5865742533568319
+    },
+    {
+      "trial": 4,
+      "perturbations": {
+        "trend_confirm_weeks": {
+          "baseline": 4,
+          "perturbed": 4,
+          "factor": 1.122851309309752
+        },
+        "trend_convergence_pct": {
+          "baseline": 15.0,
+          "perturbed": 16.3784,
+          "factor": 1.091892714677527
+        },
+        "trend_adder_capital_pct": {
+          "baseline": 0.25,
+          "perturbed": 0.2536,
+          "factor": 1.0144912365818803
+        },
+        "risk_capital_pct": {
+          "baseline": 0.25,
+          "perturbed": 0.2973,
+          "factor": 1.1892463055917482
+        },
+        "initial_floor_pct": {
+          "baseline": 0.65,
+          "perturbed": 0.6184,
+          "factor": 0.9514137508833413
+        },
+        "panic_floor_pct": {
+          "baseline": -35.0,
+          "perturbed": -35.7286,
+          "factor": 1.0208162525092908
+        },
+        "green_weeks_threshold": {
+          "baseline": 2,
+          "perturbed": 2,
+          "factor": 1.1317618657011979
+        },
+        "stoch_rsi_entry_threshold": {
+          "baseline": 70,
+          "perturbed": 73,
+          "factor": 1.0474079009456985
+        },
+        "premium_cap": {
+          "baseline": 1.5,
+          "perturbed": 1.717,
+          "factor": 1.144682760124311
+        },
+        "max_hold_bars": {
+          "baseline": 567,
+          "perturbed": 585,
+          "factor": 1.0309408581027049
+        }
+      },
+      "net": 135.607,
+      "dd": 52.6,
+      "sharpe": 0.269,
+      "orders": 139,
+      "sortino": 0.151,
+      "win_rate": 27.0,
+      "survival_ratio": 1.0717125176831341
+    },
+    {
+      "trial": 5,
+      "perturbations": {
+        "trend_confirm_weeks": {
+          "baseline": 4,
+          "perturbed": 4,
+          "factor": 1.0818287344859694
+        },
+        "trend_convergence_pct": {
+          "baseline": 15.0,
+          "perturbed": 12.2749,
+          "factor": 0.8183297534622649
+        },
+        "trend_adder_capital_pct": {
+          "baseline": 0.25,
+          "perturbed": 0.2228,
+          "factor": 0.8911593102606188
+        },
+        "risk_capital_pct": {
+          "baseline": 0.25,
+          "perturbed": 0.2289,
+          "factor": 0.9157551854408429
+        },
+        "initial_floor_pct": {
+          "baseline": 0.65,
+          "perturbed": 0.5407,
+          "factor": 0.831916790769451
+        },
+        "panic_floor_pct": {
+          "baseline": -35.0,
+          "perturbed": -31.2591,
+          "factor": 0.8931163545444121
+        },
+        "green_weeks_threshold": {
+          "baseline": 2,
+          "perturbed": 2,
+          "factor": 0.8404005717638916
+        },
+        "stoch_rsi_entry_threshold": {
+          "baseline": 70,
+          "perturbed": 64,
+          "factor": 0.9111894412440369
+        },
+        "premium_cap": {
+          "baseline": 1.5,
+          "perturbed": 1.5814,
+          "factor": 1.05427377770576
+        },
+        "max_hold_bars": {
+          "baseline": 567,
+          "perturbed": 536,
+          "factor": 0.9459328715880337
+        }
+      },
+      "net": 80.047,
+      "dd": 43.3,
+      "sharpe": 0.166,
+      "orders": 133,
+      "sortino": 0.089,
+      "win_rate": 26.0,
+      "survival_ratio": 0.6326175780231243
+    }
+  ],
+  "resolution": [
+    {
+      "resolution": "daily",
+      "description": "Daily evaluation",
+      "net": 151.157,
+      "dd": 56.1,
+      "sharpe": 0.293,
+      "orders": 206,
+      "sortino": 0.193,
+      "win_rate": 37.0
+    },
+    {
+      "resolution": "weekly",
+      "description": "Weekly evaluation (default)",
+      "net": 126.533,
+      "dd": 49.7,
+      "sharpe": 0.258,
+      "orders": 132,
+      "sortino": 0.14,
+      "win_rate": 27.0
+    },
+    {
+      "resolution": "monthly",
+      "description": "Monthly evaluation",
+      "net": -20.546,
+      "dd": 26.0,
+      "sharpe": -1.402,
+      "orders": 42,
+      "sortino": -0.309,
+      "win_rate": 11.0
+    }
+  ],
+  "timing_decay": [
+    {
+      "confirm_weeks": 4,
+      "delay_weeks": 0,
+      "description": "4w confirm + 0w delay (baseline)",
+      "net": 126.533,
+      "dd": 49.7,
+      "sharpe": 0.258,
+      "orders": 132,
+      "sortino": 0.14,
+      "win_rate": 27.0,
+      "adder_alpha": 70.625,
+      "alpha_retention": 100.0
+    },
+    {
+      "confirm_weeks": 6,
+      "delay_weeks": 2,
+      "description": "6w confirm (2w later)",
+      "net": 56.159,
+      "dd": 46.9,
+      "sharpe": 0.102,
+      "orders": 134,
+      "sortino": 0.052,
+      "win_rate": 30.0,
+      "adder_alpha": 0.25099999999999767,
+      "alpha_retention": 0.35539823008849225
+    },
+    {
+      "confirm_weeks": 8,
+      "delay_weeks": 4,
+      "description": "8w confirm (4w later)",
+      "net": 62.715,
+      "dd": 43.5,
+      "sharpe": 0.118,
+      "orders": 126,
+      "sortino": 0.061,
+      "win_rate": 29.0,
+      "adder_alpha": 6.807000000000002,
+      "alpha_retention": 9.638230088495577
+    },
+    {
+      "confirm_weeks": 10,
+      "delay_weeks": 6,
+      "description": "10w confirm (6w later)",
+      "net": 44.739,
+      "dd": 38.7,
+      "sharpe": 0.05,
+      "orders": 122,
+      "sortino": 0.025,
+      "win_rate": 29.0,
+      "adder_alpha": -11.169000000000004,
+      "alpha_retention": -15.814513274336289
+    },
+    {
+      "confirm_weeks": 12,
+      "delay_weeks": 8,
+      "description": "12w confirm (8w later)",
+      "net": 41.16,
+      "dd": 32.1,
+      "sharpe": 0.028,
+      "orders": 120,
+      "sortino": 0.015,
+      "win_rate": 26.0,
+      "adder_alpha": -14.748000000000005,
+      "alpha_retention": -20.882123893805314
+    },
+    {
+      "confirm_weeks": 16,
+      "delay_weeks": 12,
+      "description": "16w confirm (12w later \u2014 extreme)",
+      "net": 55.908,
+      "dd": 30.7,
+      "sharpe": 0.085,
+      "orders": 116,
+      "sortino": 0.046,
+      "win_rate": 27.0,
+      "adder_alpha": 0.0,
+      "alpha_retention": 0.0
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+[2026-03-09 16:15:27] Connected to IBKR paper trading
+[2026-03-09 16:15:27] === STEP 1: ENTERING TRADE — BUY 10 AAPL ===
+[2026-03-09 16:15:30] Current AAPL price: $nan
+[2026-03-09 16:15:35] Entry order status: PendingSubmit
+[2026-03-09 16:15:35] Fill price: $0.0
+[2026-03-09 16:15:35] Using market price as fill reference: $nan
+[2026-03-09 16:15:35] === STEP 2: PLACING LADDER TRAILING STOPS ===
+[2026-03-09 16:15:37] Tranche 1: SELL 4 shares, trail 1.0% ($nan), limit offset $nan, status: Cancelled
+[2026-03-09 16:15:39] Tranche 2: SELL 3 shares, trail 3.0% ($nan), limit offset $nan, status: Cancelled
+[2026-03-09 16:15:41] Tranche 3: SELL 3 shares, trail 5.0% ($nan), limit offset $nan, status: Cancelled
+[2026-03-09 16:15:42] All trailing stops placed. Waiting 15 seconds before exit demo...
+[2026-03-09 16:15:57] === STEP 3: EXITING TRADE — SELL 10 AAPL ===
+[2026-03-09 16:15:58] Cancelled trailing stop order 6
+[2026-03-09 16:15:59] Cancelled trailing stop order 7
+[2026-03-09 16:16:00] Cancelled trailing stop order 8
+[2026-03-09 16:16:10] Exit order status: PreSubmitted
+[2026-03-09 16:16:10] Exit price: $nan
+[2026-03-09 16:16:10] P&L: $+nan
+[2026-03-09 16:16:10] === DEMO COMPLETE ===
+[2026-03-09 16:16:10] Disconnected from IBKR
+[2026-03-09 16:17:14] Connected to IBKR paper trading
+[2026-03-09 16:17:15] Yahoo Finance AAPL price: $259.88
+[2026-03-09 16:17:15] === STEP 1: ENTERING TRADE — BUY 10 AAPL ===
+[2026-03-09 16:17:20] Entry status: PreSubmitted — limit $261.18
+[2026-03-09 16:17:20] Using Yahoo price $259.88 as reference for stops
+[2026-03-09 16:17:20] === STEP 2: PLACING LADDER TRAILING STOPS ===
+[2026-03-09 16:17:23] Tranche 1: SELL 4 shares, trail $2.6 (1.0%), stop $257.28, limit $255.98, status: PreSubmitted
+[2026-03-09 16:17:26] Tranche 2: SELL 3 shares, trail $7.8 (3.0%), stop $252.08, limit $248.18, status: PreSubmitted
+[2026-03-09 16:17:29] Tranche 3: SELL 3 shares, trail $12.99 (5.0%), stop $246.89, limit $240.39, status: PreSubmitted
+[2026-03-09 16:17:30] All trailing stops placed. Waiting 15 seconds before exit demo...
+[2026-03-09 16:17:45] === STEP 3: EXITING TRADE — SELL 10 AAPL ===
+[2026-03-09 16:17:46] Cancelled trailing stop order 14
+[2026-03-09 16:17:47] Cancelled trailing stop order 15
+[2026-03-09 16:17:48] Cancelled trailing stop order 16
+[2026-03-09 16:17:51] Cancelled entry order (hadn't filled yet)
+[2026-03-09 16:17:56] Exit status: PreSubmitted
+[2026-03-09 16:17:56] Exit price: $259.88
+[2026-03-09 16:17:56] P&L: $+0.00
+[2026-03-09 16:17:57] Cancelled exit order (market closed — demo purpose served)
+[2026-03-09 16:17:57] === DEMO COMPLETE ===
+[2026-03-09 16:17:57] Disconnected from IBKR

@@ -1,0 +1,2618 @@
+[
+  {
+    "timestamp": "2026-03-10T19:47:50.354795",
+    "total_posts_scanned": 5,
+    "type": "quick_scan",
+    "ticker": "NVDA",
+    "summary": "\n{\n    \"summary\": \"X/Twitter posts present a mixed picture for NVIDIA ($NVDA). While the company reported a strong Q4 earnings beat with revenue exceeding estimates and robust data center performance, along with positive 1QFY27 sales growth guidance,",
+    "sentiment": "neutral",
+    "signals": [],
+    "catalysts": [],
+    "risks": [],
+    "hot_tickers": []
+  },
+  {
+    "timestamp": "2026-03-10T19:50:25.999072",
+    "total_posts_scanned": 74,
+    "summary": "\n{\n    \"summary\": \"The social media sentiment is highly mixed for Bitcoin and related assets like MSTR and IBIT, with some posts indicating a severe correction and shorting opportunities, while others point to ongoing institutional accumulation and future bullish catalysts. In contrast, there's a | \n{\n    \"summary\": \"The X/Twitter feed is heavily bullish | \n{\n    \"summary\": \"This batch of posts indicates a mixed but generally bullish sentiment for early to late 2026, with specific positive signals for energy and tech sectors. Chevron (CVX) shows strong performance and dividend increases, while GameStop ( | \n{\n    \"summary\": \"This batch of posts shows a mixed bag for 'Squeeze' tickers. AMC has | \n{\n    \"summary\": \"This batch of posts highlights strong fundamental performance and significant CapEx investments in AI for major tech players like Amazon, Alphabet, and Nvidia, despite Nvidia experiencing a 'sell the news' stock drop. Lucid Group showed strong delivery growth. The overall | \n{\n    \"summary\": \"The posts present a mixed outlook for Tesla ($TSLA), with concerns about long-term EV volume growth conflicting with a constructive outlook driven by a pivot to robotics and autonomy. Netflix ($NFLX) shows short-term volatility following earnings, moving | \n{\n    \"summary\": \"This batch of posts highlights potential short squeeze candidates like SMCI for 2026, strong bullish sentiment for UEC with a Goldman Sachs price target lift, and continued attention on MSTR and Bitcoin despite significant paper losses. NVDA | \n{\n    \"summary\": \"The social media content is heavily focused on the anticipated impact of Federal Reserve interest rate cuts, with a strong consensus that such cuts would lead to a significant stock market rally. Nvidia is specifically highlighted, noted for a recent dip but expected to rebound sh",
+    "overall_sentiment": "mixed",
+    "signals": [],
+    "catalysts": [],
+    "risks": [],
+    "hot_tickers": []
+  },
+  {
+    "timestamp": "2026-03-10T19:52:26.801594",
+    "total_posts_scanned": 5,
+    "type": "quick_scan",
+    "ticker": "MSTR",
+    "summary": "X/Twitter shows extreme polarization on MSTR, with posts highlighting both catastrophic declines (-70% to -80% from highs) and institutional accumulation (Goldman Sachs $300M purchase). The narrative centers on MSTR as a leveraged Bitcoin proxy, with sentiment swinging violently based on BTC price action.",
+    "sentiment": "mixed",
+    "signals": [
+      {
+        "ticker": "MSTR",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Conflicting signals: massive drawdown suggests extreme risk, but Goldman Sachs accumulation indicates institutional Bitcoin exposure play. Requires Bitcoin trend confirmation.",
+        "system": "System 1 (Lottery)"
+      }
+    ],
+    "catalysts": [
+      "Bitcoin price rally",
+      "$21 billion ATM offering of preferred stock ($STRK) announced in 2025"
+    ],
+    "risks": [
+      "Stock down 70-80% from previous highs",
+      "Potential dilution from preferred stock offering",
+      "High volatility as leveraged Bitcoin proxy",
+      "Sentiment shows retail trying to 'catch falling knife'"
+    ],
+    "hot_tickers": [
+      "MSTR",
+      "STRK",
+      "Bitcoin"
+    ]
+  },
+  {
+    "timestamp": "2026-03-10T20:51:45.419950",
+    "total_posts_scanned": 97,
+    "summary": "Posts show mixed Bitcoin sentiment with institutional buying (MSTR) but also short-term bearish trading calls and warnings of a severe correction. Energy sector is flagged for a potential generational buying opportunity. Bitcoin options open interest significantly exceeds futures, indicating complex positioning. | Social media posts highlight a volatile 2026 environment with surging oil prices and uranium sector strength, while Bitcoin shows weakness. Uranium stocks like CCJ and UEC are receiving heavy bullish attention due to supply dynamics and nuclear energy outlook. Energy stocks like XOM show mixed signals despite oil price strength. | Posts reference a 2026 timeframe with corporate cash returning for buybacks, dividend increases from energy companies, and continued speculative interest in meme stocks. Energy sector shows dividend growth while squeeze plays maintain community attention despite price declines. | Posts focus on short squeeze candidates (AMC, SOFI, RIVN, LCID) with mixed sentiment. AMC shows bearish price action with approaching catalyst, while SOFI and RIVN present growth narratives despite recent selloffs. LCID has bullish pre-market spike news and upcoming investor day. | Posts highlight a disconnect between NVIDIA's strong fundamentals (record earnings, sold-out AI demand through 2026) and its recent 5% stock drop, suggesting potential undervaluation. Amazon and Alphabet are emphasized for aggressive AI-driven capital expenditure plans ($200B and ~$180B respectively in 2026) and diversified growth. Tesla and NVIDIA show strong institutional options flow. | Posts focus on Tesla's strategic pivot toward robotics/autonomy and Netflix's earnings performance, with mixed sentiment on both. Several posts are promotional or non-actionable (NowInStock, Motley Fool, HoneyDrip). | Coinbase announces expansion into traditional stock trading with 8,000+ stocks and 24/5 trading, potentially increasing platform engagement. Market data shows record U.S. stock trading volume at $1 trillion daily, and Citadel's Rubner has turned bullish citing retail flows and seasonality. Unusual Whales continues tracking congressional trading activity. | Posts show Michael Burry taking bearish positions against NVDA and PLTR via put options, while Jim Cramer promotes fundamental investing in understood companies. Elon Musk's X platform plans to launch integrated crypto/stock trading soon, potentially increasing retail participation. | Posts highlight strong institutional Bitcoin accumulation via MSTR and ETFs, bullish unusual options activity for NVDA, and mixed signals for uranium stocks like UEC. Short squeeze narratives focus on IBRX and SMCI as potential 2026 candidates. | Posts discuss MicroStrategy's continued Bitcoin accumulation despite paper losses, highlight NVDA's strong momentum and quant signals suggesting upside, and analyze how potential Fed rate cuts could boost stocks and tech sectors.",
+    "overall_sentiment": "bullish",
+    "signals": [
+      {
+        "ticker": "MSTR",
+        "signal": "buy",
+        "confidence": "medium",
+        "reason": "Strategic institutional accumulation of 2,486 Bitcoin at ~$67.7k, funded via ATM program, indicates strong conviction.",
+        "system": "System 1 (Lottery)"
+      },
+      {
+        "ticker": "IBIT",
+        "signal": "sell",
+        "confidence": "low",
+        "reason": "One trader mentions a short idea at $40.25, citing Bitcoin starting under $70k as a reason to fade an early pop.",
+        "system": "System 1 (Lottery)"
+      },
+      {
+        "ticker": "CCJ",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "TopTradersLive calls for a generational buying opportunity in oil, driven by geopolitics and incentives. CCJ is a primary uranium/energy play.",
+        "system": "Trader 3 (Energy)"
+      },
+      {
+        "ticker": "XOM",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "TopTradersLive calls for a generational buying opportunity in oil, driven by geopolitics and incentives. XOM is a major oil stock.",
+        "system": "Trader 3 (Energy)"
+      },
+      {
+        "ticker": "CVX",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "TopTradersLive calls for a generational buying opportunity in oil, driven by geopolitics and incentives. CVX is a major oil stock.",
+        "system": "Trader 3 (Energy)"
+      },
+      {
+        "ticker": "CCJ",
+        "signal": "buy",
+        "confidence": "high",
+        "reason": "Multiple posts highlight strong uranium spot price rebound, widening supply-demand gap, positive 2026 outlook, and pre-market gap-up signals. Positioned well fundamentally.",
+        "system": "Trader 3 (Energy)"
+      },
+      {
+        "ticker": "UEC",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Mentioned alongside CCJ as a major uranium stock soaring in pre-market high volume trading, pointing to sector-wide momentum.",
+        "system": "Trader 3 (Energy)"
+      },
+      {
+        "ticker": "XOM",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Noted as a 'monster trade' YTD +22%, but showing potential weakness as stock didn't rise on a $10 oil price increase, suggesting it may be trading on future expectations.",
+        "system": "Trader 3 (Energy)"
+      },
+      {
+        "ticker": "Bitcoin",
+        "signal": "watch",
+        "confidence": "low",
+        "reason": "Posts indicate Bitcoin is down 21% YTD in 2026, potentially guiding toward a 'reversion' scenario rather than continued 'lucky' market expansion.",
+        "system": "System 1 (Lottery)"
+      },
+      {
+        "ticker": "CVX",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Mentioned for annual dividend increase in January 2026 and +5% 1-year performance in referenced data",
+        "system": "Trader 3 (Energy)"
+      },
+      {
+        "ticker": "GME",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Michael Burry disclosed a position, trading above 20-day SMA at $24.10 in Feb 2026, remains persistently discussed",
+        "system": "Trader 4 (Squeeze)"
+      },
+      {
+        "ticker": "AMC",
+        "signal": "watch",
+        "confidence": "low",
+        "reason": "Leadership compensation tied to stock, but share price has fallen dramatically per post",
+        "system": "Trader 4 (Squeeze)"
+      },
+      {
+        "ticker": "AMC",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Price declining with increasing volume as February 2 indenture amendment date approaches - potential volatility catalyst",
+        "system": "Squeeze"
+      },
+      {
+        "ticker": "SOFI",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Down 25-30% YTD despite strong 2026 revenue growth expectations (+30%) and profitability metrics - oversold growth story",
+        "system": "Squeeze"
+      },
+      {
+        "ticker": "RIVN",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Achieved first full-year positive gross profit, rapid revenue growth expected (50%+ in 2026/2027), technical pattern showing higher highs/lows",
+        "system": "Squeeze"
+      },
+      {
+        "ticker": "LCID",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "60% pre-market spike reported on Uber partnership news, upcoming Investor Day on March 12, 2026 for growth strategy announcement",
+        "system": "Squeeze"
+      },
+      {
+        "ticker": "NVDA",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Massive revenue beats and sold-out AI demand through 2026 contrast with recent 5% drop, creating potential buying opportunity on weakness.",
+        "system": "Breakout"
+      },
+      {
+        "ticker": "AMZN",
+        "signal": "buy",
+        "confidence": "medium",
+        "reason": "Expected >10% revenue growth driven by cloud, ads, logistics, and AI; guided for ~$200B CapEx in 2026; bullish premium flow in options.",
+        "system": "Breakout"
+      },
+      {
+        "ticker": "GOOGL",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Strong AI growth momentum and revenue over $400B, but high CapEX ($175-185B in 2026) pressures free cash flow.",
+        "system": "Breakout"
+      },
+      {
+        "ticker": "TSLA",
+        "signal": "watch",
+        "confidence": "low",
+        "reason": "Strong institutional options flow with 10.36% increase in activity, but no fundamental context provided in posts.",
+        "system": "Breakout"
+      },
+      {
+        "ticker": "TSLA",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Strategic pivot to robotics/autonomy noted as constructive, but facing weak vehicle demand. Historical returns data provided but no immediate catalyst.",
+        "system": "Trader 5 (Breakout)"
+      },
+      {
+        "ticker": "NFLX",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Stock jumped ~10% after-hours on news of declined Warner Bros. Discovery offer. Q4 revenue beat estimates, FY2026 outlook provided.",
+        "system": "Trader 5 (Breakout)"
+      },
+      {
+        "ticker": "COIN",
+        "signal": "watch",
+        "confidence": "low",
+        "reason": "Mention of Coinbase offering 24/5 stock/ETF trading alongside crypto, potentially expanding platform utility. Mention is promotional.",
+        "system": "Trader 4 (Squeeze)"
+      },
+      {
+        "ticker": "COIN",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Coinbase expanding into stock trading could increase user engagement and revenue diversification",
+        "system": "Squeeze"
+      },
+      {
+        "ticker": "NVDA",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Michael Burry's Scion Capital bought put options on 1M Nvidia shares, indicating a major investor sees downside risk.",
+        "system": "Trader 5 (Breakout)"
+      },
+      {
+        "ticker": "PLTR",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Michael Burry's Scion Capital bought put options on 5M Palantir shares, signaling a bearish institutional bet.",
+        "system": "Trader 4 (Squeeze)"
+      },
+      {
+        "ticker": "MSTR",
+        "signal": "buy",
+        "confidence": "medium",
+        "reason": "Completed 100th Bitcoin purchase, reinforcing role as major corporate holder; institutional activity noted.",
+        "system": "System 1 (Lottery)"
+      },
+      {
+        "ticker": "IBIT",
+        "signal": "buy",
+        "confidence": "medium",
+        "reason": "US Bitcoin ETFs drove $1.2B demand surge; IBIT captured 57% of total volume.",
+        "system": "System 1 (Lottery)"
+      },
+      {
+        "ticker": "NVDA",
+        "signal": "buy",
+        "confidence": "medium",
+        "reason": "Highest option volume on Dec. 26, 45% above 30-day average, with very bullish put/call ratio of 0.46.",
+        "system": "Trader 5 (Breakout)"
+      },
+      {
+        "ticker": "UEC",
+        "signal": "watch",
+        "confidence": "low",
+        "reason": "Mixed news: Goldman Sachs raised price target to $18 (Buy), but stock fell steeply and faces negative EPS expectations.",
+        "system": "Trader 3 (Energy)"
+      },
+      {
+        "ticker": "MSTR",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Company continues aggressive Bitcoin accumulation (purchased additional 1,142 BTC), signaling strong conviction, but currently down $4.5B on its $54B Bitcoin position.",
+        "system": "System 1 (Lottery)"
+      },
+      {
+        "ticker": "NVDA",
+        "signal": "buy",
+        "confidence": "medium",
+        "reason": "Quant model indicates momentum divergence with 78% historical accuracy for 1-month upside; stock showing strong price action (+2.68%).",
+        "system": "Trader 5 (Breakout)"
+      },
+      {
+        "ticker": "AMZN",
+        "signal": "watch",
+        "confidence": "low",
+        "reason": "Mentioned in quant analysis alongside NVDA, TSLA, and QQQ for potential moves, but no specific signal provided.",
+        "system": "Trader 5 (Breakout)"
+      },
+      {
+        "ticker": "TSLA",
+        "signal": "watch",
+        "confidence": "low",
+        "reason": "Included in 1-month quant analysis batch but without specific signal detail.",
+        "system": "Trader 5 (Breakout)"
+      }
+    ],
+    "catalysts": [
+      "March seasonality mentioned by Citadel's Rubner",
+      "Amazon's ~$200B CapEx in 2026 for AI and infrastructure",
+      "Alphabet's ~$180B CapEx in 2026 for AI investments",
+      "Quant model signals for NVDA over next 30 days",
+      "Possible resolution-driven Bitcoin rally targeting $98k",
+      "LCID Investor Day: March 12, 2026",
+      "Tesla's robotics/autonomy development timeline (implied 2026)",
+      "Potential Fed interest rate cuts",
+      "Wave 3 corporate cash returns (July-Sept timeframe)",
+      "Annual dividend increases in January 2026",
+      "Netflix FY2026 revenue outlook",
+      "Potential Netflix M&A activity (Warner Bros. Discovery offer declined)",
+      "RIVN Q4 2025 financial results showing first full-year positive gross profit",
+      "Uranium spot price rebound in 2026",
+      "National Bank's '2026 Critical Minerals Year-Ahead' report",
+      "Potential generational buying opportunity in oil (geopolitics, incentives)",
+      "UEC upcoming earnings disclosure",
+      "JPMorgan Q4 2025 earnings report starting Jan. 13, 2026",
+      "Russia uranium ban fully kicking in end of 2027",
+      "LCID Uber robo-taxi partnership announcement",
+      "Bitcoin seasonality (February historically +14% average)",
+      "MicroStrategy's ongoing Bitcoin accumulation strategy",
+      "SOFI 2026 revenue guidance ($4.655B, +30%)",
+      "AMC indenture amendments date: February 2",
+      "Coinbase stock trading rollout",
+      "2026 cited as a big year for gigawatt-scale nuclear energy",
+      "NVIDIA's sold-out AI demand through 2026",
+      "Wave 4 investment perks driving builds/tech (Q3-Q4)",
+      "Q2 2026 earnings for SMCI (potential sentiment shift)",
+      "X (Twitter) launching integrated crypto and stock trading features 'in a couple weeks'",
+      "Oil price surge of 123% in first 69 days of 2026"
+    ],
+    "risks": [
+      "SMCI heavily shorted; squeeze potential speculative for 2026",
+      "Bitcoin price action remains compressed despite institutional inflows",
+      "Market internals flashing warning signs per Jared reference",
+      "Promotional/non-actionable content diluting signal clarity",
+      "XOM showing potential decoupling from immediate oil price moves",
+      "General market cap-to-GDP reversion risk highlighted",
+      "Netflix stock initially moving lower post-earnings before after-hours jump",
+      "Inverse Cramer sentiment as a popular trading strategy indicating distrust of mainstream financial advice",
+      "High capital expenditures pressuring free cash flow for Amazon and Alphabet",
+      "Macroeconomic volatility mentioned in interest rate discussions",
+      "SOFI down 25-30% YTD despite strong fundamentals",
+      "High Bitcoin options open interest ($71B) vs. futures ($28B) indicates leveraged, volatile positioning",
+      "NVIDIA stock dropping despite strong earnings (market cap erosion)",
+      "Momentum divergence patterns don't guarantee outcomes",
+      "RIVN single-digit price possibility mentioned",
+      "MicroStrategy sitting on $4.5B unrealized loss on Bitcoin position",
+      "Market repricing aggressive growth stories for 2026",
+      "LCID spike based on unverified partnership report",
+      "AMC share price has fallen dramatically",
+      "UEC expected EPS of -$0.06, down 500% YoY",
+      "CrowdStrike ($CRWV) reporting larger-than-expected Q1 loss with high capex vs. sales",
+      "Michael Burry's short positions on NVDA and PLTR via put options",
+      "AMC price declining despite increased volume",
+      "VIX jumped 93%, signaling rising global volatility",
+      "Bitcoin suffering a severe correction in 2026 (~50% crash from ATH mentioned)",
+      "Bitcoin down 21% YTD in 2026",
+      "No specific bearish signals identified in provided posts",
+      "Significant break noted between digital currency and traditional markets (S&P strong while BTC corrects)",
+      "STEM market model turned red (bearish signal for general market)",
+      "Tesla weak vehicle demand",
+      "Burry's general commentary that stocks are expensive",
+      "2026 production expected to be flat to only 2% higher"
+    ],
+    "hot_tickers": [
+      "MSTR",
+      "CCJ",
+      "XOM",
+      "UEC",
+      "NKE",
+      "IBRX",
+      "NFLX",
+      "Bitcoin",
+      "LCID",
+      "CVX",
+      "IBIT",
+      "SPY",
+      "SMCI",
+      "SOFI",
+      "QQQ",
+      "AMC",
+      "NVDA",
+      "GOOGL",
+      "BTC",
+      "COIN",
+      "GME",
+      "PLTR",
+      "TSLA",
+      "AMZN",
+      "RIVN"
+    ]
+  },
+  {
+    "timestamp": "2026-03-11T14:34:58.206897",
+    "total_posts_scanned": 94,
+    "summary": "X posts show Bitcoin and related assets under significant pressure with a ~50% correction from 2025 highs, while energy/oil is being positioned for a generational buying opportunity. MSTR faces specific warnings about 2026 performance, and IBIT charts show technical weakness. Overall sentiment is bearish for crypto assets. | The posts are overwhelmingly focused on the uranium/energy sector, with strong bullish sentiment around Cameco (CCJ) and uranium stocks due to supply deficits, geopolitical risks, and technical setups. There's also positive mention of ExxonMobil (XOM) performance and a macro note on Bitcoin potentially guiding toward 'reversion' in 2026. | Posts show energy sector strength with Chevron highlighted for dividend increases and OXY mentioned as a long trade. Bitcoin/IBIT sentiment is cautious with a short signal mentioned. GME continues to have speculative community interest but no clear directional signal. | Posts focus on AMC's declining price with approaching February 2 date, SOFI's repricing due to growth story adjustments, and positive momentum for RIVN and LCID based on earnings beats, guidance, and strategic partnerships. AMC shows concerning volume/price divergence while RIVN/LCID display fundamental improvements. | Posts show mixed signals for major tech stocks: NVDA faces a significant price drop despite strong fundamentals, while AMZN shows strong institutional flow and aggressive AI/cloud investment plans. GOOGL faces valuation concerns despite massive AI CapEx commitments, and TSLA shows technical weakness. | Posts show strong bullish sentiment around NFLX with mentions of a major comeback and positive earnings, while highlighting skepticism about trading advice quality and noting Coinbase's expansion into equities trading. NIO sentiment analysis appears neutral with no direct trading signals. | The posts discuss general trading principles like risk management and pairs trading strategies, note record-high U.S. stock trading volume, and highlight a major market maker turning bullish. No specific ticker recommendations or price targets are given for the watchlist. | Posts highlight a successful anti-Cramer trading strategy, Michael Burry's bearish bets on NVDA and PLTR, and unusual options activity signaling institutional moves. There's also discussion about SMCI as a potential short squeeze candidate. | Posts highlight institutional accumulation in Bitcoin (via MSTR/IBIT) and uranium (UEC), with strong momentum signals for NVDA. Short-squeeze narratives are building around high short-interest stocks and nuclear energy names. | Posts discuss market momentum and Fed rate impacts, with specific focus on Tesla's technical setup for a potential breakout and general bullishness around lower interest rates boosting stocks.",
+    "overall_sentiment": "bullish",
+    "signals": [
+      {
+        "ticker": "MSTR",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Peter Schiff warns of weak 2026 performance, MSCI may reclassify index",
+        "system": "System 1 (Lottery)"
+      },
+      {
+        "ticker": "IBIT",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Technical analysis suggests not bottom-fishing without strong bullish monthly candle, Bitcoin in severe correction",
+        "system": "System 1 (Lottery)"
+      },
+      {
+        "ticker": "Bitcoin",
+        "signal": "watch",
+        "confidence": "high",
+        "reason": "Sharp ~50% crash from ATH, erased $85B in market cap in 4 hours, severe correction in 2026",
+        "system": "System 1 (Lottery)"
+      },
+      {
+        "ticker": "CCJ",
+        "signal": "buy",
+        "confidence": "high",
+        "reason": "Multiple posts highlight strong fundamentals (widening supply deficit, utility inventory depletion, geopolitical risks), positive technical setup (higher low, accumulation pattern), and pre-market gap-up activity. Described as having fundamentals, narrative, and technicals aligned.",
+        "system": "Trader 3 (Energy)"
+      },
+      {
+        "ticker": "UEC",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Mentioned among top-performing energy stocks and pre-market movers alongside CCJ, indicating sector-wide strength and attention.",
+        "system": "Trader 3 (Energy)"
+      },
+      {
+        "ticker": "XOM",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Cited as a top performer on Barron's 2026 list (+22% YTD) and promoted by a user based on geopolitical tensions in January 2026. Shows relative strength.",
+        "system": "Trader 3 (Energy)"
+      },
+      {
+        "ticker": "CVX",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Highlighted as a top Dow performer (+21%) and mentioned for annual dividend increase in January 2026.",
+        "system": "Trader 3 (Energy)"
+      },
+      {
+        "ticker": "OXY",
+        "signal": "buy",
+        "confidence": "low",
+        "reason": "Explicit long signal from trader post: 'OXY 54 LONG \u2013 Oil ripping again'.",
+        "system": "Trader 3 (Energy)"
+      },
+      {
+        "ticker": "IBIT",
+        "signal": "sell",
+        "confidence": "low",
+        "reason": "Explicit short signal from trader post: 'IBIT 40.25 SHORT \u2013 With $BTC starting the day under 70k'.",
+        "system": "System 1 (Lottery)"
+      },
+      {
+        "ticker": "GME",
+        "signal": "watch",
+        "confidence": "low",
+        "reason": "Persistent community discussion noted; Michael Burry position disclosed, but price action near $24.10 with recent cross above 20-day SMA is mentioned without clear directional call.",
+        "system": "Trader 4 (Squeeze)"
+      },
+      {
+        "ticker": "AMC",
+        "signal": "sell",
+        "confidence": "medium",
+        "reason": "Price declining as volume increases approaching Feb 2 indenture amendments date, CEO compensation heavily tied to falling stock",
+        "system": "Squeeze"
+      },
+      {
+        "ticker": "SOFI",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Down 30% as market reprices aggressive 2026 growth stories, but 2026 guidance shows strong revenue/EBITDA targets",
+        "system": "Squeeze"
+      },
+      {
+        "ticker": "RIVN",
+        "signal": "buy",
+        "confidence": "medium",
+        "reason": "Q4 beat on revenue and loss, 2026 delivery guidance up 47-59% YoY, first full-year positive gross profit, chart shows higher highs/lows",
+        "system": "Squeeze"
+      },
+      {
+        "ticker": "LCID",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Spiked 60% on Uber robo-taxi partnership, strong delivery growth (72% Q4 YoY), Investor Day scheduled for March 12",
+        "system": "Squeeze"
+      },
+      {
+        "ticker": "NVDA",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "5% drop erasing $240-259B market cap despite record earnings and strong guidance; still shows strong institutional flow in options data",
+        "system": "Breakout"
+      },
+      {
+        "ticker": "AMZN",
+        "signal": "buy",
+        "confidence": "medium",
+        "reason": "Surged 87.03% in trade volume, strong institutional flow, aggressive $200B 2026 CapEx guidance for AI/cloud, expected >10% revenue growth",
+        "system": "Breakout"
+      },
+      {
+        "ticker": "GOOGL",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Downgraded to Neutral due to valuation at 28x EPS despite strong Cloud growth (+48%) and massive $175-185B 2026 AI CapEx plan",
+        "system": "Breakout"
+      },
+      {
+        "ticker": "TSLA",
+        "signal": "watch",
+        "confidence": "low",
+        "reason": "Trading ~20% below ATHs and ~12% lower YTD, in neutral zone $390-420, but shows 10.36% increase in options flow",
+        "system": "Breakout"
+      },
+      {
+        "ticker": "NFLX",
+        "signal": "buy",
+        "confidence": "medium",
+        "reason": "Multiple posts highlight NFLX as 'strongest stock in the market' with comeback from $70 to $100, beating Q4 revenue estimates ($12.05B vs $11.97B est) and providing positive FY2026 outlook",
+        "system": "Trader 5 (Breakout)"
+      },
+      {
+        "ticker": "COIN",
+        "signal": "watch",
+        "confidence": "low",
+        "reason": "Coinbase now offers U.S. users 24/5 stock and ETF trading alongside crypto, potentially expanding revenue streams",
+        "system": "Trader 4 (Squeeze)"
+      },
+      {
+        "ticker": "NVDA",
+        "signal": "sell",
+        "confidence": "medium",
+        "reason": "Michael Burry's Scion Capital bought put options on 1M shares per 13F filing",
+        "system": "Trader 5 (Breakout)"
+      },
+      {
+        "ticker": "PLTR",
+        "signal": "sell",
+        "confidence": "medium",
+        "reason": "Michael Burry's Scion Capital bought put options on 5M shares per 13F filing",
+        "system": "Trader 4 (Squeeze)"
+      },
+      {
+        "ticker": "SMCI",
+        "signal": "watch",
+        "confidence": "low",
+        "reason": "Article mentions it as one of the most shorted stocks and a potential short squeeze candidate for 2026",
+        "system": "Trader 4 (Squeeze)"
+      },
+      {
+        "ticker": "MSTR",
+        "signal": "buy",
+        "confidence": "medium",
+        "reason": "Completing 100th Bitcoin purchase, aggressive institutional accumulation despite market downturn, driving $1.2B demand surge with Bitcoin ETFs.",
+        "system": "System 1 (Lottery)"
+      },
+      {
+        "ticker": "IBIT",
+        "signal": "buy",
+        "confidence": "medium",
+        "reason": "Captured 57% of $1.1B Bitcoin ETF inflows over three sessions, part of institutional demand surge.",
+        "system": "System 1 (Lottery)"
+      },
+      {
+        "ticker": "UEC",
+        "signal": "buy",
+        "confidence": "medium",
+        "reason": "Goldman Sachs raised price target to $18 with Buy rating, strong 184% one-year return despite recent pullback, uranium theme gaining attention.",
+        "system": "Trader 3 (Energy)"
+      },
+      {
+        "ticker": "NVDA",
+        "signal": "buy",
+        "confidence": "high",
+        "reason": "Momentum divergence with 78% historical accuracy, breaking through $150 with volume, weekly consolidation suggests next leg up.",
+        "system": "Trader 5 (Breakout)"
+      },
+      {
+        "ticker": "NNE",
+        "signal": "watch",
+        "confidence": "low",
+        "reason": "Institutional ownership near 50% with accumulation since IPO, $5 buys per $1 sale, short-squeeze setup mentioned but dilution threat noted.",
+        "system": "Trader 4 (Squeeze)"
+      },
+      {
+        "ticker": "TSLA",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Article highlights Tesla building a tight consolidation beneath a breakout zone at $475, just below its all-time high, suggesting potential for a major breakout.",
+        "system": "Trader 5 (Breakout)"
+      }
+    ],
+    "catalysts": [
+      "potential generational buying opportunity in oil from geopolitics",
+      "February seasonality for Bitcoin (+14% average)",
+      "NFLX FY 2026 revenue guidance ($50.7B to $51.7B vs $50.98B est)",
+      "AMZN $200B 2026 CapEx for AI/cloud",
+      "Bitcoin price action relative to $70k level",
+      "SMCI Q2 2026 earnings",
+      "Tesla breaking above $475 resistance",
+      "Geopolitical tensions (US-Iran mentioned for XOM)",
+      "Potential short squeeze in SMCI",
+      "Gemini 3 launch",
+      "JPMorgan Q4 earnings report on Jan 13, 2026",
+      "Full implementation of Russia supply ban by end of 2027",
+      "Annual dividend increases in January 2026 (CVX, others)",
+      "LCID: March 12, 2026 Investor Day",
+      "NVDA effectively sold out through 2026",
+      "Coinbase expansion into equities trading",
+      "Potential short squeezes in high short-interest stocks in Q1 2026",
+      "Uranium spot price rebound in 2026 (driven by supply deficit)",
+      "GOOGL $175-185B 2026 AI CapEx plan",
+      "AMC: February 2 indenture amendments date",
+      "RIVN: R2 vehicle driving 2026 delivery growth",
+      "NVDA breakout above $150 with volume",
+      "Potential Fed interest rate cuts",
+      "U.S. government MOUs for AP1000 reactors"
+    ],
+    "risks": [
+      "MSTR 2026 performance concerns",
+      "Uranium trading off its January 2026 high above $101 (potential for pullback/consolidation).",
+      "NVDA price disconnect despite strong fundamentals",
+      "BTC options open interest at $71B vs $28B futures suggesting leverage risk",
+      "Tesla has lagged big-cap tech peers YTD",
+      "UEC pulled back 19.9% over past month",
+      "Bitcoin price volatility persists",
+      "TSLA technical weakness below key moving averages",
+      "MicroStrategy down $4.5B on Bitcoin holdings",
+      "Bitcoin severe correction breaking from S&P 500 correlation",
+      "SOFI down 30% on growth story repricing despite strong guidance",
+      "NFLX stock moving lower following earnings despite beating estimates",
+      "Inverse Cramer strategy showing 60% returns suggests following Cramer's advice may be risky",
+      "Michael Burry's bearish bets on major tech names",
+      "General advice warns against chasing extremely high-return trades, implying elevated risk in speculative moves.",
+      "Fed rate cuts being more or less aggressive than market expectations could cause volatility",
+      "Dilution threat for NNE",
+      "Bitcoin starting under $70k prompting short bias on IBIT",
+      "High CapEx pressuring free cash flow for GOOGL",
+      "General market warning signs from high call volume in QQQ/AAPL (historical post)",
+      "Market compressing multiples after massive runs",
+      "Bitcoin macro analysis suggests potential 'reversion' in 2026, which could imply a broader market pullback.",
+      "High short interest in SMCI",
+      "AMC price decline with increasing volume suggests distribution",
+      "Skepticism about quality of trading advice on social media (99% never made $1M trading)",
+      "GOOGL valuation concerns at 28x EPS"
+    ],
+    "hot_tickers": [
+      "UEC",
+      "OXY",
+      "GME",
+      "CVX",
+      "LCID",
+      "SPY",
+      "MSTR",
+      "IBIT",
+      "AMZN",
+      "XOM",
+      "PATH",
+      "DIA",
+      "AMC",
+      "USO",
+      "GRPN",
+      "NNE",
+      "NIO",
+      "SOFI",
+      "RIVN",
+      "SMCI",
+      "COIN",
+      "GOOGL",
+      "NFLX",
+      "PLTR",
+      "TSLA",
+      "ORCL",
+      "AVAV",
+      "Bitcoin",
+      "CCJ",
+      "OKLO",
+      "QQQ",
+      "UUUU",
+      "NVDA"
+    ]
+  },
+  {
+    "timestamp": "2026-03-11T15:35:28.331663",
+    "total_posts_scanned": 97,
+    "summary": "Posts focus on Bitcoin-related assets with mixed signals: MSTR faces heavy short interest and underperformance versus IBIT, while Bitcoin shows conflicting technical signals with both severe correction warnings and seasonal bullish patterns. Several posts reference 2026 price targets and market conditions. | Multiple posts highlight uranium's strong fundamentals with CCJ as a top pick, citing supply deficits, geopolitical risks, and government support. Bitcoin futures strategies are outperforming spot, while broader market commentary suggests potential reversion risks. Energy stocks like XOM show strong YTD performance. | Posts focus on energy sector strength with specific mentions of XOM and CVX benefiting from higher oil prices, while GME shows bearish technicals but persistent community interest. Several posts reference 2026 as a future timeframe with energy leading market gains. | Posts show mixed sentiment across squeeze plays with AMC facing continued price decline despite earnings beat, SOFI experiencing growth repricing and dilution concerns, while RIVN shows positive earnings momentum and LCID has a major partnership catalyst. Energy and breakout systems not mentioned in this batch. | Posts show mixed signals with strong institutional buying in NVDA and AMZN despite NVDA's recent 5% drop, while Lucid announces investor day and reports strong vehicle delivery growth. Alphabet faces valuation concerns despite AI momentum. | Posts show mixed sentiment on TSLA with historical performance data, strong bullish momentum for NFLX following earnings and recovery narrative, and platform announcements about expanded trading hours from Webull and Coinbase integration. NIO sentiment appears disconnected from TSLA comparisons. | Posts show mixed market signals with record trading volume ($1T/day), political trade analysis, and warnings about AI hype being potentially overblown. Multiple accounts promote options trading education and portfolio management strategies claiming high returns. Tariff policy scenarios are outlined with probabilistic market impacts. | Posts show Michael Burry taking bearish positions on NVDA and PLTR via put options, while general market commentary warns against following individual stock moves too closely. Unusual options activity is highlighted as a potential indicator of institutional positioning. | Posts highlight significant institutional options activity in financial and tech sectors, continued institutional Bitcoin accumulation via ETFs and MicroStrategy, and identify several high short-interest stocks as potential squeeze candidates. Nuclear energy stocks are gaining attention due to clean power demand and supply constraints. | Posts highlight MSTR's aggressive Bitcoin accumulation using preferred equity, Tesla's technical setup for a potential breakout, and NVDA facing resistance despite billionaire backing. General discussion on Fed rate impacts provides macro context.",
+    "overall_sentiment": "bullish",
+    "signals": [
+      {
+        "ticker": "MSTR",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Heavily shorted (14% of float), underperforming IBIT YTD (-45.2% vs -6.5%), but has March 2026 price target of $165 mentioned",
+        "system": "System 1 (Lottery)"
+      },
+      {
+        "ticker": "IBIT",
+        "signal": "watch",
+        "confidence": "low",
+        "reason": "Outperforming MSTR YTD, but technical analysis suggests waiting for bullish monthly candle before bottom-fishing",
+        "system": "System 1 (Lottery)"
+      },
+      {
+        "ticker": "Bitcoin",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Conflicting signals: February seasonality historically bullish (+14% average), but posts warn of severe correction from $126k to $60-65k range",
+        "system": "System 1 (Lottery)"
+      },
+      {
+        "ticker": "CCJ",
+        "signal": "buy",
+        "confidence": "high",
+        "reason": "Multiple posts highlight strong fundamentals, technical accumulation pattern, EPS growth forecasts (47% in 2026), and alignment of narrative, fundamentals, and technicals. Positioned as world's second-largest uranium miner with key assets and Westinghouse stake.",
+        "system": "Trader 3 (Energy)"
+      },
+      {
+        "ticker": "UEC",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Mentioned as a top performer in energy stocks over past month (SeekingAlpha), indicating momentum in uranium sector.",
+        "system": "Trader 3 (Energy)"
+      },
+      {
+        "ticker": "XOM",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Cited as a Barron's top 2026 pick with +22% YTD performance and mentioned in context of geopolitical trade recommendation.",
+        "system": "Trader 3 (Energy)"
+      },
+      {
+        "ticker": "Bitcoin",
+        "signal": "watch",
+        "confidence": "low",
+        "reason": "BTC futures roll strategies (2-5 month) are outperforming spot returns, suggesting institutional/tactical interest, but broader post warns of potential 'reversion' risk in 2026.",
+        "system": "System 1 (Lottery)"
+      },
+      {
+        "ticker": "XOM",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Multiple posts highlight XOM as a leader set to benefit from higher oil prices and frequently appearing in 2026 'best oil stocks' rankings.",
+        "system": "Trader 3 (Energy)"
+      },
+      {
+        "ticker": "CVX",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Mentioned as a top Dow performer in 2026 (+21%) and among companies with dividend increases; cited as set to benefit from higher prices.",
+        "system": "Trader 3 (Energy)"
+      },
+      {
+        "ticker": "OXY",
+        "signal": "watch",
+        "confidence": "low",
+        "reason": "Trader note mentions a long position at 54 with oil 'ripping' and watching for pullback entry if price holds VWAP.",
+        "system": "Trader 3 (Energy)"
+      },
+      {
+        "ticker": "GME",
+        "signal": "watch",
+        "confidence": "low",
+        "reason": "Exhibiting bearish technicals with recent decline, but persistent community discussion and speculation about potential interesting movement around Q2/May 2026.",
+        "system": "Trader 4 (Squeeze)"
+      },
+      {
+        "ticker": "AMC",
+        "signal": "sell",
+        "confidence": "medium",
+        "reason": "Price declining with increasing volume ahead of Feb 2 indenture amendments, despite Q3 earnings beat. Management compensation tied to falling stock.",
+        "system": "Squeeze"
+      },
+      {
+        "ticker": "SOFI",
+        "signal": "sell",
+        "confidence": "medium",
+        "reason": "Down 30%+ due to growth repricing for 2026, recent stock issuance causing dilution, though 2026 guidance remains strong.",
+        "system": "Squeeze"
+      },
+      {
+        "ticker": "RIVN",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Q4 beat on revenue and loss, first full-year positive gross profit, strong 2026 delivery guidance up 47-59% YoY, forming higher highs/lows.",
+        "system": "Squeeze"
+      },
+      {
+        "ticker": "LCID",
+        "signal": "buy",
+        "confidence": "high",
+        "reason": "60% pre-market spike on $300M Uber Robo-Taxi partnership announcement for U.S. service.",
+        "system": "Squeeze"
+      },
+      {
+        "ticker": "LCID",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Investor Day on March 12 and strong vehicle delivery growth (72% YoY Q4, 55% full year)",
+        "system": "Squeeze"
+      },
+      {
+        "ticker": "NVDA",
+        "signal": "buy",
+        "confidence": "medium",
+        "reason": "Led with 8.8K total trades, up 7.74%, maintaining dominant flow and consistent institutional buying despite recent 5% drop",
+        "system": "Breakout"
+      },
+      {
+        "ticker": "AMZN",
+        "signal": "buy",
+        "confidence": "medium",
+        "reason": "Surged 87.03% to 4.9K total trades, guided for $200B CapEx in 2026 focusing on AI",
+        "system": "Breakout"
+      },
+      {
+        "ticker": "GOOGL",
+        "signal": "watch",
+        "confidence": "low",
+        "reason": "Trading near $302.85 with strong AI growth but downgraded to Neutral due to valuation concerns at 28x EPS",
+        "system": "Breakout"
+      },
+      {
+        "ticker": "TSLA",
+        "signal": "watch",
+        "confidence": "low",
+        "reason": "Recorded 10.36% increase with 1.2K total trades, maintaining strong institutional interest",
+        "system": "Breakout"
+      },
+      {
+        "ticker": "NFLX",
+        "signal": "buy",
+        "confidence": "medium",
+        "reason": "Strong comeback story highlighted, with stock moving from $70 to $100 in a week following better-than-expected Q4 earnings and positive FY2026 outlook",
+        "system": "Breakout"
+      },
+      {
+        "ticker": "TSLA",
+        "signal": "watch",
+        "confidence": "low",
+        "reason": "Historical annual return data provided but no current price action or catalyst mentioned; sentiment appears neutral with some noting retail indifference compared to NIO",
+        "system": "Breakout"
+      },
+      {
+        "ticker": "COIN",
+        "signal": "watch",
+        "confidence": "low",
+        "reason": "Coinbase now offering stock/ETF trading alongside crypto, potentially expanding revenue streams, but no performance data provided",
+        "system": "Squeeze"
+      },
+      {
+        "ticker": "SPY",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Tariff policy scenarios suggest potential 0.1-1.5% moves depending on election outcomes",
+        "system": "System 1 (Lottery)"
+      },
+      {
+        "ticker": "NVDA",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Michael Burry's Scion Capital bought put options on 1M shares, indicating a notable bearish institutional bet.",
+        "system": "Trader 5 (Breakout)"
+      },
+      {
+        "ticker": "PLTR",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Michael Burry's Scion Capital bought put options on 5M shares, signaling a significant bearish institutional position.",
+        "system": "Trader 4 (Squeeze)"
+      },
+      {
+        "ticker": "MSTR",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Completing 100th Bitcoin purchase, reinforcing role as major corporate holder. Aggressive institutional buying noted alongside US Bitcoin ETFs.",
+        "system": "System 1 (Lottery)"
+      },
+      {
+        "ticker": "IBIT",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "BlackRock's IBIT captured 57% of recent $1.1B Bitcoin ETF inflow volume, signaling strong institutional demand.",
+        "system": "System 1 (Lottery)"
+      },
+      {
+        "ticker": "UEC",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Multiple articles discuss its strong past performance and favorable long-term outlook tied to nuclear power expansion and uranium supply tightness. Mentioned as a stock with bullish Wall Street views.",
+        "system": "Trader 3 (Energy)"
+      },
+      {
+        "ticker": "SMCI",
+        "signal": "watch",
+        "confidence": "low",
+        "reason": "Identified as a most-shorted stock and potential short squeeze candidate for 2026 if Q2 numbers improve.",
+        "system": "Trader 4 (Squeeze)"
+      },
+      {
+        "ticker": "NNE",
+        "signal": "watch",
+        "confidence": "low",
+        "reason": "Described as an emerging short-squeeze candidate with high short interest, analyst-indicated deep value, and institutional accumulation.",
+        "system": "Trader 4 (Squeeze)"
+      },
+      {
+        "ticker": "MSTR",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Company making one of its largest BTC purchases, funded via preferred equity with increased dividend rate to support during volatility. Institutional holdings expanding.",
+        "system": "System 1 (Lottery)"
+      },
+      {
+        "ticker": "TSLA",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Chart shows tight multi-timeframe consolidation beneath breakout zone at $475, just below all-time high. Stock has lagged big-cap tech but showing technical strength.",
+        "system": "Trader 5 (Breakout)"
+      },
+      {
+        "ticker": "NVDA",
+        "signal": "watch",
+        "confidence": "low",
+        "reason": "Stock described as hitting a ceiling, may stay under pressure until next earnings or GTC 2026. Billionaire backing noted but near-term resistance emphasized.",
+        "system": "Trader 5 (Breakout)"
+      }
+    ],
+    "catalysts": [
+      "RIVN R2 vehicle deliveries in 2026",
+      "Webull 24/5 overnight trading expansion",
+      "May 2026 for GME wedge resolution",
+      "NFLX FY2026 revenue guidance ($50.7B-$51.7B vs $50.98B est)",
+      "March 2026 price target for MSTR",
+      "Fed rate decisions",
+      "Uranium spot price rebound in 2026 driven by widening supply deficit and depleted utility inventories",
+      "AMZN $200B CapEx guidance for 2026",
+      "NANO Nuclear Energy (NNE) deployment target late 2029/early 2030",
+      "midterm election tariff decisions",
+      "Russia uranium supply ban fully kicks in end of 2027",
+      "JPMorgan Chase (JPM) Q4 2025 earnings report on Jan 13, 2026",
+      "Potential S&P 500 inclusion for MSTR in Q1 2026 (though considered unlikely)",
+      "AMC indenture amendments (Feb 2 date)",
+      "Lucid Investor Day (March 12, 2026)",
+      "GTC 2026 (for NVDA)",
+      "Annual dividend increases in January 2026",
+      "MSTR's continued Bitcoin accumulation strategy",
+      "Tesla breakout above $475",
+      "NVDA effectively sold out through 2026",
+      "Potential oil price spike holding",
+      "February seasonality for Bitcoin",
+      "Super Micro Computer (SMCI) Q2 2026 earnings",
+      "U.S. government $80 billion commitment to AP1000 reactors (benefits CCJ via Westinghouse stake)",
+      "LCID Uber partnership implementation",
+      "AI spending reality checks",
+      "political trading disclosures",
+      "Coinbase equities trading integration"
+    ],
+    "risks": [
+      "TSLA showing historical volatility with mixed annual returns",
+      "Growth stock repricing affecting SOFI valuation",
+      "AMC price decline with increasing volume suggests distribution",
+      "General warning from Jim Cramer that sudden individual stock moves can be arbitrary",
+      "MSTR S&P 500 inclusion considered near-impossible",
+      "GME showing bearish trend with ~10% decline over 30 days",
+      "Need to manage risk by selling into strength early per one post",
+      "Uranium trading off its January 2026 high above $101",
+      "market volatility from tariff policy uncertainty",
+      "Fed rate hikes potentially drawing capital away from stocks",
+      "AI enthusiasm may be overheating valuations",
+      "MSTR heavily shorted (14% of float)",
+      "AI spending hype may be too high per Wolfe Research warning",
+      "Uranium Energy (UEC) has seen a recent pullback (19.9% over past month)",
+      "General market sensitivity to interest rate changes",
+      "MicroStrategy (MSTR) faces regulatory scrutiny and lawsuits over trading practices",
+      "potential market drop mentioned by Aristotle Investments",
+      "Broad market reversion risk per macro commentary",
+      "MSTR underperforming IBIT significantly YTD",
+      "AMC management compensation heavily tied to underperforming stock",
+      "Potential social media-driven volatility for NFLX (mentioned Elon Musk criticism in Oct 2025)",
+      "NVDA dropped 5% erasing $240-259B market cap despite strong earnings",
+      "MSTR using costly preferred capital to fund Bitcoin bets",
+      "NVDA facing technical resistance/ceiling",
+      "Michael Burry's bearish bets on NVDA and PLTR via put options",
+      "Bitcoin may be guiding toward 'reversion' in 2026 versus 'lucky' sustained high valuations",
+      "Bitcoin severe correction warnings (50% drop from ATH)",
+      "SOFI dilution from stock issuance",
+      "Alphabet downgraded to Neutral due to valuation concerns at 28x EPS",
+      "High short interest in stocks like SMCI and NNE indicates bearish market sentiment",
+      "BlackRock potentially selling Bitcoin due to market stress"
+    ],
+    "hot_tickers": [
+      "GOOGL",
+      "UEC",
+      "AMZN",
+      "JPM",
+      "NIO",
+      "XOM",
+      "OXY",
+      "TSLA",
+      "NFLX",
+      "SMCI",
+      "CVX",
+      "BTC",
+      "GME",
+      "NNE",
+      "AMC",
+      "MSTR",
+      "NVDA",
+      "Bitcoin",
+      "RIVN",
+      "LCID",
+      "IBIT",
+      "CCJ",
+      "COIN",
+      "PLTR",
+      "SOFI"
+    ]
+  },
+  {
+    "timestamp": "2026-03-11T16:09:04.124276",
+    "total_posts_scanned": 97,
+    "summary": "The posts present conflicting signals about Bitcoin and related assets. There are warnings about MSTR facing pressure and Bitcoin corrections in 2026, countered by bullish long-term calls from Michael Saylor and seasonal data. A separate post hints at a generational buying opportunity in oil. | Social media discussion is heavily focused on uranium/energy stocks, particularly Cameco (CCJ), with bullish technical and fundamental analysis. Bitcoin analysis suggests a potential reversion scenario for 2026, while energy stocks like XOM show strong performance. | Posts highlight strong performance in energy stocks (CVX, XOM, OXY) and dividend increases in early 2026, with continued speculative interest in GME. Tech is noted as not leading the market rally, and oil is described as 'ripping' with higher prices benefiting majors. | Posts show mixed sentiment across meme stocks and growth names, with AMC leadership defending their compensation structure while acknowledging poor stock performance, SOFI receiving positive analyst coverage despite dilution concerns, and RIVN/LCID showing operational improvements and technical patterns suggesting potential reversals. | Posts highlight significant pre-market movement in LCID due to a partnership announcement, mixed sentiment around NVDA despite strong earnings, and major tech companies (AMZN, GOOGL) outlining aggressive 2026 capital expenditure plans focused on AI and cloud expansion. | Posts show strong institutional options flow in TSLA and NVDA, with TSLA posting a 10.36% gain and NVDA up 40.87%. NFLX is highlighted as a strong comeback story in 2026, with positive earnings and outlook. Sentiment around NIO suggests retail indifference to TSLA comparisons. | Posts show retail traders reporting strong profits from options and stock trading in 2025, with unusual_whales highlighting congressional trading activity and record U.S. stock trading volume hitting $1 trillion daily. The sentiment is generally bullish on active trading, with mentions of buying AI fear dips. | Citadel's Scott Rubner has reversed his bearish stance to bullish, citing washed-out sentiment and strong retail flows. Michael Burry's reported short positions on NVDA and PLTR create notable bearish signals. The 'inverse Cramer' strategy continues to show outperformance. | Posts focus on significant options activity in financial stocks, continued institutional Bitcoin accumulation via MSTR, and detailed analysis of uranium stocks (UEC, UUUU, CCJ, LEU) for energy sector positioning. Short squeeze potential is highlighted for SMCI and IBRX, though neither is on our watchlist. | Posts highlight significant institutional Bitcoin accumulation via MSTR's aggressive funding strategy, quantitative models signaling major breakout potential for mega-cap tech stocks (particularly NVDA, AMZN, TSLA), and analysis of how anticipated Fed rate cuts could broadly boost equities.",
+    "overall_sentiment": "bullish",
+    "signals": [
+      {
+        "ticker": "MSTR",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Post cites Peter Schiff warning of weak 2026 performance and potential index reclassification pressure.",
+        "system": "System 1 (Lottery)"
+      },
+      {
+        "ticker": "IBIT",
+        "signal": "watch",
+        "confidence": "low",
+        "reason": "Post advises against bottom-fishing unless a specific bullish monthly candle pattern appears; no clear signal present.",
+        "system": "System 1 (Lottery)"
+      },
+      {
+        "ticker": "Bitcoin",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Mixed evidence: severe correction warnings for 2026 vs. bullish seasonal data for February and long-term Saylor advocacy.",
+        "system": "System 1 (Lottery)"
+      },
+      {
+        "ticker": "CCJ",
+        "signal": "buy",
+        "confidence": "high",
+        "reason": "Multiple posts highlight textbook accumulation pattern, strong price action, alignment of fundamentals/narrative/technicals, world-class mine assets, stake in Westinghouse, and expected 47% EPS growth in 2026.",
+        "system": "Trader 3 (Energy)"
+      },
+      {
+        "ticker": "UEC",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Mentioned among top performing energy stocks and pre-market movers alongside CCJ, indicating sector momentum.",
+        "system": "Trader 3 (Energy)"
+      },
+      {
+        "ticker": "XOM",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Featured in Barron's top 2026 list with +22% YTD performance and mentioned in geopolitical trade context.",
+        "system": "Trader 3 (Energy)"
+      },
+      {
+        "ticker": "Bitcoin",
+        "signal": "watch",
+        "confidence": "low",
+        "reason": "Analysis suggests Bitcoin may be guiding toward a 'reversion' scenario in 2026 versus a 'lucky' extended bull scenario, implying caution.",
+        "system": "System 1 (Lottery)"
+      },
+      {
+        "ticker": "CVX",
+        "signal": "buy",
+        "confidence": "medium",
+        "reason": "Up 21% YTD in 2026, mentioned among best Dow performers; cited to benefit from higher oil prices and announced a dividend increase in January 2026.",
+        "system": "Trader 3 (Energy)"
+      },
+      {
+        "ticker": "XOM",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Frequently ranked among best oil stocks for 2026, set to benefit from higher prices, yield ~2.9% with production growth.",
+        "system": "Trader 3 (Energy)"
+      },
+      {
+        "ticker": "OXY",
+        "signal": "watch",
+        "confidence": "low",
+        "reason": "Noted as '54 LONG' with oil ripping; trader watching for pullback entry if price holds VWAP.",
+        "system": "Trader 3 (Energy)"
+      },
+      {
+        "ticker": "GME",
+        "signal": "watch",
+        "confidence": "low",
+        "reason": "Michael Burry disclosed a position; stock trading near $24.10 and crossed above 20-day SMA. Remains persistently discussed but not dominating like 2021.",
+        "system": "Trader 4 (Squeeze)"
+      },
+      {
+        "ticker": "AMC",
+        "signal": "watch",
+        "confidence": "low",
+        "reason": "CEO compensation tied to stock but share price has fallen dramatically; Q3 earnings beat but still negative EPS",
+        "system": "Squeeze"
+      },
+      {
+        "ticker": "SOFI",
+        "signal": "buy",
+        "confidence": "medium",
+        "reason": "Analyst positive on Q4 beat and strong 2026 guidance (+30% revenue growth, $1.6B EBITDA, $0.60 EPS) despite recent dilution",
+        "system": "Squeeze"
+      },
+      {
+        "ticker": "RIVN",
+        "signal": "buy",
+        "confidence": "medium",
+        "reason": "Q4 revenue beat, improved loss, strong 2026 delivery guidance (47-59% YoY growth), first full-year positive gross profit, higher highs/higher lows pattern",
+        "system": "Squeeze"
+      },
+      {
+        "ticker": "LCID",
+        "signal": "watch",
+        "confidence": "low",
+        "reason": "Strong delivery growth (72% Q4 YoY, 55% full year) and technical support at $10.75 trendline",
+        "system": "Squeeze"
+      },
+      {
+        "ticker": "LCID",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Spiked 60% in pre-market on announced $300M Robo-Taxi partnership with Uber. High volatility event.",
+        "system": "Squeeze"
+      },
+      {
+        "ticker": "NVDA",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Conflicting signals: posts note a 5% drop erasing massive market cap despite record earnings, but also highlight 'blowout performance' and being sold out through 2026.",
+        "system": "Breakout"
+      },
+      {
+        "ticker": "AMZN",
+        "signal": "buy",
+        "confidence": "medium",
+        "reason": "Posts cite expected >10% revenue growth in 2026, a $200B capex plan boosting AI/cloud, and chart analysis showing steady increase in bullish premium flow.",
+        "system": "Breakout"
+      },
+      {
+        "ticker": "GOOGL",
+        "signal": "buy",
+        "confidence": "medium",
+        "reason": "Trading near $302.85 with revenue crossing $400B, strong AI growth, and a outlined $175B-$185B 2026 CapEx plan.",
+        "system": "Breakout"
+      },
+      {
+        "ticker": "TSLA",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Strong institutional options flow with 10.36% increase and 1.2K trades; annual returns data provided but no immediate catalyst.",
+        "system": "Trader 5 (Breakout)"
+      },
+      {
+        "ticker": "NVDA",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "40.87% rise with 1.1K trades and strong institutional interest per options flow data.",
+        "system": "Trader 5 (Breakout)"
+      },
+      {
+        "ticker": "NFLX",
+        "signal": "buy",
+        "confidence": "high",
+        "reason": "Described as 'strongest stock in the market' and 'best comeback story' in 2026, with Q4 earnings beat and strong FY2026 outlook.",
+        "system": "Trader 5 (Breakout)"
+      },
+      {
+        "ticker": "COIN",
+        "signal": "watch",
+        "confidence": "low",
+        "reason": "Mentioned for offering 24/5 stock and ETF trading alongside crypto, potentially increasing platform utility.",
+        "system": "Trader 4 (Squeeze)"
+      },
+      {
+        "ticker": "NVDA",
+        "signal": "sell",
+        "confidence": "medium",
+        "reason": "Michael Burry's Scion Capital reportedly bought put options on 1M Nvidia shares per 13F filing",
+        "system": "Trader 5 (Breakout)"
+      },
+      {
+        "ticker": "PLTR",
+        "signal": "sell",
+        "confidence": "medium",
+        "reason": "Michael Burry's Scion Capital reportedly bought put options on 5M Palantir shares per 13F filing",
+        "system": "Trader 4 (Squeeze)"
+      },
+      {
+        "ticker": "MSTR",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Company continues aggressive Bitcoin accumulation (100th purchase, added 1,142 BTC) despite paper losses, indicating strong conviction. High institutional interest noted.",
+        "system": "System 1 (Lottery)"
+      },
+      {
+        "ticker": "UEC",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Featured in multiple uranium stock comparisons (vs. UUUU, vs. CCJ/LEU analysis), highlighting its position as a major producer with restarted operations. Sector is receiving focused analysis.",
+        "system": "Trader 3 (Energy)"
+      },
+      {
+        "ticker": "CCJ",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Featured in direct comparison analysis with Centrus Energy (LEU), indicating active investor evaluation within the uranium sector.",
+        "system": "Trader 3 (Energy)"
+      },
+      {
+        "ticker": "LEU",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Featured in direct comparison analysis with Cameco (CCJ), highlighting its role in supplying nuclear fuel components.",
+        "system": "Trader 3 (Energy)"
+      },
+      {
+        "ticker": "MSTR",
+        "signal": "buy",
+        "confidence": "high",
+        "reason": "Company executing one of its largest BTC purchases, funded via equity offerings with institutional backing (e.g., Amundi SA) growing, indicating strong conviction in Bitcoin strategy.",
+        "system": "System 1 (Lottery)"
+      },
+      {
+        "ticker": "NVDA",
+        "signal": "buy",
+        "confidence": "high",
+        "reason": "Quantitative models show 94% correlation with previous breakout patterns and detected momentum divergence with 78% historical accuracy over 1 month.",
+        "system": "Trader 5 (Breakout)"
+      },
+      {
+        "ticker": "TSLA",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Chart shows tight multi-timeframe consolidation beneath a key breakout zone at $475, near all-time highs, suggesting potential for a major move if resistance breaks.",
+        "system": "Trader 5 (Breakout)"
+      },
+      {
+        "ticker": "AMZN",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Included in quantitative models signaling unusual momentum convergence that historically precedes major moves for mega-caps.",
+        "system": "Trader 5 (Breakout)"
+      }
+    ],
+    "catalysts": [
+      "Oil price spike holding as potential rally catalyst for energy stocks",
+      "Q2 2026 earnings for SMCI (potential sentiment changer)",
+      "AMC Q3 2024 earnings results",
+      "RIVN R2 vehicle launch impact",
+      "Widening uranium supply deficit",
+      "February seasonality for Bitcoin",
+      "Annual dividend increases in January 2026 (CVX mentioned)",
+      "LCID U.S. Robo-Taxi service launch",
+      "SOFI 2026 financial guidance",
+      "Uranium spot price rebound in 2026",
+      "COIN expansion into 24/5 equities trading",
+      "RIVN 2026 delivery guidance (62K-67K vehicles)",
+      "Potential Fed interest rate cuts",
+      "February 2 date approaching for AMC indenture amendments",
+      "March seasonality (Rubner's bullish call)",
+      "NFLX FY 2026 revenue outlook ($50.7B to $51.7B)",
+      "Russia supply ban fully kicking in end of 2027",
+      "AMZN 2026 $200B capex deployment",
+      "Potential generational buying opportunity in oil (from TopTradersLive post)",
+      "Quantitative model-predicted breakouts in mega-cap tech over next 30 days",
+      "AI and cloud infrastructure expansion in 2026",
+      "MSTR's continued Bitcoin accumulation and funding strategy",
+      "Geopolitical tensions (US-Iran mentioned for XOM)",
+      "GOOGL 2026 $175B-$185B capex deployment",
+      "NVDA demand/supply dynamics through 2026",
+      "Potential short squeeze triggers for high short-interest stocks in 2026",
+      "U.S. government $80B commitment to AP1000 reactors",
+      "13F filings revealing institutional positions",
+      "Q1 2026 earnings season (JPM reports Jan 13, 2026)"
+    ],
+    "risks": [
+      "Inverse Cramer strategy continuing to outperform",
+      "Uranium trading off its January 2026 high above $101",
+      "Regulatory scrutiny and lawsuits mentioned around institutional trading of MSTR",
+      "NFLX stock moving lower post-earnings despite beat",
+      "Crypto volatility noted in MSTR's strategy",
+      "NVDA showing price weakness despite strong fundamentals ('gets no respect')",
+      "High capex plans (AMZN, GOOGL) could pressure margins if growth doesn't materialize",
+      "Bitcoin potentially guiding toward reversion vs. extended bull market",
+      "SOFI dilution from underwriters' option exercise",
+      "AMC stock price decline despite leadership commitment",
+      "Retail indifference to TSLA per NIO sentiment post",
+      "Bitcoin suffering a severe correction in 2026",
+      "MSTR facing pressure and potential index reclassification",
+      "Tech not leading market rally per Dow performance data",
+      "Market internals flashing warning signs per older Jared post (context: 2023)",
+      "SPY volatility compression at 3-month lows could precede increased volatility",
+      "Break between digital currency and traditional markets noted",
+      "General market compression after big runs mentioned",
+      "Michael Burry's bearish bets on NVDA and PLTR",
+      "LCID spike is a single-news event; sustainability uncertain",
+      "Market drop anticipated by some traders for entering option leaps",
+      "Market reaction if Fed rate cuts are more or less aggressive than expected",
+      "Cramer's comment about market lacking 'all the players it needs'",
+      "MSTR is down $4.5 billion on its Bitcoin holdings, showing significant volatility and paper losses",
+      "AMC negative EPS despite beating estimates",
+      "General market downturn context for Bitcoin purchases",
+      "AMC price decline amid increasing volume",
+      "BlackRock stock drop mentioned in context of broader market stress",
+      "S&P Composite 1500 Software & Services Index down ~20% per JPMorgan"
+    ],
+    "hot_tickers": [
+      "BTC",
+      "UEC",
+      "AMZN",
+      "IBIT",
+      "AMC",
+      "PLTR",
+      "NFLX",
+      "LEU",
+      "CVX",
+      "RIVN",
+      "SMCI",
+      "MSTR",
+      "NVDA",
+      "SOFI",
+      "SPY",
+      "QQQ",
+      "OXY",
+      "LCID",
+      "NIO",
+      "TSLA",
+      "XOM",
+      "JPM",
+      "COIN",
+      "GOOGL",
+      "Bitcoin",
+      "CCJ",
+      "IBRX",
+      "GME"
+    ]
+  },
+  {
+    "timestamp": "2026-03-11T19:04:07.593546",
+    "total_posts_scanned": 98,
+    "summary": "X posts show mixed signals for Bitcoin-related assets with conflicting price targets and institutional activity. MSTR faces bearish warnings about 2026 performance while IBIT shows significant institutional accumulation. Broader Bitcoin sentiment is divided between seasonal optimism and 2026 correction warnings. | X posts show strong focus on uranium/energy sector with bullish sentiment on CCJ and uranium stocks due to supply deficits and geopolitical factors. Mixed signals on broader markets with Bitcoin showing weakness while oil surges. Energy stocks like XOM are highlighted as strong performers. | Posts focus on energy sector strength with specific mentions of XOM and CVX benefiting from higher oil prices, while also noting continued speculative interest in GME. Several posts reference 2026 projections showing market strength and sector leadership. | Social media is focused on AMC's dilutive $150M stock offering and executive compensation concerns, while highlighting SOFI's strong fundamentals despite recent selloff and RIVN/LCID's potential turnaround stories in the EV space. | Posts show mixed tech sentiment with NVDA experiencing a significant drop despite strong fundamentals, while AMZN and GOOGL receive positive attention for AI-driven growth and massive capital expenditure plans. LCID shows technical support levels amid delivery growth. | Posts show mixed sentiment on TSLA with skepticism about future growth projections, while NFLX demonstrates strong recovery momentum with positive earnings and outlook. COIN gets attention for new trading capabilities. | Posts show retail traders reporting massive gains from options and shares, with one claiming +260% portfolio return in 2024. Unusual Whales highlights unusual options activity in BABA and releases congressional trading report. Record US stock trading volume of $1T/day indicates high market activity. | Posts discuss potential market impact of tariff decisions, highlight a pairs trading educational resource, and report on Michael Burry's bearish bets against NVDA and PLTR. Several posts mock Jim Cramer's poor historical stock picks. | Social media is highlighting unusual options activity and high short interest in specific stocks, with particular focus on uranium/nuclear energy stocks and Bitcoin-related assets. Multiple posts discuss potential short squeeze candidates and institutional positioning. | Posts focus on MicroStrategy's aggressive Bitcoin accumulation despite paper losses, quantitative models signaling major moves in mega-cap tech stocks, and analysis of how Fed rate cuts impact markets. NVDA shows strong technical breakout signals while MSTR continues its Bitcoin bet.",
+    "overall_sentiment": "bullish",
+    "signals": [
+      {
+        "ticker": "MSTR",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Conflicting signals: one post sets March 2026 PT at $165 while another warns of weak 2026 performance and index reclassification risk",
+        "system": "System 1 (Lottery)"
+      },
+      {
+        "ticker": "IBIT",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Jane Street disclosed holding 20.3M shares worth ~$790M in Q4 2025, showing institutional accumulation, but another post warns against bottom-fishing without bullish monthly candle",
+        "system": "System 1 (Lottery)"
+      },
+      {
+        "ticker": "Bitcoin",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Mixed signals: February seasonality historically positive (+14% average) with potential rally to $98K, but multiple posts warn of severe 2026 correction and decoupling from traditional markets",
+        "system": "System 1 (Lottery)"
+      },
+      {
+        "ticker": "CCJ",
+        "signal": "buy",
+        "confidence": "high",
+        "reason": "Multiple posts highlight textbook accumulation pattern, strong fundamentals, uranium supply deficit, and alignment of technicals/narrative/fundamentals",
+        "system": "Trader 3 (Energy)"
+      },
+      {
+        "ticker": "UEC",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Mentioned among top performing energy stocks and in uranium supply deficit discussions",
+        "system": "Trader 3 (Energy)"
+      },
+      {
+        "ticker": "LEU",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Included in uranium supply deficit discussion with warnings about 12x jump in utility needs",
+        "system": "Trader 3 (Energy)"
+      },
+      {
+        "ticker": "XOM",
+        "signal": "buy",
+        "confidence": "medium",
+        "reason": "Recommended buy on geopolitical tensions and showing +22% YTD performance in Barron's list",
+        "system": "Trader 3 (Energy)"
+      },
+      {
+        "ticker": "Bitcoin",
+        "signal": "watch",
+        "confidence": "low",
+        "reason": "Down 21% in 2026 with potential reversion signal mentioned",
+        "system": "System 1 (Lottery)"
+      },
+      {
+        "ticker": "XOM",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Multiple posts highlight XOM as a leader and beneficiary of higher oil prices, with one noting it's frequently in 'best oil stocks' rankings for 2026.",
+        "system": "Trader 3 (Energy)"
+      },
+      {
+        "ticker": "CVX",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Mentioned alongside XOM as set to benefit from higher prices, with dividend increase noted for early 2026.",
+        "system": "Trader 3 (Energy)"
+      },
+      {
+        "ticker": "OXY",
+        "signal": "watch",
+        "confidence": "low",
+        "reason": "Trader mentions '54 LONG' with oil ripping, watching for pullback entry if price holds VWAP.",
+        "system": "Trader 3 (Energy)"
+      },
+      {
+        "ticker": "GME",
+        "signal": "watch",
+        "confidence": "low",
+        "reason": "Two posts note continued discussion and speculation, with one mentioning Michael Burry's position and stock crossing above 20-day SMA.",
+        "system": "Trader 4 (Squeeze)"
+      },
+      {
+        "ticker": "AMC",
+        "signal": "sell",
+        "confidence": "medium",
+        "reason": "Announced $150M ATM stock offering, which is dilutive to shareholders. CEO compensation heavily tied to stock while price has fallen dramatically.",
+        "system": "Squeeze"
+      },
+      {
+        "ticker": "SOFI",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Strong Q4 beat and 2026 guidance showing 30% revenue growth, but stock down 30% due to sector repricing. Disconnect between fundamentals and price action.",
+        "system": "Squeeze"
+      },
+      {
+        "ticker": "RIVN",
+        "signal": "watch",
+        "confidence": "low",
+        "reason": "Trading at 2.9x sales vs Tesla's 15.8x, achieved first positive gross profit in 2025. Technicals showing higher highs/lows. 2026 seen as potential defining year.",
+        "system": "Squeeze"
+      },
+      {
+        "ticker": "LCID",
+        "signal": "watch",
+        "confidence": "low",
+        "reason": "Spiked 60% pre-market on $300M Uber robo-taxi partnership announcement. Potential catalyst for struggling EV company.",
+        "system": "Squeeze"
+      },
+      {
+        "ticker": "LCID",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Technical support identified at $10.75 from trendline, with Q4 vehicle deliveries up 72% year-over-year",
+        "system": "Squeeze"
+      },
+      {
+        "ticker": "NVDA",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "5% drop despite record earnings and strong guidance, creating potential oversold opportunity",
+        "system": "Breakout"
+      },
+      {
+        "ticker": "AMZN",
+        "signal": "buy",
+        "confidence": "high",
+        "reason": "Surged 87% in trading volume, expected 10%+ revenue growth driven by AI and cloud, guiding toward $200B CapEx in 2026",
+        "system": "Breakout"
+      },
+      {
+        "ticker": "GOOGL",
+        "signal": "buy",
+        "confidence": "medium",
+        "reason": "Trading near $302.85 with $403B revenue, Cloud +48% growth, and $175-185B AI-focused CapEx plan for 2026",
+        "system": "Breakout"
+      },
+      {
+        "ticker": "TSLA",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Analyst expresses skepticism about +40% EPS growth projections through 2030 given negative EV volume growth concerns",
+        "system": "Trader 5 (Breakout)"
+      },
+      {
+        "ticker": "NFLX",
+        "signal": "buy",
+        "confidence": "medium",
+        "reason": "Strong comeback story from $70 to $100 in a week, beating Q4 revenue estimates ($12.05B vs $11.97B est) with positive FY2026 outlook",
+        "system": "Trader 5 (Breakout)"
+      },
+      {
+        "ticker": "COIN",
+        "signal": "watch",
+        "confidence": "low",
+        "reason": "New capability allowing U.S. users to trade stocks/ETFs 24/5 alongside crypto holdings",
+        "system": "Trader 4 (Squeeze)"
+      },
+      {
+        "ticker": "BABA",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Unusual Whales reports traders targeting BABA above $170 by expiration based on options flow with average fill of 5.22",
+        "system": "Trader 5 (Breakout)"
+      },
+      {
+        "ticker": "NVDA",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Michael Burry's Scion Capital bought put options on 1M Nvidia shares, indicating a major bearish bet from a notable investor.",
+        "system": "Trader 5 (Breakout)"
+      },
+      {
+        "ticker": "PLTR",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Michael Burry's Scion Capital bought put options on 5M Palantir shares, signaling a significant short position.",
+        "system": "Trader 4 (Squeeze)"
+      },
+      {
+        "ticker": "MSTR",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Company completed 100th Bitcoin purchase, reinforcing role as major corporate holder; institutional activity drawing attention",
+        "system": "System 1 (Lottery)"
+      },
+      {
+        "ticker": "LEU",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Featured in comparison with CCJ as uranium stock analysis; part of nuclear energy sector discussion",
+        "system": "Trader 3 (Energy)"
+      },
+      {
+        "ticker": "CCJ",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Featured in comparison with LEU as uranium stock analysis; part of nuclear energy sector discussion",
+        "system": "Trader 3 (Energy)"
+      },
+      {
+        "ticker": "UEC",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Multiple posts discuss stock performance (+184% over past year), Wall Street bullish views, and uranium sector attention",
+        "system": "Trader 3 (Energy)"
+      },
+      {
+        "ticker": "SMCI",
+        "signal": "watch",
+        "confidence": "low",
+        "reason": "Mentioned as one of most shorted stocks and potential short squeeze candidate for 2026",
+        "system": "Trader 4 (Squeeze)"
+      },
+      {
+        "ticker": "MSTR",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Company purchased additional 1,142 BTC at $78,815 average, bringing total holdings to 714,644 BTC. Funding via preferred equity suggests continued aggressive Bitcoin accumulation despite being down $4.5B on position.",
+        "system": "System 1 (Lottery)"
+      },
+      {
+        "ticker": "NVDA",
+        "signal": "buy",
+        "confidence": "medium",
+        "reason": "Quantitative models show 94% correlation with previous breakout patterns, momentum divergence with 78% historical accuracy, and technical analysis suggests breaking through $150 with volume could signal significant upside.",
+        "system": "Trader 5 (Breakout)"
+      },
+      {
+        "ticker": "AMZN",
+        "signal": "watch",
+        "confidence": "low",
+        "reason": "Included in quantitative models showing unusual momentum convergence that historically precedes major moves, but no specific signals provided beyond general market analysis.",
+        "system": "Trader 5 (Breakout)"
+      },
+      {
+        "ticker": "TSLA",
+        "signal": "watch",
+        "confidence": "low",
+        "reason": "Mentioned in quantitative model analysis of mega-caps showing momentum convergence, but no specific trading signals provided.",
+        "system": "Trader 5 (Breakout)"
+      }
+    ],
+    "catalysts": [
+      "NVDA sold out through 2026",
+      "February seasonality for Bitcoin",
+      "2026 S&P 500 above 7,000 projection",
+      "Higher oil prices benefiting energy stocks",
+      "NVDA technical breakout above $150",
+      "Widening uranium supply deficit",
+      "Congress trading report release for 2025",
+      "JPMorgan Chase Q4 reporting on Jan 13, 2026",
+      "AMZN $200B CapEx in 2026",
+      "Geopolitical risks on Russian uranium supply",
+      "Uranium spot price rebound in 2026",
+      "AMC $150M ATM offering execution",
+      "TSLA 2026-2030 growth projections",
+      "GOOGL $175-185B CapEx in 2026",
+      "PDAC 2026 warnings about utility needs",
+      "BABA options expiration (specific date not provided)",
+      "Potential post-midterm tariff policy changes",
+      "NFLX FY2026 revenue outlook ($50.7B-$51.7B)",
+      "2026 market performance comparisons",
+      "Late 2029/early 2030 deployment timeline for NANO Nuclear Energy",
+      "MicroStrategy continued Bitcoin accumulation",
+      "Early 2026 dividend increases for CVX and others",
+      "Potential $98,000 Bitcoin rally",
+      "SOFI 2026 financial results",
+      "March 2026 price targets for MSTR",
+      "LCID Q4 delivery results",
+      "Rising oil prices (+123% in 2026)",
+      "RIVN 2026 operational progress",
+      "U.S. government MOUs for AP1000 reactors",
+      "Fed rate cuts",
+      "COIN's new stock trading platform integration",
+      "LCID Uber partnership implementation",
+      "Q2 numbers for SMCI (potential sentiment change)"
+    ],
+    "risks": [
+      "Large tech CapEx spending could pressure margins",
+      "AMC executive compensation concerns",
+      "Blue Owl withdrawal halt indicating market stress",
+      "Historical evidence of poor performance from Jim Cramer's picks",
+      "MSTR facing index reclassification pressure",
+      "Break between digital currency and traditional trading markets",
+      "Aristotle Investments waiting for market drop to enter more option leaps suggests expectation of correction",
+      "Analyst skepticism about TSLA's +40% EPS CAGR projections",
+      "Peter Schiff warning of weak 2026 performance for MSTR",
+      "Bitcoin severe correction predicted for 2026",
+      "High short interest in multiple stocks could lead to volatility",
+      "Fed rate cuts potentially not meeting market expectations",
+      "High retail trading volume could indicate frothy market conditions",
+      "Market internals flashing warning signs (from Jared post)",
+      "BlackRock potentially selling Bitcoin",
+      "NFLX experienced $15-25B market cap drop in Oct 2025 during boycott",
+      "MicroStrategy down $4.5B on Bitcoin position",
+      "Michael Burry's bearish bets on NVDA and PLTR",
+      "MSTR purchasing Bitcoin during market downturn",
+      "Potential market volatility from tariff decisions",
+      "NVDA 5% drop erasing $240-259B market cap despite strong fundamentals",
+      "SOFI multiple compression despite strong fundamentals",
+      "TSLA EV volume growth concerns (70% of profits)",
+      "VIX jumped 93% signaling rising global volatility",
+      "EV sector-wide repricing affecting all non-Tesla companies",
+      "Bitcoin down 21% in 2026",
+      "Need to manage risk into strength by selling doubles",
+      "AMC dilution from stock offering",
+      "Crypto volatility affecting MSTR preferred shares",
+      "Potential US stock market reversion",
+      "UEC showing 19.9% decline over past month despite yearly gains"
+    ],
+    "hot_tickers": [
+      "GME",
+      "SPY",
+      "AMZN",
+      "OXY",
+      "Bitcoin",
+      "NFLX",
+      "AMC",
+      "COIN",
+      "NVDA",
+      "GOOGL",
+      "LEU",
+      "UEC",
+      "CCJ",
+      "TSLA",
+      "BABA",
+      "NNE",
+      "BTC-USD",
+      "XOM",
+      "EOSE",
+      "IBIT",
+      "QQQ",
+      "CVX",
+      "LCID",
+      "SOFI",
+      "MSTR",
+      "RIVN",
+      "SMCI",
+      "NIO",
+      "PLTR"
+    ]
+  },
+  {
+    "timestamp": "2026-03-12T08:06:19.300291",
+    "total_posts_scanned": 98,
+    "summary": "X posts show significant institutional Bitcoin accumulation via MSTR and IBIT, with mixed signals about Bitcoin's 2026 trajectory. Energy sector commentary suggests a potential generational buying opportunity in oil. Technical analysis resources are being promoted for real-time market insights. | X posts show strong focus on uranium/energy sector with positive momentum for CCJ and UEC, while Bitcoin futures strategies outperformed spot. Mixed signals on broader market with crash warnings but AI stocks holding strong. | Posts focus on energy sector strength with political catalysts, mixed Bitcoin ETF sentiment, and continued speculative interest in GameStop. Energy stocks are highlighted for strong 2026 outlook and dividend increases. | The posts focus on AMC's $150M stock offering and executive compensation structure, SOFI's recent selloff despite strong guidance, and RIVN's positive earnings beat with bullish technical patterns. Mixed sentiment across different tickers with clear bearish pressure on AMC and SOFI, while RIVN shows strength. | Posts show mixed tech signals with NVDA experiencing a significant post-earnings selloff despite strong results, while AMZN and GOOGL receive positive attention for growth and AI investments. LCID shows extreme volatility with a 60% pre-market spike on partnership news. | Posts highlight strong performance in tech stocks, particularly GOOGL's historical returns and TSLA's strategic pivot to robotics/autonomy. Options flow shows institutional interest in TSLA and NVDA, while NFLX demonstrates a strong comeback story with positive earnings and outlook. | Coinbase has launched 24/5 stock and ETF trading for U.S. users, integrating equities with crypto in one app. Unusual Whales is offering AI-powered market analysis through Claude with real options and stock data. Record U.S. stock trading volume of $1 trillion per day is being reported. | Posts show conflicting institutional signals with Citadel turning bullish while hedge funds sell aggressively. Michael Burry's short positions on NVDA and PLTR create notable contrarian signals. Jim Cramer's poor track record continues to be highlighted as a reverse indicator. | Social media is highlighting unusual options activity as a smart money indicator, with specific focus on NVDA's bullish call options and analyst upgrades. Uranium stocks (particularly UEC) are receiving strong buy-and-hold recommendations due to operational expansion. MSTR continues its aggressive Bitcoin accumulation strategy. | Institutional Bitcoin accumulation is accelerating with $1.1B ETF inflows and MicroStrategy's large BTC purchase, while mega-cap tech stocks show mixed but generally positive price action. Market commentary focuses on Fed rate policy impacts across asset classes.",
+    "overall_sentiment": "bullish",
+    "signals": [
+      {
+        "ticker": "MSTR",
+        "signal": "buy",
+        "confidence": "high",
+        "reason": "Strategy Inc purchased 2,486 Bitcoin at ~$67,710 each via ATM program, demonstrating aggressive institutional accumulation.",
+        "system": "System 1 (Lottery)"
+      },
+      {
+        "ticker": "IBIT",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Jane Street ranked as top net buyer in Q4 2025, holding 20.3M shares, indicating institutional interest. However, a post cautions against bottom-fishing without a strong bullish monthly candle.",
+        "system": "System 1 (Lottery)"
+      },
+      {
+        "ticker": "Bitcoin",
+        "signal": "watch",
+        "confidence": "low",
+        "reason": "Conflicting signals: High BTC options OI ($71B) and institutional buying vs. posts warning of a severe 2026 correction and decoupling from equities.",
+        "system": "System 1 (Lottery)"
+      },
+      {
+        "ticker": "XOM",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "TopTradersLive calls for a generational buying opportunity in oil driven by geopolitics and incentives. Applies broadly to energy watchlist.",
+        "system": "Trader 3 (Energy)"
+      },
+      {
+        "ticker": "CVX",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "TopTradersLive calls for a generational buying opportunity in oil driven by geopolitics and incentives. Applies broadly to energy watchlist.",
+        "system": "Trader 3 (Energy)"
+      },
+      {
+        "ticker": "CCJ",
+        "signal": "buy",
+        "confidence": "medium",
+        "reason": "Multiple mentions including pre-market gap up, stock analysis for 2026, and focus in IBD report. Uranium market outlook positive with production forecast to 2040.",
+        "system": "Trader 3 (Energy)"
+      },
+      {
+        "ticker": "UEC",
+        "signal": "buy",
+        "confidence": "medium",
+        "reason": "Top performing energy stock in past month per SeekingAlpha, mentioned in pre-market gap up trading with uranium sector momentum.",
+        "system": "Trader 3 (Energy)"
+      },
+      {
+        "ticker": "XOM",
+        "signal": "watch",
+        "confidence": "low",
+        "reason": "Mixed signals - described as 'monster trade' but showing potential weakness as stock didn't rise with oil price increase of $10.",
+        "system": "Trader 3 (Energy)"
+      },
+      {
+        "ticker": "Bitcoin",
+        "signal": "buy",
+        "confidence": "medium",
+        "reason": "BTC futures strategies (5-month roll +13.5%) significantly outperforming spot Bitcoin, indicating strong forward market structure.",
+        "system": "System 1 (Lottery)"
+      },
+      {
+        "ticker": "OXY",
+        "signal": "buy",
+        "confidence": "medium",
+        "reason": "Trader mentions 'OXY 54 LONG \u2013 Oil ripping again' as a specific long position call",
+        "system": "Trader 3 (Energy)"
+      },
+      {
+        "ticker": "XOM",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Mentioned in Vanguard's 2026 outlook for energy alongside XLE and CVX as part of recommended allocation",
+        "system": "Trader 3 (Energy)"
+      },
+      {
+        "ticker": "CVX",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Highlighted in Vanguard's 2026 outlook and noted among companies kicking off 2026 with dividend increases",
+        "system": "Trader 3 (Energy)"
+      },
+      {
+        "ticker": "IBIT",
+        "signal": "sell",
+        "confidence": "low",
+        "reason": "Trader notes 'IBIT 40.25 SHORT' looking to fade a small early pop with BTC under 70k",
+        "system": "System 1 (Lottery)"
+      },
+      {
+        "ticker": "GME",
+        "signal": "watch",
+        "confidence": "low",
+        "reason": "Michael Burry position disclosure and persistent community discussion noted, but not dominating like 2021",
+        "system": "Trader 4 (Squeeze)"
+      },
+      {
+        "ticker": "AMC",
+        "signal": "sell",
+        "confidence": "high",
+        "reason": "$150M ATM stock offering announced, CEO admits stock price has fallen dramatically, dilution concerns",
+        "system": "Squeeze"
+      },
+      {
+        "ticker": "SOFI",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Down 30% despite strong 2026 guidance ($4.655B revenue, +30%), recent stock issuance completed, market repricing growth stories",
+        "system": "Squeeze"
+      },
+      {
+        "ticker": "RIVN",
+        "signal": "buy",
+        "confidence": "medium",
+        "reason": "Q4 beat on revenue and earnings, first full-year positive gross profit, bullish technical pattern with higher highs/lows, strong 2026 delivery guidance (47-59% YoY growth)",
+        "system": "Squeeze"
+      },
+      {
+        "ticker": "LCID",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "60% pre-market spike on $300M Uber robo-taxi partnership announcement, but extreme volatility suggests caution",
+        "system": "Squeeze"
+      },
+      {
+        "ticker": "NVDA",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "5% drop erasing $240-259B market cap despite record earnings and strong guidance, creating potential oversold opportunity",
+        "system": "Breakout"
+      },
+      {
+        "ticker": "AMZN",
+        "signal": "buy",
+        "confidence": "medium",
+        "reason": "Steady bullish premium flow, expected 10%+ revenue growth in 2026, strong AI investments and diversified ecosystem",
+        "system": "Breakout"
+      },
+      {
+        "ticker": "GOOGL",
+        "signal": "buy",
+        "confidence": "medium",
+        "reason": "Massive $175-185B 2026 CapEx plan for AI momentum, well above estimates, with strong cloud growth (+48%)",
+        "system": "Breakout"
+      },
+      {
+        "ticker": "GOOGL",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Historical annual performance data shows strong past returns, but no current trading signal provided",
+        "system": "Breakout"
+      },
+      {
+        "ticker": "TSLA",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Strategic pivot to robotics/autonomy noted, options flow shows 10.36% increase with institutional interest",
+        "system": "Breakout"
+      },
+      {
+        "ticker": "NVDA",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Options flow shows 40.87% rise with strong institutional interest",
+        "system": "Breakout"
+      },
+      {
+        "ticker": "NFLX",
+        "signal": "buy",
+        "confidence": "medium",
+        "reason": "Strong comeback story from $70 to $100 in a week, Q4 earnings beat estimates, positive FY2026 outlook",
+        "system": "Breakout"
+      },
+      {
+        "ticker": "COIN",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Coinbase expanding into stock trading could increase platform engagement and revenue streams, directly mentioned in multiple posts.",
+        "system": "Squeeze"
+      },
+      {
+        "ticker": "NVDA",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Michael Burry's Scion Capital bought put options on 1M shares, indicating a major institutional bearish bet",
+        "system": "Trader 5 (Breakout)"
+      },
+      {
+        "ticker": "PLTR",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Burry's short position via put options on 5M shares suggests significant bearish conviction",
+        "system": "Trader 4 (Squeeze)"
+      },
+      {
+        "ticker": "EOSE",
+        "signal": "watch",
+        "confidence": "low",
+        "reason": "Mentioned as up 295% over past year due to AI energy demand, but no current trading signal provided",
+        "system": "Trader 3 (Energy)"
+      },
+      {
+        "ticker": "NVDA",
+        "signal": "buy",
+        "confidence": "medium",
+        "reason": "Aggressive bullish options activity (NVDA260515C00200000 calls block) and analyst upgrades (Wedbush PT $300, JP Morgan PT $265) cited in premarket report.",
+        "system": "Breakout"
+      },
+      {
+        "ticker": "UEC",
+        "signal": "buy",
+        "confidence": "medium",
+        "reason": "Multiple articles highlight operational expansion (new header houses, refining plant) and present it as a great buy-and-hold opportunity within the uranium sector.",
+        "system": "Energy"
+      },
+      {
+        "ticker": "MSTR",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Completed its 100th Bitcoin purchase, reinforcing its role as a major corporate holder and indicating continued accumulation during market downturns.",
+        "system": "Lottery"
+      },
+      {
+        "ticker": "LEU",
+        "signal": "watch",
+        "confidence": "low",
+        "reason": "Mentioned as holding firm near its 21-day average and on the cusp of breaking out above a key technical range, though down from recent highs.",
+        "system": "Energy"
+      },
+      {
+        "ticker": "MSTR",
+        "signal": "buy",
+        "confidence": "medium",
+        "reason": "Aggressive Bitcoin accumulation with 3,015 BTC purchase funded by capital raises, signaling strong conviction and potential leverage to Bitcoin price moves.",
+        "system": "System 1 (Lottery)"
+      },
+      {
+        "ticker": "IBIT",
+        "signal": "buy",
+        "confidence": "medium",
+        "reason": "Captured 57% of recent $1.1B Bitcoin ETF inflow volume, indicating dominant institutional demand and liquidity injection.",
+        "system": "System 1 (Lottery)"
+      },
+      {
+        "ticker": "Bitcoin",
+        "signal": "buy",
+        "confidence": "medium",
+        "reason": "$1.2B demand surge from ETFs and MicroStrategy at critical technical juncture, suggesting potential regime change with institutional accumulation.",
+        "system": "System 1 (Lottery)"
+      },
+      {
+        "ticker": "NVDA",
+        "signal": "watch",
+        "confidence": "low",
+        "reason": "Showed strong price momentum (+2.68%) with high volume (174M shares), but post only provides price data without fundamental catalyst.",
+        "system": "Trader 5 (Breakout)"
+      },
+      {
+        "ticker": "AMZN",
+        "signal": "watch",
+        "confidence": "low",
+        "reason": "Positive price action (+0.17%) with high volume (53M shares), but no specific catalyst mentioned beyond general market data.",
+        "system": "Trader 5 (Breakout)"
+      },
+      {
+        "ticker": "MSFT",
+        "signal": "watch",
+        "confidence": "low",
+        "reason": "Modest gain (+0.11%) with solid volume, included in multiple price tracking posts but no unique catalyst identified.",
+        "system": "Trader 5 (Breakout)"
+      }
+    ],
+    "catalysts": [
+      "Q1 2026 for high short-interest stocks (potential squeeze period)",
+      "Vanguard's 2026 outlook projecting 4.9% to 6.9% returns for international stocks",
+      "SOFI 2026 financial guidance",
+      "Fed interest rate decisions",
+      "Generational buying opportunity in oil (geopolitics, incentives)",
+      "Bitcoin price action relative to 70k level",
+      "Next major Bitcoin resistance test",
+      "Real-time technical analysis session with Mark Newton CMT (today 2PM ET)",
+      "MicroStrategy future Bitcoin acquisitions",
+      "LCID Uber robo-taxi partnership implementation",
+      "Uranium market conditions shifting with price above $101 in Jan 2026",
+      "Lucid investor day (date unspecified)",
+      "Russia uranium ban fully kicking in end of 2027",
+      "Coinbase stock trading launch",
+      "AMC $150M stock offering",
+      "MSTR's ongoing Bitcoin accumulation strategy",
+      "NVDA AI demand through 2026",
+      "Production forecast to 2040 for uranium sector",
+      "NFLX FY2026 revenue outlook ($50.7B-$51.7B)",
+      "RIVN R2 vehicle launch supporting 2026 deliveries",
+      "President Trump's statement on U.S. oil companies investing in Venezuela's oil industry",
+      "TSLA's robotics/autonomy pivot in 2026",
+      "Unusual Whales AI market access launch",
+      "Q2 2026 earnings for SMCI (potential short squeeze catalyst)",
+      "AMZN 2026 revenue growth",
+      "GOOGL 2026 $175-185B CapEx deployment",
+      "Annual dividend increases in January 2026 for multiple companies"
+    ],
+    "risks": [
+      "NFLX stock initially moving lower post-earnings despite beat",
+      "Speculative nature of GME community-driven interest",
+      "Regulatory scrutiny for firms like Jane Street involved with MSTR",
+      "Caution against bottom-fishing IBIT without a strong bullish reversal signal",
+      "LCID extreme volatility could indicate speculative trading",
+      "XOM showing potential weakness despite oil price increases",
+      "Michael Burry's bearish bets on NVDA and PLTR",
+      "Jim Cramer's stock picks historically underperforming",
+      "AMC executive compensation tied to declining stock",
+      "High tech valuations may be vulnerable to sentiment shifts",
+      "Bitcoin may suffer a severe correction in 2026 per one post",
+      "Market repricing aggressive growth stories",
+      "Market internals flashing warning signs per older Jared post (though dated 2023)",
+      "Bitcoin starting day under 70k creating short pressure on IBIT",
+      "Hedge funds selling global equities at fastest pace since April 2025",
+      "General market selloffs (mentioned in context of LEU)",
+      "High market volume may indicate froth",
+      "TSLA facing weak vehicle demand",
+      "Rate cuts during economic slowdown could negatively impact stocks",
+      "SOFI stock price down 30% despite strong fundamentals",
+      "AMC dilution from ATM offering",
+      "MicroStrategy using costly preferred capital for purchases",
+      "Potential significant break between Bitcoin and traditional equity market performance",
+      "NVDA post-earnings selloff despite strong results suggests market skepticism",
+      "Uranium trading off January 2026 highs above $101",
+      "Biggest stock market crash in history may be starting in 2026 per KIYOSAKI warning",
+      "Fed rate hikes could drain liquidity from risk assets",
+      "Potential overextension into equities by crypto-focused platform",
+      "Bitcoin price action remains compressed despite inflows"
+    ],
+    "hot_tickers": [
+      "IBIT",
+      "MSTR",
+      "CCJ",
+      "LCID",
+      "UEC",
+      "TSLA",
+      "NFLX",
+      "META",
+      "AAPL",
+      "CVX",
+      "AMC",
+      "RIVN",
+      "Bitcoin",
+      "OXY",
+      "NVDA",
+      "EOSE",
+      "SMCI",
+      "SOFI",
+      "XOM",
+      "GOOGL",
+      "GME",
+      "ASML",
+      "AMZN",
+      "COIN",
+      "MSFT",
+      "PLTR"
+    ]
+  },
+  {
+    "timestamp": "2026-03-12T09:37:38.966523",
+    "total_posts_scanned": 98,
+    "summary": "X/Twitter posts show significant institutional Bitcoin accumulation by MicroStrategy ($MSTR) while Bitcoin ETFs experience massive outflows. Bitcoin is down sharply from its 2025 highs with unusual divergence from dollar weakness, but some see potential for a rebound based on seasonality. Energy sector commentary suggests a generational buying opportunity may be forming. | X/Twitter posts highlight strong momentum in energy/uranium stocks (particularly XOM and CCJ) with uranium market dynamics and AI power demand as key themes. Bitcoin-related content focuses on Stacks development and macro reversion risks. General market commentary notes muted indexes with AI and energy stocks showing relative strength. | Posts indicate strong energy sector momentum in 2026 driven by policy expectations and dividend increases, with continued speculative interest in GME. Market structure suggests Wave 3-5 progression with corporate cash flows and investment perks driving tech and builds later in 2026. | Posts show mixed signals with AMC announcing dilutive ATM offering while SOFI and RIVN report strong earnings beats and positive guidance. LCID shows speculative spike on partnership news. | Posts show strong institutional and retail focus on AI infrastructure stocks, particularly NVDA and AMZN, with positive earnings momentum and analyst upgrades. Lucid posts show operational progress but remain speculative. Mixed sentiment on GOOGL with valuation concerns. | Posts show strong institutional options flow in TSLA and NVDA, with TSLA pivoting toward robotics/autonomy amid weak vehicle demand. NFLX demonstrates strong momentum with positive earnings and a significant price recovery, while COIN expands into 24/5 stock trading alongside crypto. | Coinbase announces expansion into traditional stock trading with 8,000+ stocks and 24/5 trading, partnering with Yahoo Finance for real-time discovery. Meanwhile, hedge funds are selling global equities at the fastest pace since April 2025 according to Goldman Sachs data. Educational and tool-focused content dominates the remaining posts with options trading tutorials and AI trading bot capabilities. | Posts discuss potential tariff policy changes post-midterms with market impact scenarios, highlight Michael Burry's short positions on NVDA and PLTR, and reference energy storage company EOSE's performance. Mixed sentiment with bearish signals from notable investors. | Social media and financial news are highlighting unusual options activity in tech/AI stocks, persistent bullish sentiment around uranium/energy stocks due to supply-demand dynamics, and continued institutional interest in Bitcoin through corporate holdings. Short squeeze potential is being discussed for several heavily shorted stocks. | Posts discuss MicroStrategy's aggressive Bitcoin accumulation despite MSTR's significant stock decline, highlight NVDA's strong momentum signals from quantitative models, and analyze how Fed rate policies impact various asset classes including stocks and crypto.",
+    "overall_sentiment": "bullish",
+    "signals": [
+      {
+        "ticker": "MSTR",
+        "signal": "buy",
+        "confidence": "medium",
+        "reason": "Strategic institutional accumulation of 2,486 Bitcoin at ~$67.7k, funded via ATM program, shows strong conviction during market weakness.",
+        "system": "System 1 (Lottery)"
+      },
+      {
+        "ticker": "IBIT",
+        "signal": "watch",
+        "confidence": "low",
+        "reason": "Posts mention significant YTD outflows ($2.1B from IBIT alone) and price disconnect ($95 stock trading at $36), but no clear directional catalyst yet.",
+        "system": "System 1 (Lottery)"
+      },
+      {
+        "ticker": "Bitcoin",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Conflicting signals: sharp crash from ATHs, broken correlation with dollar weakness, but February seasonality historically positive (+14% avg) and potential for resolution-driven rally to $98k.",
+        "system": "System 1 (Lottery)"
+      },
+      {
+        "ticker": "XOM",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Highlighted as a 'monster trade' with +22% YTD per Barron's, but showing potential exhaustion on oil price moves.",
+        "system": "Trader 3 (Energy)"
+      },
+      {
+        "ticker": "CCJ",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Featured in IBD market commentary and a dedicated 2026 analysis post discussing uranium market outlook and production forecasts.",
+        "system": "Trader 3 (Energy)"
+      },
+      {
+        "ticker": "UEC",
+        "signal": "watch",
+        "confidence": "low",
+        "reason": "Listed among top performing energy stocks in past month per Seeking Alpha post.",
+        "system": "Trader 3 (Energy)"
+      },
+      {
+        "ticker": "Bitcoin",
+        "signal": "watch",
+        "confidence": "low",
+        "reason": "Mentioned in context of Stacks development (growth network) and macro reversion risk discussion, but no direct price signal.",
+        "system": "System 1 (Lottery)"
+      },
+      {
+        "ticker": "XOM",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Frequently mentioned in 2026 'best oil stocks' rankings, set to benefit from higher prices with ~2.9% yield and production growth",
+        "system": "Trader 3 (Energy)"
+      },
+      {
+        "ticker": "CVX",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Specifically mentioned alongside XOM as 'set to benefit massively' from higher oil prices in 2026 rankings",
+        "system": "Trader 3 (Energy)"
+      },
+      {
+        "ticker": "OXY",
+        "signal": "watch",
+        "confidence": "low",
+        "reason": "Trader mentioned '54 LONG' watching for pullback entry if price holds VWAP, oil ripping again",
+        "system": "Trader 3 (Energy)"
+      },
+      {
+        "ticker": "GME",
+        "signal": "watch",
+        "confidence": "low",
+        "reason": "Michael Burry disclosed position, stock trading near $24.10 and crossed above 20-day SMA, remains persistently discussed",
+        "system": "Trader 4 (Squeeze)"
+      },
+      {
+        "ticker": "AMC",
+        "signal": "sell",
+        "confidence": "medium",
+        "reason": "$150M ATM offering announced, dilutive to shareholders",
+        "system": "Squeeze"
+      },
+      {
+        "ticker": "SOFI",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Strong Q4 beat and positive 2026 guidance despite recent selloff",
+        "system": "Squeeze"
+      },
+      {
+        "ticker": "RIVN",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Q4 revenue beat, improved losses, positive gross profit for first time, strong delivery guidance",
+        "system": "Squeeze"
+      },
+      {
+        "ticker": "LCID",
+        "signal": "watch",
+        "confidence": "low",
+        "reason": "60% pre-market spike on $300M Uber partnership announcement, speculative move",
+        "system": "Squeeze"
+      },
+      {
+        "ticker": "NVDA",
+        "signal": "buy",
+        "confidence": "high",
+        "reason": "JPMorgan maintained Overweight rating post-earnings, massive revenue beats, sold out through 2026, dominant trading flow with 8.8K trades and 7.74% gain",
+        "system": "Breakout"
+      },
+      {
+        "ticker": "AMZN",
+        "signal": "buy",
+        "confidence": "high",
+        "reason": "Surged 87.03% to 4.9K trades, expected >10% revenue growth in 2026, $200B CapEx guidance for AI infrastructure, AWS re-acceleration",
+        "system": "Breakout"
+      },
+      {
+        "ticker": "LCID",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Announced upcoming Investor Day, delivered 5,345 vehicles in Q4 (up 72% YoY), 15,841 vehicles in 2025 (up 55% YoY)",
+        "system": "Squeeze"
+      },
+      {
+        "ticker": "GOOGL",
+        "signal": "watch",
+        "confidence": "low",
+        "reason": "Trading near $302.85 with strong AI growth, but downgraded to Neutral due to valuation at 28x EPS, mixed sentiment",
+        "system": "Breakout"
+      },
+      {
+        "ticker": "TSLA",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Strong institutional options flow (10.36% increase, 1.2K trades) and strategic pivot to robotics/autonomy, but facing weak vehicle demand.",
+        "system": "Trader 5 (Breakout)"
+      },
+      {
+        "ticker": "NVDA",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Strong institutional options flow (40.87% increase, 1.1K trades) indicating continued interest.",
+        "system": "Trader 5 (Breakout)"
+      },
+      {
+        "ticker": "NFLX",
+        "signal": "buy",
+        "confidence": "medium",
+        "reason": "Strong comeback story with price moving from $70 to $100 in a week, beating revenue estimates ($12.05B vs $11.97B est) and providing positive FY2026 outlook.",
+        "system": "Trader 5 (Breakout)"
+      },
+      {
+        "ticker": "COIN",
+        "signal": "watch",
+        "confidence": "low",
+        "reason": "Coinbase now offering 24/5 stock and ETF trading alongside crypto, potentially increasing platform utility.",
+        "system": "Trader 4 (Squeeze)"
+      },
+      {
+        "ticker": "COIN",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Coinbase expanding into stock trading could increase platform engagement and revenue diversification, but competitive landscape remains challenging.",
+        "system": "Squeeze"
+      },
+      {
+        "ticker": "NVDA",
+        "signal": "sell",
+        "confidence": "medium",
+        "reason": "Michael Burry's Scion Capital bought put options on 1M Nvidia shares per 13F filing",
+        "system": "Trader 5 (Breakout)"
+      },
+      {
+        "ticker": "PLTR",
+        "signal": "sell",
+        "confidence": "medium",
+        "reason": "Michael Burry goes short on PLTR with put options on 5M shares according to 13F filing",
+        "system": "Trader 4 (Squeeze)"
+      },
+      {
+        "ticker": "EOSE",
+        "signal": "watch",
+        "confidence": "low",
+        "reason": "Mentioned as up 295% over past year due to energy storage demand for AI platforms, but not on watchlist",
+        "system": "N/A"
+      },
+      {
+        "ticker": "NVDA",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Aggressive bullish options activity noted with specific call block NVDA260515C00200000; analysts maintain buy ratings with price targets significantly above current level.",
+        "system": "Breakout"
+      },
+      {
+        "ticker": "UEC",
+        "signal": "buy",
+        "confidence": "medium",
+        "reason": "Goldman Sachs raised price target to $18 with buy rating; uranium demand projected to outstrip supply due to AI power needs and nuclear energy expansion.",
+        "system": "Energy"
+      },
+      {
+        "ticker": "MSTR",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Completed 100th Bitcoin purchase, reinforcing role as major corporate Bitcoin holder; institutional activity in shares drawing attention.",
+        "system": "Lottery"
+      },
+      {
+        "ticker": "SMCI",
+        "signal": "watch",
+        "confidence": "low",
+        "reason": "Identified as potential short squeeze candidate for 2026; attractively valued with potential sentiment shift on Q2 numbers.",
+        "system": "Squeeze"
+      },
+      {
+        "ticker": "MSTR",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Company making large Bitcoin purchases but stock is in free fall, down ~66% from highs, trading at discount to peers. Aggressive funding via preferred shares indicates conviction but carries cost/risk.",
+        "system": "System 1 (Lottery)"
+      },
+      {
+        "ticker": "NVDA",
+        "signal": "buy",
+        "confidence": "high",
+        "reason": "Quantitative model shows 94% correlation with previous breakout patterns, identified as top-ranked momentum stock with strong signals.",
+        "system": "Trader 5 (Breakout)"
+      },
+      {
+        "ticker": "Bitcoin",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Experiencing tough period, crashed from $124k to ~$84k. MicroStrategy's large purchase indicates institutional accumulation but price volatility persists.",
+        "system": "System 1 (Lottery)"
+      }
+    ],
+    "catalysts": [
+      "RIVN 2026 delivery targets (62K-67K vehicles)",
+      "COIN's expansion into 24/5 stock trading",
+      "Uranium supply-demand imbalance",
+      "LCID Uber partnership implementation",
+      "MicroStrategy's continued Bitcoin accumulation",
+      "Unusual Whales MCP Server integration with AI assistants for live market data",
+      "Annual dividend increases in January 2026",
+      "Q2 numbers for SMCI",
+      "Stacks self-custodial staking development progress through 2026",
+      "NFLX FY 2026 revenue outlook ($50.7B to $51.7B)",
+      "Possible resolution-driven rally for Bitcoin targeting $98,000",
+      "AMZN 2026 AI infrastructure expansion",
+      "Wave 4 (Q3-Q4 2026): Investment perks drive builds and tech surges",
+      "February seasonality for Bitcoin",
+      "Wave 5 (Late 2026)",
+      "Q1 2026 earnings season (JPM kicks off Jan 13, 2026)",
+      "AMC ATM offering completion",
+      "NVDA fiscal Q4 2026 earnings (released Feb 25, 2026)",
+      "AI-driven power demand growth",
+      "NVDA momentum pattern convergence",
+      "Russia uranium ban fully kicking in end of 2027",
+      "Wave 3 (July-Sept 2026): Corp cash returns for buybacks and deals",
+      "Uranium production forecasts to 2040",
+      "AI power demand fueling critical minerals (2026 Critical Minerals report)",
+      "Lucid Investor Day (upcoming)",
+      "Potential generational buying opportunity in oil (geopolitics/incentives)",
+      "Coinbase stock trading platform launch in U.S.",
+      "potential easing of oil shock for market themes",
+      "GOOGL AI and cloud growth momentum",
+      "midterm elections outcome for tariff policy",
+      "Fed rate decisions (potential cuts)",
+      "U.S. oil companies investing in Venezuela's oil industry",
+      "TSLA's pivot to robotics and autonomy",
+      "SOFI 2026 financial results"
+    ],
+    "risks": [
+      "MSTR stock down 49.84% over 52 weeks and 62.41% over 6 months",
+      "Bitcoin erased $85B market cap in under 4 hours in Jan 2026",
+      "Increased competition in trading platforms as crypto firms expand into traditional markets",
+      "Oil price volatility causing muted broader market indexes",
+      "Hedge funds selling global equities at fastest pace since April 2025 (1.4% net selling through Feb. 19)",
+      "oil shock persistence",
+      "GOOGL valuation concerns at 28x EPS",
+      "S&P 500 above 7,000 for first time in early 2026 suggesting extended valuations",
+      "Lucid remains speculative despite growth",
+      "TSLA facing weak vehicle demand",
+      "NFLX stock initially moving lower post-earnings despite beats",
+      "Bitcoin ETFs bleeding ~$4.5B YTD with 5-week outflow streak",
+      "Bitcoin volatility impacting MSTR",
+      "SOFI stock issuance completed",
+      "tariffs being upheld could limit market gains",
+      "Regulatory scrutiny on trading practices (mentioned with Jane Street)",
+      "Fed policy uncertainty affecting all risk assets",
+      "AMC negative EPS despite beating estimates",
+      "Sharp ~50% crash from Oct 2025 ATH of ~$126k to $60k-$65k range",
+      "Bitcoin down 21% in 2026 despite dollar at 14-year lows (broken correlation)",
+      "Market volatility from institutional Bitcoin accumulation strategies",
+      "General market AI enthusiasm driving potential overvaluation",
+      "Bitcoin may be guiding toward 'reversion' rather than continued 'lucky' performance per macro analyst",
+      "Higher rates tempting capital away from stocks to defensive products",
+      "High short interest in several stocks could indicate bearish sentiment",
+      "AMC dilution via $150M stock offering",
+      "Michael Burry's bearish bets on NVDA and PLTR",
+      "RIVN still reporting losses despite improvement",
+      "XOM showing potential weakness by not rising on a $10 oil move",
+      "Market internals flashing warning signs per Jared's historical post about record call volume"
+    ],
+    "hot_tickers": [
+      "IBIT",
+      "OXY",
+      "MSTR",
+      "NFLX",
+      "GOOGL",
+      "PLTR",
+      "XOM",
+      "CCJ",
+      "HYG",
+      "ASML",
+      "SPY",
+      "RIVN",
+      "SOFI",
+      "EOSE",
+      "AMZN",
+      "QQQ",
+      "KRE",
+      "UEC",
+      "Bitcoin",
+      "CVX",
+      "TSLA",
+      "SMCI",
+      "GME",
+      "NVDA",
+      "TQQQ",
+      "LCID",
+      "AMC",
+      "COIN"
+    ]
+  },
+  {
+    "timestamp": "2026-03-12T10:34:52.906305",
+    "total_posts_scanned": 49,
+    "summary": "X/Twitter posts show significant bearish pressure on Bitcoin and related assets in 2026, with Bitcoin experiencing sharp corrections (~50% from ATH) and volatility. There's mixed sentiment on oil/generational buying opportunities, while technical warnings exist for bottom-fishing. The environment is described as risk-off with STEM turning red. | X posts focus on energy sector strength, particularly uranium/nuclear and traditional oil stocks, with specific attention to uranium market dynamics and political catalysts. Bitcoin analysis suggests potential reversion risk rather than continued 'lucky' market expansion. AI stocks remain strong but energy is competing for attention. | Posts discuss Chevron's subdued dividend growth due to lower oil prices, GameStop's bearish technicals and continued community speculation, and AMC's new $150M stock offering. Convex Finance is in consolidation, and general market outlooks are provided. | Posts focus on meme/EV stocks with mixed sentiment - AMC shows earnings beat but negative sentiment from former bulls, SOFI faces growth repricing and dilution concerns, RIVN shows operational progress but valuation skepticism, LCID spikes on partnership news while broader EV sector faces capital tightening. | Posts highlight strong AI-driven capital expenditure plans from Amazon and Alphabet, with Amazon guiding for ~$200B and Alphabet for $175-185B in 2026 CapEx. NVIDIA shows mixed signals with a recent 5% drop despite record earnings and strong demand, while Lucid reports significant vehicle delivery growth. Trading activity indicates institutional buying in NVDA and a surge in AMZN trades.",
+    "overall_sentiment": "mixed",
+    "signals": [
+      {
+        "ticker": "MSTR",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Peter Schiff warns of weak 2026 performance, MSCI weighing index reclassification, STRC's 11% dividend cited as stress signal",
+        "system": "System 1 (Lottery)"
+      },
+      {
+        "ticker": "IBIT",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Posts show IBIT trading at $36 vs. $95 target, technical warning against bottom-fishing without strong bullish monthly signal",
+        "system": "System 1 (Lottery)"
+      },
+      {
+        "ticker": "Bitcoin",
+        "signal": "watch",
+        "confidence": "high",
+        "reason": "Multiple posts describe severe correction (~50% from ATH), sharp drops to $60K-$65K range, $85B market cap erased in 4 hours, risk-off selling",
+        "system": "System 1 (Lottery)"
+      },
+      {
+        "ticker": "CCJ",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Multiple posts highlight Cameco analysis, uranium market outlook through 2040, and being 'in focus' alongside strong AI stocks",
+        "system": "Trader 3 (Energy)"
+      },
+      {
+        "ticker": "UEC",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Mentioned as top performing energy stock in past month according to SeekingAlpha quant ratings",
+        "system": "Trader 3 (Energy)"
+      },
+      {
+        "ticker": "XOM",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Described as 'monster trade' but showing potential weakness when oil rises $10 without stock moving up",
+        "system": "Trader 3 (Energy)"
+      },
+      {
+        "ticker": "Bitcoin",
+        "signal": "watch",
+        "confidence": "low",
+        "reason": "Analysis suggests Bitcoin may be guiding toward 'reversion' rather than continued 'lucky' expansion in 2026",
+        "system": "System 1 (Lottery)"
+      },
+      {
+        "ticker": "CVX",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Post mentions subdued dividend growth due to lower oil prices, indicating potential fundamental headwinds.",
+        "system": "Trader 3 (Energy)"
+      },
+      {
+        "ticker": "GME",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Posts note a bearish trend with ~10% decline over 30 days and price at ~$23.43, but also highlight persistent community discussion and speculation.",
+        "system": "Trader 4 (Squeeze)"
+      },
+      {
+        "ticker": "AMC",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Announced a $150M at-the-market (ATM) stock offering, which is typically dilutive to existing shareholders.",
+        "system": "Trader 4 (Squeeze)"
+      },
+      {
+        "ticker": "AMC",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Q3 2024 earnings beat expectations (-$0.04 vs -$0.07) but still negative EPS; sentiment shows former bulls turning bearish",
+        "system": "Squeeze"
+      },
+      {
+        "ticker": "SOFI",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Down 30% due to growth repricing for 2026, completed share issuance causing dilution, but maintains strong 2026 guidance (+30% revenue, $0.60 EPS)",
+        "system": "Squeeze"
+      },
+      {
+        "ticker": "RIVN",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Achieved first full-year positive gross profit in 2025, showing higher highs/lows on charts, but trading at 2.7x-2.8x forward sales with 'broken growth story' valuation",
+        "system": "Squeeze"
+      },
+      {
+        "ticker": "LCID",
+        "signal": "buy",
+        "confidence": "low",
+        "reason": "Spiked 60% pre-market on $300M Robo-Taxi partnership with Uber, planning U.S. service",
+        "system": "Squeeze"
+      },
+      {
+        "ticker": "AMZN",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Guiding for ~$200B in 2026 CapEx, highest ever, with AI momentum noted; YTD performance down -9% per Barron's, but trade volume surged 87.03%",
+        "system": "Breakout"
+      },
+      {
+        "ticker": "GOOGL",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Strong AI growth, revenue over $400B, 2026 CapEx plan of $175-185B, stock trading near $302.85",
+        "system": "Breakout"
+      },
+      {
+        "ticker": "NVDA",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "5% drop on Feb 26, 2026 erasing large market cap despite record earnings and strong guidance; still led with 8.8K trades and institutional buying",
+        "system": "Breakout"
+      },
+      {
+        "ticker": "LCID",
+        "signal": "watch",
+        "confidence": "low",
+        "reason": "Reported 72% Q4 delivery growth and 55% full-year growth, but no price action or trading context provided",
+        "system": "Squeeze"
+      }
+    ],
+    "catalysts": [
+      "U.S. oil companies potentially investing in revitalizing Venezuela's oil industry",
+      "AMC's $150M ATM stock offering agreement (announced Feb 9, 2026)",
+      "Russia uranium ban fully kicking in at end of 2027",
+      "Potential generational buying opportunity in oil from geopolitics",
+      "NVIDIA demand through 2026",
+      "SOFI 2026 guidance execution",
+      "AMC Q3 2024 earnings results",
+      "LCID Uber partnership implementation",
+      "February seasonality for Bitcoin (historically +14% average)",
+      "EV industry capital shift in 2026",
+      "2026 capital expenditure plans from AMZN and GOOGL",
+      "RIVN operational efficiency progress",
+      "Lucid vehicle delivery growth",
+      "2026 Critical Minerals Year-Ahead report focusing on AI power demand"
+    ],
+    "risks": [
+      "Uranium trading off January 2026 high above $101",
+      "Bitcoin suffering severe correction in 2026",
+      "AMZN YTD performance down -9%",
+      "Technical warnings against bottom-fishing",
+      "Lower oil prices pressuring Chevron (CVX) dividend growth",
+      "Bitcoin potentially indicating market reversion rather than continued expansion",
+      "RIVN valuation skepticism despite progress",
+      "Broader growth story repricing for 2026",
+      "EV sector capital tightening in 2026",
+      "MSCI considering MSTR index reclassification",
+      "STEM environment turned red",
+      "GameStop (GME) in a bearish trend with recent price decline",
+      "Risk-off selling in crypto markets",
+      "General outlook for subdued US stock returns (4-5%) vs. international",
+      "SOFI share dilution from underwriters' option exercise",
+      "XOM showing potential weakness despite oil price increases",
+      "High CapEx may pressure margins",
+      "NVIDIA stock dropped ~5% despite strong fundamentals",
+      "AMC earnings still negative despite beat",
+      "AMC's dilutive $150M stock offering"
+    ],
+    "hot_tickers": [
+      "CCJ",
+      "LCID",
+      "IBIT",
+      "RIVN",
+      "AMZN",
+      "MSTR",
+      "GME",
+      "ASML",
+      "AMC",
+      "SOFI",
+      "XOM",
+      "CVX",
+      "GOOGL",
+      "Bitcoin",
+      "NVDA",
+      "UEC"
+    ]
+  }
+]

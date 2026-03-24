@@ -1,0 +1,185 @@
+[2026-03-11 11:32:02] Starting Congress stock scan
+[2026-03-11 11:32:12] Gemini response: ```json
+{
+    "total_trades": 28,
+    "recent_buys": 9,
+    "recent_sells": 14,
+    "top_ticker": "AAPL",
+    "hot_tickers": [
+        "AAPL",
+        "GOOGL",
+        "NVDA"
+    ],
+    "notable_trade
+[2026-03-11 11:32:14] Congress scan complete: 28 trades, hot: ['AAPL', 'GOOGL', 'NVDA']
+[2026-03-11 11:32:15] Telegram alert sent
+[2026-03-11 12:32:05] Starting Congress stock scan
+[2026-03-11 12:32:05] No Tavily API key
+[2026-03-11 12:32:05] No Tavily API key
+[2026-03-11 12:32:05] No Congress trade data found
+[2026-03-11 13:31:00] Starting Congress stock scan
+[2026-03-11 13:31:00] No Tavily API key
+[2026-03-11 13:31:00] No Tavily API key
+[2026-03-11 13:31:00] No Congress trade data found
+[2026-03-11 14:38:02] Starting Congress stock scan
+[2026-03-11 14:38:10] Gemini response: ```json
+{
+    "total_trades": 22,
+    "recent_buys": 15,
+    "recent_sells": 3,
+    "top_ticker": "AAPL",
+    "hot_tickers": [
+        "AAPL",
+        "AMZN",
+        "NVDA",
+        "GOOGL",
+        
+[2026-03-11 14:38:13] Congress scan complete: 22 trades, hot: ['AAPL', 'AMZN', 'NVDA', 'GOOGL', 'BABA', 'AMD', 'ACN', 'UBER', 'ICE', 'NSRGY', 'GILD', 'NOW', 'SNDR', 'AWK', 'SPGI', 'PAYX', 'NOC', 'FLR', 'WAT', 'HSY', 'VST', 'VSNT', 'PYPL']
+[2026-03-11 14:38:14] Telegram alert sent
+[2026-03-11 14:52:07] Starting Congress stock scan
+[2026-03-11 14:52:07] No Tavily API key
+[2026-03-11 14:52:07] No Tavily API key
+[2026-03-11 14:52:07] No Congress trade data found
+[2026-03-11 15:37:32] Starting Congress stock scan
+[2026-03-11 15:37:43] Gemini response: ```json
+{
+  "total_trades": 30,
+  "recent_buys": 23,
+  "recent_sells": 0,
+  "top_ticker": "NVDA",
+  "hot_tickers": [
+    "NVDA",
+    "GOOGL",
+    "AMZN",
+    "VST",
+    "AAPL"
+  ],
+  "notable_trades":
+[2026-03-11 15:37:46] Congress scan complete: 30 trades, hot: ['NVDA', 'GOOGL', 'AMZN', 'VST', 'AAPL']
+[2026-03-11 15:37:46] Telegram alert sent
+[2026-03-11 16:11:05] Starting Congress stock scan
+[2026-03-11 16:11:13] Gemini response: ```json
+{
+    "total_trades": 17,
+    "recent_buys": 14,
+    "recent_sells": 1,
+    "top_ticker": "NVDA",
+    "hot_tickers": [
+        "NVDA",
+        "AMZN",
+        "GOOGL",
+        "VST",
+        "
+[2026-03-11 16:11:16] Congress scan complete: 17 trades, hot: ['NVDA', 'AMZN', 'GOOGL', 'VST', 'AB', 'BABA', 'AMD', 'ACN']
+[2026-03-11 16:11:16] Telegram alert sent
+[2026-03-11 19:06:01] Starting Congress stock scan
+[2026-03-11 19:06:08] Gemini response: ```json
+{
+    "total_trades": 21,
+    "recent_buys": 15,
+    "recent_sells": 1,
+    "top_ticker": "VST",
+    "hot_tickers": [
+        "VST",
+        "AB",
+        "NVDA",
+        "GOOGL",
+        "AMZ
+[2026-03-11 19:06:10] Congress scan complete: 21 trades, hot: ['VST', 'AB', 'NVDA', 'GOOGL', 'AMZN', 'HSY', 'AWK', 'SPGI', 'PAYX', 'JLL', 'MORN', 'MIDD', 'BJ', 'SGI', 'VIK', 'CLH', 'ACN', 'AMD', 'BABA', 'AAPL', 'PYPL']
+[2026-03-11 19:06:11] Telegram alert sent
+[2026-03-12 07:13:00] Quick scan: MSTR
+[2026-03-12 07:13:00] No Tavily API key
+[2026-03-12 07:28:02] Quick scan: MSTR
+[2026-03-12 07:28:02] No Tavily API key
+[2026-03-12 07:51:57] Quick scan: PELOSI
+[2026-03-12 07:57:05] Quick scan: NVDA
+[2026-03-12 07:58:02] Quick scan: NVDA
+[2026-03-12 08:01:17] Quick scan: PELOSIE
+[2026-03-12 08:08:24] Starting Congress stock scan
+[2026-03-12 08:08:35] Gemini response: ```json
+{
+    "total_trades": 37,
+    "recent_buys": 25,
+    "recent_sells": 4,
+    "top_ticker": "NVDA",
+    "hot_tickers": [
+        "NVDA",
+        "AAPL",
+        "PYPL",
+        "AMZN",
+        "
+[2026-03-12 08:08:38] Congress scan complete: 37 trades, hot: ['NVDA', 'AAPL', 'PYPL', 'AMZN', 'GOOGL', 'VST', 'VST', 'AB', 'NSRGY', 'GILD', 'NOW', 'SNDR', 'JLL', 'MORN', 'MIDD', 'BJ', 'SGI', 'VIK', 'CLH', 'HSY', 'AWK', 'SPGI', 'PAYX', 'NOC', 'FLR', 'ICE', 'UBER']
+[2026-03-12 08:08:39] Telegram alert sent
+[2026-03-12 08:35:58] Quick scan: NVDA
+[2026-03-12 09:39:47] Starting Congress stock scan
+[2026-03-12 09:39:57] Gemini response: ```json
+{
+    "total_trades": 34,
+    "recent_buys": 25,
+    "recent_sells": 0,
+    "top_ticker": "NVDA",
+    "hot_tickers": [
+        "NVDA",
+        "VST",
+        "GOOGL",
+        "AMZN",
+        "
+[2026-03-12 09:40:00] Congress scan complete: 34 trades, hot: ['NVDA', 'VST', 'GOOGL', 'AMZN', 'AAPL']
+[2026-03-12 09:40:01] Telegram alert sent
+[2026-03-12 10:19:31] Quick scan: PELOSI
+[2026-03-12 10:35:47] Starting Congress stock scan
+[2026-03-12 10:35:48] No Congress trade data found
+[2026-03-12 11:31:31] Starting Congress stock scan
+[2026-03-12 11:31:32] No Congress trade data found
+[2026-03-12 12:33:49] Starting Congress stock scan
+[2026-03-12 12:33:49] No Congress trade data found
+[2026-03-12 13:32:31] Starting Congress stock scan
+[2026-03-12 13:32:31] No Congress trade data found
+[2026-03-12 14:32:35] Starting Congress stock scan
+[2026-03-12 14:32:35] No Congress trade data found
+[2026-03-12 15:32:36] Starting Congress stock scan
+[2026-03-12 15:32:36] No Congress trade data found
+[2026-03-12 16:06:20] Starting Congress stock scan
+[2026-03-12 16:06:21] No Congress trade data found
+[2026-03-12 19:01:13] Starting Congress stock scan
+[2026-03-12 19:01:14] No Congress trade data found
+[2026-03-13 08:01:37] Starting Congress stock scan
+[2026-03-13 08:01:38] No Congress trade data found
+[2026-03-13 09:35:57] Starting Congress stock scan
+[2026-03-13 09:35:57] No Congress trade data found
+[2026-03-13 10:48:35] Starting Congress stock scan
+[2026-03-13 10:48:35] No Congress trade data found
+[2026-03-13 11:35:32] Starting Congress stock scan
+[2026-03-13 11:35:32] No Congress trade data found
+[2026-03-13 12:31:51] Starting Congress stock scan
+[2026-03-13 12:31:52] No Congress trade data found
+[2026-03-13 13:34:48] Starting Congress stock scan
+[2026-03-13 13:34:49] No Congress trade data found
+[2026-03-13 14:33:54] Starting Congress stock scan
+[2026-03-13 14:33:54] No Congress trade data found
+[2026-03-13 15:33:11] Starting Congress stock scan
+[2026-03-13 15:33:12] No Congress trade data found
+[2026-03-13 16:06:24] Starting Congress stock scan
+[2026-03-13 16:06:25] No Congress trade data found
+[2026-03-13 19:01:36] Starting Congress stock scan
+[2026-03-13 19:01:36] No Congress trade data found
+[2026-03-14 10:01:51] Starting Congress stock scan
+[2026-03-14 10:01:52] No Congress trade data found
+[2026-03-15 10:02:06] Starting Congress stock scan
+[2026-03-15 10:02:07] No Congress trade data found
+[2026-03-16 08:01:56] Starting Congress stock scan
+[2026-03-16 08:01:56] No Congress trade data found
+[2026-03-16 09:31:44] Starting Congress stock scan
+[2026-03-16 09:31:45] No Congress trade data found
+[2026-03-16 10:32:09] Starting Congress stock scan
+[2026-03-16 10:32:10] No Congress trade data found
+[2026-03-16 11:35:39] Starting Congress stock scan
+[2026-03-16 11:35:40] No Congress trade data found
+[2026-03-16 16:07:37] Starting Congress stock scan
+[2026-03-16 16:07:37] No Congress trade data found
+[2026-03-16 19:02:45] Starting Congress stock scan
+[2026-03-16 19:02:45] No Congress trade data found
+[2026-03-17 08:01:45] Starting Congress stock scan
+[2026-03-17 08:01:45] No Congress trade data found
+[2026-03-23 14:49:03] Starting Congress stock scan
+[2026-03-23 14:49:03] No Congress trade data found

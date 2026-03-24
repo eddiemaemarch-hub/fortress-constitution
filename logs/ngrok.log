@@ -1,0 +1,20 @@
+t=2026-03-18T14:14:24-0400 lvl=info msg="no configuration paths supplied"
+t=2026-03-18T14:14:24-0400 lvl=info msg="using configuration at default config path" path=/Users/eddiemae/.config/ngrok/ngrok.yml
+t=2026-03-18T14:14:24-0400 lvl=info msg="open config file" path=/Users/eddiemae/.config/ngrok/ngrok.yml err=nil
+t=2026-03-18T14:14:24-0400 lvl=info msg="FIPS 140 mode" enabled=false
+t=2026-03-18T14:14:24-0400 lvl=info msg="starting web service" obj=web addr=127.0.0.1:4040 allow_hosts=[]
+t=2026-03-18T14:14:25-0400 lvl=info msg="client session established" obj=tunnels.session
+t=2026-03-18T14:14:25-0400 lvl=info msg="tunnel session started" obj=tunnels.session
+t=2026-03-18T14:14:25-0400 lvl=info msg="update available" obj=updater
+t=2026-03-18T14:14:25-0400 lvl=info msg="started tunnel" obj=tunnels name=command_line addr=http://localhost:3001 url=https://judy-stalagmitical-willy.ngrok-free.dev
+t=2026-03-18T14:14:29-0400 lvl=info msg=start pg=/api/tunnels id=910ae04a83b652c4
+t=2026-03-18T14:14:29-0400 lvl=info msg=end pg=/api/tunnels id=910ae04a83b652c4 status=200 dur=172.583µs
+t=2026-03-18T14:15:54-0400 lvl=info msg=start pg=/api/tunnels id=986f7140f1be0cc2
+t=2026-03-18T14:15:54-0400 lvl=info msg=end pg=/api/tunnels id=986f7140f1be0cc2 status=200 dur=426.5µs
+t=2026-03-18T14:15:55-0400 lvl=info msg="join connections" obj=join id=77540f7ccafd l=127.0.0.1:3001 r=[2600:8807:c2d4:2d00:706a:382f:e9ec:6cb9]:56226
+t=2026-03-18T14:24:42-0400 lvl=info msg=start pg=/api/tunnels id=1c208b6a9204bea6
+t=2026-03-18T14:24:42-0400 lvl=info msg=end pg=/api/tunnels id=1c208b6a9204bea6 status=200 dur=510.625µs
+t=2026-03-18T14:24:43-0400 lvl=info msg="join connections" obj=join id=55879ed2b285 l=127.0.0.1:3001 r=[2600:8807:c2d4:2d00:706a:382f:e9ec:6cb9]:56784
+t=2026-03-18T14:29:00-0400 lvl=info msg="received stop request" obj=app stopReq="{err:<nil> restart:false}"
+t=2026-03-18T14:29:00-0400 lvl=info msg="session closing" obj=tunnels.session err=nil
+t=2026-03-18T14:29:00-0400 lvl=info msg="accept failed" obj=tunnels.session obj=csess id=911029b381d9 err="reconnecting session closed"

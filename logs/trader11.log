@@ -1,0 +1,34 @@
+[2026-03-11 15:31:10] [SYS11] QQQ Collar Score: 60 | Close: $606.63 | RSI: 52.1 | Vol: 16.2%
+[2026-03-11 15:31:12] [SYS11] No suitable LEAP call found
+[2026-03-12 09:31:18] [SYS11] QQQ Collar Score: 60 | Close: $603.01 | RSI: 46.0 | Vol: 16.3%
+[2026-03-12 09:31:21] [SYS11] No suitable LEAP call found
+[2026-03-12 10:31:10] [SYS11] QQQ Collar Score: 60 | Close: $598.94 | RSI: 43.5 | Vol: 16.9%
+[2026-03-12 10:31:12] [SYS11] No suitable LEAP call found
+[2026-03-12 11:30:01] [SYS11] IBKR connection failed: [Errno 61] Connect call failed ('127.0.0.1', 7497)
+[2026-03-12 12:32:06] [SYS11] QQQ Collar Score: 60 | Close: $599.42 | RSI: 43.8 | Vol: 16.8%
+[2026-03-12 12:32:09] [SYS11] No suitable LEAP call found
+[2026-03-12 13:31:04] [SYS11] QQQ Collar Score: 60 | Close: $600.22 | RSI: 44.3 | Vol: 16.7%
+[2026-03-12 13:31:06] [SYS11] No suitable LEAP call found
+[2026-03-12 14:31:06] [SYS11] QQQ Collar Score: 60 | Close: $599.31 | RSI: 43.8 | Vol: 16.8%
+[2026-03-12 14:31:08] [SYS11] No suitable LEAP call found
+[2026-03-12 15:31:08] [SYS11] QQQ Collar Score: 60 | Close: $599.25 | RSI: 43.7 | Vol: 16.8%
+[2026-03-12 15:31:10] [SYS11] No suitable LEAP call found
+[2026-03-13 09:33:17] [SYS11] QQQ Collar Score: 60 | Close: $600.35 | RSI: 49.3 | Vol: 15.7%
+[2026-03-13 10:46:59] [SYS11] QQQ Collar Score: 60 | Close: $597.53 | RSI: 47.3 | Vol: 15.6%
+[2026-03-13 10:47:01] [SYS11] No suitable LEAP call found
+[2026-03-13 11:33:40] [SYS11] QQQ Collar Score: 60 | Close: $595.33 | RSI: 45.8 | Vol: 15.7%
+[2026-03-13 11:33:55] [SYS11] LEAP cost $7875 exceeds allocation $6900
+[2026-03-13 12:30:02] [SYS11] IBKR connection failed: [Errno 61] Connect call failed ('127.0.0.1', 7497)
+[2026-03-13 12:30:02] [SYS11] IBKR connection failed: [Errno 61] Connect call failed ('127.0.0.1', 7497)
+[2026-03-13 13:32:52] [SYS11] QQQ Collar Score: 60 | Close: $594.81 | RSI: 45.5 | Vol: 15.7%
+[2026-03-13 13:33:06] [SYS11] LEAP cost $8150 exceeds allocation $6900
+[2026-03-13 14:32:06] [SYS11] QQQ Collar Score: 60 | Close: $594.47 | RSI: 45.3 | Vol: 15.7%
+[2026-03-13 14:32:20] [SYS11] LEAP cost $8050 exceeds allocation $6900
+[2026-03-13 15:31:22] [SYS11] IBKR connection failed: 
+[2026-03-13 15:31:30] [SYS11] IBKR connection failed: 
+[2026-03-16 09:30:02] [SYS11] IBKR connection failed: [Errno 61] Connect call failed ('127.0.0.1', 7497)
+[2026-03-16 09:30:02] [SYS11] IBKR connection failed: [Errno 61] Connect call failed ('127.0.0.1', 7497)
+[2026-03-16 10:30:02] [SYS11] IBKR connection failed: [Errno 61] Connect call failed ('127.0.0.1', 7497)
+[2026-03-16 10:30:02] [SYS11] IBKR connection failed: [Errno 61] Connect call failed ('127.0.0.1', 7497)
+[2026-03-16 11:32:10] [SYS11] QQQ Collar Score: 60 | Close: $601.74 | RSI: 46.0 | Vol: 16.5%
+[2026-03-16 11:32:25] [SYS11] LEAP cost $8120 exceeds allocation $6900

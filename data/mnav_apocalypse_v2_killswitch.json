@@ -1,0 +1,283 @@
+{
+  "test_name": "mNAV Mean Reversion Apocalypse v2 \u2014 WITH 0.75x Kill Switch",
+  "timestamp": "2026-03-20T12:59:12.375186",
+  "parameters": {
+    "btc_price": 70000.0,
+    "nav_per_share": 138.27,
+    "starting_premium": 2.5,
+    "starting_mstr": 345.66,
+    "leap_portfolio": 5000.0,
+    "safety_strikes": [
+      100,
+      200,
+      500
+    ],
+    "spec_strikes": [
+      1000,
+      1500
+    ],
+    "kill_switch_threshold": 0.75,
+    "kill_switch_reset": 1.0,
+    "volatility": 1.0,
+    "risk_free_rate": 0.045,
+    "T_years": 1.84
+  },
+  "reference_values": {
+    "safety_pool_at_2_5x": 64629.71,
+    "spec_pool_at_2_5x": 15732.84,
+    "total_portfolio_at_2_5x": 80362.55
+  },
+  "kill_point_analysis": {
+    "premium": 0.75,
+    "mstr_price": 103.7,
+    "portfolio_total": 12276.78,
+    "portfolio_retained_pct": 15.3,
+    "safety_pool": {
+      "100": {
+        "bs_value": 5515.53,
+        "intrinsic": 369.89,
+        "has_intrinsic": true
+      },
+      "200": {
+        "bs_value": 3736.72,
+        "intrinsic": 0,
+        "has_intrinsic": false
+      },
+      "500": {
+        "bs_value": 1756.07,
+        "intrinsic": 0,
+        "has_intrinsic": false
+      }
+    },
+    "safety_total": 11008.31,
+    "spec_pool": {
+      "1000": {
+        "bs_value": 803.99,
+        "intrinsic": 0,
+        "has_intrinsic": false
+      },
+      "1500": {
+        "bs_value": 464.48,
+        "intrinsic": 0,
+        "has_intrinsic": false
+      }
+    },
+    "spec_total": 1268.47,
+    "safety_loss_pct": 83.0,
+    "spec_loss_pct": 91.9,
+    "safety_100_still_itm": true
+  },
+  "scenarios": [
+    {
+      "premium": 2.5,
+      "mstr_price": 345.66,
+      "without_kill_switch": {
+        "portfolio_total": 80362.55,
+        "loss_pct": -0.0,
+        "safety_loss_pct": 0.0,
+        "spec_loss_pct": 0.0,
+        "safety_net_failed": false,
+        "verdict": "PASS"
+      },
+      "with_kill_switch": {
+        "portfolio_total": 80362.55,
+        "loss_pct": -0.0,
+        "kill_switch_fired": false,
+        "exit_premium": 2.5,
+        "capital_preserved_at": "N/A",
+        "verdict": "PASS"
+      },
+      "capital_saved": 0.0,
+      "capital_saved_pct": 0.0
+    },
+    {
+      "premium": 2.0,
+      "mstr_price": 276.53,
+      "without_kill_switch": {
+        "portfolio_total": 57986.85,
+        "loss_pct": 27.8,
+        "safety_loss_pct": 26.2,
+        "spec_loss_pct": 34.6,
+        "safety_net_failed": false,
+        "verdict": "PASS"
+      },
+      "with_kill_switch": {
+        "portfolio_total": 57986.85,
+        "loss_pct": 27.8,
+        "kill_switch_fired": false,
+        "exit_premium": 2.0,
+        "capital_preserved_at": "N/A",
+        "verdict": "PASS"
+      },
+      "capital_saved": 0.0,
+      "capital_saved_pct": 0.0
+    },
+    {
+      "premium": 1.5,
+      "mstr_price": 207.4,
+      "without_kill_switch": {
+        "portfolio_total": 37545.48,
+        "loss_pct": 53.3,
+        "safety_loss_pct": 50.9,
+        "spec_loss_pct": 63.2,
+        "safety_net_failed": false,
+        "verdict": "PASS"
+      },
+      "with_kill_switch": {
+        "portfolio_total": 37545.48,
+        "loss_pct": 53.3,
+        "kill_switch_fired": false,
+        "exit_premium": 1.5,
+        "capital_preserved_at": "N/A",
+        "verdict": "PASS"
+      },
+      "capital_saved": 0.0,
+      "capital_saved_pct": 0.0
+    },
+    {
+      "premium": 1.0,
+      "mstr_price": 138.27,
+      "without_kill_switch": {
+        "portfolio_total": 19774.78,
+        "loss_pct": 75.4,
+        "safety_loss_pct": 73.2,
+        "spec_loss_pct": 84.5,
+        "safety_net_failed": false,
+        "verdict": "PASS"
+      },
+      "with_kill_switch": {
+        "portfolio_total": 19774.78,
+        "loss_pct": 75.4,
+        "kill_switch_fired": false,
+        "exit_premium": 1.0,
+        "capital_preserved_at": "N/A",
+        "verdict": "PASS"
+      },
+      "capital_saved": 0.0,
+      "capital_saved_pct": 0.0
+    },
+    {
+      "premium": 0.75,
+      "mstr_price": 103.7,
+      "without_kill_switch": {
+        "portfolio_total": 12276.78,
+        "loss_pct": 84.7,
+        "safety_loss_pct": 83.0,
+        "spec_loss_pct": 91.9,
+        "safety_net_failed": false,
+        "verdict": "PASS"
+      },
+      "with_kill_switch": {
+        "portfolio_total": 12276.78,
+        "loss_pct": 84.7,
+        "kill_switch_fired": true,
+        "exit_premium": 0.75,
+        "capital_preserved_at": "0.75x",
+        "verdict": "PASS"
+      },
+      "capital_saved": 0.0,
+      "capital_saved_pct": 0.0
+    },
+    {
+      "premium": 0.5,
+      "mstr_price": 69.13,
+      "without_kill_switch": {
+        "portfolio_total": 6063.92,
+        "loss_pct": 92.5,
+        "safety_loss_pct": 91.4,
+        "spec_loss_pct": 97.0,
+        "safety_net_failed": true,
+        "verdict": "FAIL"
+      },
+      "with_kill_switch": {
+        "portfolio_total": 12276.78,
+        "loss_pct": 84.7,
+        "kill_switch_fired": true,
+        "exit_premium": 0.75,
+        "capital_preserved_at": "0.75x",
+        "verdict": "PASS"
+      },
+      "capital_saved": 6212.86,
+      "capital_saved_pct": 7.7
+    },
+    {
+      "premium": 0.25,
+      "mstr_price": 34.57,
+      "without_kill_switch": {
+        "portfolio_total": 1640.93,
+        "loss_pct": 98.0,
+        "safety_loss_pct": 97.6,
+        "spec_loss_pct": 99.5,
+        "safety_net_failed": true,
+        "verdict": "FAIL"
+      },
+      "with_kill_switch": {
+        "portfolio_total": 12276.78,
+        "loss_pct": 84.7,
+        "kill_switch_fired": true,
+        "exit_premium": 0.75,
+        "capital_preserved_at": "0.75x",
+        "verdict": "PASS"
+      },
+      "capital_saved": 10635.85,
+      "capital_saved_pct": 13.2
+    }
+  ],
+  "timeline_decay_with_kill_switch": [
+    {
+      "decay_days": 30,
+      "kill_fires_on_day": 23.3,
+      "T_remaining_at_kill": 1.776,
+      "portfolio_at_kill": 11887.0,
+      "portfolio_at_end_no_kill": 1524.57,
+      "capital_saved_vs_0_25x": 10362.43,
+      "capital_saved_pct_vs_0_25x": 12.9,
+      "portfolio_at_0_5x_no_kill": 5792.75,
+      "capital_saved_vs_0_5x": 6094.25,
+      "day_premium_hits_0_5x": 26.7
+    },
+    {
+      "decay_days": 60,
+      "kill_fires_on_day": 46.7,
+      "T_remaining_at_kill": 1.712,
+      "portfolio_at_kill": 11496.39,
+      "portfolio_at_end_no_kill": 1410.49,
+      "capital_saved_vs_0_25x": 10085.9,
+      "capital_saved_pct_vs_0_25x": 12.6,
+      "portfolio_at_0_5x_no_kill": 5522.63,
+      "capital_saved_vs_0_5x": 5973.76,
+      "day_premium_hits_0_5x": 53.3
+    },
+    {
+      "decay_days": 90,
+      "kill_fires_on_day": 70.0,
+      "T_remaining_at_kill": 1.648,
+      "portfolio_at_kill": 11105.15,
+      "portfolio_at_end_no_kill": 1298.82,
+      "capital_saved_vs_0_25x": 9806.33,
+      "capital_saved_pct_vs_0_25x": 12.2,
+      "portfolio_at_0_5x_no_kill": 5253.77,
+      "capital_saved_vs_0_5x": 5851.38,
+      "day_premium_hits_0_5x": 80.0
+    }
+  ],
+  "capital_saved_summary": {
+    "vs_0_5x_no_kill": 6212.86,
+    "vs_0_25x_no_kill": 10635.85,
+    "multiplier_vs_0_5x": 2.0,
+    "multiplier_vs_0_25x": 7.5
+  },
+  "previous_test_verdict": "FAIL",
+  "kill_switch_verdict": "PASS",
+  "kill_switch_converts_fail_to_pass": true,
+  "summary": {
+    "kill_fires_at": "0.75x premium (MSTR=$103.70)",
+    "capital_preserved": "$12,276.78 (15.3% of peak)",
+    "vs_no_kill_at_0_5x": "Saves $6,212.86",
+    "vs_no_kill_at_0_25x": "Saves $10,635.85",
+    "entries_blocked_below_0_75x": true,
+    "reset_at_1_0x": true,
+    "overall_verdict": "PASS",
+    "conclusion": "The 0.75x kill switch successfully converts the previous FAIL into a PASS by exiting positions before the safety net collapses at 0.5x, preserving significant capital for re-deployment."
+  }
+}

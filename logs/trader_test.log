@@ -1,0 +1,240 @@
+[2026-03-10 13:03:52] ============================================================
+[2026-03-10 13:03:52] TRADER1 & TRADER2 STRATEGY VALIDATION — Constitution v39.0
+[2026-03-10 13:03:52] ============================================================
+[2026-03-10 13:03:53] 
+>>> TRADER1 — System 1 (MSTR/IBIT Lottery)
+[2026-03-10 13:03:53] =======================================================
+[2026-03-10 13:03:53] TRADER1 TEST 1: System 1 Entry — MSTR (stock proxy)
+[2026-03-10 13:03:56]   MSTR: bid=141.38 ask=141.49 mid=141.435
+[2026-03-10 13:03:57]   MSTR entry: Filled | 10 shares @ $141.64
+[2026-03-10 13:03:59] =======================================================
+[2026-03-10 13:03:59] TRADER1 TEST 2: Laddered Trailing Stop LIMITS — MSTR
+[2026-03-10 13:03:59]   Entry: $141.64 | Setting 3-tier ladder
+[2026-03-10 13:04:01]     S1 Tight (3%): 3 shares, trail 3.0%, limit offset $0.50 — Cancelled (ID: 7)
+[2026-03-10 13:04:04]     S1 Medium (7%): 4 shares, trail 7.0%, limit offset $1.00 — Cancelled (ID: 8)
+[2026-03-10 13:04:06]     S1 Wide (15%): 3 shares, trail 15.0%, limit offset $2.00 — Cancelled (ID: 9)
+[2026-03-10 13:04:06]   Ladder result: SOME FAILED
+[2026-03-10 13:04:08] =======================================================
+[2026-03-10 13:04:08] TRADER1 TEST 3: IBIT Hedge Entry + Trailing Stop
+[2026-03-10 13:04:11]   IBIT: bid=40.44 ask=40.45
+[2026-03-10 13:04:12]   IBIT entry: Filled | 20 shares @ $40.42
+[2026-03-10 13:04:14]   IBIT trail stop: Cancelled | 5% trail, $0.25 limit offset
+[2026-03-10 13:04:16] 
+>>> TRADER2 — System 2 (Momentum + Energy + Squeeze)
+[2026-03-10 13:04:16] =======================================================
+[2026-03-10 13:04:16] TRADER2 TEST 1: System 2 Momentum Entry — NVDA
+[2026-03-10 13:04:19]   NVDA: bid=185.33 ask=185.34
+[2026-03-10 13:04:20]   NVDA entry: Filled | 8 shares @ $185.74
+[2026-03-10 13:04:22] =======================================================
+[2026-03-10 13:04:22] TRADER2 TEST 2: System 2 Energy Entry — CCJ
+[2026-03-10 13:04:25]   CCJ: bid=120.97 ask=121.16
+[2026-03-10 13:04:26]   CCJ entry: Filled | 15 shares @ $122.16
+[2026-03-10 13:04:28] =======================================================
+[2026-03-10 13:04:28] TRADER2 TEST 3: Laddered Trailing Stop LIMITS — NVDA + CCJ
+[2026-03-10 13:04:28]   NVDA ladder (entry $185.74):
+[2026-03-10 13:04:30]     S2 Tight (2%): 3 shares, trail 2.0%, limit offset $0.50 — Cancelled (ID: 10)
+[2026-03-10 13:04:32]     S2 Medium (5%): 3 shares, trail 5.0%, limit offset $1.00 — Cancelled (ID: 11)
+[2026-03-10 13:04:34]     S2 Wide (10%): 2 shares, trail 10.0%, limit offset $2.00 — Cancelled (ID: 12)
+[2026-03-10 13:04:34]   CCJ ladder (entry $122.16):
+[2026-03-10 13:04:36]     Energy Tight (3%): 5 shares, trail 3.0%, limit offset $0.20 — Cancelled (ID: 14)
+[2026-03-10 13:04:38]     Energy Medium (8%): 5 shares, trail 8.0%, limit offset $0.40 — Cancelled (ID: 15)
+[2026-03-10 13:04:40]     Energy Wide (15%): 5 shares, trail 15.0%, limit offset $0.75 — Cancelled (ID: 16)
+[2026-03-10 13:04:40]   NVDA ladder: FAIL
+[2026-03-10 13:04:40]   CCJ ladder: FAIL
+[2026-03-10 13:04:42] =======================================================
+[2026-03-10 13:04:42] TRADER2 TEST 4: Squeeze Entry — SOFI + Aggressive Trail
+[2026-03-10 13:04:45]   SOFI: bid=18.55 ask=18.56
+[2026-03-10 13:04:46]   SOFI entry: Filled | 30 shares @ $18.53
+[2026-03-10 13:04:46]   SOFI squeeze ladder:
+[2026-03-10 13:04:48]     Squeeze Scalp (1.5%): 15 shares, trail 1.5%, limit offset $0.10 — Cancelled (ID: 20)
+[2026-03-10 13:04:50]     Squeeze Runner (4%): 15 shares, trail 4.0%, limit offset $0.20 — Cancelled (ID: 21)
+[2026-03-10 13:04:52] 
+>>> SHARED — Exit Tests
+[2026-03-10 13:04:53] =======================================================
+[2026-03-10 13:04:53] SHARED TEST: Partial Exit (sell ~30% of each position)
+[2026-03-10 13:04:54]   IBIT: Sold 6/20 @ $40.41 — Filled
+[2026-03-10 13:04:55]   SOFI: Sold 10/30 @ $18.51 — Filled
+[2026-03-10 13:04:58]   CCJ: Sold 5/15 @ $121.84 — Filled
+[2026-03-10 13:04:59]   NVDA: Sold 2/8 @ $185.76 — Filled
+[2026-03-10 13:05:00]   MSTR: Sold 3/10 @ $141.46 — Filled
+[2026-03-10 13:05:02] =======================================================
+[2026-03-10 13:05:02] SHARED TEST: Full Cleanup (cancel orders + close positions)
+[2026-03-10 13:05:05]   Cancelled 0 open orders
+[2026-03-10 13:05:06]   SELL 14 IBIT @ $40.43 — Filled
+[2026-03-10 13:05:07]   SELL 20 SOFI @ $18.51 — Filled
+[2026-03-10 13:05:08]   SELL 10 CCJ @ $121.84 — Filled
+[2026-03-10 13:05:09]   SELL 6 NVDA @ $185.77 — Filled
+[2026-03-10 13:05:11]   SELL 7 MSTR @ $141.56 — Filled
+[2026-03-10 13:05:11] 
+============================================================
+[2026-03-10 13:05:11] RESULTS: 5/9 tests passed
+[2026-03-10 13:05:11] ============================================================
+[2026-03-10 13:05:11]   ✅ t1_entry_mstr
+[2026-03-10 13:05:11]   ❌ t1_laddered_stops
+[2026-03-10 13:05:11]   ❌ t1_ibit_hedge
+[2026-03-10 13:05:11]   ✅ t2_momentum_nvda
+[2026-03-10 13:05:11]   ✅ t2_energy_ccj
+[2026-03-10 13:05:11]   ❌ t2_laddered_stops
+[2026-03-10 13:05:11]   ❌ t2_squeeze_sofi
+[2026-03-10 13:05:11]   ✅ partial_exit
+[2026-03-10 13:05:11]   ✅ full_cleanup
+[2026-03-10 13:07:43] ============================================================
+[2026-03-10 13:07:43] TRADER1 & TRADER2 STRATEGY VALIDATION — Constitution v39.0
+[2026-03-10 13:07:43] ============================================================
+[2026-03-10 13:07:44] 
+>>> TRADER1 — System 1 (MSTR/IBIT Lottery)
+[2026-03-10 13:07:44] =======================================================
+[2026-03-10 13:07:44] TRADER1 TEST 1: System 1 Entry — MSTR (stock proxy)
+[2026-03-10 13:07:47]   MSTR: bid=141.89 ask=141.94 mid=141.915
+[2026-03-10 13:07:48]   MSTR entry: Filled | 10 shares @ $141.86
+[2026-03-10 13:07:50] =======================================================
+[2026-03-10 13:07:50] TRADER1 TEST 2: Laddered Trailing Stop LIMITS — MSTR
+[2026-03-10 13:07:50]   Entry: $141.86 | Setting 3-tier ladder
+[2026-03-10 13:07:52]     S1 Tight (3%): 3 shares, trail 3.0% ($4.26), stop $137.60, limit $137.10 — Cancelled (ID: 19)
+[2026-03-10 13:07:54]     S1 Medium (7%): 4 shares, trail 7.0% ($9.93), stop $131.93, limit $130.93 — Cancelled (ID: 20)
+[2026-03-10 13:07:56]     S1 Wide (15%): 3 shares, trail 15.0% ($21.28), stop $120.58, limit $118.58 — Cancelled (ID: 21)
+[2026-03-10 13:07:56]   Ladder result: SOME FAILED
+[2026-03-10 13:07:58] =======================================================
+[2026-03-10 13:07:58] TRADER1 TEST 3: IBIT Hedge Entry + Trailing Stop
+[2026-03-10 13:08:01]   IBIT: bid=40.49 ask=40.5
+[2026-03-10 13:08:02]   IBIT entry: Filled | 20 shares @ $40.48
+[2026-03-10 13:08:04]   IBIT trail stop: Cancelled | 5% trail ($2.02), stop $38.46, limit $38.21
+[2026-03-10 13:08:06] 
+>>> TRADER2 — System 2 (Momentum + Energy + Squeeze)
+[2026-03-10 13:08:07] =======================================================
+[2026-03-10 13:08:07] TRADER2 TEST 1: System 2 Momentum Entry — NVDA
+[2026-03-10 13:08:10]   NVDA: bid=185.55 ask=185.57
+[2026-03-10 13:08:11]   NVDA entry: Filled | 8 shares @ $185.82
+[2026-03-10 13:08:13] =======================================================
+[2026-03-10 13:08:13] TRADER2 TEST 2: System 2 Energy Entry — CCJ
+[2026-03-10 13:08:16]   CCJ: bid=121.37 ask=121.57
+[2026-03-10 13:08:17]   CCJ entry: Filled | 15 shares @ $122.30
+[2026-03-10 13:08:19] =======================================================
+[2026-03-10 13:08:19] TRADER2 TEST 3: Laddered Trailing Stop LIMITS — NVDA + CCJ
+[2026-03-10 13:08:19]   NVDA ladder (entry $185.82):
+[2026-03-10 13:08:21]     S2 Tight (2%): 3 shares, trail 2.0% ($3.72), stop $182.10, limit $181.60 — Cancelled (ID: 29)
+[2026-03-10 13:08:23]     S2 Medium (5%): 3 shares, trail 5.0% ($9.29), stop $176.53, limit $175.53 — Cancelled (ID: 30)
+[2026-03-10 13:08:25]     S2 Wide (10%): 2 shares, trail 10.0% ($18.58), stop $167.24, limit $165.24 — Cancelled (ID: 31)
+[2026-03-10 13:08:25]   CCJ ladder (entry $122.30):
+[2026-03-10 13:08:27]     Energy Tight (3%): 5 shares, trail 3.0% ($3.67), stop $118.63, limit $118.43 — Cancelled (ID: 33)
+[2026-03-10 13:08:29]     Energy Medium (8%): 5 shares, trail 8.0% ($9.78), stop $112.52, limit $112.12 — Cancelled (ID: 34)
+[2026-03-10 13:08:31]     Energy Wide (15%): 5 shares, trail 15.0% ($18.34), stop $103.96, limit $103.21 — Cancelled (ID: 35)
+[2026-03-10 13:08:31]   NVDA ladder: FAIL
+[2026-03-10 13:08:31]   CCJ ladder: FAIL
+[2026-03-10 13:08:33] =======================================================
+[2026-03-10 13:08:33] TRADER2 TEST 4: Squeeze Entry — SOFI + Aggressive Trail
+[2026-03-10 13:08:36]   SOFI: bid=18.57 ask=18.58
+[2026-03-10 13:08:37]   SOFI entry: Filled | 30 shares @ $18.55
+[2026-03-10 13:08:37]   SOFI squeeze ladder:
+[2026-03-10 13:08:39]     Squeeze Scalp (1.5%): 15 shares, trail 1.5% ($0.28), stop $18.27, limit $18.17 — Cancelled (ID: 39)
+[2026-03-10 13:08:41]     Squeeze Runner (4%): 15 shares, trail 4.0% ($0.74), stop $17.81, limit $17.61 — Cancelled (ID: 40)
+[2026-03-10 13:08:43] 
+>>> SHARED — Exit Tests
+[2026-03-10 13:08:43] =======================================================
+[2026-03-10 13:08:43] SHARED TEST: Partial Exit (sell ~30% of each position)
+[2026-03-10 13:08:44]   IBIT: Sold 6/20 @ $40.45 — Filled
+[2026-03-10 13:08:45]   SOFI: Sold 10/30 @ $18.55 — Filled
+[2026-03-10 13:08:46]   CCJ: Sold 5/15 @ $122.12 — Filled
+[2026-03-10 13:08:47]   NVDA: Sold 2/8 @ $185.81 — Filled
+[2026-03-10 13:08:49]   MSTR: Sold 3/10 @ $141.86 — Filled
+[2026-03-10 13:08:51] =======================================================
+[2026-03-10 13:08:51] SHARED TEST: Full Cleanup (cancel orders + close positions)
+[2026-03-10 13:08:54]   Cancelled 0 open orders
+[2026-03-10 13:08:55]   SELL 14 IBIT @ $40.46 — Filled
+[2026-03-10 13:08:57]   SELL 20 SOFI @ $18.56 — Filled
+[2026-03-10 13:08:58]   SELL 10 CCJ @ $122.12 — Filled
+[2026-03-10 13:08:59]   SELL 6 NVDA @ $185.81 — Filled
+[2026-03-10 13:09:00]   SELL 7 MSTR @ $141.98 — Filled
+[2026-03-10 13:09:00] 
+============================================================
+[2026-03-10 13:09:00] RESULTS: 5/9 tests passed
+[2026-03-10 13:09:00] ============================================================
+[2026-03-10 13:09:00]   ✅ t1_entry_mstr
+[2026-03-10 13:09:00]   ❌ t1_laddered_stops
+[2026-03-10 13:09:00]   ❌ t1_ibit_hedge
+[2026-03-10 13:09:00]   ✅ t2_momentum_nvda
+[2026-03-10 13:09:00]   ✅ t2_energy_ccj
+[2026-03-10 13:09:00]   ❌ t2_laddered_stops
+[2026-03-10 13:09:00]   ❌ t2_squeeze_sofi
+[2026-03-10 13:09:00]   ✅ partial_exit
+[2026-03-10 13:09:00]   ✅ full_cleanup
+[2026-03-10 13:09:42] ============================================================
+[2026-03-10 13:09:42] TRADER1 & TRADER2 STRATEGY VALIDATION — Constitution v39.0
+[2026-03-10 13:09:42] ============================================================
+[2026-03-10 13:09:42] 
+>>> TRADER1 — System 1 (MSTR/IBIT Lottery)
+[2026-03-10 13:09:42] =======================================================
+[2026-03-10 13:09:42] TRADER1 TEST 1: System 1 Entry — MSTR (stock proxy)
+[2026-03-10 13:09:46]   MSTR: bid=142.08 ask=142.15 mid=142.115
+[2026-03-10 13:09:47]   MSTR entry: Filled | 10 shares @ $142.04
+[2026-03-10 13:09:49] =======================================================
+[2026-03-10 13:09:49] TRADER1 TEST 2: Laddered Trailing Stop LIMITS — MSTR
+[2026-03-10 13:09:49]   Entry: $142.04 | Setting 3-tier ladder
+[2026-03-10 13:09:51]     S1 Tight (3%): 3 shares, trail 3.0% ($4.26), stop $137.78, limit $137.28 — PreSubmitted (ID: 31)
+[2026-03-10 13:09:53]     S1 Medium (7%): 4 shares, trail 7.0% ($9.94), stop $132.10, limit $131.10 — PreSubmitted (ID: 32)
+[2026-03-10 13:09:55]     S1 Wide (15%): 3 shares, trail 15.0% ($21.31), stop $120.73, limit $118.73 — PreSubmitted (ID: 33)
+[2026-03-10 13:09:55]   Ladder result: ALL PLACED
+[2026-03-10 13:09:57] =======================================================
+[2026-03-10 13:09:57] TRADER1 TEST 3: IBIT Hedge Entry + Trailing Stop
+[2026-03-10 13:10:00]   IBIT: bid=40.47 ask=40.48
+[2026-03-10 13:10:01]   IBIT entry: Filled | 20 shares @ $40.46
+[2026-03-10 13:10:03]   IBIT trail stop: PreSubmitted | 5% trail ($2.02), stop $38.44, limit $38.19
+[2026-03-10 13:10:05] 
+>>> TRADER2 — System 2 (Momentum + Energy + Squeeze)
+[2026-03-10 13:10:05] =======================================================
+[2026-03-10 13:10:05] TRADER2 TEST 1: System 2 Momentum Entry — NVDA
+[2026-03-10 13:10:08]   NVDA: bid=185.61 ask=185.62
+[2026-03-10 13:10:09]   NVDA entry: Filled | 8 shares @ $185.81
+[2026-03-10 13:10:11] =======================================================
+[2026-03-10 13:10:11] TRADER2 TEST 2: System 2 Energy Entry — CCJ
+[2026-03-10 13:10:14]   CCJ: bid=121.54 ask=121.75
+[2026-03-10 13:10:15]   CCJ entry: Filled | 15 shares @ $122.07
+[2026-03-10 13:10:17] =======================================================
+[2026-03-10 13:10:17] TRADER2 TEST 3: Laddered Trailing Stop LIMITS — NVDA + CCJ
+[2026-03-10 13:10:17]   NVDA ladder (entry $185.81):
+[2026-03-10 13:10:19]     S2 Tight (2%): 3 shares, trail 2.0% ($3.72), stop $182.09, limit $181.59 — PreSubmitted (ID: 48)
+[2026-03-10 13:10:21]     S2 Medium (5%): 3 shares, trail 5.0% ($9.29), stop $176.52, limit $175.52 — PreSubmitted (ID: 49)
+[2026-03-10 13:10:23]     S2 Wide (10%): 2 shares, trail 10.0% ($18.58), stop $167.23, limit $165.23 — PreSubmitted (ID: 50)
+[2026-03-10 13:10:23]   CCJ ladder (entry $122.07):
+[2026-03-10 13:10:25]     Energy Tight (3%): 5 shares, trail 3.0% ($3.66), stop $118.41, limit $118.21 — PreSubmitted (ID: 52)
+[2026-03-10 13:10:27]     Energy Medium (8%): 5 shares, trail 8.0% ($9.77), stop $112.30, limit $111.90 — PreSubmitted (ID: 53)
+[2026-03-10 13:10:29]     Energy Wide (15%): 5 shares, trail 15.0% ($18.31), stop $103.76, limit $103.01 — PreSubmitted (ID: 54)
+[2026-03-10 13:10:29]   NVDA ladder: PASS
+[2026-03-10 13:10:29]   CCJ ladder: PASS
+[2026-03-10 13:10:31] =======================================================
+[2026-03-10 13:10:31] TRADER2 TEST 4: Squeeze Entry — SOFI + Aggressive Trail
+[2026-03-10 13:10:34]   SOFI: bid=18.5 ask=18.51
+[2026-03-10 13:10:35]   SOFI entry: Filled | 30 shares @ $18.57
+[2026-03-10 13:10:35]   SOFI squeeze ladder:
+[2026-03-10 13:10:37]     Squeeze Scalp (1.5%): 15 shares, trail 1.5% ($0.28), stop $18.29, limit $18.19 — PreSubmitted (ID: 58)
+[2026-03-10 13:10:39]     Squeeze Runner (4%): 15 shares, trail 4.0% ($0.74), stop $17.83, limit $17.63 — PreSubmitted (ID: 59)
+[2026-03-10 13:10:41] 
+>>> SHARED — Exit Tests
+[2026-03-10 13:10:42] =======================================================
+[2026-03-10 13:10:42] SHARED TEST: Partial Exit (sell ~30% of each position)
+[2026-03-10 13:10:43]   IBIT: Sold 6/20 @ $40.47 — Filled
+[2026-03-10 13:10:44]   SOFI: Sold 10/30 @ $18.56 — Filled
+[2026-03-10 13:10:45]   CCJ: Sold 5/15 @ $121.96 — Filled
+[2026-03-10 13:10:46]   NVDA: Sold 2/8 @ $185.79 — Filled
+[2026-03-10 13:10:47]   MSTR: Sold 3/10 @ $141.78 — Filled
+[2026-03-10 13:10:49] =======================================================
+[2026-03-10 13:10:49] SHARED TEST: Full Cleanup (cancel orders + close positions)
+[2026-03-10 13:10:52]   Cancelled 0 open orders
+[2026-03-10 13:10:53]   SELL 14 IBIT @ $40.47 — Filled
+[2026-03-10 13:10:54]   SELL 20 SOFI @ $18.56 — Filled
+[2026-03-10 13:10:55]   SELL 10 CCJ @ $122.02 — Filled
+[2026-03-10 13:10:56]   SELL 6 NVDA @ $185.81 — Filled
+[2026-03-10 13:10:57]   SELL 7 MSTR @ $141.72 — Filled
+[2026-03-10 13:10:57] 
+============================================================
+[2026-03-10 13:10:57] RESULTS: 9/9 tests passed
+[2026-03-10 13:10:57] ============================================================
+[2026-03-10 13:10:57]   ✅ t1_entry_mstr
+[2026-03-10 13:10:57]   ✅ t1_laddered_stops
+[2026-03-10 13:10:57]   ✅ t1_ibit_hedge
+[2026-03-10 13:10:57]   ✅ t2_momentum_nvda
+[2026-03-10 13:10:57]   ✅ t2_energy_ccj
+[2026-03-10 13:10:57]   ✅ t2_laddered_stops
+[2026-03-10 13:10:57]   ✅ t2_squeeze_sofi
+[2026-03-10 13:10:57]   ✅ partial_exit
+[2026-03-10 13:10:57]   ✅ full_cleanup

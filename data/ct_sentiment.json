@@ -1,0 +1,56 @@
+{
+  "current": {
+    "sentiment_score": 65,
+    "btc_sentiment": "OPTIMISTIC",
+    "mstr_sentiment": "EUPHORIA",
+    "key_themes": [
+      "Bitcoin ETF inflows",
+      "MicroStrategy stock rally",
+      "Layer-2 scaling solutions"
+    ],
+    "whale_activity": "Significant BTC inflow to Binance (12,500 BTC) reported at 18:30 UTC; potential sell pressure noted by multiple accounts",
+    "notable_calls": "@CryptoWhaleX predicting BTC to $80K by end of Q1 2026; @MarketGuru22 warning of short-term correction due to overbought RSI",
+    "fear_greed": "GREED",
+    "timestamp": "2026-03-23T20:00:13.671562",
+    "source": "grok_xai",
+    "model": "grok-3"
+  },
+  "history": [
+    {
+      "score": 35,
+      "fear_greed": "GREED",
+      "timestamp": "2026-03-22T15:17:02.367538"
+    },
+    {
+      "score": 35,
+      "fear_greed": "GREED",
+      "timestamp": "2026-03-22T17:42:35.715842"
+    },
+    {
+      "score": 35,
+      "fear_greed": "GREED",
+      "timestamp": "2026-03-22T17:58:02.046216"
+    },
+    {
+      "score": 35,
+      "fear_greed": "GREED",
+      "timestamp": "2026-03-22T17:59:32.723670"
+    },
+    {
+      "score": 65,
+      "fear_greed": "GREED",
+      "timestamp": "2026-03-22T19:54:09.798186"
+    },
+    {
+      "score": 45,
+      "fear_greed": "NEUTRAL",
+      "timestamp": "2026-03-23T19:03:44.316490"
+    },
+    {
+      "score": 65,
+      "fear_greed": "GREED",
+      "timestamp": "2026-03-23T20:00:13.671562"
+    }
+  ],
+  "last_updated": "2026-03-23T20:00:14.330410"
+}

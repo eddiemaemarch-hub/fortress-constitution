@@ -1,0 +1,1079 @@
+[2026-03-09 20:19:53] Authentication failed: {'errors': ["Hash doesn't match UID: 473242 Hash: da59e128008b7863077432be684de0bfea5f1be0d2de5f4f9a543635ed7c3cb8 Timestamp: '1773101992'"], 'success': False}
+[2026-03-09 20:23:55] Authentication successful
+[2026-03-09 20:26:09] Found 0 projects
+[2026-03-09 20:27:09] Starting full backtest workflow: Rudy — mstr_momentum
+[2026-03-09 20:27:10] Created project: Rudy — mstr_momentum (ID: 28841231)
+[2026-03-09 20:27:11] File added: main.py
+[2026-03-09 20:27:12] Compile started: 5ec297eaec4cd88d52ec48ded14af3d0-47c3b35206286725bbfdeff4288bc67f (InQueue)
+[2026-03-09 20:27:16] Backtest failed: {'errors': ['Please upgrade to paid account to use the API and other local features.'], 'success': False}
+[2026-03-09 20:30:50] Starting full backtest workflow: Rudy — mstr_momentum
+[2026-03-09 20:30:52] Created project: Rudy — mstr_momentum (ID: 28841292)
+[2026-03-09 20:30:54] File added: main.py
+[2026-03-09 20:30:54] Compile started: 45290ad2aea8964b149f4ebdf0cf1007-47c3b35206286725bbfdeff4288bc67f (InQueue)
+[2026-03-09 20:30:59] Backtest started: Rudy — mstr_momentum (ID: )
+[2026-03-09 20:33:38] Starting full backtest workflow: Rudy — mstr_momentum
+[2026-03-09 20:33:39] Created project: Rudy — mstr_momentum (ID: 28841337)
+[2026-03-09 20:33:40] File added: main.py
+[2026-03-09 20:33:41] Compile started: 7d7533f552d6f5585005b61abee017f3-47c3b35206286725bbfdeff4288bc67f (InQueue)
+[2026-03-09 20:33:45] Backtest started: Rudy — mstr_momentum (ID: )
+[2026-03-09 20:40:06] Starting full backtest workflow: Rudy MSTR Momentum
+[2026-03-09 20:40:06] Created project: Rudy MSTR Momentum (ID: 28841437)
+[2026-03-09 20:40:08] File added: main.py
+[2026-03-09 20:40:08] Compile started: 5fa5efe12a584a74a190c03b706f76c6-47c3b35206286725bbfdeff4288bc67f (InQueue)
+[2026-03-09 20:40:12] Backtest started: Rudy MSTR Momentum (ID: )
+[2026-03-09 20:45:28] Starting full backtest workflow: Rudy MSTR Cycle 1 (2020-2024)
+[2026-03-09 20:45:29] Created project: Rudy MSTR Cycle 1 (2020-2024) (ID: 28841523)
+[2026-03-09 20:45:30] File added: main.py
+[2026-03-09 20:45:31] Compile started: 39139942299e35205d642380083a68f8-c22707b44c42511d818be5cde283eb16 (InQueue)
+[2026-03-09 20:45:35] Backtest started: Rudy MSTR Cycle 1 (2020-2024) (ID: )
+[2026-03-09 20:45:39] Starting full backtest workflow: Rudy MSTR Cycle 2 (2024-2026)
+[2026-03-09 20:45:40] Created project: Rudy MSTR Cycle 2 (2024-2026) (ID: 28841530)
+[2026-03-09 20:45:41] File added: main.py
+[2026-03-09 20:45:42] Compile started: 91bc7338c0bab628185587de9b47d273-042f4e5ef5eb83802cf0d39b6e41f653 (InQueue)
+[2026-03-09 20:45:46] Backtest started: Rudy MSTR Cycle 2 (2024-2026) (ID: )
+[2026-03-09 20:46:39] Found 7 projects
+[2026-03-09 20:48:24] Starting full backtest workflow: MSTR v2 — 25pct Trailing Stop (2020-2026)
+[2026-03-09 20:48:24] Created project: MSTR v2 — 25pct Trailing Stop (2020-2026) (ID: 28841564)
+[2026-03-09 20:48:26] File added: main.py
+[2026-03-09 20:48:26] Compile started: d8433beaa1a2bf8dab77d04be2fbcaac-bc149b2ce78562380dbeb8f4c5c41c79 (InQueue)
+[2026-03-09 20:48:31] Backtest started: MSTR v2 — 25pct Trailing Stop (2020-2026) (ID: )
+[2026-03-09 20:48:37] Starting full backtest workflow: MSTR v3 — Half Size Scale In (2020-2026)
+[2026-03-09 20:48:38] Created project: MSTR v3 — Half Size Scale In (2020-2026) (ID: 28841567)
+[2026-03-09 20:48:39] File added: main.py
+[2026-03-09 20:48:40] Compile started: cb3fabd1ce460a84391caab1e72a52ba-4d7e283bf63c81fd214b873c71eab88e (InQueue)
+[2026-03-09 20:48:44] Backtest started: MSTR v3 — Half Size Scale In (2020-2026) (ID: )
+[2026-03-09 20:49:16] Starting full backtest workflow: MSTR v4 — Bear Filter + 30pct Stop (2020-2026)
+[2026-03-09 20:49:17] Created project: MSTR v4 — Bear Filter + 30pct Stop (2020-2026) (ID: 28841581)
+[2026-03-09 20:49:18] File added: main.py
+[2026-03-09 20:49:19] Compile started: 82107d6067ba5d5e0a4bfb368dc6b5da-f280c38eaa930dfc5be754ab49f8b32a (InQueue)
+[2026-03-09 20:49:23] Backtest started: MSTR v4 — Bear Filter + 30pct Stop (2020-2026) (ID: )
+[2026-03-09 20:49:33] Starting full backtest workflow: MSTR v5 — 10x Rule + 30pct Stop (2020-2026)
+[2026-03-09 20:49:34] Created project: MSTR v5 — 10x Rule + 30pct Stop (2020-2026) (ID: 28841589)
+[2026-03-09 20:49:35] File added: main.py
+[2026-03-09 20:49:36] Compile started: 7fde0ab867b0ce6ffb862c27d04db7db-1f84b4f393f481cdc5263c2aeed65068 (InQueue)
+[2026-03-09 20:49:40] Backtest started: MSTR v5 — 10x Rule + 30pct Stop (2020-2026) (ID: )
+[2026-03-09 20:51:07] Found 11 projects
+[2026-03-09 20:52:56] Starting full backtest workflow: MSTR v6 — Options Constitution (2022-2026)
+[2026-03-09 20:52:56] Created project: MSTR v6 — Options Constitution (2022-2026) (ID: 28841649)
+[2026-03-09 20:52:58] File added: main.py
+[2026-03-09 20:52:58] Compile started: 03b2d3163bf719ff33f3a665ec709608-dd7760b2da5ce6e1a3c41c40f5ec68f6 (InQueue)
+[2026-03-09 20:53:03] Backtest started: MSTR v6 — Options Constitution (2022-2026) (ID: )
+[2026-03-09 20:59:07] Starting full backtest workflow: MSTR v7 — Options Wide Filter (2022-2026)
+[2026-03-09 20:59:07] Created project: MSTR v7 — Options Wide Filter (2022-2026) (ID: 28841786)
+[2026-03-09 20:59:09] File added: main.py
+[2026-03-09 20:59:09] Compile started: 7078e80f848a46cdef1b957c40f549e7-e861e4b6fdd4be482d09e009d660aa3f (InQueue)
+[2026-03-09 20:59:13] Backtest started: MSTR v7 — Options Wide Filter (2022-2026) (ID: )
+[2026-03-09 21:04:46] Found 13 projects
+[2026-03-09 21:17:02] Starting full backtest workflow: MSTR v8 — Deep OTM Lottery (2022-2026)
+[2026-03-09 21:17:02] Created project: MSTR v8 — Deep OTM Lottery (2022-2026) (ID: 28842088)
+[2026-03-09 21:17:04] File added: main.py
+[2026-03-09 21:17:04] Compile started: ff1e1e27b581e0739d9e6c851c4a7012-315106ab816c71ae8a461e84959bb222 (InQueue)
+[2026-03-09 21:17:09] Backtest started: MSTR v8 — Deep OTM Lottery (2022-2026) (ID: )
+[2026-03-09 21:17:48] Starting full backtest workflow: MSTR v9 — Monthly LEAPS Accumulation (2022-2026)
+[2026-03-09 21:17:48] Created project: MSTR v9 — Monthly LEAPS Accumulation (2022-2026) (ID: 28842107)
+[2026-03-09 21:17:50] File added: main.py
+[2026-03-09 21:17:50] Compile started: d3b5c0e7ae3322ad9be137f3b5ffb24c-2159b128fe785ebac1fb0dcd38bbe26f (InQueue)
+[2026-03-09 21:17:54] Backtest started: MSTR v9 — Monthly LEAPS Accumulation (2022-2026) (ID: )
+[2026-03-09 21:22:33] Found 15 projects
+[2026-03-09 21:23:16] Found 15 projects
+[2026-03-09 21:33:46] Authentication successful
+[2026-03-09 21:34:06] Starting full backtest workflow: Rudy S2 V1 Conservative Multi (2020-2025)
+[2026-03-09 21:34:06] Created project: Rudy S2 V1 Conservative Multi (2020-2025) (ID: 28842362)
+[2026-03-09 21:34:08] File added: main.py
+[2026-03-09 21:34:08] Compile started: 2a3ec08a32b6328594dbf51e818ed38d-7280de54701f5b20fecd557dc8f92830 (InQueue)
+[2026-03-09 21:34:12] Backtest started: Rudy S2 V1 Conservative Multi (2020-2025) (ID: )
+[2026-03-09 21:37:09] Starting full backtest workflow: Rudy S2 V2 Aggressive Momentum (2020-2025)
+[2026-03-09 21:37:09] Created project: Rudy S2 V2 Aggressive Momentum (2020-2025) (ID: 28842412)
+[2026-03-09 21:37:11] File added: main.py
+[2026-03-09 21:37:11] Compile started: 31e846899736312deb526f6dde91a2ef-acf769da8d9704f76c0f03e32c0dce29 (InQueue)
+[2026-03-09 21:37:15] Backtest started: Rudy S2 V2 Aggressive Momentum (2020-2025) (ID: )
+[2026-03-09 21:40:32] Starting full backtest workflow: Rudy S2 V3 Breakout Trend (2020-2025)
+[2026-03-09 21:40:33] Created project: Rudy S2 V3 Breakout Trend (2020-2025) (ID: 28842451)
+[2026-03-09 21:40:34] File added: main.py
+[2026-03-09 21:40:35] Compile started: ff0ae8279de07d41a7a7e3f53f5c763d-3097a5dfea5e33a4522792c78fd52cc5 (InQueue)
+[2026-03-09 21:40:39] Backtest started: Rudy S2 V3 Breakout Trend (2020-2025) (ID: )
+[2026-03-09 21:48:05] Starting full backtest workflow: Rudy S2 V2b Momentum Fixed (2020-2025)
+[2026-03-09 21:48:06] Created project: Rudy S2 V2b Momentum Fixed (2020-2025) (ID: 28842574)
+[2026-03-09 21:48:07] File added: main.py
+[2026-03-09 21:48:08] Compile started: 2e1d0c96aaa09baa782eecf825689f6d-4ecbb885d159db4bcaa055a15e0ae94e (InQueue)
+[2026-03-09 21:48:12] Backtest started: Rudy S2 V2b Momentum Fixed (2020-2025) (ID: )
+[2026-03-09 21:51:54] Starting full backtest workflow: Rudy S2 V3b Breakout Fixed (2020-2025)
+[2026-03-09 21:51:55] Created project: Rudy S2 V3b Breakout Fixed (2020-2025) (ID: 28842650)
+[2026-03-09 21:51:57] File added: main.py
+[2026-03-09 21:51:57] Compile started: 8d771ee3f25a7ef03b610dfe4c9ba0d2-9a9b88e724d2baa8820000e4095b8420 (InQueue)
+[2026-03-09 21:52:01] Backtest started: Rudy S2 V3b Breakout Fixed (2020-2025) (ID: )
+[2026-03-09 21:55:50] Starting full backtest workflow: Rudy S2 V4 Get Rich (2020-2025)
+[2026-03-09 21:55:51] Created project: Rudy S2 V4 Get Rich (2020-2025) (ID: 28842731)
+[2026-03-09 21:55:53] File added: main.py
+[2026-03-09 21:55:53] Compile started: 22aa43273a5d5ce5546025f9fb6999ee-d7b9f6fbcb6a30f9bc28c284b11ddda6 (InQueue)
+[2026-03-09 21:55:57] Backtest started: Rudy S2 V4 Get Rich (2020-2025) (ID: )
+[2026-03-09 22:01:23] Found 21 projects
+[2026-03-09 22:02:30] Starting full backtest workflow: Rudy S2 V5 Compound Machine (2020-2025)
+[2026-03-09 22:02:30] Created project: Rudy S2 V5 Compound Machine (2020-2025) (ID: 28842859)
+[2026-03-09 22:02:31] File added: main.py
+[2026-03-09 22:02:32] Compile started: 6390ccf3de52d686f63015ed422194c3-d578050c7a5b96c40f9c890ddc20310c (InQueue)
+[2026-03-09 22:02:36] Backtest started: Rudy S2 V5 Compound Machine (2020-2025) (ID: )
+[2026-03-09 22:07:44] Starting full backtest workflow: Rudy S2 V6 Sector Rotation (2020-2025)
+[2026-03-09 22:07:44] Created project: Rudy S2 V6 Sector Rotation (2020-2025) (ID: 28842946)
+[2026-03-09 22:07:46] File added: main.py
+[2026-03-09 22:07:46] Compile started: 369022d247519e65bb4cd38e4221ccb2-44c933bb7d4fec8dddeb8f9e3ccfd649 (InQueue)
+[2026-03-09 22:07:50] Backtest started: Rudy S2 V6 Sector Rotation (2020-2025) (ID: )
+[2026-03-09 22:30:51] Starting full backtest workflow: Rudy S2 V7 Diagonal Options (2020-2025)
+[2026-03-09 22:30:51] Created project: Rudy S2 V7 Diagonal Options (2020-2025) (ID: 28843347)
+[2026-03-09 22:30:53] File added: main.py
+[2026-03-09 22:30:53] Compile started: 13bf5a1e38b9def6098d9870ae1de966-8cf97aa5b784566c001a139f725940ff (InQueue)
+[2026-03-09 22:30:58] Backtest started: Rudy S2 V7 Diagonal Options (2020-2025) (ID: )
+[2026-03-09 22:44:09] Starting full backtest workflow: Rudy S2 V8 Diagonal Fixed (2021-2025)
+[2026-03-09 22:44:10] Created project: Rudy S2 V8 Diagonal Fixed (2021-2025) (ID: 28843582)
+[2026-03-09 22:44:11] File added: main.py
+[2026-03-09 22:44:12] Compile started: caacbf5093fde0def4e09b5baaaf4156-10b59d5028bcf07e40635ad231ee96af (InQueue)
+[2026-03-09 22:44:16] Backtest started: Rudy S2 V8 Diagonal Fixed (2021-2025) (ID: )
+[2026-03-09 22:54:51] Found 25 projects
+[2026-03-09 23:04:22] Starting full backtest workflow: Rudy S2 V9 Diagonal Reworked (2021-2025)
+[2026-03-09 23:04:23] Created project: Rudy S2 V9 Diagonal Reworked (2021-2025) (ID: 28843987)
+[2026-03-09 23:04:25] File added: main.py
+[2026-03-09 23:04:25] Compile started: c453cccdd5c68bff130ab33c316e8002-272e7e67508015fd31579c767c37fee1 (InQueue)
+[2026-03-09 23:04:30] Backtest started: Rudy S2 V9 Diagonal Reworked (2021-2025) (ID: )
+[2026-03-09 23:16:29] Found 26 projects
+[2026-03-09 23:17:46] Starting full backtest workflow: Rudy S2 V10 Diagonal Protected (2021-2025)
+[2026-03-09 23:17:46] Created project: Rudy S2 V10 Diagonal Protected (2021-2025) (ID: 28844269)
+[2026-03-09 23:17:48] File added: main.py
+[2026-03-09 23:17:48] Compile started: 228db5ee5eecf318755a4d3d51506e1a-546661de42d0a472b59aaece40ff06d2 (InQueue)
+[2026-03-09 23:17:53] Backtest started: Rudy S2 V10 Diagonal Protected (2021-2025) (ID: )
+[2026-03-09 23:30:17] Found 27 projects
+[2026-03-09 23:31:41] Starting full backtest workflow: Rudy S2 V11 Diagonal SPY Filter (2021-2025)
+[2026-03-09 23:31:41] Created project: Rudy S2 V11 Diagonal SPY Filter (2021-2025) (ID: 28844539)
+[2026-03-09 23:31:43] File added: main.py
+[2026-03-09 23:31:43] Compile started: a1e8d1885875b20ed551b6439370e57d-7fe730a0b57e8580c177a96184e1d18c (InQueue)
+[2026-03-09 23:31:47] Backtest started: Rudy S2 V11 Diagonal SPY Filter (2021-2025) (ID: )
+[2026-03-09 23:44:10] Found 28 projects
+[2026-03-09 23:48:35] Starting full backtest workflow: Rudy ORIGINAL - Momentum Squeeze (2019-2025)
+[2026-03-09 23:48:35] Created project: Rudy ORIGINAL - Momentum Squeeze (2019-2025) (ID: 28844907)
+[2026-03-09 23:48:37] File added: main.py
+[2026-03-09 23:48:37] Compile started: 2e394002715565405246605e40de9688-bc4e7bf3026373e56ac3607dbdcfccd3 (InQueue)
+[2026-03-09 23:48:42] Backtest started: Rudy ORIGINAL - Momentum Squeeze (2019-2025) (ID: )
+[2026-03-10 00:02:14] Found 29 projects
+[2026-03-10 00:03:30] Starting full backtest workflow: Rudy ORIGINAL - Premium Harvester (2019-2025)
+[2026-03-10 00:03:30] Created project: Rudy ORIGINAL - Premium Harvester (2019-2025) (ID: 28845166)
+[2026-03-10 00:03:31] File added: main.py
+[2026-03-10 00:03:32] Compile started: 6234101558a39505d0cc7a90adbdfbed-84bdd1d724bfb5502d3aa310eed6c421 (InQueue)
+[2026-03-10 00:03:37] Backtest started: Rudy ORIGINAL - Premium Harvester (2019-2025) (ID: )
+[2026-03-10 00:17:11] Found 30 projects
+[2026-03-10 14:05:30] Authentication failed: {'errors': ['UserID not valid () REF #ExWkJjhlSP'], 'success': False}
+[2026-03-10 14:16:46] Authentication failed: {'errors': ['UserID not valid () REF #ExWkJjhlSP'], 'success': False}
+[2026-03-10 14:17:01] Authentication failed: {'errors': ["Hash doesn't match UID: 473242 Hash: 5c18f91f82089d0356e800b5525cc0e9b94ef2de8a8ac2b7059ec3abe4cbeba4 Timestamp: '1773166620'"], 'success': False}
+[2026-03-10 14:26:02] Authentication successful
+[2026-03-10 14:26:02] Starting full backtest workflow: Rudy_Energy_Momentum_v2
+[2026-03-10 14:26:03] Created project: Rudy_Energy_Momentum_v2 (ID: 28862872)
+[2026-03-10 14:26:06] File added: main.py
+[2026-03-10 14:26:06] Compile started: 026290dfa9991201f7c2d8c6933bb897-8ed991add2419cd62764026da11ca98d (InQueue)
+[2026-03-10 14:26:11] Backtest started: Rudy_Energy_Momentum_v2 (ID: )
+[2026-03-10 14:29:47] Authentication successful
+[2026-03-10 14:29:55] Authentication successful
+[2026-03-10 14:29:55] Starting full backtest workflow: Rudy_Energy_Momentum_v2
+[2026-03-10 14:29:55] Created project: Rudy_Energy_Momentum_v2 (ID: 28862969)
+[2026-03-10 14:29:57] File added: main.py
+[2026-03-10 14:29:57] Compile started: 2862c9bc7527818c659a871c43504479-8ed991add2419cd62764026da11ca98d (InQueue)
+[2026-03-10 14:30:02] Backtest started: Rudy_Energy_Momentum_v2 (ID: )
+[2026-03-10 14:31:29] Starting full backtest workflow: Rudy_Short_Squeeze_v2
+[2026-03-10 14:31:31] Created project: Rudy_Short_Squeeze_v2 (ID: 28863009)
+[2026-03-10 14:31:33] File added: main.py
+[2026-03-10 14:31:34] Compile started: 06ff869a50519d917c3349356fa8f402-ae26fb41428f0e63e2dee5ab237e48e6 (InQueue)
+[2026-03-10 14:31:40] Backtest started: Rudy_Short_Squeeze_v2 (ID: )
+[2026-03-10 14:35:28] Starting full backtest workflow: Rudy_Short_Squeeze_v2
+[2026-03-10 14:35:31] Created project: Rudy_Short_Squeeze_v2 (ID: 28863091)
+[2026-03-10 14:35:34] File added: main.py
+[2026-03-10 14:35:35] Compile started: 498c616104221ce71f47d6e1cd1d028a-ae26fb41428f0e63e2dee5ab237e48e6 (InQueue)
+[2026-03-10 14:35:41] Backtest started: Rudy_Short_Squeeze_v2 (ID: )
+[2026-03-10 14:37:04] Starting full backtest workflow: Rudy_Sideways_Condor_v1
+[2026-03-10 14:37:04] Created project: Rudy_Sideways_Condor_v1 (ID: 28863136)
+[2026-03-10 14:37:06] File added: main.py
+[2026-03-10 14:37:07] Compile started: ba246f6626dfab0c66f02f1891c36744-4f7b7d233468e9f3b1ff5ac483e7070f (InQueue)
+[2026-03-10 14:37:11] Backtest started: Rudy_Sideways_Condor_v1 (ID: )
+[2026-03-10 14:43:03] Found 62 projects
+[2026-03-10 14:43:54] Authentication successful
+[2026-03-10 14:43:54] Starting full backtest workflow: Rudy_Energy_Momentum_v2
+[2026-03-10 14:43:55] Created project: Rudy_Energy_Momentum_v2 (ID: 28863295)
+[2026-03-10 14:43:57] File added: main.py
+[2026-03-10 14:43:57] Compile started: 9795356dcc7c71ce331176e7d84fc359-55b5caca5f7614ab3cd8b874201cda50 (InQueue)
+[2026-03-10 14:44:01] Backtest started: Rudy_Energy_Momentum_v2 (ID: )
+[2026-03-10 14:50:03] Authentication successful
+[2026-03-10 14:50:03] Starting full backtest workflow: Rudy_Energy_Momentum_v2
+[2026-03-10 14:50:03] Created project: Rudy_Energy_Momentum_v2 (ID: 28863424)
+[2026-03-10 14:50:05] File added: main.py
+[2026-03-10 14:50:06] Compile started: 5dde0cc0e60a29078561b0c681429d86-55b5caca5f7614ab3cd8b874201cda50 (InQueue)
+[2026-03-10 14:50:10] Backtest started: Rudy_Energy_Momentum_v2 (ID: )
+[2026-03-10 14:51:57] Authentication successful
+[2026-03-10 14:51:57] Starting full backtest workflow: Rudy_Energy_Momentum_v2
+[2026-03-10 14:51:59] Created project: Rudy_Energy_Momentum_v2 (ID: 28863479)
+[2026-03-10 14:52:01] File added: main.py
+[2026-03-10 14:52:02] Compile started: 11b67989b06c056836ce8406f4e8dcf3-55b5caca5f7614ab3cd8b874201cda50 (InQueue)
+[2026-03-10 14:52:08] Backtest started: Rudy_Energy_Momentum_v2 (ID: )
+[2026-03-10 14:55:36] Starting full backtest workflow: Rudy_Short_Squeeze_v2
+[2026-03-10 14:55:36] Created project: Rudy_Short_Squeeze_v2 (ID: 28863571)
+[2026-03-10 14:55:38] File added: main.py
+[2026-03-10 14:55:38] Compile started: e870548f9dd5d6ec35654fe7ccace463-233e37342e3af7ae290c43dfbd88c196 (InQueue)
+[2026-03-10 14:55:44] Backtest started: Rudy_Short_Squeeze_v2 (ID: )
+[2026-03-10 14:57:28] Starting full backtest workflow: Rudy_Short_Squeeze_v2
+[2026-03-10 14:57:30] Created project: Rudy_Short_Squeeze_v2 (ID: 28863612)
+[2026-03-10 14:57:33] File added: main.py
+[2026-03-10 14:57:36] Compile started: cbeab1113e60a5d23c34dca8ff050920-233e37342e3af7ae290c43dfbd88c196 (InQueue)
+[2026-03-10 14:57:42] Backtest started: Rudy_Short_Squeeze_v2 (ID: )
+[2026-03-10 15:01:03] Starting full backtest workflow: Rudy_Sideways_Condor_v1
+[2026-03-10 15:01:03] Created project: Rudy_Sideways_Condor_v1 (ID: 28863687)
+[2026-03-10 15:01:05] File added: main.py
+[2026-03-10 15:01:05] Compile started: d67a44906085da18017cf1a0d58ca5c8-8372361824070197f158001997783e12 (InQueue)
+[2026-03-10 15:01:10] Backtest started: Rudy_Sideways_Condor_v1 (ID: )
+[2026-03-10 15:03:08] Starting full backtest workflow: Rudy_Sideways_Condor_v1
+[2026-03-10 15:03:09] Created project: Rudy_Sideways_Condor_v1 (ID: 28863749)
+[2026-03-10 15:03:10] File added: main.py
+[2026-03-10 15:03:11] Compile started: b208b2ef145ef6520cda902ce3017250-8372361824070197f158001997783e12 (InQueue)
+[2026-03-10 15:03:16] Backtest started: Rudy_Sideways_Condor_v1 (ID: )
+[2026-03-10 15:14:12] Authentication successful
+[2026-03-10 15:14:12] Starting full backtest workflow: Rudy_Energy_Momentum_v2
+[2026-03-10 15:14:13] Created project: Rudy_Energy_Momentum_v2 (ID: 28863995)
+[2026-03-10 15:14:14] File added: main.py
+[2026-03-10 15:14:14] Compile started: b0ccfa6df48eaf74e456896505304f4d-cbadc7499510d742de3faf71c05dabdc (InQueue)
+[2026-03-10 15:14:22] Backtest started: Rudy_Energy_Momentum_v2 (ID: )
+[2026-03-10 15:15:58] Found 70 projects
+[2026-03-10 15:19:02] Authentication successful
+[2026-03-10 15:19:02] Starting full backtest workflow: Rudy_Energy_Momentum_v2
+[2026-03-10 15:19:02] Created project: Rudy_Energy_Momentum_v2 (ID: 28864124)
+[2026-03-10 15:19:04] File added: main.py
+[2026-03-10 15:19:04] Compile started: b48a340cf761f76e9bd2b06227074726-cbadc7499510d742de3faf71c05dabdc (InQueue)
+[2026-03-10 15:19:08] Backtest started: Rudy_Energy_Momentum_v2 (ID: )
+[2026-03-10 15:24:21] Starting full backtest workflow: Rudy_Short_Squeeze_v2
+[2026-03-10 15:24:23] Created project: Rudy_Short_Squeeze_v2 (ID: 28864250)
+[2026-03-10 15:24:26] File added: main.py
+[2026-03-10 15:24:27] Compile started: bb5e3d79fde91f1f2e06689ce389472f-24050265d86c2395a763f1aadc260dcd (InQueue)
+[2026-03-10 15:24:31] Backtest started: Rudy_Short_Squeeze_v2 (ID: )
+[2026-03-10 15:29:45] Starting full backtest workflow: Rudy_Sideways_Condor_v1
+[2026-03-10 15:29:45] Created project: Rudy_Sideways_Condor_v1 (ID: 28864411)
+[2026-03-10 15:29:47] File added: main.py
+[2026-03-10 15:29:47] Compile started: b479d317bd59ad53c66c64ded2e0cf89-8372361824070197f158001997783e12 (InQueue)
+[2026-03-10 15:29:52] Backtest started: Rudy_Sideways_Condor_v1 (ID: )
+[2026-03-10 15:42:11] Starting full backtest workflow: Rudy_Sideways_Condor_v2
+[2026-03-10 15:42:11] Created project: Rudy_Sideways_Condor_v2 (ID: 28864710)
+[2026-03-10 15:42:13] File added: main.py
+[2026-03-10 15:42:14] Compile started: 679a754c4e38659940ec8c4c02d9138d-d132f5379174bd0b49ba2c68aa2055ff (InQueue)
+[2026-03-10 15:42:19] Backtest started: Rudy_Sideways_Condor_v2 (ID: )
+[2026-03-10 16:03:19] Authentication failed: {'errors': ['UserID not valid () REF #ExWkJjhlSP'], 'success': False}
+[2026-03-10 16:03:38] Authentication successful
+[2026-03-10 16:03:50] Found 74 projects
+[2026-03-10 16:04:02] Found 74 projects
+[2026-03-10 16:04:55] Authentication successful
+[2026-03-10 16:04:55] Starting full backtest workflow: Rudy_Energy_Momentum_v2
+[2026-03-10 16:04:56] Created project: Rudy_Energy_Momentum_v2 (ID: 28865237)
+[2026-03-10 16:04:59] File added: main.py
+[2026-03-10 16:05:00] Compile started: 8100d1381040b106d228733cc429d193-cbadc7499510d742de3faf71c05dabdc (InQueue)
+[2026-03-10 16:05:05] Backtest started: Rudy_Energy_Momentum_v2 (ID: )
+[2026-03-10 16:05:53] Authentication successful
+[2026-03-10 16:05:53] Starting full backtest workflow: Rudy_Energy_Momentum_v2
+[2026-03-10 16:05:54] Created project: Rudy_Energy_Momentum_v2 (ID: 28865269)
+[2026-03-10 16:05:57] File added: main.py
+[2026-03-10 16:05:58] Compile started: a9e461747fac4032995c05d3516f4abd-cbadc7499510d742de3faf71c05dabdc (InQueue)
+[2026-03-10 16:06:03] Backtest started: Rudy_Energy_Momentum_v2 (ID: )
+[2026-03-10 16:10:16] Starting full backtest workflow: Rudy_Short_Squeeze_v2
+[2026-03-10 16:10:18] Created project: Rudy_Short_Squeeze_v2 (ID: 28865372)
+[2026-03-10 16:10:21] File added: main.py
+[2026-03-10 16:10:21] Compile started: 202d774586c6a80e7c0efea257eecfd8-24050265d86c2395a763f1aadc260dcd (InQueue)
+[2026-03-10 16:10:26] Backtest started: Rudy_Short_Squeeze_v2 (ID: )
+[2026-03-10 16:11:16] Starting full backtest workflow: Rudy_Short_Squeeze_v2
+[2026-03-10 16:11:16] Created project: Rudy_Short_Squeeze_v2 (ID: 28865393)
+[2026-03-10 16:11:19] File added: main.py
+[2026-03-10 16:11:19] Compile started: 9ecc96789a666f3a0d1da19579f7bff9-baf918051446bdfb91c6180a6d7f2617 (InQueue)
+[2026-03-10 16:11:25] Backtest started: Rudy_Short_Squeeze_v2 (ID: )
+[2026-03-10 16:15:39] Starting full backtest workflow: Rudy_Sideways_Condor_v1
+[2026-03-10 16:15:40] Created project: Rudy_Sideways_Condor_v1 (ID: 28865491)
+[2026-03-10 16:15:41] File added: main.py
+[2026-03-10 16:15:42] Compile started: 554df678f7111989cb36da5cc08d2fab-d132f5379174bd0b49ba2c68aa2055ff (InQueue)
+[2026-03-10 16:15:47] Backtest started: Rudy_Sideways_Condor_v1 (ID: )
+[2026-03-10 16:16:36] Starting full backtest workflow: Rudy_Sideways_Condor_v1
+[2026-03-10 16:16:36] Created project: Rudy_Sideways_Condor_v1 (ID: 28865513)
+[2026-03-10 16:16:38] File added: main.py
+[2026-03-10 16:16:38] Compile started: f8cedf26ba5d0d6f4c2d101a4be36a16-2dad18fb7149c8b4547391656e1fd5f0 (InQueue)
+[2026-03-10 16:16:45] Backtest started: Rudy_Sideways_Condor_v1 (ID: )
+[2026-03-10 16:36:47] Starting full backtest workflow: Rudy_Sideways_Condor_v3
+[2026-03-10 16:36:47] Created project: Rudy_Sideways_Condor_v3 (ID: 28865990)
+[2026-03-10 16:36:49] File added: main.py
+[2026-03-10 16:36:49] Compile started: cd9e0f7b11f8cca72b078a869d1d2b5f-a05991fd0cf18898a8d2692421ca9c2b (InQueue)
+[2026-03-10 16:36:53] Backtest started: Rudy_Sideways_Condor_v3 (ID: )
+[2026-03-10 16:46:46] Starting full backtest workflow: Rudy_Sideways_Condor_v4
+[2026-03-10 16:46:46] Created project: Rudy_Sideways_Condor_v4 (ID: 28866213)
+[2026-03-10 16:46:48] File added: main.py
+[2026-03-10 16:46:48] Compile started: a2552a0ca2fc4f3c322715a21396ef8f-4494c032ec8cc8e5e98e53923f66f82b (InQueue)
+[2026-03-10 16:46:52] Backtest started: Rudy_Sideways_Condor_v4 (ID: )
+[2026-03-10 16:54:59] Starting full backtest workflow: Rudy_Breakout_Momentum_v2
+[2026-03-10 16:55:00] Created project: Rudy_Breakout_Momentum_v2 (ID: 28866414)
+[2026-03-10 16:55:01] File added: main.py
+[2026-03-10 16:55:02] Compile started: cf7761d218173db34e748870a2b9cc20-84cafa8948dbfef6e0a875117565cced (InQueue)
+[2026-03-10 16:55:07] Backtest started: Rudy_Breakout_Momentum_v2 (ID: )
+[2026-03-15 18:47:12] Authentication successful
+[2026-03-15 18:47:14] Created project: MSTR CycleLow v2.2 Monthly (ID: 29037110)
+[2026-03-15 18:47:15] File added: MSTRCycleLowLeap.py
+[2026-03-15 18:47:17] File added: MSTRCycleLowLeap_Monthly.py
+[2026-03-15 18:47:17] Compile started: 8a8c87d054fb22a466d08b6de6e6bfa1-758816e1130e52a8b443a8d7c300f2c0 (InQueue)
+[2026-03-15 18:47:20] Compile started: a8d37643c4bf0e1337194ea36f51432f-758816e1130e52a8b443a8d7c300f2c0 (InQueue)
+[2026-03-15 18:47:23] Compile started: 1bec6052721438effd65df12cd7cb625-758816e1130e52a8b443a8d7c300f2c0 (InQueue)
+[2026-03-15 18:47:25] Compile started: d83d11929b818a2aa4ec3185d2623135-758816e1130e52a8b443a8d7c300f2c0 (InQueue)
+[2026-03-15 18:47:28] Compile started: a889a5b8427d1841f07d8e7903424969-758816e1130e52a8b443a8d7c300f2c0 (InQueue)
+[2026-03-15 18:47:30] Compile started: 76aee2e017a811dc2c8becad1f80748e-758816e1130e52a8b443a8d7c300f2c0 (InQueue)
+[2026-03-15 18:47:33] Compile started: 64f4cb179c5615791600a8902568ad7b-758816e1130e52a8b443a8d7c300f2c0 (InQueue)
+[2026-03-15 18:47:35] Compile started: 881ae45819c3118c2357f411450db143-758816e1130e52a8b443a8d7c300f2c0 (InQueue)
+[2026-03-15 18:47:38] Compile started: b679534bb321c77c8a68d19d04b1851c-758816e1130e52a8b443a8d7c300f2c0 (InQueue)
+[2026-03-15 18:47:41] Compile started: cabf8f7a7da1eefcc1f55abf33f99500-758816e1130e52a8b443a8d7c300f2c0 (InQueue)
+[2026-03-15 18:47:43] Compile started: 7e6af8f5b50090efc33d8cacc9a49312-758816e1130e52a8b443a8d7c300f2c0 (InQueue)
+[2026-03-15 18:47:48] Compile started: fab018513f827c4722bf475b3015e93b-758816e1130e52a8b443a8d7c300f2c0 (InQueue)
+[2026-03-15 18:47:51] Compile started: 84ec5ddb7cc523b854ea9ddc3f5cce1a-758816e1130e52a8b443a8d7c300f2c0 (InQueue)
+[2026-03-15 18:47:53] Compile started: d5d1c8eab6cf8007354b91fae55c97ff-758816e1130e52a8b443a8d7c300f2c0 (InQueue)
+[2026-03-15 18:47:56] Compile started: 705ef99ffdc8449adfab58752cb90ee7-758816e1130e52a8b443a8d7c300f2c0 (InQueue)
+[2026-03-15 18:47:58] Compile started: 089832a762a18797bda199b750869ac8-758816e1130e52a8b443a8d7c300f2c0 (InQueue)
+[2026-03-15 18:48:00] Compile started: 8f5323c873e1cfe1d409b040a405bde7-758816e1130e52a8b443a8d7c300f2c0 (InQueue)
+[2026-03-15 18:48:03] Compile started: 08569c134e390f1e320863f74a315e16-758816e1130e52a8b443a8d7c300f2c0 (InQueue)
+[2026-03-15 18:48:05] Compile started: e3dccbbd31026387ad4d516828b45bee-758816e1130e52a8b443a8d7c300f2c0 (InQueue)
+[2026-03-15 18:48:08] Compile started: 1371c9a30c7c4c9c5bace1abdf3f8024-758816e1130e52a8b443a8d7c300f2c0 (InQueue)
+[2026-03-15 18:48:10] Compile started: 85dd8d00911ebb727bd573ac6268ebe3-758816e1130e52a8b443a8d7c300f2c0 (InQueue)
+[2026-03-15 18:48:13] Compile started: ee5c063dae2b1be395ad13cd5bece592-758816e1130e52a8b443a8d7c300f2c0 (InQueue)
+[2026-03-15 18:48:16] Compile started: 50b540bea6342765c8b501c0226c09a5-758816e1130e52a8b443a8d7c300f2c0 (InQueue)
+[2026-03-15 18:48:19] Compile started: e53d2024664dc26762dd0f0cdf7a1cae-758816e1130e52a8b443a8d7c300f2c0 (InQueue)
+[2026-03-15 18:48:21] Compile started: 2774012c59c5cfd5b7e99c0da1642b8d-758816e1130e52a8b443a8d7c300f2c0 (InQueue)
+[2026-03-15 18:48:24] Compile started: 9e6aabba7987450c2c385a164dccc015-758816e1130e52a8b443a8d7c300f2c0 (InQueue)
+[2026-03-15 18:48:26] Compile started: 8958c69130ed5f93684ed387650ef113-758816e1130e52a8b443a8d7c300f2c0 (InQueue)
+[2026-03-15 18:48:29] Compile started: 45ee2149a5033a23ae3fde6e5ce3b1d9-758816e1130e52a8b443a8d7c300f2c0 (InQueue)
+[2026-03-15 18:48:31] Compile started: 554ed7413e5c30c0f190cfd9f49ff30e-758816e1130e52a8b443a8d7c300f2c0 (InQueue)
+[2026-03-15 18:48:34] Compile started: a06092078e63626831776d03f29d2466-758816e1130e52a8b443a8d7c300f2c0 (InQueue)
+[2026-03-15 18:48:36] Compile started: 1c81a33feabe9ea4030ac8a085f462ef-758816e1130e52a8b443a8d7c300f2c0 (InQueue)
+[2026-03-15 18:48:37] Backtest started: v2.2 MSTR CycleLow v2.2 Monthly (ID: )
+[2026-03-15 18:48:37] Created project: MSTR CycleLow v2.2 Weekly (ID: 29037142)
+[2026-03-15 18:48:39] File added: MSTRCycleLowLeap.py
+[2026-03-15 18:48:40] File added: MSTRCycleLowLeap_Weekly.py
+[2026-03-15 18:48:42] Compile started: 9be07e3f52c7b9f587ae7c6fb975d624-9615336dfc2a41f0d0f928e652ff1139 (InQueue)
+[2026-03-15 18:48:45] Compile started: af62f40b701dcc91fe5eb1f930c89b8b-9615336dfc2a41f0d0f928e652ff1139 (InQueue)
+[2026-03-15 18:48:47] Compile started: 3056df30bfc322a0c6726766499f92ee-9615336dfc2a41f0d0f928e652ff1139 (InQueue)
+[2026-03-15 18:48:50] Compile started: 7f7b74c7b2e10d166b32d42d6a34f233-9615336dfc2a41f0d0f928e652ff1139 (InQueue)
+[2026-03-15 18:48:52] Compile started: 9b4370bd704a45bd6385905c9d88e74b-9615336dfc2a41f0d0f928e652ff1139 (InQueue)
+[2026-03-15 18:48:55] Compile started: 9960008147eabc2174036453e2883c6b-9615336dfc2a41f0d0f928e652ff1139 (InQueue)
+[2026-03-15 18:48:58] Compile started: a9de12f134bba306f28f2933a5ca34bc-9615336dfc2a41f0d0f928e652ff1139 (InQueue)
+[2026-03-15 18:49:01] Compile started: 26030b9c6cb6cab451860a56802b2141-9615336dfc2a41f0d0f928e652ff1139 (InQueue)
+[2026-03-15 18:49:03] Compile started: d06449abeb4fb0e49df792ae1b435ae6-9615336dfc2a41f0d0f928e652ff1139 (InQueue)
+[2026-03-15 18:49:07] Compile started: dfcf78c2f714f622644ba3fcc4495831-9615336dfc2a41f0d0f928e652ff1139 (InQueue)
+[2026-03-15 18:49:10] Compile started: bb9ed53698d36a6b293406b1b7823814-9615336dfc2a41f0d0f928e652ff1139 (InQueue)
+[2026-03-15 18:49:13] Compile started: e692459e939c30fa9f39e8515c624cca-9615336dfc2a41f0d0f928e652ff1139 (InQueue)
+[2026-03-15 18:49:15] Compile started: 23fbab5f84807a0955e311cb56ea8797-9615336dfc2a41f0d0f928e652ff1139 (InQueue)
+[2026-03-15 18:49:17] Compile started: db12f8d23fb8fe83dad5473a500ae163-9615336dfc2a41f0d0f928e652ff1139 (InQueue)
+[2026-03-15 18:49:20] Compile started: 8278aa35069bc8a1d1a91561f940e961-9615336dfc2a41f0d0f928e652ff1139 (InQueue)
+[2026-03-15 18:49:22] Compile started: d56384a1d2dd5f440a98d70d00f89fc0-9615336dfc2a41f0d0f928e652ff1139 (InQueue)
+[2026-03-15 18:49:25] Compile started: 16d03f350c6950c9d2606d68ac0b1da6-9615336dfc2a41f0d0f928e652ff1139 (InQueue)
+[2026-03-15 18:49:28] Compile started: b58ad3d7472d7ff3b646167aa4ef4bd8-9615336dfc2a41f0d0f928e652ff1139 (InQueue)
+[2026-03-15 18:49:33] Compile started: a83fa2397dd5ea46bfe2b8891c28bf18-9615336dfc2a41f0d0f928e652ff1139 (InQueue)
+[2026-03-15 18:49:35] Compile started: 3757f09ca4d5a2db4aa83c4c87e6a8a2-9615336dfc2a41f0d0f928e652ff1139 (InQueue)
+[2026-03-15 18:49:38] Compile started: cadc87ef07688be20cd71136c6aa97f4-9615336dfc2a41f0d0f928e652ff1139 (InQueue)
+[2026-03-15 18:49:40] Compile started: b871af1ed9b586760d75711a00b77e4b-9615336dfc2a41f0d0f928e652ff1139 (InQueue)
+[2026-03-15 18:49:43] Compile started: 74e02144bb365fa3610e47a5675bce3c-9615336dfc2a41f0d0f928e652ff1139 (InQueue)
+[2026-03-15 18:49:45] Compile started: 3d69d1c27747653a3673ddb123b3e7e6-9615336dfc2a41f0d0f928e652ff1139 (InQueue)
+[2026-03-15 18:49:47] Compile started: 931352a59581e168dd0775fbc392b3fe-9615336dfc2a41f0d0f928e652ff1139 (InQueue)
+[2026-03-15 18:49:50] Compile started: cb7e69bc84cc66515cc89a87e3fa7c37-9615336dfc2a41f0d0f928e652ff1139 (InQueue)
+[2026-03-15 18:49:52] Compile started: c799c73e96fa90a2d32dbbf03721efae-9615336dfc2a41f0d0f928e652ff1139 (InQueue)
+[2026-03-15 18:49:55] Compile started: 9baab3c22cf1ed714bf6f30e63a9c758-9615336dfc2a41f0d0f928e652ff1139 (InQueue)
+[2026-03-15 18:49:57] Compile started: bfb83fae38d8fd2d22668db162d1cf07-9615336dfc2a41f0d0f928e652ff1139 (InQueue)
+[2026-03-15 18:50:00] Compile started: 62b16c490ce10cc24a84c61a87745406-9615336dfc2a41f0d0f928e652ff1139 (InQueue)
+[2026-03-15 18:50:03] Compile started: b5840ded5c78abd892106a91aa220091-9615336dfc2a41f0d0f928e652ff1139 (InQueue)
+[2026-03-15 18:50:04] Backtest started: v2.2 MSTR CycleLow v2.2 Weekly (ID: )
+[2026-03-15 18:50:04] Created project: MSTR CycleLow v2.2 Daily (ID: 29037173)
+[2026-03-15 18:50:05] File added: MSTRCycleLowLeap.py
+[2026-03-15 18:50:07] File added: MSTRCycleLowLeap_Daily.py
+[2026-03-15 18:50:07] Compile started: fd2baa0e2b61b0bec2e6b39c17a23868-0f4efeb8c7ae3f8cf0f63d62d069b34e (InQueue)
+[2026-03-15 18:50:10] Compile started: 9f23d0e243dd8b2afd1724f001084e80-0f4efeb8c7ae3f8cf0f63d62d069b34e (InQueue)
+[2026-03-15 18:50:13] Compile started: 50b68be713837f69834426c330a7cbde-0f4efeb8c7ae3f8cf0f63d62d069b34e (InQueue)
+[2026-03-15 18:50:15] Compile started: 238d13e7bf06846cefa5c987daa49212-0f4efeb8c7ae3f8cf0f63d62d069b34e (InQueue)
+[2026-03-15 18:50:18] Compile started: 1381ee9b8bd2fd4d8e41cc1d53dfd4d1-0f4efeb8c7ae3f8cf0f63d62d069b34e (InQueue)
+[2026-03-15 18:50:20] Compile started: 44a9db2e5022fa5cced5443b53420721-0f4efeb8c7ae3f8cf0f63d62d069b34e (InQueue)
+[2026-03-15 18:50:23] Compile started: e7a954aa7f0706b06f241bd63329198a-0f4efeb8c7ae3f8cf0f63d62d069b34e (InQueue)
+[2026-03-15 18:50:26] Compile started: 21ce27d85db82292de4f0e7aed06566f-0f4efeb8c7ae3f8cf0f63d62d069b34e (InQueue)
+[2026-03-15 18:50:28] Compile started: 119103b3c2573202aa31dab0eed87e71-0f4efeb8c7ae3f8cf0f63d62d069b34e (InQueue)
+[2026-03-15 18:50:31] Compile started: ab91cc9f4f020501b02bf5c41b212cbf-0f4efeb8c7ae3f8cf0f63d62d069b34e (InQueue)
+[2026-03-15 18:50:33] Compile started: cfbeaa53f022ca6e8bdccd031f5155f2-0f4efeb8c7ae3f8cf0f63d62d069b34e (InQueue)
+[2026-03-15 18:50:36] Compile started: b47f472e4704fe97f2a64fdd16680e43-0f4efeb8c7ae3f8cf0f63d62d069b34e (InQueue)
+[2026-03-15 18:50:38] Compile started: 9341c0dbaa2ded127f824773eef9ebac-0f4efeb8c7ae3f8cf0f63d62d069b34e (InQueue)
+[2026-03-15 18:50:41] Compile started: ff0ef9de8b833ea2a2895b084e542bb7-0f4efeb8c7ae3f8cf0f63d62d069b34e (InQueue)
+[2026-03-15 18:50:44] Compile started: 127c7a14a9fa9c8e27ff5fee138e115d-0f4efeb8c7ae3f8cf0f63d62d069b34e (InQueue)
+[2026-03-15 18:50:47] Compile started: e2b8160c5f30482640a68f8c811f3a00-0f4efeb8c7ae3f8cf0f63d62d069b34e (InQueue)
+[2026-03-15 18:50:49] Compile started: 0088f76adb457ccca7c27665c53b7d71-0f4efeb8c7ae3f8cf0f63d62d069b34e (InQueue)
+[2026-03-15 18:50:52] Compile started: 83152e35bc922628c8c61f6ca2773f88-0f4efeb8c7ae3f8cf0f63d62d069b34e (InQueue)
+[2026-03-15 18:50:55] Compile started: c4e04d35b9d31021afa932c70d6ba917-0f4efeb8c7ae3f8cf0f63d62d069b34e (InQueue)
+[2026-03-15 18:50:57] Compile started: f5e25792357a3b6d5440ff6e49afb400-0f4efeb8c7ae3f8cf0f63d62d069b34e (InQueue)
+[2026-03-15 18:51:00] Compile started: 32ca2bcf57cd1c97d1c09ecf50646e8c-0f4efeb8c7ae3f8cf0f63d62d069b34e (InQueue)
+[2026-03-15 18:51:03] Compile started: ef036c3be0c259734341afc02ec94592-0f4efeb8c7ae3f8cf0f63d62d069b34e (InQueue)
+[2026-03-15 18:51:05] Compile started: 454083e9b1996d095b762174d65c220c-0f4efeb8c7ae3f8cf0f63d62d069b34e (InQueue)
+[2026-03-15 18:51:07] Compile started: c265778ea233ce6b227ae42f75f9b88f-0f4efeb8c7ae3f8cf0f63d62d069b34e (InQueue)
+[2026-03-15 18:51:10] Compile started: e66b0d50fb683693315065be17bac55a-0f4efeb8c7ae3f8cf0f63d62d069b34e (InQueue)
+[2026-03-15 18:51:13] Compile started: a7843ea36ce1386083de3da5338012e2-0f4efeb8c7ae3f8cf0f63d62d069b34e (InQueue)
+[2026-03-15 18:51:16] Compile started: eb724c7283a0606f462180b660f945d1-0f4efeb8c7ae3f8cf0f63d62d069b34e (InQueue)
+[2026-03-15 18:51:19] Compile started: 3da95a20de3cb37c7a3d8bff0e23f3d6-0f4efeb8c7ae3f8cf0f63d62d069b34e (InQueue)
+[2026-03-15 18:51:59] Authentication successful
+[2026-03-15 18:52:00] Created project: MSTR CycleLow v2.2 Monthly (ID: 29037203)
+[2026-03-15 18:52:01] File added: MSTRCycleLowLeap.py
+[2026-03-15 18:52:02] File added: MSTRCycleLowLeap_Monthly.py
+[2026-03-15 18:52:03] Compile started: 144ccec609d11c843fb5f4172941132e-758816e1130e52a8b443a8d7c300f2c0 (InQueue)
+[2026-03-15 18:52:19] Backtest started: v2.2 MSTR CycleLow v2.2 Monthly (ID: )
+[2026-03-15 18:52:19] Created project: MSTR CycleLow v2.2 Weekly (ID: 29037210)
+[2026-03-15 18:52:21] File added: MSTRCycleLowLeap.py
+[2026-03-15 18:52:22] File added: MSTRCycleLowLeap_Weekly.py
+[2026-03-15 18:52:23] Compile started: 0b556b0cbe15e770a9e6ea355e64ca39-9615336dfc2a41f0d0f928e652ff1139 (InQueue)
+[2026-03-15 18:52:39] Backtest started: v2.2 MSTR CycleLow v2.2 Weekly (ID: )
+[2026-03-15 18:52:39] Created project: MSTR CycleLow v2.2 Daily (ID: 29037215)
+[2026-03-15 18:52:41] File added: MSTRCycleLowLeap.py
+[2026-03-15 18:52:42] File added: MSTRCycleLowLeap_Daily.py
+[2026-03-15 18:52:42] Compile started: 84518ce3d92ae1b2d631f3afea31f747-0f4efeb8c7ae3f8cf0f63d62d069b34e (InQueue)
+[2026-03-15 18:52:58] Backtest started: v2.2 MSTR CycleLow v2.2 Daily (ID: )
+[2026-03-15 19:02:48] Authentication successful
+[2026-03-15 19:02:49] Created project: MSTR CycleLow v2.2 Monthly (ID: 29037420)
+[2026-03-15 19:02:50] File added: MSTRCycleLowLeap.py
+[2026-03-15 19:02:51] File added: MSTRCycleLowLeap_Monthly.py
+[2026-03-15 19:02:52] Compile started: 576043b7519aad4c00b403f70a5d236a-eef7df933a5103bf180e704b20c72954 (InQueue)
+[2026-03-15 19:03:08] Backtest started: v2.2 MSTR CycleLow v2.2 Monthly (ID: )
+[2026-03-15 19:03:08] Created project: MSTR CycleLow v2.2 Weekly (ID: 29037424)
+[2026-03-15 19:03:10] File added: MSTRCycleLowLeap.py
+[2026-03-15 19:03:11] File added: MSTRCycleLowLeap_Weekly.py
+[2026-03-15 19:03:12] Compile started: 1070713a27a45f0bcd849f05d1e6358e-9ec5affdd6745cd7ef1c2ac44347efe5 (InQueue)
+[2026-03-15 19:03:28] Backtest started: v2.2 MSTR CycleLow v2.2 Weekly (ID: )
+[2026-03-15 19:03:29] Created project: MSTR CycleLow v2.2 Daily (ID: 29037433)
+[2026-03-15 19:03:30] File added: MSTRCycleLowLeap.py
+[2026-03-15 19:03:32] File added: MSTRCycleLowLeap_Daily.py
+[2026-03-15 19:03:32] Compile started: b4fde5895c5792df73adcfa68ee38e82-b303c9a99904682391415abc435dc33a (InQueue)
+[2026-03-15 19:03:48] Backtest started: v2.2 MSTR CycleLow v2.2 Daily (ID: )
+[2026-03-15 19:09:18] Authentication successful
+[2026-03-15 19:09:18] Created project: MSTR CycleLow v2.2 Monthly (ID: 29037550)
+[2026-03-15 19:09:19] File added: MSTRCycleLowLeap.py
+[2026-03-15 19:09:21] File added: MSTRCycleLowLeap_Monthly.py
+[2026-03-15 19:09:21] Compile started: 89c70c92edba0149f8e27ce73697d824-24bdff2becb5647ce06d16a7e5bf48a3 (InQueue)
+[2026-03-15 19:09:37] Backtest started: v2.2 MSTR CycleLow v2.2 Monthly (ID: )
+[2026-03-15 19:09:38] Created project: MSTR CycleLow v2.2 Weekly (ID: 29037559)
+[2026-03-15 19:09:39] File added: MSTRCycleLowLeap.py
+[2026-03-15 19:09:41] File added: MSTRCycleLowLeap_Weekly.py
+[2026-03-15 19:09:41] Compile started: 98ee5afadc37a97e8c5fe11dc3baea98-2298e2145a76f66b5f258810f924eaab (InQueue)
+[2026-03-15 19:09:57] Backtest started: v2.2 MSTR CycleLow v2.2 Weekly (ID: )
+[2026-03-15 19:09:57] Created project: MSTR CycleLow v2.2 Daily (ID: 29037566)
+[2026-03-15 19:09:59] File added: MSTRCycleLowLeap.py
+[2026-03-15 19:10:00] File added: MSTRCycleLowLeap_Daily.py
+[2026-03-15 19:10:00] Compile started: 4f3a16dfbf2d4bc4a351d7856facd20e-76ab59db166c0c06f1a83f3cc853f8b3 (InQueue)
+[2026-03-15 19:10:16] Backtest started: v2.2 MSTR CycleLow v2.2 Daily (ID: )
+[2026-03-15 19:13:27] Authentication successful
+[2026-03-15 19:13:27] Created project: MSTR CycleLow v2.2 Monthly (ID: 29037635)
+[2026-03-15 19:13:29] File added: main.py
+[2026-03-15 19:13:30] Compile started: a9d4ad62cd860f599bf6e38890cb9377-40c1bfe96f556156fa75567e9b2d4685 (InQueue)
+[2026-03-15 19:13:46] Backtest started: v2.2 MSTR CycleLow v2.2 Monthly (ID: )
+[2026-03-15 19:13:46] Created project: MSTR CycleLow v2.2 Weekly (ID: 29037645)
+[2026-03-15 19:13:48] File added: main.py
+[2026-03-15 19:13:49] Compile started: b9c7725201b841a789ecdda988d380a3-748fdf7dd499dd9aedd3aa7489c27af1 (InQueue)
+[2026-03-15 19:14:05] Backtest started: v2.2 MSTR CycleLow v2.2 Weekly (ID: )
+[2026-03-15 19:14:05] Created project: MSTR CycleLow v2.2 Daily (ID: 29037653)
+[2026-03-15 19:14:06] File added: main.py
+[2026-03-15 19:14:07] Compile started: 94d193a243d78b1641b711aeb364fbaf-067a895d63881dde2b6fae8991acc118 (InQueue)
+[2026-03-15 19:14:23] Backtest started: v2.2 MSTR CycleLow v2.2 Daily (ID: )
+[2026-03-15 19:25:38] Authentication successful
+[2026-03-15 19:25:38] Created project: MSTR CycleLow v2.2 Monthly (ID: 29037907)
+[2026-03-15 19:25:40] File added: main.py
+[2026-03-15 19:25:40] Compile started: c298453aaace0bac262a19f0e2249151-0de16bbd116276a1388df2c469654b04 (InQueue)
+[2026-03-15 19:25:56] Backtest started: v2.2 MSTR CycleLow v2.2 Monthly (ID: )
+[2026-03-15 19:25:57] Created project: MSTR CycleLow v2.2 Weekly (ID: 29037914)
+[2026-03-15 19:25:58] File added: main.py
+[2026-03-15 19:25:59] Compile started: bd6b37c1030c903fe1ac354d8a1329c3-615fdca921f7f3d308b095e13264ed65 (InQueue)
+[2026-03-15 19:26:15] Backtest started: v2.2 MSTR CycleLow v2.2 Weekly (ID: )
+[2026-03-15 19:26:15] Created project: MSTR CycleLow v2.2 Daily (ID: 29037921)
+[2026-03-15 19:26:17] File added: main.py
+[2026-03-15 19:26:17] Compile started: 0439be26544ba6463af47dfbca0b4a38-c4eb1f1607a4d9f4c3299d63b15d1976 (InQueue)
+[2026-03-15 19:26:33] Backtest started: v2.2 MSTR CycleLow v2.2 Daily (ID: )
+[2026-03-15 19:34:41] Authentication successful
+[2026-03-15 19:34:41] Created project: MSTR CycleLow v2.2 Monthly (ID: 29038107)
+[2026-03-15 19:34:43] File added: main.py
+[2026-03-15 19:34:43] Compile started: 2fae2e9fd0de18738ba0d2576c595ce8-8b7a76583c1d835f872dd3ebbe460037 (InQueue)
+[2026-03-15 19:34:59] Backtest started: v2.2 MSTR CycleLow v2.2 Monthly (ID: )
+[2026-03-15 19:35:00] Created project: MSTR CycleLow v2.2 Weekly (ID: 29038121)
+[2026-03-15 19:35:01] File added: main.py
+[2026-03-15 19:35:02] Compile started: dc18b4cad5d39d36ee7a11305610e423-c8eed6430126532a1dd3dd834c6209ab (InQueue)
+[2026-03-15 19:35:18] Backtest started: v2.2 MSTR CycleLow v2.2 Weekly (ID: )
+[2026-03-15 19:35:19] Created project: MSTR CycleLow v2.2 Daily (ID: 29038129)
+[2026-03-15 19:35:21] File added: main.py
+[2026-03-15 19:35:22] Compile started: 38f457859c7eb90c8721cf62ff3c5fb4-a46b55f34a73ae85d7e7e14343906372 (InQueue)
+[2026-03-15 19:35:38] Backtest started: v2.2 MSTR CycleLow v2.2 Daily (ID: )
+[2026-03-15 19:46:43] Authentication successful
+[2026-03-15 19:46:44] Created project: MSTR CycleLow v2.2 Monthly (ID: 29038360)
+[2026-03-15 19:46:45] File added: main.py
+[2026-03-15 19:46:45] Compile started: d6ea937b742dd115e4ac75de82ead43b-e2f7d17e4792a1d6a29e8a530e0d7cb5 (InQueue)
+[2026-03-15 19:47:01] Backtest started: v2.2 MSTR CycleLow v2.2 Monthly (ID: )
+[2026-03-15 19:47:02] Created project: MSTR CycleLow v2.2 Weekly (ID: 29038366)
+[2026-03-15 19:47:03] File added: main.py
+[2026-03-15 19:47:04] Compile started: 42a98bd7db8ace3f1e0eec390472adad-3f1243aa1c5368f7e5ae9242535634da (InQueue)
+[2026-03-15 19:47:20] Backtest started: v2.2 MSTR CycleLow v2.2 Weekly (ID: )
+[2026-03-15 19:47:20] Created project: MSTR CycleLow v2.2 Daily (ID: 29038377)
+[2026-03-15 19:47:22] File added: main.py
+[2026-03-15 19:47:23] Compile started: 19383e2ef5daad69b934276fd495005b-73ee56e96e43d9c3a299043f770d1f4d (InQueue)
+[2026-03-15 19:47:39] Backtest started: v2.2 MSTR CycleLow v2.2 Daily (ID: )
+[2026-03-15 19:53:40] Authentication successful
+[2026-03-15 19:53:43] Created project: MSTR CycleLow v2.2 Monthly (ID: 29038501)
+[2026-03-15 19:53:46] File added: main.py
+[2026-03-15 19:53:46] Compile started: 2e5e927579713a2a0be701179edb5c8b-9ba9191d561c034ae1aaad69a99904d3 (InQueue)
+[2026-03-15 19:54:02] Backtest started: v2.2 MSTR CycleLow v2.2 Monthly (ID: )
+[2026-03-15 19:54:02] Created project: MSTR CycleLow v2.2 Weekly (ID: 29038509)
+[2026-03-15 19:54:04] File added: main.py
+[2026-03-15 19:54:05] Compile started: e474f25bf6e5919f5dcceb8f29a83e81-39f6864231d2ed4fa46a49d6ea37c72f (InQueue)
+[2026-03-15 19:54:21] Backtest started: v2.2 MSTR CycleLow v2.2 Weekly (ID: )
+[2026-03-15 19:54:21] Created project: MSTR CycleLow v2.2 Daily (ID: 29038513)
+[2026-03-15 19:54:23] File added: main.py
+[2026-03-15 19:54:23] Compile started: a3e976bc5b6762ca1e486220352eee22-c789041c1c68650878d9a37b2820a8e5 (InQueue)
+[2026-03-15 19:54:39] Backtest started: v2.2 MSTR CycleLow v2.2 Daily (ID: )
+[2026-03-15 21:47:02] Authentication successful
+[2026-03-15 21:47:03] Created project: MSTR v2.2 Loosened Weekly (1GW+1.8x) (ID: 29041244)
+[2026-03-15 21:47:04] File added: main.py
+[2026-03-15 21:47:05] Compile started: 42c08ba1605a0288c86903857c173373-0c04c89babdace6e9224041a6d9d37aa (InQueue)
+[2026-03-15 21:47:20] Backtest started: v2.2 Loosened Weekly (ID: )
+[2026-03-15 22:18:49] Authentication successful
+[2026-03-15 22:18:50] Created project: MSTR CycleLow v2.2 Monthly (ID: 29041934)
+[2026-03-15 22:18:51] File added: main.py
+[2026-03-15 22:18:52] Compile started: 821846bc83575d85b22b1730f088ee39-1f85086437945491b1e99283c138f93d (InQueue)
+[2026-03-15 22:19:07] Backtest started: v2.2 MSTR CycleLow v2.2 Monthly (ID: )
+[2026-03-15 22:19:08] Created project: MSTR CycleLow v2.2 Weekly (ID: 29041946)
+[2026-03-15 22:19:09] File added: main.py
+[2026-03-15 22:19:10] Compile started: 346688ba0d1fe63e5fb2bc8beee8a428-29ce8c390bfa92b427ea3a421b83f75d (InQueue)
+[2026-03-15 22:19:25] Backtest started: v2.2 MSTR CycleLow v2.2 Weekly (ID: )
+[2026-03-15 22:19:26] Created project: MSTR CycleLow v2.2 Daily (ID: 29041954)
+[2026-03-15 22:19:27] File added: main.py
+[2026-03-15 22:19:28] Compile started: f64644d60439ca54a4a7876795839397-75c692e8ec624b05f9179ed09465c5db (InQueue)
+[2026-03-15 22:19:43] Backtest started: v2.2 MSTR CycleLow v2.2 Daily (ID: )
+[2026-03-15 22:31:26] Authentication successful
+[2026-03-15 22:31:26] Created project: MSTR CycleLow v2.2 Monthly (ID: 29042246)
+[2026-03-15 22:31:28] File added: main.py
+[2026-03-15 22:31:28] Compile started: 4f80a7f2eb20f373a671e064c8cd321f-bc3730be1a9c645affc27204f94ea012 (InQueue)
+[2026-03-15 22:31:44] Backtest started: v2.2 MSTR CycleLow v2.2 Monthly (ID: )
+[2026-03-15 22:31:44] Created project: MSTR CycleLow v2.2 Weekly (ID: 29042255)
+[2026-03-15 22:31:46] File added: main.py
+[2026-03-15 22:31:46] Compile started: 972bed3494ff0318e6404249ee308847-3f6bc769e7181ee6ec912e8dd25866d7 (InQueue)
+[2026-03-15 22:32:02] Backtest started: v2.2 MSTR CycleLow v2.2 Weekly (ID: )
+[2026-03-15 22:32:02] Created project: MSTR CycleLow v2.2 Daily (ID: 29042265)
+[2026-03-15 22:32:04] File added: main.py
+[2026-03-15 22:32:05] Compile started: 64088c041d731307a743984796b4bfcc-abf0f0bdc7ec20ac3e4239a331d5bf46 (InQueue)
+[2026-03-15 22:32:20] Backtest started: v2.2 MSTR CycleLow v2.2 Daily (ID: )
+[2026-03-15 22:36:52] Authentication successful
+[2026-03-15 22:36:52] Created project: MSTR CycleLow v2.2 Monthly (ID: 29042365)
+[2026-03-15 22:37:03] File added: main.py
+[2026-03-15 22:37:04] Compile started: 8954a19818a3d03a1642546825fb13ce-f82a8a56dee89e097ed2c896d923c866 (InQueue)
+[2026-03-15 22:37:21] Backtest started: v2.2 MSTR CycleLow v2.2 Monthly (ID: )
+[2026-03-15 22:37:22] Created project: MSTR CycleLow v2.2 Weekly (ID: 29042378)
+[2026-03-15 22:37:24] File added: main.py
+[2026-03-15 22:37:24] Compile started: 8e484895ac385b6a117448ff62d26cfb-bf6f38f28f5a4af1fa17dbeed101e738 (InQueue)
+[2026-03-15 22:37:40] Backtest started: v2.2 MSTR CycleLow v2.2 Weekly (ID: )
+[2026-03-15 22:37:41] Created project: MSTR CycleLow v2.2 Daily (ID: 29042388)
+[2026-03-15 22:37:42] File added: main.py
+[2026-03-15 22:37:43] Compile started: 5350f2698fee87900007f50f4f3f9a02-0a0d4f1e93e2966aacffa3aaea32269c (InQueue)
+[2026-03-15 22:37:58] Backtest started: v2.2 MSTR CycleLow v2.2 Daily (ID: )
+[2026-03-15 23:24:45] Authentication failed: {'errors': ["Hash doesn't match UID: 473242 Hash: 5347fa6af4e1f85c0e94a874e04a457c83112b176851e73adfd2d2fcf9b92b24 Timestamp: '1773631484'"], 'success': False}
+[2026-03-15 23:24:45] Authentication failed: {'errors': ["Hash doesn't match UID: 473242 Hash: 5347fa6af4e1f85c0e94a874e04a457c83112b176851e73adfd2d2fcf9b92b24 Timestamp: '1773631484'"], 'success': False}
+[2026-03-15 23:26:41] Authentication failed: {'errors': ["Hash doesn't match UID: 473242 Hash: d9756f742c606126ee51eb91a73bb9c003c5fea04c1e60141026dc0e5000481f Timestamp: '1773631600'"], 'success': False}
+[2026-03-15 23:42:31] Authentication successful
+[2026-03-15 23:42:32] Created project: v2.3 Relaxed 2of3 Weekly (ID: 29044000)
+[2026-03-15 23:42:33] File added: main.py
+[2026-03-15 23:42:34] Compile started: 03f71ed0a03f3568292de2ac2fa29960-fc9be8840204c3a1f3fd8eac2289976c (InQueue)
+[2026-03-15 23:42:50] Backtest started: v2.3 Relaxed 2of3 Weekly (ID: )
+[2026-03-15 23:42:51] Created project: v2.3 Relaxed 2of3 Daily (ID: 29044008)
+[2026-03-15 23:42:52] File added: main.py
+[2026-03-15 23:42:53] Compile started: 4471077f2976475c61b1efb08e3fd1ec-7a6448a7f4201fa3a9e974c3400e743e (InQueue)
+[2026-03-15 23:43:09] Backtest started: v2.3 Relaxed 2of3 Daily (ID: )
+[2026-03-15 23:43:09] Created project: v2.3 Strict+ATR Weekly (ID: 29044017)
+[2026-03-15 23:43:10] File added: main.py
+[2026-03-15 23:43:11] Compile started: 2b58b72f85aafa25e2e34d845d716aa2-f0ba1fbeb1026513f0b65f97b1a683e1 (InQueue)
+[2026-03-15 23:43:27] Backtest started: v2.3 Strict+ATR Weekly (ID: )
+[2026-03-15 23:43:27] Created project: v2.3 Strict+ATR Daily (ID: 29044026)
+[2026-03-15 23:43:29] File added: main.py
+[2026-03-15 23:43:29] Compile started: 93f4a7074c4917576135e60280e5d6e2-df80da99e594499be463a185b9a9796f (InQueue)
+[2026-03-15 23:43:45] Backtest failed: {'errors': ['Too many backtest requests; please slow down.'], 'success': False}
+[2026-03-15 23:44:32] Backtest started: v2.3 Strict+ATR Daily (ID: )
+[2026-03-15 23:48:09] Created project: v2.3 Strict+ATR Weekly v2 (ID: 29044109)
+[2026-03-15 23:48:10] File added: main.py
+[2026-03-15 23:48:11] Compile started: 4aa45bd0de420f3b138a85ccdc0a4da8-be145d0df8272fc047587228404f0d58 (InQueue)
+[2026-03-15 23:48:27] Backtest started: v2.3 Strict+ATR Weekly v2 (ID: )
+[2026-03-15 23:48:32] Created project: v2.3 Strict+ATR Daily v2 (ID: 29044123)
+[2026-03-15 23:48:34] File added: main.py
+[2026-03-15 23:48:34] Compile started: 0bf832c58b5ea04124d24d0166746d85-396aa2dd57133b3323c366d02332e50d (InQueue)
+[2026-03-15 23:48:50] Backtest started: v2.3 Strict+ATR Daily v2 (ID: )
+[2026-03-15 23:53:30] Created project: v2.3 ATR Weekly v3 (ID: 29044238)
+[2026-03-15 23:53:32] File added: main.py
+[2026-03-15 23:53:32] Compile started: a88ba671da3640b386a6bfd4559a9437-08e690078dd8ac1e90e214c2d91d4065 (InQueue)
+[2026-03-15 23:53:48] Backtest started: v2.3 ATR Weekly v3 (ID: )
+[2026-03-15 23:53:54] Created project: v2.3 ATR Daily v3 (ID: 29044247)
+[2026-03-15 23:53:55] File added: main.py
+[2026-03-15 23:53:56] Compile started: b467f504c01f82c88d2f49d53c30389b-bc2e261fb2b08ad15c618b06783a24af (InQueue)
+[2026-03-15 23:54:12] Backtest started: v2.3 ATR Daily v3 (ID: )
+[2026-03-16 00:00:46] Created project: v2.3 Grok Weekly (ID: 29044400)
+[2026-03-16 00:00:47] File added: main.py
+[2026-03-16 00:00:47] Compile started: ca310b94b732fe88faf149a57b9840c5-d912992f628635fbb8be220ca9818646 (InQueue)
+[2026-03-16 00:01:03] Backtest started: v2.3 Grok Weekly (ID: )
+[2026-03-16 00:01:09] Created project: v2.3 Grok Daily (ID: 29044409)
+[2026-03-16 00:01:10] File added: main.py
+[2026-03-16 00:01:11] Compile started: 77a93131c8e5f9d3128180bde6d2b4dc-6ff972390145baa871f2a4cfecf6308b (InQueue)
+[2026-03-16 00:01:27] Backtest started: v2.3 Grok Daily (ID: )
+[2026-03-16 00:01:54] Created project: v2.3 Grok+ATR Weekly (ID: 29044431)
+[2026-03-16 00:01:56] File added: main.py
+[2026-03-16 00:01:56] Compile started: 5b15dc25e4175655e0db4dd786a13e3a-be4919a698494bb21efc771a6edebcfe (InQueue)
+[2026-03-16 00:02:12] Backtest started: v2.3 Grok+ATR Weekly (ID: )
+[2026-03-16 00:09:41] Created project: v2.4 Strict+ATR+Reentry Wkly (ID: 29044577)
+[2026-03-16 00:09:43] File added: main.py
+[2026-03-16 00:09:43] Compile started: 216ac0c110ae20daa71bfa64978c1535-bcd5ca1ad91a9abe14934275725172e0 (InQueue)
+[2026-03-16 00:09:59] Backtest started: v2.4 Strict+ATR+Reentry Wkly (ID: )
+[2026-03-16 00:10:04] Created project: v2.4 Strict+ATR+Reentry Daily (ID: 29044586)
+[2026-03-16 00:10:06] File added: main.py
+[2026-03-16 00:10:07] Compile started: 8817b2f92a48278126d87caf06f4b0bb-511857db330d49eee3bd944043223c12 (InQueue)
+[2026-03-16 00:10:23] Backtest started: v2.4 Strict+ATR+Reentry Daily (ID: )
+[2026-03-16 00:10:28] Created project: v2.4 Grok+ATR+Reentry Wkly (ID: 29044597)
+[2026-03-16 00:10:30] File added: main.py
+[2026-03-16 00:10:30] Compile started: 15c498f06e785da767e0ca3fa5c65dcf-acdb0e88a24d34c91afef982f6ffcb27 (InQueue)
+[2026-03-16 00:10:46] Backtest started: v2.4 Grok+ATR+Reentry Wkly (ID: )
+[2026-03-16 01:30:45] Authentication successful
+[2026-03-16 01:30:45] Authentication successful
+[2026-03-16 01:30:46] Node list failed: {'errors': ['Organization not found'], 'success': False}
+[2026-03-16 01:30:46] Node list failed: {'errors': ['Organization not found'], 'success': False}
+[2026-03-16 01:30:57] API error: Expecting value: line 1 column 1 (char 0)
+[2026-03-16 01:36:06] Authentication successful
+[2026-03-16 01:36:07] Organization ID: e96c932d4fa53738a493eef7a86bbb12
+[2026-03-16 01:36:07] Found 1 live nodes
+[2026-03-16 01:44:26] Authentication successful
+[2026-03-16 01:44:26] Organization ID: e96c932d4fa53738a493eef7a86bbb12
+[2026-03-16 01:44:27] Found 1 live nodes
+[2026-03-16 01:44:28] Created project: Rudy-v2.4-MSTR-PAPER-1773639867 (ID: 29046173)
+[2026-03-16 01:44:30] File added: main.py
+[2026-03-16 01:44:31] Compile started: 3764f719d269a41175b0744e07962952-8a45657e8a75bc23b83fc8036161f405 (InQueue)
+[2026-03-16 01:44:35] Live deployment failed: {'errors': ["Required parameter 'ib-weekly-restart-utc-time' is missing or not valid. Received: "], 'success': False}
+[2026-03-16 01:45:02] Authentication successful
+[2026-03-16 01:45:02] Organization ID: e96c932d4fa53738a493eef7a86bbb12
+[2026-03-16 01:45:02] Found 1 live nodes
+[2026-03-16 01:45:03] Created project: Rudy-v2.4-MSTR-PAPER-1773639902 (ID: 29046180)
+[2026-03-16 01:45:04] File added: main.py
+[2026-03-16 01:45:05] Compile started: 7a6edaaa3b389ff6f03b448f024298d4-8a45657e8a75bc23b83fc8036161f405 (InQueue)
+[2026-03-16 01:45:09] Live deployment failed: {'errors': ["Required parameter 'ib-user-name' is missing or not valid. Received: "], 'success': False}
+[2026-03-16 01:45:27] Authentication successful
+[2026-03-16 01:45:27] Organization ID: e96c932d4fa53738a493eef7a86bbb12
+[2026-03-16 01:45:28] Found 1 live nodes
+[2026-03-16 01:45:28] Created project: Rudy-v2.4-MSTR-PAPER-1773639928 (ID: 29046187)
+[2026-03-16 01:45:30] File added: main.py
+[2026-03-16 01:45:31] Compile started: daad8023e26a8e274f64866c9ee61292-8a45657e8a75bc23b83fc8036161f405 (InQueue)
+[2026-03-16 01:45:35] Live deployment started for project 29046187
+[2026-03-16 01:45:35] Deployment state saved to /Users/eddiemae/rudy/data/live_deployment.json
+[2026-03-16 09:09:33] Authentication successful
+[2026-03-16 09:09:34] Organization ID: e96c932d4fa53738a493eef7a86bbb12
+[2026-03-16 09:09:34] Found 1 live nodes
+[2026-03-16 09:09:35] Created project: Rudy-v2.4-MSTR-PAPER-1773666574 (ID: 29054476)
+[2026-03-16 09:09:36] File added: main.py
+[2026-03-16 09:09:36] Compile started: c6e746bbcd581c20ca34838657b32241-8a45657e8a75bc23b83fc8036161f405 (InQueue)
+[2026-03-16 09:09:41] Live deployment started for project 29054476
+[2026-03-16 09:09:41] Deployment state saved to /Users/eddiemae/rudy/data/live_deployment.json
+[2026-03-16 09:49:32] Stop live failed: {'errors': ['Endpoint not found api/v2/live/stop'], 'success': False}
+[2026-03-16 09:49:32] Authentication successful
+[2026-03-16 09:49:32] Organization ID: e96c932d4fa53738a493eef7a86bbb12
+[2026-03-16 09:49:33] Found 1 live nodes
+[2026-03-16 09:49:33] Created project: Rudy-v2.4-MSTR-PAPER-1773668973 (ID: 29055519)
+[2026-03-16 09:49:35] File added: main.py
+[2026-03-16 09:49:35] Compile started: 1871ac5c6ea090ee8bc2e8411f5ac617-8a45657e8a75bc23b83fc8036161f405 (InQueue)
+[2026-03-16 09:49:39] Live deployment started for project 29055519
+[2026-03-16 09:49:39] Deployment state saved to /Users/eddiemae/rudy/data/live_deployment.json
+[2026-03-16 09:53:28] Stop live failed: {'errors': ['No running deployment found for this project. (29055519)'], 'success': False}
+[2026-03-16 09:53:29] Authentication successful
+[2026-03-16 09:53:31] Organization ID: e96c932d4fa53738a493eef7a86bbb12
+[2026-03-16 09:53:32] Found 1 live nodes
+[2026-03-16 09:53:33] Created project: Rudy-v2.4-MSTR-PAPER-1773669212 (ID: 29055608)
+[2026-03-16 09:53:36] File added: main.py
+[2026-03-16 09:53:36] Compile started: ebcaf21dc9dc026ca1d3c260ba63fa4f-8a45657e8a75bc23b83fc8036161f405 (InQueue)
+[2026-03-16 09:53:41] Live deployment started for project 29055608
+[2026-03-16 09:53:41] Deployment state saved to /Users/eddiemae/rudy/data/live_deployment.json
+[2026-03-16 10:00:55] Stop live failed: {'errors': ['No running deployment found for this project. (29055608)'], 'success': False}
+[2026-03-16 10:00:56] Authentication successful
+[2026-03-16 10:00:56] Organization ID: e96c932d4fa53738a493eef7a86bbb12
+[2026-03-16 10:00:56] Found 1 live nodes
+[2026-03-16 10:00:57] Created project: Rudy-v2.4-MSTR-PAPER-1773669656 (ID: 29055791)
+[2026-03-16 10:00:58] File added: main.py
+[2026-03-16 10:00:59] Compile started: 59f635ef8f72e08c38e4f43ab92a8619-8a45657e8a75bc23b83fc8036161f405 (InQueue)
+[2026-03-16 10:01:05] Live deployment started for project 29055791
+[2026-03-16 10:01:05] Deployment state saved to /Users/eddiemae/rudy/data/live_deployment.json
+[2026-03-16 10:19:54] Authentication successful
+[2026-03-16 10:19:54] Organization ID: e96c932d4fa53738a493eef7a86bbb12
+[2026-03-16 10:19:55] Found 1 live nodes
+[2026-03-16 10:19:55] Created project: Rudy-v2.4-MSTR-PAPER-1773670795 (ID: 29056266)
+[2026-03-16 10:19:57] File added: main.py
+[2026-03-16 10:19:57] Compile started: 69c5d971411ca814671b362450fa6866-82a0af5a2e9a8ad39c64dff2b4cb5268 (InQueue)
+[2026-03-16 10:20:01] Live deployment started for project 29056266
+[2026-03-16 10:20:01] Deployment state saved to /Users/eddiemae/rudy/data/live_deployment.json
+[2026-03-16 10:40:39] Authentication successful
+[2026-03-16 10:40:40] Organization ID: e96c932d4fa53738a493eef7a86bbb12
+[2026-03-16 10:40:40] Found 1 live nodes
+[2026-03-16 10:40:40] Created project: Rudy-v2.4-MSTR-PAPER-1773672040 (ID: 29056852)
+[2026-03-16 10:40:44] File added: main.py
+[2026-03-16 10:40:48] Compile started: 0109a0db8e672f65356b268590d83d3f-82a0af5a2e9a8ad39c64dff2b4cb5268 (InQueue)
+[2026-03-16 10:40:53] Live deployment started for project 29056852
+[2026-03-16 10:40:53] Deployment state saved to /Users/eddiemae/rudy/data/live_deployment.json
+[2026-03-16 10:50:11] Authentication successful
+[2026-03-16 10:50:12] Organization ID: e96c932d4fa53738a493eef7a86bbb12
+[2026-03-16 10:50:13] Found 1 live nodes
+[2026-03-16 10:50:16] Created project: Rudy-v2.4-MSTR-PAPER-1773672613 (ID: 29057125)
+[2026-03-16 10:50:18] File added: main.py
+[2026-03-16 10:50:19] Compile started: bcc1f2eef97a93e5606725a3eec8fc89-82a0af5a2e9a8ad39c64dff2b4cb5268 (InQueue)
+[2026-03-16 10:50:24] Live deployment started for project 29057125
+[2026-03-16 10:50:24] Deployment state saved to /Users/eddiemae/rudy/data/live_deployment.json
+[2026-03-16 10:55:13] Authentication successful
+[2026-03-16 10:55:14] Organization ID: e96c932d4fa53738a493eef7a86bbb12
+[2026-03-16 10:55:14] Found 1 live nodes
+[2026-03-16 10:55:15] Created project: Rudy-v2.4-MSTR-PAPER-1773672914 (ID: 29057239)
+[2026-03-16 10:55:16] File added: main.py
+[2026-03-16 10:55:17] Compile started: 1550adc8a9ef0944b2b7437a0adebe2b-8f0c324d074289c60b4e76a03cb80208 (InQueue)
+[2026-03-16 10:55:21] Live deployment started for project 29057239
+[2026-03-16 10:55:21] Deployment state saved to /Users/eddiemae/rudy/data/live_deployment.json
+[2026-03-16 14:21:23] Authentication successful
+[2026-03-16 14:21:24] Created project: v25-A1-PremCap2.0-Weekly (ID: 29063585)
+[2026-03-16 14:21:27] File added: main.py
+[2026-03-16 14:21:29] Compile started: 4fe6c2227e0dea8d62766cfcbb71d66c-ca082385e2caaa53433221270d114a43 (InQueue)
+[2026-03-16 14:21:39] Backtest started: v25-A1-PremCap2.0-Weekly (ID: )
+[2026-03-16 14:21:44] Created project: v25-A1-PremCap2.0-Daily (ID: 29063595)
+[2026-03-16 14:21:46] File added: main.py
+[2026-03-16 14:21:46] Compile started: e34f4200ac0b659f1e1413c729611ce3-80258a5c41583eff1ba4231bd920858b (InQueue)
+[2026-03-16 14:21:57] Backtest started: v25-A1-PremCap2.0-Daily (ID: )
+[2026-03-16 14:22:03] Created project: v25-A2-PremCap2.5-Weekly (ID: 29063604)
+[2026-03-16 14:22:07] File added: main.py
+[2026-03-16 14:22:08] Compile started: 8b45cd5f4031bce60c61c5cab195d231-78fb05c5823c64d8124b29df0b5b2de4 (InQueue)
+[2026-03-16 14:22:19] Backtest started: v25-A2-PremCap2.5-Weekly (ID: )
+[2026-03-16 14:22:23] Created project: v25-A2-PremCap2.5-Daily (ID: 29063617)
+[2026-03-16 14:22:25] File added: main.py
+[2026-03-16 14:22:25] Compile started: 1e298bf38faf5d11225148572885849b-24c61a893a3a32f76406b02b2937287e (InQueue)
+[2026-03-16 14:22:37] Backtest failed: {'errors': ['Too many backtest requests; please slow down.'], 'success': False}
+[2026-03-16 14:22:53] Backtest started: v25-A2-PremCap2.5-Daily (ID: )
+[2026-03-16 14:22:57] Created project: v25-A3-PremCap1.0-Weekly (ID: 29063646)
+[2026-03-16 14:22:59] File added: main.py
+[2026-03-16 14:22:59] Compile started: b72e8964452ad64944e8273881f38b0f-47b15f5c792ef102cca9d78f24029769 (InQueue)
+[2026-03-16 14:23:10] Backtest started: v25-A3-PremCap1.0-Weekly (ID: )
+[2026-03-16 14:23:14] Created project: v25-A3-PremCap1.0-Daily (ID: 29063659)
+[2026-03-16 14:23:17] File added: main.py
+[2026-03-16 14:23:18] Compile started: 6fee11341d2b534be43d6bb434c9ed4f-218fd4641241e7927689b5b37eb3f499 (InQueue)
+[2026-03-16 14:23:29] Backtest started: v25-A3-PremCap1.0-Daily (ID: )
+[2026-03-16 14:23:33] Created project: v25-B1-Reentry2x-Weekly (ID: 29063671)
+[2026-03-16 14:23:35] File added: main.py
+[2026-03-16 14:23:36] Compile started: 2868739e8bbcf3838ec867a10ed3ca9c-36157417dc92d44f505d546b56374901 (InQueue)
+[2026-03-16 14:23:46] Backtest failed: {'errors': ['Too many backtest requests; please slow down.'], 'success': False}
+[2026-03-16 14:24:02] Backtest started: v25-B1-Reentry2x-Weekly (ID: )
+[2026-03-16 14:24:12] Created project: v25-B1-Reentry2x-Daily (ID: 29063689)
+[2026-03-16 14:24:16] File added: main.py
+[2026-03-16 14:24:16] Compile started: e47bfb8ef38ff1cb762e0b661a96b118-ceb715b3f918e3ee1f5c436f8929a75e (InQueue)
+[2026-03-16 14:24:34] Backtest started: v25-B1-Reentry2x-Daily (ID: )
+[2026-03-16 14:24:38] Created project: v25-B2-Reentry3x-Weekly (ID: 29063705)
+[2026-03-16 14:24:41] File added: main.py
+[2026-03-16 14:24:42] Compile started: 3db23cd406e5a4ea021ee4cfd46801d1-2ab311610c2231f596297e4bd617a74e (InQueue)
+[2026-03-16 14:24:54] Backtest started: v25-B2-Reentry3x-Weekly (ID: )
+[2026-03-16 14:24:58] Created project: v25-B2-Reentry3x-Daily (ID: 29063720)
+[2026-03-16 14:25:02] File added: main.py
+[2026-03-16 14:25:03] Compile started: 3a3a4515e764857890b1a48df654e423-e3509001f2000c9e5c70f96b22b85e09 (InQueue)
+[2026-03-16 14:25:14] Backtest started: v25-B2-Reentry3x-Daily (ID: )
+[2026-03-16 14:25:18] Created project: v25-B3-NoReentry-Weekly (ID: 29063729)
+[2026-03-16 14:25:21] File added: main.py
+[2026-03-16 14:25:22] Compile started: e75fd7cdf535ffa3ee8bb19d81d7b011-93803bff8c5c7a4e4bdfaccec4e375dc (InQueue)
+[2026-03-16 14:25:32] Backtest failed: {'errors': ['Too many backtest requests; please slow down.'], 'success': False}
+[2026-03-16 14:25:49] Backtest started: v25-B3-NoReentry-Weekly (ID: )
+[2026-03-16 14:25:53] Created project: v25-B3-NoReentry-Daily (ID: 29063751)
+[2026-03-16 14:25:57] File added: main.py
+[2026-03-16 14:25:57] Compile started: 712e77f2e33e4204d33a156d4af73406-f0cf0f3726586811b8106cf27fa192db (InQueue)
+[2026-03-16 14:26:09] Backtest started: v25-B3-NoReentry-Daily (ID: )
+[2026-03-16 14:26:13] Created project: v25-C1-IV80pctl-Weekly (ID: 29063766)
+[2026-03-16 14:26:16] File added: main.py
+[2026-03-16 14:26:18] Compile started: 6a3916e4c9c45b7ac5b9891372abf4ce-be3090ead34aa5d2f1f599ebefeaf344 (InQueue)
+[2026-03-16 14:26:29] Backtest started: v25-C1-IV80pctl-Weekly (ID: )
+[2026-03-16 14:26:34] Created project: v25-C1-IV80pctl-Daily (ID: 29063772)
+[2026-03-16 14:26:38] File added: main.py
+[2026-03-16 14:26:40] Compile started: 8003761ea12a13a9e16ee302e99f4dc2-7c42cf059582a119b6c9d278babc6115 (InQueue)
+[2026-03-16 14:26:50] Backtest started: v25-C1-IV80pctl-Daily (ID: )
+[2026-03-16 14:26:54] Created project: v25-C2-IV90pctl-Weekly (ID: 29063785)
+[2026-03-16 14:26:56] File added: main.py
+[2026-03-16 14:26:58] Compile started: 66806a99f0067d90108598ff119df524-ef0e4685ae887f7182316595399dd4c7 (InQueue)
+[2026-03-16 14:27:09] Backtest started: v25-C2-IV90pctl-Weekly (ID: )
+[2026-03-16 14:27:13] Created project: v25-C2-IV90pctl-Daily (ID: 29063798)
+[2026-03-16 14:27:15] File added: main.py
+[2026-03-16 14:27:15] Compile started: be91cbf2a43077466d4d73e6de6f3857-cb25a873b2b3ec29e6c22e7b2219c379 (InQueue)
+[2026-03-16 14:27:26] Backtest failed: {'errors': ['Too many backtest requests; please slow down.'], 'success': False}
+[2026-03-16 14:27:42] Backtest started: v25-C2-IV90pctl-Daily (ID: )
+[2026-03-16 14:27:46] Created project: v25-D1-MixedMult-Weekly (ID: 29063812)
+[2026-03-16 14:27:48] File added: main.py
+[2026-03-16 14:27:49] Compile started: bffb30d18e2a8ee19e89820fbe2592d8-a86c7df15a57f0d60701690569422efc (InQueue)
+[2026-03-16 14:27:59] Backtest started: v25-D1-MixedMult-Weekly (ID: )
+[2026-03-16 14:28:03] Created project: v25-D1-MixedMult-Daily (ID: 29063821)
+[2026-03-16 14:28:04] File added: main.py
+[2026-03-16 14:28:05] Compile started: 5e9d2722ee3b3e2a5c78e71d5dcb23ed-7b452487dde08dc4f75e9432261fc2aa (InQueue)
+[2026-03-16 14:28:16] Backtest started: v25-D1-MixedMult-Daily (ID: )
+[2026-03-16 14:28:20] Created project: v25-D2-ConservMult-Weekly (ID: 29063830)
+[2026-03-16 14:28:22] File added: main.py
+[2026-03-16 14:28:23] Compile started: b8cb7c346ab150999e37121cd46c4668-4ffef5e7db517e9a271a4b8ab807f51d (InQueue)
+[2026-03-16 14:28:33] Backtest failed: {'errors': ['Too many backtest requests; please slow down.'], 'success': False}
+[2026-03-16 14:28:49] Backtest started: v25-D2-ConservMult-Weekly (ID: )
+[2026-03-16 14:28:53] Created project: v25-D2-ConservMult-Daily (ID: 29063845)
+[2026-03-16 14:28:54] File added: main.py
+[2026-03-16 14:28:55] Compile started: e38f53f30599dd2a0c5875fd5b699250-f418245b1e2d3a7cc85afa44b87fff5d (InQueue)
+[2026-03-16 14:29:06] Backtest started: v25-D2-ConservMult-Daily (ID: )
+[2026-03-16 14:29:09] Created project: v25-E1-Panic25-Weekly (ID: 29063854)
+[2026-03-16 14:29:11] File added: main.py
+[2026-03-16 14:29:11] Compile started: 8b7d4f503b3e819ad72677626817b35b-2ca4d3c226428ff9771214097060ade6 (InQueue)
+[2026-03-16 14:29:22] Backtest started: v25-E1-Panic25-Weekly (ID: )
+[2026-03-16 14:29:26] Created project: v25-E1-Panic25-Daily (ID: 29063862)
+[2026-03-16 14:29:27] File added: main.py
+[2026-03-16 14:29:28] Compile started: df336e88c7ed545db0f496924c78553f-d5c46bc722993aef4c02e94441b6438f (InQueue)
+[2026-03-16 14:29:38] Backtest failed: {'errors': ['Too many backtest requests; please slow down.'], 'success': False}
+[2026-03-16 14:29:54] Backtest started: v25-E1-Panic25-Daily (ID: )
+[2026-03-16 14:29:57] Created project: v25-E2-Panic50-Weekly (ID: 29063882)
+[2026-03-16 14:29:59] File added: main.py
+[2026-03-16 14:29:59] Compile started: 849396c6f0ff50bcf958bdde13895767-85d4bfe46ad0077cb3bf019443dd6ecf (InQueue)
+[2026-03-16 14:30:11] Backtest started: v25-E2-Panic50-Weekly (ID: )
+[2026-03-16 14:30:20] Created project: v25-E2-Panic50-Daily (ID: 29063899)
+[2026-03-16 14:30:24] File added: main.py
+[2026-03-16 14:30:26] Compile started: ca2d58e35a47a855c5c8bcc12d959395-ad83ec541b74bd5cd3d658f174284f20 (InQueue)
+[2026-03-16 14:30:37] Backtest started: v25-E2-Panic50-Daily (ID: )
+[2026-03-16 14:30:41] Created project: v25-E3-NoPanic-Weekly (ID: 29063913)
+[2026-03-16 14:30:44] File added: main.py
+[2026-03-16 14:30:44] Compile started: 70ef8cf91f3e83317e46632dd07bbae8-77a53f699bc84f4047921a93f81463cb (InQueue)
+[2026-03-16 14:30:56] Backtest started: v25-E3-NoPanic-Weekly (ID: )
+[2026-03-16 14:31:00] Created project: v25-E3-NoPanic-Daily (ID: 29063925)
+[2026-03-16 14:31:02] File added: main.py
+[2026-03-16 14:31:02] Compile started: 995a6ea760a36827137277eaeffaf00c-a42c795dd4f8547a0f9832e138151129 (InQueue)
+[2026-03-16 14:31:13] Backtest started: v25-E3-NoPanic-Daily (ID: )
+[2026-03-16 14:31:17] Created project: v25-F1-ATR1.2x-Weekly (ID: 29063930)
+[2026-03-16 14:31:19] File added: main.py
+[2026-03-16 14:31:20] Compile started: 269e2c0d6e1a73cdd68f83c3af22e581-22ab524d8bb95afa3ba4f6c330207a53 (InQueue)
+[2026-03-16 14:31:30] Backtest failed: {'errors': ['Too many backtest requests; please slow down.'], 'success': False}
+[2026-03-16 14:31:46] Backtest started: v25-F1-ATR1.2x-Weekly (ID: )
+[2026-03-16 14:31:49] Created project: v25-F1-ATR1.2x-Daily (ID: 29063951)
+[2026-03-16 14:31:51] File added: main.py
+[2026-03-16 14:31:52] Compile started: f2777fc9ef299fe4a7f74f36954102dd-4b30923b11d68dac71b0c6338a8f2304 (InQueue)
+[2026-03-16 14:32:03] Backtest started: v25-F1-ATR1.2x-Daily (ID: )
+[2026-03-16 14:32:06] Created project: v25-F2-ATR2.0x-Weekly (ID: 29063958)
+[2026-03-16 14:32:08] File added: main.py
+[2026-03-16 14:32:08] Compile started: 9dee5374fe888dbe0daf94e4bc7889b4-efd605e482681194b51a774249820c53 (InQueue)
+[2026-03-16 14:32:19] Backtest started: v25-F2-ATR2.0x-Weekly (ID: )
+[2026-03-16 14:32:25] Created project: v25-F2-ATR2.0x-Daily (ID: 29063966)
+[2026-03-16 14:32:28] File added: main.py
+[2026-03-16 14:32:29] Compile started: ce1e5269ecb3c3332b13194c46f59476-41835b5458a1be491dfe222cb745fa40 (InQueue)
+[2026-03-16 14:32:39] Backtest failed: {'errors': ['Too many backtest requests; please slow down.'], 'success': False}
+[2026-03-16 14:32:55] Backtest started: v25-F2-ATR2.0x-Daily (ID: )
+[2026-03-16 14:33:00] Created project: v25-F3-NoATR-Weekly (ID: 29063991)
+[2026-03-16 14:33:03] File added: main.py
+[2026-03-16 14:33:04] Compile started: 7bc150a6eacfa0567f4873499c4e5cac-8ce34ce454089d130a25ae13c73794ec (InQueue)
+[2026-03-16 14:33:16] Backtest started: v25-F3-NoATR-Weekly (ID: )
+[2026-03-16 14:33:19] Created project: v25-F3-NoATR-Daily (ID: 29064001)
+[2026-03-16 14:33:21] File added: main.py
+[2026-03-16 14:33:22] Compile started: eef036c6c4e0bf441bd32a0bf207a4e9-6926eefcd0448be5af6bb6a27c8942ae (InQueue)
+[2026-03-16 14:33:34] Backtest started: v25-F3-NoATR-Daily (ID: )
+[2026-03-16 14:33:37] Created project: v25-G1-Prem2+Re2+IV80-Weekly (ID: 29064009)
+[2026-03-16 14:33:39] File added: main.py
+[2026-03-16 14:33:40] Compile started: 361cbc8c4e04bcc194fb33c7d7e83781-e61b316e23497ebe8a497782fcba4e5c (InQueue)
+[2026-03-16 14:33:52] Backtest failed: {'errors': ['Too many backtest requests; please slow down.'], 'success': False}
+[2026-03-16 14:34:08] Backtest started: v25-G1-Prem2+Re2+IV80-Weekly (ID: )
+[2026-03-16 14:34:11] Created project: v25-G1-Prem2+Re2+IV80-Daily (ID: 29064031)
+[2026-03-16 14:34:13] File added: main.py
+[2026-03-16 14:34:13] Compile started: c792f18e96aad5d0ca74c5180b8cd08c-1fabfc3c199c999d3a4f25198f6e5df3 (InQueue)
+[2026-03-16 14:34:24] Backtest started: v25-G1-Prem2+Re2+IV80-Daily (ID: )
+[2026-03-16 14:34:28] Created project: v25-G2-Prem2+Pan25+ATR1.2-Weekly (ID: 29064037)
+[2026-03-16 14:34:30] File added: main.py
+[2026-03-16 14:34:31] Compile started: 3908fde4e6da5e27530d0ea76d3a0094-0ec1a5edcf7f1b2fa0b24652d84da05a (InQueue)
+[2026-03-16 14:34:42] Backtest started: v25-G2-Prem2+Pan25+ATR1.2-Weekly (ID: )
+[2026-03-16 14:34:45] Created project: v25-G2-Prem2+Pan25+ATR1.2-Daily (ID: 29064046)
+[2026-03-16 14:34:47] File added: main.py
+[2026-03-16 14:34:47] Compile started: f2091734687a566cd9ab01d0b663d539-8cb6384455d98ae1f98dc564523b9131 (InQueue)
+[2026-03-16 14:34:58] Backtest failed: {'errors': ['Too many backtest requests; please slow down.'], 'success': False}
+[2026-03-16 14:35:14] Backtest started: v25-G2-Prem2+Pan25+ATR1.2-Daily (ID: )
+[2026-03-16 14:35:19] Created project: v25-G3-Prem2+Mix+Re2-Weekly (ID: 29064058)
+[2026-03-16 14:35:22] File added: main.py
+[2026-03-16 14:35:23] Compile started: d899de3fc680a24dc8ab4c5c7d56447a-1ad17621750ef0965e74f64b5f5e0189 (InQueue)
+[2026-03-16 14:35:34] Backtest started: v25-G3-Prem2+Mix+Re2-Weekly (ID: )
+[2026-03-16 14:35:37] Created project: v25-G3-Prem2+Mix+Re2-Daily (ID: 29064069)
+[2026-03-16 14:35:39] File added: main.py
+[2026-03-16 14:35:41] Compile started: f504353eecae5b011d49a8e154394e57-2997b31f81c9cc2678034243b0701983 (InQueue)
+[2026-03-16 14:35:52] Backtest started: v25-G3-Prem2+Mix+Re2-Daily (ID: )
+[2026-03-16 15:24:32] Authentication successful
+[2026-03-16 15:24:33] Created project: MSTR CycleHigh PUT v1.0 Weekly (ID: 29065184)
+[2026-03-16 15:24:36] File added: main.py
+[2026-03-16 15:24:37] Compile started: 6d2e5863cbd423bac387d75fd7407797-c7386649d9cead744ff1a94b47e58356 (InQueue)
+[2026-03-16 15:24:52] Backtest started: MSTR CycleHigh PUT v1.0 Weekly (ID: )
+[2026-03-16 15:24:56] Create project failed: {'errors': ['You have reached the maximum number of projects that can be created in a day (100).'], 'success': False}
+[2026-03-16 15:26:40] Create project failed: {'errors': ['You have reached the maximum number of projects that can be created in a day (100).'], 'success': False}
+[2026-03-16 15:27:05] File added: main.py
+[2026-03-16 15:27:05] Compile started: 8faf0fb700df837be6d0269cda5e0ca9-06200990d55ddf23d3848670f0e7ecc3 (InQueue)
+[2026-03-16 15:27:21] Backtest started: MSTR CycleHigh PUT v1.0 Daily (ID: )
+[2026-03-16 15:29:12] File added: main.py
+[2026-03-16 15:29:13] Compile started: d4daa7e088bbf27a93bf6751a69c5594-ff86c17acb6f56582d94bef94e0f63d4 (InQueue)
+[2026-03-16 15:29:29] Backtest started: PUT v1.1 Relaxed30 Weekly (ID: )
+[2026-03-16 15:29:34] File added: main.py
+[2026-03-16 15:29:34] Compile started: cc7b5764f6090826a21e15e7159e50cd-ba6de04f66f1912f1054c637629b193f (InQueue)
+[2026-03-16 15:29:50] Backtest started: PUT v1.1 Relaxed30 Daily (ID: )
+[2026-03-16 15:29:54] File added: main.py
+[2026-03-16 15:29:54] Compile started: 39715bdc1fde83eaaebf5200e7f16d35-88a851bf4fdd07eb3187bf30635efd73 (InQueue)
+[2026-03-16 15:30:15] Backtest started: PUT v1.2 VeryRelaxed20 Weekly (ID: )
+[2026-03-16 15:30:20] File added: main.py
+[2026-03-16 15:30:21] Compile started: a21afd48fa1c087e3aa723f9607741b7-45dc40d12d9f809041caa3e0718aa43a (InQueue)
+[2026-03-16 15:30:37] Backtest started: PUT v1.2 VeryRelaxed20 Daily (ID: )
+[2026-03-16 23:48:05] 
+============================================================
+[2026-03-16 23:48:05] RUDY v2.8 DYNAMIC BLEND — QC BACKTEST SUITE
+[2026-03-16 23:48:05] ============================================================
+[2026-03-16 23:48:05] 
+============================================================
+[2026-03-16 23:48:05] v2.8 DYNAMIC BLEND — WEEKLY resolution
+[2026-03-16 23:48:05] ============================================================
+[2026-03-16 23:48:05] Uploading algorithm...
+[2026-03-16 23:48:06] File added: main.py
+[2026-03-16 23:48:06] Compiling...
+[2026-03-16 23:48:06] Compile started: 9e05587f74e48b11518f8fd1147a0398-b927f9867387fb015d595b99135aec97 (InQueue)
+[2026-03-16 23:48:06] Compile ID: 9e05587f74e48b11518f8fd1147a0398-b927f9867387fb015d595b99135aec97 | State: InQueue
+[2026-03-16 23:48:08] Compile started: fae4125f1b676b7b60ee13e68873e96c-b927f9867387fb015d595b99135aec97 (InQueue)
+[2026-03-16 23:48:08]   Compile state: InQueue...
+[2026-03-16 23:48:11] Compile started: 25e658661ac857582d6d97b629f66304-b927f9867387fb015d595b99135aec97 (InQueue)
+[2026-03-16 23:48:11]   Compile state: InQueue...
+[2026-03-16 23:48:13] Compile started: 138c4bf4283d58e1699cb1dd08e77864-b927f9867387fb015d595b99135aec97 (InQueue)
+[2026-03-16 23:48:13]   Compile state: InQueue...
+[2026-03-16 23:48:16] Compile started: c4b2c5a31c2ec45d65f816bce7f6383f-b927f9867387fb015d595b99135aec97 (InQueue)
+[2026-03-16 23:48:16]   Compile state: InQueue...
+[2026-03-16 23:48:18] Compile started: d12199fb7e62b7bf5b265d3ea3203a69-b927f9867387fb015d595b99135aec97 (InQueue)
+[2026-03-16 23:48:18]   Compile state: InQueue...
+[2026-03-16 23:48:21] Compile started: 8a014349c104e1d3024f9c6aae947329-b927f9867387fb015d595b99135aec97 (InQueue)
+[2026-03-16 23:48:21]   Compile state: InQueue...
+[2026-03-16 23:48:24] Compile started: 9442081da9b592e290bc9e149d59ea6f-b927f9867387fb015d595b99135aec97 (InQueue)
+[2026-03-16 23:48:24]   Compile state: InQueue...
+[2026-03-16 23:48:27] Compile started: 1f199ba01f977ce518ea98dd3a951e11-b927f9867387fb015d595b99135aec97 (InQueue)
+[2026-03-16 23:48:27]   Compile state: InQueue...
+[2026-03-16 23:48:29] Compile started: fa4bb2bd28829f132dc5c490ad1875ae-b927f9867387fb015d595b99135aec97 (InQueue)
+[2026-03-16 23:48:29]   Compile state: InQueue...
+[2026-03-16 23:48:31] Compile started: e4f3f46f5b256150f16cba22113e4300-b927f9867387fb015d595b99135aec97 (InQueue)
+[2026-03-16 23:48:31]   Compile state: InQueue...
+[2026-03-16 23:48:34] Compile started: c8a38cea4c3b9f20b28d1db62620853f-b927f9867387fb015d595b99135aec97 (InQueue)
+[2026-03-16 23:48:34]   Compile state: InQueue...
+[2026-03-16 23:48:36] Compile started: 4229643c7afcfbfb3ede2b9bda76784c-b927f9867387fb015d595b99135aec97 (InQueue)
+[2026-03-16 23:48:36]   Compile state: InQueue...
+[2026-03-16 23:48:38] Compile started: f78f72f4f883885abbd512274efe98eb-b927f9867387fb015d595b99135aec97 (InQueue)
+[2026-03-16 23:48:38]   Compile state: InQueue...
+[2026-03-16 23:48:41] Compile started: 41251f8b8a663eebc48a6b48c4461e43-b927f9867387fb015d595b99135aec97 (InQueue)
+[2026-03-16 23:48:41]   Compile state: InQueue...
+[2026-03-16 23:48:44] Compile started: 2e7dac18e56ebab2431ec6aa0d42885d-b927f9867387fb015d595b99135aec97 (InQueue)
+[2026-03-16 23:48:44]   Compile state: InQueue...
+[2026-03-16 23:48:47] Compile started: c2ee214ca4fb5e885ab7e8c4763db87b-b927f9867387fb015d595b99135aec97 (InQueue)
+[2026-03-16 23:48:47]   Compile state: InQueue...
+[2026-03-16 23:48:49] Compile started: 9f2cec52dfa7a8d33a539589e44dbb44-b927f9867387fb015d595b99135aec97 (InQueue)
+[2026-03-16 23:48:49]   Compile state: InQueue...
+[2026-03-16 23:48:52] Compile started: 40dd4f4c8116a34fcb069de266a0b9ef-b927f9867387fb015d595b99135aec97 (InQueue)
+[2026-03-16 23:48:52]   Compile state: InQueue...
+[2026-03-16 23:48:55] Compile started: 6fba0bea88429e3a0e98efffc13b0d87-b927f9867387fb015d595b99135aec97 (InQueue)
+[2026-03-16 23:48:55]   Compile state: InQueue...
+[2026-03-16 23:48:57] Compile started: e96fa3f1f5ae1320079ec9b3959ab5be-b927f9867387fb015d595b99135aec97 (InQueue)
+[2026-03-16 23:48:57]   Compile state: InQueue...
+[2026-03-16 23:49:00] Compile started: b7cb5689f2f4fe7041f98b72f6b096e4-b927f9867387fb015d595b99135aec97 (InQueue)
+[2026-03-16 23:49:00]   Compile state: InQueue...
+[2026-03-16 23:49:02] Compile started: 2e1c8cab566e16d708379071e4c4371a-b927f9867387fb015d595b99135aec97 (InQueue)
+[2026-03-16 23:49:02]   Compile state: InQueue...
+[2026-03-16 23:49:04] Compile started: 962d0ad2c18833561a5882d06498d7ff-b927f9867387fb015d595b99135aec97 (InQueue)
+[2026-03-16 23:49:04]   Compile state: InQueue...
+[2026-03-16 23:49:07] Compile started: 4493728edaba030fc21a164c31198e03-b927f9867387fb015d595b99135aec97 (InQueue)
+[2026-03-16 23:49:07]   Compile state: InQueue...
+[2026-03-16 23:49:09] Compile started: 30d53d31aaa25bde5c79fcdaafa415d8-b927f9867387fb015d595b99135aec97 (InQueue)
+[2026-03-16 23:49:09]   Compile state: InQueue...
+[2026-03-16 23:49:12] Compile started: 22132b4667ace27a2de9bfda4b6d7f25-b927f9867387fb015d595b99135aec97 (InQueue)
+[2026-03-16 23:49:12]   Compile state: InQueue...
+[2026-03-16 23:49:15] Compile started: a14f5ca9a2e91e6d49e8fcad3fe1bcac-b927f9867387fb015d595b99135aec97 (InQueue)
+[2026-03-16 23:49:15]   Compile state: InQueue...
+[2026-03-16 23:49:18] Compile started: fefcca47071bebd3a994d0b4451c2075-b927f9867387fb015d595b99135aec97 (InQueue)
+[2026-03-16 23:49:18]   Compile state: InQueue...
+[2026-03-16 23:49:21] Compile started: 42b36f041e949b201078968a7eb407ab-b927f9867387fb015d595b99135aec97 (InQueue)
+[2026-03-16 23:49:21]   Compile state: InQueue...
+[2026-03-16 23:49:23] Compile started: 4ea451b557e191559bd0264a544fb9c5-b927f9867387fb015d595b99135aec97 (InQueue)
+[2026-03-16 23:49:23]   Compile state: InQueue...
+[2026-03-16 23:49:23] Compile did not succeed
+[2026-03-16 23:49:23] 
+============================================================
+[2026-03-16 23:49:23] v2.8 DYNAMIC BLEND — DAILY resolution
+[2026-03-16 23:49:23] ============================================================
+[2026-03-16 23:49:23] Uploading algorithm...
+[2026-03-16 23:49:24] File added: main.py
+[2026-03-16 23:49:24] Compiling...
+[2026-03-16 23:49:24] Compile started: ba15bf0def498cbdea3a264d3368380a-a3e2030d49251c383be3fdd9788e24df (InQueue)
+[2026-03-16 23:49:24] Compile ID: ba15bf0def498cbdea3a264d3368380a-a3e2030d49251c383be3fdd9788e24df | State: InQueue
+[2026-03-16 23:49:27] Compile started: 788ab8788f7b735cedb910389a585a23-a3e2030d49251c383be3fdd9788e24df (InQueue)
+[2026-03-16 23:49:27]   Compile state: InQueue...
+[2026-03-16 23:49:29] Compile started: 89554f7e2dc8a380e884086a8d94ea12-a3e2030d49251c383be3fdd9788e24df (InQueue)
+[2026-03-16 23:49:29]   Compile state: InQueue...
+[2026-03-16 23:49:32] Compile started: 40bb65476b07b7191e1dba4cc474df79-a3e2030d49251c383be3fdd9788e24df (InQueue)
+[2026-03-16 23:49:32]   Compile state: InQueue...
+[2026-03-16 23:49:34] Compile started: 61086813989e3ae78fd0fc0cb245f326-a3e2030d49251c383be3fdd9788e24df (InQueue)
+[2026-03-16 23:49:34]   Compile state: InQueue...
+[2026-03-16 23:49:37] Compile started: 47f47b5aecf068ce00aa5bb432c4b43c-a3e2030d49251c383be3fdd9788e24df (InQueue)
+[2026-03-16 23:49:37]   Compile state: InQueue...
+[2026-03-16 23:49:39] Compile started: 6e2f6a5090c7a06992c8e513ccfa3e4e-a3e2030d49251c383be3fdd9788e24df (InQueue)
+[2026-03-16 23:49:39]   Compile state: InQueue...
+[2026-03-16 23:49:41] Compile started: a3b9faad68f4a283fe58b3a2329549e5-a3e2030d49251c383be3fdd9788e24df (InQueue)
+[2026-03-16 23:49:41]   Compile state: InQueue...
+[2026-03-16 23:49:44] Compile started: 6472b6c98e32c16b3307b952ec2ae8b7-a3e2030d49251c383be3fdd9788e24df (InQueue)
+[2026-03-16 23:49:44]   Compile state: InQueue...
+[2026-03-16 23:49:47] Compile started: 0210ee8656ff5aabfffabf42618d0156-a3e2030d49251c383be3fdd9788e24df (InQueue)
+[2026-03-16 23:49:47]   Compile state: InQueue...
+[2026-03-16 23:49:49] Compile started: a3e7c96da600b2c9bb71a2fab1436fa7-a3e2030d49251c383be3fdd9788e24df (InQueue)
+[2026-03-16 23:49:49]   Compile state: InQueue...
+[2026-03-16 23:49:52] Compile started: cb386d38d46729ce2d58e9a08b67351a-a3e2030d49251c383be3fdd9788e24df (InQueue)
+[2026-03-16 23:49:52]   Compile state: InQueue...
+[2026-03-16 23:49:54] Compile started: 8864d94c853ebbcf440ae0da89884174-a3e2030d49251c383be3fdd9788e24df (InQueue)
+[2026-03-16 23:49:54]   Compile state: InQueue...
+[2026-03-16 23:49:57] Compile started: 59deeff3ab0bcb994a133d36f737edf9-a3e2030d49251c383be3fdd9788e24df (InQueue)
+[2026-03-16 23:49:57]   Compile state: InQueue...
+[2026-03-16 23:49:59] Compile started: eb6f139f0de3a2406eda9abdca5be414-a3e2030d49251c383be3fdd9788e24df (InQueue)
+[2026-03-16 23:49:59]   Compile state: InQueue...
+[2026-03-16 23:50:01] Compile started: 7869c4b2a5abbc2ec317336c139286b7-a3e2030d49251c383be3fdd9788e24df (InQueue)
+[2026-03-16 23:50:01]   Compile state: InQueue...
+[2026-03-16 23:50:04] Compile started: d90ce710c4cd7d6d25792822e05c127f-a3e2030d49251c383be3fdd9788e24df (InQueue)
+[2026-03-16 23:50:04]   Compile state: InQueue...
+[2026-03-16 23:50:06] Compile started: 54917bc2323ceaab4d3bc4ab4cd53912-a3e2030d49251c383be3fdd9788e24df (InQueue)
+[2026-03-16 23:50:06]   Compile state: InQueue...
+[2026-03-16 23:50:09] Compile started: 094863c583ee8c46dc411474219ea52d-a3e2030d49251c383be3fdd9788e24df (InQueue)
+[2026-03-16 23:50:09]   Compile state: InQueue...
+[2026-03-16 23:50:11] Compile started: 5a749dcf34644d019b91ca4bdba8685b-a3e2030d49251c383be3fdd9788e24df (InQueue)
+[2026-03-16 23:50:11]   Compile state: InQueue...
+[2026-03-16 23:50:13] Compile started: f6aa08c1709b7a4a108ba24717a39a8d-a3e2030d49251c383be3fdd9788e24df (InQueue)
+[2026-03-16 23:50:13]   Compile state: InQueue...
+[2026-03-16 23:50:16] Compile started: 40b3dce6b253a514cf8d914bf22b592c-a3e2030d49251c383be3fdd9788e24df (InQueue)
+[2026-03-16 23:50:16]   Compile state: InQueue...
+[2026-03-16 23:50:18] Compile started: 4a7ac118e2371b14cd1decb9cdbc4a4b-a3e2030d49251c383be3fdd9788e24df (InQueue)
+[2026-03-16 23:50:18]   Compile state: InQueue...
+[2026-03-16 23:50:21] Compile started: 6af0b82e530d2a92c5be6682275016f4-a3e2030d49251c383be3fdd9788e24df (InQueue)
+[2026-03-16 23:50:21]   Compile state: InQueue...
+[2026-03-16 23:50:23] Compile started: c28d3197f5b3b4259e9613a7acf4c368-a3e2030d49251c383be3fdd9788e24df (InQueue)
+[2026-03-16 23:50:23]   Compile state: InQueue...
+[2026-03-16 23:50:26] Compile started: 29b514818cb62f2a78d189f1d533a5fb-a3e2030d49251c383be3fdd9788e24df (InQueue)
+[2026-03-16 23:50:26]   Compile state: InQueue...
+[2026-03-16 23:50:28] Compile started: d6d60fa024707693b1545536f67c7748-a3e2030d49251c383be3fdd9788e24df (InQueue)
+[2026-03-16 23:50:28]   Compile state: InQueue...
+[2026-03-16 23:50:31] Compile started: 33fba80d696056fb23af311146e06945-a3e2030d49251c383be3fdd9788e24df (InQueue)
+[2026-03-16 23:50:31]   Compile state: InQueue...
+[2026-03-16 23:50:33] Compile started: 701fb4c29055c3915dc3f2a5e7b7d11a-a3e2030d49251c383be3fdd9788e24df (InQueue)
+[2026-03-16 23:50:33]   Compile state: InQueue...
+[2026-03-16 23:50:36] Compile started: 991eb94f863e44dd10e9dc9d995de5d0-a3e2030d49251c383be3fdd9788e24df (InQueue)
+[2026-03-16 23:50:36]   Compile state: InQueue...
+[2026-03-16 23:50:38] Compile started: 84cfdc6097f4704f3def613f5b25f33c-a3e2030d49251c383be3fdd9788e24df (InQueue)
+[2026-03-16 23:50:38]   Compile state: InQueue...
+[2026-03-16 23:50:38] Compile did not succeed
+[2026-03-16 23:50:38] 
+============================================================
+[2026-03-16 23:50:38] SUMMARY: v2.8 DYNAMIC BLEND vs v2.7 DIAMOND HANDS
+[2026-03-16 23:50:38] ============================================================
+[2026-03-16 23:50:38] v2.7 Weekly: +58.3% | 28% WR | 30.7% DD | Sharpe 0.095
+[2026-03-16 23:50:38] v2.7 Daily:  +71.0% | 36% WR | 32.9% DD | Sharpe 0.142
+[2026-03-16 23:50:38] 
+[2026-03-16 23:50:38] v2.8 Weekly: FAILED
+[2026-03-16 23:50:38] v2.8 Daily: FAILED
+[2026-03-17 00:34:10] Authentication successful
+[2026-03-17 00:34:10] Organization ID: e96c932d4fa53738a493eef7a86bbb12
+[2026-03-17 00:34:11] Found 1 live nodes
+[2026-03-17 00:34:11] Created project: Rudy-v2.8-MSTR-PAPER-1773722051 (ID: 29077474)
+[2026-03-17 00:34:13] File added: main.py
+[2026-03-17 00:34:13] Compile started: d0edcd2dd3fbbd8779512601dd0c2a5f-b927f9867387fb015d595b99135aec97 (InQueue)
+[2026-03-17 00:39:32] Authentication successful
+[2026-03-17 00:39:33] Organization ID: e96c932d4fa53738a493eef7a86bbb12
+[2026-03-17 00:39:33] Found 1 live nodes
+[2026-03-17 00:39:33] Created project: Rudy-v2.8-MSTR-PAPER-1773722373 (ID: 29077569)
+[2026-03-17 00:39:35] File added: main.py
+[2026-03-17 00:39:35] Compile started: e47d509b4884c07c4330ccb663abdd3d-b927f9867387fb015d595b99135aec97 (InQueue)
+[2026-03-17 00:39:39] Live deployment started for project 29077569
+[2026-03-17 00:39:39] Deployment state saved to /Users/eddiemae/rudy/data/live_deployment.json

@@ -1,0 +1,49 @@
+[
+  {
+    "time": "2026-03-20T10:00:04.266439",
+    "type": "SELF_EVAL_OK",
+    "details": {
+      "trades": 0,
+      "win_rate": 0,
+      "consec_losses": 0,
+      "connected": true
+    }
+  },
+  {
+    "time": "2026-03-20T14:00:06.848047",
+    "type": "SELF_EVAL_OK",
+    "details": {
+      "trades": 0,
+      "win_rate": 0,
+      "consec_losses": 0,
+      "connected": true
+    }
+  },
+  {
+    "time": "2026-03-23T10:00:12.729983",
+    "type": "SELF_EVAL_OK",
+    "details": {
+      "trades": 0,
+      "win_rate": 0,
+      "consec_losses": 0,
+      "connected": true
+    }
+  },
+  {
+    "time": "2026-03-23T14:00:20.047330",
+    "type": "STALE_DAEMON",
+    "details": {
+      "hours_since": 24.74489451611111
+    }
+  },
+  {
+    "time": "2026-03-23T14:00:20.048658",
+    "type": "SELF_EVAL_OK",
+    "details": {
+      "trades": 0,
+      "win_rate": 0,
+      "consec_losses": 0,
+      "connected": true
+    }
+  }
+]

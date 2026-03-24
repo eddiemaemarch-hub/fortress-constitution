@@ -1,0 +1,12 @@
+API connection failed: ConnectionRefusedError(61, "Connect call failed ('127.0.0.1', 7496)")
+Make sure API port on TWS/IBG is open
+Error 1100, reqId -1: Connectivity between IBKR and Trader Workstation has been lost.
+Error 1102, reqId -1: Connectivity between IBKR and Trader Workstation has been restored - data maintained. All data farms are connected: usfarm.nj; usopt.nj; cashfarm; usopt; usfarm; ushmds; secdefil.
+[Errno 54] Connection reset by peer
+Error 1100, reqId -1: Connectivity between IBKR and Trader Workstation has been lost.
+Error 1100, reqId -1: Connectivity between IBKR and Trader Workstation has been lost.
+Error 1102, reqId -1: Connectivity between IBKR and Trader Workstation has been restored - data maintained. The following farms are connected: usfarm.nj; usopt; usfarm; euhmds; ushmds; secdefil. The following farms are not connected: cashfarm; fundfarm.
+Error 1100, reqId -1: Connectivity between IBKR and Trader Workstation has been lost.
+Error 1102, reqId -1: Connectivity between IBKR and Trader Workstation has been restored - data maintained. All data farms are connected: cashfarm; usfarm.nj; usopt; usfarm; euhmds; fundfarm; ushmds; secdefil.
+/Users/eddiemae/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(

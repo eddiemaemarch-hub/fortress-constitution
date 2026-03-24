@@ -1,0 +1,1087 @@
+[2026-03-10 19:46:28] Quick scan: NVDA
+[2026-03-10 19:46:32] DeepSeek error: 'choices'
+[2026-03-10 19:47:12] Quick scan: NVDA
+[2026-03-10 19:47:22] DeepSeek error: Unterminated string starting at: line 2 column 16 (char 17)
+[2026-03-10 19:47:42] Quick scan: NVDA
+[2026-03-10 19:47:50] Could not parse JSON, using raw text
+[2026-03-10 19:47:50] Intel saved to /Users/eddiemae/rudy/data/gronk_intel.json
+[2026-03-10 19:47:58] ==================================================
+[2026-03-10 19:47:58] Starting X intelligence scan
+[2026-03-10 19:47:58] --- Scanning system1 tickers ---
+[2026-03-10 19:48:02]   MSTR: 3 posts found
+[2026-03-10 19:48:05]   IBIT: 3 posts found
+[2026-03-10 19:48:09]   BTC: 3 posts found
+[2026-03-10 19:48:13]   Bitcoin: 3 posts found
+[2026-03-10 19:48:13] --- Scanning trader3 tickers ---
+[2026-03-10 19:48:17]   CCJ: 3 posts found
+[2026-03-10 19:48:20]   UEC: 3 posts found
+[2026-03-10 19:48:23]   XOM: 3 posts found
+[2026-03-10 19:48:27]   CVX: 3 posts found
+[2026-03-10 19:48:31]   OXY: 3 posts found
+[2026-03-10 19:48:31] --- Scanning trader4 tickers ---
+[2026-03-10 19:48:34]   GME: 3 posts found
+[2026-03-10 19:48:38]   AMC: 3 posts found
+[2026-03-10 19:48:41]   SOFI: 3 posts found
+[2026-03-10 19:48:45]   RIVN: 3 posts found
+[2026-03-10 19:48:48]   LCID: 3 posts found
+[2026-03-10 19:48:48] --- Scanning trader5 tickers ---
+[2026-03-10 19:48:52]   NVDA: 3 posts found
+[2026-03-10 19:48:56]   AMZN: 3 posts found
+[2026-03-10 19:49:00]   GOOGL: 3 posts found
+[2026-03-10 19:49:03]   TSLA: 3 posts found
+[2026-03-10 19:49:07]   NFLX: 3 posts found
+[2026-03-10 19:49:07] --- Scanning thematic queries ---
+[2026-03-10 19:49:11]   Thematic: 3 results for 'unusual options activity today stocks...'
+[2026-03-10 19:49:14]   Thematic: 3 results for 'short squeeze candidates stocks 2026...'
+[2026-03-10 19:49:18]   Thematic: 3 results for 'uranium energy stocks catalyst news...'
+[2026-03-10 19:49:19]   Thematic: 3 results for 'bitcoin MSTR institutional buying...'
+[2026-03-10 19:49:22]   Thematic: 3 results for 'NVDA TSLA AMZN breakout momentum...'
+[2026-03-10 19:49:26]   Thematic: 3 results for 'fed interest rate market impact stocks...'
+[2026-03-10 19:49:26] Total unique posts: 74
+[2026-03-10 19:49:26] Analyzing batch 1 (10 posts)...
+[2026-03-10 19:49:33] Could not parse JSON, using raw text
+[2026-03-10 19:49:33] Analyzing batch 2 (10 posts)...
+[2026-03-10 19:49:41] Could not parse JSON, using raw text
+[2026-03-10 19:49:41] Analyzing batch 3 (10 posts)...
+[2026-03-10 19:49:48] Could not parse JSON, using raw text
+[2026-03-10 19:49:48] Analyzing batch 4 (10 posts)...
+[2026-03-10 19:49:55] Could not parse JSON, using raw text
+[2026-03-10 19:49:55] Analyzing batch 5 (10 posts)...
+[2026-03-10 19:50:02] Could not parse JSON, using raw text
+[2026-03-10 19:50:02] Analyzing batch 6 (10 posts)...
+[2026-03-10 19:50:10] Could not parse JSON, using raw text
+[2026-03-10 19:50:10] Analyzing batch 7 (10 posts)...
+[2026-03-10 19:50:18] Could not parse JSON, using raw text
+[2026-03-10 19:50:18] Analyzing batch 8 (4 posts)...
+[2026-03-10 19:50:25] Could not parse JSON, using raw text
+[2026-03-10 19:50:26] Intel saved to /Users/eddiemae/rudy/data/gronk_intel.json
+[2026-03-10 19:50:26] 🔍 GRONK X INTELLIGENCE REPORT
+📊 Posts scanned: 74
+📈 Sentiment: MIXED
+
+
+{
+    "summary": "The social media sentiment is highly mixed for Bitcoin and related assets like MSTR and IBIT, with some posts indicating a severe correction and shorting opportunities, while others point to ongoing institutional accumulation and future bullish catalysts. In contrast, there's a | 
+
+[2026-03-10 19:50:26] X scan complete
+[2026-03-10 19:50:26] ==================================================
+[2026-03-10 19:52:14] Quick scan: MSTR
+[2026-03-10 19:52:26] Intel saved to /Users/eddiemae/rudy/data/gronk_intel.json
+[2026-03-10 20:47:52] ==================================================
+[2026-03-10 20:47:52] Starting X intelligence scan
+[2026-03-10 20:47:52] --- Scanning system1 tickers ---
+[2026-03-10 20:47:56]   MSTR: 3 posts found
+[2026-03-10 20:48:00]   IBIT: 3 posts found
+[2026-03-10 20:48:04]   BTC: 3 posts found
+[2026-03-10 20:48:08]   Bitcoin: 3 posts found
+[2026-03-10 20:48:08] --- Scanning trader3 tickers ---
+[2026-03-10 20:48:12]   CCJ: 3 posts found
+[2026-03-10 20:48:16]   UEC: 3 posts found
+[2026-03-10 20:48:19]   XOM: 3 posts found
+[2026-03-10 20:48:23]   CVX: 3 posts found
+[2026-03-10 20:48:27]   OXY: 3 posts found
+[2026-03-10 20:48:27] --- Scanning trader4 tickers ---
+[2026-03-10 20:48:30]   GME: 3 posts found
+[2026-03-10 20:48:33]   AMC: 3 posts found
+[2026-03-10 20:48:37]   SOFI: 3 posts found
+[2026-03-10 20:48:41]   RIVN: 3 posts found
+[2026-03-10 20:48:45]   LCID: 3 posts found
+[2026-03-10 20:48:45] --- Scanning trader5 tickers ---
+[2026-03-10 20:48:48]   NVDA: 3 posts found
+[2026-03-10 20:48:52]   AMZN: 3 posts found
+[2026-03-10 20:48:57]   GOOGL: 3 posts found
+[2026-03-10 20:49:00]   TSLA: 3 posts found
+[2026-03-10 20:49:04]   NFLX: 3 posts found
+[2026-03-10 20:49:04] --- Scanning influencers ---
+[2026-03-10 20:49:09]   @NoLimitGaines: 3 posts found
+[2026-03-10 20:49:15]   @honeydripnetwor: 3 posts found
+[2026-03-10 20:49:19]   @unusual_whales: 3 posts found
+[2026-03-10 20:49:23]   @DeItaone: 3 posts found
+[2026-03-10 20:49:27]   @zabormeister: 3 posts found
+[2026-03-10 20:49:31]   @jimcramer: 3 posts found
+[2026-03-10 20:49:34]   @michaeljburry: 3 posts found
+[2026-03-10 20:49:38]   @elonmusk: 3 posts found
+[2026-03-10 20:49:38] --- Scanning thematic queries ---
+[2026-03-10 20:49:42]   Thematic: 3 results for 'unusual options activity today stocks...'
+[2026-03-10 20:49:45]   Thematic: 3 results for 'short squeeze candidates stocks 2026...'
+[2026-03-10 20:49:52]   Thematic: 3 results for 'uranium energy stocks catalyst news...'
+[2026-03-10 20:49:53]   Thematic: 3 results for 'bitcoin MSTR institutional buying...'
+[2026-03-10 20:49:57]   Thematic: 3 results for 'NVDA TSLA AMZN breakout momentum...'
+[2026-03-10 20:50:01]   Thematic: 3 results for 'fed interest rate market impact stocks...'
+[2026-03-10 20:50:01] Total unique posts: 97
+[2026-03-10 20:50:01] Analyzing batch 1 (10 posts)...
+[2026-03-10 20:50:15] Analyzing batch 2 (10 posts)...
+[2026-03-10 20:50:27] Analyzing batch 3 (10 posts)...
+[2026-03-10 20:50:36] Analyzing batch 4 (10 posts)...
+[2026-03-10 20:50:49] Analyzing batch 5 (10 posts)...
+[2026-03-10 20:51:01] Analyzing batch 6 (10 posts)...
+[2026-03-10 20:51:10] Analyzing batch 7 (10 posts)...
+[2026-03-10 20:51:16] Analyzing batch 8 (10 posts)...
+[2026-03-10 20:51:24] Analyzing batch 9 (10 posts)...
+[2026-03-10 20:51:34] Analyzing batch 10 (7 posts)...
+[2026-03-10 20:51:45] Intel saved to /Users/eddiemae/rudy/data/gronk_intel.json
+[2026-03-10 20:51:45] 🔍 GRONK X INTELLIGENCE REPORT
+📊 Posts scanned: 97
+📈 Sentiment: BULLISH
+
+Posts show mixed Bitcoin sentiment with institutional buying (MSTR) but also short-term bearish trading calls and warnings of a severe correction. Energy sector is flagged for a potential generational buying opportunity. Bitcoin options open interest significantly exceeds futures, indicating complex
+
+⚡ HIGH CONFIDENCE SIGNALS:
+  CCJ → BUY (Trader 3 (Energy))
+    Multiple posts highlight strong uranium spot price rebound, widening supply-demand gap, positive 202
+
+🔥 Hot: MSTR, CCJ, XOM, UEC, NKE, IBRX, NFLX, Bitcoin, LCID, CVX
+
+📅 Catalysts: March seasonality mentioned by Citadel's Rubner, Amazon's ~$200B CapEx in 2026 for AI and infrastructure, Alphabet's ~$180B CapEx in 2026 for AI investments, Quant model signals for NVDA over next 30 days, Possible resolution-driven Bitcoin rally targeting $98k
+
+⚠️ Risks: SMCI heavily shorted; squeeze potential speculative for 2026, Bitcoin price action remains compressed despite institutional inflows, Market internals flashing warning signs per Jared reference
+[2026-03-10 20:51:46] X scan complete
+[2026-03-10 20:51:46] ==================================================
+[2026-03-11 09:30:01] ==================================================
+[2026-03-11 09:30:01] Starting X intelligence scan
+[2026-03-11 09:30:01] --- Scanning system1 tickers ---
+[2026-03-11 09:30:01] No Tavily API key
+[2026-03-11 09:30:01] No Tavily API key
+[2026-03-11 09:30:01] No Tavily API key
+[2026-03-11 09:30:01] No Tavily API key
+[2026-03-11 09:30:01] --- Scanning trader3 tickers ---
+[2026-03-11 09:30:01] No Tavily API key
+[2026-03-11 09:30:01] No Tavily API key
+[2026-03-11 09:30:01] No Tavily API key
+[2026-03-11 09:30:01] No Tavily API key
+[2026-03-11 09:30:01] No Tavily API key
+[2026-03-11 09:30:01] --- Scanning trader4 tickers ---
+[2026-03-11 09:30:01] No Tavily API key
+[2026-03-11 09:30:01] No Tavily API key
+[2026-03-11 09:30:01] No Tavily API key
+[2026-03-11 09:30:01] No Tavily API key
+[2026-03-11 09:30:01] No Tavily API key
+[2026-03-11 09:30:01] --- Scanning trader5 tickers ---
+[2026-03-11 09:30:01] No Tavily API key
+[2026-03-11 09:30:01] No Tavily API key
+[2026-03-11 09:30:01] No Tavily API key
+[2026-03-11 09:30:01] No Tavily API key
+[2026-03-11 09:30:01] No Tavily API key
+[2026-03-11 09:30:01] --- Scanning influencers ---
+[2026-03-11 09:30:01] No Tavily API key
+[2026-03-11 09:30:01] No Tavily API key
+[2026-03-11 09:30:01] No Tavily API key
+[2026-03-11 09:30:01] No Tavily API key
+[2026-03-11 09:30:01] No Tavily API key
+[2026-03-11 09:30:01] No Tavily API key
+[2026-03-11 09:30:01] No Tavily API key
+[2026-03-11 09:30:01] No Tavily API key
+[2026-03-11 09:30:01] --- Scanning thematic queries ---
+[2026-03-11 09:30:01] No posts found — check API keys
+[2026-03-11 10:30:01] ==================================================
+[2026-03-11 10:30:01] Starting X intelligence scan
+[2026-03-11 10:30:01] --- Scanning system1 tickers ---
+[2026-03-11 10:30:01] No Tavily API key
+[2026-03-11 10:30:01] No Tavily API key
+[2026-03-11 10:30:01] No Tavily API key
+[2026-03-11 10:30:01] No Tavily API key
+[2026-03-11 10:30:01] --- Scanning trader3 tickers ---
+[2026-03-11 10:30:01] No Tavily API key
+[2026-03-11 10:30:01] No Tavily API key
+[2026-03-11 10:30:01] No Tavily API key
+[2026-03-11 10:30:01] No Tavily API key
+[2026-03-11 10:30:01] No Tavily API key
+[2026-03-11 10:30:01] --- Scanning trader4 tickers ---
+[2026-03-11 10:30:01] No Tavily API key
+[2026-03-11 10:30:01] No Tavily API key
+[2026-03-11 10:30:01] No Tavily API key
+[2026-03-11 10:30:01] No Tavily API key
+[2026-03-11 10:30:01] No Tavily API key
+[2026-03-11 10:30:01] --- Scanning trader5 tickers ---
+[2026-03-11 10:30:01] No Tavily API key
+[2026-03-11 10:30:01] No Tavily API key
+[2026-03-11 10:30:01] No Tavily API key
+[2026-03-11 10:30:01] No Tavily API key
+[2026-03-11 10:30:01] No Tavily API key
+[2026-03-11 10:30:01] --- Scanning influencers ---
+[2026-03-11 10:30:01] No Tavily API key
+[2026-03-11 10:30:01] No Tavily API key
+[2026-03-11 10:30:01] No Tavily API key
+[2026-03-11 10:30:01] No Tavily API key
+[2026-03-11 10:30:01] No Tavily API key
+[2026-03-11 10:30:01] No Tavily API key
+[2026-03-11 10:30:01] No Tavily API key
+[2026-03-11 10:30:01] No Tavily API key
+[2026-03-11 10:30:01] --- Scanning thematic queries ---
+[2026-03-11 10:30:01] No posts found — check API keys
+[2026-03-11 11:30:01] ==================================================
+[2026-03-11 11:30:01] Starting X intelligence scan
+[2026-03-11 11:30:01] --- Scanning system1 tickers ---
+[2026-03-11 11:30:01] No Tavily API key
+[2026-03-11 11:30:01] No Tavily API key
+[2026-03-11 11:30:01] No Tavily API key
+[2026-03-11 11:30:01] No Tavily API key
+[2026-03-11 11:30:01] --- Scanning trader3 tickers ---
+[2026-03-11 11:30:01] No Tavily API key
+[2026-03-11 11:30:01] No Tavily API key
+[2026-03-11 11:30:01] No Tavily API key
+[2026-03-11 11:30:01] No Tavily API key
+[2026-03-11 11:30:01] No Tavily API key
+[2026-03-11 11:30:01] --- Scanning trader4 tickers ---
+[2026-03-11 11:30:01] No Tavily API key
+[2026-03-11 11:30:01] No Tavily API key
+[2026-03-11 11:30:01] No Tavily API key
+[2026-03-11 11:30:01] No Tavily API key
+[2026-03-11 11:30:01] No Tavily API key
+[2026-03-11 11:30:01] --- Scanning trader5 tickers ---
+[2026-03-11 11:30:01] No Tavily API key
+[2026-03-11 11:30:01] No Tavily API key
+[2026-03-11 11:30:01] No Tavily API key
+[2026-03-11 11:30:01] No Tavily API key
+[2026-03-11 11:30:01] No Tavily API key
+[2026-03-11 11:30:01] --- Scanning influencers ---
+[2026-03-11 11:30:01] No Tavily API key
+[2026-03-11 11:30:01] No Tavily API key
+[2026-03-11 11:30:01] No Tavily API key
+[2026-03-11 11:30:01] No Tavily API key
+[2026-03-11 11:30:01] No Tavily API key
+[2026-03-11 11:30:01] No Tavily API key
+[2026-03-11 11:30:01] No Tavily API key
+[2026-03-11 11:30:01] No Tavily API key
+[2026-03-11 11:30:01] --- Scanning thematic queries ---
+[2026-03-11 11:30:01] No posts found — check API keys
+[2026-03-11 12:30:43] ==================================================
+[2026-03-11 12:30:43] Starting X intelligence scan
+[2026-03-11 12:30:43] --- Scanning system1 tickers ---
+[2026-03-11 12:30:43] No Tavily API key
+[2026-03-11 12:30:43] No Tavily API key
+[2026-03-11 12:30:43] No Tavily API key
+[2026-03-11 12:30:43] No Tavily API key
+[2026-03-11 12:30:43] --- Scanning trader3 tickers ---
+[2026-03-11 12:30:43] No Tavily API key
+[2026-03-11 12:30:43] No Tavily API key
+[2026-03-11 12:30:43] No Tavily API key
+[2026-03-11 12:30:43] No Tavily API key
+[2026-03-11 12:30:43] No Tavily API key
+[2026-03-11 12:30:43] --- Scanning trader4 tickers ---
+[2026-03-11 12:30:43] No Tavily API key
+[2026-03-11 12:30:43] No Tavily API key
+[2026-03-11 12:30:43] No Tavily API key
+[2026-03-11 12:30:43] No Tavily API key
+[2026-03-11 12:30:43] No Tavily API key
+[2026-03-11 12:30:43] --- Scanning trader5 tickers ---
+[2026-03-11 12:30:43] No Tavily API key
+[2026-03-11 12:30:43] No Tavily API key
+[2026-03-11 12:30:43] No Tavily API key
+[2026-03-11 12:30:43] No Tavily API key
+[2026-03-11 12:30:43] No Tavily API key
+[2026-03-11 12:30:43] --- Scanning influencers ---
+[2026-03-11 12:30:43] No Tavily API key
+[2026-03-11 12:30:43] No Tavily API key
+[2026-03-11 12:30:43] No Tavily API key
+[2026-03-11 12:30:43] No Tavily API key
+[2026-03-11 12:30:43] No Tavily API key
+[2026-03-11 12:30:43] No Tavily API key
+[2026-03-11 12:30:43] No Tavily API key
+[2026-03-11 12:30:43] No Tavily API key
+[2026-03-11 12:30:43] --- Scanning thematic queries ---
+[2026-03-11 12:30:43] No posts found — check API keys
+[2026-03-11 13:30:29] ==================================================
+[2026-03-11 13:30:29] Starting X intelligence scan
+[2026-03-11 13:30:29] --- Scanning system1 tickers ---
+[2026-03-11 13:30:29] No Tavily API key
+[2026-03-11 13:30:29] No Tavily API key
+[2026-03-11 13:30:29] No Tavily API key
+[2026-03-11 13:30:29] No Tavily API key
+[2026-03-11 13:30:29] --- Scanning trader3 tickers ---
+[2026-03-11 13:30:29] No Tavily API key
+[2026-03-11 13:30:29] No Tavily API key
+[2026-03-11 13:30:29] No Tavily API key
+[2026-03-11 13:30:29] No Tavily API key
+[2026-03-11 13:30:29] No Tavily API key
+[2026-03-11 13:30:29] --- Scanning trader4 tickers ---
+[2026-03-11 13:30:29] No Tavily API key
+[2026-03-11 13:30:29] No Tavily API key
+[2026-03-11 13:30:29] No Tavily API key
+[2026-03-11 13:30:29] No Tavily API key
+[2026-03-11 13:30:29] No Tavily API key
+[2026-03-11 13:30:29] --- Scanning trader5 tickers ---
+[2026-03-11 13:30:29] No Tavily API key
+[2026-03-11 13:30:29] No Tavily API key
+[2026-03-11 13:30:29] No Tavily API key
+[2026-03-11 13:30:29] No Tavily API key
+[2026-03-11 13:30:29] No Tavily API key
+[2026-03-11 13:30:29] --- Scanning influencers ---
+[2026-03-11 13:30:29] No Tavily API key
+[2026-03-11 13:30:29] No Tavily API key
+[2026-03-11 13:30:29] No Tavily API key
+[2026-03-11 13:30:29] No Tavily API key
+[2026-03-11 13:30:29] No Tavily API key
+[2026-03-11 13:30:29] No Tavily API key
+[2026-03-11 13:30:29] No Tavily API key
+[2026-03-11 13:30:29] No Tavily API key
+[2026-03-11 13:30:29] --- Scanning thematic queries ---
+[2026-03-11 13:30:29] No posts found — check API keys
+[2026-03-11 14:30:59] ==================================================
+[2026-03-11 14:30:59] Starting X intelligence scan
+[2026-03-11 14:30:59] --- Scanning system1 tickers ---
+[2026-03-11 14:31:03]   MSTR: 3 posts found
+[2026-03-11 14:31:06]   IBIT: 3 posts found
+[2026-03-11 14:31:10]   BTC: 3 posts found
+[2026-03-11 14:31:14]   Bitcoin: 3 posts found
+[2026-03-11 14:31:14] --- Scanning trader3 tickers ---
+[2026-03-11 14:31:18]   CCJ: 3 posts found
+[2026-03-11 14:31:22]   UEC: 3 posts found
+[2026-03-11 14:31:25]   XOM: 3 posts found
+[2026-03-11 14:31:29]   CVX: 3 posts found
+[2026-03-11 14:31:33]   OXY: 3 posts found
+[2026-03-11 14:31:33] --- Scanning trader4 tickers ---
+[2026-03-11 14:31:37]   GME: 3 posts found
+[2026-03-11 14:31:41]   AMC: 3 posts found
+[2026-03-11 14:31:44]   SOFI: 3 posts found
+[2026-03-11 14:31:48]   RIVN: 3 posts found
+[2026-03-11 14:31:52]   LCID: 3 posts found
+[2026-03-11 14:31:52] --- Scanning trader5 tickers ---
+[2026-03-11 14:31:55]   NVDA: 3 posts found
+[2026-03-11 14:31:59]   AMZN: 3 posts found
+[2026-03-11 14:32:03]   GOOGL: 3 posts found
+[2026-03-11 14:32:07]   TSLA: 3 posts found
+[2026-03-11 14:32:11]   NFLX: 3 posts found
+[2026-03-11 14:32:11] --- Scanning influencers ---
+[2026-03-11 14:32:16]   @NoLimitGaines: 3 posts found
+[2026-03-11 14:32:20]   @honeydripnetwor: 3 posts found
+[2026-03-11 14:32:24]   @aristotlegrowth: 3 posts found
+[2026-03-11 14:32:28]   @unusual_whales: 3 posts found
+[2026-03-11 14:32:32]   @DeItaone: 3 posts found
+[2026-03-11 14:32:37]   @zabormeister: 3 posts found
+[2026-03-11 14:32:41]   @jimcramer: 3 posts found
+[2026-03-11 14:32:45]   @michaeljburry: 3 posts found
+[2026-03-11 14:32:45] --- Scanning thematic queries ---
+[2026-03-11 14:32:49]   Thematic: 3 results for 'unusual options activity today stocks...'
+[2026-03-11 14:32:53]   Thematic: 3 results for 'short squeeze candidates stocks 2026...'
+[2026-03-11 14:32:57]   Thematic: 3 results for 'uranium energy stocks catalyst news...'
+[2026-03-11 14:33:01]   Thematic: 3 results for 'bitcoin MSTR institutional buying...'
+[2026-03-11 14:33:05]   Thematic: 3 results for 'NVDA TSLA AMZN breakout momentum...'
+[2026-03-11 14:33:09]   Thematic: 3 results for 'fed interest rate market impact stocks...'
+[2026-03-11 14:33:09] Total unique posts: 94
+[2026-03-11 14:33:09] Analyzing batch 1 (10 posts)...
+[2026-03-11 14:33:19] Analyzing batch 2 (10 posts)...
+[2026-03-11 14:33:32] Analyzing batch 3 (10 posts)...
+[2026-03-11 14:33:44] Analyzing batch 4 (10 posts)...
+[2026-03-11 14:33:56] Analyzing batch 5 (10 posts)...
+[2026-03-11 14:34:09] Analyzing batch 6 (10 posts)...
+[2026-03-11 14:34:19] Analyzing batch 7 (10 posts)...
+[2026-03-11 14:34:23] Analyzing batch 8 (10 posts)...
+[2026-03-11 14:34:35] Analyzing batch 9 (10 posts)...
+[2026-03-11 14:34:50] Analyzing batch 10 (4 posts)...
+[2026-03-11 14:34:58] Intel saved to /Users/eddiemae/rudy/data/gronk_intel.json
+[2026-03-11 14:34:58] 🔍 GRONK X INTELLIGENCE REPORT
+📊 Posts scanned: 94
+📈 Sentiment: BULLISH
+
+X posts show Bitcoin and related assets under significant pressure with a ~50% correction from 2025 highs, while energy/oil is being positioned for a generational buying opportunity. MSTR faces specific warnings about 2026 performance, and IBIT charts show technical weakness. Overall sentiment is be
+
+⚡ HIGH CONFIDENCE SIGNALS:
+  Bitcoin → WATCH (System 1 (Lottery))
+    Sharp ~50% crash from ATH, erased $85B in market cap in 4 hours, severe correction in 2026
+  CCJ → BUY (Trader 3 (Energy))
+    Multiple posts highlight strong fundamentals (widening supply deficit, utility inventory depletion, 
+  NVDA → BUY (Trader 5 (Breakout))
+    Momentum divergence with 78% historical accuracy, breaking through $150 with volume, weekly consolid
+
+🔥 Hot: UEC, OXY, GME, CVX, LCID, SPY, MSTR, IBIT, AMZN, XOM
+
+📅 Catalysts: potential generational buying opportunity in oil from geopolitics, February seasonality for Bitcoin (+14% average), NFLX FY 2026 revenue guidance ($50.7B to $51.7B vs $50.98B est), AMZN $200B 2026 CapEx for AI/cloud, Bitcoin price action relative to $70k level
+
+⚠️ Risks: MSTR 2026 performance concerns, Uranium trading off its January 2026 high above $101 (potential for pullback/consolidation)., NVDA price disconnect despite strong fundamentals
+[2026-03-11 14:34:58] X scan complete
+[2026-03-11 14:34:58] ==================================================
+[2026-03-11 14:52:06] ==================================================
+[2026-03-11 14:52:06] Starting X intelligence scan
+[2026-03-11 14:52:06] --- Scanning system1 tickers ---
+[2026-03-11 14:52:06] No Tavily API key
+[2026-03-11 14:52:06] No Tavily API key
+[2026-03-11 14:52:06] No Tavily API key
+[2026-03-11 14:52:06] No Tavily API key
+[2026-03-11 14:52:06] --- Scanning trader3 tickers ---
+[2026-03-11 14:52:06] No Tavily API key
+[2026-03-11 14:52:06] No Tavily API key
+[2026-03-11 14:52:06] No Tavily API key
+[2026-03-11 14:52:06] No Tavily API key
+[2026-03-11 14:52:06] No Tavily API key
+[2026-03-11 14:52:06] --- Scanning trader4 tickers ---
+[2026-03-11 14:52:06] No Tavily API key
+[2026-03-11 14:52:06] No Tavily API key
+[2026-03-11 14:52:06] No Tavily API key
+[2026-03-11 14:52:06] No Tavily API key
+[2026-03-11 14:52:06] No Tavily API key
+[2026-03-11 14:52:06] --- Scanning trader5 tickers ---
+[2026-03-11 14:52:06] No Tavily API key
+[2026-03-11 14:52:06] No Tavily API key
+[2026-03-11 14:52:06] No Tavily API key
+[2026-03-11 14:52:06] No Tavily API key
+[2026-03-11 14:52:06] No Tavily API key
+[2026-03-11 14:52:06] --- Scanning influencers ---
+[2026-03-11 14:52:06] No Tavily API key
+[2026-03-11 14:52:06] No Tavily API key
+[2026-03-11 14:52:06] No Tavily API key
+[2026-03-11 14:52:06] No Tavily API key
+[2026-03-11 14:52:06] No Tavily API key
+[2026-03-11 14:52:06] No Tavily API key
+[2026-03-11 14:52:06] No Tavily API key
+[2026-03-11 14:52:06] No Tavily API key
+[2026-03-11 14:52:06] --- Scanning thematic queries ---
+[2026-03-11 14:52:06] No posts found — check API keys
+[2026-03-11 15:31:41] ==================================================
+[2026-03-11 15:31:41] Starting X intelligence scan
+[2026-03-11 15:31:41] --- Scanning system1 tickers ---
+[2026-03-11 15:31:45]   MSTR: 3 posts found
+[2026-03-11 15:31:48]   IBIT: 3 posts found
+[2026-03-11 15:31:52]   BTC: 3 posts found
+[2026-03-11 15:31:56]   Bitcoin: 3 posts found
+[2026-03-11 15:31:56] --- Scanning trader3 tickers ---
+[2026-03-11 15:31:58]   CCJ: 3 posts found
+[2026-03-11 15:32:03]   UEC: 3 posts found
+[2026-03-11 15:32:07]   XOM: 3 posts found
+[2026-03-11 15:32:10]   CVX: 3 posts found
+[2026-03-11 15:32:14]   OXY: 3 posts found
+[2026-03-11 15:32:14] --- Scanning trader4 tickers ---
+[2026-03-11 15:32:17]   GME: 3 posts found
+[2026-03-11 15:32:21]   AMC: 3 posts found
+[2026-03-11 15:32:25]   SOFI: 3 posts found
+[2026-03-11 15:32:28]   RIVN: 3 posts found
+[2026-03-11 15:32:32]   LCID: 3 posts found
+[2026-03-11 15:32:32] --- Scanning trader5 tickers ---
+[2026-03-11 15:32:36]   NVDA: 3 posts found
+[2026-03-11 15:32:40]   AMZN: 3 posts found
+[2026-03-11 15:32:44]   GOOGL: 3 posts found
+[2026-03-11 15:32:48]   TSLA: 3 posts found
+[2026-03-11 15:32:52]   NFLX: 3 posts found
+[2026-03-11 15:32:52] --- Scanning influencers ---
+[2026-03-11 15:32:57]   @NoLimitGaines: 3 posts found
+[2026-03-11 15:33:01]   @honeydripnetwor: 3 posts found
+[2026-03-11 15:33:05]   @aristotlegrowth: 3 posts found
+[2026-03-11 15:33:09]   @unusual_whales: 3 posts found
+[2026-03-11 15:33:12]   @DeItaone: 3 posts found
+[2026-03-11 15:33:17]   @zabormeister: 3 posts found
+[2026-03-11 15:33:20]   @jimcramer: 3 posts found
+[2026-03-11 15:33:25]   @michaeljburry: 3 posts found
+[2026-03-11 15:33:25] --- Scanning thematic queries ---
+[2026-03-11 15:33:29]   Thematic: 3 results for 'unusual options activity today stocks...'
+[2026-03-11 15:33:32]   Thematic: 3 results for 'short squeeze candidates stocks 2026...'
+[2026-03-11 15:33:36]   Thematic: 3 results for 'uranium energy stocks catalyst news...'
+[2026-03-11 15:33:37]   Thematic: 3 results for 'bitcoin MSTR institutional buying...'
+[2026-03-11 15:33:39]   Thematic: 3 results for 'NVDA TSLA AMZN breakout momentum...'
+[2026-03-11 15:33:43]   Thematic: 3 results for 'fed interest rate market impact stocks...'
+[2026-03-11 15:33:43] Total unique posts: 97
+[2026-03-11 15:33:43] Analyzing batch 1 (10 posts)...
+[2026-03-11 15:33:53] Analyzing batch 2 (10 posts)...
+[2026-03-11 15:34:06] Analyzing batch 3 (10 posts)...
+[2026-03-11 15:34:18] Analyzing batch 4 (10 posts)...
+[2026-03-11 15:34:30] Analyzing batch 5 (10 posts)...
+[2026-03-11 15:34:42] Analyzing batch 6 (10 posts)...
+[2026-03-11 15:34:52] Analyzing batch 7 (10 posts)...
+[2026-03-11 15:34:58] Analyzing batch 8 (10 posts)...
+[2026-03-11 15:35:04] Analyzing batch 9 (10 posts)...
+[2026-03-11 15:35:18] Analyzing batch 10 (7 posts)...
+[2026-03-11 15:35:28] Intel saved to /Users/eddiemae/rudy/data/gronk_intel.json
+[2026-03-11 15:35:28] 🔍 GRONK X INTELLIGENCE REPORT
+📊 Posts scanned: 97
+📈 Sentiment: BULLISH
+
+Posts focus on Bitcoin-related assets with mixed signals: MSTR faces heavy short interest and underperformance versus IBIT, while Bitcoin shows conflicting technical signals with both severe correction warnings and seasonal bullish patterns. Several posts reference 2026 price targets and market cond
+
+⚡ HIGH CONFIDENCE SIGNALS:
+  CCJ → BUY (Trader 3 (Energy))
+    Multiple posts highlight strong fundamentals, technical accumulation pattern, EPS growth forecasts (
+  LCID → BUY (Squeeze)
+    60% pre-market spike on $300M Uber Robo-Taxi partnership announcement for U.S. service.
+
+🔥 Hot: GOOGL, UEC, AMZN, JPM, NIO, XOM, OXY, TSLA, NFLX, SMCI
+
+📅 Catalysts: RIVN R2 vehicle deliveries in 2026, Webull 24/5 overnight trading expansion, May 2026 for GME wedge resolution, NFLX FY2026 revenue guidance ($50.7B-$51.7B vs $50.98B est), March 2026 price target for MSTR
+
+⚠️ Risks: TSLA showing historical volatility with mixed annual returns, Growth stock repricing affecting SOFI valuation, AMC price decline with increasing volume suggests distribution
+[2026-03-11 15:35:29] X scan complete
+[2026-03-11 15:35:29] ==================================================
+[2026-03-11 16:05:22] ==================================================
+[2026-03-11 16:05:22] Starting X intelligence scan
+[2026-03-11 16:05:22] --- Scanning system1 tickers ---
+[2026-03-11 16:05:25]   MSTR: 3 posts found
+[2026-03-11 16:05:29]   IBIT: 3 posts found
+[2026-03-11 16:05:33]   BTC: 3 posts found
+[2026-03-11 16:05:37]   Bitcoin: 3 posts found
+[2026-03-11 16:05:37] --- Scanning trader3 tickers ---
+[2026-03-11 16:05:38]   CCJ: 3 posts found
+[2026-03-11 16:05:41]   UEC: 3 posts found
+[2026-03-11 16:05:45]   XOM: 3 posts found
+[2026-03-11 16:05:49]   CVX: 3 posts found
+[2026-03-11 16:05:52]   OXY: 3 posts found
+[2026-03-11 16:05:52] --- Scanning trader4 tickers ---
+[2026-03-11 16:05:56]   GME: 3 posts found
+[2026-03-11 16:05:59]   AMC: 3 posts found
+[2026-03-11 16:06:03]   SOFI: 3 posts found
+[2026-03-11 16:06:06]   RIVN: 3 posts found
+[2026-03-11 16:06:11]   LCID: 3 posts found
+[2026-03-11 16:06:11] --- Scanning trader5 tickers ---
+[2026-03-11 16:06:16]   NVDA: 3 posts found
+[2026-03-11 16:06:20]   AMZN: 3 posts found
+[2026-03-11 16:06:25]   GOOGL: 3 posts found
+[2026-03-11 16:06:28]   TSLA: 3 posts found
+[2026-03-11 16:06:32]   NFLX: 3 posts found
+[2026-03-11 16:06:32] --- Scanning influencers ---
+[2026-03-11 16:06:36]   @NoLimitGaines: 3 posts found
+[2026-03-11 16:06:40]   @honeydripnetwor: 3 posts found
+[2026-03-11 16:06:44]   @aristotlegrowth: 3 posts found
+[2026-03-11 16:06:48]   @unusual_whales: 3 posts found
+[2026-03-11 16:06:51]   @DeItaone: 3 posts found
+[2026-03-11 16:06:56]   @zabormeister: 3 posts found
+[2026-03-11 16:07:00]   @jimcramer: 3 posts found
+[2026-03-11 16:07:03]   @michaeljburry: 3 posts found
+[2026-03-11 16:07:03] --- Scanning thematic queries ---
+[2026-03-11 16:07:07]   Thematic: 3 results for 'unusual options activity today stocks...'
+[2026-03-11 16:07:10]   Thematic: 3 results for 'short squeeze candidates stocks 2026...'
+[2026-03-11 16:07:14]   Thematic: 3 results for 'uranium energy stocks catalyst news...'
+[2026-03-11 16:07:15]   Thematic: 3 results for 'bitcoin MSTR institutional buying...'
+[2026-03-11 16:07:19]   Thematic: 3 results for 'NVDA TSLA AMZN breakout momentum...'
+[2026-03-11 16:07:23]   Thematic: 3 results for 'fed interest rate market impact stocks...'
+[2026-03-11 16:07:23] Total unique posts: 97
+[2026-03-11 16:07:23] Analyzing batch 1 (10 posts)...
+[2026-03-11 16:07:32] Analyzing batch 2 (10 posts)...
+[2026-03-11 16:07:43] Analyzing batch 3 (10 posts)...
+[2026-03-11 16:07:55] Analyzing batch 4 (10 posts)...
+[2026-03-11 16:08:07] Analyzing batch 5 (10 posts)...
+[2026-03-11 16:08:18] Analyzing batch 6 (10 posts)...
+[2026-03-11 16:08:29] Analyzing batch 7 (10 posts)...
+[2026-03-11 16:08:33] Analyzing batch 8 (10 posts)...
+[2026-03-11 16:08:41] Analyzing batch 9 (10 posts)...
+[2026-03-11 16:08:53] Analyzing batch 10 (7 posts)...
+[2026-03-11 16:09:04] Intel saved to /Users/eddiemae/rudy/data/gronk_intel.json
+[2026-03-11 16:09:04] 🔍 GRONK X INTELLIGENCE REPORT
+📊 Posts scanned: 97
+📈 Sentiment: BULLISH
+
+The posts present conflicting signals about Bitcoin and related assets. There are warnings about MSTR facing pressure and Bitcoin corrections in 2026, countered by bullish long-term calls from Michael Saylor and seasonal data. A separate post hints at a generational buying opportunity in oil. | Soci
+
+⚡ HIGH CONFIDENCE SIGNALS:
+  CCJ → BUY (Trader 3 (Energy))
+    Multiple posts highlight textbook accumulation pattern, strong price action, alignment of fundamenta
+  NFLX → BUY (Trader 5 (Breakout))
+    Described as 'strongest stock in the market' and 'best comeback story' in 2026, with Q4 earnings bea
+  MSTR → BUY (System 1 (Lottery))
+    Company executing one of its largest BTC purchases, funded via equity offerings with institutional b
+  NVDA → BUY (Trader 5 (Breakout))
+    Quantitative models show 94% correlation with previous breakout patterns and detected momentum diver
+
+🔥 Hot: BTC, UEC, AMZN, IBIT, AMC, PLTR, NFLX, LEU, CVX, RIVN
+
+📅 Catalysts: Oil price spike holding as potential rally catalyst for energy stocks, Q2 2026 earnings for SMCI (potential sentiment changer), AMC Q3 2024 earnings results, RIVN R2 vehicle launch impact, Widening uranium supply deficit
+
+⚠️ Risks: Inverse Cramer strategy continuing to outperform, Uranium trading off its January 2026 high above $101, Regulatory scrutiny and lawsuits mentioned around institutional trading of MSTR
+[2026-03-11 16:09:04] X scan complete
+[2026-03-11 16:09:04] ==================================================
+[2026-03-11 19:00:26] ==================================================
+[2026-03-11 19:00:26] Starting X intelligence scan
+[2026-03-11 19:00:26] --- Scanning system1 tickers ---
+[2026-03-11 19:00:30]   MSTR: 3 posts found
+[2026-03-11 19:00:33]   IBIT: 3 posts found
+[2026-03-11 19:00:37]   BTC: 3 posts found
+[2026-03-11 19:00:41]   Bitcoin: 3 posts found
+[2026-03-11 19:00:41] --- Scanning trader3 tickers ---
+[2026-03-11 19:00:44]   CCJ: 3 posts found
+[2026-03-11 19:00:48]   UEC: 3 posts found
+[2026-03-11 19:00:52]   XOM: 3 posts found
+[2026-03-11 19:00:55]   CVX: 3 posts found
+[2026-03-11 19:00:59]   OXY: 3 posts found
+[2026-03-11 19:00:59] --- Scanning trader4 tickers ---
+[2026-03-11 19:01:02]   GME: 3 posts found
+[2026-03-11 19:01:05]   AMC: 3 posts found
+[2026-03-11 19:01:09]   SOFI: 3 posts found
+[2026-03-11 19:01:12]   RIVN: 3 posts found
+[2026-03-11 19:01:16]   LCID: 3 posts found
+[2026-03-11 19:01:16] --- Scanning trader5 tickers ---
+[2026-03-11 19:01:19]   NVDA: 3 posts found
+[2026-03-11 19:01:24]   AMZN: 3 posts found
+[2026-03-11 19:01:28]   GOOGL: 3 posts found
+[2026-03-11 19:01:31]   TSLA: 3 posts found
+[2026-03-11 19:01:35]   NFLX: 3 posts found
+[2026-03-11 19:01:35] --- Scanning influencers ---
+[2026-03-11 19:01:39]   @NoLimitGaines: 3 posts found
+[2026-03-11 19:01:44]   @honeydripnetwor: 3 posts found
+[2026-03-11 19:01:48]   @aristotlegrowth: 3 posts found
+[2026-03-11 19:01:52]   @unusual_whales: 3 posts found
+[2026-03-11 19:01:55]   @DeItaone: 3 posts found
+[2026-03-11 19:02:00]   @zabormeister: 3 posts found
+[2026-03-11 19:02:04]   @jimcramer: 3 posts found
+[2026-03-11 19:02:10]   @michaeljburry: 3 posts found
+[2026-03-11 19:02:10] --- Scanning thematic queries ---
+[2026-03-11 19:02:14]   Thematic: 3 results for 'unusual options activity today stocks...'
+[2026-03-11 19:02:16]   Thematic: 3 results for 'short squeeze candidates stocks 2026...'
+[2026-03-11 19:02:20]   Thematic: 3 results for 'uranium energy stocks catalyst news...'
+[2026-03-11 19:02:22]   Thematic: 3 results for 'bitcoin MSTR institutional buying...'
+[2026-03-11 19:02:23]   Thematic: 3 results for 'NVDA TSLA AMZN breakout momentum...'
+[2026-03-11 19:02:27]   Thematic: 3 results for 'fed interest rate market impact stocks...'
+[2026-03-11 19:02:27] Total unique posts: 98
+[2026-03-11 19:02:27] Analyzing batch 1 (10 posts)...
+[2026-03-11 19:02:37] Analyzing batch 2 (10 posts)...
+[2026-03-11 19:02:49] Analyzing batch 3 (10 posts)...
+[2026-03-11 19:02:59] Analyzing batch 4 (10 posts)...
+[2026-03-11 19:03:11] Analyzing batch 5 (10 posts)...
+[2026-03-11 19:03:22] Analyzing batch 6 (10 posts)...
+[2026-03-11 19:03:31] Analyzing batch 7 (10 posts)...
+[2026-03-11 19:03:37] Analyzing batch 8 (10 posts)...
+[2026-03-11 19:03:44] Analyzing batch 9 (10 posts)...
+[2026-03-11 19:03:56] Analyzing batch 10 (8 posts)...
+[2026-03-11 19:04:07] Intel saved to /Users/eddiemae/rudy/data/gronk_intel.json
+[2026-03-11 19:04:07] 🔍 GRONK X INTELLIGENCE REPORT
+📊 Posts scanned: 98
+📈 Sentiment: BULLISH
+
+X posts show mixed signals for Bitcoin-related assets with conflicting price targets and institutional activity. MSTR faces bearish warnings about 2026 performance while IBIT shows significant institutional accumulation. Broader Bitcoin sentiment is divided between seasonal optimism and 2026 correct
+
+⚡ HIGH CONFIDENCE SIGNALS:
+  CCJ → BUY (Trader 3 (Energy))
+    Multiple posts highlight textbook accumulation pattern, strong fundamentals, uranium supply deficit,
+  AMZN → BUY (Breakout)
+    Surged 87% in trading volume, expected 10%+ revenue growth driven by AI and cloud, guiding toward $2
+
+🔥 Hot: GME, SPY, AMZN, OXY, Bitcoin, NFLX, AMC, COIN, NVDA, GOOGL
+
+📅 Catalysts: NVDA sold out through 2026, February seasonality for Bitcoin, 2026 S&P 500 above 7,000 projection, Higher oil prices benefiting energy stocks, NVDA technical breakout above $150
+
+⚠️ Risks: Large tech CapEx spending could pressure margins, AMC executive compensation concerns, Blue Owl withdrawal halt indicating market stress
+[2026-03-11 19:04:08] X scan complete
+[2026-03-11 19:04:08] ==================================================
+[2026-03-12 08:00:41] ==================================================
+[2026-03-12 08:00:41] Starting X intelligence scan
+[2026-03-12 08:00:41] --- Scanning system1 tickers ---
+[2026-03-12 08:00:45]   MSTR: 3 posts found
+[2026-03-12 08:00:49]   IBIT: 3 posts found
+[2026-03-12 08:00:52]   BTC: 3 posts found
+[2026-03-12 08:00:56]   Bitcoin: 3 posts found
+[2026-03-12 08:00:56] --- Scanning trader3 tickers ---
+[2026-03-12 08:00:59]   CCJ: 3 posts found
+[2026-03-12 08:01:03]   UEC: 3 posts found
+[2026-03-12 08:01:06]   XOM: 3 posts found
+[2026-03-12 08:01:10]   CVX: 3 posts found
+[2026-03-12 08:01:14]   OXY: 3 posts found
+[2026-03-12 08:01:14] --- Scanning trader4 tickers ---
+[2026-03-12 08:01:18]   GME: 3 posts found
+[2026-03-12 08:01:21]   AMC: 3 posts found
+[2026-03-12 08:01:25]   SOFI: 3 posts found
+[2026-03-12 08:01:29]   RIVN: 3 posts found
+[2026-03-12 08:01:33]   LCID: 3 posts found
+[2026-03-12 08:01:33] --- Scanning trader5 tickers ---
+[2026-03-12 08:01:37]   NVDA: 3 posts found
+[2026-03-12 08:01:41]   AMZN: 3 posts found
+[2026-03-12 08:01:46]   GOOGL: 3 posts found
+[2026-03-12 08:01:49]   TSLA: 3 posts found
+[2026-03-12 08:01:53]   NFLX: 3 posts found
+[2026-03-12 08:01:53] --- Scanning influencers ---
+[2026-03-12 08:01:57]   @NoLimitGaines: 3 posts found
+[2026-03-12 08:02:02]   @honeydripnetwor: 3 posts found
+[2026-03-12 08:02:05]   @aristotlegrowth: 3 posts found
+[2026-03-12 08:02:08]   @unusual_whales: 3 posts found
+[2026-03-12 08:02:12]   @DeItaone: 3 posts found
+[2026-03-12 08:02:16]   @zabormeister: 3 posts found
+[2026-03-12 08:02:19]   @jimcramer: 3 posts found
+[2026-03-12 08:02:23]   @michaeljburry: 3 posts found
+[2026-03-12 08:02:23] --- Scanning thematic queries ---
+[2026-03-12 08:02:27]   Thematic: 3 results for 'unusual options activity today stocks...'
+[2026-03-12 08:02:29]   Thematic: 3 results for 'short squeeze candidates stocks 2026...'
+[2026-03-12 08:02:31]   Thematic: 3 results for 'uranium energy stocks catalyst news...'
+[2026-03-12 08:02:33]   Thematic: 3 results for 'bitcoin MSTR institutional buying...'
+[2026-03-12 08:02:35]   Thematic: 3 results for 'NVDA TSLA AMZN breakout momentum...'
+[2026-03-12 08:02:39]   Thematic: 3 results for 'fed interest rate market impact stocks...'
+[2026-03-12 08:02:39] Total unique posts: 98
+[2026-03-12 08:02:39] Analyzing batch 1 (10 posts)...
+[2026-03-12 08:03:07] Analyzing batch 2 (10 posts)...
+[2026-03-12 08:03:30] Analyzing batch 3 (10 posts)...
+[2026-03-12 08:03:57] Analyzing batch 4 (10 posts)...
+[2026-03-12 08:04:18] Analyzing batch 5 (10 posts)...
+[2026-03-12 08:04:40] Analyzing batch 6 (10 posts)...
+[2026-03-12 08:04:59] Analyzing batch 7 (10 posts)...
+[2026-03-12 08:05:10] Analyzing batch 8 (10 posts)...
+[2026-03-12 08:05:28] Analyzing batch 9 (10 posts)...
+[2026-03-12 08:05:50] Analyzing batch 10 (8 posts)...
+[2026-03-12 08:06:19] Intel saved to /Users/eddiemae/rudy/data/gronk_intel.json
+[2026-03-12 08:06:19] 🔍 GRONK X INTELLIGENCE REPORT
+📊 Posts scanned: 98
+📈 Sentiment: BULLISH
+
+X posts show significant institutional Bitcoin accumulation via MSTR and IBIT, with mixed signals about Bitcoin's 2026 trajectory. Energy sector commentary suggests a potential generational buying opportunity in oil. Technical analysis resources are being promoted for real-time market insights. | X 
+
+⚡ HIGH CONFIDENCE SIGNALS:
+  MSTR → BUY (System 1 (Lottery))
+    Strategy Inc purchased 2,486 Bitcoin at ~$67,710 each via ATM program, demonstrating aggressive inst
+  AMC → SELL (Squeeze)
+    $150M ATM stock offering announced, CEO admits stock price has fallen dramatically, dilution concern
+
+🔥 Hot: IBIT, MSTR, CCJ, LCID, UEC, TSLA, NFLX, META, AAPL, CVX
+
+📅 Catalysts: Q1 2026 for high short-interest stocks (potential squeeze period), Vanguard's 2026 outlook projecting 4.9% to 6.9% returns for international stocks, SOFI 2026 financial guidance, Fed interest rate decisions, Generational buying opportunity in oil (geopolitics, incentives)
+
+⚠️ Risks: NFLX stock initially moving lower post-earnings despite beat, Speculative nature of GME community-driven interest, Regulatory scrutiny for firms like Jane Street involved with MSTR
+[2026-03-12 08:06:19] X scan complete
+[2026-03-12 08:06:19] ==================================================
+[2026-03-12 09:32:07] ==================================================
+[2026-03-12 09:32:07] Starting X intelligence scan
+[2026-03-12 09:32:07] --- Scanning system1 tickers ---
+[2026-03-12 09:32:10]   MSTR: 3 posts found
+[2026-03-12 09:32:14]   IBIT: 3 posts found
+[2026-03-12 09:32:18]   BTC: 3 posts found
+[2026-03-12 09:32:21]   Bitcoin: 3 posts found
+[2026-03-12 09:32:21] --- Scanning trader3 tickers ---
+[2026-03-12 09:32:25]   CCJ: 3 posts found
+[2026-03-12 09:32:29]   UEC: 3 posts found
+[2026-03-12 09:32:32]   XOM: 3 posts found
+[2026-03-12 09:32:36]   CVX: 3 posts found
+[2026-03-12 09:32:40]   OXY: 3 posts found
+[2026-03-12 09:32:40] --- Scanning trader4 tickers ---
+[2026-03-12 09:32:43]   GME: 3 posts found
+[2026-03-12 09:32:47]   AMC: 3 posts found
+[2026-03-12 09:32:50]   SOFI: 3 posts found
+[2026-03-12 09:32:54]   RIVN: 3 posts found
+[2026-03-12 09:32:57]   LCID: 3 posts found
+[2026-03-12 09:32:57] --- Scanning trader5 tickers ---
+[2026-03-12 09:33:01]   NVDA: 3 posts found
+[2026-03-12 09:33:07]   AMZN: 3 posts found
+[2026-03-12 09:33:10]   GOOGL: 3 posts found
+[2026-03-12 09:33:14]   TSLA: 3 posts found
+[2026-03-12 09:33:18]   NFLX: 3 posts found
+[2026-03-12 09:33:18] --- Scanning influencers ---
+[2026-03-12 09:33:22]   @NoLimitGaines: 3 posts found
+[2026-03-12 09:33:27]   @honeydripnetwor: 3 posts found
+[2026-03-12 09:33:30]   @aristotlegrowth: 3 posts found
+[2026-03-12 09:33:34]   @unusual_whales: 3 posts found
+[2026-03-12 09:33:37]   @DeItaone: 3 posts found
+[2026-03-12 09:33:42]   @zabormeister: 3 posts found
+[2026-03-12 09:33:45]   @jimcramer: 3 posts found
+[2026-03-12 09:33:49]   @michaeljburry: 3 posts found
+[2026-03-12 09:33:49] --- Scanning thematic queries ---
+[2026-03-12 09:33:53]   Thematic: 3 results for 'unusual options activity today stocks...'
+[2026-03-12 09:33:54]   Thematic: 3 results for 'short squeeze candidates stocks 2026...'
+[2026-03-12 09:33:56]   Thematic: 3 results for 'uranium energy stocks catalyst news...'
+[2026-03-12 09:33:58]   Thematic: 3 results for 'bitcoin MSTR institutional buying...'
+[2026-03-12 09:33:59]   Thematic: 3 results for 'NVDA TSLA AMZN breakout momentum...'
+[2026-03-12 09:34:01]   Thematic: 3 results for 'fed interest rate market impact stocks...'
+[2026-03-12 09:34:01] Total unique posts: 98
+[2026-03-12 09:34:01] Analyzing batch 1 (10 posts)...
+[2026-03-12 09:34:25] Analyzing batch 2 (10 posts)...
+[2026-03-12 09:34:51] Analyzing batch 3 (10 posts)...
+[2026-03-12 09:35:15] Analyzing batch 4 (10 posts)...
+[2026-03-12 09:35:35] Analyzing batch 5 (10 posts)...
+[2026-03-12 09:35:59] Analyzing batch 6 (10 posts)...
+[2026-03-12 09:36:23] Analyzing batch 7 (10 posts)...
+[2026-03-12 09:36:37] Analyzing batch 8 (10 posts)...
+[2026-03-12 09:36:54] Analyzing batch 9 (10 posts)...
+[2026-03-12 09:37:17] Analyzing batch 10 (8 posts)...
+[2026-03-12 09:37:38] Intel saved to /Users/eddiemae/rudy/data/gronk_intel.json
+[2026-03-12 09:37:38] 🔍 GRONK X INTELLIGENCE REPORT
+📊 Posts scanned: 98
+📈 Sentiment: BULLISH
+
+X/Twitter posts show significant institutional Bitcoin accumulation by MicroStrategy ($MSTR) while Bitcoin ETFs experience massive outflows. Bitcoin is down sharply from its 2025 highs with unusual divergence from dollar weakness, but some see potential for a rebound based on seasonality. Energy sec
+
+⚡ HIGH CONFIDENCE SIGNALS:
+  NVDA → BUY (Breakout)
+    JPMorgan maintained Overweight rating post-earnings, massive revenue beats, sold out through 2026, d
+  AMZN → BUY (Breakout)
+    Surged 87.03% to 4.9K trades, expected >10% revenue growth in 2026, $200B CapEx guidance for AI infr
+  NVDA → BUY (Trader 5 (Breakout))
+    Quantitative model shows 94% correlation with previous breakout patterns, identified as top-ranked m
+
+🔥 Hot: IBIT, OXY, MSTR, NFLX, GOOGL, PLTR, XOM, CCJ, HYG, ASML
+
+📅 Catalysts: RIVN 2026 delivery targets (62K-67K vehicles), COIN's expansion into 24/5 stock trading, Uranium supply-demand imbalance, LCID Uber partnership implementation, MicroStrategy's continued Bitcoin accumulation
+
+⚠️ Risks: MSTR stock down 49.84% over 52 weeks and 62.41% over 6 months, Bitcoin erased $85B market cap in under 4 hours in Jan 2026, Increased competition in trading platforms as crypto firms expand into traditional markets
+[2026-03-12 09:37:39] X scan complete
+[2026-03-12 09:37:39] ==================================================
+[2026-03-12 10:31:54] ==================================================
+[2026-03-12 10:31:54] Starting X intelligence scan
+[2026-03-12 10:31:54] --- Scanning system1 tickers ---
+[2026-03-12 10:31:58]   MSTR: 3 posts found
+[2026-03-12 10:32:01]   IBIT: 3 posts found
+[2026-03-12 10:32:04]   BTC: 3 posts found
+[2026-03-12 10:32:09]   Bitcoin: 3 posts found
+[2026-03-12 10:32:09] --- Scanning trader3 tickers ---
+[2026-03-12 10:32:12]   CCJ: 3 posts found
+[2026-03-12 10:32:15]   UEC: 3 posts found
+[2026-03-12 10:32:19]   XOM: 3 posts found
+[2026-03-12 10:32:23]   CVX: 3 posts found
+[2026-03-12 10:32:26]   OXY: 3 posts found
+[2026-03-12 10:32:26] --- Scanning trader4 tickers ---
+[2026-03-12 10:32:30]   GME: 3 posts found
+[2026-03-12 10:32:33]   AMC: 3 posts found
+[2026-03-12 10:32:37]   SOFI: 3 posts found
+[2026-03-12 10:32:41]   RIVN: 3 posts found
+[2026-03-12 10:32:45]   LCID: 3 posts found
+[2026-03-12 10:32:45] --- Scanning trader5 tickers ---
+[2026-03-12 10:32:48]   NVDA: 3 posts found
+[2026-03-12 10:32:53]   AMZN: 3 posts found
+[2026-03-12 10:32:56]   GOOGL: 3 posts found
+[2026-03-12 10:32:57] --- Scanning influencers ---
+[2026-03-12 10:33:01] --- Scanning thematic queries ---
+[2026-03-12 10:33:02] Total unique posts: 49
+[2026-03-12 10:33:02] Analyzing batch 1 (10 posts)...
+[2026-03-12 10:33:23] Analyzing batch 2 (10 posts)...
+[2026-03-12 10:33:46] Analyzing batch 3 (10 posts)...
+[2026-03-12 10:34:05] Analyzing batch 4 (10 posts)...
+[2026-03-12 10:34:29] Analyzing batch 5 (9 posts)...
+[2026-03-12 10:34:52] Intel saved to /Users/eddiemae/rudy/data/gronk_intel.json
+[2026-03-12 10:34:52] 🔍 GRONK X INTELLIGENCE REPORT
+📊 Posts scanned: 49
+📈 Sentiment: MIXED
+
+X/Twitter posts show significant bearish pressure on Bitcoin and related assets in 2026, with Bitcoin experiencing sharp corrections (~50% from ATH) and volatility. There's mixed sentiment on oil/generational buying opportunities, while technical warnings exist for bottom-fishing. The environment is
+
+⚡ HIGH CONFIDENCE SIGNALS:
+  Bitcoin → WATCH (System 1 (Lottery))
+    Multiple posts describe severe correction (~50% from ATH), sharp drops to $60K-$65K range, $85B mark
+
+🔥 Hot: CCJ, LCID, IBIT, RIVN, AMZN, MSTR, GME, ASML, AMC, SOFI
+
+📅 Catalysts: U.S. oil companies potentially investing in revitalizing Venezuela's oil industry, AMC's $150M ATM stock offering agreement (announced Feb 9, 2026), Russia uranium ban fully kicking in at end of 2027, Potential generational buying opportunity in oil from geopolitics, NVIDIA demand through 2026
+
+⚠️ Risks: Uranium trading off January 2026 high above $101, Bitcoin suffering severe correction in 2026, AMZN YTD performance down -9%
+[2026-03-12 10:34:53] X scan complete
+[2026-03-12 10:34:53] ==================================================
+[2026-03-12 11:30:44] ==================================================
+[2026-03-12 11:30:44] Starting X intelligence scan
+[2026-03-12 11:30:44] --- Scanning system1 tickers ---
+[2026-03-12 11:30:45] --- Scanning trader3 tickers ---
+[2026-03-12 11:30:47] --- Scanning trader4 tickers ---
+[2026-03-12 11:30:49] --- Scanning trader5 tickers ---
+[2026-03-12 11:30:52] --- Scanning influencers ---
+[2026-03-12 11:30:55] --- Scanning thematic queries ---
+[2026-03-12 11:30:56] No posts found — check API keys
+[2026-03-12 12:32:59] ==================================================
+[2026-03-12 12:32:59] Starting X intelligence scan
+[2026-03-12 12:32:59] --- Scanning system1 tickers ---
+[2026-03-12 12:33:00] --- Scanning trader3 tickers ---
+[2026-03-12 12:33:02] --- Scanning trader4 tickers ---
+[2026-03-12 12:33:05] --- Scanning trader5 tickers ---
+[2026-03-12 12:33:07] --- Scanning influencers ---
+[2026-03-12 12:33:10] --- Scanning thematic queries ---
+[2026-03-12 12:33:11] No posts found — check API keys
+[2026-03-12 13:31:46] ==================================================
+[2026-03-12 13:31:46] Starting X intelligence scan
+[2026-03-12 13:31:46] --- Scanning system1 tickers ---
+[2026-03-12 13:31:48] --- Scanning trader3 tickers ---
+[2026-03-12 13:31:50] --- Scanning trader4 tickers ---
+[2026-03-12 13:31:52] --- Scanning trader5 tickers ---
+[2026-03-12 13:31:54] --- Scanning influencers ---
+[2026-03-12 13:31:58] --- Scanning thematic queries ---
+[2026-03-12 13:31:59] No posts found — check API keys
+[2026-03-12 14:31:48] ==================================================
+[2026-03-12 14:31:48] Starting X intelligence scan
+[2026-03-12 14:31:48] --- Scanning system1 tickers ---
+[2026-03-12 14:31:49] --- Scanning trader3 tickers ---
+[2026-03-12 14:31:51] --- Scanning trader4 tickers ---
+[2026-03-12 14:31:54] --- Scanning trader5 tickers ---
+[2026-03-12 14:31:56] --- Scanning influencers ---
+[2026-03-12 14:31:59] --- Scanning thematic queries ---
+[2026-03-12 14:32:00] No posts found — check API keys
+[2026-03-12 15:31:51] ==================================================
+[2026-03-12 15:31:51] Starting X intelligence scan
+[2026-03-12 15:31:51] --- Scanning system1 tickers ---
+[2026-03-12 15:31:53] --- Scanning trader3 tickers ---
+[2026-03-12 15:31:55] --- Scanning trader4 tickers ---
+[2026-03-12 15:31:57] --- Scanning trader5 tickers ---
+[2026-03-12 15:31:59] --- Scanning influencers ---
+[2026-03-12 15:32:02] --- Scanning thematic queries ---
+[2026-03-12 15:32:04] No posts found — check API keys
+[2026-03-12 16:05:34] ==================================================
+[2026-03-12 16:05:34] Starting X intelligence scan
+[2026-03-12 16:05:34] --- Scanning system1 tickers ---
+[2026-03-12 16:05:36] --- Scanning trader3 tickers ---
+[2026-03-12 16:05:38] --- Scanning trader4 tickers ---
+[2026-03-12 16:05:40] --- Scanning trader5 tickers ---
+[2026-03-12 16:05:42] --- Scanning influencers ---
+[2026-03-12 16:05:46] --- Scanning thematic queries ---
+[2026-03-12 16:05:47] No posts found — check API keys
+[2026-03-12 19:00:28] ==================================================
+[2026-03-12 19:00:28] Starting X intelligence scan
+[2026-03-12 19:00:28] --- Scanning system1 tickers ---
+[2026-03-12 19:00:30] --- Scanning trader3 tickers ---
+[2026-03-12 19:00:32] --- Scanning trader4 tickers ---
+[2026-03-12 19:00:34] --- Scanning trader5 tickers ---
+[2026-03-12 19:00:36] --- Scanning influencers ---
+[2026-03-12 19:00:39] --- Scanning thematic queries ---
+[2026-03-12 19:00:40] No posts found — check API keys
+[2026-03-13 08:00:43] ==================================================
+[2026-03-13 08:00:43] Starting X intelligence scan
+[2026-03-13 08:00:43] --- Scanning system1 tickers ---
+[2026-03-13 08:00:45] --- Scanning trader3 tickers ---
+[2026-03-13 08:00:47] --- Scanning trader4 tickers ---
+[2026-03-13 08:00:49] --- Scanning trader5 tickers ---
+[2026-03-13 08:00:51] --- Scanning influencers ---
+[2026-03-13 08:00:55] --- Scanning thematic queries ---
+[2026-03-13 08:00:56] No posts found — check API keys
+[2026-03-13 09:35:13] ==================================================
+[2026-03-13 09:35:13] Starting X intelligence scan
+[2026-03-13 09:35:13] --- Scanning system1 tickers ---
+[2026-03-13 09:35:14] --- Scanning trader3 tickers ---
+[2026-03-13 09:35:17] --- Scanning trader4 tickers ---
+[2026-03-13 09:35:19] --- Scanning trader5 tickers ---
+[2026-03-13 09:35:21] --- Scanning influencers ---
+[2026-03-13 09:35:24] --- Scanning thematic queries ---
+[2026-03-13 09:35:25] No posts found — check API keys
+[2026-03-13 10:47:48] ==================================================
+[2026-03-13 10:47:48] Starting X intelligence scan
+[2026-03-13 10:47:48] --- Scanning system1 tickers ---
+[2026-03-13 10:47:50] --- Scanning trader3 tickers ---
+[2026-03-13 10:47:52] --- Scanning trader4 tickers ---
+[2026-03-13 10:47:54] --- Scanning trader5 tickers ---
+[2026-03-13 10:47:56] --- Scanning influencers ---
+[2026-03-13 10:47:59] --- Scanning thematic queries ---
+[2026-03-13 10:48:01] No posts found — check API keys
+[2026-03-13 11:34:50] ==================================================
+[2026-03-13 11:34:50] Starting X intelligence scan
+[2026-03-13 11:34:50] --- Scanning system1 tickers ---
+[2026-03-13 11:34:52] --- Scanning trader3 tickers ---
+[2026-03-13 11:34:54] --- Scanning trader4 tickers ---
+[2026-03-13 11:34:56] --- Scanning trader5 tickers ---
+[2026-03-13 11:34:58] --- Scanning influencers ---
+[2026-03-13 11:35:01] --- Scanning thematic queries ---
+[2026-03-13 11:35:02] No posts found — check API keys
+[2026-03-13 12:30:52] ==================================================
+[2026-03-13 12:30:52] Starting X intelligence scan
+[2026-03-13 12:30:52] --- Scanning system1 tickers ---
+[2026-03-13 12:30:54] --- Scanning trader3 tickers ---
+[2026-03-13 12:30:56] --- Scanning trader4 tickers ---
+[2026-03-13 12:30:58] --- Scanning trader5 tickers ---
+[2026-03-13 12:31:00] --- Scanning influencers ---
+[2026-03-13 12:31:04] --- Scanning thematic queries ---
+[2026-03-13 12:31:05] No posts found — check API keys
+[2026-03-13 13:34:03] ==================================================
+[2026-03-13 13:34:03] Starting X intelligence scan
+[2026-03-13 13:34:03] --- Scanning system1 tickers ---
+[2026-03-13 13:34:05] --- Scanning trader3 tickers ---
+[2026-03-13 13:34:07] --- Scanning trader4 tickers ---
+[2026-03-13 13:34:09] --- Scanning trader5 tickers ---
+[2026-03-13 13:34:11] --- Scanning influencers ---
+[2026-03-13 13:34:15] --- Scanning thematic queries ---
+[2026-03-13 13:34:16] No posts found — check API keys
+[2026-03-13 14:33:09] ==================================================
+[2026-03-13 14:33:09] Starting X intelligence scan
+[2026-03-13 14:33:09] --- Scanning system1 tickers ---
+[2026-03-13 14:33:11] --- Scanning trader3 tickers ---
+[2026-03-13 14:33:13] --- Scanning trader4 tickers ---
+[2026-03-13 14:33:15] --- Scanning trader5 tickers ---
+[2026-03-13 14:33:17] --- Scanning influencers ---
+[2026-03-13 14:33:20] --- Scanning thematic queries ---
+[2026-03-13 14:33:22] No posts found — check API keys
+[2026-03-13 15:32:29] ==================================================
+[2026-03-13 15:32:29] Starting X intelligence scan
+[2026-03-13 15:32:29] --- Scanning system1 tickers ---
+[2026-03-13 15:32:30] --- Scanning trader3 tickers ---
+[2026-03-13 15:32:32] --- Scanning trader4 tickers ---
+[2026-03-13 15:32:35] --- Scanning trader5 tickers ---
+[2026-03-13 15:32:37] --- Scanning influencers ---
+[2026-03-13 15:32:40] --- Scanning thematic queries ---
+[2026-03-13 15:32:41] No posts found — check API keys
+[2026-03-13 16:05:42] ==================================================
+[2026-03-13 16:05:42] Starting X intelligence scan
+[2026-03-13 16:05:42] --- Scanning system1 tickers ---
+[2026-03-13 16:05:44] --- Scanning trader3 tickers ---
+[2026-03-13 16:05:46] --- Scanning trader4 tickers ---
+[2026-03-13 16:05:48] --- Scanning trader5 tickers ---
+[2026-03-13 16:05:50] --- Scanning influencers ---
+[2026-03-13 16:05:53] --- Scanning thematic queries ---
+[2026-03-13 16:05:55] No posts found — check API keys
+[2026-03-13 19:00:26] ==================================================
+[2026-03-13 19:00:26] Starting X intelligence scan
+[2026-03-13 19:00:26] --- Scanning system1 tickers ---
+[2026-03-13 19:00:28] --- Scanning trader3 tickers ---
+[2026-03-13 19:00:30] --- Scanning trader4 tickers ---
+[2026-03-13 19:00:32] --- Scanning trader5 tickers ---
+[2026-03-13 19:00:34] --- Scanning influencers ---
+[2026-03-13 19:00:37] --- Scanning thematic queries ---
+[2026-03-13 19:00:39] No posts found — check API keys
+[2026-03-14 10:00:29] ==================================================
+[2026-03-14 10:00:29] Starting X intelligence scan
+[2026-03-14 10:00:29] --- Scanning system1 tickers ---
+[2026-03-14 10:00:31] --- Scanning trader3 tickers ---
+[2026-03-14 10:00:33] --- Scanning trader4 tickers ---
+[2026-03-14 10:00:35] --- Scanning trader5 tickers ---
+[2026-03-14 10:00:37] --- Scanning influencers ---
+[2026-03-14 10:00:40] --- Scanning thematic queries ---
+[2026-03-14 10:00:41] No posts found — check API keys
+[2026-03-15 10:00:34] ==================================================
+[2026-03-15 10:00:34] Starting X intelligence scan
+[2026-03-15 10:00:34] --- Scanning system1 tickers ---
+[2026-03-15 10:00:36] --- Scanning trader3 tickers ---
+[2026-03-15 10:00:38] --- Scanning trader4 tickers ---
+[2026-03-15 10:00:40] --- Scanning trader5 tickers ---
+[2026-03-15 10:00:42] --- Scanning influencers ---
+[2026-03-15 10:00:45] --- Scanning thematic queries ---
+[2026-03-15 10:00:46] No posts found — check API keys
+[2026-03-16 08:00:37] ==================================================
+[2026-03-16 08:00:37] Starting X intelligence scan
+[2026-03-16 08:00:37] --- Scanning system1 tickers ---
+[2026-03-16 08:00:39] --- Scanning trader3 tickers ---
+[2026-03-16 08:00:41] --- Scanning trader4 tickers ---
+[2026-03-16 08:00:43] --- Scanning trader5 tickers ---
+[2026-03-16 08:00:45] --- Scanning influencers ---
+[2026-03-16 08:00:48] --- Scanning thematic queries ---
+[2026-03-16 08:00:49] No posts found — check API keys
+[2026-03-16 09:30:31] ==================================================
+[2026-03-16 09:30:31] Starting X intelligence scan
+[2026-03-16 09:30:31] --- Scanning system1 tickers ---
+[2026-03-16 09:30:33] --- Scanning trader3 tickers ---
+[2026-03-16 09:30:35] --- Scanning trader4 tickers ---
+[2026-03-16 09:30:37] --- Scanning trader5 tickers ---
+[2026-03-16 09:30:39] --- Scanning influencers ---
+[2026-03-16 09:30:43] --- Scanning thematic queries ---
+[2026-03-16 09:30:44] No posts found — check API keys
+[2026-03-16 10:30:42] ==================================================
+[2026-03-16 10:30:42] Starting X intelligence scan
+[2026-03-16 10:30:42] --- Scanning system1 tickers ---
+[2026-03-16 10:30:44] --- Scanning trader3 tickers ---
+[2026-03-16 10:30:46] --- Scanning trader4 tickers ---
+[2026-03-16 10:30:48] --- Scanning trader5 tickers ---
+[2026-03-16 10:30:50] --- Scanning influencers ---
+[2026-03-16 10:30:54] --- Scanning thematic queries ---
+[2026-03-16 10:30:55] No posts found — check API keys
+[2026-03-16 11:33:21] ==================================================
+[2026-03-16 11:33:21] Starting X intelligence scan
+[2026-03-16 11:33:21] --- Scanning system1 tickers ---
+[2026-03-16 11:33:23] --- Scanning trader3 tickers ---
+[2026-03-16 11:33:25] --- Scanning trader4 tickers ---
+[2026-03-16 11:33:27] --- Scanning trader5 tickers ---
+[2026-03-16 11:33:29] --- Scanning influencers ---
+[2026-03-16 11:33:32] --- Scanning thematic queries ---
+[2026-03-16 11:33:33] No posts found — check API keys
+[2026-03-16 16:05:30] ==================================================
+[2026-03-16 16:05:30] Starting X intelligence scan
+[2026-03-16 16:05:30] --- Scanning system1 tickers ---
+[2026-03-16 16:05:31] --- Scanning trader3 tickers ---
+[2026-03-16 16:05:34] --- Scanning trader4 tickers ---
+[2026-03-16 16:05:36] --- Scanning trader5 tickers ---
+[2026-03-16 16:05:38] --- Scanning influencers ---
+[2026-03-16 16:05:41] --- Scanning thematic queries ---
+[2026-03-16 16:05:42] No posts found — check API keys
+[2026-03-16 19:00:35] ==================================================
+[2026-03-16 19:00:35] Starting X intelligence scan
+[2026-03-16 19:00:35] --- Scanning system1 tickers ---
+[2026-03-16 19:00:37] --- Scanning trader3 tickers ---
+[2026-03-16 19:00:39] --- Scanning trader4 tickers ---
+[2026-03-16 19:00:41] --- Scanning trader5 tickers ---
+[2026-03-16 19:00:43] --- Scanning influencers ---
+[2026-03-16 19:00:46] --- Scanning thematic queries ---
+[2026-03-16 19:00:47] No posts found — check API keys
+[2026-03-17 08:00:33] ==================================================
+[2026-03-17 08:00:33] Starting X intelligence scan
+[2026-03-17 08:00:33] --- Scanning system1 tickers ---
+[2026-03-17 08:00:34] --- Scanning trader3 tickers ---
+[2026-03-17 08:00:36] --- Scanning trader4 tickers ---
+[2026-03-17 08:00:38] --- Scanning trader5 tickers ---
+[2026-03-17 08:00:40] --- Scanning influencers ---
+[2026-03-17 08:00:44] --- Scanning thematic queries ---
+[2026-03-17 08:00:45] No posts found — check API keys
+[2026-03-23 14:49:03] ==================================================
+[2026-03-23 14:49:03] Starting X intelligence scan
+[2026-03-23 14:49:03] --- Scanning system1 tickers ---
+[2026-03-23 14:49:05] --- Scanning trader3 tickers ---
+[2026-03-23 14:49:08] --- Scanning trader4 tickers ---
+[2026-03-23 14:49:11] --- Scanning trader5 tickers ---
+[2026-03-23 14:49:13] --- Scanning influencers ---
+[2026-03-23 14:49:18] --- Scanning thematic queries ---
+[2026-03-23 14:49:19] No posts found — check API keys

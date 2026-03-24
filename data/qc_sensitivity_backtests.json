@@ -1,0 +1,34 @@
+{
+  "v2.3 Relaxed 2of3 Weekly": {
+    "project_id": 29044000,
+    "compile_id": "03f71ed0a03f3568292de2ac2fa29960-fc9be8840204c3a1f3fd8eac2289976c",
+    "backtest_id": "",
+    "test_type": "test_a",
+    "resolution": "weekly",
+    "status": "running"
+  },
+  "v2.3 Relaxed 2of3 Daily": {
+    "project_id": 29044008,
+    "compile_id": "4471077f2976475c61b1efb08e3fd1ec-7a6448a7f4201fa3a9e974c3400e743e",
+    "backtest_id": "",
+    "test_type": "test_a",
+    "resolution": "daily",
+    "status": "running"
+  },
+  "v2.3 Strict+ATR Weekly": {
+    "project_id": 29044017,
+    "compile_id": "2b58b72f85aafa25e2e34d845d716aa2-f0ba1fbeb1026513f0b65f97b1a683e1",
+    "backtest_id": "",
+    "test_type": "test_b",
+    "resolution": "weekly",
+    "status": "running"
+  },
+  "v2.3 Strict+ATR Daily": {
+    "project_id": 29044026,
+    "compile_id": "93f4a7074c4917576135e60280e5d6e2-df80da99e594499be463a185b9a9796f",
+    "backtest_id": "544d6491e63a1f899040df234f710dcd",
+    "test_type": "test_b",
+    "resolution": "daily",
+    "status": "running"
+  }
+}

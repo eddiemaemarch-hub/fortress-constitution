@@ -1,0 +1,770 @@
+//@version=6
+// Rudy v2 — MSTR Bitcoin Bull Run Moonshot / Lottery LEAP Strategy
+// 125 deep OTM LEAP calls @ $8/share (~$1200 strike, Jan 2029 exp) = $100K all-in
+// Hold for 20x+ or expiration — tiered profit-taking on momentum spikes
+// This is a MACRO/CYCLE bet, not a day-trading strategy.
+// Core trigger: Post-halving Q4 seasonality, BTC momentum into 2027-2028.
+// Targets: Moderate 4x ($400K) | Bull 78x ($7.8M) | Moonshot 538x ($53.8M)
+// BTC $200K+ by late 2028 = 50-70% probability (power law + halving cycle)
+// Apply to: MSTR daily chart with BTC regime overlay
+// TAX NOTE: Partial sells within 1 year of entry trigger SHORT-TERM capital gains
+// (taxed as ordinary income). Hold >1yr for long-term rates. Factor this into exit sizing.
+// SLIPPAGE: Deep OTM LEAPs have wide bid-ask spreads — expect 5-10% worse fills on fast moves.
+// slippage=5 adds 5 ticks per order to simulate thin LEAP liquidity.
+strategy("Rudy MSTR Moonshot LEAP v2", overlay=true, default_qty_type=strategy.percent_of_equity, default_qty_value=5, initial_capital=100000, commission_type=strategy.commission.percent, commission_value=0.5, slippage=5, pyramiding=3)
+
+// ══════════════════════════════════════════════════════════════════════
+// INPUTS
+// ══════════════════════════════════════════════════════════════════════
+
+// --- MSTR Indicator Parameters ---
+p_ema_entry     = input.int(21,  "Entry EMA",              group="MSTR Indicators")
+p_ema_exit      = input.int(50,  "Exit EMA",               group="MSTR Indicators")
+p_ema_200       = input.int(200, "200 EMA (Key Level)",     group="MSTR Indicators")
+p_rsi_len       = input.int(14,  "RSI Length",              group="MSTR Indicators")
+p_rsi_lo        = input.float(40.0, "RSI Floor",            group="MSTR Indicators")
+p_rsi_hi        = input.float(75.0, "RSI Ceiling",          group="MSTR Indicators")
+p_vol_avg_len   = input.int(20,  "Volume Avg Length",       group="MSTR Indicators")
+p_vol_mult      = input.float(1.5, "Volume Surge Multiple", group="MSTR Indicators")
+p_mom_len       = input.int(5,   "Momentum Lookback Bars",  group="MSTR Indicators")
+p_mom_thresh    = input.float(3.0, "Momentum Threshold %",  group="MSTR Indicators")
+
+// --- Parabolic SAR ---
+p_sar_start     = input.float(0.02, "SAR Start",           group="Parabolic SAR")
+p_sar_inc       = input.float(0.02, "SAR Increment",       group="Parabolic SAR")
+p_sar_max       = input.float(0.20, "SAR Max",             group="Parabolic SAR")
+
+// --- MACD ---
+p_macd_fast     = input.int(12,  "MACD Fast",              group="MACD")
+p_macd_slow     = input.int(26,  "MACD Slow",              group="MACD")
+p_macd_sig      = input.int(9,   "MACD Signal",            group="MACD")
+
+// --- Stochastic RSI ---
+p_stoch_len     = input.int(14,  "Stoch RSI Length",        group="Stochastic RSI")
+p_stoch_k       = input.int(3,   "Stoch K Smooth",          group="Stochastic RSI")
+p_stoch_d       = input.int(3,   "Stoch D Smooth",          group="Stochastic RSI")
+
+// --- MSTR 200-Week MA Cross (PRIMARY ENTRY GATE) ---
+// Rule: 2+ consecutive green weekly closes above 200W SMA = ENTRY ARMED
+// Reset to 0 if any weekly close drops below 200W SMA before reaching threshold
+// This replaces BTC golden cross as the primary regime filter for entry.
+// Oct 2023: crossed ~$41, 2nd green close ~$45, ran to $480+ (10x from entry)
+// Oct 2024: already above 200W (SMA ~$58, MSTR at $140+) — filter stays armed
+p_mstr_200w_len     = input.int(200,  "MSTR 200-Week SMA Length",      group="MSTR 200W Cross")
+p_mstr_weekly_tf    = input.string("W", "MSTR Weekly Timeframe",       group="MSTR 200W Cross")
+p_mstr_green_weeks  = input.int(2,    "Green Weeks Above 200W to ARM", group="MSTR 200W Cross", minval=1, maxval=5)
+p_use_mstr_200w     = input.bool(true, "Use MSTR 200W Cross (vs BTC golden)", group="MSTR 200W Cross")
+
+// --- BTC Regime Parameters (kept for exits, dashboard, death cross) ---
+p_btc_ticker    = input.symbol("BTCUSD",  "BTC Symbol",            group="BTC Regime")
+p_btc_sma_slow  = input.int(200, "BTC Slow SMA Length",            group="BTC Regime")
+p_btc_ema_fast  = input.int(50,  "BTC Fast EMA Length",            group="BTC Regime")
+p_btc_sma_fast  = input.int(50,  "BTC Fast SMA (Death Cross)",     group="BTC Regime")
+
+// --- MSTR/BTC Premium (mNAV) ---
+p_btc_holdings  = input.float(738731, "MSTR BTC Holdings",         group="mNAV Premium")
+p_shares_out    = input.float(335.0,  "MSTR Shares Out (millions)", group="mNAV Premium")
+p_premium_high  = input.float(3.0,  "Premium Warning (euphoria)",   group="mNAV Premium")
+
+// --- Cycle Timing ---
+// NOTE: When using MSTR 200W cross as primary entry gate, cycle timing is OPTIONAL.
+// The 200W cross itself encodes the cycle — MSTR only crosses its 200W SMA
+// at the start of macro bull moves (Mar-Apr 2023, Oct 2023, Oct 2024).
+// Enable cycle filter ONLY if you want to further restrict entries to specific months.
+p_use_cycle     = input.bool(false, "Enable Cycle Timing Filter",  group="Cycle")
+p_entry_month_start = input.int(1,  "Entry Window Start Month",    group="Cycle", minval=1, maxval=12)
+p_entry_month_end   = input.int(12, "Entry Window End Month",      group="Cycle", minval=1, maxval=12)
+p_halving_year  = input.int(2024,   "Last BTC Halving Year",       group="Cycle")
+
+// --- Risk / Hold Parameters ---
+p_max_hold_bars = input.int(567, "Max Hold Bars (~27mo daily)",    group="Risk")
+p_partial_exit_pct = input.float(50.0, "Partial Exit % on Warning", group="Risk")
+p_target_mult   = input.float(20.0, "Target Return Multiple",      group="Risk")
+p_entry_premium = input.float(8.0, "Target Entry Premium $/share", group="Risk")
+p_num_contracts = input.int(125, "Number of Contracts",            group="Risk")
+
+// --- Correlation ---
+p_corr_len      = input.int(30, "BTC-MSTR Correlation Lookback",   group="Correlation")
+
+// --- Laddered Trailing Stop (Constitution v45.0) ---
+// NO trail until +300% — deep OTM LEAPs need room to breathe on MSTR volatility
+// Trail tightens with each partial sell as gains grow
+p_lad_t1_gain   = input.float(300,  "Tier 1: Trail at +% (3x)",   group="Trail Stop")
+p_lad_t1_trail  = input.float(30.0, "Tier 1: Trail %",            group="Trail Stop")
+p_lad_t2_gain   = input.float(500,  "Tier 2: Trail at +% (5x)",   group="Trail Stop")
+p_lad_t2_trail  = input.float(25.0, "Tier 2: Trail %",            group="Trail Stop")
+p_lad_t3_gain   = input.float(1000, "Tier 3: Trail at +% (10x)",  group="Trail Stop")
+p_lad_t3_trail  = input.float(20.0, "Tier 3: Trail %",            group="Trail Stop")
+p_lad_t4_gain   = input.float(2000, "Tier 4: Trail at +% (20x)",  group="Trail Stop")
+p_lad_t4_trail  = input.float(15.0, "Tier 4: Trail %",            group="Trail Stop")
+p_lad_t5_gain   = input.float(5000, "Tier 5: Trail at +% (50x)",  group="Trail Stop")
+p_lad_t5_trail  = input.float(10.0, "Tier 5: Trail % LOCK",       group="Trail Stop")
+
+// --- Tiered Profit Taking (partial sells at each ladder level) ---
+pt1_pct         = input.float(500,  "PT1 at +% (5x)",             group="Profit Taking")
+pt1_sell        = input.float(25,   "PT1 Sell %",                  group="Profit Taking")
+pt2_pct         = input.float(1000, "PT2 at +% (10x)",            group="Profit Taking")
+pt2_sell        = input.float(25,   "PT2 Sell %",                  group="Profit Taking")
+pt3_pct         = input.float(2000, "PT3 at +% (20x)",            group="Profit Taking")
+pt3_sell        = input.float(25,   "PT3 Sell %",                  group="Profit Taking")
+pt4_pct         = input.float(5000, "PT4 at +% (50x)",            group="Profit Taking")
+pt4_sell        = input.float(25,   "PT4 Sell %",                  group="Profit Taking")
+
+// --- Fallback Overrides (emergency exit triggers) ---
+p_use_btc_200w  = input.bool(true, "BTC 200-Week MA Override",     group="Fallbacks")
+p_btc_weekly_tf = input.string("W", "BTC Weekly Timeframe",        group="Fallbacks")
+p_btc_200w_len  = input.int(200, "BTC 200-Week MA Length",         group="Fallbacks")
+p_prem_compress = input.float(30.0, "Premium Compression % Exit",  group="Fallbacks")
+p_use_prem_exit = input.bool(true, "Enable Premium Compression Exit", group="Fallbacks")
+
+// --- Dashboard ---
+p_show_dash     = input.bool(true, "Show Dashboard",               group="Display")
+p_show_bg       = input.bool(true, "Show Regime Background",       group="Display")
+p_show_sar      = input.bool(true, "Show Parabolic SAR",           group="Display")
+p_show_premium  = input.bool(true, "Show mNAV Premium",            group="Display")
+
+// ══════════════════════════════════════════════════════════════════════
+// BTC DATA & REGIME
+// ══════════════════════════════════════════════════════════════════════
+
+btc_close     = request.security(p_btc_ticker, timeframe.period, close,           barmerge.gaps_off, barmerge.lookahead_off)
+btc_sma_slow  = request.security(p_btc_ticker, timeframe.period, ta.sma(close, p_btc_sma_slow), barmerge.gaps_off, barmerge.lookahead_off)
+btc_ema_fast  = request.security(p_btc_ticker, timeframe.period, ta.ema(close, p_btc_ema_fast), barmerge.gaps_off, barmerge.lookahead_off)
+btc_sma_fast  = request.security(p_btc_ticker, timeframe.period, ta.sma(close, p_btc_sma_fast), barmerge.gaps_off, barmerge.lookahead_off)
+
+btc_above_200  = btc_close > btc_sma_slow
+btc_golden     = btc_ema_fast > btc_sma_slow
+btc_death_cross = ta.crossunder(btc_sma_fast, btc_sma_slow)
+
+// BTC 200-Week MA — ultimate cycle support. Break below = bear market confirmed.
+btc_200w_ma = request.security(p_btc_ticker, p_btc_weekly_tf, ta.sma(close, p_btc_200w_len), barmerge.gaps_off, barmerge.lookahead_off)
+btc_below_200w = btc_close < btc_200w_ma
+btc_200w_break = p_use_btc_200w and btc_below_200w
+
+// Regime classification
+var string btc_regime = "NEUTRAL"
+if btc_above_200 and btc_golden
+    btc_regime := "BULL"
+else if not btc_above_200 and not btc_golden
+    btc_regime := "BEAR"
+else
+    btc_regime := "NEUTRAL"
+
+is_bull = btc_regime == "BULL"
+is_bear = btc_regime == "BEAR"
+
+// ══════════════════════════════════════════════════════════════════════
+// MSTR 200-WEEK SMA CROSS — PRIMARY ENTRY REGIME
+// ══════════════════════════════════════════════════════════════════════
+// The golden cross (BTC EMA50 > SMA200) lagged the Oct 2024 move by 5-6 weeks.
+// MSTR ran from $128 → $234 before the signal fired. That's 55% missed.
+//
+// This rule catches the cross directly on MSTR's own weekly chart:
+// 1. MSTR weekly close crosses ABOVE its 200-week SMA
+// 2. Each qualifying candle must be GREEN (close > open)
+// 3. Count consecutive green weekly closes above the line
+// 4. Entry ARMED when count reaches threshold (default: 2)
+// 5. If any weekly close drops BELOW 200W SMA → counter resets to 0
+//
+// Historical validation (split-adjusted prices):
+// Apr 2023: First cross at ~$33 (200W SMA ~$32.70) — failed, dropped below next week
+// Jun 2023: Second cross at ~$34 — held 7 weeks (ran to $46), lost Aug 18
+// Sep 2023: Third cross at ~$35 — lost after 2 weeks
+// Oct 2023: Fourth cross at ~$41 (200W SMA ~$35.49) — NEVER LOST. This is THE cross.
+//           2nd green close at ~$45 (Nov 3), ran to $480+ (10x from entry)
+// Oct 2024: Already well above 200W — cross occurred much earlier, MSTR never lost it.
+//           The 200W SMA was ~$58 while MSTR was $140+. The filter stays armed.
+// KEY: The April/June/Sep false crosses are filtered by the 2-green-close rule.
+//      Only the Oct 2023 sustained cross produces a valid entry signal.
+
+// MSTR weekly data (applied to MSTR's own chart, no external request needed)
+mstr_weekly_close = request.security(syminfo.tickerid, p_mstr_weekly_tf, close, barmerge.gaps_off, barmerge.lookahead_off)
+mstr_weekly_open  = request.security(syminfo.tickerid, p_mstr_weekly_tf, open,  barmerge.gaps_off, barmerge.lookahead_off)
+mstr_200w_sma     = request.security(syminfo.tickerid, p_mstr_weekly_tf, ta.sma(close, p_mstr_200w_len), barmerge.gaps_off, barmerge.lookahead_off)
+
+// Weekly candle qualifiers
+mstr_above_200w    = mstr_weekly_close > mstr_200w_sma
+mstr_green_candle  = mstr_weekly_close > mstr_weekly_open
+
+// Consecutive green-above-200W counter (resets on close below 200W SMA)
+// IMPORTANT: On a daily chart, weekly values update once per week (on new weekly bar).
+// We detect new weekly bars via ta.change(time("W")) to avoid re-counting within the same week.
+var int mstr_green_count = 0
+bool new_week = ta.change(time(p_mstr_weekly_tf)) != 0
+
+if new_week
+    if mstr_above_200w and mstr_green_candle
+        mstr_green_count := mstr_green_count + 1
+    else if not mstr_above_200w
+        mstr_green_count := 0
+    // Red candle above 200W: don't increment, don't reset — pause the count
+
+// Entry ARMED when consecutive green closes >= threshold
+mstr_200w_armed = mstr_green_count >= p_mstr_green_weeks
+
+// Fresh cross detection (for alerts)
+mstr_200w_cross = mstr_above_200w and not mstr_above_200w[1]
+
+// Combined regime gate: use MSTR 200W cross if enabled, else fall back to BTC golden cross
+regime_entry_ok = p_use_mstr_200w ? mstr_200w_armed : is_bull
+
+// ══════════════════════════════════════════════════════════════════════
+// MSTR/BTC PREMIUM (mNAV) — Sentiment Euphoria Gauge
+// ══════════════════════════════════════════════════════════════════════
+// Tracks ratio of MSTR market cap to its BTC holdings value.
+// Premium explodes (2-5x+ NAV) in bull runs = rocket igniting.
+// Low premium = undervaluation/mean-reversion setup.
+// Surging premium confirms hold calls longer / scale partial profits.
+
+btc_value_per_share = (btc_close * p_btc_holdings) / (p_shares_out * 1000000)
+mstr_premium = btc_value_per_share > 0 ? close / btc_value_per_share : 1.0
+premium_expanding = mstr_premium > mstr_premium[20]
+premium_euphoria = mstr_premium > p_premium_high
+
+// Premium compression: if mNAV premium drops >30% from its 20-bar high = thesis weakening
+var float premium_hwm = 0.0
+if strategy.opentrades > 0
+    premium_hwm := math.max(premium_hwm, mstr_premium)
+if strategy.opentrades == 0
+    premium_hwm := 0.0
+premium_drop_pct = premium_hwm > 0 ? (premium_hwm - mstr_premium) / premium_hwm * 100 : 0
+premium_compressed = p_use_prem_exit and premium_drop_pct >= p_prem_compress and strategy.opentrades > 0
+
+// ══════════════════════════════════════════════════════════════════════
+// MSTR CALCULATIONS — Core Indicators
+// ══════════════════════════════════════════════════════════════════════
+
+ema_entry   = ta.ema(close, p_ema_entry)
+ema_exit    = ta.ema(close, p_ema_exit)
+ema_200     = ta.ema(close, p_ema_200)
+rsi_val     = ta.rsi(close, p_rsi_len)
+vol_avg     = ta.sma(volume, p_vol_avg_len)
+vol_ratio   = volume / vol_avg
+mom_pct     = (close - close[p_mom_len]) / close[p_mom_len] * 100
+
+// Golden Cross (50-day > 200-day) — bull continuation
+mstr_golden_cross = ta.crossover(ema_exit, ema_200)
+mstr_above_200 = close > ema_200
+
+// ══════════════════════════════════════════════════════════════════════
+// PARABOLIC SAR — Trend Filter
+// ══════════════════════════════════════════════════════════════════════
+// Dots flipping below price confirms bullish regime shift.
+// Dots above = bearish pressure. Aligns with entry timing.
+
+sar_val = ta.sar(p_sar_start, p_sar_inc, p_sar_max)
+sar_bullish = close > sar_val
+sar_flip_bull = sar_bullish and not sar_bullish[1]
+sar_flip_bear = not sar_bullish and sar_bullish[1]
+
+// ══════════════════════════════════════════════════════════════════════
+// MACD — Momentum & Divergences
+// ══════════════════════════════════════════════════════════════════════
+// Bullish MACD cross confirms momentum. Bearish divergence warns of
+// exhaustion during the run (partial profit-taking signal).
+
+[macd_line, macd_signal, macd_hist] = ta.macd(close, p_macd_fast, p_macd_slow, p_macd_sig)
+macd_bull_cross = ta.crossover(macd_line, macd_signal)
+macd_bear_cross = ta.crossunder(macd_line, macd_signal)
+macd_bullish = macd_line > macd_signal
+macd_positive = macd_line > 0
+
+// MACD divergence detection (price higher high, MACD lower high = bearish divergence)
+price_hh = high > ta.highest(high, 20)[1]
+macd_lh = macd_line < ta.highest(macd_line, 20)[1]
+macd_bearish_div = price_hh and macd_lh and strategy.opentrades > 0
+
+// ══════════════════════════════════════════════════════════════════════
+// STOCHASTIC RSI — Oversold Bounce Detection
+// ══════════════════════════════════════════════════════════════════════
+// Oversold signals (<20) in pullbacks during a bull run = reload zones.
+// Overbought (>80) doesn't kill thesis but warns of short-term pause.
+
+stoch_rsi_raw = ta.rsi(close, p_stoch_len)
+stoch_k_raw = ta.sma(ta.stoch(stoch_rsi_raw, stoch_rsi_raw, stoch_rsi_raw, p_stoch_len), p_stoch_k)
+stoch_d_raw = ta.sma(stoch_k_raw, p_stoch_d)
+stoch_oversold = stoch_k_raw < 20
+stoch_overbought = stoch_k_raw > 80
+
+// ══════════════════════════════════════════════════════════════════════
+// BTC-MSTR CORRELATION & IMPLIED LEVERAGE
+// ══════════════════════════════════════════════════════════════════════
+
+mstr_returns = (close - close[1]) / close[1]
+btc_returns  = (btc_close - btc_close[1]) / btc_close[1]
+beta_corr    = ta.correlation(mstr_returns, btc_returns, p_corr_len)
+
+// Implied leverage: ratio of MSTR vol to BTC vol (rolling)
+mstr_std     = ta.stdev(mstr_returns, p_corr_len)
+btc_std      = ta.stdev(btc_returns, p_corr_len)
+implied_lev  = btc_std > 0 ? mstr_std / btc_std : 1.0
+
+// ══════════════════════════════════════════════════════════════════════
+// POWER LAW / ADOPTION MODEL — Long-Term Target Zone
+// ══════════════════════════════════════════════════════════════════════
+// Simple power law projection for MSTR based on BTC adoption curve.
+// Not predictive — used to set mental "moon" levels for the run.
+// If BTC hits $200k, MSTR at 3.63x beta could reach $500-$2500+.
+
+btc_moon_150k = 150000.0
+btc_moon_200k = 200000.0
+btc_moon_250k = 250000.0
+mstr_target_150k = btc_value_per_share * (btc_moon_150k / btc_close) * implied_lev
+mstr_target_200k = btc_value_per_share * (btc_moon_200k / btc_close) * implied_lev
+mstr_target_250k = btc_value_per_share * (btc_moon_250k / btc_close) * implied_lev
+
+// ══════════════════════════════════════════════════════════════════════
+// CYCLE PHASE
+// ══════════════════════════════════════════════════════════════════════
+
+years_since_halving = year - p_halving_year
+cycle_year = years_since_halving % 4  // 0 = halving year, 1 = post-halving, etc.
+
+var string cycle_phase = "ACCUMULATION"
+if cycle_year == 0
+    cycle_phase := "ACCUMULATION"
+else if cycle_year == 1
+    cycle_phase := "MARKUP"
+else if cycle_year == 2
+    cycle_phase := "EUPHORIA"
+else
+    cycle_phase := "DISTRIBUTION"
+
+in_entry_window = p_use_cycle ? (month >= p_entry_month_start and month <= p_entry_month_end) : true
+is_post_halving = cycle_year == 0 or cycle_year == 1  // best 2 years of the cycle
+
+// ══════════════════════════════════════════════════════════════════════
+// ENTRY CONDITIONS (6 core + supporting confirmations)
+// ══════════════════════════════════════════════════════════════════════
+
+// 6 core conditions
+// CHANGED: cond_regime uses MSTR 200W cross (catches move 5-6 weeks earlier than BTC golden cross)
+// BTC golden cross demoted to supporting confirmation — still tracked for exits and dashboard
+cond_price_above_ema = close > ema_entry
+cond_volume_surge    = vol_ratio > p_vol_mult
+cond_rsi_zone        = rsi_val >= p_rsi_lo and rsi_val <= p_rsi_hi
+cond_momentum        = mom_pct > p_mom_thresh
+cond_regime          = regime_entry_ok  // MSTR 200W cross (primary) or BTC golden (fallback)
+// When MSTR 200W cross is primary, the cross IS the cycle timing — no month/halving gate needed.
+// The 200W cross only fires at the start of macro bull moves, so it's self-filtering.
+// Cycle filter only applies when using BTC golden cross as primary (legacy mode).
+cond_cycle           = p_use_mstr_200w ? true : (p_use_cycle ? (in_entry_window and is_post_halving) : true)
+
+all_entry = cond_price_above_ema and cond_volume_surge and cond_rsi_zone and cond_momentum and cond_regime and cond_cycle
+
+// Supporting confirmations (not required, but strengthen conviction)
+// BTC golden cross moved here — it confirms but doesn't block entry
+confirm_sar = sar_bullish
+confirm_macd = macd_bullish
+confirm_golden = mstr_above_200
+confirm_premium = not premium_euphoria  // don't enter at peak euphoria
+confirm_btc_bull = is_bull              // BTC golden cross (was primary, now confirmation)
+
+// Count how many conditions are met (for dashboard)
+entry_score = (cond_price_above_ema ? 1 : 0) + (cond_volume_surge ? 1 : 0) + (cond_rsi_zone ? 1 : 0) + (cond_momentum ? 1 : 0) + (cond_regime ? 1 : 0) + (cond_cycle ? 1 : 0)
+
+// Confirmation score (supporting, not required) — BTC golden cross now here (5 total)
+confirm_score = (confirm_sar ? 1 : 0) + (confirm_macd ? 1 : 0) + (confirm_golden ? 1 : 0) + (confirm_premium ? 1 : 0) + (confirm_btc_bull ? 1 : 0)
+
+// ══════════════════════════════════════════════════════════════════════
+// EXIT CONDITIONS
+// ══════════════════════════════════════════════════════════════════════
+
+// P&L calculation (must be before exit conditions that reference it)
+entry_px       = strategy.opentrades > 0 ? strategy.opentrades.entry_price(strategy.opentrades - 1) : na
+current_pnl_pct = strategy.opentrades > 0 ? (close - entry_px) / entry_px * 100 : 0.0
+
+// Death cross on BTC = hard exit (the thesis is dead)
+exit_death_cross = btc_death_cross
+
+// FALLBACK 1: BTC below 200-week MA = cycle support broken, force tighter trail or exit
+// If in profit: force trail to 15% regardless of tier. If losing: full exit.
+exit_btc_200w = btc_200w_break and strategy.opentrades > 0
+
+// FALLBACK 2: Premium compression >30% from peak = MSTR thesis weakening
+// Accelerate partial sell (50%) to lock remaining gains
+exit_premium_compress = premium_compressed
+
+// MSTR drops below EMA 50 with volume spike AND position is losing = full exit
+partial_exit_warning = close < ema_exit and vol_ratio > p_vol_mult and current_pnl_pct < 0
+
+// Max hold exceeded
+bars_in_trade  = strategy.opentrades > 0 ? bar_index - strategy.opentrades.entry_bar_index(strategy.opentrades - 1) : 0
+exit_max_hold  = bars_in_trade >= p_max_hold_bars and strategy.opentrades > 0
+
+// Target reached (20x)
+exit_target    = strategy.opentrades > 0 and close >= entry_px * p_target_mult
+
+// Premium peak warning — premium at euphoria levels during a run
+premium_peak_warning = premium_euphoria and strategy.opentrades > 0 and current_pnl_pct > 500
+
+// MACD bearish divergence during run — early exhaustion signal
+macd_div_warning = macd_bearish_div and current_pnl_pct > 200
+
+// ══════════════════════════════════════════════════════════════════════
+// LADDERED TRAILING STOP (Constitution v45.0)
+// ══════════════════════════════════════════════════════════════════════
+// NO trail until +300% — deep OTM LEAPs need full exposure during early acceleration.
+// Trail TIGHTENS at each profit-taking level: 30% → 25% → 20% → 15% → 10%.
+// Tracks position peak (not market HWM) — locks profits on the way UP.
+// Once a tier is reached (based on peak gain), it NEVER loosens back.
+
+var float pos_hwm = 0.0
+if strategy.opentrades > 0
+    pos_hwm := math.max(pos_hwm, high)
+if strategy.opentrades == 0
+    pos_hwm := 0.0
+hwm_val = pos_hwm > 0 ? pos_hwm : close
+gain_pct = current_pnl_pct
+
+// Peak gain from position high water mark (not current price)
+float peak_gain_pct = strategy.opentrades > 0 and entry_px > 0 ? (pos_hwm - entry_px) / entry_px * 100 : 0.0
+
+// Determine current tier and trail percentage based on PEAK gain
+// Tiers only ratchet UP — once +500% peak is reached, trail stays at 25% even if price drops
+var float ladder_trail_pct = 0.0
+var string ladder_tier = "NONE (lottery < +300%)"
+if peak_gain_pct >= p_lad_t5_gain
+    ladder_trail_pct := p_lad_t5_trail
+    ladder_tier := "50x+ | " + str.tostring(p_lad_t5_trail,"#") + "% LOCK"
+else if peak_gain_pct >= p_lad_t4_gain
+    ladder_trail_pct := p_lad_t4_trail
+    ladder_tier := "20x+ | " + str.tostring(p_lad_t4_trail,"#") + "% trail"
+else if peak_gain_pct >= p_lad_t3_gain
+    ladder_trail_pct := p_lad_t3_trail
+    ladder_tier := "10x+ | " + str.tostring(p_lad_t3_trail,"#") + "% trail"
+else if peak_gain_pct >= p_lad_t2_gain
+    ladder_trail_pct := p_lad_t2_trail
+    ladder_tier := "5x+ | " + str.tostring(p_lad_t2_trail,"#") + "% trail"
+else if peak_gain_pct >= p_lad_t1_gain
+    ladder_trail_pct := p_lad_t1_trail
+    ladder_tier := "3x+ | " + str.tostring(p_lad_t1_trail,"#") + "% trail"
+else
+    ladder_trail_pct := 0.0
+    ladder_tier := "NONE (lottery < +300%)"
+
+// Trail activates at +300% (3x) — no stop before that
+ladder_trail_active = strategy.opentrades > 0 and peak_gain_pct >= p_lad_t1_gain
+ladder_trail_stop = ladder_trail_active ? pos_hwm * (1 - ladder_trail_pct / 100) : na
+ladder_trail_triggered = ladder_trail_active and close < ladder_trail_stop
+
+// ══════════════════════════════════════════════════════════════════════
+// STRATEGY EXECUTION
+// ══════════════════════════════════════════════════════════════════════
+
+// Tiered profit taking — partial sells at each ladder level
+var bool pt1_hit = false
+var bool pt2_hit = false
+var bool pt3_hit = false
+var bool pt4_hit = false
+
+if strategy.opentrades > 0
+    if gain_pct >= pt1_pct and not pt1_hit
+        strategy.close("MOONSHOT", comment="PT1 5x +" + str.tostring(pt1_pct,"#") + "%", qty_percent=pt1_sell)
+        pt1_hit := true
+    if gain_pct >= pt2_pct and not pt2_hit
+        strategy.close("MOONSHOT", comment="PT2 10x +" + str.tostring(pt2_pct,"#") + "%", qty_percent=pt2_sell)
+        pt2_hit := true
+    if gain_pct >= pt3_pct and not pt3_hit
+        strategy.close("MOONSHOT", comment="PT3 20x +" + str.tostring(pt3_pct,"#") + "%", qty_percent=pt3_sell)
+        pt3_hit := true
+    if gain_pct >= pt4_pct and not pt4_hit
+        strategy.close("MOONSHOT", comment="PT4 50x +" + str.tostring(pt4_pct,"#") + "%", qty_percent=pt4_sell)
+        pt4_hit := true
+
+if strategy.opentrades == 0
+    pt1_hit := false
+    pt2_hit := false
+    pt3_hit := false
+    pt4_hit := false
+
+if all_entry and strategy.opentrades == 0
+    strategy.entry("MOONSHOT", strategy.long, comment="LEAP ENTRY")
+
+// Hard exits
+if exit_death_cross and strategy.opentrades > 0
+    strategy.close_all(comment="BTC DEATH CROSS")
+
+if exit_max_hold
+    strategy.close_all(comment="MAX HOLD 18MO")
+
+if exit_target
+    strategy.close_all(comment="20X TARGET HIT")
+
+// Exit when losing + below EMA 50 + volume spike (thesis broken)
+if partial_exit_warning and strategy.opentrades > 0 and not exit_death_cross
+    strategy.close_all(comment="BELOW EMA50 + LOSING")
+
+// FALLBACK 1: BTC below 200-week MA — cycle support broken
+if exit_btc_200w and current_pnl_pct < 0
+    strategy.close_all(comment="BTC < 200W MA + LOSING")
+else if exit_btc_200w and current_pnl_pct > 0
+    strategy.close("MOONSHOT", comment="BTC < 200W MA PARTIAL", qty_percent=50)
+
+// FALLBACK 2: Premium compression >30% — accelerate partial exit
+if exit_premium_compress and current_pnl_pct > 0
+    strategy.close("MOONSHOT", comment="PREMIUM COMPRESS -" + str.tostring(premium_drop_pct, "#") + "%", qty_percent=50)
+
+// Laddered trailing stop exit
+if ladder_trail_triggered
+    strategy.close_all(comment="LADDER TRAIL STOP")
+
+// ══════════════════════════════════════════════════════════════════════
+// PLOTS & VISUALS
+// ══════════════════════════════════════════════════════════════════════
+
+// EMAs
+plot(ema_entry, "EMA 21", color=color.new(color.aqua, 0), linewidth=1)
+plot(ema_exit,  "EMA 50", color=color.new(color.orange, 0), linewidth=1)
+plot(ema_200,   "EMA 200", color=color.new(color.white, 30), linewidth=2, style=plot.style_cross)
+
+// Parabolic SAR
+plot(p_show_sar ? sar_val : na, "Parabolic SAR", color=sar_bullish ? color.new(color.lime, 30) : color.new(color.red, 30), style=plot.style_circles, linewidth=1)
+
+// MSTR 200-Week SMA (the line that matters)
+plot(mstr_200w_sma, "MSTR 200W SMA", color=color.new(#FFD700, 0), linewidth=3, style=plot.style_line)
+
+// MSTR 200W cross markers
+plotshape(mstr_200w_cross, title="200W Cross Up", style=shape.circle, location=location.belowbar, color=color.new(#FFD700, 0), size=size.small, text="200W↑")
+plotshape(not mstr_above_200w and mstr_above_200w[1], title="200W Cross Down", style=shape.circle, location=location.abovebar, color=color.new(color.red, 0), size=size.small, text="200W↓")
+
+// Regime background
+bull_bg = p_show_bg and is_bull  ? color.new(color.green, 92) : na
+bear_bg = p_show_bg and is_bear  ? color.new(color.red, 92)   : na
+neut_bg = p_show_bg and btc_regime == "NEUTRAL" ? color.new(color.yellow, 95) : na
+bgcolor(bull_bg, title="Bull Regime BG")
+bgcolor(bear_bg, title="Bear Regime BG")
+bgcolor(neut_bg, title="Neutral Regime BG")
+
+// Entry window highlight
+bgcolor(p_use_cycle and in_entry_window and is_post_halving ? color.new(color.lime, 94) : na, title="Cycle Entry Window")
+
+// BTC 200-week MA breach warning (red background flash)
+bgcolor(btc_200w_break and strategy.opentrades > 0 ? color.new(color.red, 80) : na, title="BTC 200W Break")
+
+// Fallback exit shapes
+plotshape(exit_btc_200w and strategy.opentrades > 0, title="BTC 200W Exit", style=shape.triangledown, location=location.abovebar, color=color.new(color.red, 0), size=size.normal, text="200W!")
+plotshape(exit_premium_compress and current_pnl_pct > 0, title="Premium Compress", style=shape.xcross, location=location.abovebar, color=color.new(color.orange, 0), size=size.small, text="PREM!")
+
+// Laddered trailing stop line
+plot(ladder_trail_active ? ladder_trail_stop : na, "Ladder Trail Stop", color=color.new(#FF00FF, 0), linewidth=2, style=plot.style_stepline)
+
+// Entry / exit arrows
+plotshape(all_entry and strategy.opentrades == 0, title="BUY Signal", style=shape.triangleup, location=location.belowbar, color=color.lime, size=size.normal, text="MOONSHOT")
+plotshape(exit_death_cross and strategy.opentrades > 0, title="DEATH CROSS EXIT", style=shape.triangledown, location=location.abovebar, color=color.red, size=size.normal, text="DC EXIT")
+plotshape(partial_exit_warning and strategy.opentrades > 0 and not exit_death_cross, title="EMA50 Exit", style=shape.xcross, location=location.abovebar, color=color.orange, size=size.small, text="EMA50 EXIT")
+plotshape(exit_target, title="TARGET HIT", style=shape.flag, location=location.abovebar, color=color.fuchsia, size=size.normal, text="20X!")
+plotshape(sar_flip_bull, title="SAR Flip Bull", style=shape.diamond, location=location.belowbar, color=color.new(color.lime, 40), size=size.tiny)
+plotshape(sar_flip_bear, title="SAR Flip Bear", style=shape.diamond, location=location.abovebar, color=color.new(color.red, 40), size=size.tiny)
+
+// MACD bearish divergence warning
+plotshape(macd_div_warning, title="MACD Bearish Div", style=shape.xcross, location=location.abovebar, color=color.new(color.yellow, 0), size=size.small, text="DIV")
+
+// Premium euphoria warning
+plotshape(premium_peak_warning, title="Premium Peak", style=shape.circle, location=location.abovebar, color=color.new(color.fuchsia, 0), size=size.small, text="mNAV!")
+
+// ══════════════════════════════════════════════════════════════════════
+// DASHBOARD TABLE — 22 rows of moonshot intelligence
+// ══════════════════════════════════════════════════════════════════════
+
+if p_show_dash and barstate.islast
+    var table dash = table.new(position.top_right, 2, 27, bgcolor=color.new(color.black, 15), border_width=1, border_color=color.gray, frame_width=2, frame_color=color.white)
+
+    // Header
+    table.cell(dash, 0, 0, "MOONSHOT DASH", text_color=color.white, text_size=size.normal, bgcolor=color.new(color.purple, 20), text_halign=text.align_center)
+    table.merge_cells(dash, 0, 0, 1, 0)
+
+    regime_color  = is_bull ? color.lime : is_bear ? color.red : color.yellow
+    regime_bg     = is_bull ? color.new(color.green, 70) : is_bear ? color.new(color.red, 70) : color.new(color.yellow, 70)
+
+    // 1 — BTC Regime
+    table.cell(dash, 0, 1, "BTC Regime",       text_color=color.gray,  text_size=size.small, text_halign=text.align_left)
+    table.cell(dash, 1, 1, btc_regime,          text_color=regime_color, text_size=size.small, bgcolor=regime_bg, text_halign=text.align_right)
+
+    // 2 — BTC Price
+    table.cell(dash, 0, 2, "BTC Price",        text_color=color.gray,  text_size=size.small, text_halign=text.align_left)
+    table.cell(dash, 1, 2, "$" + str.tostring(btc_close, "#,###"), text_color=btc_above_200 ? color.lime : color.red, text_size=size.small, text_halign=text.align_right)
+
+    // 3 — mNAV Premium
+    prem_color = premium_euphoria ? color.fuchsia : mstr_premium > 1.5 ? color.lime : mstr_premium > 1.0 ? color.yellow : color.red
+    prem_bg = premium_euphoria ? color.new(color.fuchsia, 70) : color.new(color.black, 15)
+    prem_text = str.tostring(mstr_premium, "#.##") + "x NAV"
+    table.cell(dash, 0, 3, "mNAV Premium",     text_color=color.gray,  text_size=size.small, text_halign=text.align_left)
+    table.cell(dash, 1, 3, prem_text,           text_color=prem_color,  text_size=size.small, bgcolor=prem_bg, text_halign=text.align_right)
+
+    // 4 — MSTR-BTC Correlation
+    corr_color = beta_corr > 0.7 ? color.lime : beta_corr > 0.4 ? color.yellow : color.red
+    table.cell(dash, 0, 4, "MSTR-BTC Corr",    text_color=color.gray,  text_size=size.small, text_halign=text.align_left)
+    table.cell(dash, 1, 4, str.tostring(beta_corr, "#.##"), text_color=corr_color, text_size=size.small, text_halign=text.align_right)
+
+    // 5 — Implied Leverage
+    lev_color = implied_lev > 2 ? color.lime : implied_lev > 1.2 ? color.yellow : color.white
+    table.cell(dash, 0, 5, "Implied Lev",      text_color=color.gray,  text_size=size.small, text_halign=text.align_left)
+    table.cell(dash, 1, 5, str.tostring(implied_lev, "#.#") + "x", text_color=lev_color, text_size=size.small, text_halign=text.align_right)
+
+    // 6 — RSI
+    rsi_color = rsi_val >= p_rsi_lo and rsi_val <= p_rsi_hi ? color.lime : rsi_val < 30 ? color.aqua : color.red
+    table.cell(dash, 0, 6, "RSI (" + str.tostring(p_rsi_len) + ")", text_color=color.gray, text_size=size.small, text_halign=text.align_left)
+    table.cell(dash, 1, 6, str.tostring(rsi_val, "#.#"), text_color=rsi_color, text_size=size.small, text_halign=text.align_right)
+
+    // 7 — Stochastic RSI
+    stoch_color = stoch_oversold ? color.aqua : stoch_overbought ? color.orange : color.white
+    stoch_text = str.tostring(stoch_k_raw, "#.#") + (stoch_oversold ? " OS" : stoch_overbought ? " OB" : "")
+    table.cell(dash, 0, 7, "Stoch RSI",        text_color=color.gray,  text_size=size.small, text_halign=text.align_left)
+    table.cell(dash, 1, 7, stoch_text,          text_color=stoch_color, text_size=size.small, text_halign=text.align_right)
+
+    // 8 — MACD
+    macd_color = macd_bullish and macd_positive ? color.lime : macd_bullish ? color.yellow : color.red
+    macd_text = macd_bullish ? "BULL" : "BEAR"
+    macd_text := macd_bearish_div ? macd_text + " DIV!" : macd_text
+    table.cell(dash, 0, 8, "MACD",             text_color=color.gray,  text_size=size.small, text_halign=text.align_left)
+    table.cell(dash, 1, 8, macd_text,           text_color=macd_color,  text_size=size.small, text_halign=text.align_right)
+
+    // 9 — Parabolic SAR
+    sar_color = sar_bullish ? color.lime : color.red
+    sar_text = sar_bullish ? "BULLISH" : "BEARISH"
+    table.cell(dash, 0, 9, "Parabolic SAR",    text_color=color.gray,  text_size=size.small, text_halign=text.align_left)
+    table.cell(dash, 1, 9, sar_text,            text_color=sar_color,   text_size=size.small, text_halign=text.align_right)
+
+    // 10 — Volume Ratio
+    vol_color = vol_ratio > p_vol_mult ? color.lime : color.white
+    table.cell(dash, 0, 10, "Vol Ratio",       text_color=color.gray,  text_size=size.small, text_halign=text.align_left)
+    table.cell(dash, 1, 10, str.tostring(vol_ratio, "#.##") + "x", text_color=vol_color, text_size=size.small, text_halign=text.align_right)
+
+    // 11 — Momentum
+    mom_color = mom_pct > p_mom_thresh ? color.lime : color.red
+    table.cell(dash, 0, 11, "Momentum " + str.tostring(p_mom_len) + "d", text_color=color.gray, text_size=size.small, text_halign=text.align_left)
+    table.cell(dash, 1, 11, str.tostring(mom_pct, "#.#") + "%", text_color=mom_color, text_size=size.small, text_halign=text.align_right)
+
+    // 12 — Key MAs Status
+    ma_text = mstr_above_200 ? "Above 200" : "Below 200"
+    ma_color = mstr_above_200 ? color.lime : color.red
+    table.cell(dash, 0, 12, "MA Status",       text_color=color.gray,  text_size=size.small, text_halign=text.align_left)
+    table.cell(dash, 1, 12, ma_text,            text_color=ma_color,    text_size=size.small, text_halign=text.align_right)
+
+    // 13 — Entry Signal
+    sig_text  = all_entry ? "FIRE" : str.tostring(entry_score) + "/6"
+    sig_color = all_entry ? color.lime : entry_score >= 4 ? color.yellow : color.red
+    sig_bg    = all_entry ? color.new(color.green, 60) : color.new(color.black, 15)
+    table.cell(dash, 0, 13, "Entry Signal",    text_color=color.gray,  text_size=size.small, text_halign=text.align_left)
+    table.cell(dash, 1, 13, sig_text,           text_color=sig_color,   text_size=size.small, bgcolor=sig_bg, text_halign=text.align_right)
+
+    // 14 — Confirmations (now includes BTC golden cross as 5th confirmation)
+    conf_text = str.tostring(confirm_score) + "/5"
+    conf_color = confirm_score >= 4 ? color.lime : confirm_score >= 3 ? color.yellow : color.red
+    table.cell(dash, 0, 14, "Confirms",        text_color=color.gray,  text_size=size.small, text_halign=text.align_left)
+    table.cell(dash, 1, 14, conf_text,          text_color=conf_color,  text_size=size.small, text_halign=text.align_right)
+
+    // 15 — Cycle Phase
+    cyc_color = cycle_phase == "MARKUP" ? color.lime : cycle_phase == "EUPHORIA" ? color.fuchsia : cycle_phase == "ACCUMULATION" ? color.aqua : color.red
+    table.cell(dash, 0, 15, "Cycle Phase",     text_color=color.gray,  text_size=size.small, text_halign=text.align_left)
+    table.cell(dash, 1, 15, cycle_phase,        text_color=cyc_color,   text_size=size.small, text_halign=text.align_right)
+
+    // 16 — Power Law Targets (BTC $200k scenario)
+    table.cell(dash, 0, 16, "Target @BTC200k", text_color=color.gray,  text_size=size.small, text_halign=text.align_left)
+    table.cell(dash, 1, 16, "$" + str.tostring(mstr_target_200k, "#,###"), text_color=color.new(#FFD700, 0), text_size=size.small, text_halign=text.align_right)
+
+    // 17 — Entry Price
+    entry_text = strategy.opentrades > 0 ? "$" + str.tostring(entry_px, "#.##") : "FLAT"
+    entry_color = strategy.opentrades > 0 ? color.white : color.gray
+    table.cell(dash, 0, 17, "Entry Price",     text_color=color.gray,  text_size=size.small, text_halign=text.align_left)
+    table.cell(dash, 1, 17, entry_text,         text_color=entry_color, text_size=size.small, text_halign=text.align_right)
+
+    // 18 — Current P&L
+    pnl_text  = strategy.opentrades > 0 ? str.tostring(current_pnl_pct, "#.#") + "%" : "—"
+    pnl_color = current_pnl_pct > 0 ? color.lime : current_pnl_pct < 0 ? color.red : color.gray
+    table.cell(dash, 0, 18, "Open P&L",        text_color=color.gray,  text_size=size.small, text_halign=text.align_left)
+    table.cell(dash, 1, 18, pnl_text,           text_color=pnl_color,   text_size=size.small, text_halign=text.align_right)
+
+    // 19 — Bars in Trade
+    hold_text  = strategy.opentrades > 0 ? str.tostring(bars_in_trade) + "/" + str.tostring(p_max_hold_bars) : "—"
+    hold_color = bars_in_trade > p_max_hold_bars * 0.8 ? color.orange : color.white
+    table.cell(dash, 0, 19, "Hold Bars",       text_color=color.gray,  text_size=size.small, text_halign=text.align_left)
+    table.cell(dash, 1, 19, hold_text,          text_color=hold_color,  text_size=size.small, text_halign=text.align_right)
+
+    // 20 — Ladder Tier
+    tier_color = ladder_trail_active ? color.new(#FF00FF, 0) : color.gray
+    table.cell(dash, 0, 20, "Trail Tier",      text_color=color.gray,  text_size=size.small, text_halign=text.align_left)
+    table.cell(dash, 1, 20, ladder_tier,        text_color=tier_color,  text_size=size.small, text_halign=text.align_right)
+
+    // 21 — Trail Stop Price
+    trail_text = ladder_trail_active ? "$" + str.tostring(ladder_trail_stop, "#.##") : "N/A (lottery)"
+    trail_color = ladder_trail_triggered ? color.red : ladder_trail_active ? color.new(#FF00FF, 0) : color.gray
+    table.cell(dash, 0, 21, "Trail Stop",      text_color=color.gray,  text_size=size.small, text_halign=text.align_left)
+    table.cell(dash, 1, 21, trail_text,         text_color=trail_color, text_size=size.small, text_halign=text.align_right)
+
+    // 22 — Position Peak + Peak Gain
+    hwm_text = strategy.opentrades > 0 ? "$" + str.tostring(hwm_val, "#.##") + " (+" + str.tostring(peak_gain_pct, "#") + "%)" : "—"
+    table.cell(dash, 0, 22, "Pos Peak",         text_color=color.gray,  text_size=size.small, text_halign=text.align_left)
+    table.cell(dash, 1, 22, hwm_text,           text_color=color.white, text_size=size.small, text_halign=text.align_right)
+
+    // 23 — BTC 200-Week MA Status
+    btc_200w_color = btc_200w_break ? color.red : color.lime
+    btc_200w_text = btc_200w_break ? "BELOW — EXIT" : "ABOVE"
+    table.cell(dash, 0, 23, "BTC 200W MA",      text_color=color.gray,  text_size=size.small, text_halign=text.align_left)
+    table.cell(dash, 1, 23, btc_200w_text + " $" + str.tostring(btc_200w_ma, "#,###"), text_color=btc_200w_color, text_size=size.small, text_halign=text.align_right)
+
+    // 24 — Premium Compression
+    pcomp_color = premium_compressed ? color.red : premium_drop_pct > 15 ? color.orange : color.lime
+    pcomp_text = strategy.opentrades > 0 ? "-" + str.tostring(premium_drop_pct, "#.#") + "% from peak" : "—"
+    table.cell(dash, 0, 24, "Prem Compress",    text_color=color.gray,  text_size=size.small, text_halign=text.align_left)
+    table.cell(dash, 1, 24, pcomp_text,          text_color=pcomp_color, text_size=size.small, text_halign=text.align_right)
+
+    // 25 — MSTR 200W SMA Cross (NEW — primary entry regime)
+    m200w_color = mstr_200w_armed ? color.lime : mstr_above_200w ? color.yellow : color.red
+    m200w_text = mstr_200w_armed ? "ARMED (" + str.tostring(mstr_green_count) + " wks)" : mstr_above_200w ? "ABOVE (" + str.tostring(mstr_green_count) + "/" + str.tostring(p_mstr_green_weeks) + ")" : "BELOW"
+    m200w_bg = mstr_200w_armed ? color.new(color.green, 70) : color.new(color.black, 15)
+    table.cell(dash, 0, 25, "MSTR 200W",        text_color=color.gray,  text_size=size.small, text_halign=text.align_left)
+    table.cell(dash, 1, 25, m200w_text,          text_color=m200w_color, text_size=size.small, bgcolor=m200w_bg, text_halign=text.align_right)
+
+    // 26 — MSTR 200W SMA Price Level
+    table.cell(dash, 0, 26, "200W SMA",          text_color=color.gray,  text_size=size.small, text_halign=text.align_left)
+    table.cell(dash, 1, 26, "$" + str.tostring(mstr_200w_sma, "#.##"), text_color=mstr_above_200w ? color.lime : color.red, text_size=size.small, text_halign=text.align_right)
+
+// ══════════════════════════════════════════════════════════════════════
+// ALERT CONDITIONS
+// ══════════════════════════════════════════════════════════════════════
+
+alertcondition(all_entry and strategy.opentrades == 0, title="MOONSHOT BUY", message="MSTR MOONSHOT ENTRY — All 6 conditions met. MSTR 200W cross confirmed + volume surge + momentum. Load LEAP calls.")
+
+alertcondition(mstr_200w_cross, title="MSTR 200W CROSS", message="MSTR weekly close crossed ABOVE 200-week SMA — counting green weeks. Entry ARMs after consecutive green closes above the line.")
+
+alertcondition(mstr_200w_armed and not mstr_200w_armed[1], title="MSTR 200W ARMED", message="MSTR 200W regime ARMED — consecutive green weekly closes above 200W SMA confirmed. Entry gate OPEN.")
+
+alertcondition(not mstr_above_200w and mstr_above_200w[1], title="MSTR 200W LOST", message="MSTR closed BELOW 200-week SMA — green week counter RESET. Entry gate CLOSED.")
+
+alertcondition(exit_death_cross, title="BTC DEATH CROSS EXIT", message="BTC DEATH CROSS — 50 SMA below 200 SMA. EXIT ALL MSTR LEAPs immediately.")
+
+alertcondition(partial_exit_warning, title="EMA50 LOSING EXIT", message="MSTR below EMA 50 with volume spike AND position losing — full exit.")
+
+alertcondition(exit_max_hold, title="MAX HOLD REACHED", message="MSTR MOONSHOT 18-month max hold reached. Close or roll LEAP positions.")
+
+alertcondition(exit_target, title="20X TARGET HIT", message="MSTR MOONSHOT 20X TARGET REACHED — take profits on LEAP positions.")
+
+alertcondition(ladder_trail_triggered, title="LADDER TRAIL STOP", message="MSTR MOONSHOT laddered trailing stop triggered — EXIT LEAP positions.")
+
+alertcondition(exit_btc_200w, title="BTC 200-WEEK MA BREAK", message="BTC dropped below 200-week MA — cycle support broken. If losing: full exit. If profitable: sell 50%.")
+
+alertcondition(exit_premium_compress, title="PREMIUM COMPRESSION", message="MSTR mNAV premium compressed >30% from peak — accelerating partial exit (50%).")
+
+alertcondition(premium_peak_warning, title="PREMIUM EUPHORIA", message="MSTR mNAV premium at euphoria levels during run — consider partial profit-taking.")
+
+alertcondition(macd_div_warning, title="MACD DIVERGENCE", message="MSTR MACD bearish divergence detected during run — early exhaustion warning.")
+
+alertcondition(sar_flip_bull, title="SAR FLIP BULLISH", message="MSTR Parabolic SAR flipped bullish — dots below price, trend confirmed.")
+
+alertcondition(sar_flip_bear, title="SAR FLIP BEARISH", message="MSTR Parabolic SAR flipped bearish — dots above price, trend weakening.")
+
+// Regime change alerts
+bull_to_bear = is_bear and is_bull[1]
+bear_to_bull = is_bull and is_bear[1]
+alertcondition(bull_to_bear, title="REGIME: BULL->BEAR", message="BTC regime changed BULL to BEAR. No new MSTR LEAP entries. Review open positions.")
+alertcondition(bear_to_bull, title="REGIME: BEAR->BULL", message="BTC regime changed BEAR to BULL. MSTR LEAP entry window opening.")
+
+// Stochastic RSI oversold bounce (reload zone during bull run)
+alertcondition(stoch_oversold and is_bull, title="STOCH OVERSOLD IN BULL", message="MSTR Stochastic RSI oversold during BTC bull regime — potential reload zone for LEAP positions.")
+
+alertcondition(pt1_hit and not pt1_hit[1], title="PT1 5x Hit", message="MSTR MOONSHOT 5x — sold 25% of contracts (+500%)")
+alertcondition(pt2_hit and not pt2_hit[1], title="PT2 10x Hit", message="MSTR MOONSHOT 10x — sold 25% of contracts (+1000%)")
+alertcondition(pt3_hit and not pt3_hit[1], title="PT3 20x Hit", message="MSTR MOONSHOT 20x — sold 25% of contracts (+2000%)")
+alertcondition(pt4_hit and not pt4_hit[1], title="PT4 50x Hit", message="MSTR MOONSHOT 50x — sold final 25% of contracts (+5000%)")

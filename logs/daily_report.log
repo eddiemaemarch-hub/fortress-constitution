@@ -1,0 +1,20 @@
+[2026-03-10 13:15:22] Running daily report for 2026-03-10
+[2026-03-10 13:15:23] Starting balance set: $1,048,987.02
+[2026-03-10 13:15:23] Net Liq: $1,048,987.02 | Day: +0.00 (+0.00%) | Total: +0.00 (+0.00%)
+/Users/eddiemae/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+[2026-03-10 16:05:01] Running daily report for 2026-03-10
+[2026-03-10 16:05:01] Net Liq: $108,582.84 | Day: -1,417.16 (-1.29%) | Total: -1,417.16 (-1.29%)
+[DailyReport 2026-03-10 16:05:01] Running daily report for 2026-03-10
+[DailyReport 2026-03-10 16:05:01] Net Liq: $108,582.84 | Day: -1,417.16 (-1.29%) | Total: -1,417.16 (-1.29%)
+[2026-03-11 14:17:49] Running daily report for 2026-03-11
+[2026-03-11 14:17:50] Allocation set: $240,000 (account: $1,046,871.22)
+[2026-03-11 14:17:50] Net Liq: $240,000.00 | Day: +131,417.16 (+121.03%) | Total: +0.00 (+0.00%)
+[2026-03-11 16:16:45] Running daily report for 2026-03-11
+[2026-03-11 16:16:45] Net Liq: $240,212.53 | Day: +2,328.33 (+0.98%) | Total: +212.53 (+0.09%)
+[2026-03-12 16:12:53] Running daily report for 2026-03-12
+[2026-03-12 16:12:54] Net Liq: $210,687.44 | Day: -29,525.09 (-12.29%) | Total: -29,312.56 (-12.21%)
+[2026-03-13 16:11:24] Running daily report for 2026-03-13
+[2026-03-13 16:11:24] Net Liq: $-532,739.73 | Day: -743,427.17 (-352.86%) | Total: -772,739.73 (-321.97%)
+[2026-03-16 16:12:56] Running daily report for 2026-03-16
+[2026-03-16 16:12:57] Net Liq: $-557,103.06 | Day: -24,363.33 (+0.00%) | Total: -797,103.06 (-332.13%)

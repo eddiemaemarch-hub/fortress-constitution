@@ -1,0 +1,31 @@
+{
+  "test_name": "BMNR v2.8+ Backtest Simulation",
+  "timestamp": "2026-03-20T15:58:18.444802",
+  "asset": "BMNR",
+  "crypto_backing": "ETH",
+  "parameters": {
+    "starting_capital": 10000.0,
+    "n_weeks": 230,
+    "sma_period": 100,
+    "risk_pct": 0.25,
+    "leap_multiplier_avg": 5.0
+  },
+  "performance": {
+    "final_equity": 10000.0,
+    "total_return_pct": 0.0,
+    "max_drawdown_pct": 0.0,
+    "sharpe_ratio": 0.0,
+    "total_entries": 0,
+    "total_exits": 0,
+    "trade_log_count": 0
+  },
+  "price_path": {
+    "bmnr_start": 5.0,
+    "bmnr_end": 0.58,
+    "bmnr_high": 35.13,
+    "bmnr_low": 0.5,
+    "eth_start": 2500.0,
+    "eth_end": 113.71
+  },
+  "trade_log": []
+}

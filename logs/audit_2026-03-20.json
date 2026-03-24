@@ -1,0 +1,49 @@
+{
+  "timestamp": "2026-03-20T12:00:01.349359",
+  "status": "\u26a0\ufe0f 2 MISMATCHES",
+  "account": {
+    "net_liq": 7902.9,
+    "cash": 6305.57,
+    "unrealized_pnl": -150.71
+  },
+  "ibkr_positions": [
+    {
+      "symbol": "MSTR",
+      "secType": "OPT",
+      "qty": 1.0,
+      "avg_cost": 1253.0513,
+      "strike": 50.0,
+      "expiry": "20280121",
+      "right": "P",
+      "conId": 816983615
+    },
+    {
+      "symbol": "SPY",
+      "secType": "OPT",
+      "qty": 1.0,
+      "avg_cost": 494.9888,
+      "strike": 430.0,
+      "expiry": "20270115",
+      "right": "P",
+      "conId": 730443288
+    }
+  ],
+  "ibkr_position_count": 2,
+  "rudy_positions": [],
+  "rudy_position_count": 0,
+  "open_orders": [],
+  "open_order_count": 0,
+  "mismatches": [
+    {
+      "type": "ORPHAN",
+      "symbol": "MSTR",
+      "detail": "In IBKR (OPT qty=1.0) but NOT tracked by Rudy"
+    },
+    {
+      "type": "ORPHAN",
+      "symbol": "SPY",
+      "detail": "In IBKR (OPT qty=1.0) but NOT tracked by Rudy"
+    }
+  ],
+  "mismatch_count": 2
+}

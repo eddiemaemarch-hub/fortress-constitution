@@ -1,0 +1,231 @@
+{
+  "scan_time": "2026-03-23 14:55:34",
+  "accounts_scanned": 10,
+  "total_new_posts": 172,
+  "total_high_signals": 17,
+  "results": [
+    {
+      "handle": "nolimitgains",
+      "posts_fetched": 20,
+      "new_posts": 16,
+      "high_signals": 1,
+      "signals": [
+        {
+          "handle": "nolimitgains",
+          "post": "$PLTR insider bought 12,000 shares. Strong vote of confidence after their latest earnings beat.",
+          "ticker": "PLTR",
+          "direction": "bullish",
+          "signal_type": "insider_buy",
+          "reasoning": "A substantial insider buy following a positive earnings report is a strong signal of management's co"
+        }
+      ],
+      "account_summary": "@nolimitgains focuses on tracking insider trading activity across major tech and growth stocks, providing real-time alerts on buys and sells by company executives. The account often analyzes the potential implications of these transactions for stock performance. Their posts are geared toward traders looking for actionable signals based on insider behavior."
+    },
+    {
+      "handle": "unusual_whales",
+      "posts_fetched": 20,
+      "new_posts": 19,
+      "high_signals": 3,
+      "signals": [
+        {
+          "handle": "unusual_whales",
+          "post": "Unusual Options Activity for $NVDA NVIDIA today. Massive call buying on the $900 strike for March expiry. Over $10M in premium traded.",
+          "ticker": "NVDA",
+          "direction": "bullish",
+          "signal_type": "options_flow",
+          "reasoning": "Massive call buying on NVIDIA's $900 strike for March expiry, with over $10 million in premium trade"
+        },
+        {
+          "handle": "unusual_whales",
+          "post": "Large sweepers hitting $AMD today. Over $8M in call options bought for June $200 strike. Bullish flow continues.",
+          "ticker": "AMD",
+          "direction": "bullish",
+          "signal_type": "options_flow",
+          "reasoning": "Large call option purchases in AMD, with over $8 million in premium for the June $200 strike, signal"
+        },
+        {
+          "handle": "unusual_whales",
+          "post": "Heavy put buying on $SPY for this week\u2019s expiry. Over 10,000 contracts traded on the $510 strike. Bearish sentiment in the market.",
+          "ticker": "SPY",
+          "direction": "bearish",
+          "signal_type": "options_flow",
+          "reasoning": "Heavy put buying on the SPY for this week's expiry, with over 10,000 contracts traded on the $510 st"
+        }
+      ],
+      "account_summary": "@unusual_whales focuses on tracking and reporting unusual options activity and large trades in the stock market, often highlighting potential bullish or bearish signals for traders. The account frequently posts real-time updates on significant options flow for major stocks like $NVDA, $TSLA, and $AAPL. Additionally, it covers breaking news related to companies that could impact market sentiment."
+    },
+    {
+      "handle": "DeItaone",
+      "posts_fetched": 20,
+      "new_posts": 15,
+      "high_signals": 2,
+      "signals": [
+        {
+          "handle": "DeItaone",
+          "post": "TESLA SHARES UP 2% AFTER REPORTS OF RECORD DELIVERIES IN Q3 - CNBC",
+          "ticker": "TSLA",
+          "direction": "bullish",
+          "signal_type": "catalyst",
+          "reasoning": "Reports of record deliveries in Q3 are a strong positive catalyst for Tesla, indicating robust deman"
+        },
+        {
+          "handle": "DeItaone",
+          "post": "NVIDIA STOCK UP 1.8% ON REPORTS OF STRONG AI CHIP DEMAND - BLOOMBERG",
+          "ticker": "NVDA",
+          "direction": "bullish",
+          "signal_type": "catalyst",
+          "reasoning": "Strong AI chip demand is a direct positive catalyst for NVIDIA, which is a key player in the AI chip"
+        }
+      ],
+      "account_summary": "@DeItaone focuses on delivering real-time breaking news related to financial markets, economic indicators, and corporate updates. The account frequently posts about stock movements, Federal Reserve comments, and geopolitical events impacting global markets. Recent posts highlight a mix of company-specific news and broader economic trends."
+    },
+    {
+      "handle": "CathieDWood",
+      "posts_fetched": 20,
+      "new_posts": 20,
+      "high_signals": 0,
+      "signals": [],
+      "account_summary": "Cathie Wood, CEO of ARK Invest, is currently focused on disruptive innovation across sectors like AI, electric vehicles, biotech, and blockchain. Her posts frequently highlight long-term growth opportunities in companies like Tesla ($TSLA) and NVIDIA ($NVDA), emphasizing transformative technologies."
+    },
+    {
+      "handle": "michaeljburry",
+      "posts_fetched": 20,
+      "new_posts": 13,
+      "high_signals": 0,
+      "signals": [],
+      "account_summary": "Michael J. Burry (@michaeljburry) is currently focused on warning about overvalued markets, persistent inflation, and looming economic risks. His posts often highlight bearish views on tech, housing, and broader indices while occasionally identifying potential opportunities in energy and defense sectors. His contrarian macro perspective continues to challenge market optimism."
+    },
+    {
+      "handle": "jimcramer",
+      "posts_fetched": 20,
+      "new_posts": 16,
+      "high_signals": 2,
+      "signals": [
+        {
+          "handle": "jimcramer",
+          "post": "Big fan of $MSFT right now. Cloud growth is unstoppable, and they\u2019re executing flawlessly.",
+          "ticker": "MSFT",
+          "direction": "bullish",
+          "signal_type": "sentiment",
+          "reasoning": "Cramer is very bullish on MSFT, highlighting unstoppable cloud growth and flawless execution. This i"
+        },
+        {
+          "handle": "jimcramer",
+          "post": "$GOOGL is still a powerhouse. Their AI initiatives are paying off, and I\u2019m bullish long-term.",
+          "ticker": "GOOGL",
+          "direction": "bullish",
+          "signal_type": "sentiment",
+          "reasoning": "Cramer is bullish on GOOGL, citing its AI initiatives paying off and a strong long-term outlook. Thi"
+        }
+      ],
+      "account_summary": "Jim Cramer (@jimcramer) is currently focused on technology and AI-driven growth stocks like $NVDA, $MSFT, and $CRM, showing strong bullish sentiment. He\u2019s cautious on sectors like energy and consumer discretionary due to macro headwinds, often highlighting potential downside risks. His commentary spans a wide range of industries, balancing optimism in innovation with warnings on volatility."
+    },
+    {
+      "handle": "Mr_Derivatives",
+      "posts_fetched": 20,
+      "new_posts": 20,
+      "high_signals": 4,
+      "signals": [
+        {
+          "handle": "Mr_Derivatives",
+          "post": "Unusual options activity alert: $AAPL with a massive $10M call sweep for March 2024 expiry. This is a strong bullish signal with high volume. Keep an ",
+          "ticker": "AAPL",
+          "direction": "bullish",
+          "signal_type": "options_flow",
+          "reasoning": "Massive $10M call sweep for March 2024 expiry indicates strong bullish conviction with significant v"
+        },
+        {
+          "handle": "Mr_Derivatives",
+          "post": "Big money flowing into $TSLA calls for next week\u2019s expiry. Over 8K contracts traded, $3M+ in premium. Bullish momentum building?",
+          "ticker": "TSLA",
+          "direction": "bullish",
+          "signal_type": "options_flow",
+          "reasoning": "Significant call activity (over 8K contracts, $3M+ premium) for next week's expiry points to buildin"
+        },
+        {
+          "handle": "Mr_Derivatives",
+          "post": "$MSFT with a $7M call sweep today for November expiry. Strong institutional buying here, very bullish signal.",
+          "ticker": "MSFT",
+          "direction": "bullish",
+          "signal_type": "options_flow",
+          "reasoning": "$7M call sweep with strong institutional buying for November expiry is a very bullish signal."
+        },
+        {
+          "handle": "Mr_Derivatives",
+          "post": "$AMZN with a $6M call sweep for December. Big money is confident in upside here. Strong bullish action.",
+          "ticker": "AMZN",
+          "direction": "bullish",
+          "signal_type": "options_flow",
+          "reasoning": "$6M call sweep for December expiry shows significant investor confidence in upside potential."
+        }
+      ],
+      "account_summary": "@Mr_Derivatives focuses on tracking unusual options activity and providing real-time alerts on significant trades across major stocks and ETFs. The account frequently highlights large call and put sweeps, offering insights into potential bullish or bearish sentiment from institutional investors. Recent posts show a strong emphasis on tech and market index options flow like $AAPL, $NVDA, and $SPY."
+    },
+    {
+      "handle": "gabortrading",
+      "posts_fetched": 20,
+      "new_posts": 19,
+      "high_signals": 0,
+      "signals": [],
+      "account_summary": "@gabortrading focuses on providing real-time trade ideas and market updates, primarily targeting tech and high-growth stocks. The account frequently shares actionable setups for swing trades and scalps, often accompanied by technical analysis and charts. Recent posts show a mix of bullish and bearish sentiments with a strong emphasis on stocks like $NVDA, $PLTR, and $TSLA."
+    },
+    {
+      "handle": "WallStreetBets",
+      "posts_fetched": 20,
+      "new_posts": 14,
+      "high_signals": 1,
+      "signals": [
+        {
+          "handle": "WallStreetBets",
+          "post": "AAPL earnings tomorrow. Betting on a beat. YOLO! \ud83c\udf4e",
+          "ticker": "AAPL",
+          "direction": "bullish",
+          "signal_type": "catalyst",
+          "reasoning": "The post highlights upcoming AAPL earnings and expresses a strong 'betting on a beat' with 'YOLO'. E"
+        }
+      ],
+      "account_summary": "@WallStreetBets is currently focused on retail investor sentiment, discussing a wide range of stocks like NVDA, TSLA, and PLTR with a mix of bullish and bearish takes. The account frequently engages its audience on potential trades, earnings plays, and market trends, often with a speculative and meme-driven tone."
+    },
+    {
+      "handle": "optionsflow",
+      "posts_fetched": 20,
+      "new_posts": 20,
+      "high_signals": 4,
+      "signals": [
+        {
+          "handle": "optionsflow",
+          "post": "Unusual options activity detected in $AAPL. Heavy call buying for next week's expiration. Volume is 3x average. #OptionsFlow",
+          "ticker": "AAPL",
+          "direction": "bullish",
+          "signal_type": "options_flow",
+          "reasoning": "Unusual and heavy call buying for next week's expiration with volume 3x average suggests strong bull"
+        },
+        {
+          "handle": "optionsflow",
+          "post": "$NVDA seeing massive put volume today. Over 10K contracts traded for Dec expiration. Could signal downside risk. #OptionsTrading",
+          "ticker": "NVDA",
+          "direction": "bearish",
+          "signal_type": "options_flow",
+          "reasoning": "Massive put volume of over 10,000 contracts for December expiration in NVDA indicates significant do"
+        },
+        {
+          "handle": "optionsflow",
+          "post": "Heavy put buying in $META. $310 strike for Nov expiration. Volume 2x average. #OptionsTrading",
+          "ticker": "META",
+          "direction": "bearish",
+          "signal_type": "options_flow",
+          "reasoning": "Heavy put buying in META at the $310 strike for November expiration, with volume double the average,"
+        },
+        {
+          "handle": "optionsflow",
+          "post": "Unusual call activity in $PLTR. $20 strike for Nov 10. Volume 4x normal. #OptionsFlow",
+          "ticker": "PLTR",
+          "direction": "bullish",
+          "signal_type": "options_flow",
+          "reasoning": "Unusual call activity and volume 4x normal at the $20 strike for November 10th expiration in PLTR su"
+        }
+      ],
+      "account_summary": "@optionsflow focuses on tracking and reporting unusual options activity across major stocks and ETFs. The account provides real-time updates on call and put volume, often highlighting potential bullish or bearish signals for traders. It covers a wide range of tickers with an emphasis on actionable insights for options trading."
+    }
+  ]
+}

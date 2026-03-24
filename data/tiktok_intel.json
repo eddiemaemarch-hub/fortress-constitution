@@ -1,0 +1,1172 @@
+[
+  {
+    "timestamp": "2026-03-11T09:12:00.317621",
+    "scanner": "tiktok",
+    "type": "quick_scan",
+    "ticker": "JOBY",
+    "overall_sentiment": "neutral",
+    "summary": "TikTok content about Joby Aviation ($JOBY) is mixed, with some users expressing bullish sentiment and highlighting its potential in the electric air taxi market, while others point to significant stock price drops due to capital raises. There's a clear interest in the company's future prospects and investment potential.",
+    "signals": [
+      {
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "The content shows both significant drops in stock price due to capital raises and bullish predictions of future growth, indicating a volatile but potentially rewarding investment. Investors should monitor upcoming capital raises and company progress."
+      },
+      {
+        "signal": "watch",
+        "confidence": "low",
+        "reason": "Some users are discussing specific trading strategies like identifying higher highs and lows, suggesting active trading interest. However, the effectiveness of these strategies for JOBY specifically is not clear from the provided snippets."
+      }
+    ],
+    "viral_picks": [
+      {
+        "ticker": "JOBY",
+        "hype_level": "emerging",
+        "ten_x_potential": "medium",
+        "bull_case": "TikTok users are interested in Joby Aviation due to its position in the emerging electric air taxi industry and the potential for significant stock growth, with some believing it has a competitive edge."
+      }
+    ],
+    "hot_tickers": [
+      "JOBY"
+    ],
+    "posts_found": 8
+  },
+  {
+    "summary": "FinTok is buzzing about potential 10X moonshot stocks, with a strong focus on emerging technologies like eVTOL, quantum computing, and AI. There's significant interest in identifying undervalued companies with high growth potential, often discussed in the context of future market predictions and diversification strategies. The platform also highlights the impact of geopolitical events, such as the Iran War, on specific sectors like oil.",
+    "overall_sentiment": "euphoric",
+    "viral_picks": [
+      {
+        "ticker": "JOBY",
+        "hype_level": "viral",
+        "bull_case": "Joby Aviation is highlighted as a leader in the eVTOL sector with strong year-to-date performance and plans for commercial flights, suggesting significant future growth potential.",
+        "sector": "eVTOL",
+        "ten_x_potential": "high",
+        "risk_warning": "Regulatory hurdles in FAA certification, competition, and the nascent nature of the eVTOL market."
+      },
+      {
+        "ticker": "QUBT",
+        "hype_level": "viral",
+        "bull_case": "Mentioned with massive gains (+2,370%), indicating significant investor interest and perceived high growth in the quantum computing sector.",
+        "sector": "Quantum",
+        "ten_x_potential": "high",
+        "risk_warning": "The quantum computing sector is highly speculative, with long development cycles and intense competition. Valuation may be ahead of fundamentals."
+      },
+      {
+        "ticker": "QBTS",
+        "hype_level": "viral",
+        "bull_case": "Similar to QUBT, it's cited for substantial gains (+1,729%), positioning it as a key player in the surging quantum computing market.",
+        "sector": "Quantum",
+        "ten_x_potential": "high",
+        "risk_warning": "Similar to QUBT, high risk due to speculative nature, long development timelines, and potential for intense competition."
+      },
+      {
+        "ticker": "YEXT",
+        "hype_level": "emerging",
+        "bull_case": "Identified as a promising small-cap AI company with potential for growth.",
+        "sector": "AI",
+        "ten_x_potential": "medium",
+        "risk_warning": "Competition in the AI space is fierce, and smaller companies may struggle to scale or gain market share."
+      },
+      {
+        "ticker": "RISKIFIED",
+        "hype_level": "emerging",
+        "bull_case": "Highlighted as a promising small-cap AI company with growth potential.",
+        "sector": "AI",
+        "ten_x_potential": "medium",
+        "risk_warning": "Similar to YEXT, faces intense competition in the AI sector and relies on successful AI integration for growth."
+      },
+      {
+        "ticker": "AGORA",
+        "hype_level": "emerging",
+        "bull_case": "Mentioned as a small-cap AI company with insights into AI agents in the stock market, suggesting potential for disruption and growth.",
+        "sector": "AI",
+        "ten_x_potential": "medium",
+        "risk_warning": "The effectiveness and adoption of AI agents in the stock market are still developing, and Agora's success is tied to this evolving landscape."
+      }
+    ],
+    "signals": [
+      {
+        "ticker": "JOBY",
+        "signal": "watch",
+        "confidence": "high",
+        "reason": "Strong year-to-date performance and clear catalyst (FAA certification for commercial flights) make it a key eVTOL player to monitor for potential upside."
+      },
+      {
+        "ticker": "QUBT",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Significant past gains indicate strong investor interest in quantum computing, but its future trajectory is highly speculative and dependent on technological breakthroughs."
+      },
+      {
+        "ticker": "QBTS",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Similar to QUBT, its performance is tied to the broader quantum computing narrative, requiring careful monitoring of sector developments."
+      },
+      {
+        "ticker": "MARA",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Mentioned in the context of crypto, its performance is heavily influenced by Bitcoin price movements and regulatory sentiment."
+      },
+      {
+        "ticker": "RIOT",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Similar to MARA, its trajectory is closely linked to the cryptocurrency market dynamics."
+      },
+      {
+        "ticker": "COIN",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "As a major crypto exchange, its performance reflects the overall health and adoption of the cryptocurrency ecosystem."
+      }
+    ],
+    "hot_tickers": [
+      "JOBY",
+      "QUBT",
+      "QBTS",
+      "YEXT",
+      "RISKIFIED",
+      "AGORA",
+      "MARA",
+      "RIOT",
+      "COIN"
+    ],
+    "meme_stocks": [
+      "stocks getting meme treatment"
+    ],
+    "catalysts": [
+      "FAA certification for eVTOL aircraft",
+      "Technological breakthroughs in quantum computing",
+      "Mergers and acquisitions in the penny stock space",
+      "Geopolitical events impacting oil prices",
+      "AI adoption and integration across industries",
+      "Stock squeeze opportunities"
+    ],
+    "risks": [
+      "High speculative nature of emerging technologies (eVTOL, Quantum)",
+      "Intense competition in AI and other growth sectors",
+      "Regulatory uncertainty for crypto",
+      "Valuation risk if hype outpaces fundamentals",
+      "Geopolitical instability",
+      "The inherent volatility of penny stocks and meme stocks"
+    ],
+    "grok_cross_reference": {
+      "cross_reference": [
+        {
+          "ticker": "QBTS",
+          "tiktok_hype": "high",
+          "x_sentiment": "bullish",
+          "x_agrees_with_tiktok": true,
+          "x_evidence": "X users are posting about QBTS's potential in quantum computing, with many citing recent partnerships and tech advancements.",
+          "smart_money_signal": "yes"
+        },
+        {
+          "ticker": "QUBT",
+          "tiktok_hype": "medium",
+          "x_sentiment": "neutral",
+          "x_agrees_with_tiktok": false,
+          "x_evidence": "X sentiment is mixed; some users mention QUBT's long-term potential, while others question its current valuation.",
+          "smart_money_signal": "unknown"
+        },
+        {
+          "ticker": "RISKIFIED",
+          "tiktok_hype": "medium",
+          "x_sentiment": "bearish",
+          "x_agrees_with_tiktok": false,
+          "x_evidence": "X users are skeptical about RISKIFIED, citing weak earnings and lack of growth catalysts.",
+          "smart_money_signal": "no"
+        },
+        {
+          "ticker": "JOBY",
+          "tiktok_hype": "high",
+          "x_sentiment": "bullish",
+          "x_agrees_with_tiktok": true,
+          "x_evidence": "X posts are overwhelmingly positive, with users excited about JOBY's eVTOL progress and potential FAA certification.",
+          "smart_money_signal": "yes"
+        },
+        {
+          "ticker": "AGORA",
+          "tiktok_hype": "low",
+          "x_sentiment": "neutral",
+          "x_agrees_with_tiktok": true,
+          "x_evidence": "X shows limited discussion on AGORA, with no strong bullish or bearish takes.",
+          "smart_money_signal": "unknown"
+        },
+        {
+          "ticker": "YEXT",
+          "tiktok_hype": "medium",
+          "x_sentiment": "bearish",
+          "x_agrees_with_tiktok": false,
+          "x_evidence": "X users criticize YEXT for stagnant growth and increasing competition in the digital marketing space.",
+          "smart_money_signal": "no"
+        }
+      ],
+      "divergences": [
+        "QUBT",
+        "RISKIFIED",
+        "YEXT"
+      ],
+      "confirmed_picks": [
+        "QBTS",
+        "JOBY"
+      ]
+    },
+    "timestamp": "2026-03-11T14:37:43.192741",
+    "scanner": "tiktok",
+    "posts_found": 45
+  },
+  {
+    "summary": "FinTok is buzzing with excitement around high-growth potential stocks, particularly those in emerging technology sectors like eVTOL, Quantum Computing, and AI. There's a strong emphasis on 'moonshot' opportunities, with investors actively seeking out companies that could deliver 10x or more returns by 2026. Penny stocks and potential short squeezes are also a recurring theme, indicating a speculative appetite within the community.",
+    "overall_sentiment": "euphoric",
+    "viral_picks": [
+      {
+        "ticker": "JOBY",
+        "hype_level": "viral",
+        "bull_case": "Joby Aviation is positioned as a leader in the eVTOL sector, with significant progress towards FAA certification and commercial flight launches. Its stock has already seen substantial gains, fueling optimism for future growth.",
+        "sector": "eVTOL",
+        "ten_x_potential": "high",
+        "risk_warning": "Regulatory hurdles, competition, and the inherent risks of pioneering new transportation technologies."
+      },
+      {
+        "ticker": "QUBT",
+        "hype_level": "viral",
+        "bull_case": "Quantum Computing Inc. (QUBT) has demonstrated massive gains, with over 2,400% in a year, highlighting the explosive potential of quantum computing stocks. The sector is seen as a major growth area.",
+        "sector": "Quantum",
+        "ten_x_potential": "high",
+        "risk_warning": "The quantum computing sector is still nascent and highly speculative. Valuation may be driven by hype rather than current fundamentals."
+      },
+      {
+        "ticker": "OKLO",
+        "hype_level": "emerging",
+        "bull_case": "Oklo's unique approach to Small Modular Reactor (SMR) technology is generating interest in the nuclear energy sector. The potential for advancements in clean energy solutions positions it for growth.",
+        "sector": "Nuclear",
+        "ten_x_potential": "high",
+        "risk_warning": "Nuclear energy projects face significant regulatory, safety, and public perception challenges. SMR technology is still in early development."
+      },
+      {
+        "ticker": "MARA",
+        "hype_level": "trending",
+        "bull_case": "As a major Bitcoin miner, Marathon Digital Holdings (MARA) is seen as a direct play on the cryptocurrency market. The mention of oil stocks returning suggests a broader commodity-driven sentiment that could benefit crypto.",
+        "sector": "Crypto",
+        "ten_x_potential": "medium",
+        "risk_warning": "High volatility of cryptocurrency prices, regulatory crackdowns, and operational costs for mining."
+      },
+      {
+        "ticker": "RIOT",
+        "hype_level": "trending",
+        "bull_case": "Riot Platforms (RIOT) is another prominent Bitcoin miner, benefiting from the same tailwinds as MARA. Its inclusion suggests a broader bullish outlook on crypto mining stocks.",
+        "sector": "Crypto",
+        "ten_x_potential": "medium",
+        "risk_warning": "High volatility of cryptocurrency prices, regulatory crackdowns, and operational costs for mining."
+      }
+    ],
+    "signals": [
+      {
+        "ticker": "JOBY",
+        "signal": "watch",
+        "confidence": "high",
+        "reason": "Consistent mentions and strong bull case around eVTOL leadership and progress towards commercialization."
+      },
+      {
+        "ticker": "QUBT",
+        "signal": "watch",
+        "confidence": "high",
+        "reason": "Exceptional past performance and inclusion in 'moonshot' discussions for quantum computing."
+      },
+      {
+        "ticker": "OKLO",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Emerging interest in SMR technology and its potential for clean energy solutions."
+      },
+      {
+        "ticker": "AI-related stocks (general)",
+        "signal": "watch",
+        "confidence": "high",
+        "reason": "Frequent mentions of AI as a key growth sector for 2026, with a focus on small-cap chip stocks."
+      },
+      {
+        "ticker": "Penny Stocks (general)",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Recurring theme of 'explosive' penny stocks and potential mergers, often with a high-risk, high-reward narrative."
+      }
+    ],
+    "hot_tickers": [
+      "JOBY",
+      "QUBT",
+      "MARA",
+      "RIOT",
+      "OKLO"
+    ],
+    "meme_stocks": [
+      "Stocks mentioned in the context of 'stock squeeze' and 'meme stocks' are likely candidates, though specific tickers are not consistently named."
+    ],
+    "catalysts": [
+      "Advancements in eVTOL technology and FAA certification for Joby Aviation.",
+      "Breakthroughs and increased adoption of quantum computing solutions.",
+      "Development and deployment of Small Modular Reactors (SMRs) for nuclear energy.",
+      "Potential mergers and acquisitions in the penny stock space.",
+      "Broader market trends favoring emerging technologies and speculative assets."
+    ],
+    "risks": [
+      "The speculative nature of 'moonshot' stocks means high potential for significant losses.",
+      "Overvaluation driven by hype and FOMO rather than fundamental analysis.",
+      "Regulatory uncertainties in emerging sectors like eVTOL and nuclear energy.",
+      "The inherent volatility of cryptocurrency markets impacting mining stocks.",
+      "The possibility of 'pump and dump' schemes within penny stock discussions.",
+      "Geopolitical events (e.g., Iran War mentioned) can create short-term volatility and impact specific sectors like oil, but also create broader market uncertainty."
+    ],
+    "grok_cross_reference": {
+      "cross_reference": [
+        {
+          "ticker": "MARA",
+          "tiktok_hype": "high",
+          "x_sentiment": "bullish",
+          "x_agrees_with_tiktok": true,
+          "x_evidence": "X users are posting about MARA's potential due to Bitcoin price surges, with many citing it as a top crypto mining play.",
+          "smart_money_signal": "yes - institutional buying reported in recent 13F filings"
+        },
+        {
+          "ticker": "JOBY",
+          "tiktok_hype": "medium",
+          "x_sentiment": "neutral",
+          "x_agrees_with_tiktok": false,
+          "x_evidence": "X sentiment is mixed; some users are skeptical about eVTOL timelines, while others see long-term potential.",
+          "smart_money_signal": "unknown - limited recent institutional activity"
+        },
+        {
+          "ticker": "RIOT",
+          "tiktok_hype": "high",
+          "x_sentiment": "bullish",
+          "x_agrees_with_tiktok": true,
+          "x_evidence": "X posts are overwhelmingly positive, linking RIOT to crypto market momentum and upcoming halving events.",
+          "smart_money_signal": "yes - significant whale accumulation noted in blockchain data"
+        },
+        {
+          "ticker": "QUBT",
+          "tiktok_hype": "medium",
+          "x_sentiment": "bearish",
+          "x_agrees_with_tiktok": false,
+          "x_evidence": "X users are calling QUBT overvalued, with concerns about lack of tangible progress in quantum computing.",
+          "smart_money_signal": "no - minimal institutional interest"
+        },
+        {
+          "ticker": "OKLO",
+          "tiktok_hype": "high",
+          "x_sentiment": "bullish",
+          "x_agrees_with_tiktok": true,
+          "x_evidence": "X sentiment aligns with TikTok, with users excited about nuclear energy innovation and OKLO's SPAC merger buzz.",
+          "smart_money_signal": "yes - recent insider buying and venture capital interest"
+        }
+      ],
+      "divergences": [
+        "JOBY",
+        "QUBT"
+      ],
+      "confirmed_picks": [
+        "MARA",
+        "RIOT",
+        "OKLO"
+      ]
+    },
+    "timestamp": "2026-03-11T15:37:13.328721",
+    "scanner": "tiktok",
+    "posts_found": 43
+  },
+  {
+    "summary": "FinTok is buzzing with excitement about potential 10X moonshot stocks, particularly focusing on emerging technologies like eVTOL, quantum computing, and AI. There's a strong emphasis on identifying undervalued or under-the-radar companies with significant growth potential, often targeting 2025-2026 timelines. The sentiment leans heavily towards bullishness, with a significant portion of content dedicated to identifying 'moonshot' opportunities and providing stock picking metrics for new investors.",
+    "overall_sentiment": "euphoric",
+    "viral_picks": [
+      {
+        "ticker": "JOBY",
+        "hype_level": "viral",
+        "bull_case": "Joby Aviation is a leader in the eVTOL sector, with significant progress towards FAA certification and aiming for commercial flight launches. Its stock has already seen substantial year-to-date gains, indicating strong investor interest and potential for further growth as the eVTOL market matures.",
+        "sector": "eVTOL",
+        "ten_x_potential": "high",
+        "risk_warning": "Regulatory hurdles, competition, and the long development cycle for eVTOL technology could delay commercialization and impact profitability."
+      },
+      {
+        "ticker": "IONQ",
+        "hype_level": "trending",
+        "bull_case": "IonQ is a prominent player in the quantum computing space, a sector with immense long-term growth potential. As quantum computing technology advances, companies like IonQ are positioned to be at the forefront, attracting significant investment and driving innovation.",
+        "sector": "quantum",
+        "ten_x_potential": "high",
+        "risk_warning": "Quantum computing is still in its nascent stages, and widespread commercial adoption is uncertain. Technological breakthroughs by competitors or unforeseen challenges could hinder IonQ's progress."
+      },
+      {
+        "ticker": "VERI",
+        "hype_level": "emerging",
+        "bull_case": "Veri (VERI) is a small-cap AI stock that has secured a U.S. Air Force contract, leading to a significant spike in call volume and analyst price targets. Its under-the-radar status suggests it could be an overlooked gem with substantial upside potential.",
+        "sector": "AI",
+        "ten_x_potential": "high",
+        "risk_warning": "Small-cap stocks are inherently volatile, and reliance on government contracts can be subject to budget changes and political factors. The company's long-term AI strategy beyond this contract needs to be robust."
+      },
+      {
+        "ticker": "HIMS",
+        "hype_level": "viral",
+        "bull_case": "Hims & Hers Health (HIMS) is being discussed as a potential meme stock due to high short interest and surging retail investor interest. The possibility of a short squeeze could drive significant price appreciation, similar to other meme stock phenomena.",
+        "sector": "meme",
+        "ten_x_potential": "medium",
+        "risk_warning": "Meme stock rallies are often driven by sentiment and can be highly volatile and unpredictable. The underlying business fundamentals may not support such price increases long-term, leading to sharp corrections."
+      }
+    ],
+    "signals": [
+      {
+        "ticker": "SMRT",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Smart Rent (SMRT) is a real estate technology company with reported 60% revenue growth quarter-over-quarter. This indicates strong business momentum, making it a company to watch for potential future growth."
+      },
+      {
+        "ticker": "VLD",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "VLD is mentioned as a 3D printing company. The 3D printing industry is an emerging sector with potential for disruption and growth, warranting further investigation."
+      },
+      {
+        "ticker": "JOBY",
+        "signal": "buy",
+        "confidence": "high",
+        "reason": "Joby Aviation (JOBY) is highlighted as a leader in the eVTOL sector with significant progress towards commercialization and strong year-to-date stock performance. This suggests a strong current trend and potential for continued upside."
+      },
+      {
+        "ticker": "RGTI",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "RGTI is mentioned in the context of quantum computing stocks. As quantum computing is a high-growth sector, companies like RGTI are worth monitoring for potential breakthroughs and market adoption."
+      },
+      {
+        "ticker": "IONQ",
+        "signal": "watch",
+        "confidence": "high",
+        "reason": "IonQ (IONQ) is a prominent quantum computing stock with significant discussion. Its position in a cutting-edge technology sector makes it a key player to watch for future developments."
+      },
+      {
+        "ticker": "VERI",
+        "signal": "buy",
+        "confidence": "high",
+        "reason": "Veri (VERI) has secured a U.S. Air Force contract and is being discussed as a small-cap AI stock with significant upside potential. This contract is a concrete catalyst for potential growth."
+      }
+    ],
+    "hot_tickers": [
+      "JOBY",
+      "IONQ",
+      "RGTI",
+      "VERI",
+      "HIMS",
+      "SMRT",
+      "VLD"
+    ],
+    "meme_stocks": [
+      "HIMS",
+      "HTZ",
+      "BYND"
+    ],
+    "catalysts": [
+      "FAA certification for eVTOL aircraft (JOBY)",
+      "U.S. Air Force contract (VERI)",
+      "Mergers and acquisitions in the penny stock space",
+      "Advancements in quantum computing technology",
+      "Potential short squeezes (HIMS)"
+    ],
+    "risks": [
+      "High-risk, high-reward nature of moonshot stocks",
+      "Volatility of penny stocks and small-cap companies",
+      "Regulatory hurdles and long development cycles in emerging tech (eVTOL, quantum)",
+      "Uncertainty of widespread adoption for new technologies",
+      "Market sentiment-driven rallies (meme stocks) can be unsustainable",
+      "TikTok content can be driven by hype and FOMO, not always fundamental analysis"
+    ],
+    "grok_cross_reference": {
+      "cross_reference": [
+        {
+          "ticker": "VERI",
+          "tiktok_hype": "high",
+          "x_sentiment": "bullish",
+          "x_agrees_with_tiktok": true,
+          "x_evidence": "X users are posting about VERI's recent AI partnerships and price spikes, with many predicting further upside.",
+          "smart_money_signal": "yes - institutional buying reported in recent filings"
+        },
+        {
+          "ticker": "IONQ",
+          "tiktok_hype": "high",
+          "x_sentiment": "bullish",
+          "x_agrees_with_tiktok": true,
+          "x_evidence": "X discussions highlight IONQ's quantum computing potential, with strong retail interest and memes driving attention.",
+          "smart_money_signal": "yes - notable hedge fund positions disclosed"
+        },
+        {
+          "ticker": "HIMS",
+          "tiktok_hype": "medium",
+          "x_sentiment": "neutral",
+          "x_agrees_with_tiktok": false,
+          "x_evidence": "X sentiment is mixed; some users praise HIMS growth in telehealth, others question valuation and competition.",
+          "smart_money_signal": "unknown - limited recent institutional data"
+        },
+        {
+          "ticker": "RGTI",
+          "tiktok_hype": "high",
+          "x_sentiment": "bearish",
+          "x_agrees_with_tiktok": false,
+          "x_evidence": "X users are skeptical of RGTI, citing lack of revenue growth and calling it a 'hype stock' with no fundamentals.",
+          "smart_money_signal": "no - minimal institutional interest"
+        },
+        {
+          "ticker": "JOBY",
+          "tiktok_hype": "medium",
+          "x_sentiment": "bullish",
+          "x_agrees_with_tiktok": true,
+          "x_evidence": "X posts are optimistic about JOBY's eVTOL progress and potential urban air mobility market, aligning with TikTok excitement.",
+          "smart_money_signal": "yes - recent whale activity in options market"
+        }
+      ],
+      "divergences": [
+        "HIMS",
+        "RGTI"
+      ],
+      "confirmed_picks": [
+        "VERI",
+        "IONQ",
+        "JOBY"
+      ]
+    },
+    "timestamp": "2026-03-11T16:10:48.129601",
+    "scanner": "tiktok",
+    "posts_found": 46
+  },
+  {
+    "summary": "FinTok is buzzing about potential 10X moonshot stocks for 2026, with a strong focus on emerging technologies like eVTOL, quantum computing, and AI. There's significant interest in identifying 'moonshot' stocks, often associated with high-risk, high-reward plays. Penny stocks and potential short squeezes are also generating considerable discussion, indicating a speculative appetite among some creators and audiences.",
+    "overall_sentiment": "euphoric",
+    "viral_picks": [
+      {
+        "ticker": "JOBY",
+        "hype_level": "viral",
+        "bull_case": "TikTok creators are highlighting Joby Aviation's innovative flying car technology (eVTOL) and its potential to revolutionize transportation, positioning it as a future growth leader.",
+        "sector": "eVTOL",
+        "ten_x_potential": "high",
+        "risk_warning": "Regulatory hurdles, competition, technological feasibility at scale, and execution risk are significant concerns for eVTOL companies."
+      },
+      {
+        "ticker": "IONQ",
+        "hype_level": "trending",
+        "bull_case": "Quantum computing is presented as a transformative technology, and IonQ is frequently mentioned as a leading player with the potential for massive long-term growth as the industry matures.",
+        "sector": "quantum",
+        "ten_x_potential": "high",
+        "risk_warning": "Quantum computing is still in its nascent stages, with significant technological challenges, long development cycles, and uncertain commercialization timelines."
+      },
+      {
+        "ticker": "SMR",
+        "hype_level": "emerging",
+        "bull_case": "Small Modular Reactors (SMRs) are being discussed as a potential solution for future energy needs, with NuScale Energy (SMR) being a prominent name in this emerging sector.",
+        "sector": "nuclear",
+        "ten_x_potential": "high",
+        "risk_warning": "Nuclear energy faces significant regulatory, public perception, and high upfront capital costs. SMR technology is still developing and needs to prove its economic viability and safety at scale."
+      },
+      {
+        "ticker": "YEXT",
+        "hype_level": "emerging",
+        "bull_case": "Yext is mentioned as a promising small-cap AI company, suggesting potential for significant growth as AI adoption accelerates.",
+        "sector": "AI",
+        "ten_x_potential": "medium",
+        "risk_warning": "Small-cap AI companies can be highly volatile, facing intense competition, rapid technological obsolescence, and challenges in achieving profitability."
+      },
+      {
+        "ticker": "MARA",
+        "hype_level": "trending",
+        "bull_case": "Marathon Digital Holdings (MARA) is frequently cited in discussions about crypto, benefiting from the speculative interest in Bitcoin and the broader cryptocurrency market.",
+        "sector": "Crypto",
+        "ten_x_potential": "medium",
+        "risk_warning": "Cryptocurrency prices are extremely volatile and subject to regulatory changes, market sentiment, and technological risks. Mining profitability is also dependent on Bitcoin prices and energy costs."
+      }
+    ],
+    "signals": [
+      {
+        "ticker": "JOBY",
+        "signal": "watch",
+        "confidence": "high",
+        "reason": "Consistent and strong positive sentiment around Joby Aviation's eVTOL technology, indicating significant retail investor interest and potential for future price appreciation if milestones are met."
+      },
+      {
+        "ticker": "IONQ",
+        "signal": "watch",
+        "confidence": "high",
+        "reason": "Quantum computing is a recurring theme, and IonQ is positioned as a leader. Investors are watching for technological breakthroughs and commercial partnerships that could drive significant growth."
+      },
+      {
+        "ticker": "SMR",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Emerging interest in nuclear energy solutions like SMRs, with NuScale Energy being a key player. This is a longer-term play, and investors are watching for regulatory approvals and project developments."
+      },
+      {
+        "ticker": "YEXT",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Mentioned as a small-cap AI stock with growth potential. Investors are watching for continued revenue growth and successful AI product integration."
+      },
+      {
+        "ticker": "MARA",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "As a prominent Bitcoin miner, MARA's performance is closely tied to crypto market sentiment. Investors are watching for Bitcoin price trends and the company's operational efficiency."
+      }
+    ],
+    "hot_tickers": [
+      "JOBY",
+      "IONQ",
+      "SMR",
+      "YEXT",
+      "MARA",
+      "SMRT",
+      "VLD",
+      "RKLB",
+      "LUNR",
+      "ASTS",
+      "RIOT",
+      "COIN",
+      "DNA",
+      "CRSP",
+      "BEAM",
+      "RGTI",
+      "QUBT",
+      "OKLO",
+      "ACHR",
+      "LILM",
+      "ASTRAZENECA"
+    ],
+    "meme_stocks": [
+      "Grifin (mentioned in context of penny stocks and potential takedowns)"
+    ],
+    "catalysts": [
+      "Technological breakthroughs in eVTOL and quantum computing",
+      "Regulatory approvals for nuclear energy (SMRs)",
+      "AI adoption and integration into business solutions",
+      "Bitcoin price movements (for crypto miners)",
+      "Potential mergers or significant developments in penny stock companies",
+      "Successful execution of long-term growth strategies for mentioned companies"
+    ],
+    "risks": [
+      "High volatility and speculative nature of 'moonshot' and penny stocks",
+      "Uncertainty and long development timelines for emerging technologies (eVTOL, quantum)",
+      "Regulatory challenges and public perception issues (nuclear energy)",
+      "Intense competition in the AI sector",
+      "Market manipulation and FOMO driving irrational valuations",
+      "The possibility of TikTok content being driven by paid promotions or influencer bias rather than fundamental analysis."
+    ],
+    "grok_cross_reference": {
+      "cross_reference": [
+        {
+          "ticker": "IONQ",
+          "tiktok_hype": "high",
+          "x_sentiment": "bullish",
+          "x_agrees_with_tiktok": true,
+          "x_evidence": "X users are excited about IONQ's quantum computing potential, with many citing recent partnerships and tech advancements.",
+          "smart_money_signal": "yes"
+        },
+        {
+          "ticker": "MARA",
+          "tiktok_hype": "high",
+          "x_sentiment": "bullish",
+          "x_agrees_with_tiktok": true,
+          "x_evidence": "X posts highlight MARA's correlation with Bitcoin price surges, with strong optimism about crypto market recovery.",
+          "smart_money_signal": "yes"
+        },
+        {
+          "ticker": "JOBY",
+          "tiktok_hype": "medium",
+          "x_sentiment": "neutral",
+          "x_agrees_with_tiktok": false,
+          "x_evidence": "X sentiment is mixed; some users mention JOBY's eVTOL innovation, but others question near-term profitability.",
+          "smart_money_signal": "unknown"
+        },
+        {
+          "ticker": "YEXT",
+          "tiktok_hype": "low",
+          "x_sentiment": "bearish",
+          "x_agrees_with_tiktok": false,
+          "x_evidence": "X users are skeptical of YEXT's growth, citing competition in digital marketing and underwhelming earnings.",
+          "smart_money_signal": "no"
+        },
+        {
+          "ticker": "SMR",
+          "tiktok_hype": "medium",
+          "x_sentiment": "bullish",
+          "x_agrees_with_tiktok": true,
+          "x_evidence": "X discussions are positive, focusing on SMR's role in nuclear energy innovation and clean energy trends.",
+          "smart_money_signal": "yes"
+        }
+      ],
+      "divergences": [
+        "JOBY",
+        "YEXT"
+      ],
+      "confirmed_picks": [
+        "IONQ",
+        "MARA",
+        "SMR"
+      ]
+    },
+    "timestamp": "2026-03-11T19:05:43.721542",
+    "scanner": "tiktok",
+    "posts_found": 43
+  },
+  {
+    "timestamp": "2026-03-12T07:50:38.574736",
+    "scanner": "tiktok",
+    "type": "quick_scan",
+    "ticker": "TSLA",
+    "overall_sentiment": "neutral",
+    "summary": "TikTok content about TSLA shows a mixed sentiment, with some users highlighting recent gains and future predictions, while others point to a high valuation and recent price drops. There's a clear awareness of Elon Musk's influence and significant events like stock splits and earnings reports.",
+    "signals": [
+      {
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "The mixed sentiment and presence of both bullish predictions and bearish concerns (valuation, YTD performance) suggest a need to monitor upcoming earnings and market reactions before making a decision."
+      },
+      {
+        "signal": "watch",
+        "confidence": "high",
+        "reason": "Significant events like Q4 earnings reports are highlighted, indicating a period of potential volatility and opportunity that warrants close observation."
+      },
+      {
+        "signal": "watch",
+        "confidence": "low",
+        "reason": "While there are predictions of significant price increases, the mention of a high valuation and recent price drops suggests caution is warranted, making a direct buy signal premature."
+      }
+    ],
+    "viral_picks": [
+      {
+        "ticker": "TSLA",
+        "hype_level": "trending",
+        "ten_x_potential": "medium",
+        "bull_case": "TikTok users are drawn to TSLA due to Elon Musk's influence, significant past stock performance (e.g., up nearly double since November, over 145% in 6 months), and optimistic future predictions, with some anticipating a rise to $1000. The platform also educates on events like stock splits, making the stock seem more accessible."
+      }
+    ],
+    "hot_tickers": [
+      "TSLA"
+    ],
+    "posts_found": 7
+  },
+  {
+    "summary": "FinTok is heavily focused on identifying 'moonshot' stocks with 10X or greater return potential, particularly for 2026. Key sectors generating buzz include eVTOL, quantum computing, nuclear energy, and biotech. There's a strong emphasis on disruptive technologies and high-growth potential, with a recognition that these investments carry significant risk.",
+    "overall_sentiment": "euphoric",
+    "viral_picks": [
+      {
+        "ticker": "JOBY",
+        "hype_level": "viral",
+        "bull_case": "Joby Aviation is positioned as a leader in the eVTOL sector, with plans for commercial flights and strong year-to-date performance. The narrative is about the future of air travel and clean tech.",
+        "sector": "eVTOL",
+        "ten_x_potential": "high",
+        "risk_warning": "Regulatory hurdles, competition, and the long timeline for widespread adoption of eVTOL technology."
+      },
+      {
+        "ticker": "QUBT",
+        "hype_level": "viral",
+        "bull_case": "Quantum computing stocks are seen as the next frontier, with QUBT showing massive percentage gains, indicating significant investor interest and potential for exponential growth as the technology matures.",
+        "sector": "quantum",
+        "ten_x_potential": "high",
+        "risk_warning": "Quantum computing is still in its nascent stages, with significant technological challenges and a long path to commercial viability. High volatility and speculative nature."
+      },
+      {
+        "ticker": "SMRT",
+        "hype_level": "emerging",
+        "bull_case": "Smart rent real estate technology company with reported 60% revenue growth, suggesting strong operational performance and market traction in a potentially disruptive real estate tech niche.",
+        "sector": "other",
+        "ten_x_potential": "high",
+        "risk_warning": "The real estate technology sector can be cyclical and competitive. Growth sustainability needs to be closely monitored."
+      },
+      {
+        "ticker": "VERI",
+        "hype_level": "emerging",
+        "bull_case": "A small-cap AI stock that secured a U.S. Air Force contract, leading to a significant spike in call volume and analyst price targets. This indicates potential for substantial growth driven by defense contracts and AI adoption.",
+        "sector": "AI",
+        "ten_x_potential": "high",
+        "risk_warning": "Reliance on government contracts can be volatile. Small-cap stocks are inherently more risky and susceptible to market fluctuations."
+      }
+    ],
+    "signals": [
+      {
+        "ticker": "JOBY",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Consistent mentions and positive performance metrics suggest it's a key player in the emerging eVTOL space, warranting close observation for entry points."
+      },
+      {
+        "ticker": "QUBT",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "While highly speculative, the massive percentage gains highlight significant investor interest and potential for continued momentum in the quantum computing sector."
+      },
+      {
+        "ticker": "SMR",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Nuclear energy is presented as a growth sector for 2026, and SMR (Small Modular Reactors) are often cited as a key innovation. This indicates a potential long-term play."
+      },
+      {
+        "ticker": "MARA",
+        "signal": "watch",
+        "confidence": "low",
+        "reason": "Mentioned in the context of crypto, which is a volatile sector. While it has potential for upside, the signal is weak due to the inherent speculative nature of crypto-related stocks."
+      }
+    ],
+    "hot_tickers": [
+      "JOBY",
+      "QUBT",
+      "QBTS",
+      "SMRT",
+      "VERI",
+      "MARA",
+      "RIOT",
+      "COIN",
+      "IONQ",
+      "RGTI",
+      "SMR",
+      "OKLO",
+      "RKLB",
+      "LUNR",
+      "ASTS",
+      "DNA",
+      "CRSP",
+      "BEAM",
+      "ACHR",
+      "LILM"
+    ],
+    "meme_stocks": [
+      "Tesla"
+    ],
+    "catalysts": [
+      "2026 investment horizon",
+      "advancements in eVTOL technology",
+      "growth in quantum computing",
+      "nuclear energy boom",
+      "AI adoption and defense contracts",
+      "potential stock squeezes",
+      "penny stock surges",
+      "mergers and acquisitions in emerging tech"
+    ],
+    "risks": [
+      "High volatility and speculative nature of moonshot stocks",
+      "Regulatory hurdles for new technologies (e.g., eVTOL)",
+      "Long development timelines for disruptive technologies (e.g., quantum computing)",
+      "Dependence on government contracts for some small-cap stocks",
+      "The inherent risk of penny stocks and potential for manipulation",
+      "FOMO (Fear Of Missing Out) driving irrational investment decisions",
+      "Market corrections and broader economic downturns"
+    ],
+    "grok_cross_reference": {
+      "cross_reference": [
+        {
+          "ticker": "QUBT",
+          "tiktok_hype": "high",
+          "x_sentiment": "bullish",
+          "x_agrees_with_tiktok": true,
+          "x_evidence": "Multiple X posts mentioning quantum computing potential and recent partnerships; users citing breakout above key resistance levels.",
+          "smart_money_signal": "unknown"
+        },
+        {
+          "ticker": "VERI",
+          "tiktok_hype": "medium",
+          "x_sentiment": "neutral",
+          "x_agrees_with_tiktok": false,
+          "x_evidence": "Mixed opinions on X; some users highlight AI-driven growth, others question valuation and lack of recent catalysts.",
+          "smart_money_signal": "no"
+        },
+        {
+          "ticker": "SMRT",
+          "tiktok_hype": "high",
+          "x_sentiment": "bearish",
+          "x_agrees_with_tiktok": false,
+          "x_evidence": "X users pointing to overvaluation and insider selling; sentiment leans toward caution or shorting.",
+          "smart_money_signal": "no"
+        },
+        {
+          "ticker": "QBTS",
+          "tiktok_hype": "medium",
+          "x_sentiment": "bullish",
+          "x_agrees_with_tiktok": true,
+          "x_evidence": "Positive chatter on X about quantum tech advancements and potential government contracts; volume spikes noted.",
+          "smart_money_signal": "yes"
+        },
+        {
+          "ticker": "JOBY",
+          "tiktok_hype": "high",
+          "x_sentiment": "bullish",
+          "x_agrees_with_tiktok": true,
+          "x_evidence": "Strong bullish sentiment on X; users excited about eVTOL progress and upcoming milestones; memes and retail hype evident.",
+          "smart_money_signal": "yes"
+        }
+      ],
+      "divergences": [
+        "VERI",
+        "SMRT"
+      ],
+      "confirmed_picks": [
+        "QUBT",
+        "QBTS",
+        "JOBY"
+      ]
+    },
+    "timestamp": "2026-03-12T08:08:06.949577",
+    "scanner": "tiktok",
+    "posts_found": 45
+  },
+  {
+    "timestamp": "2026-03-12T08:35:55.621076",
+    "scanner": "tiktok",
+    "type": "quick_scan",
+    "ticker": "MSTR",
+    "overall_sentiment": "neutral",
+    "summary": "TikTok sentiment around MSTR is mixed, with some users viewing it as a strong, long-term investment tied to Bitcoin's performance, while others express concerns about its volatility and meme-stock characteristics. There's a notable presence of users actively investing in MSTR with a long-term strategy, alongside discussions about potential crashes and predictions.",
+    "signals": [
+      {
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "The presence of active long-term investors and discussions about strategy suggest potential interest, but the mixed sentiment and volatility concerns warrant cautious observation."
+      },
+      {
+        "signal": "watch",
+        "confidence": "low",
+        "reason": "The mention of 'Mstr Stock Prediction Crash' and 'Astrologer Prediction on Stock Market' indicates speculative interest and a potential for unpredictable price movements, making it a risky proposition for short-term gains."
+      }
+    ],
+    "viral_picks": [
+      {
+        "ticker": "MSTR",
+        "hype_level": "trending",
+        "ten_x_potential": "medium",
+        "bull_case": "TikTok users see MSTR as a 'beast of a stock' and a strategic long-term investment, particularly for those bullish on Bitcoin. Some are actively investing with a disciplined, non-emotional approach, viewing it as an opportunity for growth tied to the cryptocurrency market."
+      }
+    ],
+    "hot_tickers": [
+      "MSTR"
+    ],
+    "posts_found": 8
+  },
+  {
+    "summary": "FinTok is buzzing with anticipation for 2026, with a strong focus on 'moonshot' stocks promising high returns. Key themes include emerging technologies like quantum computing and AI, alongside speculative plays in sectors like nuclear energy, eVTOL, and space. There's a clear emphasis on identifying early-stage companies with significant growth potential, often driven by AI-powered insights and influencer recommendations.",
+    "overall_sentiment": "euphoric",
+    "viral_picks": [
+      {
+        "ticker": "JOBY",
+        "hype_level": "viral",
+        "bull_case": "Joby Aviation is positioned as a leader in the eVTOL sector, with significant manufacturing expansion plans and a stock that has already seen substantial year-to-date gains. TikTok creators highlight its potential to revolutionize air travel.",
+        "sector": "eVTOL",
+        "ten_x_potential": "high",
+        "risk_warning": "Regulatory hurdles, intense competition, and the long timeline for widespread adoption of eVTOL technology."
+      },
+      {
+        "ticker": "IONQ",
+        "hype_level": "trending",
+        "bull_case": "IonQ is frequently mentioned as a leading player in quantum computing, a sector seen as having immense future potential. Grok AI specifically identifies it as a potential 5x stock for 2026.",
+        "sector": "quantum",
+        "ten_x_potential": "high",
+        "risk_warning": "Quantum computing is still in its nascent stages, with significant technological challenges and a long path to commercial viability. Competition is also increasing."
+      },
+      {
+        "ticker": "RKLB",
+        "hype_level": "trending",
+        "bull_case": "Rocket Lab is highlighted as a key player in the space sector, with potential for significant returns. It's often grouped with other space-related 'moonshot' stocks.",
+        "sector": "space",
+        "ten_x_potential": "high",
+        "risk_warning": "The space industry is capital-intensive and subject to project delays, launch failures, and intense competition from both established players and new entrants."
+      },
+      {
+        "ticker": "SMR",
+        "hype_level": "emerging",
+        "bull_case": "Small Modular Reactors (SMRs) are being touted as a clean tech boom with significant growth opportunities in 2026. SMR is a representative ticker for this emerging sector.",
+        "sector": "nuclear",
+        "ten_x_potential": "high",
+        "risk_warning": "Regulatory approval, public perception, high upfront costs, and long development timelines for nuclear projects."
+      },
+      {
+        "ticker": "ESLG",
+        "hype_level": "emerging",
+        "bull_case": "Eshallgo is presented as a small-cap company leveraging enterprise AI for growth, suggesting it's an early-stage AI play with high potential, distinct from larger tech giants.",
+        "sector": "AI",
+        "ten_x_potential": "high",
+        "risk_warning": "As a small-cap, it carries higher risk. Success is dependent on effective AI implementation and market adoption, with significant competition."
+      }
+    ],
+    "signals": [
+      {
+        "ticker": "JOBY",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Significant year-to-date gains and aggressive manufacturing expansion plans make it a key player to monitor in the eVTOL space."
+      },
+      {
+        "ticker": "IONQ",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Grok AI's mention as a 5x potential stock for 2026, combined with the general excitement around quantum computing, warrants close observation."
+      },
+      {
+        "ticker": "SMR",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "The emerging narrative around nuclear energy and clean tech growth in 2026 positions SMRs as a sector to track for potential breakthroughs."
+      },
+      {
+        "ticker": "ESLG",
+        "signal": "watch",
+        "confidence": "low",
+        "reason": "Mentioned as a small-cap AI play, but details are scarce. Requires further due diligence to assess its AI leverage and growth prospects."
+      },
+      {
+        "ticker": "SMRT",
+        "signal": "watch",
+        "confidence": "low",
+        "reason": "Mentioned for strong revenue growth (60% last quarter) and being a real estate technology company. Needs more context on its long-term potential and competitive landscape."
+      },
+      {
+        "ticker": "VLD",
+        "signal": "watch",
+        "confidence": "low",
+        "reason": "Identified as a 3D printing company. The specific application and market potential need further investigation to assess its moonshot capabilities."
+      }
+    ],
+    "hot_tickers": [
+      "JOBY",
+      "IONQ",
+      "RKLB",
+      "SMR",
+      "ESLG",
+      "SMRT",
+      "VLD",
+      "HIMS",
+      "MARA",
+      "RIOT",
+      "COIN",
+      "DNA",
+      "CRSP",
+      "BEAM",
+      "ACHR",
+      "LILM",
+      "RGTI",
+      "QUBT",
+      "OKLO",
+      "LUNR",
+      "ASTS"
+    ],
+    "meme_stocks": [
+      "Tesla"
+    ],
+    "catalysts": [
+      "AI-driven stock picks and predictions (Grok AI)",
+      "Technological advancements in quantum computing",
+      "Growth in the eVTOL and electric air taxi sector",
+      "Development and deployment of Small Modular Reactors (SMRs)",
+      "Increased investment in space exploration and commercialization",
+      "Potential for stock squeezes",
+      "Mergers and acquisitions in emerging tech sectors",
+      "Nancy Pelosi's investment strategies (as a signal of potential opportunities)"
+    ],
+    "risks": [
+      "High-risk, high-reward nature of moonshot stocks",
+      "Speculative nature of penny stocks and their potential for rapid declines",
+      "Regulatory uncertainties in emerging industries (eVTOL, nuclear, quantum)",
+      "Intense competition in all highlighted sectors",
+      "Long development and adoption timelines for disruptive technologies",
+      "Market volatility and potential for broad market downturns",
+      "FOMO-driven investing without proper due diligence",
+      "The possibility of short squeezes being manipulated or failing"
+    ],
+    "grok_cross_reference": {
+      "cross_reference": [
+        {
+          "ticker": "ESLG",
+          "tiktok_hype": "high",
+          "x_sentiment": "neutral",
+          "x_agrees_with_tiktok": false,
+          "x_evidence": "X users are mixed on ESLG; some mention potential growth in ESG sector, but others question overvaluation and lack of fundamentals.",
+          "smart_money_signal": "unknown"
+        },
+        {
+          "ticker": "RKLB",
+          "tiktok_hype": "high",
+          "x_sentiment": "bullish",
+          "x_agrees_with_tiktok": true,
+          "x_evidence": "X posts are overwhelmingly positive on RKLB, citing recent successful launches and long-term space industry potential.",
+          "smart_money_signal": "yes"
+        },
+        {
+          "ticker": "SMR",
+          "tiktok_hype": "medium",
+          "x_sentiment": "bullish",
+          "x_agrees_with_tiktok": true,
+          "x_evidence": "X sentiment leans positive for SMR, with users highlighting nuclear energy trends and government contracts.",
+          "smart_money_signal": "yes"
+        },
+        {
+          "ticker": "JOBY",
+          "tiktok_hype": "high",
+          "x_sentiment": "bearish",
+          "x_agrees_with_tiktok": false,
+          "x_evidence": "X users are skeptical of JOBY, pointing to high cash burn and delays in eVTOL certification as red flags.",
+          "smart_money_signal": "no"
+        },
+        {
+          "ticker": "IONQ",
+          "tiktok_hype": "medium",
+          "x_sentiment": "neutral",
+          "x_agrees_with_tiktok": false,
+          "x_evidence": "X discussions on IONQ are balanced; some see quantum computing as the future, while others call it speculative with no near-term revenue.",
+          "smart_money_signal": "unknown"
+        }
+      ],
+      "divergences": [
+        "ESLG",
+        "JOBY",
+        "IONQ"
+      ],
+      "confirmed_picks": [
+        "RKLB",
+        "SMR"
+      ]
+    },
+    "timestamp": "2026-03-12T09:39:27.636578",
+    "scanner": "tiktok",
+    "posts_found": 45
+  },
+  {
+    "timestamp": "2026-03-12T10:18:12.699147",
+    "scanner": "tiktok",
+    "type": "quick_scan",
+    "ticker": "NFLX",
+    "overall_sentiment": "neutral",
+    "summary": "TikTok content surrounding NFLX stock is highly varied, reflecting both significant price movements and investor interest in future performance. While some videos highlight positive news like Warner Brothers deals and impressive stock performance, others focus on sharp drops and potential stock splits, indicating a dynamic and closely watched stock.",
+    "signals": [
+      {
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "The content shows significant price swings and mixed news, making it a stock that investors are actively discussing and monitoring for both opportunities and risks."
+      },
+      {
+        "signal": "watch",
+        "confidence": "high",
+        "reason": "The frequent mention of 'stock price,' 'stock market,' and 'investing' indicates a high level of interest and ongoing discussion among TikTok users interested in financial markets."
+      },
+      {
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "The mention of a potential stock split in 2025 suggests future corporate actions that could impact share price and investor interest."
+      }
+    ],
+    "viral_picks": [
+      {
+        "ticker": "NFLX",
+        "hype_level": "trending",
+        "ten_x_potential": "low",
+        "bull_case": "TikTok users are drawn to NFLX due to its \"mooning\" stock price on positive news (e.g., Warner Brothers deal), impressive past performance, and discussions around future opportunities. The stock is seen as a critical indicator for investors."
+      }
+    ],
+    "hot_tickers": [
+      "NFLX"
+    ],
+    "posts_found": 8
+  }
+]

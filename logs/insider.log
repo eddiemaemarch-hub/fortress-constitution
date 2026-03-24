@@ -1,0 +1,163 @@
+[2026-03-11 13:21:27] Starting insider trading scan
+[2026-03-11 13:21:50] Gemini response: Here's an analysis of the provided insider trading data, focusing on the BUY vs. SELL ratio and its implications:
+
+**Data Analysis and Interpretation:**
+
+To accurately calculate a buy/sell ratio, we n
+[2026-03-11 13:21:50] JSON parse error: Expecting value: line 1 column 1 (char 0)
+[2026-03-11 13:21:55] Insider scan complete: signal=UNKNOWN, ratio=None
+[2026-03-11 13:22:26] Starting insider trading scan
+[2026-03-11 13:22:30] Gemini response: ```json
+{
+    "buy_sell_ratio": "1:10",
+    "signal": "BEARISH",
+    "signal_strength": "MODERATE",
+    "total_sell_volume": "$600,000,000+",
+    "total_buy_volume": "$148,101,266+",
+    "sell_pace": 
+[2026-03-11 13:22:34] Insider scan complete: signal=BEARISH, ratio=1:10
+[2026-03-11 13:22:34] Universe overlap detected — Telegram alert sent
+[2026-03-11 13:31:00] Starting insider trading scan
+[2026-03-11 13:31:00] No Tavily API key
+[2026-03-11 13:31:00] No Tavily API key
+[2026-03-11 13:31:00] No Tavily API key
+[2026-03-11 13:31:00] No Tavily API key
+[2026-03-11 13:31:00] No insider data found
+[2026-03-11 14:37:43] Starting insider trading scan
+[2026-03-11 14:37:59] Gemini response: ```json
+{
+    "buy_sell_ratio": "1:3.8",
+    "signal": "NEUTRAL",
+    "signal_strength": "MODERATE",
+    "total_sell_volume": "$147,669,517",
+    "total_buy_volume": "$38,381,907",
+    "sell_pace": "N
+[2026-03-11 14:38:02] Insider scan complete: signal=NEUTRAL, ratio=1:3.8
+[2026-03-11 14:38:02] Universe overlap detected — Telegram alert sent
+[2026-03-11 14:52:07] Starting insider trading scan
+[2026-03-11 14:52:07] No Tavily API key
+[2026-03-11 14:52:07] No Tavily API key
+[2026-03-11 14:52:07] No Tavily API key
+[2026-03-11 14:52:07] No Tavily API key
+[2026-03-11 14:52:07] No insider data found
+[2026-03-11 15:37:14] Starting insider trading scan
+[2026-03-11 15:37:28] Gemini response: ```json
+{
+    "buy_sell_ratio": "1:5",
+    "signal": "BEARISH",
+    "signal_strength": "MODERATE",
+    "total_sell_volume": "$120M+",
+    "total_buy_volume": "$25M+",
+    "sell_pace": "ACCELERATING",
+
+[2026-03-11 15:37:32] Insider scan complete: signal=BEARISH, ratio=1:5
+[2026-03-11 15:37:32] Universe overlap detected — Telegram alert sent
+[2026-03-11 16:10:48] Starting insider trading scan
+[2026-03-11 16:11:02] Gemini response: ```json
+{
+  "buy_sell_ratio": "Data insufficient to calculate a reliable ratio for the provided period.",
+  "signal": "NEUTRAL",
+  "signal_strength": "WEAK",
+  "total_sell_volume": "Estimated over $15
+[2026-03-11 16:11:04] Insider scan complete: signal=NEUTRAL, ratio=Data insufficient to calculate a reliable ratio for the provided period.
+[2026-03-11 16:11:05] Universe overlap detected — Telegram alert sent
+[2026-03-11 19:05:44] Starting insider trading scan
+[2026-03-11 19:05:58] Gemini response: ```json
+{
+    "buy_sell_ratio": "1:10",
+    "signal": "BEARISH",
+    "signal_strength": "MODERATE",
+    "total_sell_volume": "$170M+",
+    "total_buy_volume": "$3M+",
+    "sell_pace": "NORMAL",
+    "b
+[2026-03-11 19:06:00] Insider scan complete: signal=BEARISH, ratio=1:10
+[2026-03-11 19:06:01] Universe overlap detected — Telegram alert sent
+[2026-03-12 07:13:00] Quick scan: MSTR
+[2026-03-12 07:13:00] No Tavily API key
+[2026-03-12 07:27:45] Quick scan: IONQ
+[2026-03-12 07:27:45] No Tavily API key
+[2026-03-12 07:51:20] Quick scan: APPL
+[2026-03-12 07:57:09] Quick scan: NVDA
+[2026-03-12 07:58:10] Quick scan: NVDA
+[2026-03-12 08:08:07] Starting insider trading scan
+[2026-03-12 08:08:20] Gemini response: ```json
+{
+    "buy_sell_ratio": "1:10",
+    "signal": "BEARISH",
+    "signal_strength": "MODERATE",
+    "total_sell_volume": "$717,717,502",
+    "total_buy_volume": "$70,500,000",
+    "sell_pace": "NO
+[2026-03-12 08:08:23] Insider scan complete: signal=BEARISH, ratio=1:10
+[2026-03-12 08:08:24] Universe overlap detected — Telegram alert sent
+[2026-03-12 08:36:01] Quick scan: NVDA
+[2026-03-12 09:39:28] Starting insider trading scan
+[2026-03-12 09:39:43] Gemini response: ```json
+{
+    "buy_sell_ratio": "1:10",
+    "signal": "BEARISH",
+    "signal_strength": "MODERATE",
+    "total_sell_volume": "$100M+",
+    "total_buy_volume": "$10M+",
+    "sell_pace": "NORMAL",
+    "
+[2026-03-12 09:39:46] Insider scan complete: signal=BEARISH, ratio=1:10
+[2026-03-12 09:39:47] Universe overlap detected — Telegram alert sent
+[2026-03-12 10:19:11] Quick scan: TSLA
+[2026-03-12 10:35:46] Starting insider trading scan
+[2026-03-12 10:35:47] No insider data found
+[2026-03-12 11:31:31] Starting insider trading scan
+[2026-03-12 11:31:31] No insider data found
+[2026-03-12 12:33:48] Starting insider trading scan
+[2026-03-12 12:33:49] No insider data found
+[2026-03-12 13:32:30] Starting insider trading scan
+[2026-03-12 13:32:31] No insider data found
+[2026-03-12 14:32:34] Starting insider trading scan
+[2026-03-12 14:32:35] No insider data found
+[2026-03-12 15:32:35] Starting insider trading scan
+[2026-03-12 15:32:36] No insider data found
+[2026-03-12 16:06:20] Starting insider trading scan
+[2026-03-12 16:06:20] No insider data found
+[2026-03-12 19:01:13] Starting insider trading scan
+[2026-03-12 19:01:13] No insider data found
+[2026-03-13 08:01:37] Starting insider trading scan
+[2026-03-13 08:01:37] No insider data found
+[2026-03-13 09:35:56] Starting insider trading scan
+[2026-03-13 09:35:57] No insider data found
+[2026-03-13 10:48:34] Starting insider trading scan
+[2026-03-13 10:48:35] No insider data found
+[2026-03-13 11:35:31] Starting insider trading scan
+[2026-03-13 11:35:32] No insider data found
+[2026-03-13 12:31:51] Starting insider trading scan
+[2026-03-13 12:31:51] No insider data found
+[2026-03-13 13:34:48] Starting insider trading scan
+[2026-03-13 13:34:48] No insider data found
+[2026-03-13 14:33:53] Starting insider trading scan
+[2026-03-13 14:33:54] No insider data found
+[2026-03-13 15:33:11] Starting insider trading scan
+[2026-03-13 15:33:11] No insider data found
+[2026-03-13 16:06:24] Starting insider trading scan
+[2026-03-13 16:06:24] No insider data found
+[2026-03-13 19:01:35] Starting insider trading scan
+[2026-03-13 19:01:36] No insider data found
+[2026-03-14 10:01:51] Starting insider trading scan
+[2026-03-14 10:01:51] No insider data found
+[2026-03-15 10:02:05] Starting insider trading scan
+[2026-03-15 10:02:06] No insider data found
+[2026-03-16 08:01:55] Starting insider trading scan
+[2026-03-16 08:01:56] No insider data found
+[2026-03-16 09:31:44] Starting insider trading scan
+[2026-03-16 09:31:44] No insider data found
+[2026-03-16 10:32:08] Starting insider trading scan
+[2026-03-16 10:32:09] No insider data found
+[2026-03-16 11:35:38] Starting insider trading scan
+[2026-03-16 11:35:39] No insider data found
+[2026-03-16 16:07:36] Starting insider trading scan
+[2026-03-16 16:07:37] No insider data found
+[2026-03-16 19:02:44] Starting insider trading scan
+[2026-03-16 19:02:45] No insider data found
+[2026-03-17 08:01:44] Starting insider trading scan
+[2026-03-17 08:01:45] No insider data found
+[2026-03-23 14:49:03] Starting insider trading scan
+[2026-03-23 14:49:04] No insider data found

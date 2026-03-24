@@ -1,0 +1,86 @@
+{
+  "1": {
+    "name": "MSTR Lottery",
+    "mode": "paper",
+    "port": 7496,
+    "deployed_at": null,
+    "approved_by": null
+  },
+  "2": {
+    "name": "Conservative Diagonal",
+    "mode": "paper",
+    "port": 7496,
+    "deployed_at": null,
+    "approved_by": null
+  },
+  "3": {
+    "name": "Energy Momentum",
+    "mode": "paper",
+    "port": 7496,
+    "deployed_at": null,
+    "approved_by": null
+  },
+  "4": {
+    "name": "Short Squeeze",
+    "mode": "paper",
+    "port": 7496,
+    "deployed_at": null,
+    "approved_by": null
+  },
+  "5": {
+    "name": "Breakout Momentum",
+    "mode": "paper",
+    "port": 7496,
+    "deployed_at": null,
+    "approved_by": null
+  },
+  "6": {
+    "name": "Metals Momentum",
+    "mode": "paper",
+    "port": 7496,
+    "deployed_at": null,
+    "approved_by": null
+  },
+  "7": {
+    "name": "SpaceX IPO",
+    "mode": "paper",
+    "port": 7496,
+    "deployed_at": null,
+    "approved_by": null
+  },
+  "8": {
+    "name": "10X Moonshot",
+    "mode": "paper",
+    "port": 7496,
+    "deployed_at": null,
+    "approved_by": null
+  },
+  "9": {
+    "name": "SCHD Income PMCC",
+    "mode": "paper",
+    "port": 7496,
+    "deployed_at": null,
+    "approved_by": null
+  },
+  "10": {
+    "name": "SPY PMCC",
+    "mode": "paper",
+    "port": 7496,
+    "deployed_at": null,
+    "approved_by": null
+  },
+  "11": {
+    "name": "QQQ Growth Collar",
+    "mode": "paper",
+    "port": 7496,
+    "deployed_at": null,
+    "approved_by": null
+  },
+  "12": {
+    "name": "TQQQ Momentum",
+    "mode": "paper",
+    "port": 7496,
+    "deployed_at": null,
+    "approved_by": null
+  }
+}

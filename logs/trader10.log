@@ -1,0 +1,31 @@
+[2026-03-11 15:31:09] [SYS10] SPY PMCC Score: 60 | Close: $675.01 | RSI: 42.5
+[2026-03-11 15:31:09] [SYS10] Score 60 below threshold 65 — no entry
+[2026-03-12 09:31:18] [SYS10] SPY PMCC Score: 50 | Close: $670.91 | RSI: 35.1
+[2026-03-12 09:31:18] [SYS10] Score 50 below threshold 65 — no entry
+[2026-03-12 10:31:10] [SYS10] SPY PMCC Score: 50 | Close: $667.97 | RSI: 33.5
+[2026-03-12 10:31:10] [SYS10] Score 50 below threshold 65 — no entry
+[2026-03-12 11:30:01] [SYS10] IBKR connection failed: [Errno 61] Connect call failed ('127.0.0.1', 7497)
+[2026-03-12 12:32:06] [SYS10] SPY PMCC Score: 50 | Close: $668.59 | RSI: 33.9
+[2026-03-12 12:32:06] [SYS10] Score 50 below threshold 65 — no entry
+[2026-03-12 13:31:03] [SYS10] SPY PMCC Score: 50 | Close: $669.08 | RSI: 34.1
+[2026-03-12 13:31:03] [SYS10] Score 50 below threshold 65 — no entry
+[2026-03-12 14:31:06] [SYS10] SPY PMCC Score: 50 | Close: $668.14 | RSI: 33.6
+[2026-03-12 14:31:06] [SYS10] Score 50 below threshold 65 — no entry
+[2026-03-12 15:31:07] [SYS10] SPY PMCC Score: 50 | Close: $668.30 | RSI: 33.7
+[2026-03-12 15:31:07] [SYS10] Score 50 below threshold 65 — no entry
+[2026-03-13 09:33:17] [SYS10] SPY PMCC Score: 60 | Close: $669.82 | RSI: 40.1
+[2026-03-13 09:33:17] [SYS10] Score 60 below threshold 65 — no entry
+[2026-03-13 10:46:54] [SYS10] SPY PMCC Score: 50 | Close: $666.48 | RSI: 36.8
+[2026-03-13 10:46:54] [SYS10] Score 50 below threshold 65 — no entry
+[2026-03-13 11:33:36] [SYS10] SPY PMCC Score: 50 | Close: $664.68 | RSI: 35.6
+[2026-03-13 11:33:36] [SYS10] Score 50 below threshold 65 — no entry
+[2026-03-13 12:30:02] [SYS10] IBKR connection failed: [Errno 61] Connect call failed ('127.0.0.1', 7497)
+[2026-03-13 13:32:47] [SYS10] SPY PMCC Score: 50 | Close: $664.20 | RSI: 35.3
+[2026-03-13 13:32:47] [SYS10] Score 50 below threshold 65 — no entry
+[2026-03-13 14:32:01] [SYS10] SPY PMCC Score: 50 | Close: $663.68 | RSI: 35.0
+[2026-03-13 14:32:01] [SYS10] Score 50 below threshold 65 — no entry
+[2026-03-13 15:31:14] [SYS10] IBKR connection failed: 
+[2026-03-16 09:30:02] [SYS10] IBKR connection failed: [Errno 61] Connect call failed ('127.0.0.1', 7497)
+[2026-03-16 10:30:02] [SYS10] IBKR connection failed: [Errno 61] Connect call failed ('127.0.0.1', 7497)
+[2026-03-16 11:32:05] [SYS10] SPY PMCC Score: 50 | Close: $670.39 | RSI: 37.3
+[2026-03-16 11:32:05] [SYS10] Score 50 below threshold 65 — no entry

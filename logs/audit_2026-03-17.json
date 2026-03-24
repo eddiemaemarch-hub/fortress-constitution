@@ -1,0 +1,349 @@
+{
+  "timestamp": "2026-03-17T20:11:00.800574",
+  "status": "\u26a0\ufe0f 22 MISMATCHES",
+  "account": {
+    "net_liq": 248987.68,
+    "cash": 261362.63,
+    "unrealized_pnl": -825.75
+  },
+  "ibkr_positions": [
+    {
+      "symbol": "GME",
+      "secType": "OPT",
+      "qty": -8.0,
+      "avg_cost": 34.72876,
+      "strike": 25.5,
+      "expiry": "20260327",
+      "right": "C",
+      "conId": 852270751
+    },
+    {
+      "symbol": "NEM",
+      "secType": "OPT",
+      "qty": -1.0,
+      "avg_cost": 669.22876,
+      "strike": 113.0,
+      "expiry": "20260501",
+      "right": "C",
+      "conId": 863437604
+    },
+    {
+      "symbol": "DNA",
+      "secType": "OPT",
+      "qty": -3.0,
+      "avg_cost": 115.29876,
+      "strike": 6.0,
+      "expiry": "20260618",
+      "right": "C",
+      "conId": 823206916
+    },
+    {
+      "symbol": "BKSY",
+      "secType": "OPT",
+      "qty": -1.0,
+      "avg_cost": 429.59876,
+      "strike": 25.0,
+      "expiry": "20260515",
+      "right": "C",
+      "conId": 815267660
+    },
+    {
+      "symbol": "OXY",
+      "secType": "OPT",
+      "qty": -4.0,
+      "avg_cost": 164.55626,
+      "strike": 60.0,
+      "expiry": "20260417",
+      "right": "C",
+      "conId": 809330724
+    },
+    {
+      "symbol": "XOM",
+      "secType": "OPT",
+      "qty": -1.0,
+      "avg_cost": 564.22876,
+      "strike": 160.0,
+      "expiry": "20260417",
+      "right": "C",
+      "conId": 807304220
+    },
+    {
+      "symbol": "COIN",
+      "secType": "OPT",
+      "qty": -1.0,
+      "avg_cost": 719.22876,
+      "strike": 210.0,
+      "expiry": "20260327",
+      "right": "C",
+      "conId": 852253389
+    },
+    {
+      "symbol": "GLD",
+      "secType": "OPT",
+      "qty": -1.0,
+      "avg_cost": 1048.94876,
+      "strike": 485.0,
+      "expiry": "20260515",
+      "right": "C",
+      "conId": 817343408
+    },
+    {
+      "symbol": "RKLB",
+      "secType": "OPT",
+      "qty": -1.0,
+      "avg_cost": 1329.22876,
+      "strike": 70.0,
+      "expiry": "20260515",
+      "right": "C",
+      "conId": 859565950
+    },
+    {
+      "symbol": "MARA",
+      "secType": "OPT",
+      "qty": -9.0,
+      "avg_cost": 14.29876,
+      "strike": 10.5,
+      "expiry": "20260327",
+      "right": "C",
+      "conId": 852297660
+    },
+    {
+      "symbol": "SOUN",
+      "secType": "OPT",
+      "qty": -3.0,
+      "avg_cost": 60.57876,
+      "strike": 7.0,
+      "expiry": "20260515",
+      "right": "P",
+      "conId": 862984196
+    },
+    {
+      "symbol": "GDX",
+      "secType": "OPT",
+      "qty": -1.0,
+      "avg_cost": 529.22876,
+      "strike": 95.5,
+      "expiry": "20260501",
+      "right": "C",
+      "conId": 863426444
+    },
+    {
+      "symbol": "CVX",
+      "secType": "OPT",
+      "qty": -1.0,
+      "avg_cost": 634.22876,
+      "strike": 200.0,
+      "expiry": "20260417",
+      "right": "C",
+      "conId": 845403354
+    },
+    {
+      "symbol": "AG",
+      "secType": "OPT",
+      "qty": -1.0,
+      "avg_cost": 252.22876,
+      "strike": 26.0,
+      "expiry": "20260717",
+      "right": "C",
+      "conId": 835691313
+    },
+    {
+      "symbol": "FANG",
+      "secType": "OPT",
+      "qty": -2.0,
+      "avg_cost": 1189.59876,
+      "strike": 180.0,
+      "expiry": "20260417",
+      "right": "C",
+      "conId": 856173226
+    },
+    {
+      "symbol": "MSFT",
+      "secType": "OPT",
+      "qty": -1.0,
+      "avg_cost": 193.94876,
+      "strike": 385.0,
+      "expiry": "20260325",
+      "right": "P",
+      "conId": 862592457
+    },
+    {
+      "symbol": "DNA",
+      "secType": "OPT",
+      "qty": -3.0,
+      "avg_cost": 59.94876,
+      "strike": 6.0,
+      "expiry": "20260618",
+      "right": "P",
+      "conId": 823208305
+    },
+    {
+      "symbol": "GDX",
+      "secType": "OPT",
+      "qty": -1.0,
+      "avg_cost": 404.22876,
+      "strike": 103.0,
+      "expiry": "20260515",
+      "right": "C",
+      "conId": 848470322
+    },
+    {
+      "symbol": "BFLY",
+      "secType": "OPT",
+      "qty": -3.0,
+      "avg_cost": 94.94876,
+      "strike": 4.0,
+      "expiry": "20260717",
+      "right": "C",
+      "conId": 833271371
+    },
+    {
+      "symbol": "RKLB",
+      "secType": "OPT",
+      "qty": -1.0,
+      "avg_cost": 704.22876,
+      "strike": 70.0,
+      "expiry": "20260515",
+      "right": "P",
+      "conId": 859566173
+    },
+    {
+      "symbol": "GOLD",
+      "secType": "OPT",
+      "qty": -1.0,
+      "avg_cost": 349.59876,
+      "strike": 50.0,
+      "expiry": "20260515",
+      "right": "C",
+      "conId": 841935179
+    },
+    {
+      "symbol": "AAPL",
+      "secType": "OPT",
+      "qty": -1.0,
+      "avg_cost": 220.22876,
+      "strike": 250.0,
+      "expiry": "20260325",
+      "right": "P",
+      "conId": 862590725
+    }
+  ],
+  "ibkr_position_count": 22,
+  "rudy_positions": [],
+  "rudy_position_count": 0,
+  "open_orders": [],
+  "open_order_count": 0,
+  "mismatches": [
+    {
+      "type": "ORPHAN",
+      "symbol": "GME",
+      "detail": "In IBKR (OPT qty=-8.0) but NOT tracked by Rudy"
+    },
+    {
+      "type": "ORPHAN",
+      "symbol": "NEM",
+      "detail": "In IBKR (OPT qty=-1.0) but NOT tracked by Rudy"
+    },
+    {
+      "type": "ORPHAN",
+      "symbol": "DNA",
+      "detail": "In IBKR (OPT qty=-3.0) but NOT tracked by Rudy"
+    },
+    {
+      "type": "ORPHAN",
+      "symbol": "DNA",
+      "detail": "In IBKR (OPT qty=-3.0) but NOT tracked by Rudy"
+    },
+    {
+      "type": "ORPHAN",
+      "symbol": "BKSY",
+      "detail": "In IBKR (OPT qty=-1.0) but NOT tracked by Rudy"
+    },
+    {
+      "type": "ORPHAN",
+      "symbol": "OXY",
+      "detail": "In IBKR (OPT qty=-4.0) but NOT tracked by Rudy"
+    },
+    {
+      "type": "ORPHAN",
+      "symbol": "XOM",
+      "detail": "In IBKR (OPT qty=-1.0) but NOT tracked by Rudy"
+    },
+    {
+      "type": "ORPHAN",
+      "symbol": "COIN",
+      "detail": "In IBKR (OPT qty=-1.0) but NOT tracked by Rudy"
+    },
+    {
+      "type": "ORPHAN",
+      "symbol": "GLD",
+      "detail": "In IBKR (OPT qty=-1.0) but NOT tracked by Rudy"
+    },
+    {
+      "type": "ORPHAN",
+      "symbol": "RKLB",
+      "detail": "In IBKR (OPT qty=-1.0) but NOT tracked by Rudy"
+    },
+    {
+      "type": "ORPHAN",
+      "symbol": "RKLB",
+      "detail": "In IBKR (OPT qty=-1.0) but NOT tracked by Rudy"
+    },
+    {
+      "type": "ORPHAN",
+      "symbol": "MARA",
+      "detail": "In IBKR (OPT qty=-9.0) but NOT tracked by Rudy"
+    },
+    {
+      "type": "ORPHAN",
+      "symbol": "SOUN",
+      "detail": "In IBKR (OPT qty=-3.0) but NOT tracked by Rudy"
+    },
+    {
+      "type": "ORPHAN",
+      "symbol": "GDX",
+      "detail": "In IBKR (OPT qty=-1.0) but NOT tracked by Rudy"
+    },
+    {
+      "type": "ORPHAN",
+      "symbol": "GDX",
+      "detail": "In IBKR (OPT qty=-1.0) but NOT tracked by Rudy"
+    },
+    {
+      "type": "ORPHAN",
+      "symbol": "CVX",
+      "detail": "In IBKR (OPT qty=-1.0) but NOT tracked by Rudy"
+    },
+    {
+      "type": "ORPHAN",
+      "symbol": "AG",
+      "detail": "In IBKR (OPT qty=-1.0) but NOT tracked by Rudy"
+    },
+    {
+      "type": "ORPHAN",
+      "symbol": "FANG",
+      "detail": "In IBKR (OPT qty=-2.0) but NOT tracked by Rudy"
+    },
+    {
+      "type": "ORPHAN",
+      "symbol": "MSFT",
+      "detail": "In IBKR (OPT qty=-1.0) but NOT tracked by Rudy"
+    },
+    {
+      "type": "ORPHAN",
+      "symbol": "BFLY",
+      "detail": "In IBKR (OPT qty=-3.0) but NOT tracked by Rudy"
+    },
+    {
+      "type": "ORPHAN",
+      "symbol": "GOLD",
+      "detail": "In IBKR (OPT qty=-1.0) but NOT tracked by Rudy"
+    },
+    {
+      "type": "ORPHAN",
+      "symbol": "AAPL",
+      "detail": "In IBKR (OPT qty=-1.0) but NOT tracked by Rudy"
+    }
+  ],
+  "mismatch_count": 22
+}

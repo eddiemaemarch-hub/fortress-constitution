@@ -1,0 +1,101 @@
+// Rudy v2.0 — System 2: Conservative Diagonal Signal Generator
+// Constitution v50.0
+// Tickers: ANY except MSTR, IBIT (those are System 1 exclusive)
+// Strategy: Diagonal spreads, $250 max risk per trade
+
+//@version=5
+indicator("Rudy System 2 — Conservative Diagonal", overlay=true, max_labels_count=50)
+
+// === INPUTS ===
+emaFast     = input.int(50, "Fast EMA")
+emaSlow     = input.int(200, "Slow EMA")
+rsiLen      = input.int(14, "RSI Length")
+rsiBullLow  = input.int(40, "RSI Bull Pullback Low")
+rsiBullHigh = input.int(50, "RSI Bull Pullback High")
+rsiBearLow  = input.int(60, "RSI Bear Pullback Low")
+rsiBearHigh = input.int(70, "RSI Bear Pullback High")
+macdFast    = input.int(12, "MACD Fast")
+macdSlow    = input.int(26, "MACD Slow")
+macdSignal  = input.int(9, "MACD Signal")
+maxRisk     = input.float(250, "Max Risk Per Trade ($)")
+
+// === CALCULATIONS ===
+ema50 = ta.ema(close, emaFast)
+ema200 = ta.ema(close, emaSlow)
+rsi = ta.rsi(close, rsiLen)
+[macdLine, signalLine, hist] = ta.macd(close, macdFast, macdSlow, macdSignal)
+macdBullCross = ta.crossover(macdLine, signalLine)
+macdBearCross = ta.crossunder(macdLine, signalLine)
+
+// Trend detection
+bullTrend = ema50 > ema200
+bearTrend = ema50 < ema200
+
+// === TICKER EXCLUSION ===
+isExcluded = syminfo.ticker == "MSTR" or syminfo.ticker == "IBIT" or syminfo.ticker == "MSTR.O" or syminfo.ticker == "IBIT.O"
+
+if isExcluded and barstate.islast
+    label.new(bar_index, high, "BLOCKED: " + syminfo.ticker + " is System 1 exclusive\nRemove this indicator",
+              color=color.red, textcolor=color.white, style=label.style_label_down, size=size.large)
+
+// === SIGNAL LOGIC ===
+// Bullish diagonal entry: uptrend + RSI pullback to 40-50 + MACD bullish cross
+bullSignal = bullTrend and rsi >= rsiBullLow and rsi <= rsiBullHigh and macdBullCross and not isExcluded
+
+// Bearish diagonal entry: downtrend + RSI rally to 60-70 + MACD bearish cross
+bearSignal = bearTrend and rsi >= rsiBearLow and rsi <= rsiBearHigh and macdBearCross and not isExcluded
+
+// Prevent duplicate signals within 5 bars
+var int lastBullBar = 0
+var int lastBearBar = 0
+bullFiltered = bullSignal and (bar_index - lastBullBar > 5)
+bearFiltered = bearSignal and (bar_index - lastBearBar > 5)
+
+if bullFiltered
+    lastBullBar := bar_index
+if bearFiltered
+    lastBearBar := bar_index
+
+// === PLOT SIGNALS ===
+plotshape(bullFiltered, title="Bullish Diagonal Entry",
+          style=shape.triangleup, location=location.belowbar,
+          color=color.lime, size=size.normal, text="S2 BULL")
+
+plotshape(bearFiltered, title="Bearish Diagonal Entry",
+          style=shape.triangledown, location=location.abovebar,
+          color=color.red, size=size.normal, text="S2 BEAR")
+
+// === TREND VISUALIZATION ===
+plot(ema50, "EMA 50", color=color.new(color.blue, 30), linewidth=2)
+plot(ema200, "EMA 200", color=color.new(color.orange, 30), linewidth=2)
+
+// Trend background
+bgcolor(bullTrend and not isExcluded ? color.new(color.green, 95) : bearTrend and not isExcluded ? color.new(color.red, 95) : na, title="Trend Background")
+
+// === INFO TABLE ===
+var table infoTable = table.new(position.top_right, 2, 7, bgcolor=color.new(color.black, 80), border_width=1)
+
+if barstate.islast
+    table.cell(infoTable, 0, 0, "RUDY S2", text_color=color.aqua, text_size=size.normal)
+    table.cell(infoTable, 1, 0, "Diagonal", text_color=color.white, text_size=size.small)
+    table.cell(infoTable, 0, 1, "Trend", text_color=color.gray, text_size=size.small)
+    table.cell(infoTable, 1, 1, bullTrend ? "BULLISH" : "BEARISH", text_color=bullTrend ? color.lime : color.red, text_size=size.small)
+    table.cell(infoTable, 0, 2, "RSI", text_color=color.gray, text_size=size.small)
+    table.cell(infoTable, 1, 2, str.tostring(rsi, "#.0"), text_color=color.white, text_size=size.small)
+    table.cell(infoTable, 0, 3, "MACD", text_color=color.gray, text_size=size.small)
+    table.cell(infoTable, 1, 3, macdLine > signalLine ? "BULLISH" : "BEARISH", text_color=macdLine > signalLine ? color.lime : color.red, text_size=size.small)
+    table.cell(infoTable, 0, 4, "Max Risk", text_color=color.gray, text_size=size.small)
+    table.cell(infoTable, 1, 4, "$" + str.tostring(maxRisk, "#"), text_color=color.yellow, text_size=size.small)
+    table.cell(infoTable, 0, 5, "Ticker", text_color=color.gray, text_size=size.small)
+    table.cell(infoTable, 1, 5, isExcluded ? "BLOCKED" : syminfo.ticker, text_color=isExcluded ? color.red : color.lime, text_size=size.small)
+    table.cell(infoTable, 0, 6, "EMA 50/200", text_color=color.gray, text_size=size.small)
+    table.cell(infoTable, 1, 6, str.tostring(ema50, "#.##") + " / " + str.tostring(ema200, "#.##"), text_color=color.white, text_size=size.small)
+
+// === ALERTS ===
+// Bullish diagonal entry
+alertcondition(bullFiltered, title="S2 Bullish Diagonal Entry",
+     message='{"system": "system2", "ticker": "{{ticker}}", "action": "BUY", "price": {{close}}, "structure": "bullish_diagonal", "risk": 250, "timestamp": "{{time}}", "message": "System 2 bullish diagonal — uptrend pullback + MACD cross"}')
+
+// Bearish diagonal entry
+alertcondition(bearFiltered, title="S2 Bearish Diagonal Entry",
+     message='{"system": "system2", "ticker": "{{ticker}}", "action": "BUY", "price": {{close}}, "structure": "bearish_diagonal", "risk": 250, "timestamp": "{{time}}", "message": "System 2 bearish diagonal — downtrend rally + MACD cross"}')

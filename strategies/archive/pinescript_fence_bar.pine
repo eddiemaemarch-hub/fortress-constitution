@@ -1,0 +1,269 @@
+//@version=6
+// Rudy - Fence Bar Opening Range Strategy
+// First 5-min candle = fence. Breakout + retest = entry. 2R target.
+// Apply to: SPY, QQQ, AAPL, TSLA, NVDA, AMD (5-minute chart)
+strategy("Rudy Fence Bar v1", overlay=true, default_qty_type=strategy.percent_of_equity, default_qty_value=10, initial_capital=10000, commission_type=strategy.commission.percent, commission_value=0.5, slippage=5, pyramiding=0)
+
+// --- Parameters ---
+p_session_start = input.int(930, "Session Start (HHMM)", group="Fence Setup")
+p_fence_end     = input.int(935, "Fence Candle End (HHMM)", group="Fence Setup")
+p_session_close = input.int(1100, "Stop Trading After (HHMM)", group="Fence Setup")
+p_rr            = input.float(2.0, "Reward:Risk Ratio", group="Risk Management")
+p_stop_depth    = input.float(0.5, "Stop Depth Into Fence (0.5 = 50%)", group="Risk Management")
+p_anchor_len    = input.int(20, "Anchor Line (SMA) Period", group="Filters")
+p_use_anchor    = input.bool(true, "Use Anchor Line Filter", group="Filters")
+p_anchor_margin = input.float(0.3, "Anchor Distance Reduction %", group="Filters") / 100
+p_eod_exit      = input.bool(true, "Close All at End of Day", group="Risk Management")
+p_hwm_trail_pct = input.float(30.0, "HWM Trail Floor %", group="Risk Management")
+p_hwm_lookback  = input.int(78, "HWM Lookback Bars", group="Risk Management")
+
+// Laddered Trailing Stop (tightens as gains grow)
+p_lad_t1_gain  = input.float(15,   "Ladder Tier 1 at +%", group="Laddered Trail")
+p_lad_t1_trail = input.float(15.0, "Ladder Tier 1 Trail %", group="Laddered Trail")
+p_lad_t2_gain  = input.float(30,   "Ladder Tier 2 at +%", group="Laddered Trail")
+p_lad_t2_trail = input.float(12.0, "Ladder Tier 2 Trail %", group="Laddered Trail")
+p_lad_t3_gain  = input.float(50,   "Ladder Tier 3 at +%", group="Laddered Trail")
+p_lad_t3_trail = input.float(10.0, "Ladder Tier 3 Trail %", group="Laddered Trail")
+
+// --- Profit Taking ---
+p_pt_tier1_pct  = input.float(30.0, "Tier 1 Profit %", group="Profit Taking")
+p_pt_tier1_sell = input.float(50.0, "Tier 1 Sell %", group="Profit Taking")
+p_pt_tier2_pct  = input.float(50.0, "Tier 2 Profit %", group="Profit Taking")
+p_pt_tier2_sell = input.float(100.0, "Tier 2 Sell %", group="Profit Taking")
+
+p_show_fence    = input.bool(true, "Show Fence Lines", group="Display")
+p_show_dash     = input.bool(true, "Show Dashboard", group="Display")
+
+// --- Time Helpers ---
+currentTime = hour * 100 + minute
+isFenceBar = currentTime >= p_session_start and currentTime < p_fence_end
+inSession = currentTime >= p_fence_end and currentTime < p_session_close
+isNewDay = ta.change(time("D")) != 0
+
+// --- Anchor Line ---
+anchor = ta.sma(close, p_anchor_len)
+
+// --- Fence Tracking ---
+var fenceHigh = 0.0
+var fenceLow = 0.0
+var fenceSet = false
+var brokeAbove = false
+var brokeBelow = false
+var retestLong = false
+var retestShort = false
+var tradesTakenToday = 0
+
+// Reset at start of each day
+if isNewDay
+    fenceHigh := 0.0
+    fenceLow := 0.0
+    fenceSet := false
+    brokeAbove := false
+    brokeBelow := false
+    retestLong := false
+    retestShort := false
+    tradesTakenToday := 0
+
+// Capture the fence bar high/low
+if isFenceBar
+    if fenceHigh == 0.0
+        fenceHigh := high
+        fenceLow := low
+    else
+        fenceHigh := math.max(fenceHigh, high)
+        fenceLow := math.min(fenceLow, low)
+    fenceSet := true
+
+// --- Fence Dimensions ---
+fenceRange = fenceHigh - fenceLow
+fenceMid = (fenceHigh + fenceLow) / 2
+
+// --- Breakout Detection ---
+// Breakout above: candle closes entirely above fence top
+if fenceSet and inSession and not brokeAbove and close > fenceHigh and low > fenceLow
+    brokeAbove := true
+
+// Breakout below: candle closes entirely below fence bottom
+if fenceSet and inSession and not brokeBelow and close < fenceLow and high < fenceHigh
+    brokeBelow := true
+
+// --- Retest Detection ---
+// Long retest: after breakout above, price wicks back to fence but closes above
+if brokeAbove and not retestLong and inSession
+    if low <= fenceHigh and close > fenceHigh
+        retestLong := true
+
+// Short retest: after breakout below, price wicks back to fence but closes below
+if brokeBelow and not retestShort and inSession
+    if high >= fenceLow and close < fenceLow
+        retestShort := true
+
+// --- Position State ---
+inLong = strategy.position_size > 0
+inShort = strategy.position_size < 0
+flat = strategy.position_size == 0
+
+// --- Anchor Line Filter ---
+anchorBullish = not p_use_anchor or close > anchor
+anchorBearish = not p_use_anchor or close < anchor
+
+// Distance from anchor — reduce size/skip if too far
+anchorDist = math.abs(close - anchor) / anchor
+anchorFar = p_use_anchor and anchorDist > p_anchor_margin
+
+// --- Entry Logic ---
+// Long entry on retest confirmation
+longEntry = retestLong and flat and inSession and anchorBullish and not anchorFar and tradesTakenToday < 2
+// Short entry on retest confirmation
+shortEntry = retestShort and flat and inSession and anchorBearish and not anchorFar and tradesTakenToday < 2
+
+// --- Risk Calculation ---
+longStop = fenceMid + (fenceRange * (1 - p_stop_depth) / 2)
+longStopDist = close - (fenceHigh - fenceRange * p_stop_depth)
+longTarget = close + (longStopDist * p_rr)
+
+shortStop = fenceMid - (fenceRange * (1 - p_stop_depth) / 2)
+shortStopDist = (fenceLow + fenceRange * p_stop_depth) - close
+shortTarget = close - (shortStopDist * p_rr)
+
+// Actual stop = 50% into fence from the rail
+longStopPrice = fenceHigh - (fenceRange * p_stop_depth)
+shortStopPrice = fenceLow + (fenceRange * p_stop_depth)
+
+// --- Profit Taking Tiers ---
+var bool pt_tier1_done = false
+var bool pt_tier2_done = false
+
+if strategy.opentrades > 0
+    entry_price_pt = strategy.opentrades.entry_price(0)
+    gain_pct_pt = (close - entry_price_pt) / entry_price_pt * 100
+
+    if gain_pct_pt >= p_pt_tier1_pct and not pt_tier1_done
+        strategy.close(strategy.opentrades.entry_id(0), comment="PROFIT T1 +" + str.tostring(p_pt_tier1_pct, "#") + "%", qty_percent=p_pt_tier1_sell)
+        pt_tier1_done := true
+
+    if gain_pct_pt >= p_pt_tier2_pct and not pt_tier2_done
+        strategy.close(strategy.opentrades.entry_id(0), comment="PROFIT T2 +" + str.tostring(p_pt_tier2_pct, "#") + "%", qty_percent=p_pt_tier2_sell)
+        pt_tier2_done := true
+
+// Reset on new trade
+if strategy.opentrades == 0
+    pt_tier1_done := false
+    pt_tier2_done := false
+
+// --- Execute ---
+if longEntry
+    strategy.entry("Fence_Long", strategy.long)
+    strategy.exit("Fence_Long_X", "Fence_Long", stop=longStopPrice, limit=longTarget)
+    retestLong := false
+    tradesTakenToday += 1
+
+if shortEntry
+    strategy.entry("Fence_Short", strategy.short)
+    strategy.exit("Fence_Short_X", "Fence_Short", stop=shortStopPrice, limit=shortTarget)
+    retestShort := false
+    tradesTakenToday += 1
+
+// --- LADDERED Trailing Stop from HWM (Constitution v45.0) ---
+var float pos_hwm = 0.0
+if inLong
+    pos_hwm := math.max(pos_hwm, high)
+if flat
+    pos_hwm := 0.0
+hwm_val = pos_hwm > 0 ? pos_hwm : close
+float entry_px_lad = strategy.position_avg_price
+float gain_pct_lad = entry_px_lad > 0 ? (close - entry_px_lad) / entry_px_lad * 100 : 0
+float peak_gain_pct = inLong and entry_px_lad > 0 ? (pos_hwm - entry_px_lad) / entry_px_lad * 100 : 0
+
+var float active_trail = p_hwm_trail_pct
+var string ladder_tier_str = "30% (floor)"
+
+if inLong
+    if peak_gain_pct >= p_lad_t3_gain
+        active_trail := p_lad_t3_trail
+        ladder_tier_str := str.tostring(p_lad_t3_gain,"#") + "%+ | " + str.tostring(p_lad_t3_trail,"#") + "% LOCK"
+    else if peak_gain_pct >= p_lad_t2_gain
+        active_trail := p_lad_t2_trail
+        ladder_tier_str := str.tostring(p_lad_t2_gain,"#") + "%+ | " + str.tostring(p_lad_t2_trail,"#") + "% trail"
+    else if peak_gain_pct >= p_lad_t1_gain
+        active_trail := p_lad_t1_trail
+        ladder_tier_str := str.tostring(p_lad_t1_gain,"#") + "%+ | " + str.tostring(p_lad_t1_trail,"#") + "% trail"
+    else
+        active_trail := p_hwm_trail_pct
+        ladder_tier_str := str.tostring(p_hwm_trail_pct,"#") + "% (floor)"
+else
+    active_trail := p_hwm_trail_pct
+    ladder_tier_str := str.tostring(p_hwm_trail_pct,"#") + "% (floor)"
+
+hwm_trail_stop = hwm_val * (1 - active_trail / 100)
+hwm_trail_triggered = inLong and close < hwm_trail_stop
+if hwm_trail_triggered
+    strategy.close("Fence_Long", comment="Ladder Trail " + str.tostring(active_trail,"#") + "%")
+
+// --- EOD Exit ---
+if p_eod_exit and (inLong or inShort) and currentTime >= 1555
+    strategy.close_all(comment="EOD Exit")
+
+// --- Visuals ---
+plot(fenceSet and p_show_fence ? fenceHigh : na, "Fence High", color.new(#00E676, 0), 2, plot.style_stepline)
+plot(fenceSet and p_show_fence ? fenceLow : na, "Fence Low", color.new(#F44336, 0), 2, plot.style_stepline)
+plot(fenceSet and p_show_fence ? fenceMid : na, "Fence Mid", color.new(#FFD700, 60), 1, plot.style_stepline)
+plot(anchor, "Anchor SMA", color.new(#2196F3, 30), 2)
+bgcolor(isFenceBar ? color.new(#FFD700, 90) : na)
+plotshape(longEntry, "Long Entry", shape.triangleup, location.belowbar, color.new(#00E676, 0), size=size.small, text="LONG")
+plotshape(shortEntry, "Short Entry", shape.triangledown, location.abovebar, color.new(#F44336, 0), size=size.small, text="SHORT")
+plotshape(brokeAbove and not brokeAbove[1], "Break Up", shape.circle, location.abovebar, color.new(#00E676, 40), size=size.tiny, text="BO")
+plotshape(brokeBelow and not brokeBelow[1], "Break Down", shape.circle, location.belowbar, color.new(#F44336, 40), size=size.tiny, text="BD")
+plotshape(strategy.opentrades > 0 and pt_tier1_done and not pt_tier1_done[1], "PT1 Hit", shape.flag, location.abovebar, color.new(#00E676, 0), size=size.tiny, text="PT1")
+plotshape(strategy.opentrades > 0 and pt_tier2_done and not pt_tier2_done[1], "PT2 Hit", shape.flag, location.abovebar, color.new(#00BCD4, 0), size=size.tiny, text="PT2")
+
+// Stop/target lines
+plot(inLong ? longStopPrice : na, "Long Stop", color.new(color.red, 0), 1, plot.style_circles)
+plot(inLong ? longTarget : na, "Long Target", color.new(color.green, 0), 1, plot.style_circles)
+plot(inShort ? shortStopPrice : na, "Short Stop", color.new(color.red, 0), 1, plot.style_circles)
+plot(inShort ? shortTarget : na, "Short Target", color.new(color.green, 0), 1, plot.style_circles)
+plot(inLong ? hwm_trail_stop : na, "HWM Trail Stop", color.new(#FF00FF, 0), 2, plot.style_stepline)
+
+// --- Dashboard ---
+var table dash = table.new(position.top_right, 2, 18, bgcolor=color.new(#000000, 80), border_width=1)
+if p_show_dash and barstate.islast
+    table.cell(dash, 0, 0, "FENCE BAR", text_color=color.new(#FFD700, 0), text_size=size.normal)
+    table.cell(dash, 1, 0, inSession ? "LIVE" : "CLOSED", text_color=inSession ? color.lime : color.gray, text_size=size.small)
+    table.cell(dash, 0, 1, "Fence H", text_color=color.white, text_size=size.small)
+    table.cell(dash, 1, 1, fenceSet ? str.tostring(fenceHigh, "#.##") : "-", text_color=color.new(#00E676, 0), text_size=size.small)
+    table.cell(dash, 0, 2, "Fence L", text_color=color.white, text_size=size.small)
+    table.cell(dash, 1, 2, fenceSet ? str.tostring(fenceLow, "#.##") : "-", text_color=color.new(#F44336, 0), text_size=size.small)
+    table.cell(dash, 0, 3, "Range", text_color=color.white, text_size=size.small)
+    table.cell(dash, 1, 3, fenceSet ? str.tostring(fenceRange, "#.##") : "-", text_color=color.yellow, text_size=size.small)
+    table.cell(dash, 0, 4, "Broke Up", text_color=color.white, text_size=size.small)
+    table.cell(dash, 1, 4, brokeAbove ? "YES" : "NO", text_color=brokeAbove ? color.lime : color.gray, text_size=size.small)
+    table.cell(dash, 0, 5, "Broke Down", text_color=color.white, text_size=size.small)
+    table.cell(dash, 1, 5, brokeBelow ? "YES" : "NO", text_color=brokeBelow ? color.lime : color.gray, text_size=size.small)
+    table.cell(dash, 0, 6, "Retest L", text_color=color.white, text_size=size.small)
+    table.cell(dash, 1, 6, retestLong ? "READY" : "WAIT", text_color=retestLong ? color.lime : color.gray, text_size=size.small)
+    table.cell(dash, 0, 7, "Retest S", text_color=color.white, text_size=size.small)
+    table.cell(dash, 1, 7, retestShort ? "READY" : "WAIT", text_color=retestShort ? color.lime : color.gray, text_size=size.small)
+    table.cell(dash, 0, 8, "Anchor", text_color=color.white, text_size=size.small)
+    table.cell(dash, 1, 8, str.tostring(anchor, "#.##"), text_color=close > anchor ? color.lime : color.red, text_size=size.small)
+    table.cell(dash, 0, 9, "Trades", text_color=color.white, text_size=size.small)
+    table.cell(dash, 1, 9, str.tostring(tradesTakenToday) + "/2", text_color=tradesTakenToday >= 2 ? color.orange : color.white, text_size=size.small)
+    table.cell(dash, 0, 10, "Peak Gain", text_color=color.white, text_size=size.small)
+    table.cell(dash, 1, 10, inLong ? str.tostring(peak_gain_pct, "+#.#") + "%" : "-", text_color=color.new(#FFD700, 0), text_size=size.small)
+    table.cell(dash, 0, 11, "Pos Peak", text_color=color.white, text_size=size.small)
+    table.cell(dash, 1, 11, inLong ? "$" + str.tostring(pos_hwm, "#.##") : "-", text_color=color.white, text_size=size.small)
+    table.cell(dash, 0, 12, "Trail Tier", text_color=color.white, text_size=size.small)
+    table.cell(dash, 1, 12, ladder_tier_str, text_color=color.new(#FF00FF, 0), text_size=size.small)
+    table.cell(dash, 0, 13, "Trail %", text_color=color.white, text_size=size.small)
+    table.cell(dash, 1, 13, str.tostring(active_trail, "#") + "% from peak", text_color=color.new(#FF00FF, 0), text_size=size.small)
+    table.cell(dash, 0, 14, "Trail Price", text_color=color.white, text_size=size.small)
+    table.cell(dash, 1, 14, inLong ? str.tostring(hwm_trail_stop, "#.##") : "-", text_color=hwm_trail_triggered ? color.red : color.new(#FF00FF, 0), text_size=size.small)
+    table.cell(dash, 0, 15, "Profit T1", text_color=color.white, text_size=size.small)
+    table.cell(dash, 1, 15, str.tostring(p_pt_tier1_pct, "#") + "% → " + str.tostring(p_pt_tier1_sell, "#") + "% sell" + (pt_tier1_done ? " ✓" : ""), text_color=pt_tier1_done ? color.lime : color.gray, text_size=size.small)
+    table.cell(dash, 0, 16, "Profit T2", text_color=color.white, text_size=size.small)
+    table.cell(dash, 1, 16, str.tostring(p_pt_tier2_pct, "#") + "% → " + str.tostring(p_pt_tier2_sell, "#") + "% sell" + (pt_tier2_done ? " ✓" : ""), text_color=pt_tier2_done ? color.lime : color.gray, text_size=size.small)
+
+alertcondition(longEntry, "Fence Long", "Fence Bar LONG - breakout + retest confirmed")
+alertcondition(shortEntry, "Fence Short", "Fence Bar SHORT - breakout + retest confirmed")
+alertcondition(hwm_trail_triggered, "Ladder Trail", "Laddered trailing stop triggered — close long position")
+alertcondition(strategy.opentrades > 0 and pt_tier1_done and not pt_tier1_done[1], "Profit T1", "Profit Tier 1 hit — sold 50% at +30%")
+alertcondition(strategy.opentrades > 0 and pt_tier2_done and not pt_tier2_done[1], "Profit T2", "Profit Tier 2 hit — sold remaining at +50%")

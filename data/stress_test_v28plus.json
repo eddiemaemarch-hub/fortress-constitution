@@ -1,0 +1,223 @@
+{
+  "regime": [
+    {
+      "regime": "2018 Crypto Winter",
+      "description": "BTC $20K\u2192$3K. MSTR not yet BTC-correlated but choppy. Any adder fires = false positive.",
+      "end_date": "2019-06-30",
+      "with_adder": {
+        "net": 0.0,
+        "dd": 0.0,
+        "sharpe": 0.0,
+        "orders": 0
+      },
+      "without_adder": {
+        "net": 0.0,
+        "dd": 0.0,
+        "sharpe": 0.0,
+        "orders": 0
+      },
+      "delta_net": 0.0,
+      "delta_dd": 0.0,
+      "extra_orders": 0,
+      "adder_fired": false,
+      "status": "CLEAN"
+    },
+    {
+      "regime": "2021 Post-Top Distribution",
+      "description": "BTC $69K\u2192$17K. Multiple bear rallies with fake golden crosses. Adder should NOT fire.",
+      "end_date": "2022-06-30",
+      "with_adder": {
+        "net": 39.549,
+        "dd": 42.5,
+        "sharpe": 0.253,
+        "orders": 76
+      },
+      "without_adder": {
+        "net": 12.102,
+        "dd": 25.6,
+        "sharpe": -0.001,
+        "orders": 70
+      },
+      "delta_net": 27.447,
+      "delta_dd": 16.9,
+      "extra_orders": 6,
+      "adder_fired": true,
+      "status": "OK"
+    },
+    {
+      "regime": "2022 Bear Rally Traps",
+      "description": "BTC bounced 20-40% multiple times. Fake reclaims, choppy. Adder should stay quiet.",
+      "end_date": "2023-06-30",
+      "with_adder": {
+        "net": 39.549,
+        "dd": 42.5,
+        "sharpe": 0.184,
+        "orders": 76
+      },
+      "without_adder": {
+        "net": 12.102,
+        "dd": 25.6,
+        "sharpe": -0.103,
+        "orders": 70
+      },
+      "delta_net": 27.447,
+      "delta_dd": 16.9,
+      "extra_orders": 6,
+      "adder_fired": true,
+      "status": "OK"
+    },
+    {
+      "regime": "Full Bear 2022 Only",
+      "description": "Pure bear market. If adder fires here = regime misclassification.",
+      "end_date": "2022-12-31",
+      "with_adder": {
+        "net": 39.549,
+        "dd": 42.5,
+        "sharpe": 0.222,
+        "orders": 76
+      },
+      "without_adder": {
+        "net": 12.102,
+        "dd": 25.6,
+        "sharpe": -0.042,
+        "orders": 70
+      },
+      "delta_net": 27.447,
+      "delta_dd": 16.9,
+      "extra_orders": 6,
+      "adder_fired": true,
+      "status": "OK"
+    },
+    {
+      "regime": "2020 COVID Crash+Recovery",
+      "description": "Sharp V-recovery. Golden cross forms fast. Adder SHOULD fire here \u2014 valid test.",
+      "end_date": "2021-06-30",
+      "with_adder": {
+        "net": 82.405,
+        "dd": 25.2,
+        "sharpe": 0.608,
+        "orders": 26
+      },
+      "without_adder": {
+        "net": 36.796,
+        "dd": 9.5,
+        "sharpe": 0.496,
+        "orders": 25
+      },
+      "delta_net": 45.609,
+      "delta_dd": 15.7,
+      "extra_orders": 1,
+      "adder_fired": true,
+      "status": "OK"
+    }
+  ],
+  "kill_switch": [
+    {
+      "cooldown_weeks": 0,
+      "label": "No cooldown",
+      "net": 126.533,
+      "dd": 49.7,
+      "sharpe": 0.258,
+      "orders": 132,
+      "win_rate": 27.0
+    },
+    {
+      "cooldown_weeks": 4,
+      "label": "4w cooldown"
+    },
+    {
+      "cooldown_weeks": 8,
+      "label": "8w cooldown"
+    },
+    {
+      "cooldown_weeks": 12,
+      "label": "12w cooldown"
+    }
+  ],
+  "capital_sweep": [
+    {
+      "capital_pct": 0.0,
+      "label": "Base only (no adder)",
+      "net": 55.908,
+      "dd": 30.7,
+      "sharpe": 0.085,
+      "orders": 116,
+      "sortino": 0.046,
+      "efficiency": 1.8211074918566776
+    },
+    {
+      "capital_pct": 0.1,
+      "label": "10% adder",
+      "net": 83.691,
+      "dd": 39.5,
+      "sharpe": 0.177,
+      "orders": 132,
+      "sortino": 0.097,
+      "efficiency": 2.1187594936708862
+    },
+    {
+      "capital_pct": 0.15,
+      "label": "15% adder",
+      "net": 97.828,
+      "dd": 43.4,
+      "sharpe": 0.209,
+      "orders": 132,
+      "sortino": 0.114,
+      "efficiency": 2.2541013824884795
+    },
+    {
+      "capital_pct": 0.2,
+      "label": "20% adder",
+      "net": 112.233,
+      "dd": 46.7,
+      "sharpe": 0.236,
+      "orders": 132,
+      "sortino": 0.128,
+      "efficiency": 2.403276231263383
+    },
+    {
+      "capital_pct": 0.25,
+      "label": "25% adder",
+      "net": 126.533,
+      "dd": 49.7,
+      "sharpe": 0.258,
+      "orders": 132,
+      "sortino": 0.14,
+      "efficiency": 2.5459356136820923
+    }
+  ],
+  "convergence": [
+    {
+      "convergence_pct": 5.0,
+      "label": "5.0% convergence",
+      "net": 126.533,
+      "dd": 49.7,
+      "sharpe": 0.258,
+      "orders": 132
+    },
+    {
+      "convergence_pct": 10.0,
+      "label": "10.0% convergence",
+      "net": 126.533,
+      "dd": 49.7,
+      "sharpe": 0.258,
+      "orders": 132
+    },
+    {
+      "convergence_pct": 15.0,
+      "label": "15.0% convergence",
+      "net": 126.533,
+      "dd": 49.7,
+      "sharpe": 0.258,
+      "orders": 132
+    },
+    {
+      "convergence_pct": 25.0,
+      "label": "25.0% convergence",
+      "net": 126.533,
+      "dd": 49.7,
+      "sharpe": 0.258,
+      "orders": 132
+    }
+  ]
+}

@@ -1,0 +1,1078 @@
+[2026-03-10 13:50:18] Trader3 — Energy Momentum OPTIONS Engine
+[2026-03-10 13:50:18] Universe: CCJ, UEC, XOM, CVX, OXY, DVN, FANG, VST, CEG, LEU
+[2026-03-10 13:50:18] Capital: $20,000 | Max positions: 5 | ~$800/position
+[2026-03-10 13:50:18] Scanning...
+[2026-03-10 13:50:19]   SIGNAL: CCJ — Golden cross, score 5, momentum +37.4%
+[2026-03-10 13:50:19]   No signal: UEC — Below EMA21
+[2026-03-10 13:50:19]   SIGNAL: XOM — Golden cross, score 5, momentum +27.0%
+[2026-03-10 13:50:20]   SIGNAL: CVX — Golden cross, score 5, momentum +21.4%
+[2026-03-10 13:50:20]   SIGNAL: OXY — Golden cross, score 4, momentum +20.3%
+[2026-03-10 13:50:20]   SIGNAL: DVN — Golden cross, score 5, momentum +23.8%
+[2026-03-10 13:50:21]   SIGNAL: FANG — Golden cross, score 5, momentum +21.0%
+[2026-03-10 13:50:21]   No signal: VST — No golden cross (EMA50 $166.19 < SMA200 $181.68)
+[2026-03-10 13:50:21]   No signal: CEG — No golden cross (EMA50 $313.26 < SMA200 $328.78)
+[2026-03-10 13:50:21]   No signal: LEU — No golden cross (EMA50 $239.30 < SMA200 $246.06)
+[2026-03-10 13:50:22] Connected (client 30)
+[2026-03-10 13:50:22]   Could not qualify option CCJ 20260417 124.0C
+[2026-03-10 13:50:22]   No suitable option found for CCJ
+[2026-03-10 13:50:22] Connected (client 30)
+[2026-03-10 13:50:23]   Could not qualify option XOM 20260417 152.5C
+[2026-03-10 13:50:23]   No suitable option found for XOM
+[2026-03-10 13:50:23] Connected (client 30)
+[2026-03-10 13:50:24]   Found option: DVN 20260417 $45.0C (38 DTE)
+[2026-03-10 13:50:27] ENTERING DVN: 5 contracts 20260417 $45.0C @ $1.55 ($775)
+[2026-03-10 13:50:29]   FILLED: 5x DVN 20260417 $45.0C @ $1.61
+[2026-03-10 13:50:30] Connected (client 30)
+[2026-03-10 13:50:30]   Found option: CVX 20260417 $190.0C (38 DTE)
+[2026-03-10 13:50:33] ENTERING CVX: 1 contracts 20260417 $190.0C @ $5.20 ($520)
+[2026-03-10 13:50:35]   FILLED: 1x CVX 20260417 $190.0C @ $5.70
+[2026-03-10 13:50:36] Connected (client 30)
+[2026-03-10 13:50:37]   Found option: FANG 20260417 $180.0C (38 DTE)
+[2026-03-10 13:50:40] ENTERING FANG: 1 contracts 20260417 $180.0C @ $8.20 ($820)
+[2026-03-10 13:50:52]   FILLED: 1x FANG 20260417 $180.0C @ $8.70
+[2026-03-10 14:30:02] Connected (client 31)
+[2026-03-10 14:30:12]   SIGNAL: CCJ — Golden cross, score 5, momentum +36.1%
+[2026-03-10 14:30:12]   No signal: UEC — Below EMA21
+[2026-03-10 14:30:12]   SIGNAL: XOM — Golden cross, score 5, momentum +26.3%
+[2026-03-10 14:30:13]   SIGNAL: OXY — Golden cross, score 4, momentum +19.9%
+[2026-03-10 14:30:13]   No signal: VST — No golden cross (EMA50 $166.13 < SMA200 $181.67)
+[2026-03-10 14:30:13]   No signal: CEG — No golden cross (EMA50 $313.14 < SMA200 $328.77)
+[2026-03-10 14:30:13]   No signal: LEU — No golden cross (EMA50 $239.21 < SMA200 $246.05)
+[2026-03-10 14:30:13] Connected (client 30)
+[2026-03-10 14:30:13]   Could not qualify option CCJ 20260417 123.0C
+[2026-03-10 14:30:13]   No suitable option found for CCJ
+[2026-03-10 14:30:14] Connected (client 30)
+[2026-03-10 14:30:14]   Could not qualify option XOM 20260417 152.5C
+[2026-03-10 14:30:14]   No suitable option found for XOM
+[2026-03-10 15:30:02] Connected (client 31)
+[2026-03-10 15:30:12]   SIGNAL: CCJ — Golden cross, score 5, momentum +35.3%
+[2026-03-10 15:30:12]   No signal: UEC — Below EMA21
+[2026-03-10 15:30:12]   SIGNAL: XOM — Golden cross, score 5, momentum +26.4%
+[2026-03-10 15:30:13]   SIGNAL: OXY — Golden cross, score 4, momentum +21.0%
+[2026-03-10 15:30:13]   No signal: VST — No golden cross (EMA50 $166.08 < SMA200 $181.67)
+[2026-03-10 15:30:13]   No signal: CEG — No golden cross (EMA50 $313.11 < SMA200 $328.76)
+[2026-03-10 15:30:13]   No signal: LEU — No golden cross (EMA50 $239.12 < SMA200 $246.04)
+[2026-03-10 15:30:13] Connected (client 30)
+[2026-03-10 15:30:13]   Could not qualify option CCJ 20260417 123.0C
+[2026-03-10 15:30:13]   No suitable option found for CCJ
+[2026-03-10 15:30:14] Connected (client 30)
+[2026-03-10 15:30:14]   Could not qualify option XOM 20260417 152.5C
+[2026-03-10 15:30:14]   No suitable option found for XOM
+[2026-03-10 20:47:13] Connected (client 31)
+[2026-03-10 20:47:24]   SIGNAL: CCJ — Golden cross, score 5, momentum +35.3%
+[2026-03-10 20:47:24]   No signal: UEC — Below EMA21
+[2026-03-10 20:47:24]   No signal: XOM — Below EMA21
+[2026-03-10 20:47:24]   SIGNAL: OXY — Golden cross, score 4, momentum +20.9%
+[2026-03-10 20:47:24]   No signal: VST — No golden cross (EMA50 $166.03 < SMA200 $181.66)
+[2026-03-10 20:47:24]   No signal: CEG — No golden cross (EMA50 $313.08 < SMA200 $328.76)
+[2026-03-10 20:47:24]   No signal: LEU — No golden cross (EMA50 $239.14 < SMA200 $246.04)
+[2026-03-10 20:47:25] Connected (client 30)
+[2026-03-10 20:47:25]   Could not qualify option CCJ 20260417 122.0C
+[2026-03-10 20:47:25]   No suitable option found for CCJ
+[2026-03-10 20:47:26] Connected (client 30)
+[2026-03-10 20:47:26]   Could not qualify option OXY 20260417 54.0C
+[2026-03-10 20:47:26]   No suitable option found for OXY
+[2026-03-11 12:30:02] Connected (client 31)
+[2026-03-11 12:30:13]   No signal: CCJ — Below EMA21
+[2026-03-11 12:30:13]   No signal: UEC — Below EMA21
+[2026-03-11 12:30:13]   SIGNAL: XOM — Golden cross, score 5, momentum +28.1%
+[2026-03-11 12:30:13]   SIGNAL: OXY — Golden cross, score 5, momentum +25.0%
+[2026-03-11 12:30:13]   No signal: VST — No golden cross (EMA50 $165.81 < SMA200 $181.69)
+[2026-03-11 12:30:13]   No signal: CEG — No golden cross (EMA50 $312.64 < SMA200 $328.82)
+[2026-03-11 12:30:14]   No signal: LEU — No golden cross (EMA50 $237.60 < SMA200 $246.57)
+[2026-03-11 12:30:14] Connected (client 30)
+[2026-03-11 12:30:15]   Found option: XOM 20260417 $155.0C (37 DTE)
+[2026-03-11 12:30:18] ENTERING XOM: 1 contracts 20260417 $155.0C @ $4.30 ($430)
+[2026-03-11 12:30:23]   FILLED: 1x XOM 20260417 $155.0C @ $4.35
+[2026-03-11 12:30:24] Connected (client 30)
+[2026-03-11 12:30:24]   Could not qualify option OXY 20260417 56.0C
+[2026-03-11 12:30:24]   No suitable option found for OXY
+[2026-03-11 13:30:01] Connected (client 31)
+[2026-03-11 13:30:15]   No signal: CCJ — Below EMA21
+[2026-03-11 13:30:15]   No signal: UEC — Below EMA21
+[2026-03-11 13:30:15]   SIGNAL: OXY — Golden cross, score 5, momentum +25.1%
+[2026-03-11 13:30:15]   No signal: VST — No golden cross (EMA50 $165.73 < SMA200 $181.68)
+[2026-03-11 13:30:15]   No signal: CEG — No golden cross (EMA50 $312.62 < SMA200 $328.82)
+[2026-03-11 13:30:15]   No signal: LEU — No golden cross (EMA50 $237.64 < SMA200 $246.58)
+[2026-03-11 13:30:16] Connected (client 30)
+[2026-03-11 13:30:16]   Could not qualify option OXY 20260417 56.0C
+[2026-03-11 13:30:16]   No suitable option found for OXY
+[2026-03-11 14:30:02] Connected (client 31)
+[2026-03-11 14:30:15]   No signal: CCJ — Below EMA21
+[2026-03-11 14:30:15]   No signal: UEC — Below EMA21
+[2026-03-11 14:30:15]   SIGNAL: OXY — Golden cross, score 4, momentum +25.6%
+[2026-03-11 14:30:16]   No signal: VST — No golden cross (EMA50 $165.67 < SMA200 $181.67)
+[2026-03-11 14:30:16]   No signal: CEG — No golden cross (EMA50 $312.56 < SMA200 $328.81)
+[2026-03-11 14:30:16]   No signal: LEU — No golden cross (EMA50 $237.54 < SMA200 $246.57)
+[2026-03-11 14:30:16] Connected (client 30)
+[2026-03-11 14:30:16]   Could not qualify option OXY 20260417 56.0C
+[2026-03-11 14:30:16]   No suitable option found for OXY
+[2026-03-11 15:30:02] Connected (client 31)
+[2026-03-11 15:30:15]   No signal: CCJ — Below EMA21
+[2026-03-11 15:30:16]   No signal: UEC — Below EMA21
+[2026-03-11 15:30:16]   SIGNAL: OXY — Golden cross, score 4, momentum +26.2%
+[2026-03-11 15:30:16]   No signal: VST — No golden cross (EMA50 $165.69 < SMA200 $181.67)
+[2026-03-11 15:30:16]   No signal: CEG — No golden cross (EMA50 $312.55 < SMA200 $328.81)
+[2026-03-11 15:30:16]   No signal: LEU — No golden cross (EMA50 $237.51 < SMA200 $246.56)
+[2026-03-11 15:30:16] Connected (client 30)
+[2026-03-11 15:30:16]   Could not qualify option OXY 20260417 56.0C
+[2026-03-11 15:30:16]   No suitable option found for OXY
+[2026-03-12 09:30:02] Connected (client 31)
+[2026-03-12 09:30:18]   No signal: CCJ — Below EMA21
+[2026-03-12 09:30:18]   No signal: UEC — Below EMA21
+[2026-03-12 09:30:18]   SIGNAL: OXY — Golden cross, score 4, momentum +29.1%
+[2026-03-12 09:30:18]   No signal: VST — No golden cross (EMA50 $165.42 < SMA200 $181.68)
+[2026-03-12 09:30:18]   No signal: CEG — No golden cross (EMA50 $311.97 < SMA200 $328.81)
+[2026-03-12 09:30:18]   No signal: LEU — No golden cross (EMA50 $236.21 < SMA200 $247.02)
+[2026-03-12 09:30:19] Connected (client 30)
+[2026-03-12 09:30:20]   Could not qualify option OXY 20260417 58.0C
+[2026-03-12 09:30:20]   No suitable option found for OXY
+[2026-03-12 10:30:03] Connected (client 31)
+[2026-03-12 10:30:16]   No signal: CCJ — Below EMA21
+[2026-03-12 10:30:17]   No signal: UEC — Below EMA21
+[2026-03-12 10:30:17]   SIGNAL: OXY — Golden cross, score 4, momentum +32.3%
+[2026-03-12 10:30:17]   No signal: VST — No golden cross (EMA50 $165.60 < SMA200 $181.71)
+[2026-03-12 10:30:17]   No signal: CEG — No golden cross (EMA50 $312.23 < SMA200 $328.85)
+[2026-03-12 10:30:17]   No signal: LEU — No golden cross (EMA50 $236.36 < SMA200 $247.04)
+[2026-03-12 10:30:17] Connected (client 30)
+[2026-03-12 10:30:18]   Could not qualify option OXY 20260417 59.0C
+[2026-03-12 10:30:18]   No suitable option found for OXY
+[2026-03-12 12:30:03] Connected (client 31)
+[2026-03-12 12:30:06] EXIT: DVN 20260417 $45.0C — Profit target hit (+80%)
+[2026-03-12 12:30:25] EXIT: CVX 20260417 $190.0C — Profit target hit (+121%)
+[2026-03-12 12:30:48]   No signal: CCJ — Below EMA21
+[2026-03-12 12:30:48]   No signal: UEC — Below EMA21
+[2026-03-12 12:30:48]   SIGNAL: CVX — Golden cross, score 4, momentum +27.8%
+[2026-03-12 12:30:48]   SIGNAL: OXY — Golden cross, score 4, momentum +34.0%
+[2026-03-12 12:30:48]   SIGNAL: DVN — Golden cross, score 5, momentum +29.4%
+[2026-03-12 12:30:48]   No signal: VST — No golden cross (EMA50 $165.61 < SMA200 $181.71)
+[2026-03-12 12:30:49]   No signal: CEG — No golden cross (EMA50 $312.37 < SMA200 $328.87)
+[2026-03-12 12:30:49]   No signal: LEU — No golden cross (EMA50 $236.59 < SMA200 $247.07)
+[2026-03-12 12:30:49] Connected (client 30)
+[2026-03-12 12:30:50]   Found option: OXY 20260417 $60.0C (36 DTE)
+[2026-03-12 12:30:53] ENTERING OXY: 2 contracts 20260417 $60.0C @ $2.74 ($548)
+[2026-03-12 12:30:54]   FILLED: 2x OXY 20260417 $60.0C @ $2.69
+[2026-03-12 12:30:56] TRAILING STOP: OXY $60.0C x2 | Trail $0.81 (30% of $2.69) | Status: PreSubmitted
+[2026-03-12 12:30:57] Connected (client 30)
+[2026-03-12 12:30:57]   Could not qualify option DVN 20260417 47.0C
+[2026-03-12 12:30:57]   No suitable option found for DVN
+[2026-03-12 12:30:58] Connected (client 30)
+[2026-03-12 12:30:58]   Could not qualify option CVX 20260417 202.5C
+[2026-03-12 12:30:58]   No suitable option found for CVX
+[2026-03-12 13:30:02] Connected (client 31)
+[2026-03-12 13:30:13]   No signal: CCJ — Below EMA21
+[2026-03-12 13:30:13]   No signal: UEC — Below EMA21
+[2026-03-12 13:30:13]   SIGNAL: CVX — Golden cross, score 4, momentum +27.7%
+[2026-03-12 13:30:13]   SIGNAL: DVN — Golden cross, score 5, momentum +29.1%
+[2026-03-12 13:30:13]   No signal: VST — No golden cross (EMA50 $165.57 < SMA200 $181.70)
+[2026-03-12 13:30:13]   No signal: CEG — No golden cross (EMA50 $312.37 < SMA200 $328.87)
+[2026-03-12 13:30:14]   No signal: LEU — No golden cross (EMA50 $236.77 < SMA200 $247.09)
+[2026-03-12 13:30:14] Connected (client 30)
+[2026-03-12 13:30:14]   Could not qualify option DVN 20260417 47.0C
+[2026-03-12 13:30:14]   No suitable option found for DVN
+[2026-03-12 13:30:14] Connected (client 30)
+[2026-03-12 13:30:15]   Could not qualify option CVX 20260417 202.5C
+[2026-03-12 13:30:15]   No suitable option found for CVX
+[2026-03-12 14:30:03] Connected (client 31)
+[2026-03-12 14:30:13]   No signal: CCJ — Below EMA21
+[2026-03-12 14:30:13]   No signal: UEC — Below EMA21
+[2026-03-12 14:30:14]   SIGNAL: CVX — Golden cross, score 4, momentum +27.9%
+[2026-03-12 14:30:14]   SIGNAL: DVN — Golden cross, score 5, momentum +29.4%
+[2026-03-12 14:30:14]   No signal: VST — No golden cross (EMA50 $165.55 < SMA200 $181.70)
+[2026-03-12 14:30:14]   No signal: CEG — No golden cross (EMA50 $312.27 < SMA200 $328.85)
+[2026-03-12 14:30:14]   No signal: LEU — No golden cross (EMA50 $236.75 < SMA200 $247.09)
+[2026-03-12 14:30:14] Connected (client 30)
+[2026-03-12 14:30:15]   Could not qualify option DVN 20260417 47.0C
+[2026-03-12 14:30:15]   No suitable option found for DVN
+[2026-03-12 14:30:15] Connected (client 30)
+[2026-03-12 14:30:16]   Could not qualify option CVX 20260417 202.5C
+[2026-03-12 14:30:16]   No suitable option found for CVX
+[2026-03-12 15:30:02] Connected (client 31)
+[2026-03-12 15:30:13]   No signal: CCJ — Below EMA21
+[2026-03-12 15:30:13]   No signal: UEC — Below EMA21
+[2026-03-12 15:30:13]   SIGNAL: CVX — Golden cross, score 4, momentum +27.8%
+[2026-03-12 15:30:13]   SIGNAL: DVN — Golden cross, score 5, momentum +29.6%
+[2026-03-12 15:30:14]   No signal: VST — No golden cross (EMA50 $165.53 < SMA200 $181.70)
+[2026-03-12 15:30:14]   No signal: CEG — No golden cross (EMA50 $312.22 < SMA200 $328.85)
+[2026-03-12 15:30:14]   No signal: LEU — No golden cross (EMA50 $236.84 < SMA200 $247.10)
+[2026-03-12 15:30:14] Connected (client 30)
+[2026-03-12 15:30:14]   Could not qualify option DVN 20260417 47.0C
+[2026-03-12 15:30:14]   No suitable option found for DVN
+[2026-03-12 15:30:15] Connected (client 30)
+[2026-03-12 15:30:15]   Could not qualify option CVX 20260417 202.5C
+[2026-03-12 15:30:15]   No suitable option found for CVX
+[2026-03-13 09:30:03] Connected (client 31)
+[2026-03-13 09:30:21]   No signal: CCJ — Below EMA21
+[2026-03-13 09:30:21]   No signal: UEC — Below EMA21
+[2026-03-13 09:30:21]   SIGNAL: CVX — Golden cross, score 4, momentum +26.2%
+[2026-03-13 09:30:21]   SIGNAL: DVN — Golden cross, score 5, momentum +27.6%
+[2026-03-13 09:30:22]   No signal: VST — No golden cross (EMA50 $165.41 < SMA200 $181.69)
+[2026-03-13 09:30:22]   No signal: CEG — No golden cross (EMA50 $311.84 < SMA200 $328.82)
+[2026-03-13 09:30:22]   No signal: LEU — No golden cross (EMA50 $236.11 < SMA200 $247.55)
+[2026-03-13 09:30:22] Connected (client 30)
+[2026-03-13 09:30:23]   Could not qualify option DVN 20260417 46.5C
+[2026-03-13 09:30:23]   No suitable option found for DVN
+[2026-03-13 09:30:23] Connected (client 30)
+[2026-03-13 09:30:24]   Found option: CVX 20260417 $200.0C (35 DTE)
+[2026-03-13 10:30:03] Connected (client 31)
+[2026-03-13 10:45:51]   No signal: CCJ — Below EMA21
+[2026-03-13 10:45:51]   No signal: UEC — Below EMA21
+[2026-03-13 10:45:51]   SIGNAL: CVX — Golden cross, score 4, momentum +26.0%
+[2026-03-13 10:45:51]   SIGNAL: DVN — Golden cross, score 5, momentum +28.9%
+[2026-03-13 10:45:51]   No signal: VST — No golden cross (EMA50 $165.36 < SMA200 $181.69)
+[2026-03-13 10:45:51]   No signal: CEG — No golden cross (EMA50 $311.74 < SMA200 $328.81)
+[2026-03-13 10:45:52]   No signal: LEU — No golden cross (EMA50 $235.90 < SMA200 $247.52)
+[2026-03-13 10:45:52] Connected (client 30)
+[2026-03-13 10:45:52]   Could not qualify option DVN 20260417 47.0C
+[2026-03-13 10:45:52]   No suitable option found for DVN
+[2026-03-13 10:45:53] Connected (client 30)
+[2026-03-13 10:45:53]   Found option: CVX 20260417 $200.0C (35 DTE)
+[2026-03-13 11:30:02] Connected (client 31)
+[2026-03-13 11:30:13]   No signal: CCJ — Below EMA21
+[2026-03-13 11:30:13]   No signal: UEC — Below EMA21
+[2026-03-13 11:30:13]   SIGNAL: CVX — Golden cross, score 4, momentum +26.0%
+[2026-03-13 11:30:13]   SIGNAL: DVN — Golden cross, score 5, momentum +28.9%
+[2026-03-13 11:30:13]   No signal: VST — No golden cross (EMA50 $165.31 < SMA200 $181.68)
+[2026-03-13 11:30:14]   No signal: CEG — No golden cross (EMA50 $311.73 < SMA200 $328.80)
+[2026-03-13 11:30:14]   No signal: LEU — No golden cross (EMA50 $235.84 < SMA200 $247.52)
+[2026-03-13 11:30:14] Connected (client 30)
+[2026-03-13 11:30:14]   Could not qualify option DVN 20260417 47.0C
+[2026-03-13 11:30:14]   No suitable option found for DVN
+[2026-03-13 11:30:15] Connected (client 30)
+[2026-03-13 11:30:15]   Found option: CVX 20260417 $200.0C (35 DTE)
+[2026-03-13 11:30:18] ENTERING CVX: 1 contracts 20260417 $200.0C @ $5.30 ($530)
+[2026-03-13 11:30:25]   FILLED: 1x CVX 20260417 $200.0C @ $5.40
+[2026-03-13 11:30:27] TRAILING STOP: CVX $200.0C x1 | Trail $1.62 (30% of $5.40) | Status: PreSubmitted
+[2026-03-13 13:30:03] Connected (client 31)
+[2026-03-13 13:30:10] EXIT: XOM 20260417 $155.0C — Profit target hit (+51%)
+[2026-03-13 13:30:32]   No signal: CCJ — Below EMA21
+[2026-03-13 13:30:32]   No signal: UEC — Below EMA21
+[2026-03-13 13:30:33]   SIGNAL: XOM — Golden cross, score 5, momentum +31.5%
+[2026-03-13 13:30:33]   SIGNAL: DVN — Golden cross, score 5, momentum +29.1%
+[2026-03-13 13:30:33]   No signal: VST — No golden cross (EMA50 $165.32 < SMA200 $181.68)
+[2026-03-13 13:30:33]   No signal: CEG — No golden cross (EMA50 $311.75 < SMA200 $328.81)
+[2026-03-13 13:30:33]   No signal: LEU — No golden cross (EMA50 $235.71 < SMA200 $247.50)
+[2026-03-13 13:30:33] Connected (client 30)
+[2026-03-13 13:30:34]   Could not qualify option XOM 20260417 157.5C
+[2026-03-13 13:30:34]   No suitable option found for XOM
+[2026-03-13 13:30:34] Connected (client 30)
+[2026-03-13 13:30:35]   Could not qualify option DVN 20260417 47.0C
+[2026-03-13 13:30:35]   No suitable option found for DVN
+[2026-03-13 14:30:03] Connected (client 31)
+[2026-03-13 14:30:13]   No signal: CCJ — Below EMA21
+[2026-03-13 14:30:13]   No signal: UEC — Below EMA21
+[2026-03-13 14:30:13]   SIGNAL: XOM — Golden cross, score 5, momentum +32.3%
+[2026-03-13 14:30:13]   SIGNAL: DVN — Golden cross, score 5, momentum +29.3%
+[2026-03-13 14:30:14]   No signal: VST — No golden cross (EMA50 $165.34 < SMA200 $181.68)
+[2026-03-13 14:30:14]   No signal: CEG — No golden cross (EMA50 $311.76 < SMA200 $328.81)
+[2026-03-13 14:30:14]   No signal: LEU — No golden cross (EMA50 $235.62 < SMA200 $247.49)
+[2026-03-13 14:30:14] Connected (client 30)
+[2026-03-13 14:30:14]   Found option: XOM 20260417 $160.0C (35 DTE)
+[2026-03-13 14:30:17] ENTERING XOM: 1 contracts 20260417 $160.0C @ $4.70 ($470)
+[2026-03-13 14:30:19]   FILLED: 1x XOM 20260417 $160.0C @ $4.75
+[2026-03-13 14:30:19] LADDERED STOP: XOM $160.0C x1 @ $4.75 | No stop at entry (lottery mode) | Managed by stop_monitor.py — activates at +100% gain
+[2026-03-13 14:30:20] Connected (client 30)
+[2026-03-13 14:30:21]   Could not qualify option DVN 20260417 47.0C
+[2026-03-13 14:30:21]   No suitable option found for DVN
+[2026-03-16 11:30:03] Connected (client 31)
+[2026-03-16 11:30:18]   No signal: CCJ — Below EMA21
+[2026-03-16 11:30:18]   No signal: UEC — Below EMA21
+[2026-03-16 11:30:18]   SIGNAL: DVN — Golden cross, score 4, momentum +31.2%
+[2026-03-16 11:30:18]   No signal: VST — No golden cross (EMA50 $165.15 < SMA200 $181.68)
+[2026-03-16 11:30:18]   No signal: CEG — No golden cross (EMA50 $311.48 < SMA200 $328.80)
+[2026-03-16 11:30:18]   No signal: LEU — No golden cross (EMA50 $234.81 < SMA200 $247.92)
+[2026-03-16 11:30:19] Connected (client 30)
+[2026-03-16 11:30:19]   Could not qualify option DVN 20260424 47.5C
+[2026-03-16 11:30:19]   No suitable option found for DVN
+[2026-03-19 10:20:00] [INFO] 
+============================================================
+[2026-03-19 10:20:00] [INFO] TRADER3 — SPY $430 Put Ladder Monitor STARTED
+[2026-03-19 10:20:00] [INFO] Activation: +300% gain
+[2026-03-19 10:20:00] [INFO] Cost Basis: $494.99
+[2026-03-19 10:20:00] [INFO] ============================================================
+
+[2026-03-19 10:20:00] [WARN] Telegram not configured
+[2026-03-19 10:20:00] [INFO] Scheduled: Every 5 min, Mon-Fri 9:30 AM - 4:00 PM ET
+[2026-03-19 10:20:00] [ERROR] Connection failed: [Errno 61] Connect call failed ('127.0.0.1', 7496)
+[2026-03-19 10:25:02] [INFO] Connected to TWS on port 7496
+[2026-03-19 10:25:05] [INFO] SPY $430P Jan27 | Mid: $6.50 | Value: $650.00 | Cost: $494.99 | Gain: +31.3% | Contracts: 1
+[2026-03-19 10:25:05] [INFO] Not activated yet. Need +268.7% more to reach +300%
+[2026-03-19 10:30:10] [INFO] SPY $430P Jan27 | Mid: $6.54 | Value: $654.50 | Cost: $494.99 | Gain: +32.2% | Contracts: 1
+[2026-03-19 10:30:10] [INFO] Not activated yet. Need +267.8% more to reach +300%
+[2026-03-19 10:35:14] [INFO] SPY $430P Jan27 | Mid: $6.38 | Value: $637.50 | Cost: $494.99 | Gain: +28.8% | Contracts: 1
+[2026-03-19 10:35:14] [INFO] Not activated yet. Need +271.2% more to reach +300%
+[2026-03-19 10:35:30] [INFO] 
+============================================================
+[2026-03-19 10:35:30] [INFO] TRADER3 — SPY $430 Put Ladder Monitor STARTED
+[2026-03-19 10:35:30] [INFO] Activation: +100% gain
+[2026-03-19 10:35:30] [INFO] Cost Basis: $494.99
+[2026-03-19 10:35:30] [INFO] ============================================================
+
+[2026-03-19 10:35:30] [WARN] Telegram not configured
+[2026-03-19 10:35:30] [INFO] Scheduled: Every 5 min, Mon-Fri 9:30 AM - 4:00 PM ET
+[2026-03-19 10:35:32] [INFO] Connected to TWS on port 7496
+[2026-03-19 10:35:35] [INFO] SPY $430P Jan27 | Mid: $6.36 | Value: $635.50 | Cost: $494.99 | Gain: +28.4% | Contracts: 1
+[2026-03-19 10:35:35] [INFO] Not activated yet. Need +71.6% more to reach +100%
+[2026-03-19 10:40:09] [INFO] SPY $430P Jan27 | Mid: $6.44 | Value: $643.50 | Cost: $494.99 | Gain: +30.0% | Contracts: 1
+[2026-03-19 10:40:09] [INFO] Not activated yet. Need +70.0% more to reach +100%
+[2026-03-19 10:45:13] [INFO] SPY $430P Jan27 | Mid: $6.42 | Value: $641.50 | Cost: $494.99 | Gain: +29.6% | Contracts: 1
+[2026-03-19 10:45:13] [INFO] Not activated yet. Need +70.4% more to reach +100%
+[2026-03-19 10:50:03] [INFO] SPY $430P Jan27 | Mid: $6.37 | Value: $637.00 | Cost: $494.99 | Gain: +28.7% | Contracts: 1
+[2026-03-19 10:50:03] [INFO] Not activated yet. Need +71.3% more to reach +100%
+[2026-03-19 10:55:07] [INFO] SPY $430P Jan27 | Mid: $6.38 | Value: $638.00 | Cost: $494.99 | Gain: +28.9% | Contracts: 1
+[2026-03-19 10:55:07] [INFO] Not activated yet. Need +71.1% more to reach +100%
+[2026-03-19 11:00:12] [INFO] SPY $430P Jan27 | Mid: $6.37 | Value: $637.00 | Cost: $494.99 | Gain: +28.7% | Contracts: 1
+[2026-03-19 11:00:12] [INFO] Not activated yet. Need +71.3% more to reach +100%
+[2026-03-19 11:05:17] [INFO] SPY $430P Jan27 | Mid: $6.30 | Value: $630.00 | Cost: $494.99 | Gain: +27.3% | Contracts: 1
+[2026-03-19 11:05:17] [INFO] Not activated yet. Need +72.7% more to reach +100%
+[2026-03-19 11:10:07] [INFO] SPY $430P Jan27 | Mid: $6.27 | Value: $627.00 | Cost: $494.99 | Gain: +26.7% | Contracts: 1
+[2026-03-19 11:10:07] [INFO] Not activated yet. Need +73.3% more to reach +100%
+[2026-03-19 11:15:13] [INFO] SPY $430P Jan27 | Mid: $6.24 | Value: $624.00 | Cost: $494.99 | Gain: +26.1% | Contracts: 1
+[2026-03-19 11:15:13] [INFO] Not activated yet. Need +73.9% more to reach +100%
+[2026-03-19 11:20:04] [INFO] SPY $430P Jan27 | Mid: $6.32 | Value: $632.00 | Cost: $494.99 | Gain: +27.7% | Contracts: 1
+[2026-03-19 11:20:04] [INFO] Not activated yet. Need +72.3% more to reach +100%
+[2026-03-19 11:25:59] [INFO] SPY $430P Jan27 | Mid: $6.38 | Value: $638.50 | Cost: $494.99 | Gain: +29.0% | Contracts: 1
+[2026-03-19 11:25:59] [INFO] Not activated yet. Need +71.0% more to reach +100%
+[2026-03-19 11:30:04] [INFO] SPY $430P Jan27 | Mid: $6.37 | Value: $636.50 | Cost: $494.99 | Gain: +28.6% | Contracts: 1
+[2026-03-19 11:30:04] [INFO] Not activated yet. Need +71.4% more to reach +100%
+[2026-03-19 11:35:08] [INFO] SPY $430P Jan27 | Mid: $6.40 | Value: $640.50 | Cost: $494.99 | Gain: +29.4% | Contracts: 1
+[2026-03-19 11:35:08] [INFO] Not activated yet. Need +70.6% more to reach +100%
+[2026-03-19 11:40:13] [INFO] SPY $430P Jan27 | Mid: $6.44 | Value: $644.00 | Cost: $494.99 | Gain: +30.1% | Contracts: 1
+[2026-03-19 11:40:13] [INFO] Not activated yet. Need +69.9% more to reach +100%
+[2026-03-19 11:45:17] [INFO] SPY $430P Jan27 | Mid: $6.45 | Value: $645.00 | Cost: $494.99 | Gain: +30.3% | Contracts: 1
+[2026-03-19 11:45:17] [INFO] Not activated yet. Need +69.7% more to reach +100%
+[2026-03-19 11:50:07] [INFO] SPY $430P Jan27 | Mid: $6.41 | Value: $641.00 | Cost: $494.99 | Gain: +29.5% | Contracts: 1
+[2026-03-19 11:50:07] [INFO] Not activated yet. Need +70.5% more to reach +100%
+[2026-03-19 11:55:14] [INFO] SPY $430P Jan27 | Mid: $6.43 | Value: $642.50 | Cost: $494.99 | Gain: +29.8% | Contracts: 1
+[2026-03-19 11:55:14] [INFO] Not activated yet. Need +70.2% more to reach +100%
+[2026-03-19 12:00:04] [INFO] SPY $430P Jan27 | Mid: $6.33 | Value: $633.50 | Cost: $494.99 | Gain: +28.0% | Contracts: 1
+[2026-03-19 12:00:04] [INFO] Not activated yet. Need +72.0% more to reach +100%
+[2026-03-19 12:05:10] [INFO] SPY $430P Jan27 | Mid: $6.22 | Value: $622.00 | Cost: $494.99 | Gain: +25.7% | Contracts: 1
+[2026-03-19 12:05:10] [INFO] Not activated yet. Need +74.3% more to reach +100%
+[2026-03-19 12:10:15] [INFO] SPY $430P Jan27 | Mid: $6.20 | Value: $619.50 | Cost: $494.99 | Gain: +25.2% | Contracts: 1
+[2026-03-19 12:10:15] [INFO] Not activated yet. Need +74.8% more to reach +100%
+[2026-03-19 12:15:04] [INFO] SPY $430P Jan27 | Mid: $6.22 | Value: $622.50 | Cost: $494.99 | Gain: +25.8% | Contracts: 1
+[2026-03-19 12:15:04] [INFO] Not activated yet. Need +74.2% more to reach +100%
+[2026-03-19 12:20:09] [INFO] SPY $430P Jan27 | Mid: $6.21 | Value: $621.50 | Cost: $494.99 | Gain: +25.6% | Contracts: 1
+[2026-03-19 12:20:09] [INFO] Not activated yet. Need +74.4% more to reach +100%
+[2026-03-19 12:25:14] [INFO] SPY $430P Jan27 | Mid: $6.21 | Value: $620.50 | Cost: $494.99 | Gain: +25.4% | Contracts: 1
+[2026-03-19 12:25:14] [INFO] Not activated yet. Need +74.6% more to reach +100%
+[2026-03-19 12:30:05] [INFO] SPY $430P Jan27 | Mid: $6.17 | Value: $616.50 | Cost: $494.99 | Gain: +24.5% | Contracts: 1
+[2026-03-19 12:30:05] [INFO] Not activated yet. Need +75.5% more to reach +100%
+[2026-03-19 12:35:11] [INFO] SPY $430P Jan27 | Mid: $6.19 | Value: $619.00 | Cost: $494.99 | Gain: +25.1% | Contracts: 1
+[2026-03-19 12:35:11] [INFO] Not activated yet. Need +74.9% more to reach +100%
+[2026-03-19 12:40:17] [INFO] SPY $430P Jan27 | Mid: $6.14 | Value: $614.50 | Cost: $494.99 | Gain: +24.1% | Contracts: 1
+[2026-03-19 12:40:17] [INFO] Not activated yet. Need +75.9% more to reach +100%
+[2026-03-19 12:45:08] [INFO] SPY $430P Jan27 | Mid: $6.11 | Value: $611.00 | Cost: $494.99 | Gain: +23.4% | Contracts: 1
+[2026-03-19 12:45:08] [INFO] Not activated yet. Need +76.6% more to reach +100%
+[2026-03-19 12:50:14] [INFO] SPY $430P Jan27 | Mid: $6.14 | Value: $614.50 | Cost: $494.99 | Gain: +24.1% | Contracts: 1
+[2026-03-19 12:50:14] [INFO] Not activated yet. Need +75.9% more to reach +100%
+[2026-03-19 12:55:04] [INFO] SPY $430P Jan27 | Mid: $6.19 | Value: $618.50 | Cost: $494.99 | Gain: +25.0% | Contracts: 1
+[2026-03-19 12:55:04] [INFO] Not activated yet. Need +75.0% more to reach +100%
+[2026-03-19 13:00:10] [INFO] SPY $430P Jan27 | Mid: $6.18 | Value: $617.50 | Cost: $494.99 | Gain: +24.7% | Contracts: 1
+[2026-03-19 13:00:10] [INFO] Not activated yet. Need +75.3% more to reach +100%
+[2026-03-19 13:05:16] [INFO] SPY $430P Jan27 | Mid: $6.23 | Value: $623.00 | Cost: $494.99 | Gain: +25.9% | Contracts: 1
+[2026-03-19 13:05:16] [INFO] Not activated yet. Need +74.1% more to reach +100%
+[2026-03-19 13:10:07] [INFO] SPY $430P Jan27 | Mid: $6.29 | Value: $629.50 | Cost: $494.99 | Gain: +27.2% | Contracts: 1
+[2026-03-19 13:10:07] [INFO] Not activated yet. Need +72.8% more to reach +100%
+[2026-03-19 13:15:13] [INFO] SPY $430P Jan27 | Mid: $6.28 | Value: $627.50 | Cost: $494.99 | Gain: +26.8% | Contracts: 1
+[2026-03-19 13:15:13] [INFO] Not activated yet. Need +73.2% more to reach +100%
+[2026-03-19 13:20:03] [INFO] SPY $430P Jan27 | Mid: $6.23 | Value: $623.00 | Cost: $494.99 | Gain: +25.9% | Contracts: 1
+[2026-03-19 13:20:03] [INFO] Not activated yet. Need +74.1% more to reach +100%
+[2026-03-19 13:25:08] [INFO] SPY $430P Jan27 | Mid: $6.21 | Value: $620.50 | Cost: $494.99 | Gain: +25.4% | Contracts: 1
+[2026-03-19 13:25:08] [INFO] Not activated yet. Need +74.6% more to reach +100%
+[2026-03-19 13:30:14] [INFO] SPY $430P Jan27 | Mid: $6.18 | Value: $617.50 | Cost: $494.99 | Gain: +24.7% | Contracts: 1
+[2026-03-19 13:30:14] [INFO] Not activated yet. Need +75.3% more to reach +100%
+[2026-03-19 13:35:05] [INFO] SPY $430P Jan27 | Mid: $6.21 | Value: $620.50 | Cost: $494.99 | Gain: +25.4% | Contracts: 1
+[2026-03-19 13:35:05] [INFO] Not activated yet. Need +74.6% more to reach +100%
+[2026-03-19 13:40:11] [INFO] SPY $430P Jan27 | Mid: $6.23 | Value: $623.00 | Cost: $494.99 | Gain: +25.9% | Contracts: 1
+[2026-03-19 13:40:11] [INFO] Not activated yet. Need +74.1% more to reach +100%
+[2026-03-19 13:45:17] [INFO] SPY $430P Jan27 | Mid: $6.21 | Value: $621.50 | Cost: $494.99 | Gain: +25.6% | Contracts: 1
+[2026-03-19 13:45:17] [INFO] Not activated yet. Need +74.4% more to reach +100%
+[2026-03-19 13:50:08] [INFO] SPY $430P Jan27 | Mid: $6.21 | Value: $620.50 | Cost: $494.99 | Gain: +25.4% | Contracts: 1
+[2026-03-19 13:50:08] [INFO] Not activated yet. Need +74.6% more to reach +100%
+[2026-03-19 13:55:14] [INFO] SPY $430P Jan27 | Mid: $6.13 | Value: $613.00 | Cost: $494.99 | Gain: +23.8% | Contracts: 1
+[2026-03-19 13:55:14] [INFO] Not activated yet. Need +76.2% more to reach +100%
+[2026-03-19 14:00:04] [INFO] SPY $430P Jan27 | Mid: $6.14 | Value: $614.00 | Cost: $494.99 | Gain: +24.0% | Contracts: 1
+[2026-03-19 14:00:04] [INFO] Not activated yet. Need +76.0% more to reach +100%
+[2026-03-19 14:05:10] [INFO] SPY $430P Jan27 | Mid: $6.17 | Value: $616.50 | Cost: $494.99 | Gain: +24.5% | Contracts: 1
+[2026-03-19 14:05:10] [INFO] Not activated yet. Need +75.5% more to reach +100%
+[2026-03-19 14:10:16] [INFO] SPY $430P Jan27 | Mid: $6.11 | Value: $611.00 | Cost: $494.99 | Gain: +23.4% | Contracts: 1
+[2026-03-19 14:10:16] [INFO] Not activated yet. Need +76.6% more to reach +100%
+[2026-03-19 14:15:07] [INFO] SPY $430P Jan27 | Mid: $6.03 | Value: $603.00 | Cost: $494.99 | Gain: +21.8% | Contracts: 1
+[2026-03-19 14:15:07] [INFO] Not activated yet. Need +78.2% more to reach +100%
+[2026-03-19 14:20:13] [INFO] SPY $430P Jan27 | Mid: $6.04 | Value: $604.00 | Cost: $494.99 | Gain: +22.0% | Contracts: 1
+[2026-03-19 14:20:13] [INFO] Not activated yet. Need +78.0% more to reach +100%
+[2026-03-19 14:25:04] [INFO] SPY $430P Jan27 | Mid: $6.05 | Value: $605.00 | Cost: $494.99 | Gain: +22.2% | Contracts: 1
+[2026-03-19 14:25:04] [INFO] Not activated yet. Need +77.8% more to reach +100%
+[2026-03-19 14:30:09] [INFO] SPY $430P Jan27 | Mid: $6.11 | Value: $611.00 | Cost: $494.99 | Gain: +23.4% | Contracts: 1
+[2026-03-19 14:30:09] [INFO] Not activated yet. Need +76.6% more to reach +100%
+[2026-03-19 14:35:15] [INFO] SPY $430P Jan27 | Mid: $6.09 | Value: $609.00 | Cost: $494.99 | Gain: +23.0% | Contracts: 1
+[2026-03-19 14:35:15] [INFO] Not activated yet. Need +77.0% more to reach +100%
+[2026-03-19 14:40:06] [INFO] SPY $430P Jan27 | Mid: $6.11 | Value: $611.00 | Cost: $494.99 | Gain: +23.4% | Contracts: 1
+[2026-03-19 14:40:06] [INFO] Not activated yet. Need +76.6% more to reach +100%
+[2026-03-19 14:45:12] [INFO] SPY $430P Jan27 | Mid: $6.14 | Value: $614.00 | Cost: $494.99 | Gain: +24.0% | Contracts: 1
+[2026-03-19 14:45:12] [INFO] Not activated yet. Need +76.0% more to reach +100%
+[2026-03-19 14:50:03] [INFO] SPY $430P Jan27 | Mid: $6.14 | Value: $614.50 | Cost: $494.99 | Gain: +24.1% | Contracts: 1
+[2026-03-19 14:50:03] [INFO] Not activated yet. Need +75.9% more to reach +100%
+[2026-03-19 14:55:09] [INFO] SPY $430P Jan27 | Mid: $6.13 | Value: $613.00 | Cost: $494.99 | Gain: +23.8% | Contracts: 1
+[2026-03-19 14:55:09] [INFO] Not activated yet. Need +76.2% more to reach +100%
+[2026-03-19 15:00:15] [INFO] SPY $430P Jan27 | Mid: $6.00 | Value: $600.00 | Cost: $494.99 | Gain: +21.2% | Contracts: 1
+[2026-03-19 15:00:15] [INFO] Not activated yet. Need +78.8% more to reach +100%
+[2026-03-19 15:05:05] [INFO] SPY $430P Jan27 | Mid: $5.83 | Value: $583.50 | Cost: $494.99 | Gain: +17.9% | Contracts: 1
+[2026-03-19 15:05:05] [INFO] Not activated yet. Need +82.1% more to reach +100%
+[2026-03-19 15:10:11] [INFO] SPY $430P Jan27 | Mid: $5.78 | Value: $577.50 | Cost: $494.99 | Gain: +16.7% | Contracts: 1
+[2026-03-19 15:10:11] [INFO] Not activated yet. Need +83.3% more to reach +100%
+[2026-03-19 15:15:17] [INFO] SPY $430P Jan27 | Mid: $5.74 | Value: $574.50 | Cost: $494.99 | Gain: +16.1% | Contracts: 1
+[2026-03-19 15:15:17] [INFO] Not activated yet. Need +83.9% more to reach +100%
+[2026-03-19 15:20:08] [INFO] SPY $430P Jan27 | Mid: $5.78 | Value: $578.00 | Cost: $494.99 | Gain: +16.8% | Contracts: 1
+[2026-03-19 15:20:08] [INFO] Not activated yet. Need +83.2% more to reach +100%
+[2026-03-19 15:25:14] [INFO] SPY $430P Jan27 | Mid: $5.82 | Value: $582.00 | Cost: $494.99 | Gain: +17.6% | Contracts: 1
+[2026-03-19 15:25:14] [INFO] Not activated yet. Need +82.4% more to reach +100%
+[2026-03-19 15:30:05] [INFO] SPY $430P Jan27 | Mid: $5.87 | Value: $587.00 | Cost: $494.99 | Gain: +18.6% | Contracts: 1
+[2026-03-19 15:30:05] [INFO] Not activated yet. Need +81.4% more to reach +100%
+[2026-03-19 15:35:11] [INFO] SPY $430P Jan27 | Mid: $5.87 | Value: $586.50 | Cost: $494.99 | Gain: +18.5% | Contracts: 1
+[2026-03-19 15:35:11] [INFO] Not activated yet. Need +81.5% more to reach +100%
+[2026-03-19 15:40:16] [INFO] SPY $430P Jan27 | Mid: $5.88 | Value: $587.50 | Cost: $494.99 | Gain: +18.7% | Contracts: 1
+[2026-03-19 15:40:16] [INFO] Not activated yet. Need +81.3% more to reach +100%
+[2026-03-19 15:45:07] [INFO] SPY $430P Jan27 | Mid: $5.88 | Value: $588.50 | Cost: $494.99 | Gain: +18.9% | Contracts: 1
+[2026-03-19 15:45:07] [INFO] Not activated yet. Need +81.1% more to reach +100%
+[2026-03-19 15:50:13] [INFO] SPY $430P Jan27 | Mid: $5.89 | Value: $589.50 | Cost: $494.99 | Gain: +19.1% | Contracts: 1
+[2026-03-19 15:50:13] [INFO] Not activated yet. Need +80.9% more to reach +100%
+[2026-03-19 15:55:04] [INFO] SPY $430P Jan27 | Mid: $5.88 | Value: $588.50 | Cost: $494.99 | Gain: +18.9% | Contracts: 1
+[2026-03-19 15:55:04] [INFO] Not activated yet. Need +81.1% more to reach +100%
+[2026-03-19 16:00:10] [INFO] SPY $430P Jan27 | Mid: $5.92 | Value: $592.00 | Cost: $494.99 | Gain: +19.6% | Contracts: 1
+[2026-03-19 16:00:10] [INFO] Not activated yet. Need +80.4% more to reach +100%
+[2026-03-20 09:30:10] [ERROR] Scheduler error: Socket disconnect
+[2026-03-20 09:31:11] [INFO] Connected to TWS on port 7496
+[2026-03-20 09:31:14] [INFO] SPY $430P Jan27 | Mid: $6.02 | Value: $601.50 | Cost: $494.99 | Gain: +21.5% | Contracts: 1
+[2026-03-20 09:31:14] [INFO] Not activated yet. Need +78.5% more to reach +100%
+[2026-03-20 09:35:04] [INFO] SPY $430P Jan27 | Mid: $6.11 | Value: $611.00 | Cost: $494.99 | Gain: +23.4% | Contracts: 1
+[2026-03-20 09:35:04] [INFO] Not activated yet. Need +76.6% more to reach +100%
+[2026-03-20 09:40:09] [INFO] SPY $430P Jan27 | Mid: $6.09 | Value: $609.00 | Cost: $494.99 | Gain: +23.0% | Contracts: 1
+[2026-03-20 09:40:09] [INFO] Not activated yet. Need +77.0% more to reach +100%
+[2026-03-20 09:45:14] [INFO] SPY $430P Jan27 | Mid: $6.01 | Value: $600.50 | Cost: $494.99 | Gain: +21.3% | Contracts: 1
+[2026-03-20 09:45:14] [INFO] Not activated yet. Need +78.7% more to reach +100%
+[2026-03-20 09:50:03] [INFO] SPY $430P Jan27 | Mid: $6.08 | Value: $608.00 | Cost: $494.99 | Gain: +22.8% | Contracts: 1
+[2026-03-20 09:50:03] [INFO] Not activated yet. Need +77.2% more to reach +100%
+[2026-03-20 09:55:08] [INFO] SPY $430P Jan27 | Mid: $6.12 | Value: $612.50 | Cost: $494.99 | Gain: +23.7% | Contracts: 1
+[2026-03-20 09:55:08] [INFO] Not activated yet. Need +76.3% more to reach +100%
+[2026-03-20 10:01:31] [INFO] SPY $430P Jan27 | Mid: $6.28 | Value: $628.00 | Cost: $494.99 | Gain: +26.9% | Contracts: 1
+[2026-03-20 10:01:31] [INFO] Not activated yet. Need +73.1% more to reach +100%
+[2026-03-20 10:05:05] [INFO] SPY $430P Jan27 | Mid: $6.25 | Value: $625.00 | Cost: $494.99 | Gain: +26.3% | Contracts: 1
+[2026-03-20 10:05:05] [INFO] Not activated yet. Need +73.7% more to reach +100%
+[2026-03-20 10:10:09] [INFO] SPY $430P Jan27 | Mid: $6.27 | Value: $626.50 | Cost: $494.99 | Gain: +26.6% | Contracts: 1
+[2026-03-20 10:10:09] [INFO] Not activated yet. Need +73.4% more to reach +100%
+[2026-03-20 10:15:14] [INFO] SPY $430P Jan27 | Mid: $6.38 | Value: $638.50 | Cost: $494.99 | Gain: +29.0% | Contracts: 1
+[2026-03-20 10:15:14] [INFO] Not activated yet. Need +71.0% more to reach +100%
+[2026-03-20 10:20:04] [INFO] SPY $430P Jan27 | Mid: $6.37 | Value: $636.50 | Cost: $494.99 | Gain: +28.6% | Contracts: 1
+[2026-03-20 10:20:04] [INFO] Not activated yet. Need +71.4% more to reach +100%
+[2026-03-20 10:25:10] [INFO] SPY $430P Jan27 | Mid: $6.37 | Value: $636.50 | Cost: $494.99 | Gain: +28.6% | Contracts: 1
+[2026-03-20 10:25:10] [INFO] Not activated yet. Need +71.4% more to reach +100%
+[2026-03-20 10:30:16] [INFO] SPY $430P Jan27 | Mid: $6.37 | Value: $637.00 | Cost: $494.99 | Gain: +28.7% | Contracts: 1
+[2026-03-20 10:30:16] [INFO] Not activated yet. Need +71.3% more to reach +100%
+[2026-03-20 10:35:07] [INFO] SPY $430P Jan27 | Mid: $6.29 | Value: $629.00 | Cost: $494.99 | Gain: +27.1% | Contracts: 1
+[2026-03-20 10:35:07] [INFO] Not activated yet. Need +72.9% more to reach +100%
+[2026-03-20 10:40:13] [INFO] SPY $430P Jan27 | Mid: $6.36 | Value: $635.50 | Cost: $494.99 | Gain: +28.4% | Contracts: 1
+[2026-03-20 10:40:13] [INFO] Not activated yet. Need +71.6% more to reach +100%
+[2026-03-20 10:45:03] [INFO] SPY $430P Jan27 | Mid: $6.33 | Value: $633.50 | Cost: $494.99 | Gain: +28.0% | Contracts: 1
+[2026-03-20 10:45:03] [INFO] Not activated yet. Need +72.0% more to reach +100%
+[2026-03-20 10:50:09] [INFO] SPY $430P Jan27 | Mid: $6.30 | Value: $630.00 | Cost: $494.99 | Gain: +27.3% | Contracts: 1
+[2026-03-20 10:50:09] [INFO] Not activated yet. Need +72.7% more to reach +100%
+[2026-03-20 10:55:15] [INFO] SPY $430P Jan27 | Mid: $6.39 | Value: $639.50 | Cost: $494.99 | Gain: +29.2% | Contracts: 1
+[2026-03-20 10:55:15] [INFO] Not activated yet. Need +70.8% more to reach +100%
+[2026-03-20 11:00:06] [INFO] SPY $430P Jan27 | Mid: $6.30 | Value: $630.00 | Cost: $494.99 | Gain: +27.3% | Contracts: 1
+[2026-03-20 11:00:06] [INFO] Not activated yet. Need +72.7% more to reach +100%
+[2026-03-20 11:05:41] [INFO] SPY $430P Jan27 | Mid: $6.30 | Value: $630.00 | Cost: $494.99 | Gain: +27.3% | Contracts: 1
+[2026-03-20 11:05:41] [INFO] Not activated yet. Need +72.7% more to reach +100%
+[2026-03-20 11:10:15] [INFO] SPY $430P Jan27 | Mid: $6.25 | Value: $625.00 | Cost: $494.99 | Gain: +26.3% | Contracts: 1
+[2026-03-20 11:10:15] [INFO] Not activated yet. Need +73.7% more to reach +100%
+[2026-03-20 11:15:05] [INFO] SPY $430P Jan27 | Mid: $6.19 | Value: $619.00 | Cost: $494.99 | Gain: +25.1% | Contracts: 1
+[2026-03-20 11:15:05] [INFO] Not activated yet. Need +74.9% more to reach +100%
+[2026-03-20 11:19:17] [INFO] 
+============================================================
+[2026-03-20 11:19:17] [INFO] TRADER3 — SPY $430 Put Ladder Monitor STARTED
+[2026-03-20 11:19:17] [INFO] Activation: +100% gain
+[2026-03-20 11:19:17] [INFO] Cost Basis: $494.99
+[2026-03-20 11:19:17] [INFO] ============================================================
+
+[2026-03-20 11:19:17] [WARN] Telegram not configured
+[2026-03-20 11:19:17] [INFO] Scheduled: Every 5 min, Mon-Fri 9:30 AM - 4:00 PM ET
+[2026-03-20 11:19:17] [INFO] Connected to TWS on port 7496
+[2026-03-20 11:19:17] [INFO] Using IBKR portfolio value: $623.00 (mid $6.23)
+[2026-03-20 11:19:17] [INFO] SPY $430P Jan27 | Mid: $6.23 | Value: $623.00 | Cost: $494.99 | Gain: +25.9% | Contracts: 1
+[2026-03-20 11:19:17] [INFO] Not activated yet. Need +74.1% more to reach +100%
+[2026-03-20 11:19:19] [INFO] 
+============================================================
+[2026-03-20 11:19:19] [INFO] TRADER3 — SPY $430 Put Ladder Monitor STARTED
+[2026-03-20 11:19:19] [INFO] Activation: +100% gain
+[2026-03-20 11:19:19] [INFO] Cost Basis: $494.99
+[2026-03-20 11:19:19] [INFO] ============================================================
+
+[2026-03-20 11:19:19] [WARN] Telegram not configured
+[2026-03-20 11:19:19] [INFO] Scheduled: Every 5 min, Mon-Fri 9:30 AM - 4:00 PM ET
+[2026-03-20 11:19:32] [INFO] 
+============================================================
+[2026-03-20 11:19:32] [INFO] TRADER3 — SPY $430 Put Ladder Monitor STARTED
+[2026-03-20 11:19:32] [INFO] Activation: +100% gain
+[2026-03-20 11:19:32] [INFO] Cost Basis: $494.99
+[2026-03-20 11:19:32] [INFO] ============================================================
+
+[2026-03-20 11:19:32] [WARN] Telegram not configured
+[2026-03-20 11:19:32] [INFO] Scheduled: Every 5 min, Mon-Fri 9:30 AM - 4:00 PM ET
+[2026-03-20 11:19:33] [INFO] Connected to TWS on port 7496
+[2026-03-20 11:19:33] [INFO] Using IBKR portfolio value: $623.00 (mid $6.23)
+[2026-03-20 11:19:33] [INFO] SPY $430P Jan27 | Mid: $6.23 | Value: $623.00 | Cost: $494.99 | Gain: +25.9% | Contracts: 1
+[2026-03-20 11:19:33] [INFO] Not activated yet. Need +74.1% more to reach +100%
+[2026-03-20 11:19:34] [INFO] 
+============================================================
+[2026-03-20 11:19:34] [INFO] TRADER3 — SPY $430 Put Ladder Monitor STARTED
+[2026-03-20 11:19:34] [INFO] Activation: +100% gain
+[2026-03-20 11:19:34] [INFO] Cost Basis: $494.99
+[2026-03-20 11:19:34] [INFO] ============================================================
+
+[2026-03-20 11:19:34] [WARN] Telegram not configured
+[2026-03-20 11:19:34] [INFO] Scheduled: Every 5 min, Mon-Fri 9:30 AM - 4:00 PM ET
+Error 326, reqId -1: Unable to connect as the client id is already in use. Retry with a unique client id.
+Peer closed connection. clientId 13 already in use?
+[2026-03-20 11:19:48] [INFO] 
+============================================================
+[2026-03-20 11:19:48] [INFO] TRADER3 — SPY $430 Put Ladder Monitor STARTED
+[2026-03-20 11:19:48] [INFO] Activation: +100% gain
+[2026-03-20 11:19:48] [INFO] Cost Basis: $494.99
+[2026-03-20 11:19:48] [INFO] ============================================================
+
+[2026-03-20 11:19:48] [WARN] Telegram not configured
+[2026-03-20 11:19:48] [INFO] Scheduled: Every 5 min, Mon-Fri 9:30 AM - 4:00 PM ET
+[2026-03-20 11:19:49] [INFO] Connected to TWS on port 7496
+[2026-03-20 11:19:49] [INFO] Using IBKR portfolio value: $623.00 (mid $6.23)
+[2026-03-20 11:19:49] [INFO] SPY $430P Jan27 | Mid: $6.23 | Value: $623.00 | Cost: $494.99 | Gain: +25.9% | Contracts: 1
+[2026-03-20 11:19:49] [INFO] Not activated yet. Need +74.1% more to reach +100%
+[2026-03-20 11:20:02] [INFO] 
+============================================================
+[2026-03-20 11:20:02] [INFO] TRADER3 — SPY $430 Put Ladder Monitor STARTED
+[2026-03-20 11:20:02] [INFO] Activation: +100% gain
+[2026-03-20 11:20:02] [INFO] Cost Basis: $494.99
+[2026-03-20 11:20:02] [INFO] ============================================================
+
+[2026-03-20 11:20:02] [WARN] Telegram not configured
+[2026-03-20 11:20:02] [INFO] Scheduled: Every 5 min, Mon-Fri 9:30 AM - 4:00 PM ET
+[2026-03-20 11:20:03] [INFO] Connected to TWS on port 7496
+[2026-03-20 11:20:03] [INFO] Using IBKR portfolio value: $623.53 (mid $6.24)
+[2026-03-20 11:20:03] [INFO] SPY $430P Jan27 | Mid: $6.24 | Value: $623.53 | Cost: $494.99 | Gain: +26.0% | Contracts: 1
+[2026-03-20 11:20:03] [INFO] Not activated yet. Need +74.0% more to reach +100%
+[2026-03-20 11:20:15] [INFO] 
+============================================================
+[2026-03-20 11:20:15] [INFO] TRADER3 — SPY $430 Put Ladder Monitor STARTED
+[2026-03-20 11:20:15] [INFO] Activation: +100% gain
+[2026-03-20 11:20:15] [INFO] Cost Basis: $494.99
+[2026-03-20 11:20:15] [INFO] ============================================================
+
+[2026-03-20 11:20:15] [WARN] Telegram not configured
+[2026-03-20 11:20:15] [INFO] Scheduled: Every 5 min, Mon-Fri 9:30 AM - 4:00 PM ET
+[2026-03-20 11:20:15] [INFO] Connected to TWS on port 7496
+[2026-03-20 11:20:15] [INFO] Using IBKR portfolio value: $623.53 (mid $6.24)
+[2026-03-20 11:20:15] [INFO] SPY $430P Jan27 | Mid: $6.24 | Value: $623.53 | Cost: $494.99 | Gain: +26.0% | Contracts: 1
+[2026-03-20 11:20:15] [INFO] Not activated yet. Need +74.0% more to reach +100%
+[2026-03-20 11:25:02] [INFO] Using IBKR portfolio value: $623.53 (mid $6.24)
+[2026-03-20 11:25:02] [INFO] SPY $430P Jan27 | Mid: $6.24 | Value: $623.53 | Cost: $494.99 | Gain: +26.0% | Contracts: 1
+[2026-03-20 11:25:02] [INFO] Not activated yet. Need +74.0% more to reach +100%
+[2026-03-20 11:30:03] [INFO] Using IBKR portfolio value: $623.53 (mid $6.24)
+[2026-03-20 11:30:03] [INFO] SPY $430P Jan27 | Mid: $6.24 | Value: $623.53 | Cost: $494.99 | Gain: +26.0% | Contracts: 1
+[2026-03-20 11:30:03] [INFO] Not activated yet. Need +74.0% more to reach +100%
+[2026-03-20 11:35:04] [INFO] Using IBKR portfolio value: $623.53 (mid $6.24)
+[2026-03-20 11:35:04] [INFO] SPY $430P Jan27 | Mid: $6.24 | Value: $623.53 | Cost: $494.99 | Gain: +26.0% | Contracts: 1
+[2026-03-20 11:35:04] [INFO] Not activated yet. Need +74.0% more to reach +100%
+[2026-03-20 11:40:06] [INFO] Using IBKR portfolio value: $623.53 (mid $6.24)
+[2026-03-20 11:40:06] [INFO] SPY $430P Jan27 | Mid: $6.24 | Value: $623.53 | Cost: $494.99 | Gain: +26.0% | Contracts: 1
+[2026-03-20 11:40:06] [INFO] Not activated yet. Need +74.0% more to reach +100%
+[2026-03-20 11:40:40] [INFO] PID lockfile created: /Users/eddiemae/rudy/scripts/../data/trader3.pid (PID 59281)
+[2026-03-20 11:40:40] [INFO] 
+============================================================
+[2026-03-20 11:40:40] [INFO] TRADER3 — SPY $430 Put Ladder Monitor STARTED
+[2026-03-20 11:40:40] [INFO] Activation: +100% gain
+[2026-03-20 11:40:40] [INFO] Cost Basis: $494.99
+[2026-03-20 11:40:40] [INFO] ============================================================
+
+[2026-03-20 11:40:40] [WARN] Telegram not configured
+[2026-03-20 11:40:40] [INFO] Scheduled: Every 5 min, Mon-Fri 9:30 AM - 4:00 PM ET
+[2026-03-20 11:40:41] [INFO] Connected to TWS on port 7496
+[2026-03-20 11:40:41] [INFO] Using IBKR portfolio value: $622.38 (mid $6.22)
+[2026-03-20 11:40:41] [INFO] SPY $430P Jan27 | Mid: $6.22 | Value: $622.38 | Cost: $494.99 | Gain: +25.7% | Contracts: 1
+[2026-03-20 11:40:41] [INFO] Not activated yet. Need +74.3% more to reach +100%
+[2026-03-20 11:40:43] [INFO] PID lockfile created: /Users/eddiemae/rudy/scripts/../data/trader3.pid (PID 59294)
+[2026-03-20 11:40:43] [INFO] 
+============================================================
+[2026-03-20 11:40:43] [INFO] TRADER3 — SPY $430 Put Ladder Monitor STARTED
+[2026-03-20 11:40:43] [INFO] Activation: +100% gain
+[2026-03-20 11:40:43] [INFO] Cost Basis: $494.99
+[2026-03-20 11:40:43] [INFO] ============================================================
+
+[2026-03-20 11:40:43] [WARN] Telegram not configured
+[2026-03-20 11:40:43] [INFO] Scheduled: Every 5 min, Mon-Fri 9:30 AM - 4:00 PM ET
+Error 326, reqId -1: Unable to connect as the client id is already in use. Retry with a unique client id.
+Peer closed connection. clientId 13 already in use?
+API connection failed: TimeoutError()
+[2026-03-20 11:40:58] [ERROR] Connection failed: 
+[2026-03-20 11:41:28] [INFO] PID lockfile created: /Users/eddiemae/rudy/scripts/../data/trader3.pid (PID 59353)
+[2026-03-20 11:41:28] [INFO] 
+============================================================
+[2026-03-20 11:41:28] [INFO] TRADER3 — SPY $430 Put Ladder Monitor STARTED
+[2026-03-20 11:41:28] [INFO] Activation: +100% gain
+[2026-03-20 11:41:28] [INFO] Cost Basis: $494.99
+[2026-03-20 11:41:28] [INFO] ============================================================
+
+[2026-03-20 11:41:28] [WARN] Telegram not configured
+[2026-03-20 11:41:28] [INFO] Scheduled: Every 5 min, Mon-Fri 9:30 AM - 4:00 PM ET
+[2026-03-20 11:41:29] [INFO] Connected to TWS on port 7496
+[2026-03-20 11:41:29] [INFO] Using IBKR portfolio value: $625.32 (mid $6.25)
+[2026-03-20 11:41:29] [INFO] SPY $430P Jan27 | Mid: $6.25 | Value: $625.32 | Cost: $494.99 | Gain: +26.3% | Contracts: 1
+[2026-03-20 11:41:29] [INFO] Not activated yet. Need +73.7% more to reach +100%
+[2026-03-20 11:41:40] [INFO] PID lockfile created: /Users/eddiemae/rudy/scripts/../data/trader3.pid (PID 59383)
+[2026-03-20 11:41:40] [INFO] 
+============================================================
+[2026-03-20 11:41:40] [INFO] TRADER3 — SPY $430 Put Ladder Monitor STARTED
+[2026-03-20 11:41:40] [INFO] Activation: +100% gain
+[2026-03-20 11:41:40] [INFO] Cost Basis: $494.99
+[2026-03-20 11:41:40] [INFO] ============================================================
+
+[2026-03-20 11:41:40] [WARN] Telegram not configured
+[2026-03-20 11:41:40] [INFO] Scheduled: Every 5 min, Mon-Fri 9:30 AM - 4:00 PM ET
+[2026-03-20 11:41:40] [INFO] Connected to TWS on port 7496
+[2026-03-20 11:41:40] [INFO] Using IBKR portfolio value: $625.32 (mid $6.25)
+[2026-03-20 11:41:40] [INFO] SPY $430P Jan27 | Mid: $6.25 | Value: $625.32 | Cost: $494.99 | Gain: +26.3% | Contracts: 1
+[2026-03-20 11:41:40] [INFO] Not activated yet. Need +73.7% more to reach +100%
+[2026-03-20 11:42:03] [INFO] PID lockfile created: /Users/eddiemae/rudy/scripts/../data/trader3.pid (PID 59416)
+[2026-03-20 11:42:03] [INFO] 
+============================================================
+[2026-03-20 11:42:03] [INFO] TRADER3 — SPY $430 Put Ladder Monitor STARTED
+[2026-03-20 11:42:03] [INFO] Activation: +100% gain
+[2026-03-20 11:42:03] [INFO] Cost Basis: $494.99
+[2026-03-20 11:42:03] [INFO] ============================================================
+
+[2026-03-20 11:42:03] [WARN] Telegram not configured
+[2026-03-20 11:42:03] [INFO] Scheduled: Every 5 min, Mon-Fri 9:30 AM - 4:00 PM ET
+[2026-03-20 11:42:04] [INFO] Connected to TWS on port 7496
+[2026-03-20 11:42:04] [INFO] Using IBKR portfolio value: $625.32 (mid $6.25)
+[2026-03-20 11:42:04] [INFO] SPY $430P Jan27 | Mid: $6.25 | Value: $625.32 | Cost: $494.99 | Gain: +26.3% | Contracts: 1
+[2026-03-20 11:42:04] [INFO] Not activated yet. Need +73.7% more to reach +100%
+[2026-03-20 11:42:39] [INFO] PID lockfile created: /Users/eddiemae/rudy/scripts/../data/trader3.pid (PID 59470)
+[2026-03-20 11:42:39] [INFO] 
+============================================================
+[2026-03-20 11:42:39] [INFO] TRADER3 — SPY $430 Put Ladder Monitor STARTED
+[2026-03-20 11:42:39] [INFO] Activation: +100% gain
+[2026-03-20 11:42:39] [INFO] Cost Basis: $494.99
+[2026-03-20 11:42:39] [INFO] ============================================================
+
+[2026-03-20 11:42:39] [WARN] Telegram not configured
+[2026-03-20 11:42:39] [INFO] Scheduled: Every 5 min, Mon-Fri 9:30 AM - 4:00 PM ET
+[2026-03-20 11:42:39] [INFO] Connected to TWS on port 7496
+[2026-03-20 11:42:39] [INFO] Using IBKR portfolio value: $625.32 (mid $6.25)
+[2026-03-20 11:42:39] [INFO] SPY $430P Jan27 | Mid: $6.25 | Value: $625.32 | Cost: $494.99 | Gain: +26.3% | Contracts: 1
+[2026-03-20 11:42:39] [INFO] Not activated yet. Need +73.7% more to reach +100%
+[2026-03-20 11:45:10] [INFO] Using IBKR portfolio value: $625.32 (mid $6.25)
+[2026-03-20 11:45:10] [INFO] SPY $430P Jan27 | Mid: $6.25 | Value: $625.32 | Cost: $494.99 | Gain: +26.3% | Contracts: 1
+[2026-03-20 11:45:10] [INFO] Not activated yet. Need +73.7% more to reach +100%
+[2026-03-20 11:50:11] [INFO] Using IBKR portfolio value: $625.32 (mid $6.25)
+[2026-03-20 11:50:11] [INFO] SPY $430P Jan27 | Mid: $6.25 | Value: $625.32 | Cost: $494.99 | Gain: +26.3% | Contracts: 1
+[2026-03-20 11:50:11] [INFO] Not activated yet. Need +73.7% more to reach +100%
+[2026-03-20 11:55:13] [INFO] Using IBKR portfolio value: $625.32 (mid $6.25)
+[2026-03-20 11:55:13] [INFO] SPY $430P Jan27 | Mid: $6.25 | Value: $625.32 | Cost: $494.99 | Gain: +26.3% | Contracts: 1
+[2026-03-20 11:55:13] [INFO] Not activated yet. Need +73.7% more to reach +100%
+[2026-03-20 12:00:01] [INFO] Using IBKR portfolio value: $625.32 (mid $6.25)
+[2026-03-20 12:00:01] [INFO] SPY $430P Jan27 | Mid: $6.25 | Value: $625.32 | Cost: $494.99 | Gain: +26.3% | Contracts: 1
+[2026-03-20 12:00:01] [INFO] Not activated yet. Need +73.7% more to reach +100%
+[2026-03-20 12:05:03] [INFO] Using IBKR portfolio value: $625.32 (mid $6.25)
+[2026-03-20 12:05:03] [INFO] SPY $430P Jan27 | Mid: $6.25 | Value: $625.32 | Cost: $494.99 | Gain: +26.3% | Contracts: 1
+[2026-03-20 12:05:03] [INFO] Not activated yet. Need +73.7% more to reach +100%
+[2026-03-20 12:10:06] [INFO] Using IBKR portfolio value: $625.32 (mid $6.25)
+[2026-03-20 12:10:06] [INFO] SPY $430P Jan27 | Mid: $6.25 | Value: $625.32 | Cost: $494.99 | Gain: +26.3% | Contracts: 1
+[2026-03-20 12:10:06] [INFO] Not activated yet. Need +73.7% more to reach +100%
+[2026-03-20 12:15:09] [INFO] Using IBKR portfolio value: $625.32 (mid $6.25)
+[2026-03-20 12:15:09] [INFO] SPY $430P Jan27 | Mid: $6.25 | Value: $625.32 | Cost: $494.99 | Gain: +26.3% | Contracts: 1
+[2026-03-20 12:15:09] [INFO] Not activated yet. Need +73.7% more to reach +100%
+[2026-03-20 12:20:11] [INFO] Using IBKR portfolio value: $625.32 (mid $6.25)
+[2026-03-20 12:20:11] [INFO] SPY $430P Jan27 | Mid: $6.25 | Value: $625.32 | Cost: $494.99 | Gain: +26.3% | Contracts: 1
+[2026-03-20 12:20:11] [INFO] Not activated yet. Need +73.7% more to reach +100%
+[2026-03-20 12:25:13] [INFO] Using IBKR portfolio value: $625.32 (mid $6.25)
+[2026-03-20 12:25:13] [INFO] SPY $430P Jan27 | Mid: $6.25 | Value: $625.32 | Cost: $494.99 | Gain: +26.3% | Contracts: 1
+[2026-03-20 12:25:13] [INFO] Not activated yet. Need +73.7% more to reach +100%
+[2026-03-20 12:30:14] [INFO] Using IBKR portfolio value: $625.32 (mid $6.25)
+[2026-03-20 12:30:14] [INFO] SPY $430P Jan27 | Mid: $6.25 | Value: $625.32 | Cost: $494.99 | Gain: +26.3% | Contracts: 1
+[2026-03-20 12:30:14] [INFO] Not activated yet. Need +73.7% more to reach +100%
+[2026-03-20 12:35:00] [INFO] Using IBKR portfolio value: $625.32 (mid $6.25)
+[2026-03-20 12:35:00] [INFO] SPY $430P Jan27 | Mid: $6.25 | Value: $625.32 | Cost: $494.99 | Gain: +26.3% | Contracts: 1
+[2026-03-20 12:35:00] [INFO] Not activated yet. Need +73.7% more to reach +100%
+[2026-03-20 12:40:02] [INFO] Using IBKR portfolio value: $625.32 (mid $6.25)
+[2026-03-20 12:40:02] [INFO] SPY $430P Jan27 | Mid: $6.25 | Value: $625.32 | Cost: $494.99 | Gain: +26.3% | Contracts: 1
+[2026-03-20 12:40:02] [INFO] Not activated yet. Need +73.7% more to reach +100%
+[2026-03-20 12:45:03] [INFO] Using IBKR portfolio value: $625.32 (mid $6.25)
+[2026-03-20 12:45:03] [INFO] SPY $430P Jan27 | Mid: $6.25 | Value: $625.32 | Cost: $494.99 | Gain: +26.3% | Contracts: 1
+[2026-03-20 12:45:03] [INFO] Not activated yet. Need +73.7% more to reach +100%
+[2026-03-20 12:50:04] [INFO] Using IBKR portfolio value: $625.32 (mid $6.25)
+[2026-03-20 12:50:04] [INFO] SPY $430P Jan27 | Mid: $6.25 | Value: $625.32 | Cost: $494.99 | Gain: +26.3% | Contracts: 1
+[2026-03-20 12:50:04] [INFO] Not activated yet. Need +73.7% more to reach +100%
+[2026-03-20 12:55:06] [INFO] Using IBKR portfolio value: $625.32 (mid $6.25)
+[2026-03-20 12:55:06] [INFO] SPY $430P Jan27 | Mid: $6.25 | Value: $625.32 | Cost: $494.99 | Gain: +26.3% | Contracts: 1
+[2026-03-20 12:55:06] [INFO] Not activated yet. Need +73.7% more to reach +100%
+[2026-03-20 13:00:07] [INFO] Using IBKR portfolio value: $625.32 (mid $6.25)
+[2026-03-20 13:00:07] [INFO] SPY $430P Jan27 | Mid: $6.25 | Value: $625.32 | Cost: $494.99 | Gain: +26.3% | Contracts: 1
+[2026-03-20 13:00:07] [INFO] Not activated yet. Need +73.7% more to reach +100%
+[2026-03-20 13:05:09] [INFO] Using IBKR portfolio value: $625.32 (mid $6.25)
+[2026-03-20 13:05:09] [INFO] SPY $430P Jan27 | Mid: $6.25 | Value: $625.32 | Cost: $494.99 | Gain: +26.3% | Contracts: 1
+[2026-03-20 13:05:09] [INFO] Not activated yet. Need +73.7% more to reach +100%
+[2026-03-20 13:10:10] [INFO] Using IBKR portfolio value: $625.32 (mid $6.25)
+[2026-03-20 13:10:10] [INFO] SPY $430P Jan27 | Mid: $6.25 | Value: $625.32 | Cost: $494.99 | Gain: +26.3% | Contracts: 1
+[2026-03-20 13:10:10] [INFO] Not activated yet. Need +73.7% more to reach +100%
+[2026-03-20 13:15:11] [INFO] Using IBKR portfolio value: $625.32 (mid $6.25)
+[2026-03-20 13:15:11] [INFO] SPY $430P Jan27 | Mid: $6.25 | Value: $625.32 | Cost: $494.99 | Gain: +26.3% | Contracts: 1
+[2026-03-20 13:15:11] [INFO] Not activated yet. Need +73.7% more to reach +100%
+[2026-03-20 13:20:13] [INFO] Using IBKR portfolio value: $625.32 (mid $6.25)
+[2026-03-20 13:20:13] [INFO] SPY $430P Jan27 | Mid: $6.25 | Value: $625.32 | Cost: $494.99 | Gain: +26.3% | Contracts: 1
+[2026-03-20 13:20:13] [INFO] Not activated yet. Need +73.7% more to reach +100%
+[2026-03-20 13:25:14] [INFO] Using IBKR portfolio value: $625.32 (mid $6.25)
+[2026-03-20 13:25:14] [INFO] SPY $430P Jan27 | Mid: $6.25 | Value: $625.32 | Cost: $494.99 | Gain: +26.3% | Contracts: 1
+[2026-03-20 13:25:14] [INFO] Not activated yet. Need +73.7% more to reach +100%
+[2026-03-20 13:30:00] [INFO] Using IBKR portfolio value: $625.32 (mid $6.25)
+[2026-03-20 13:30:00] [INFO] SPY $430P Jan27 | Mid: $6.25 | Value: $625.32 | Cost: $494.99 | Gain: +26.3% | Contracts: 1
+[2026-03-20 13:30:00] [INFO] Not activated yet. Need +73.7% more to reach +100%
+[2026-03-20 13:35:02] [INFO] Using IBKR portfolio value: $625.32 (mid $6.25)
+[2026-03-20 13:35:02] [INFO] SPY $430P Jan27 | Mid: $6.25 | Value: $625.32 | Cost: $494.99 | Gain: +26.3% | Contracts: 1
+[2026-03-20 13:35:02] [INFO] Not activated yet. Need +73.7% more to reach +100%
+[2026-03-20 13:40:03] [INFO] Using IBKR portfolio value: $625.32 (mid $6.25)
+[2026-03-20 13:40:03] [INFO] SPY $430P Jan27 | Mid: $6.25 | Value: $625.32 | Cost: $494.99 | Gain: +26.3% | Contracts: 1
+[2026-03-20 13:40:03] [INFO] Not activated yet. Need +73.7% more to reach +100%
+[2026-03-20 13:45:04] [INFO] Using IBKR portfolio value: $625.32 (mid $6.25)
+[2026-03-20 13:45:04] [INFO] SPY $430P Jan27 | Mid: $6.25 | Value: $625.32 | Cost: $494.99 | Gain: +26.3% | Contracts: 1
+[2026-03-20 13:45:04] [INFO] Not activated yet. Need +73.7% more to reach +100%
+[2026-03-20 13:50:06] [INFO] Using IBKR portfolio value: $625.32 (mid $6.25)
+[2026-03-20 13:50:06] [INFO] SPY $430P Jan27 | Mid: $6.25 | Value: $625.32 | Cost: $494.99 | Gain: +26.3% | Contracts: 1
+[2026-03-20 13:50:06] [INFO] Not activated yet. Need +73.7% more to reach +100%
+[2026-03-20 13:55:07] [INFO] Using IBKR portfolio value: $625.32 (mid $6.25)
+[2026-03-20 13:55:07] [INFO] SPY $430P Jan27 | Mid: $6.25 | Value: $625.32 | Cost: $494.99 | Gain: +26.3% | Contracts: 1
+[2026-03-20 13:55:07] [INFO] Not activated yet. Need +73.7% more to reach +100%
+[2026-03-20 14:00:10] [INFO] Using IBKR portfolio value: $625.32 (mid $6.25)
+[2026-03-20 14:00:10] [INFO] SPY $430P Jan27 | Mid: $6.25 | Value: $625.32 | Cost: $494.99 | Gain: +26.3% | Contracts: 1
+[2026-03-20 14:00:10] [INFO] Not activated yet. Need +73.7% more to reach +100%
+[2026-03-20 14:05:13] [INFO] Using IBKR portfolio value: $625.32 (mid $6.25)
+[2026-03-20 14:05:13] [INFO] SPY $430P Jan27 | Mid: $6.25 | Value: $625.32 | Cost: $494.99 | Gain: +26.3% | Contracts: 1
+[2026-03-20 14:05:13] [INFO] Not activated yet. Need +73.7% more to reach +100%
+[2026-03-20 14:10:00] [INFO] Using IBKR portfolio value: $625.32 (mid $6.25)
+[2026-03-20 14:10:00] [INFO] SPY $430P Jan27 | Mid: $6.25 | Value: $625.32 | Cost: $494.99 | Gain: +26.3% | Contracts: 1
+[2026-03-20 14:10:00] [INFO] Not activated yet. Need +73.7% more to reach +100%
+[2026-03-20 14:15:03] [INFO] Using IBKR portfolio value: $625.32 (mid $6.25)
+[2026-03-20 14:15:03] [INFO] SPY $430P Jan27 | Mid: $6.25 | Value: $625.32 | Cost: $494.99 | Gain: +26.3% | Contracts: 1
+[2026-03-20 14:15:03] [INFO] Not activated yet. Need +73.7% more to reach +100%
+[2026-03-20 14:20:05] [INFO] Using IBKR portfolio value: $625.32 (mid $6.25)
+[2026-03-20 14:20:05] [INFO] SPY $430P Jan27 | Mid: $6.25 | Value: $625.32 | Cost: $494.99 | Gain: +26.3% | Contracts: 1
+[2026-03-20 14:20:05] [INFO] Not activated yet. Need +73.7% more to reach +100%
+[2026-03-20 14:25:07] [INFO] Using IBKR portfolio value: $625.32 (mid $6.25)
+[2026-03-20 14:25:07] [INFO] SPY $430P Jan27 | Mid: $6.25 | Value: $625.32 | Cost: $494.99 | Gain: +26.3% | Contracts: 1
+[2026-03-20 14:25:07] [INFO] Not activated yet. Need +73.7% more to reach +100%
+[2026-03-20 14:30:09] [INFO] Using IBKR portfolio value: $625.32 (mid $6.25)
+[2026-03-20 14:30:09] [INFO] SPY $430P Jan27 | Mid: $6.25 | Value: $625.32 | Cost: $494.99 | Gain: +26.3% | Contracts: 1
+[2026-03-20 14:30:09] [INFO] Not activated yet. Need +73.7% more to reach +100%
+[2026-03-20 14:35:10] [INFO] Using IBKR portfolio value: $625.32 (mid $6.25)
+[2026-03-20 14:35:10] [INFO] SPY $430P Jan27 | Mid: $6.25 | Value: $625.32 | Cost: $494.99 | Gain: +26.3% | Contracts: 1
+[2026-03-20 14:35:10] [INFO] Not activated yet. Need +73.7% more to reach +100%
+[2026-03-20 14:40:12] [INFO] Using IBKR portfolio value: $625.32 (mid $6.25)
+[2026-03-20 14:40:12] [INFO] SPY $430P Jan27 | Mid: $6.25 | Value: $625.32 | Cost: $494.99 | Gain: +26.3% | Contracts: 1
+[2026-03-20 14:40:12] [INFO] Not activated yet. Need +73.7% more to reach +100%
+[2026-03-20 14:45:13] [INFO] Using IBKR portfolio value: $625.32 (mid $6.25)
+[2026-03-20 14:45:13] [INFO] SPY $430P Jan27 | Mid: $6.25 | Value: $625.32 | Cost: $494.99 | Gain: +26.3% | Contracts: 1
+[2026-03-20 14:45:13] [INFO] Not activated yet. Need +73.7% more to reach +100%
+[2026-03-20 14:50:15] [INFO] Using IBKR portfolio value: $625.32 (mid $6.25)
+[2026-03-20 14:50:15] [INFO] SPY $430P Jan27 | Mid: $6.25 | Value: $625.32 | Cost: $494.99 | Gain: +26.3% | Contracts: 1
+[2026-03-20 14:50:15] [INFO] Not activated yet. Need +73.7% more to reach +100%
+[2026-03-20 14:55:01] [INFO] Using IBKR portfolio value: $625.32 (mid $6.25)
+[2026-03-20 14:55:01] [INFO] SPY $430P Jan27 | Mid: $6.25 | Value: $625.32 | Cost: $494.99 | Gain: +26.3% | Contracts: 1
+[2026-03-20 14:55:01] [INFO] Not activated yet. Need +73.7% more to reach +100%
+[2026-03-20 15:00:02] [INFO] Using IBKR portfolio value: $625.32 (mid $6.25)
+[2026-03-20 15:00:02] [INFO] SPY $430P Jan27 | Mid: $6.25 | Value: $625.32 | Cost: $494.99 | Gain: +26.3% | Contracts: 1
+[2026-03-20 15:00:02] [INFO] Not activated yet. Need +73.7% more to reach +100%
+[2026-03-20 15:05:04] [INFO] Using IBKR portfolio value: $625.32 (mid $6.25)
+[2026-03-20 15:05:04] [INFO] SPY $430P Jan27 | Mid: $6.25 | Value: $625.32 | Cost: $494.99 | Gain: +26.3% | Contracts: 1
+[2026-03-20 15:05:04] [INFO] Not activated yet. Need +73.7% more to reach +100%
+[2026-03-20 15:10:05] [INFO] Using IBKR portfolio value: $625.32 (mid $6.25)
+[2026-03-20 15:10:05] [INFO] SPY $430P Jan27 | Mid: $6.25 | Value: $625.32 | Cost: $494.99 | Gain: +26.3% | Contracts: 1
+[2026-03-20 15:10:05] [INFO] Not activated yet. Need +73.7% more to reach +100%
+[2026-03-20 15:15:08] [INFO] Using IBKR portfolio value: $625.32 (mid $6.25)
+[2026-03-20 15:15:08] [INFO] SPY $430P Jan27 | Mid: $6.25 | Value: $625.32 | Cost: $494.99 | Gain: +26.3% | Contracts: 1
+[2026-03-20 15:15:08] [INFO] Not activated yet. Need +73.7% more to reach +100%
+[2026-03-20 15:20:11] [INFO] Using IBKR portfolio value: $625.32 (mid $6.25)
+[2026-03-20 15:20:11] [INFO] SPY $430P Jan27 | Mid: $6.25 | Value: $625.32 | Cost: $494.99 | Gain: +26.3% | Contracts: 1
+[2026-03-20 15:20:11] [INFO] Not activated yet. Need +73.7% more to reach +100%
+[2026-03-20 15:25:14] [INFO] Using IBKR portfolio value: $625.32 (mid $6.25)
+[2026-03-20 15:25:14] [INFO] SPY $430P Jan27 | Mid: $6.25 | Value: $625.32 | Cost: $494.99 | Gain: +26.3% | Contracts: 1
+[2026-03-20 15:25:14] [INFO] Not activated yet. Need +73.7% more to reach +100%
+[2026-03-20 15:30:02] [INFO] Using IBKR portfolio value: $625.32 (mid $6.25)
+[2026-03-20 15:30:02] [INFO] SPY $430P Jan27 | Mid: $6.25 | Value: $625.32 | Cost: $494.99 | Gain: +26.3% | Contracts: 1
+[2026-03-20 15:30:02] [INFO] Not activated yet. Need +73.7% more to reach +100%
+[2026-03-20 15:35:05] [INFO] Using IBKR portfolio value: $625.32 (mid $6.25)
+[2026-03-20 15:35:05] [INFO] SPY $430P Jan27 | Mid: $6.25 | Value: $625.32 | Cost: $494.99 | Gain: +26.3% | Contracts: 1
+[2026-03-20 15:35:05] [INFO] Not activated yet. Need +73.7% more to reach +100%
+[2026-03-20 15:40:07] [INFO] Using IBKR portfolio value: $625.32 (mid $6.25)
+[2026-03-20 15:40:07] [INFO] SPY $430P Jan27 | Mid: $6.25 | Value: $625.32 | Cost: $494.99 | Gain: +26.3% | Contracts: 1
+[2026-03-20 15:40:07] [INFO] Not activated yet. Need +73.7% more to reach +100%
+[2026-03-20 15:45:10] [INFO] Using IBKR portfolio value: $625.32 (mid $6.25)
+[2026-03-20 15:45:10] [INFO] SPY $430P Jan27 | Mid: $6.25 | Value: $625.32 | Cost: $494.99 | Gain: +26.3% | Contracts: 1
+[2026-03-20 15:45:10] [INFO] Not activated yet. Need +73.7% more to reach +100%
+[2026-03-20 15:50:11] [INFO] Using IBKR portfolio value: $625.32 (mid $6.25)
+[2026-03-20 15:50:11] [INFO] SPY $430P Jan27 | Mid: $6.25 | Value: $625.32 | Cost: $494.99 | Gain: +26.3% | Contracts: 1
+[2026-03-20 15:50:11] [INFO] Not activated yet. Need +73.7% more to reach +100%
+[2026-03-20 15:55:13] [INFO] Using IBKR portfolio value: $625.32 (mid $6.25)
+[2026-03-20 15:55:13] [INFO] SPY $430P Jan27 | Mid: $6.25 | Value: $625.32 | Cost: $494.99 | Gain: +26.3% | Contracts: 1
+[2026-03-20 15:55:13] [INFO] Not activated yet. Need +73.7% more to reach +100%
+[2026-03-20 16:00:14] [INFO] Using IBKR portfolio value: $625.32 (mid $6.25)
+[2026-03-20 16:00:14] [INFO] SPY $430P Jan27 | Mid: $6.25 | Value: $625.32 | Cost: $494.99 | Gain: +26.3% | Contracts: 1
+[2026-03-20 16:00:14] [INFO] Not activated yet. Need +73.7% more to reach +100%
+[2026-03-21 01:46:34] [INFO] PID lockfile created: /Users/eddiemae/rudy/scripts/../data/trader3.pid (PID 78766)
+[2026-03-21 01:46:34] [INFO] 
+============================================================
+[2026-03-21 01:46:34] [INFO] TRADER3 — SPY $430 Put Ladder Monitor STARTED
+[2026-03-21 01:46:34] [INFO] Activation: +100% gain
+[2026-03-21 01:46:34] [INFO] Cost Basis: $494.99
+[2026-03-21 01:46:34] [INFO] ============================================================
+
+[2026-03-21 01:46:35] [INFO] Scheduled: Every 5 min, Mon-Fri 9:30 AM - 4:00 PM ET
+[2026-03-21 01:46:35] [INFO] Connected to TWS on port 7496
+[2026-03-21 01:46:35] [INFO] Using IBKR portfolio value: $618.29 (mid $6.18)
+[2026-03-21 01:46:35] [INFO] SPY $430P Jan27 | Mid: $6.18 | Value: $618.29 | Cost: $494.99 | Gain: +24.9% | Contracts: 1
+[2026-03-21 01:46:35] [INFO] Not activated yet. Need +75.1% more to reach +100%
+[2026-03-23 09:30:14] [INFO] Using IBKR portfolio value: $618.29 (mid $6.18)
+[2026-03-23 09:30:14] [INFO] SPY $430P Jan27 | Mid: $6.18 | Value: $618.29 | Cost: $494.99 | Gain: +24.9% | Contracts: 1
+[2026-03-23 09:30:14] [INFO] Not activated yet. Need +75.1% more to reach +100%
+[2026-03-23 09:35:02] [INFO] Using IBKR portfolio value: $618.29 (mid $6.18)
+[2026-03-23 09:35:02] [INFO] SPY $430P Jan27 | Mid: $6.18 | Value: $618.29 | Cost: $494.99 | Gain: +24.9% | Contracts: 1
+[2026-03-23 09:35:02] [INFO] Not activated yet. Need +75.1% more to reach +100%
+[2026-03-23 09:40:05] [INFO] Using IBKR portfolio value: $618.29 (mid $6.18)
+[2026-03-23 09:40:05] [INFO] SPY $430P Jan27 | Mid: $6.18 | Value: $618.29 | Cost: $494.99 | Gain: +24.9% | Contracts: 1
+[2026-03-23 09:40:05] [INFO] Not activated yet. Need +75.1% more to reach +100%
+[2026-03-23 09:45:08] [INFO] Using IBKR portfolio value: $618.29 (mid $6.18)
+[2026-03-23 09:45:08] [INFO] SPY $430P Jan27 | Mid: $6.18 | Value: $618.29 | Cost: $494.99 | Gain: +24.9% | Contracts: 1
+[2026-03-23 09:45:08] [INFO] Not activated yet. Need +75.1% more to reach +100%
+[2026-03-23 09:50:09] [INFO] Using IBKR portfolio value: $618.29 (mid $6.18)
+[2026-03-23 09:50:09] [INFO] SPY $430P Jan27 | Mid: $6.18 | Value: $618.29 | Cost: $494.99 | Gain: +24.9% | Contracts: 1
+[2026-03-23 09:50:09] [INFO] Not activated yet. Need +75.1% more to reach +100%
+[2026-03-23 09:55:12] [INFO] Using IBKR portfolio value: $618.29 (mid $6.18)
+[2026-03-23 09:55:12] [INFO] SPY $430P Jan27 | Mid: $6.18 | Value: $618.29 | Cost: $494.99 | Gain: +24.9% | Contracts: 1
+[2026-03-23 09:55:12] [INFO] Not activated yet. Need +75.1% more to reach +100%
+[2026-03-23 10:00:00] [INFO] Using IBKR portfolio value: $618.29 (mid $6.18)
+[2026-03-23 10:00:00] [INFO] SPY $430P Jan27 | Mid: $6.18 | Value: $618.29 | Cost: $494.99 | Gain: +24.9% | Contracts: 1
+[2026-03-23 10:00:00] [INFO] Not activated yet. Need +75.1% more to reach +100%
+[2026-03-23 10:05:03] [INFO] Using IBKR portfolio value: $618.29 (mid $6.18)
+[2026-03-23 10:05:03] [INFO] SPY $430P Jan27 | Mid: $6.18 | Value: $618.29 | Cost: $494.99 | Gain: +24.9% | Contracts: 1
+[2026-03-23 10:05:03] [INFO] Not activated yet. Need +75.1% more to reach +100%
+[2026-03-23 10:10:06] [INFO] Using IBKR portfolio value: $618.29 (mid $6.18)
+[2026-03-23 10:10:06] [INFO] SPY $430P Jan27 | Mid: $6.18 | Value: $618.29 | Cost: $494.99 | Gain: +24.9% | Contracts: 1
+[2026-03-23 10:10:06] [INFO] Not activated yet. Need +75.1% more to reach +100%
+[2026-03-23 10:15:09] [INFO] Using IBKR portfolio value: $618.29 (mid $6.18)
+[2026-03-23 10:15:09] [INFO] SPY $430P Jan27 | Mid: $6.18 | Value: $618.29 | Cost: $494.99 | Gain: +24.9% | Contracts: 1
+[2026-03-23 10:15:09] [INFO] Not activated yet. Need +75.1% more to reach +100%
+[2026-03-23 10:20:12] [INFO] Using IBKR portfolio value: $618.29 (mid $6.18)
+[2026-03-23 10:20:12] [INFO] SPY $430P Jan27 | Mid: $6.18 | Value: $618.29 | Cost: $494.99 | Gain: +24.9% | Contracts: 1
+[2026-03-23 10:20:12] [INFO] Not activated yet. Need +75.1% more to reach +100%
+[2026-03-23 10:25:14] [INFO] Using IBKR portfolio value: $618.29 (mid $6.18)
+[2026-03-23 10:25:14] [INFO] SPY $430P Jan27 | Mid: $6.18 | Value: $618.29 | Cost: $494.99 | Gain: +24.9% | Contracts: 1
+[2026-03-23 10:25:14] [INFO] Not activated yet. Need +75.1% more to reach +100%
+[2026-03-23 10:30:02] [INFO] Using IBKR portfolio value: $618.29 (mid $6.18)
+[2026-03-23 10:30:02] [INFO] SPY $430P Jan27 | Mid: $6.18 | Value: $618.29 | Cost: $494.99 | Gain: +24.9% | Contracts: 1
+[2026-03-23 10:30:02] [INFO] Not activated yet. Need +75.1% more to reach +100%
+[2026-03-23 10:35:05] [INFO] Using IBKR portfolio value: $618.29 (mid $6.18)
+[2026-03-23 10:35:05] [INFO] SPY $430P Jan27 | Mid: $6.18 | Value: $618.29 | Cost: $494.99 | Gain: +24.9% | Contracts: 1
+[2026-03-23 10:35:05] [INFO] Not activated yet. Need +75.1% more to reach +100%
+[2026-03-23 10:40:08] [INFO] Using IBKR portfolio value: $618.29 (mid $6.18)
+[2026-03-23 10:40:08] [INFO] SPY $430P Jan27 | Mid: $6.18 | Value: $618.29 | Cost: $494.99 | Gain: +24.9% | Contracts: 1
+[2026-03-23 10:40:08] [INFO] Not activated yet. Need +75.1% more to reach +100%
+[2026-03-23 10:45:11] [INFO] Using IBKR portfolio value: $618.29 (mid $6.18)
+[2026-03-23 10:45:11] [INFO] SPY $430P Jan27 | Mid: $6.18 | Value: $618.29 | Cost: $494.99 | Gain: +24.9% | Contracts: 1
+[2026-03-23 10:45:11] [INFO] Not activated yet. Need +75.1% more to reach +100%
+[2026-03-23 10:50:13] [INFO] Using IBKR portfolio value: $618.29 (mid $6.18)
+[2026-03-23 10:50:13] [INFO] SPY $430P Jan27 | Mid: $6.18 | Value: $618.29 | Cost: $494.99 | Gain: +24.9% | Contracts: 1
+[2026-03-23 10:50:13] [INFO] Not activated yet. Need +75.1% more to reach +100%
+[2026-03-23 10:55:00] [INFO] Using IBKR portfolio value: $618.29 (mid $6.18)
+[2026-03-23 10:55:00] [INFO] SPY $430P Jan27 | Mid: $6.18 | Value: $618.29 | Cost: $494.99 | Gain: +24.9% | Contracts: 1
+[2026-03-23 10:55:00] [INFO] Not activated yet. Need +75.1% more to reach +100%
+[2026-03-23 11:00:03] [INFO] Using IBKR portfolio value: $618.29 (mid $6.18)
+[2026-03-23 11:00:03] [INFO] SPY $430P Jan27 | Mid: $6.18 | Value: $618.29 | Cost: $494.99 | Gain: +24.9% | Contracts: 1
+[2026-03-23 11:00:03] [INFO] Not activated yet. Need +75.1% more to reach +100%
+[2026-03-23 11:05:06] [INFO] Using IBKR portfolio value: $618.29 (mid $6.18)
+[2026-03-23 11:05:06] [INFO] SPY $430P Jan27 | Mid: $6.18 | Value: $618.29 | Cost: $494.99 | Gain: +24.9% | Contracts: 1
+[2026-03-23 11:05:06] [INFO] Not activated yet. Need +75.1% more to reach +100%
+[2026-03-23 11:10:09] [INFO] Using IBKR portfolio value: $618.29 (mid $6.18)
+[2026-03-23 11:10:09] [INFO] SPY $430P Jan27 | Mid: $6.18 | Value: $618.29 | Cost: $494.99 | Gain: +24.9% | Contracts: 1
+[2026-03-23 11:10:09] [INFO] Not activated yet. Need +75.1% more to reach +100%
+[2026-03-23 11:15:12] [INFO] Using IBKR portfolio value: $618.29 (mid $6.18)
+[2026-03-23 11:15:12] [INFO] SPY $430P Jan27 | Mid: $6.18 | Value: $618.29 | Cost: $494.99 | Gain: +24.9% | Contracts: 1
+[2026-03-23 11:15:12] [INFO] Not activated yet. Need +75.1% more to reach +100%
+[2026-03-23 11:20:00] [INFO] Using IBKR portfolio value: $618.29 (mid $6.18)
+[2026-03-23 11:20:00] [INFO] SPY $430P Jan27 | Mid: $6.18 | Value: $618.29 | Cost: $494.99 | Gain: +24.9% | Contracts: 1
+[2026-03-23 11:20:00] [INFO] Not activated yet. Need +75.1% more to reach +100%
+[2026-03-23 11:25:03] [INFO] Using IBKR portfolio value: $618.29 (mid $6.18)
+[2026-03-23 11:25:03] [INFO] SPY $430P Jan27 | Mid: $6.18 | Value: $618.29 | Cost: $494.99 | Gain: +24.9% | Contracts: 1
+[2026-03-23 11:25:03] [INFO] Not activated yet. Need +75.1% more to reach +100%
+[2026-03-23 11:30:06] [INFO] Using IBKR portfolio value: $618.29 (mid $6.18)
+[2026-03-23 11:30:06] [INFO] SPY $430P Jan27 | Mid: $6.18 | Value: $618.29 | Cost: $494.99 | Gain: +24.9% | Contracts: 1
+[2026-03-23 11:30:06] [INFO] Not activated yet. Need +75.1% more to reach +100%
+[2026-03-23 11:35:09] [INFO] Using IBKR portfolio value: $618.29 (mid $6.18)
+[2026-03-23 11:35:09] [INFO] SPY $430P Jan27 | Mid: $6.18 | Value: $618.29 | Cost: $494.99 | Gain: +24.9% | Contracts: 1
+[2026-03-23 11:35:09] [INFO] Not activated yet. Need +75.1% more to reach +100%
+[2026-03-23 11:40:12] [INFO] Using IBKR portfolio value: $618.29 (mid $6.18)
+[2026-03-23 11:40:12] [INFO] SPY $430P Jan27 | Mid: $6.18 | Value: $618.29 | Cost: $494.99 | Gain: +24.9% | Contracts: 1
+[2026-03-23 11:40:12] [INFO] Not activated yet. Need +75.1% more to reach +100%
+[2026-03-23 11:45:15] [INFO] Using IBKR portfolio value: $618.29 (mid $6.18)
+[2026-03-23 11:45:15] [INFO] SPY $430P Jan27 | Mid: $6.18 | Value: $618.29 | Cost: $494.99 | Gain: +24.9% | Contracts: 1
+[2026-03-23 11:45:15] [INFO] Not activated yet. Need +75.1% more to reach +100%
+[2026-03-23 11:50:02] [INFO] Using IBKR portfolio value: $618.29 (mid $6.18)
+[2026-03-23 11:50:02] [INFO] SPY $430P Jan27 | Mid: $6.18 | Value: $618.29 | Cost: $494.99 | Gain: +24.9% | Contracts: 1
+[2026-03-23 11:50:02] [INFO] Not activated yet. Need +75.1% more to reach +100%
+[2026-03-23 11:55:05] [INFO] Using IBKR portfolio value: $618.29 (mid $6.18)
+[2026-03-23 11:55:05] [INFO] SPY $430P Jan27 | Mid: $6.18 | Value: $618.29 | Cost: $494.99 | Gain: +24.9% | Contracts: 1
+[2026-03-23 11:55:05] [INFO] Not activated yet. Need +75.1% more to reach +100%
+[2026-03-23 12:00:08] [INFO] Using IBKR portfolio value: $618.29 (mid $6.18)
+[2026-03-23 12:00:08] [INFO] SPY $430P Jan27 | Mid: $6.18 | Value: $618.29 | Cost: $494.99 | Gain: +24.9% | Contracts: 1
+[2026-03-23 12:00:08] [INFO] Not activated yet. Need +75.1% more to reach +100%
+[2026-03-23 12:05:11] [INFO] Using IBKR portfolio value: $618.29 (mid $6.18)
+[2026-03-23 12:05:11] [INFO] SPY $430P Jan27 | Mid: $6.18 | Value: $618.29 | Cost: $494.99 | Gain: +24.9% | Contracts: 1
+[2026-03-23 12:05:11] [INFO] Not activated yet. Need +75.1% more to reach +100%
+[2026-03-23 12:10:14] [INFO] Using IBKR portfolio value: $618.29 (mid $6.18)
+[2026-03-23 12:10:14] [INFO] SPY $430P Jan27 | Mid: $6.18 | Value: $618.29 | Cost: $494.99 | Gain: +24.9% | Contracts: 1
+[2026-03-23 12:10:14] [INFO] Not activated yet. Need +75.1% more to reach +100%
+[2026-03-23 12:15:02] [INFO] Using IBKR portfolio value: $618.29 (mid $6.18)
+[2026-03-23 12:15:02] [INFO] SPY $430P Jan27 | Mid: $6.18 | Value: $618.29 | Cost: $494.99 | Gain: +24.9% | Contracts: 1
+[2026-03-23 12:15:02] [INFO] Not activated yet. Need +75.1% more to reach +100%
+[2026-03-23 12:20:05] [INFO] Using IBKR portfolio value: $618.29 (mid $6.18)
+[2026-03-23 12:20:05] [INFO] SPY $430P Jan27 | Mid: $6.18 | Value: $618.29 | Cost: $494.99 | Gain: +24.9% | Contracts: 1
+[2026-03-23 12:20:05] [INFO] Not activated yet. Need +75.1% more to reach +100%
+[2026-03-23 12:25:08] [INFO] Using IBKR portfolio value: $618.29 (mid $6.18)
+[2026-03-23 12:25:08] [INFO] SPY $430P Jan27 | Mid: $6.18 | Value: $618.29 | Cost: $494.99 | Gain: +24.9% | Contracts: 1
+[2026-03-23 12:25:08] [INFO] Not activated yet. Need +75.1% more to reach +100%
+[2026-03-23 12:30:11] [INFO] Using IBKR portfolio value: $618.29 (mid $6.18)
+[2026-03-23 12:30:11] [INFO] SPY $430P Jan27 | Mid: $6.18 | Value: $618.29 | Cost: $494.99 | Gain: +24.9% | Contracts: 1
+[2026-03-23 12:30:11] [INFO] Not activated yet. Need +75.1% more to reach +100%
+[2026-03-23 12:35:13] [INFO] Using IBKR portfolio value: $618.29 (mid $6.18)
+[2026-03-23 12:35:13] [INFO] SPY $430P Jan27 | Mid: $6.18 | Value: $618.29 | Cost: $494.99 | Gain: +24.9% | Contracts: 1
+[2026-03-23 12:35:13] [INFO] Not activated yet. Need +75.1% more to reach +100%
+[2026-03-23 12:40:00] [INFO] Using IBKR portfolio value: $618.29 (mid $6.18)
+[2026-03-23 12:40:00] [INFO] SPY $430P Jan27 | Mid: $6.18 | Value: $618.29 | Cost: $494.99 | Gain: +24.9% | Contracts: 1
+[2026-03-23 12:40:00] [INFO] Not activated yet. Need +75.1% more to reach +100%
+[2026-03-23 12:45:01] [INFO] Using IBKR portfolio value: $618.29 (mid $6.18)
+[2026-03-23 12:45:01] [INFO] SPY $430P Jan27 | Mid: $6.18 | Value: $618.29 | Cost: $494.99 | Gain: +24.9% | Contracts: 1
+[2026-03-23 12:45:01] [INFO] Not activated yet. Need +75.1% more to reach +100%
+[2026-03-23 12:50:03] [INFO] Using IBKR portfolio value: $618.29 (mid $6.18)
+[2026-03-23 12:50:03] [INFO] SPY $430P Jan27 | Mid: $6.18 | Value: $618.29 | Cost: $494.99 | Gain: +24.9% | Contracts: 1
+[2026-03-23 12:50:03] [INFO] Not activated yet. Need +75.1% more to reach +100%
+[2026-03-23 12:55:06] [INFO] Using IBKR portfolio value: $618.29 (mid $6.18)
+[2026-03-23 12:55:06] [INFO] SPY $430P Jan27 | Mid: $6.18 | Value: $618.29 | Cost: $494.99 | Gain: +24.9% | Contracts: 1
+[2026-03-23 12:55:06] [INFO] Not activated yet. Need +75.1% more to reach +100%
+[2026-03-23 13:00:09] [INFO] Using IBKR portfolio value: $618.29 (mid $6.18)
+[2026-03-23 13:00:09] [INFO] SPY $430P Jan27 | Mid: $6.18 | Value: $618.29 | Cost: $494.99 | Gain: +24.9% | Contracts: 1
+[2026-03-23 13:00:09] [INFO] Not activated yet. Need +75.1% more to reach +100%
+[2026-03-23 13:05:12] [INFO] Using IBKR portfolio value: $618.29 (mid $6.18)
+[2026-03-23 13:05:12] [INFO] SPY $430P Jan27 | Mid: $6.18 | Value: $618.29 | Cost: $494.99 | Gain: +24.9% | Contracts: 1
+[2026-03-23 13:05:12] [INFO] Not activated yet. Need +75.1% more to reach +100%
+[2026-03-23 13:10:00] [INFO] Using IBKR portfolio value: $618.29 (mid $6.18)
+[2026-03-23 13:10:00] [INFO] SPY $430P Jan27 | Mid: $6.18 | Value: $618.29 | Cost: $494.99 | Gain: +24.9% | Contracts: 1
+[2026-03-23 13:10:00] [INFO] Not activated yet. Need +75.1% more to reach +100%
+[2026-03-23 13:15:03] [INFO] Using IBKR portfolio value: $618.29 (mid $6.18)
+[2026-03-23 13:15:03] [INFO] SPY $430P Jan27 | Mid: $6.18 | Value: $618.29 | Cost: $494.99 | Gain: +24.9% | Contracts: 1
+[2026-03-23 13:15:03] [INFO] Not activated yet. Need +75.1% more to reach +100%
+[2026-03-23 13:20:05] [INFO] Using IBKR portfolio value: $618.29 (mid $6.18)
+[2026-03-23 13:20:05] [INFO] SPY $430P Jan27 | Mid: $6.18 | Value: $618.29 | Cost: $494.99 | Gain: +24.9% | Contracts: 1
+[2026-03-23 13:20:05] [INFO] Not activated yet. Need +75.1% more to reach +100%
+[2026-03-23 13:25:08] [INFO] Using IBKR portfolio value: $618.29 (mid $6.18)
+[2026-03-23 13:25:08] [INFO] SPY $430P Jan27 | Mid: $6.18 | Value: $618.29 | Cost: $494.99 | Gain: +24.9% | Contracts: 1
+[2026-03-23 13:25:08] [INFO] Not activated yet. Need +75.1% more to reach +100%
+[2026-03-23 13:30:11] [INFO] Using IBKR portfolio value: $618.29 (mid $6.18)
+[2026-03-23 13:30:11] [INFO] SPY $430P Jan27 | Mid: $6.18 | Value: $618.29 | Cost: $494.99 | Gain: +24.9% | Contracts: 1
+[2026-03-23 13:30:11] [INFO] Not activated yet. Need +75.1% more to reach +100%
+[2026-03-23 13:35:14] [INFO] Using IBKR portfolio value: $618.29 (mid $6.18)
+[2026-03-23 13:35:14] [INFO] SPY $430P Jan27 | Mid: $6.18 | Value: $618.29 | Cost: $494.99 | Gain: +24.9% | Contracts: 1
+[2026-03-23 13:35:14] [INFO] Not activated yet. Need +75.1% more to reach +100%
+[2026-03-23 13:40:02] [INFO] Using IBKR portfolio value: $618.29 (mid $6.18)
+[2026-03-23 13:40:02] [INFO] SPY $430P Jan27 | Mid: $6.18 | Value: $618.29 | Cost: $494.99 | Gain: +24.9% | Contracts: 1
+[2026-03-23 13:40:02] [INFO] Not activated yet. Need +75.1% more to reach +100%
+[2026-03-23 13:45:05] [INFO] Using IBKR portfolio value: $618.29 (mid $6.18)
+[2026-03-23 13:45:05] [INFO] SPY $430P Jan27 | Mid: $6.18 | Value: $618.29 | Cost: $494.99 | Gain: +24.9% | Contracts: 1
+[2026-03-23 13:45:05] [INFO] Not activated yet. Need +75.1% more to reach +100%
+[2026-03-23 13:50:06] [INFO] Using IBKR portfolio value: $618.29 (mid $6.18)
+[2026-03-23 13:50:06] [INFO] SPY $430P Jan27 | Mid: $6.18 | Value: $618.29 | Cost: $494.99 | Gain: +24.9% | Contracts: 1
+[2026-03-23 13:50:06] [INFO] Not activated yet. Need +75.1% more to reach +100%
+[2026-03-23 13:55:09] [INFO] Using IBKR portfolio value: $618.29 (mid $6.18)
+[2026-03-23 13:55:09] [INFO] SPY $430P Jan27 | Mid: $6.18 | Value: $618.29 | Cost: $494.99 | Gain: +24.9% | Contracts: 1
+[2026-03-23 13:55:09] [INFO] Not activated yet. Need +75.1% more to reach +100%
+[2026-03-23 14:00:12] [INFO] Using IBKR portfolio value: $618.29 (mid $6.18)
+[2026-03-23 14:00:12] [INFO] SPY $430P Jan27 | Mid: $6.18 | Value: $618.29 | Cost: $494.99 | Gain: +24.9% | Contracts: 1
+[2026-03-23 14:00:12] [INFO] Not activated yet. Need +75.1% more to reach +100%
+[2026-03-23 14:05:00] [INFO] Using IBKR portfolio value: $618.29 (mid $6.18)
+[2026-03-23 14:05:00] [INFO] SPY $430P Jan27 | Mid: $6.18 | Value: $618.29 | Cost: $494.99 | Gain: +24.9% | Contracts: 1
+[2026-03-23 14:05:00] [INFO] Not activated yet. Need +75.1% more to reach +100%
+[2026-03-23 14:10:03] [INFO] Using IBKR portfolio value: $618.29 (mid $6.18)
+[2026-03-23 14:10:03] [INFO] SPY $430P Jan27 | Mid: $6.18 | Value: $618.29 | Cost: $494.99 | Gain: +24.9% | Contracts: 1
+[2026-03-23 14:10:03] [INFO] Not activated yet. Need +75.1% more to reach +100%
+[2026-03-23 14:15:06] [INFO] Using IBKR portfolio value: $618.29 (mid $6.18)
+[2026-03-23 14:15:06] [INFO] SPY $430P Jan27 | Mid: $6.18 | Value: $618.29 | Cost: $494.99 | Gain: +24.9% | Contracts: 1
+[2026-03-23 14:15:06] [INFO] Not activated yet. Need +75.1% more to reach +100%
+[2026-03-23 14:20:09] [INFO] Using IBKR portfolio value: $618.29 (mid $6.18)
+[2026-03-23 14:20:09] [INFO] SPY $430P Jan27 | Mid: $6.18 | Value: $618.29 | Cost: $494.99 | Gain: +24.9% | Contracts: 1
+[2026-03-23 14:20:09] [INFO] Not activated yet. Need +75.1% more to reach +100%
+[2026-03-23 14:25:12] [INFO] Using IBKR portfolio value: $618.29 (mid $6.18)
+[2026-03-23 14:25:12] [INFO] SPY $430P Jan27 | Mid: $6.18 | Value: $618.29 | Cost: $494.99 | Gain: +24.9% | Contracts: 1
+[2026-03-23 14:25:12] [INFO] Not activated yet. Need +75.1% more to reach +100%
+[2026-03-23 14:30:15] [INFO] Using IBKR portfolio value: $618.29 (mid $6.18)
+[2026-03-23 14:30:15] [INFO] SPY $430P Jan27 | Mid: $6.18 | Value: $618.29 | Cost: $494.99 | Gain: +24.9% | Contracts: 1
+[2026-03-23 14:30:15] [INFO] Not activated yet. Need +75.1% more to reach +100%
+[2026-03-23 14:35:02] [INFO] Using IBKR portfolio value: $618.29 (mid $6.18)
+[2026-03-23 14:35:02] [INFO] SPY $430P Jan27 | Mid: $6.18 | Value: $618.29 | Cost: $494.99 | Gain: +24.9% | Contracts: 1
+[2026-03-23 14:35:02] [INFO] Not activated yet. Need +75.1% more to reach +100%
+[2026-03-23 14:40:05] [INFO] Using IBKR portfolio value: $618.29 (mid $6.18)
+[2026-03-23 14:40:05] [INFO] SPY $430P Jan27 | Mid: $6.18 | Value: $618.29 | Cost: $494.99 | Gain: +24.9% | Contracts: 1
+[2026-03-23 14:40:05] [INFO] Not activated yet. Need +75.1% more to reach +100%
+[2026-03-23 14:45:06] [INFO] Using IBKR portfolio value: $618.29 (mid $6.18)
+[2026-03-23 14:45:06] [INFO] SPY $430P Jan27 | Mid: $6.18 | Value: $618.29 | Cost: $494.99 | Gain: +24.9% | Contracts: 1
+[2026-03-23 14:45:06] [INFO] Not activated yet. Need +75.1% more to reach +100%
+[2026-03-23 14:50:08] [INFO] Using IBKR portfolio value: $618.29 (mid $6.18)
+[2026-03-23 14:50:08] [INFO] SPY $430P Jan27 | Mid: $6.18 | Value: $618.29 | Cost: $494.99 | Gain: +24.9% | Contracts: 1
+[2026-03-23 14:50:08] [INFO] Not activated yet. Need +75.1% more to reach +100%
+[2026-03-23 14:55:09] [INFO] Using IBKR portfolio value: $618.29 (mid $6.18)
+[2026-03-23 14:55:09] [INFO] SPY $430P Jan27 | Mid: $6.18 | Value: $618.29 | Cost: $494.99 | Gain: +24.9% | Contracts: 1
+[2026-03-23 14:55:09] [INFO] Not activated yet. Need +75.1% more to reach +100%
+[2026-03-23 15:00:11] [INFO] Using IBKR portfolio value: $618.29 (mid $6.18)
+[2026-03-23 15:00:11] [INFO] SPY $430P Jan27 | Mid: $6.18 | Value: $618.29 | Cost: $494.99 | Gain: +24.9% | Contracts: 1
+[2026-03-23 15:00:11] [INFO] Not activated yet. Need +75.1% more to reach +100%
+[2026-03-23 15:05:12] [INFO] Using IBKR portfolio value: $618.29 (mid $6.18)
+[2026-03-23 15:05:12] [INFO] SPY $430P Jan27 | Mid: $6.18 | Value: $618.29 | Cost: $494.99 | Gain: +24.9% | Contracts: 1
+[2026-03-23 15:05:12] [INFO] Not activated yet. Need +75.1% more to reach +100%
+[2026-03-23 15:10:00] [INFO] Using IBKR portfolio value: $618.29 (mid $6.18)
+[2026-03-23 15:10:00] [INFO] SPY $430P Jan27 | Mid: $6.18 | Value: $618.29 | Cost: $494.99 | Gain: +24.9% | Contracts: 1
+[2026-03-23 15:10:00] [INFO] Not activated yet. Need +75.1% more to reach +100%
+[2026-03-23 15:15:03] [INFO] Using IBKR portfolio value: $618.29 (mid $6.18)
+[2026-03-23 15:15:03] [INFO] SPY $430P Jan27 | Mid: $6.18 | Value: $618.29 | Cost: $494.99 | Gain: +24.9% | Contracts: 1
+[2026-03-23 15:15:03] [INFO] Not activated yet. Need +75.1% more to reach +100%
+[2026-03-23 15:20:04] [INFO] Using IBKR portfolio value: $618.29 (mid $6.18)
+[2026-03-23 15:20:04] [INFO] SPY $430P Jan27 | Mid: $6.18 | Value: $618.29 | Cost: $494.99 | Gain: +24.9% | Contracts: 1
+[2026-03-23 15:20:04] [INFO] Not activated yet. Need +75.1% more to reach +100%
+[2026-03-23 15:25:06] [INFO] Using IBKR portfolio value: $618.29 (mid $6.18)
+[2026-03-23 15:25:06] [INFO] SPY $430P Jan27 | Mid: $6.18 | Value: $618.29 | Cost: $494.99 | Gain: +24.9% | Contracts: 1
+[2026-03-23 15:25:06] [INFO] Not activated yet. Need +75.1% more to reach +100%
+[2026-03-23 15:30:07] [INFO] Using IBKR portfolio value: $618.29 (mid $6.18)
+[2026-03-23 15:30:07] [INFO] SPY $430P Jan27 | Mid: $6.18 | Value: $618.29 | Cost: $494.99 | Gain: +24.9% | Contracts: 1
+[2026-03-23 15:30:07] [INFO] Not activated yet. Need +75.1% more to reach +100%
+[2026-03-23 15:35:08] [INFO] Using IBKR portfolio value: $618.29 (mid $6.18)
+[2026-03-23 15:35:08] [INFO] SPY $430P Jan27 | Mid: $6.18 | Value: $618.29 | Cost: $494.99 | Gain: +24.9% | Contracts: 1
+[2026-03-23 15:35:08] [INFO] Not activated yet. Need +75.1% more to reach +100%
+[2026-03-23 15:40:10] [INFO] Using IBKR portfolio value: $618.29 (mid $6.18)
+[2026-03-23 15:40:10] [INFO] SPY $430P Jan27 | Mid: $6.18 | Value: $618.29 | Cost: $494.99 | Gain: +24.9% | Contracts: 1
+[2026-03-23 15:40:10] [INFO] Not activated yet. Need +75.1% more to reach +100%
+[2026-03-23 15:45:11] [INFO] Using IBKR portfolio value: $618.29 (mid $6.18)
+[2026-03-23 15:45:11] [INFO] SPY $430P Jan27 | Mid: $6.18 | Value: $618.29 | Cost: $494.99 | Gain: +24.9% | Contracts: 1
+[2026-03-23 15:45:11] [INFO] Not activated yet. Need +75.1% more to reach +100%
+[2026-03-23 15:50:13] [INFO] Using IBKR portfolio value: $618.29 (mid $6.18)
+[2026-03-23 15:50:13] [INFO] SPY $430P Jan27 | Mid: $6.18 | Value: $618.29 | Cost: $494.99 | Gain: +24.9% | Contracts: 1
+[2026-03-23 15:50:13] [INFO] Not activated yet. Need +75.1% more to reach +100%
+[2026-03-23 15:55:14] [INFO] Using IBKR portfolio value: $618.29 (mid $6.18)
+[2026-03-23 15:55:14] [INFO] SPY $430P Jan27 | Mid: $6.18 | Value: $618.29 | Cost: $494.99 | Gain: +24.9% | Contracts: 1
+[2026-03-23 15:55:14] [INFO] Not activated yet. Need +75.1% more to reach +100%
+[2026-03-23 16:00:01] [INFO] Using IBKR portfolio value: $618.29 (mid $6.18)
+[2026-03-23 16:00:01] [INFO] SPY $430P Jan27 | Mid: $6.18 | Value: $618.29 | Cost: $494.99 | Gain: +24.9% | Contracts: 1
+[2026-03-23 16:00:01] [INFO] Not activated yet. Need +75.1% more to reach +100%

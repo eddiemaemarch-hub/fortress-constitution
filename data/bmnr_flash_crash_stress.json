@@ -1,0 +1,174 @@
+{
+  "test_name": "BMNR Flash Crash Liquidity Stress (ETH Gap-and-Trap)",
+  "timestamp": "2026-03-20T15:58:17.127063",
+  "asset": "BMNR",
+  "crypto_backing": "ETH",
+  "baseline": {
+    "bmnr_price": 25.0,
+    "eth_price": 2200.0,
+    "eNAV_premium": 1.235,
+    "account_nlv": 10000.0,
+    "assumed_entry": 18.0,
+    "assumed_hwm": 28.0,
+    "peak_leap_gain_pct": 266.7
+  },
+  "scenarios": [
+    {
+      "gap_pct": "-10%",
+      "bmnr_gap_price": 22.5,
+      "eth_gap_price": 2090.0,
+      "btc_gap_price": 67900.0,
+      "spy_gap_price": 558.6,
+      "eNAV_premium": 1.17,
+      "premium_drop_pct": 5.3,
+      "kill_switch_fires": false,
+      "trail_stop": {
+        "tier": "NONE",
+        "trail_pct": 0,
+        "stop_level": 0,
+        "gap_through": false,
+        "slippage_pct": 0
+      },
+      "leap_impact": {
+        "stock_gain_pct": 25.0,
+        "leap_gain_pct": 120.0,
+        "panic_floor_hit": false,
+        "initial_floor_hit": false,
+        "exit_trigger": "NONE"
+      },
+      "dual_correlation": {
+        "eth_move_pct": -5.0,
+        "btc_move_pct": -3.0,
+        "note": "ETH drops ~50% of BMNR move, BTC ~30% (dual exposure)"
+      },
+      "verdict": "PASS"
+    },
+    {
+      "gap_pct": "-15%",
+      "bmnr_gap_price": 21.25,
+      "eth_gap_price": 2035.0,
+      "btc_gap_price": 66850.0,
+      "spy_gap_price": 552.9,
+      "eNAV_premium": 1.135,
+      "premium_drop_pct": 8.1,
+      "kill_switch_fires": false,
+      "trail_stop": {
+        "tier": "NONE",
+        "trail_pct": 0,
+        "stop_level": 0,
+        "gap_through": false,
+        "slippage_pct": 0
+      },
+      "leap_impact": {
+        "stock_gain_pct": 18.1,
+        "leap_gain_pct": 86.7,
+        "panic_floor_hit": false,
+        "initial_floor_hit": false,
+        "exit_trigger": "NONE"
+      },
+      "dual_correlation": {
+        "eth_move_pct": -7.5,
+        "btc_move_pct": -4.5,
+        "note": "ETH drops ~50% of BMNR move, BTC ~30% (dual exposure)"
+      },
+      "verdict": "PASS"
+    },
+    {
+      "gap_pct": "-20%",
+      "bmnr_gap_price": 20.0,
+      "eth_gap_price": 1980.0,
+      "btc_gap_price": 65800.0,
+      "spy_gap_price": 547.2,
+      "eNAV_premium": 1.098,
+      "premium_drop_pct": 11.1,
+      "kill_switch_fires": false,
+      "trail_stop": {
+        "tier": "NONE",
+        "trail_pct": 0,
+        "stop_level": 0,
+        "gap_through": false,
+        "slippage_pct": 0
+      },
+      "leap_impact": {
+        "stock_gain_pct": 11.1,
+        "leap_gain_pct": 53.3,
+        "panic_floor_hit": false,
+        "initial_floor_hit": false,
+        "exit_trigger": "NONE"
+      },
+      "dual_correlation": {
+        "eth_move_pct": -10.0,
+        "btc_move_pct": -6.0,
+        "note": "ETH drops ~50% of BMNR move, BTC ~30% (dual exposure)"
+      },
+      "verdict": "PASS"
+    },
+    {
+      "gap_pct": "-25%",
+      "bmnr_gap_price": 18.75,
+      "eth_gap_price": 1925.0,
+      "btc_gap_price": 64750.0,
+      "spy_gap_price": 541.5,
+      "eNAV_premium": 1.059,
+      "premium_drop_pct": 14.3,
+      "kill_switch_fires": false,
+      "trail_stop": {
+        "tier": "NONE",
+        "trail_pct": 0,
+        "stop_level": 0,
+        "gap_through": false,
+        "slippage_pct": 0
+      },
+      "leap_impact": {
+        "stock_gain_pct": 4.2,
+        "leap_gain_pct": 20.0,
+        "panic_floor_hit": false,
+        "initial_floor_hit": false,
+        "exit_trigger": "NONE"
+      },
+      "dual_correlation": {
+        "eth_move_pct": -12.5,
+        "btc_move_pct": -7.5,
+        "note": "ETH drops ~50% of BMNR move, BTC ~30% (dual exposure)"
+      },
+      "verdict": "PASS"
+    },
+    {
+      "gap_pct": "-30%",
+      "bmnr_gap_price": 17.5,
+      "eth_gap_price": 1870.0,
+      "btc_gap_price": 63700.0,
+      "spy_gap_price": 535.8,
+      "eNAV_premium": 1.017,
+      "premium_drop_pct": 17.6,
+      "kill_switch_fires": false,
+      "trail_stop": {
+        "tier": "NONE",
+        "trail_pct": 0,
+        "stop_level": 0,
+        "gap_through": false,
+        "slippage_pct": 0
+      },
+      "leap_impact": {
+        "stock_gain_pct": -2.8,
+        "leap_gain_pct": -13.3,
+        "panic_floor_hit": false,
+        "initial_floor_hit": false,
+        "exit_trigger": "NONE"
+      },
+      "dual_correlation": {
+        "eth_move_pct": -15.0,
+        "btc_move_pct": -9.0,
+        "note": "ETH drops ~50% of BMNR move, BTC ~30% (dual exposure)"
+      },
+      "verdict": "PASS"
+    }
+  ],
+  "summary": {
+    "scenarios_passed": 5,
+    "scenarios_conditional": 0,
+    "scenarios_failed": 0,
+    "kill_switch_fires_at": "NEVER",
+    "overall_verdict": "PASS"
+  }
+}

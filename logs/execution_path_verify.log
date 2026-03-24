@@ -1,0 +1,403 @@
+[Verify 2026-03-23 16:32:29] ============================================================
+[Verify 2026-03-23 16:32:29] Execution Path Verify — Monday Mar 23 16:32 ET (CLOSE)
+[Verify 2026-03-23 16:32:29] ============================================================
+[Verify 2026-03-23 16:32:29] 
+1. Trader1 Daemon
+[Verify 2026-03-23 16:32:29]   ✅ Trader1 daemon running (PID 71610)
+[Verify 2026-03-23 16:32:29] 
+2. LaunchAgent
+[Verify 2026-03-23 16:32:29]   ✅ LaunchAgent com.rudy.trader1 registered
+[Verify 2026-03-23 16:32:29] 
+3. IBKR Connection
+[Verify 2026-03-23 16:32:29]   ✅ IBKR TWS port 7496 open and connectable
+[Verify 2026-03-23 16:32:29] 
+4. Eval Freshness
+[Verify 2026-03-23 16:32:29]   ✅ Last eval: 0.8h ago — FRESH
+[Verify 2026-03-23 16:32:29] 
+5. State File
+[Verify 2026-03-23 16:32:29]   ✅ State file valid and writable
+[Verify 2026-03-23 16:32:29] 
+6. Filter Status
+[Verify 2026-03-23 16:32:29]   📊 MSTR=$138.35 | BTC=$70,873 | Premium=0.00x | Dipped below 200W: ✅ | Green weeks: 0/2 ❌ Need 2 more Friday close(s) above 200W
+[Verify 2026-03-23 16:32:29]   ⚠️  Dipped ✅ | Waiting for first green Friday close above MSTR 200W SMA
+[Verify 2026-03-23 16:32:29] 
+7. Telegram HITL
+[Verify 2026-03-23 16:32:30]   ✅ Telegram HITL reachable — approval request WILL deliver
+[Verify 2026-03-23 16:32:30] 
+8. Clone Prohibition
+[Verify 2026-03-23 16:32:30]   ✅ Clone check clean — no unauthorized traders running
+[Verify 2026-03-23 16:32:30] 
+9. PID Lock
+[Verify 2026-03-23 16:32:30]   ⚠️  PID lock file missing — daemon may allow duplicates
+[Verify 2026-03-23 16:32:30] 
+10. Entry Code
+[Verify 2026-03-23 16:32:31]   ❌ Entry code import error: /Users/eddiemae/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.
+[Verify 2026-03-23 16:32:31] 
+Result: 7/10 passed | 1 failures | 2 warnings
+[Verify 2026-03-23 16:33:12] ============================================================
+[Verify 2026-03-23 16:33:12] Execution Path Verify — Monday Mar 23 16:33 ET (CLOSE)
+[Verify 2026-03-23 16:33:12] ============================================================
+[Verify 2026-03-23 16:33:12] 
+1. Trader1 Daemon
+[Verify 2026-03-23 16:33:12]   ✅ Trader1 daemon running (PID 71610)
+[Verify 2026-03-23 16:33:12] 
+2. LaunchAgent
+[Verify 2026-03-23 16:33:12]   ✅ LaunchAgent com.rudy.trader1 registered
+[Verify 2026-03-23 16:33:12] 
+3. IBKR Connection
+[Verify 2026-03-23 16:33:12]   ✅ IBKR TWS port 7496 open and connectable
+[Verify 2026-03-23 16:33:12] 
+4. Eval Freshness
+[Verify 2026-03-23 16:33:12]   ✅ Last eval: 0.8h ago — FRESH
+[Verify 2026-03-23 16:33:12] 
+5. State File
+[Verify 2026-03-23 16:33:12]   ✅ State file valid and writable
+[Verify 2026-03-23 16:33:12] 
+6. Filter Status
+[Verify 2026-03-23 16:33:12]   📊 MSTR=$138.35 | BTC=$70,873 | Premium=0.00x | Dipped below 200W: ✅ | Green weeks: 0/2 ❌ Need 2 more Friday close(s) above 200W
+[Verify 2026-03-23 16:33:12]   ⚠️  Dipped ✅ | Waiting for first green Friday close above MSTR 200W SMA
+[Verify 2026-03-23 16:33:12] 
+7. Telegram HITL
+[Verify 2026-03-23 16:33:13]   ✅ Telegram HITL reachable — approval request WILL deliver
+[Verify 2026-03-23 16:33:13] 
+8. Clone Prohibition
+[Verify 2026-03-23 16:33:13]   ✅ Clone check clean — no unauthorized traders running
+[Verify 2026-03-23 16:33:13] 
+9. PID Lock
+[Verify 2026-03-23 16:33:13]   ✅ PID lock file present (PID 71610)
+[Verify 2026-03-23 16:33:13] 
+10. Entry Code
+[Verify 2026-03-23 16:33:13]   ✅ Entry code path importable — TrendAdder() instantiates cleanly
+[Verify 2026-03-23 16:33:14] 
+Result: 9/10 passed | 0 failures | 1 warnings
+[Verify 2026-03-23 16:41:58] ============================================================
+[Verify 2026-03-23 16:41:58] Execution Path Verify — Monday Mar 23 16:41 ET (CLOSE)
+[Verify 2026-03-23 16:41:58] ============================================================
+[Verify 2026-03-23 16:41:58] 
+1. Trader1 Daemon
+[Verify 2026-03-23 16:41:58]   ✅ Trader1 daemon running (PID 71610)
+[Verify 2026-03-23 16:41:58] 
+2. LaunchAgent
+[Verify 2026-03-23 16:41:58]   ✅ LaunchAgent com.rudy.trader1 registered
+[Verify 2026-03-23 16:41:58] 
+3. IBKR Connection
+[Verify 2026-03-23 16:41:58]   ✅ IBKR TWS port 7496 open and connectable
+[Verify 2026-03-23 16:41:58] 
+4. Eval Freshness
+[Verify 2026-03-23 16:41:58]   ✅ Last eval: 0.9h ago — FRESH
+[Verify 2026-03-23 16:41:58] 
+5. State File
+[Verify 2026-03-23 16:41:58]   ✅ State file valid and writable
+[Verify 2026-03-23 16:41:58] 
+6. Filter Status
+[Verify 2026-03-23 16:41:58]   📊 MSTR=$138.35 | BTC=$70,873 | Premium=0.00x | Dipped below 200W: ✅ | Green weeks: 0/2 ❌ Need 2 more Friday close(s) above 200W
+[Verify 2026-03-23 16:41:58]   ⚠️  Dipped ✅ | Waiting for first green Friday close above MSTR 200W SMA
+[Verify 2026-03-23 16:41:58] 
+7. Telegram HITL
+[Verify 2026-03-23 16:41:59]   ✅ Telegram HITL reachable — approval request WILL deliver
+[Verify 2026-03-23 16:41:59] 
+8. Clone Prohibition
+[Verify 2026-03-23 16:41:59]   ✅ Clone check clean — no unauthorized traders running
+[Verify 2026-03-23 16:41:59] 
+9. PID Lock
+[Verify 2026-03-23 16:41:59]   ✅ PID lock file present (PID 71610)
+[Verify 2026-03-23 16:41:59] 
+10. Entry/Exit Code
+[Verify 2026-03-23 16:41:59]   ✅ Entry/exit code path importable — RudyV28() instantiates cleanly
+[Verify 2026-03-23 16:41:59] 
+11. IBKR Position
+[Verify 2026-03-23 16:41:59]   ✅ No position — clean. Ready to enter. Recommended strikes (DEPRESSED): [800, 1000]
+[Verify 2026-03-23 16:41:59] 
+12. LEAP Expiry
+[Verify 2026-03-23 16:41:59]   ✅ No active position — expiry check N/A. Strike band: DEPRESSED | Rec strikes: [800, 1000]
+[Verify 2026-03-23 16:42:00] 
+Result: 11/12 passed | 0 failures | 1 warnings
+[Verify 2026-03-23 16:45:21] ============================================================
+[Verify 2026-03-23 16:45:21] Execution Path Verify — Monday Mar 23 16:45 ET (CLOSE)
+[Verify 2026-03-23 16:45:21] ============================================================
+[Verify 2026-03-23 16:45:21] 
+1. Trader1 Daemon
+[Verify 2026-03-23 16:45:21]   ✅ Trader1 daemon running (PID 71610)
+[Verify 2026-03-23 16:45:21] 
+2. LaunchAgent
+[Verify 2026-03-23 16:45:21]   ✅ LaunchAgent com.rudy.trader1 registered
+[Verify 2026-03-23 16:45:21] 
+3. IBKR Connection
+[Verify 2026-03-23 16:45:21]   ✅ IBKR TWS port 7496 open and connectable
+[Verify 2026-03-23 16:45:21] 
+4. Eval Freshness
+[Verify 2026-03-23 16:45:21]   ✅ Last eval: 1.0h ago — FRESH
+[Verify 2026-03-23 16:45:21] 
+5. State File
+[Verify 2026-03-23 16:45:21]   ✅ State file valid and writable
+[Verify 2026-03-23 16:45:21] 
+6. Filter Status
+[Verify 2026-03-23 16:45:21]   📊 MSTR=$138.35 | BTC=$70,873 | Premium=0.00x | Dipped below 200W: ✅ | Green weeks: 0/2 ❌ Need 2 more Friday close(s) above 200W
+[Verify 2026-03-23 16:45:21]   ⚠️  Dipped ✅ | Waiting for first green Friday close above MSTR 200W SMA
+[Verify 2026-03-23 16:45:21] 
+7. Telegram HITL
+[Verify 2026-03-23 16:45:22]   ✅ Telegram HITL reachable — approval request WILL deliver
+[Verify 2026-03-23 16:45:22] 
+8. Clone Prohibition
+[Verify 2026-03-23 16:45:22]   ✅ Clone check clean — no unauthorized traders running
+[Verify 2026-03-23 16:45:22] 
+9. PID Lock
+[Verify 2026-03-23 16:45:22]   ✅ PID lock file present (PID 71610)
+[Verify 2026-03-23 16:45:22] 
+10. Entry/Exit Code
+[Verify 2026-03-23 16:45:22]   ✅ Entry/exit code path importable — RudyV28() instantiates cleanly
+[Verify 2026-03-23 16:45:22] 
+11. IBKR Position
+[Verify 2026-03-23 16:45:22]   ✅ No position — clean. Ready to enter. Recommended strikes (DEPRESSED): [800, 1000]
+[Verify 2026-03-23 16:45:22] 
+12. LEAP Expiry
+[Verify 2026-03-23 16:45:22]   ✅ No active position — expiry check N/A. Strike band: DEPRESSED | Rec strikes: [800, 1000]
+[Verify 2026-03-23 16:45:22] 
+13. Entry Sizing
+[Verify 2026-03-23 16:45:22]   ✅ Entry sizing OK — NLV=$7833 | Risk cap=$1958 | 1st deploy=$979 | Cash available=$6306 | ~7 shares @ $138.35
+[Verify 2026-03-23 16:45:22] 
+14. Strike Recommendation
+[Verify 2026-03-23 16:45:22]   ✅ Strike rec OK (1h ago) — Band: DEPRESSED | Spec: [800, 1000] (55%) | Safety: [100, 200, 500] (45%)
+[Verify 2026-03-23 16:45:22] 
+15. Exit + Trend Adder Path
+[Verify 2026-03-23 16:45:23]   ❌ Exit/adder methods missing: /Users/eddiemae/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, curren
+[Verify 2026-03-23 16:45:23] 
+Result: 13/15 passed | 1 failures | 1 warnings
+[Verify 2026-03-23 16:45:36]   ❌ Exit/adder methods missing: /Users/eddiemae/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, curren
+[Verify 2026-03-23 16:46:31] ============================================================
+[Verify 2026-03-23 16:46:31] Execution Path Verify — Monday Mar 23 16:46 ET (CLOSE)
+[Verify 2026-03-23 16:46:31] ============================================================
+[Verify 2026-03-23 16:46:31] 
+1. Trader1 Daemon
+[Verify 2026-03-23 16:46:31]   ✅ Trader1 daemon running (PID 71610)
+[Verify 2026-03-23 16:46:31] 
+2. LaunchAgent
+[Verify 2026-03-23 16:46:31]   ✅ LaunchAgent com.rudy.trader1 registered
+[Verify 2026-03-23 16:46:31] 
+3. IBKR Connection
+[Verify 2026-03-23 16:46:31]   ✅ IBKR TWS port 7496 open and connectable
+[Verify 2026-03-23 16:46:31] 
+4. Eval Freshness
+[Verify 2026-03-23 16:46:31]   ✅ Last eval: 1.0h ago — FRESH
+[Verify 2026-03-23 16:46:31] 
+5. State File
+[Verify 2026-03-23 16:46:31]   ✅ State file valid and writable
+[Verify 2026-03-23 16:46:31] 
+6. Filter Status
+[Verify 2026-03-23 16:46:31]   📊 MSTR=$138.35 | BTC=$70,873 | Premium=0.00x | Dipped below 200W: ✅ | Green weeks: 0/2 ❌ Need 2 more Friday close(s) above 200W
+[Verify 2026-03-23 16:46:31]   ⚠️  Dipped ✅ | Waiting for first green Friday close above MSTR 200W SMA
+[Verify 2026-03-23 16:46:31] 
+7. Telegram HITL
+[Verify 2026-03-23 16:46:31]   ✅ Telegram HITL reachable — approval request WILL deliver
+[Verify 2026-03-23 16:46:31] 
+8. Clone Prohibition
+[Verify 2026-03-23 16:46:32]   ✅ Clone check clean — no unauthorized traders running
+[Verify 2026-03-23 16:46:32] 
+9. PID Lock
+[Verify 2026-03-23 16:46:32]   ✅ PID lock file present (PID 71610)
+[Verify 2026-03-23 16:46:32] 
+10. Entry/Exit Code
+[Verify 2026-03-23 16:46:32]   ✅ Entry/exit code path importable — RudyV28() instantiates cleanly
+[Verify 2026-03-23 16:46:32] 
+11. IBKR Position
+[Verify 2026-03-23 16:46:32]   ✅ No position — clean. Ready to enter. Recommended strikes (DEPRESSED): [800, 1000]
+[Verify 2026-03-23 16:46:32] 
+12. LEAP Expiry
+[Verify 2026-03-23 16:46:32]   ✅ No active position — expiry check N/A. Strike band: DEPRESSED | Rec strikes: [800, 1000]
+[Verify 2026-03-23 16:46:32] 
+13. Entry Sizing
+[Verify 2026-03-23 16:46:32]   ✅ Entry sizing OK — NLV=$7834 | Risk cap=$1958 | 1st deploy=$979 | Cash available=$6306 | ~7 shares @ $138.35
+[Verify 2026-03-23 16:46:32] 
+14. Strike Recommendation
+[Verify 2026-03-23 16:46:32]   ✅ Strike rec OK (1h ago) — Band: DEPRESSED | Spec: [800, 1000] (55%) | Safety: [100, 200, 500] (45%)
+[Verify 2026-03-23 16:46:32] 
+15. Exit + Trend Adder Path
+[Verify 2026-03-23 16:46:32]   ✅ Exit path verified — _execute_exit + _execute_partial_sell + _execute_trend_adder + manage_trend_adder + reconcile_position all callable | No active position (already_entered_this_cycle=False)
+[Verify 2026-03-23 16:46:33] 
+Result: 14/15 passed | 0 failures | 1 warnings
+[Verify 2026-03-23 16:55:44] ============================================================
+[Verify 2026-03-23 16:55:44] Execution Path Verify — Monday Mar 23 16:55 ET (CLOSE)
+[Verify 2026-03-23 16:55:44] ============================================================
+[Verify 2026-03-23 16:55:44] 
+1. Trader1 Daemon
+[Verify 2026-03-23 16:55:44]   ✅ Trader1 daemon running (PID 71610)
+[Verify 2026-03-23 16:55:44] 
+2. LaunchAgent
+[Verify 2026-03-23 16:55:44]   ✅ LaunchAgent com.rudy.trader1 registered
+[Verify 2026-03-23 16:55:44] 
+3. IBKR Connection
+[Verify 2026-03-23 16:55:44]   ✅ IBKR TWS port 7496 open and connectable
+[Verify 2026-03-23 16:55:44] 
+4. Eval Freshness
+[Verify 2026-03-23 16:55:44]   ✅ Last eval: 1.2h ago — FRESH
+[Verify 2026-03-23 16:55:44] 
+5. State File
+[Verify 2026-03-23 16:55:44]   ✅ State file valid and writable
+[Verify 2026-03-23 16:55:44] 
+6. Filter Status
+[Verify 2026-03-23 16:55:44]   📊 MSTR=$138.35 | BTC=$70,873 | Premium=0.00x | Dipped below 200W: ✅ | Green weeks: 0/2 ❌ Need 2 more Friday close(s) above 200W
+[Verify 2026-03-23 16:55:44]   ⚠️  Dipped ✅ | Waiting for first green Friday close above MSTR 200W SMA
+[Verify 2026-03-23 16:55:44] 
+7. Telegram HITL
+[Verify 2026-03-23 16:55:45]   ✅ Telegram HITL reachable — approval request WILL deliver
+[Verify 2026-03-23 16:55:45] 
+8. Clone Prohibition
+[Verify 2026-03-23 16:55:45]   ✅ Clone check clean — no unauthorized traders running
+[Verify 2026-03-23 16:55:45] 
+9. PID Lock
+[Verify 2026-03-23 16:55:45]   ✅ PID lock file present (PID 71610)
+[Verify 2026-03-23 16:55:45] 
+10. Entry/Exit Code
+[Verify 2026-03-23 16:55:45]   ✅ Entry/exit code path importable — RudyV28() instantiates cleanly
+[Verify 2026-03-23 16:55:45] 
+11. IBKR Position
+[Verify 2026-03-23 16:55:45]   ✅ No position — clean. Ready to enter. Recommended strikes (DEPRESSED): [800, 1000]
+[Verify 2026-03-23 16:55:45] 
+12. Trail Stop / Floor
+[Verify 2026-03-23 16:55:45]   ✅ Not in position — trail/floor check N/A (will activate on entry)
+[Verify 2026-03-23 16:55:45] 
+13. Pending Sell / Approval
+[Verify 2026-03-23 16:55:45]   ✅ No pending approvals — state clean
+[Verify 2026-03-23 16:55:45] 
+14. Profit-Taking Roadmap
+[Verify 2026-03-23 16:55:45]   ✅ Not in position — profit-taking roadmap N/A | Roadmap: 10x→sell10% → 20x→sell10% → 50x→sell10% → 100x→sell10% | Trend adder at 50W EMA golden cross | Euphoria sell at premium >3.5x
+[Verify 2026-03-23 16:55:45] 
+15. Execute Sell Path
+[Verify 2026-03-23 16:55:45]   ✅ _execute_exit + _execute_partial_sell + _execute_trend_adder + _exit_trend_adder + reconcile_position + cleanup_stale_orders all callable | No recent EXIT/SELL failures in log
+[Verify 2026-03-23 16:55:45] 
+16. LEAP Expiry
+[Verify 2026-03-23 16:55:45]   ✅ No active position — expiry check N/A. Strike band: DEPRESSED | Rec strikes: [800, 1000]
+[Verify 2026-03-23 16:55:45] 
+17. Entry Sizing
+[Verify 2026-03-23 16:55:45]   ✅ Entry sizing OK — NLV=$7836 | Risk cap=$1959 | 1st deploy=$979 | Cash available=$6306 | ~7 shares @ $138.35
+[Verify 2026-03-23 16:55:45] 
+18. Strike Recommendation
+[Verify 2026-03-23 16:55:45]   ✅ Strike rec OK (1h ago) — Band: DEPRESSED | Spec: [800, 1000] (55%) | Safety: [100, 200, 500] (45%)
+[Verify 2026-03-23 16:55:46] 
+Result: 17/18 passed | 0 failures | 1 warnings
+[Verify 2026-03-23 17:05:37] ============================================================
+[Verify 2026-03-23 17:05:37] Execution Path Verify — Monday Mar 23 17:05 ET (CLOSE)
+[Verify 2026-03-23 17:05:37] ============================================================
+[Verify 2026-03-23 17:05:37] 
+1. Trader1 Daemon
+[Verify 2026-03-23 17:05:37]   ✅ Trader1 daemon running (PID 71610)
+[Verify 2026-03-23 17:05:37] 
+2. LaunchAgent
+[Verify 2026-03-23 17:05:37]   ✅ LaunchAgent com.rudy.trader1 registered
+[Verify 2026-03-23 17:05:37] 
+3. IBKR Connection
+[Verify 2026-03-23 17:05:37]   ✅ IBKR TWS port 7496 open and connectable
+[Verify 2026-03-23 17:05:37] 
+4. Eval Freshness
+[Verify 2026-03-23 17:05:37]   ✅ Last eval: 1.3h ago — FRESH
+[Verify 2026-03-23 17:05:37] 
+5. State File
+[Verify 2026-03-23 17:05:37]   ✅ State file valid and writable
+[Verify 2026-03-23 17:05:37] 
+6. Filter Status
+[Verify 2026-03-23 17:05:37]   📊 MSTR=$138.35 | BTC=$70,873 | Premium=0.00x | Dipped below 200W: ✅ | Green weeks: 0/2 ❌ Need 2 more Friday close(s) above 200W
+[Verify 2026-03-23 17:05:37]   ⚠️  Dipped ✅ | Waiting for first green Friday close above MSTR 200W SMA
+[Verify 2026-03-23 17:05:37] 
+7. Telegram HITL
+[Verify 2026-03-23 17:05:38]   ✅ Telegram HITL reachable — approval request WILL deliver
+[Verify 2026-03-23 17:05:38] 
+8. Clone Prohibition
+[Verify 2026-03-23 17:05:38]   ✅ Clone check clean — no unauthorized traders running
+[Verify 2026-03-23 17:05:38] 
+9. PID Lock
+[Verify 2026-03-23 17:05:38]   ✅ PID lock file present (PID 71610)
+[Verify 2026-03-23 17:05:38] 
+10. Entry/Exit Code
+[Verify 2026-03-23 17:05:38]   ✅ Entry/exit code path importable — RudyV28() instantiates cleanly
+[Verify 2026-03-23 17:05:38] 
+11. IBKR Position
+[Verify 2026-03-23 17:05:38]   ✅ No position — clean. Ready to enter. Recommended strikes (DEPRESSED): [800, 1000]
+[Verify 2026-03-23 17:05:38] 
+12. Trail Stop / Floor
+[Verify 2026-03-23 17:05:38]   ✅ Not in position — trail/floor check N/A (will activate on entry)
+[Verify 2026-03-23 17:05:38] 
+13. Pending Sell / Approval
+[Verify 2026-03-23 17:05:38]   ✅ No pending approvals — state clean
+[Verify 2026-03-23 17:05:38] 
+14. Profit-Taking Roadmap
+[Verify 2026-03-23 17:05:38]   ✅ Not in position — profit-taking roadmap N/A | Roadmap: 10x→sell10% → 20x→sell10% → 50x→sell10% → 100x→sell10% | Trend adder at 50W EMA golden cross | Euphoria sell at premium >3.5x
+[Verify 2026-03-23 17:05:38] 
+15. Execute Sell Path
+[Verify 2026-03-23 17:05:39]   ✅ _execute_exit + _execute_partial_sell + _execute_trend_adder + _exit_trend_adder + reconcile_position + cleanup_stale_orders all callable | No recent EXIT/SELL failures in log
+[Verify 2026-03-23 17:05:39] 
+16. LEAP Expiry
+[Verify 2026-03-23 17:05:39]   ✅ No active position — expiry check N/A. Strike band: DEPRESSED | Rec strikes: [800, 1000]
+[Verify 2026-03-23 17:05:39] 
+17. Entry Sizing
+[Verify 2026-03-23 17:05:39]   ✅ Entry sizing OK — NLV=$7835 | Risk cap=$1959 | 1st deploy=$979 | Cash available=$6306 | ~7 shares @ $138.35
+[Verify 2026-03-23 17:05:39] 
+18. Strike Recommendation
+[Verify 2026-03-23 17:05:39]   ✅ Strike rec OK (2h ago) — Band: DEPRESSED | Spec: [800, 1000] (55%) | Safety: [100, 200, 500] (45%)
+[Verify 2026-03-23 17:05:39] 
+19. Expiry Roll Protocol
+[Verify 2026-03-23 17:05:39]   ✅ Expiry roll protocol LIVE ✅ — _check_expiry_extension + approve/reject_expiry_roll callable | 180d alert: not yet | 90d alert: not yet | No pending roll
+[Verify 2026-03-23 17:05:40] 
+Result: 18/19 passed | 0 failures | 1 warnings
+[Verify 2026-03-23 17:12:41] ============================================================
+[Verify 2026-03-23 17:12:41] Execution Path Verify — Monday Mar 23 17:12 ET (CLOSE)
+[Verify 2026-03-23 17:12:41] ============================================================
+[Verify 2026-03-23 17:12:41] 
+1. Trader1 Daemon
+[Verify 2026-03-23 17:12:41]   ✅ Trader1 daemon running (PID 71610)
+[Verify 2026-03-23 17:12:41] 
+2. LaunchAgent
+[Verify 2026-03-23 17:12:41]   ✅ LaunchAgent com.rudy.trader1 registered
+[Verify 2026-03-23 17:12:41] 
+3. IBKR Connection
+[Verify 2026-03-23 17:12:41]   ✅ IBKR TWS port 7496 open and connectable
+[Verify 2026-03-23 17:12:41] 
+4. Eval Freshness
+[Verify 2026-03-23 17:12:41]   ✅ Last eval: 1.5h ago — FRESH
+[Verify 2026-03-23 17:12:41] 
+5. State File
+[Verify 2026-03-23 17:12:41]   ✅ State file valid and writable
+[Verify 2026-03-23 17:12:41] 
+6. Filter Status
+[Verify 2026-03-23 17:12:41]   📊 MSTR=$138.35 | BTC=$70,873 | Premium=0.00x | Dipped below 200W: ✅ | Green weeks: 0/2 ❌ Need 2 more Friday close(s) above 200W
+[Verify 2026-03-23 17:12:41]   ⚠️  Dipped ✅ | Waiting for first green Friday close above MSTR 200W SMA
+[Verify 2026-03-23 17:12:41] 
+7. Telegram HITL
+[Verify 2026-03-23 17:12:42]   ✅ Telegram HITL reachable — approval request WILL deliver
+[Verify 2026-03-23 17:12:42] 
+8. Clone Prohibition
+[Verify 2026-03-23 17:12:42]   ✅ Clone check clean — no unauthorized traders running
+[Verify 2026-03-23 17:12:42] 
+9. PID Lock
+[Verify 2026-03-23 17:12:42]   ✅ PID lock file present (PID 71610)
+[Verify 2026-03-23 17:12:42] 
+10. Entry/Exit Code
+[Verify 2026-03-23 17:12:43]   ✅ Entry/exit code path importable — RudyV28() instantiates cleanly
+[Verify 2026-03-23 17:12:43] 
+11. IBKR Position
+[Verify 2026-03-23 17:12:43]   ✅ No position — clean. Ready to enter. Recommended strikes (DEPRESSED): [800, 1000]
+[Verify 2026-03-23 17:12:43] 
+12. Trail Stop / Floor
+[Verify 2026-03-23 17:12:43]   ✅ Not in position — trail/floor check N/A (will activate on entry)
+[Verify 2026-03-23 17:12:43] 
+13. Pending Sell / Approval
+[Verify 2026-03-23 17:12:43]   ✅ No pending approvals — state clean
+[Verify 2026-03-23 17:12:43] 
+14. Profit-Taking Roadmap
+[Verify 2026-03-23 17:12:43]   ✅ Not in position — profit-taking roadmap N/A | Roadmap: 10x→sell10% → 20x→sell10% → 50x→sell10% → 100x→sell10% | Trend adder at 50W EMA golden cross | Euphoria sell at premium >3.5x
+[Verify 2026-03-23 17:12:43] 
+15. Execute Sell Path
+[Verify 2026-03-23 17:12:43]   ✅ _execute_exit + _execute_partial_sell + _execute_trend_adder + _exit_trend_adder + reconcile_position + cleanup_stale_orders all callable | No recent EXIT/SELL failures in log
+[Verify 2026-03-23 17:12:43] 
+16. LEAP Expiry
+[Verify 2026-03-23 17:12:43]   ✅ No active position — expiry check N/A. Strike band: DEPRESSED | Rec strikes: [800, 1000]
+[Verify 2026-03-23 17:12:43] 
+17. Entry Sizing
+[Verify 2026-03-23 17:12:43]   ✅ Entry sizing OK — NLV=$7835 | Risk cap=$1959 | 1st deploy=$979 | Cash available=$6306 | ~7 shares @ $138.35
+[Verify 2026-03-23 17:12:43] 
+18. Strike Recommendation
+[Verify 2026-03-23 17:12:43]   ✅ Strike rec OK (2h ago) — Band: DEPRESSED | Spec: [800, 1000] (55%) | Safety: [100, 200, 500] (45%)
+[Verify 2026-03-23 17:12:43] 
+19. Expiry Roll Protocol
+[Verify 2026-03-23 17:12:43]   ✅ Expiry roll protocol LIVE ✅ | No MSTR CALL position detected in IBKR | 180d alert: armed | 90d alert: armed | No pending roll
+[Verify 2026-03-23 17:12:44] 
+Result: 18/19 passed | 0 failures | 1 warnings

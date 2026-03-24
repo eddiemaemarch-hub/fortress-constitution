@@ -1,0 +1,35 @@
+{
+  "dipped_below_200w": true,
+  "green_count_above_200w": 3,
+  "armed": true,
+  "last_alert": null,
+  "last_mstr_price": 148.09,
+  "last_btc_price": 73741,
+  "last_200w_sma": 150.2193953514099,
+  "last_premium": 0.9106996995952089,
+  "entry_signals": [
+    {
+      "date": "2026-03-17",
+      "mstr_price": 151.105,
+      "btc_price": 74793,
+      "premium": 0.9161706287215653,
+      "sma_200w": 150.23447034835814
+    }
+  ],
+  "daily_closes": [
+    {
+      "date": "2026-03-15",
+      "close": 139.67
+    },
+    {
+      "date": "2026-03-16",
+      "close": 147.52
+    },
+    {
+      "date": "2026-03-17",
+      "close": 148.09
+    }
+  ],
+  "last_updated": "2026-03-17T11:40:01.061645",
+  "last_entry_signal_date": "2026-03-17"
+}

@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "rudy-dash-proxy",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["-c", "import http.server,socketserver,urllib.request;h=type('H',(http.server.BaseHTTPRequestHandler,),{'do_GET':lambda s:(s.send_response(200),s.send_header('Content-type','text/html'),s.end_headers(),s.wfile.write(urllib.request.urlopen('http://localhost:3001'+s.path).read()))});socketserver.TCPServer(('',3002),h).serve_forever()"],
+      "port": 3002
+    }
+  ]
+}

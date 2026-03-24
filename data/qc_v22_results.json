@@ -1,0 +1,17 @@
+{
+  "Monthly": {
+    "project_id": 29037203,
+    "backtest_id": "4c92bc3dee0832ef3349adcc07a3ce99",
+    "stats": {}
+  },
+  "Weekly": {
+    "project_id": 29037210,
+    "backtest_id": "9e96066735857f9775b585b7b854d53b",
+    "stats": {}
+  },
+  "Daily": {
+    "project_id": 29037215,
+    "backtest_id": "28e06b6773e194161f9e6a82bb982e3e",
+    "stats": {}
+  }
+}

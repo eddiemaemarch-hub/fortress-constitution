@@ -1,0 +1,17 @@
+{
+  "test_name": "BMNR eNAV Discount Strategy \u2014 Stress Tests",
+  "timestamp": "2026-03-20T16:08:26.958909",
+  "permanent_premium": {
+    "pass": true,
+    "pct_below_1": 26.4
+  },
+  "protocol_crisis": {
+    "pass": true,
+    "final_equity": 8482.95
+  },
+  "dilution_bomb": {
+    "pass": true,
+    "verdict": "CONDITIONAL"
+  },
+  "overall": "CONDITIONAL PASS"
+}

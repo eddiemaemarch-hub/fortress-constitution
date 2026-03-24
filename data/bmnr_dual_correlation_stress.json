@@ -1,0 +1,80 @@
+{
+  "test_name": "BMNR Dual Correlation Stress (ETH/BTC Divergence)",
+  "timestamp": "2026-03-20T15:58:18.445135",
+  "asset": "BMNR",
+  "baseline": {
+    "bmnr_price": 25.0,
+    "eth_price": 2200.0,
+    "btc_price": 70000,
+    "eNAV_premium": 1.235
+  },
+  "scenarios": [
+    {
+      "scenario": "ETH Crash / BTC Flat",
+      "eth_move_pct": -40.0,
+      "btc_move_pct": 0.0,
+      "bmnr_move_pct": -28.0,
+      "bmnr_new_price": 18.0,
+      "eth_new_price": 1320.0,
+      "btc_new_price": 70000.0,
+      "eNAV_premium": 1.482,
+      "kill_switch_fires": false,
+      "divergence_severity": "HIGH"
+    },
+    {
+      "scenario": "ETH Crash / BTC Rally",
+      "eth_move_pct": -30.0,
+      "btc_move_pct": 20.0,
+      "bmnr_move_pct": -12.0,
+      "bmnr_new_price": 22.0,
+      "eth_new_price": 1540.0,
+      "btc_new_price": 84000.0,
+      "eNAV_premium": 1.553,
+      "kill_switch_fires": false,
+      "divergence_severity": "HIGH"
+    },
+    {
+      "scenario": "Both Crash",
+      "eth_move_pct": -30.0,
+      "btc_move_pct": -30.0,
+      "bmnr_move_pct": -27.9,
+      "bmnr_new_price": 18.02,
+      "eth_new_price": 1540.0,
+      "btc_new_price": 49000.0,
+      "eNAV_premium": 1.272,
+      "kill_switch_fires": false,
+      "divergence_severity": "LOW"
+    },
+    {
+      "scenario": "ETH Rally / BTC Crash",
+      "eth_move_pct": 30.0,
+      "btc_move_pct": -30.0,
+      "bmnr_move_pct": 6.6,
+      "bmnr_new_price": 26.65,
+      "eth_new_price": 2860.0,
+      "btc_new_price": 49000.0,
+      "eNAV_premium": 1.013,
+      "kill_switch_fires": false,
+      "divergence_severity": "HIGH"
+    },
+    {
+      "scenario": "Protocol Risk (ETH -50%)",
+      "eth_move_pct": -50.0,
+      "btc_move_pct": -10.0,
+      "bmnr_move_pct": -40.6,
+      "bmnr_new_price": 14.85,
+      "eth_new_price": 1100.0,
+      "btc_new_price": 63000.0,
+      "eNAV_premium": 1.467,
+      "kill_switch_fires": false,
+      "divergence_severity": "HIGH"
+    }
+  ],
+  "summary": {
+    "scenarios_tested": 5,
+    "kill_switch_fires": 0,
+    "highest_risk": "Protocol Risk (ETH -50%)",
+    "overall_verdict": "PASS",
+    "note": "Dual correlation creates unique risk not present in pure BTC plays like MSTR"
+  }
+}

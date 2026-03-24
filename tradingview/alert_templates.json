@@ -1,0 +1,28 @@
+{
+  "instructions": "Copy the 'message' field and paste it into TradingView's alert Message field. Set Webhook URL to your ngrok URL.",
+
+  "system1_mstr_entry": {
+    "description": "System 1 — MSTR lottery entry signal",
+    "message": "{\"system\": \"system1\", \"ticker\": \"{{ticker}}\", \"action\": \"BUY\", \"price\": {{close}}, \"timestamp\": \"{{time}}\", \"message\": \"System 1 MSTR lottery entry\"}"
+  },
+
+  "system1_ibit_entry": {
+    "description": "System 1 — IBIT lottery entry signal",
+    "message": "{\"system\": \"system1\", \"ticker\": \"{{ticker}}\", \"action\": \"BUY\", \"price\": {{close}}, \"timestamp\": \"{{time}}\", \"message\": \"System 1 IBIT lottery entry\"}"
+  },
+
+  "system2_bullish_diagonal": {
+    "description": "System 2 — Bullish diagonal spread entry",
+    "message": "{\"system\": \"system2\", \"ticker\": \"{{ticker}}\", \"action\": \"BUY\", \"price\": {{close}}, \"structure\": \"bullish_diagonal\", \"risk\": 250, \"timestamp\": \"{{time}}\", \"message\": \"System 2 bullish diagonal entry\"}"
+  },
+
+  "system2_bearish_diagonal": {
+    "description": "System 2 — Bearish diagonal spread entry",
+    "message": "{\"system\": \"system2\", \"ticker\": \"{{ticker}}\", \"action\": \"BUY\", \"price\": {{close}}, \"structure\": \"bearish_diagonal\", \"risk\": 250, \"timestamp\": \"{{time}}\", \"message\": \"System 2 bearish diagonal entry\"}"
+  },
+
+  "generic_price_alert": {
+    "description": "Generic price alert for any ticker",
+    "message": "{\"system\": \"generic\", \"ticker\": \"{{ticker}}\", \"action\": \"ALERT\", \"price\": {{close}}, \"timestamp\": \"{{time}}\", \"message\": \"Price alert triggered\"}"
+  }
+}

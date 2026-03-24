@@ -1,0 +1,490 @@
+{
+  "test_name": "BMNR eNAV Mean Reversion Apocalypse",
+  "timestamp": "2026-03-20T15:58:18.441280",
+  "asset": "BMNR",
+  "crypto_backing": "ETH",
+  "parameters": {
+    "eth_price": 2200.0,
+    "nav_per_share": 20.24,
+    "starting_premium": 2.5,
+    "starting_bmnr": 50.6,
+    "safety_strikes": [
+      5,
+      10,
+      15
+    ],
+    "spec_strikes": [
+      25,
+      40,
+      50
+    ],
+    "bmnr_implied_vol": 1.2,
+    "kill_switch_threshold": 0.75
+  },
+  "scenarios": [
+    {
+      "premium": 2.0,
+      "bmnr_price": 40.48,
+      "premium_drop_pct": 20.0,
+      "kill_switch_fires": false,
+      "safety_pool": {
+        "strikes": {
+          "5": {
+            "bs_value": 3662.29,
+            "intrinsic": 3548.0,
+            "has_intrinsic": true
+          },
+          "10": {
+            "bs_value": 3380.99,
+            "intrinsic": 3048.0,
+            "has_intrinsic": true
+          },
+          "15": {
+            "bs_value": 3157.63,
+            "intrinsic": 2548.0,
+            "has_intrinsic": true
+          }
+        },
+        "total_value": 10200.92,
+        "loss_from_start_pct": 22.3
+      },
+      "spec_pool": {
+        "strikes": {
+          "25": {
+            "bs_value": 2813.62,
+            "intrinsic": 1548.0,
+            "has_intrinsic": true
+          },
+          "40": {
+            "bs_value": 2444.28,
+            "intrinsic": 48.0,
+            "has_intrinsic": true
+          },
+          "50": {
+            "bs_value": 2256.16,
+            "intrinsic": 0,
+            "has_intrinsic": false
+          }
+        },
+        "total_value": 7514.06,
+        "loss_from_start_pct": 25.2
+      },
+      "barbell_impact": {
+        "weighted_loss_pct": 24.4
+      },
+      "alerts": {
+        "compression_alert_fires": true,
+        "band_shift": "EUPHORIC -> ELEVATED",
+        "roll_recommended": true
+      },
+      "failure_checks": {
+        "all_leaps_zero_intrinsic": false,
+        "safety_net_failed": false,
+        "entry_blocked": false
+      },
+      "verdict": "PASS"
+    },
+    {
+      "premium": 1.5,
+      "bmnr_price": 30.36,
+      "premium_drop_pct": 40.0,
+      "kill_switch_fires": false,
+      "safety_pool": {
+        "strikes": {
+          "5": {
+            "bs_value": 2670.09,
+            "intrinsic": 2536.0,
+            "has_intrinsic": true
+          },
+          "10": {
+            "bs_value": 2420.37,
+            "intrinsic": 2036.0,
+            "has_intrinsic": true
+          },
+          "15": {
+            "bs_value": 2229.08,
+            "intrinsic": 1536.0,
+            "has_intrinsic": true
+          }
+        },
+        "total_value": 7319.55,
+        "loss_from_start_pct": 44.2
+      },
+      "spec_pool": {
+        "strikes": {
+          "25": {
+            "bs_value": 1944.44,
+            "intrinsic": 536.0,
+            "has_intrinsic": true
+          },
+          "40": {
+            "bs_value": 1650.54,
+            "intrinsic": 0,
+            "has_intrinsic": false
+          },
+          "50": {
+            "bs_value": 1505.1,
+            "intrinsic": 0,
+            "has_intrinsic": false
+          }
+        },
+        "total_value": 5100.07,
+        "loss_from_start_pct": 49.3
+      },
+      "barbell_impact": {
+        "weighted_loss_pct": 47.8
+      },
+      "alerts": {
+        "compression_alert_fires": true,
+        "band_shift": "EUPHORIC -> FAIR",
+        "roll_recommended": true
+      },
+      "failure_checks": {
+        "all_leaps_zero_intrinsic": false,
+        "safety_net_failed": false,
+        "entry_blocked": false
+      },
+      "verdict": "PASS"
+    },
+    {
+      "premium": 1.0,
+      "bmnr_price": 20.24,
+      "premium_drop_pct": 60.0,
+      "kill_switch_fires": false,
+      "safety_pool": {
+        "strikes": {
+          "5": {
+            "bs_value": 1690.5,
+            "intrinsic": 1524.0,
+            "has_intrinsic": true
+          },
+          "10": {
+            "bs_value": 1486.06,
+            "intrinsic": 1024.0,
+            "has_intrinsic": true
+          },
+          "15": {
+            "bs_value": 1337.77,
+            "intrinsic": 524.0,
+            "has_intrinsic": true
+          }
+        },
+        "total_value": 4514.32,
+        "loss_from_start_pct": 65.6
+      },
+      "spec_pool": {
+        "strikes": {
+          "25": {
+            "bs_value": 1128.08,
+            "intrinsic": 0,
+            "has_intrinsic": false
+          },
+          "40": {
+            "bs_value": 923.65,
+            "intrinsic": 0,
+            "has_intrinsic": false
+          },
+          "50": {
+            "bs_value": 826.67,
+            "intrinsic": 0,
+            "has_intrinsic": false
+          }
+        },
+        "total_value": 2878.39,
+        "loss_from_start_pct": 71.4
+      },
+      "barbell_impact": {
+        "weighted_loss_pct": 69.6
+      },
+      "alerts": {
+        "compression_alert_fires": true,
+        "band_shift": "EUPHORIC -> FAIR",
+        "roll_recommended": true
+      },
+      "failure_checks": {
+        "all_leaps_zero_intrinsic": false,
+        "safety_net_failed": false,
+        "entry_blocked": false
+      },
+      "verdict": "PASS"
+    },
+    {
+      "premium": 0.75,
+      "bmnr_price": 15.18,
+      "premium_drop_pct": 70.0,
+      "kill_switch_fires": false,
+      "safety_pool": {
+        "strikes": {
+          "5": {
+            "bs_value": 1210.18,
+            "intrinsic": 1018.0,
+            "has_intrinsic": true
+          },
+          "10": {
+            "bs_value": 1037.09,
+            "intrinsic": 518.0,
+            "has_intrinsic": true
+          },
+          "15": {
+            "bs_value": 916.61,
+            "intrinsic": 18.0,
+            "has_intrinsic": true
+          }
+        },
+        "total_value": 3163.88,
+        "loss_from_start_pct": 75.9
+      },
+      "spec_pool": {
+        "strikes": {
+          "25": {
+            "bs_value": 752.55,
+            "intrinsic": 0,
+            "has_intrinsic": false
+          },
+          "40": {
+            "bs_value": 599.2,
+            "intrinsic": 0,
+            "has_intrinsic": false
+          },
+          "50": {
+            "bs_value": 528.68,
+            "intrinsic": 0,
+            "has_intrinsic": false
+          }
+        },
+        "total_value": 1880.43,
+        "loss_from_start_pct": 81.3
+      },
+      "barbell_impact": {
+        "weighted_loss_pct": 79.7
+      },
+      "alerts": {
+        "compression_alert_fires": true,
+        "band_shift": "EUPHORIC -> DEPRESSED",
+        "roll_recommended": true
+      },
+      "failure_checks": {
+        "all_leaps_zero_intrinsic": false,
+        "safety_net_failed": false,
+        "entry_blocked": false
+      },
+      "verdict": "PASS"
+    },
+    {
+      "premium": 0.5,
+      "bmnr_price": 10.12,
+      "premium_drop_pct": 80.0,
+      "kill_switch_fires": true,
+      "safety_pool": {
+        "strikes": {
+          "5": {
+            "bs_value": 743.03,
+            "intrinsic": 512.0,
+            "has_intrinsic": true
+          },
+          "10": {
+            "bs_value": 611.07,
+            "intrinsic": 12.0,
+            "has_intrinsic": true
+          },
+          "15": {
+            "bs_value": 524.67,
+            "intrinsic": 0,
+            "has_intrinsic": false
+          }
+        },
+        "total_value": 1878.77,
+        "loss_from_start_pct": 85.7
+      },
+      "spec_pool": {
+        "strikes": {
+          "25": {
+            "bs_value": 413.33,
+            "intrinsic": 0,
+            "has_intrinsic": false
+          },
+          "40": {
+            "bs_value": 315.44,
+            "intrinsic": 0,
+            "has_intrinsic": false
+          },
+          "50": {
+            "bs_value": 272.4,
+            "intrinsic": 0,
+            "has_intrinsic": false
+          }
+        },
+        "total_value": 1001.18,
+        "loss_from_start_pct": 90.0
+      },
+      "barbell_impact": {
+        "weighted_loss_pct": 88.7
+      },
+      "alerts": {
+        "compression_alert_fires": true,
+        "band_shift": "EUPHORIC -> DEPRESSED",
+        "roll_recommended": true
+      },
+      "failure_checks": {
+        "all_leaps_zero_intrinsic": false,
+        "safety_net_failed": false,
+        "entry_blocked": false
+      },
+      "verdict": "PASS (KILL SWITCH EXITS)"
+    },
+    {
+      "premium": 0.25,
+      "bmnr_price": 5.06,
+      "premium_drop_pct": 90.0,
+      "kill_switch_fires": true,
+      "safety_pool": {
+        "strikes": {
+          "5": {
+            "bs_value": 305.54,
+            "intrinsic": 6.0,
+            "has_intrinsic": true
+          },
+          "10": {
+            "bs_value": 230.91,
+            "intrinsic": 0,
+            "has_intrinsic": false
+          },
+          "15": {
+            "bs_value": 187.23,
+            "intrinsic": 0,
+            "has_intrinsic": false
+          }
+        },
+        "total_value": 723.67,
+        "loss_from_start_pct": 94.5
+      },
+      "spec_pool": {
+        "strikes": {
+          "25": {
+            "bs_value": 136.2,
+            "intrinsic": 0,
+            "has_intrinsic": false
+          },
+          "40": {
+            "bs_value": 95.96,
+            "intrinsic": 0,
+            "has_intrinsic": false
+          },
+          "50": {
+            "bs_value": 79.62,
+            "intrinsic": 0,
+            "has_intrinsic": false
+          }
+        },
+        "total_value": 311.78,
+        "loss_from_start_pct": 96.9
+      },
+      "barbell_impact": {
+        "weighted_loss_pct": 96.2
+      },
+      "alerts": {
+        "compression_alert_fires": true,
+        "band_shift": "EUPHORIC -> DISCOUNT",
+        "roll_recommended": true
+      },
+      "failure_checks": {
+        "all_leaps_zero_intrinsic": false,
+        "safety_net_failed": true,
+        "entry_blocked": false
+      },
+      "verdict": "PASS (KILL SWITCH EXITS)"
+    }
+  ],
+  "timeline_decay": [
+    {
+      "decay_days": 30,
+      "T_remaining_years": 1.758,
+      "scenarios": [
+        {
+          "premium": 2.0,
+          "bmnr_price": 40.48,
+          "safety_value": 10156.23,
+          "spec_value": 7387.94,
+          "total_loss_pct": 24.3
+        },
+        {
+          "premium": 1.0,
+          "bmnr_price": 20.24,
+          "safety_value": 4473.82,
+          "spec_value": 2795.27,
+          "total_loss_pct": 68.6
+        },
+        {
+          "premium": 0.5,
+          "bmnr_price": 10.12,
+          "safety_value": 1847.57,
+          "spec_value": 955.22,
+          "total_loss_pct": 87.9
+        }
+      ]
+    },
+    {
+      "decay_days": 60,
+      "T_remaining_years": 1.676,
+      "scenarios": [
+        {
+          "premium": 2.0,
+          "bmnr_price": 40.48,
+          "safety_value": 10110.45,
+          "spec_value": 7256.86,
+          "total_loss_pct": 25.1
+        },
+        {
+          "premium": 1.0,
+          "bmnr_price": 20.24,
+          "safety_value": 4431.9,
+          "spec_value": 2709.23,
+          "total_loss_pct": 69.2
+        },
+        {
+          "premium": 0.5,
+          "bmnr_price": 10.12,
+          "safety_value": 1815.18,
+          "spec_value": 908.2,
+          "total_loss_pct": 88.2
+        }
+      ]
+    },
+    {
+      "decay_days": 90,
+      "T_remaining_years": 1.594,
+      "scenarios": [
+        {
+          "premium": 2.0,
+          "bmnr_price": 40.48,
+          "safety_value": 10063.57,
+          "spec_value": 7120.51,
+          "total_loss_pct": 25.9
+        },
+        {
+          "premium": 1.0,
+          "bmnr_price": 20.24,
+          "safety_value": 4388.49,
+          "spec_value": 2620.08,
+          "total_loss_pct": 69.8
+        },
+        {
+          "premium": 0.5,
+          "bmnr_price": 10.12,
+          "safety_value": 1781.51,
+          "spec_value": 860.13,
+          "total_loss_pct": 88.6
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "zero_intrinsic_premium": null,
+    "kill_switch_threshold": 0.75,
+    "kill_switch_protects_scenarios": 2,
+    "scenarios_passed": 6,
+    "scenarios_failed": 0,
+    "overall_verdict": "PASS",
+    "note": "0.75x eNAV kill switch protects 2 scenarios that would otherwise fail"
+  }
+}

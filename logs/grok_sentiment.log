@@ -1,0 +1,35 @@
+[2026-03-22 15:17:00] Scanning CT sentiment via Grok...
+[2026-03-22 15:17:03] ALERT sent: GREED / score 35
+[2026-03-22 15:17:03] ALERT sent: GREED / score 35
+[2026-03-22 15:17:03] Saved sentiment: score=35, fear_greed=GREED
+[2026-03-22 15:17:03] CT Scan Complete | Score: 35 | BTC: OPTIMISTIC | MSTR: EUPHORIA | F/G: GREED
+[2026-03-22 17:42:24] Scanning CT sentiment via Grok...
+[2026-03-22 17:42:36] ALERT sent: GREED / score 35
+[2026-03-22 17:42:36] Saved sentiment: score=35, fear_greed=GREED
+[2026-03-22 17:42:36] CT Scan Complete | Score: 35 | BTC: OPTIMISTIC | MSTR: EUPHORIA | F/G: GREED
+[2026-03-22 17:57:59] Scanning CT sentiment via Grok...
+[2026-03-22 17:58:02] ALERT sent: GREED / score 35
+[2026-03-22 17:58:02] Saved sentiment: score=35, fear_greed=GREED
+[2026-03-22 17:58:02] CT Scan Complete | Score: 35 | BTC: OPTIMISTIC | MSTR: EUPHORIA | F/G: GREED
+[2026-03-22 17:59:30] Scanning CT sentiment via Grok...
+[2026-03-22 17:59:33] ALERT sent: GREED / score 35
+[2026-03-22 17:59:33] Saved sentiment: score=35, fear_greed=GREED
+[2026-03-22 17:59:33] CT Scan Complete | Score: 35 | BTC: OPTIMISTIC | MSTR: EUPHORIA | F/G: GREED
+[2026-03-22 19:54:07] Scanning CT sentiment via Grok...
+[2026-03-22 19:54:10] ALERT sent: GREED / score 65
+[2026-03-22 19:54:11] ALERT sent: GREED / score 65
+[2026-03-22 19:54:11] Saved sentiment: score=65, fear_greed=GREED
+[2026-03-22 19:54:11] CT Scan Complete | Score: 65 | BTC: OPTIMISTIC | MSTR: EUPHORIA | F/G: GREED
+[2026-03-23 19:03:41] Scanning CT sentiment via Grok (web_search grounded)...
+[2026-03-23 19:03:41] xAI OpenAI-compat client initialized (web_search grounding enabled)
+[2026-03-23 19:03:41] Grounded query error (Failed to deserialize the JSON body into the target type: tools[0].type: unknown variant `web_search`, expected `function` or `live_search` at line 1 column 1711) — falling back to raw REST
+[2026-03-23 19:03:44] fear_greed override: model said 'GREED' but score=45 → 'NEUTRAL'
+[2026-03-23 19:03:45] ALERT sent: NEUTRAL / score 45
+[2026-03-23 19:03:45] Saved sentiment: score=45, fear_greed=NEUTRAL
+[2026-03-23 19:03:45] CT Scan Complete | Score: 45 | BTC: OPTIMISTIC | MSTR: EUPHORIA | F/G: NEUTRAL
+[2026-03-23 20:00:05] Scanning CT sentiment via Grok (web_search grounded)...
+[2026-03-23 20:00:06] xAI OpenAI-compat client initialized (web_search grounding enabled)
+[2026-03-23 20:00:06] Grounded query error (Failed to deserialize the JSON body into the target type: tools[0].type: unknown variant `web_search`, expected `function` or `live_search` at line 1 column 1711) — falling back to raw REST
+[2026-03-23 20:00:14] ALERT sent: GREED / score 65
+[2026-03-23 20:00:14] Saved sentiment: score=65, fear_greed=GREED
+[2026-03-23 20:00:14] CT Scan Complete | Score: 65 | BTC: OPTIMISTIC | MSTR: EUPHORIA | F/G: GREED

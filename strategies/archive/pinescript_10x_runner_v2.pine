@@ -1,0 +1,297 @@
+//@version=6
+strategy("Rudy 10x Momentum Runner v2 • Improved",
+     overlay          = true,
+     default_qty_type = strategy.percent_of_equity,
+     default_qty_value = 8,
+     initial_capital  = 10000,
+     commission_type  = strategy.commission.percent,
+     commission_value = 0.5,
+     slippage         = 5,
+     pyramiding       = 0,
+     currency         = currency.USD)
+
+// ────────────────────────────────────────
+//  1. INPUTS – grouped logically
+// ────────────────────────────────────────
+
+// Momentum / Trend
+group_mom   = "Momentum & Trend"
+p_ema_fast  = input.int(10,  "Fast EMA",  group=group_mom)
+p_ema_mid   = input.int(21,  "Mid EMA",   group=group_mom)
+p_ema_slow  = input.int(50,  "Slow EMA",  group=group_mom)
+p_rsi       = input.int(14,  "RSI Period",group=group_mom)
+p_macd_fast = input.int(12,  "MACD Fast", group=group_mom)
+p_macd_slow = input.int(26,  "MACD Slow", group=group_mom)
+p_macd_sig  = input.int(9,   "MACD Sig",  group=group_mom)
+
+// Risk Management
+group_risk     = "Risk Management"
+p_profit_targ  = input.float(15.0, "Fixed Profit Target %", group=group_risk) / 100
+p_atr_len      = input.int(14,     "ATR Length",            group=group_risk)
+p_atr_mult_sl  = input.float(1.8,  "Initial ATR Stop ×",    group=group_risk)
+p_use_trailing = input.bool(true,  "Enable % Trailing Stop",group=group_risk)
+p_trail_act    = input.float(8.0,  "Trail Activates at %",  group=group_risk) / 100
+p_trail_offset = input.float(4.0,  "Trail Offset %",        group=group_risk) / 100
+p_max_bars     = input.int(40,     "Max Bars in Trade",     group=group_risk)
+p_hwm_lookback = input.int(252,    "HWM Lookback bars",     group=group_risk)
+p_hwm_trail    = input.float(30.0, "HWM Trail Floor %",     group=group_risk)
+
+// Laddered Trailing Stop (tightens as gains grow)
+group_ladder   = "Laddered Trail Stops"
+p_lad_t1_gain  = input.float(50,   "Tier 1 at +% gain",  group=group_ladder)   // was 100
+p_lad_t1_trail = input.float(25.0, "Tier 1 Trail %",     group=group_ladder)  // was 30
+p_lad_t2_gain  = input.float(100,  "Tier 2 at +% gain",  group=group_ladder)  // was 300
+p_lad_t2_trail = input.float(20.0, "Tier 2 Trail %",     group=group_ladder)  // was 25
+p_lad_t3_gain  = input.float(200,  "Tier 3 at +% gain",  group=group_ladder)  // was 500
+p_lad_t3_trail = input.float(15.0, "Tier 3 Trail %",     group=group_ladder)  // was 20
+
+// Tiered Profit Taking (partial exits)
+group_profit   = "Tiered Profit Taking"
+pt1_pct        = input.float(100,  "Tier 1 at +%", group=group_profit)
+pt1_sell       = input.float(25,   "Sell %",       group=group_profit)
+pt2_pct        = input.float(300,  "Tier 2 at +%", group=group_profit)
+pt2_sell       = input.float(25,   "Sell %",       group=group_profit)
+pt3_pct        = input.float(500,  "Tier 3 at +%", group=group_profit)
+pt3_sell       = input.float(25,   "Sell %",       group=group_profit)
+
+// Filters
+group_filter = "Market Filters"
+p_use_spy    = input.bool(true,  "Require SPY > EMA50", group=group_filter)
+p_spy_sym    = input.symbol("SPY", "SPY Ticker",        group=group_filter)
+
+// ────────────────────────────────────────
+//  2. CALCULATIONS
+// ────────────────────────────────────────
+
+emaF = ta.ema(close, p_ema_fast)
+emaM = ta.ema(close, p_ema_mid)
+emaS = ta.ema(close, p_ema_slow)
+
+rsi  = ta.rsi(close, p_rsi)
+
+[macdLine, sigLine, macdHist] = ta.macd(close, p_macd_fast, p_macd_slow, p_macd_sig)
+
+atr  = ta.atr(p_atr_len)
+
+volSMA   = ta.sma(volume, 20)
+volRatio = volume / volSMA
+
+// EMA power stack
+stacked = emaF > emaM and emaM > emaS
+
+// SPY filter (non-repainting)
+spyC   = request.security(p_spy_sym, timeframe.period, close,   barmerge.gaps_off, barmerge.lookahead_off)
+spyEMA = request.security(p_spy_sym, timeframe.period, ta.ema(close,50), barmerge.gaps_off, barmerge.lookahead_off)
+spyBull = spyC > spyEMA
+
+// Momentum
+mom10 = ta.roc(close, 10)
+mom20 = ta.roc(close, 20)
+
+// ────────────────────────────────────────
+//  3. ENTRY & POSITION STATE
+// ────────────────────────────────────────
+
+bool inLong       = strategy.position_size > 0
+bool wasFlat      = strategy.position_size[1] <= 0
+int  barsSinceEntry = ta.barssince(wasFlat)
+
+bool marketFilter = not p_use_spy or spyBull
+
+bool buyCond = stacked and close > emaF and macdHist > 0 and rsi > 35 and rsi < 78 and marketFilter
+
+// ────────────────────────────────────────
+//  4. EXITS – trend/structure breaks + time
+// ────────────────────────────────────────
+
+bool trendBroken  = ta.crossunder(close, emaS)
+bool stackBroken  = emaM < emaS
+bool timeExit     = p_max_bars > 0 and inLong and barsSinceEntry >= p_max_bars
+
+// ────────────────────────────────────────
+//  5. PROFIT TIERS (partial closes)
+// ────────────────────────────────────────
+
+var bool tier1_hit = false
+var bool tier2_hit = false
+var bool tier3_hit = false
+
+if inLong
+    float entryPx   = strategy.position_avg_price
+    float gainPct   = (close - entryPx) / entryPx * 100
+
+    if gainPct >= pt1_pct and not tier1_hit
+        strategy.close(id=strategy.opentrades.entry_id(0), qty_percent=pt1_sell, comment="PT1 +" + str.tostring(pt1_pct,"#") + "%")
+        tier1_hit := true
+
+    if gainPct >= pt2_pct and not tier2_hit
+        strategy.close(id=strategy.opentrades.entry_id(0), qty_percent=pt2_sell, comment="PT2 +" + str.tostring(pt2_pct,"#") + "%")
+        tier2_hit := true
+
+    if gainPct >= pt3_pct and not tier3_hit
+        strategy.close(id=strategy.opentrades.entry_id(0), qty_percent=pt3_sell, comment="PT3 +" + str.tostring(pt3_pct,"#") + "%")
+        tier3_hit := true
+
+// Reset when flat
+if not inLong
+    tier1_hit := false
+    tier2_hit := false
+    tier3_hit := false
+
+// ────────────────────────────────────────
+//  6. ENTRY + BUILT-IN EXITS (initial SL + optional trailing)
+// ────────────────────────────────────────
+
+if buyCond and not inLong
+    strategy.entry("RudyLong", strategy.long)
+
+    float initStop = close - atr * p_atr_mult_sl
+
+    if p_use_trailing
+        strategy.exit("RudyTrail", from_entry="RudyLong",
+             stop       = initStop,
+             limit      = close * (1 + p_profit_targ),
+             trail_price = close * (1 + p_trail_act),
+             trail_offset = close * p_trail_offset
+             )
+    else
+        strategy.exit("RudySL/TP", from_entry="RudyLong",
+             stop  = initStop,
+             limit = close * (1 + p_profit_targ)
+             )
+
+// Hard exits
+if inLong
+    if trendBroken
+        strategy.close("RudyLong", comment="Trend Lost")
+    else if stackBroken
+        strategy.close("RudyLong", comment="Stack Broken")
+    else if timeExit
+        strategy.close("RudyLong", comment="Max Hold")
+
+// ────────────────────────────────────────
+//  7. LADDERED TRAILING STOP (tightens as gains grow)
+// ────────────────────────────────────────
+
+var float pos_hwm = 0.0
+if inLong
+    pos_hwm := math.max(pos_hwm, high)
+if not inLong
+    pos_hwm := 0.0
+float hwm      = pos_hwm > 0 ? pos_hwm : close
+float entryPxL = strategy.position_avg_price
+float gainPctL = entryPxL > 0 ? (close - entryPxL) / entryPxL * 100 : 0
+float peak_gain_pct = inLong and entryPxL > 0 ? (pos_hwm - entryPxL) / entryPxL * 100 : 0
+
+// Select trail % based on PEAK gain tier (prevents tier downgrade on pullback)
+var float activeTrailPct = p_hwm_trail
+var string ladderTier = "30% (floor)"
+
+if inLong
+    if peak_gain_pct >= p_lad_t3_gain
+        activeTrailPct := p_lad_t3_trail
+        ladderTier := str.tostring(p_lad_t3_gain,"#") + "%+ | " + str.tostring(p_lad_t3_trail,"#") + "% LOCK"
+    else if peak_gain_pct >= p_lad_t2_gain
+        activeTrailPct := p_lad_t2_trail
+        ladderTier := str.tostring(p_lad_t2_gain,"#") + "%+ | " + str.tostring(p_lad_t2_trail,"#") + "% trail"
+    else if peak_gain_pct >= p_lad_t1_gain
+        activeTrailPct := p_lad_t1_trail
+        ladderTier := str.tostring(p_lad_t1_gain,"#") + "%+ | " + str.tostring(p_lad_t1_trail,"#") + "% trail"
+    else
+        activeTrailPct := p_hwm_trail
+        ladderTier := str.tostring(p_hwm_trail,"#") + "% (floor)"
+else
+    activeTrailPct := p_hwm_trail
+    ladderTier := str.tostring(p_hwm_trail,"#") + "% (floor)"
+
+float hwmStop  = hwm * (1 - activeTrailPct / 100)
+bool  hwmHit   = inLong and close < hwmStop
+
+if hwmHit
+    strategy.close("RudyLong", comment="Ladder Trail " + str.tostring(activeTrailPct,"#") + "%")
+
+// ────────────────────────────────────────
+//  8. VISUALS
+// ────────────────────────────────────────
+
+plot(emaF, "EMA Fast", #00E676, 1)
+plot(emaM, "EMA Mid",  #2196F3, 2)
+plot(emaS, "EMA Slow", #FF5722, 2)
+
+plotshape(buyCond and not inLong,      "BUY",  shape.triangleup,   location.belowbar, #00E676, size=size.small, text="BUY")
+plotshape(trendBroken  and inLong,     "Trend",shape.triangledown, location.abovebar, #F44336, text="TREND")
+plotshape(stackBroken  and inLong,     "Stack",shape.xcross,       location.abovebar, #FF9800, text="STACK")
+plotshape(timeExit     and inLong,     "MaxT", shape.xcross,       location.abovebar, #FF9800, size=size.tiny, text="MAX")
+plotshape(hwmHit       and inLong,     "HWM",  shape.labeldown,    location.abovebar, #FF00FF, text="HWM")
+
+bgcolor(stacked ? color.new(#4CAF50, 92) : na)
+barcolor(volRatio > 2 ? #FFD700 : na)
+
+plot(inLong ? strategy.position_avg_price - atr * p_atr_mult_sl : na, "Init SL", color=color.red, style=plot.style_circles)
+plot(inLong ? hwmStop : na, "HWM Stop", color=#FF00FF, linewidth=2, style=plot.style_stepline)
+
+// ────────────────────────────────────────
+//  9. DASHBOARD
+// ────────────────────────────────────────
+
+var table dash = table.new(position.top_right, 2, 19, bgcolor=color.new(#000000, 75), border_width=1, frame_width=1)
+
+if barstate.islastconfirmedhistory or barstate.isrealtime
+    table.cell(dash, 0, 0, "RUDY 10X v2", text_color=#FFD700, text_size=size.normal)
+    table.cell(dash, 1, 0, stacked ? "STACKED ✓" : "—", text_color=stacked ? #00E676 : #888888)
+
+    table.cell(dash, 0, 1, "RSI", text_color=#DDDDDD)
+    table.cell(dash, 1, 1, str.tostring(rsi,"#.##"), text_color= rsi<78 and rsi>35 ? #00E676 : #FF5252)
+
+    table.cell(dash, 0, 2, "MACD Hist")
+    table.cell(dash, 1, 2, macdHist>0 ? "BULL" : "BEAR", text_color=macdHist>0 ? #00E676 : #FF5252)
+
+    table.cell(dash, 0, 3, "Mom 10 / 20")
+    table.cell(dash, 1, 3, str.tostring(mom10,"+#.##") + " / " + str.tostring(mom20,"+#.##"), text_color=mom10>0 ? #00E676 : #888888)
+
+    table.cell(dash, 0, 4, "Vol Ratio")
+    table.cell(dash, 1, 4, str.tostring(volRatio,"#.##")+"×", text_color=volRatio>1.8 ? #FFD700 : #AAAAAA)
+
+    table.cell(dash, 0, 5, "SPY Filter")
+    table.cell(dash, 1, 5, p_use_spy ? (spyBull?"BULL":"BEAR") : "OFF", text_color=spyBull?#00E676:#FF5252)
+
+    table.cell(dash, 0, 6, "Bars / Max")
+    table.cell(dash, 1, 6, inLong ? str.tostring(barsSinceEntry)+"/"+str.tostring(p_max_bars) : "—", text_color=timeExit?#FF9800:#FFFFFF)
+
+    table.cell(dash, 0, 7, "P&L %")
+    float _opPct = strategy.position_avg_price > 0 ? (close - strategy.position_avg_price) / strategy.position_avg_price * 100 : 0
+    table.cell(dash, 1, 7, inLong ? str.tostring(_opPct,"+#.##")+"%" : "—", text_color=_opPct>0?#00E676:#FF5252)
+
+    table.cell(dash, 0, 8, "Remaining")
+    table.cell(dash, 1, 8, inLong ? str.tostring(strategy.position_size / strategy.position_size[1]*100,"#.##")+"%" : "—", text_color=#BBBBBB)
+
+    table.cell(dash, 0, 9, "Peak Gain", text_color=color.white, text_size=size.small)
+    table.cell(dash, 1, 9, inLong ? str.tostring(peak_gain_pct, "+#.#") + "%" : "-", text_color=color.new(#FFD700, 0), text_size=size.small)
+    table.cell(dash, 0, 10, "Pos Peak", text_color=color.white, text_size=size.small)
+    table.cell(dash, 1, 10, inLong ? "$" + str.tostring(pos_hwm, "#.##") : "-", text_color=color.white, text_size=size.small)
+
+    table.cell(dash, 0, 11, "Trail Tier")
+    table.cell(dash, 1, 11, ladderTier, text_color=gainPctL >= p_lad_t3_gain ? #FFD700 : gainPctL >= p_lad_t1_gain ? #FF00FF : #AAAAAA, text_size=size.small)
+
+    table.cell(dash, 0, 12, "Trail Stop $")
+    table.cell(dash, 1, 12, inLong ? str.tostring(hwmStop,"#.##") : "—", text_color=hwmHit ? #FF5252 : #FF00FF)
+
+    table.cell(dash, 0, 13, "PT1 / PT2 / PT3")
+    table.cell(dash, 1, 13, (tier1_hit?"✓ ":"") + str.tostring(pt1_pct,"#") + "→" + str.tostring(pt1_sell,"#") + "%   " +
+                             (tier2_hit?"✓ ":"") + str.tostring(pt2_pct,"#") + "→" + str.tostring(pt2_sell,"#") + "%   " +
+                             (tier3_hit?"✓ ":"") + str.tostring(pt3_pct,"#") + "→" + str.tostring(pt3_sell,"#") + "%",
+              text_color=#00BCD4, text_size=size.small)
+
+// ────────────────────────────────────────
+// 10. ALERTS
+// ────────────────────────────────────────
+
+alertcondition(buyCond and not inLong,      title="Rudy BUY",    message="10× Runner BUY signal — consider calls")
+alertcondition(trendBroken  and inLong,     title="Trend Lost",  message="Trend lost — close position")
+alertcondition(stackBroken  and inLong,     title="Stack Broken", message="EMA stack broken — close")
+alertcondition(timeExit     and inLong,     title="Max Hold",    message="Max hold reached — exit")
+alertcondition(hwmHit       and inLong,     title="Ladder Trail", message="Laddered trailing stop hit — exit")
+
+alertcondition(tier1_hit and not tier1_hit[1], title="PT1 Hit", message="Tier 1 profit taken (+100%)")
+alertcondition(tier2_hit and not tier2_hit[1], title="PT2 Hit", message="Tier 2 profit taken (+300%)")
+alertcondition(tier3_hit and not tier3_hit[1], title="PT3 Hit", message="Tier 3 profit taken (+500%)")

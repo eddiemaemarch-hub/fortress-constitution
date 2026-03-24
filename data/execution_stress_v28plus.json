@@ -1,0 +1,214 @@
+{
+  "slippage_ladder": [
+    {
+      "slippage_pct": 0.0025,
+      "bps": 25,
+      "label": "25bps (0.25%)",
+      "net": 138.471,
+      "dd": 48.0,
+      "sharpe": 0.279,
+      "orders": 132,
+      "sortino": 0.151,
+      "survival_ratio": 1.0943469292595607,
+      "still_beats_base": true
+    },
+    {
+      "slippage_pct": 0.005,
+      "bps": 50,
+      "label": "50bps (0.50%)",
+      "net": 126.533,
+      "dd": 49.7,
+      "sharpe": 0.258,
+      "orders": 132,
+      "sortino": 0.14,
+      "survival_ratio": 1.0,
+      "still_beats_base": true
+    },
+    {
+      "slippage_pct": 0.0075,
+      "bps": 75,
+      "label": "75bps (0.75%)",
+      "net": 115.754,
+      "dd": 51.3,
+      "sharpe": 0.239,
+      "orders": 132,
+      "sortino": 0.13,
+      "survival_ratio": 0.9148127365983578,
+      "still_beats_base": true
+    },
+    {
+      "slippage_pct": 0.01,
+      "bps": 100,
+      "label": "100bps (1.00%)",
+      "net": 120.301,
+      "dd": 50.1,
+      "sharpe": 0.247,
+      "orders": 132,
+      "sortino": 0.135,
+      "survival_ratio": 0.9507480262066023,
+      "still_beats_base": true
+    },
+    {
+      "slippage_pct": 0.015,
+      "bps": 150,
+      "label": "150bps (1.50%)",
+      "net": 99.513,
+      "dd": 53.1,
+      "sharpe": 0.207,
+      "orders": 132,
+      "sortino": 0.114,
+      "survival_ratio": 0.7864588684374827,
+      "still_beats_base": true
+    },
+    {
+      "slippage_pct": 0.02,
+      "bps": 200,
+      "label": "200bps (2.00%)",
+      "net": 81.753,
+      "dd": 56.0,
+      "sharpe": 0.171,
+      "orders": 132,
+      "sortino": 0.094,
+      "survival_ratio": 0.6461002268183004,
+      "still_beats_base": true
+    }
+  ],
+  "vol_scaled": [
+    {
+      "base_slip": 0.005,
+      "vol_mult": 1.0,
+      "label": "50bps flat (baseline)",
+      "net": 126.533,
+      "dd": 49.7,
+      "sharpe": 0.258,
+      "orders": 132,
+      "survival_ratio": 1.0
+    },
+    {
+      "base_slip": 0.005,
+      "vol_mult": 2.0,
+      "label": "50bps base, 2x in high-vol",
+      "net": 109.201,
+      "dd": 52.7,
+      "sharpe": 0.226,
+      "orders": 134,
+      "survival_ratio": 0.8630238751946132
+    },
+    {
+      "base_slip": 0.005,
+      "vol_mult": 3.0,
+      "label": "50bps base, 3x in high-vol",
+      "net": 101.123,
+      "dd": 52.8,
+      "sharpe": 0.211,
+      "orders": 132,
+      "survival_ratio": 0.799182821872555
+    },
+    {
+      "base_slip": 0.0075,
+      "vol_mult": 2.0,
+      "label": "75bps base, 2x in high-vol",
+      "net": 100.798,
+      "dd": 52.9,
+      "sharpe": 0.21,
+      "orders": 132,
+      "survival_ratio": 0.7966143219555373
+    },
+    {
+      "base_slip": 0.01,
+      "vol_mult": 2.0,
+      "label": "100bps base, 2x in high-vol",
+      "net": 83.419,
+      "dd": 55.8,
+      "sharpe": 0.174,
+      "orders": 132,
+      "survival_ratio": 0.6592667525467665
+    }
+  ],
+  "gap_exits": [
+    {
+      "gap_pct": 0.01,
+      "label": "1% gap-through",
+      "net": 126.533,
+      "dd": 49.7,
+      "sharpe": 0.258,
+      "orders": 132,
+      "survival_ratio": 1.0
+    },
+    {
+      "gap_pct": 0.02,
+      "label": "2% gap-through",
+      "net": 126.533,
+      "dd": 49.7,
+      "sharpe": 0.258,
+      "orders": 132,
+      "survival_ratio": 1.0
+    },
+    {
+      "gap_pct": 0.03,
+      "label": "3% gap-through",
+      "net": 126.533,
+      "dd": 49.7,
+      "sharpe": 0.258,
+      "orders": 132,
+      "survival_ratio": 1.0
+    },
+    {
+      "gap_pct": 0.05,
+      "label": "5% gap-through",
+      "net": 126.938,
+      "dd": 49.6,
+      "sharpe": 0.259,
+      "orders": 130,
+      "survival_ratio": 1.0032007460504375
+    }
+  ],
+  "worst_case": [
+    {
+      "scenario": "Moderate Real",
+      "slippage": 0.0075,
+      "gap_pct": 0.02,
+      "description": "Moderate realistic: 75bps + 2% gaps",
+      "net": 115.754,
+      "dd": 51.3,
+      "sharpe": 0.239,
+      "orders": 132,
+      "survival_ratio": 0.9148127365983578,
+      "still_beats_base": true
+    },
+    {
+      "scenario": "Severe Real",
+      "slippage": 0.01,
+      "gap_pct": 0.03,
+      "description": "Severe realistic: 100bps + 3% gaps",
+      "net": 120.301,
+      "dd": 50.1,
+      "sharpe": 0.247,
+      "orders": 132,
+      "survival_ratio": 0.9507480262066023,
+      "still_beats_base": true
+    },
+    {
+      "scenario": "Apocalypse",
+      "slippage": 0.015,
+      "gap_pct": 0.05,
+      "description": "Apocalypse: 150bps + 5% gaps",
+      "net": 100.674,
+      "dd": 52.8,
+      "sharpe": 0.21,
+      "orders": 130,
+      "survival_ratio": 0.7956343404487367,
+      "still_beats_base": true
+    },
+    {
+      "scenario": "Base-only 100bps",
+      "slippage": 0.01,
+      "gap_pct": 0,
+      "description": "No adder, 100bps slip",
+      "net": 49.84,
+      "dd": 32.4,
+      "sharpe": 0.06,
+      "orders": 118
+    }
+  ]
+}

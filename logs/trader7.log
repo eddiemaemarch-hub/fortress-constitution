@@ -1,0 +1,290 @@
+[2026-03-11 09:30:03] IPO Mode: PRE_IPO (scanning proxies)
+[2026-03-11 09:30:03]   BEAR SIGNAL: RKLB — score 3 — EMA20 < EMA50 (death cross), Price < SMA50
+[2026-03-11 09:30:03]   No signal: ASTS
+[2026-03-11 09:30:03]   BULL SIGNAL: BKSY — score 3 — EMA20 > EMA50, Price > SMA50
+[2026-03-11 09:30:04]   No signal: LUNR
+[2026-03-11 09:30:04]   BEAR SIGNAL: MNTS — score 3 — EMA20 < EMA50 (death cross), Price < SMA50
+[2026-03-11 09:30:04]   BEAR SIGNAL: GOOGL — score 3 — EMA20 < EMA50 (death cross), Price < SMA50
+[2026-03-11 09:30:04]   BULL SIGNAL: LMT — score 3 — EMA20 > EMA50, Price > SMA50
+[2026-03-11 09:30:04]   BULL SIGNAL: NOC — score 3 — EMA20 > EMA50, Price > SMA50
+[2026-03-11 09:30:04]   BULL SIGNAL: RTX — score 3 — EMA20 > EMA50, Price > SMA50
+[2026-03-11 10:30:02] IPO Mode: PRE_IPO (scanning proxies)
+[2026-03-11 10:30:02]   BEAR SIGNAL: RKLB — score 3 — EMA20 < EMA50 (death cross), Price < SMA50
+[2026-03-11 10:30:03]   No signal: ASTS
+[2026-03-11 10:30:03]   BULL SIGNAL: BKSY — score 3 — EMA20 > EMA50, Price > SMA50
+[2026-03-11 10:30:03]   BULL SIGNAL: LUNR — score 3 — EMA20 > EMA50, Price > SMA50
+[2026-03-11 10:30:03]   BEAR SIGNAL: MNTS — score 3 — EMA20 < EMA50 (death cross), Price < SMA50
+[2026-03-11 10:30:03]   BEAR SIGNAL: GOOGL — score 3 — EMA20 < EMA50 (death cross), Price < SMA50
+[2026-03-11 10:30:03]   BULL SIGNAL: LMT — score 3 — EMA20 > EMA50, Price > SMA50
+[2026-03-11 10:30:03]   BULL SIGNAL: NOC — score 3 — EMA20 > EMA50, Price > SMA50
+[2026-03-11 10:30:04]   BULL SIGNAL: RTX — score 3 — EMA20 > EMA50, Price > SMA50
+[2026-03-11 11:30:03] IPO Mode: PRE_IPO (scanning proxies)
+[2026-03-11 11:30:03]   BEAR SIGNAL: RKLB — score 3 — EMA20 < EMA50 (death cross), Price < SMA50
+[2026-03-11 11:30:03]   No signal: ASTS
+[2026-03-11 11:30:03]   BULL SIGNAL: BKSY — score 3 — EMA20 > EMA50, Price > SMA50
+[2026-03-11 11:30:03]   BULL SIGNAL: LUNR — score 3 — EMA20 > EMA50, Price > SMA50
+[2026-03-11 11:30:03]   BEAR SIGNAL: MNTS — score 3 — EMA20 < EMA50 (death cross), Price < SMA50
+[2026-03-11 11:30:03]   BEAR SIGNAL: GOOGL — score 3 — EMA20 < EMA50 (death cross), Price < SMA50
+[2026-03-11 11:30:04]   BULL SIGNAL: LMT — score 3 — EMA20 > EMA50, Price > SMA50
+[2026-03-11 11:30:04]   BULL SIGNAL: NOC — score 3 — EMA20 > EMA50, Price > SMA50
+[2026-03-11 11:30:04]   BULL SIGNAL: RTX — score 3 — EMA20 > EMA50, Price > SMA50
+[2026-03-11 12:31:06] Connected (client 70)
+[2026-03-11 12:31:06] IPO Mode: PRE_IPO (scanning proxies)
+[2026-03-11 12:31:06]   BEAR SIGNAL: RKLB — score 3 — EMA20 < EMA50 (death cross), Price < SMA50
+[2026-03-11 12:31:06]   No signal: ASTS
+[2026-03-11 12:31:06]   BULL SIGNAL: BKSY — score 3 — EMA20 > EMA50, Price > SMA50
+[2026-03-11 12:31:06]   BULL SIGNAL: LUNR — score 3 — EMA20 > EMA50, Price > SMA50
+[2026-03-11 12:31:06]   BEAR SIGNAL: MNTS — score 3 — EMA20 < EMA50 (death cross), Price < SMA50
+[2026-03-11 12:31:06]   BEAR SIGNAL: GOOGL — score 3 — EMA20 < EMA50 (death cross), Price < SMA50
+[2026-03-11 12:31:07]   BULL SIGNAL: LMT — score 3 — EMA20 > EMA50, Price > SMA50
+[2026-03-11 12:31:07]   BULL SIGNAL: NOC — score 3 — EMA20 > EMA50, Price > SMA50
+[2026-03-11 12:31:07]   BULL SIGNAL: RTX — score 3 — EMA20 > EMA50, Price > SMA50
+[2026-03-11 12:31:07] Connected (client 70)
+[2026-03-11 12:31:08]   Found option: RKLB 20260515 $70.0P (65 DTE)
+[2026-03-11 12:31:11] ENTERING RKLB: 1 contracts 20260515 $70.0P @ $10.50 ($1,050) [PRE_IPO]
+[2026-03-11 12:31:23]   FILLED: 1x RKLB 20260515 $70.0P @ $10.80
+[2026-03-11 12:31:24] Connected (client 70)
+[2026-03-11 12:31:24]   Found option: BKSY 20260515 $25.0C (65 DTE)
+[2026-03-11 12:31:27] ENTERING BKSY: 1 contracts 20260515 $25.0C @ $4.50 ($450) [PRE_IPO]
+[2026-03-11 12:31:29]   FILLED: 1x BKSY 20260515 $25.0C @ $5.10
+[2026-03-11 12:31:30] Connected (client 70)
+[2026-03-11 12:31:31]   Found option: LUNR 20260515 $19.0C (65 DTE)
+[2026-03-11 12:31:34] ENTERING LUNR: 1 contracts 20260515 $19.0C @ $3.35 ($335) [PRE_IPO]
+[2026-03-11 12:31:51]   FILLED: 1x LUNR 20260515 $19.0C @ $3.55
+[2026-03-11 12:31:52] Connected (client 70)
+[2026-03-11 12:31:52]   No option chains for MNTS
+[2026-03-11 12:31:52]   No suitable option found for MNTS
+[2026-03-11 13:30:41] Connected (client 70)
+[2026-03-11 13:30:41] IPO Mode: PRE_IPO (scanning proxies)
+[2026-03-11 13:30:41] Connected (client 71)
+[2026-03-11 13:30:51]   No signal: RKLB
+[2026-03-11 13:30:51]   No signal: ASTS
+[2026-03-11 13:30:51]   No signal: BKSY
+[2026-03-11 13:30:51]   No signal: LUNR
+[2026-03-11 13:30:51]   BEAR SIGNAL: MNTS — score 3 — EMA20 < EMA50 (death cross), Price < SMA50
+[2026-03-11 13:30:51]   BEAR SIGNAL: GOOGL — score 3 — EMA20 < EMA50 (death cross), Price < SMA50
+[2026-03-11 13:30:51]   BULL SIGNAL: LMT — score 3 — EMA20 > EMA50, Price > SMA50
+[2026-03-11 13:30:52]   BULL SIGNAL: NOC — score 3 — EMA20 > EMA50, Price > SMA50
+[2026-03-11 13:30:52]   BULL SIGNAL: RTX — score 3 — EMA20 > EMA50, Price > SMA50
+[2026-03-11 13:30:52] Connected (client 70)
+[2026-03-11 13:30:52]   No option chains for MNTS
+[2026-03-11 13:30:52]   No suitable option found for MNTS
+[2026-03-11 14:35:38] Connected (client 70)
+[2026-03-11 14:35:38] IPO Mode: PRE_IPO (scanning proxies)
+[2026-03-11 14:35:38] Connected (client 71)
+[2026-03-11 14:35:48]   No signal: RKLB
+[2026-03-11 14:35:48]   No signal: ASTS
+[2026-03-11 14:35:48]   No signal: BKSY
+[2026-03-11 14:35:48]   No signal: LUNR
+[2026-03-11 14:35:48]   BEAR SIGNAL: MNTS — score 3 — EMA20 < EMA50 (death cross), Price < SMA50
+[2026-03-11 14:35:49]   BEAR SIGNAL: GOOGL — score 3 — EMA20 < EMA50 (death cross), Price < SMA50
+[2026-03-11 14:35:49]   BULL SIGNAL: LMT — score 3 — EMA20 > EMA50, Price > SMA50
+[2026-03-11 14:35:49]   BULL SIGNAL: NOC — score 3 — EMA20 > EMA50, Price > SMA50
+[2026-03-11 14:35:49]   BULL SIGNAL: RTX — score 3 — EMA20 > EMA50, Price > SMA50
+[2026-03-11 14:35:50] Connected (client 70)
+[2026-03-11 14:35:50]   No option chains for MNTS
+[2026-03-11 14:35:50]   No suitable option found for MNTS
+[2026-03-11 15:30:45] Connected (client 70)
+[2026-03-11 15:30:45] IPO Mode: PRE_IPO (scanning proxies)
+[2026-03-11 15:30:45] Connected (client 71)
+[2026-03-11 15:30:55]   No signal: RKLB
+[2026-03-11 15:30:55]   No signal: ASTS
+[2026-03-11 15:30:55]   No signal: BKSY
+[2026-03-11 15:30:55]   No signal: LUNR
+[2026-03-11 15:30:55]   BEAR SIGNAL: MNTS — score 3 — EMA20 < EMA50 (death cross), Price < SMA50
+[2026-03-11 15:30:55]   BEAR SIGNAL: GOOGL — score 3 — EMA20 < EMA50 (death cross), Price < SMA50
+[2026-03-11 15:30:55]   BULL SIGNAL: LMT — score 3 — EMA20 > EMA50, Price > SMA50
+[2026-03-11 15:30:56]   BULL SIGNAL: NOC — score 3 — EMA20 > EMA50, Price > SMA50
+[2026-03-11 15:30:56]   BULL SIGNAL: RTX — score 3 — EMA20 > EMA50, Price > SMA50
+[2026-03-11 15:30:56] Connected (client 70)
+[2026-03-11 15:30:56]   No option chains for MNTS
+[2026-03-11 15:30:56]   No suitable option found for MNTS
+[2026-03-12 09:30:55] Connected (client 70)
+[2026-03-12 09:30:55] IPO Mode: PRE_IPO (scanning proxies)
+[2026-03-12 09:30:56] Connected (client 71)
+[2026-03-12 09:31:06]   No signal: RKLB
+[2026-03-12 09:31:06]   No signal: ASTS
+[2026-03-12 09:31:06]   No signal: BKSY
+[2026-03-12 09:31:06]   No signal: LUNR
+[2026-03-12 09:31:07]   BEAR SIGNAL: MNTS — score 3 — EMA20 < EMA50 (death cross), Price < SMA50
+[2026-03-12 09:31:07]   BEAR SIGNAL: GOOGL — score 3 — EMA20 < EMA50 (death cross), Price < SMA50
+[2026-03-12 09:31:07]   BULL SIGNAL: LMT — score 3 — EMA20 > EMA50, Price > SMA50
+[2026-03-12 09:31:07]   BULL SIGNAL: NOC — score 3 — EMA20 > EMA50, Price > SMA50
+[2026-03-12 09:31:07]   BULL SIGNAL: RTX — score 3 — EMA20 > EMA50, Price > SMA50
+[2026-03-12 09:31:08] Connected (client 70)
+[2026-03-12 09:31:08]   No option chains for MNTS
+[2026-03-12 09:31:08]   No suitable option found for MNTS
+[2026-03-12 10:30:49] Connected (client 70)
+[2026-03-12 10:30:49] IPO Mode: PRE_IPO (scanning proxies)
+[2026-03-12 10:30:50] Connected (client 71)
+[2026-03-12 10:31:00]   No signal: RKLB
+[2026-03-12 10:31:00]   No signal: ASTS
+[2026-03-12 10:31:00]   No signal: BKSY
+[2026-03-12 10:31:00]   No signal: LUNR
+[2026-03-12 10:31:00]   BEAR SIGNAL: MNTS — score 3 — EMA20 < EMA50 (death cross), Price < SMA50
+[2026-03-12 10:31:00]   BEAR SIGNAL: GOOGL — score 3 — EMA20 < EMA50 (death cross), Price < SMA50
+[2026-03-12 10:31:00]   BULL SIGNAL: LMT — score 3 — EMA20 > EMA50, Price > SMA50
+[2026-03-12 10:31:00]   BULL SIGNAL: NOC — score 3 — EMA20 > EMA50, Price > SMA50
+[2026-03-12 10:31:00]   BULL SIGNAL: RTX — score 3 — EMA20 > EMA50, Price > SMA50
+[2026-03-12 10:31:01] Connected (client 70)
+[2026-03-12 10:31:01]   No option chains for MNTS
+[2026-03-12 10:31:01]   No suitable option found for MNTS
+[2026-03-12 11:30:01] IPO Mode: PRE_IPO (scanning proxies)
+[2026-03-12 12:31:45] Connected (client 70)
+[2026-03-12 12:31:45] IPO Mode: PRE_IPO (scanning proxies)
+[2026-03-12 12:31:45] Connected (client 71)
+[2026-03-12 12:31:55]   No signal: RKLB
+[2026-03-12 12:31:55]   No signal: ASTS
+[2026-03-12 12:31:55]   No signal: BKSY
+[2026-03-12 12:31:55]   No signal: LUNR
+[2026-03-12 12:31:55]   BEAR SIGNAL: MNTS — score 3 — EMA20 < EMA50 (death cross), Price < SMA50
+[2026-03-12 12:31:56]   BEAR SIGNAL: GOOGL — score 3 — EMA20 < EMA50 (death cross), Price < SMA50
+[2026-03-12 12:31:56]   BULL SIGNAL: LMT — score 3 — EMA20 > EMA50, Price > SMA50
+[2026-03-12 12:31:56]   BULL SIGNAL: NOC — score 3 — EMA20 > EMA50, Price > SMA50
+[2026-03-12 12:31:56]   BULL SIGNAL: RTX — score 3 — EMA20 > EMA50, Price > SMA50
+[2026-03-12 12:31:56] Connected (client 70)
+[2026-03-12 12:31:57]   No option chains for MNTS
+[2026-03-12 12:31:57]   No suitable option found for MNTS
+[2026-03-12 13:30:43] Connected (client 70)
+[2026-03-12 13:30:43] IPO Mode: PRE_IPO (scanning proxies)
+[2026-03-12 13:30:43] Connected (client 71)
+[2026-03-12 13:30:53]   No signal: RKLB
+[2026-03-12 13:30:53]   No signal: ASTS
+[2026-03-12 13:30:53]   No signal: BKSY
+[2026-03-12 13:30:53]   No signal: LUNR
+[2026-03-12 13:30:54]   BEAR SIGNAL: MNTS — score 3 — EMA20 < EMA50 (death cross), Price < SMA50
+[2026-03-12 13:30:54]   BEAR SIGNAL: GOOGL — score 3 — EMA20 < EMA50 (death cross), Price < SMA50
+[2026-03-12 13:30:54]   BULL SIGNAL: LMT — score 3 — EMA20 > EMA50, Price > SMA50
+[2026-03-12 13:30:54]   BULL SIGNAL: NOC — score 3 — EMA20 > EMA50, Price > SMA50
+[2026-03-12 13:30:54]   BULL SIGNAL: RTX — score 3 — EMA20 > EMA50, Price > SMA50
+[2026-03-12 13:30:55] Connected (client 70)
+[2026-03-12 13:30:55]   No option chains for MNTS
+[2026-03-12 13:30:55]   No suitable option found for MNTS
+[2026-03-12 14:30:45] Connected (client 70)
+[2026-03-12 14:30:45] IPO Mode: PRE_IPO (scanning proxies)
+[2026-03-12 14:30:45] Connected (client 71)
+[2026-03-12 14:30:55]   No signal: RKLB
+[2026-03-12 14:30:55]   No signal: ASTS
+[2026-03-12 14:30:55]   No signal: BKSY
+[2026-03-12 14:30:55]   No signal: LUNR
+[2026-03-12 14:30:55]   BEAR SIGNAL: MNTS — score 3 — EMA20 < EMA50 (death cross), Price < SMA50
+[2026-03-12 14:30:56]   BEAR SIGNAL: GOOGL — score 3 — EMA20 < EMA50 (death cross), Price < SMA50
+[2026-03-12 14:30:56]   BULL SIGNAL: LMT — score 3 — EMA20 > EMA50, Price > SMA50
+[2026-03-12 14:30:56]   BULL SIGNAL: NOC — score 3 — EMA20 > EMA50, Price > SMA50
+[2026-03-12 14:30:56]   BULL SIGNAL: RTX — score 3 — EMA20 > EMA50, Price > SMA50
+[2026-03-12 14:30:57] Connected (client 70)
+[2026-03-12 14:30:57]   No option chains for MNTS
+[2026-03-12 14:30:57]   No suitable option found for MNTS
+[2026-03-12 15:30:47] Connected (client 70)
+[2026-03-12 15:30:47] IPO Mode: PRE_IPO (scanning proxies)
+[2026-03-12 15:30:48] Connected (client 71)
+[2026-03-12 15:30:57]   No signal: RKLB
+[2026-03-12 15:30:57]   No signal: ASTS
+[2026-03-12 15:30:57]   No signal: BKSY
+[2026-03-12 15:30:58]   No signal: LUNR
+[2026-03-12 15:30:58]   BEAR SIGNAL: MNTS — score 3 — EMA20 < EMA50 (death cross), Price < SMA50
+[2026-03-12 15:30:58]   BEAR SIGNAL: GOOGL — score 3 — EMA20 < EMA50 (death cross), Price < SMA50
+[2026-03-12 15:30:58]   BULL SIGNAL: LMT — score 3 — EMA20 > EMA50, Price > SMA50
+[2026-03-12 15:30:58]   BULL SIGNAL: NOC — score 3 — EMA20 > EMA50, Price > SMA50
+[2026-03-12 15:30:58]   BULL SIGNAL: RTX — score 3 — EMA20 > EMA50, Price > SMA50
+[2026-03-12 15:30:59] Connected (client 70)
+[2026-03-12 15:30:59]   No option chains for MNTS
+[2026-03-12 15:30:59]   No suitable option found for MNTS
+[2026-03-13 09:31:15] Connected (client 70)
+[2026-03-13 09:31:16] IPO Mode: PRE_IPO (scanning proxies)
+[2026-03-13 09:31:16] Connected (client 71)
+[2026-03-13 09:31:26]   No signal: RKLB
+[2026-03-13 09:31:26]   No signal: ASTS
+[2026-03-13 09:31:26]   No signal: BKSY
+[2026-03-13 09:31:26]   No signal: LUNR
+[2026-03-13 09:31:26]   BEAR SIGNAL: MNTS — score 3 — EMA20 < EMA50 (death cross), Price < SMA50
+[2026-03-13 09:31:26]   BEAR SIGNAL: GOOGL — score 3 — EMA20 < EMA50 (death cross), Price < SMA50
+[2026-03-13 09:31:26]   BULL SIGNAL: LMT — score 3 — EMA20 > EMA50, Price > SMA50
+[2026-03-13 09:31:27]   BULL SIGNAL: NOC — score 3 — EMA20 > EMA50, Price > SMA50
+[2026-03-13 09:31:27]   BULL SIGNAL: RTX — score 3 — EMA20 > EMA50, Price > SMA50
+[2026-03-13 09:31:27] Connected (client 70)
+[2026-03-13 09:31:27]   No option chains for MNTS
+[2026-03-13 09:31:27]   No suitable option found for MNTS
+[2026-03-13 10:46:26] Connected (client 70)
+[2026-03-13 10:46:26] IPO Mode: PRE_IPO (scanning proxies)
+[2026-03-13 10:46:26] Connected (client 71)
+[2026-03-13 10:46:36]   No signal: RKLB
+[2026-03-13 10:46:36]   No signal: ASTS
+[2026-03-13 10:46:36]   No signal: BKSY
+[2026-03-13 10:46:36]   No signal: LUNR
+[2026-03-13 10:46:36]   BEAR SIGNAL: MNTS — score 3 — EMA20 < EMA50 (death cross), Price < SMA50
+[2026-03-13 10:46:36]   BEAR SIGNAL: GOOGL — score 3 — EMA20 < EMA50 (death cross), Price < SMA50
+[2026-03-13 10:46:37]   BULL SIGNAL: LMT — score 3 — EMA20 > EMA50, Price > SMA50
+[2026-03-13 10:46:37]   BULL SIGNAL: NOC — score 3 — EMA20 > EMA50, Price > SMA50
+[2026-03-13 10:46:37]   BULL SIGNAL: RTX — score 3 — EMA20 > EMA50, Price > SMA50
+[2026-03-13 10:46:37] Connected (client 70)
+[2026-03-13 10:46:37]   No option chains for MNTS
+[2026-03-13 10:46:37]   No suitable option found for MNTS
+[2026-03-13 11:32:24] Connected (client 70)
+[2026-03-13 11:32:25] IPO Mode: PRE_IPO (scanning proxies)
+[2026-03-13 11:32:25] Connected (client 71)
+[2026-03-13 11:32:34]   No signal: RKLB
+[2026-03-13 11:32:34]   No signal: ASTS
+[2026-03-13 11:32:35]   No signal: BKSY
+[2026-03-13 11:32:35]   No signal: LUNR
+[2026-03-13 11:32:35]   BEAR SIGNAL: MNTS — score 3 — EMA20 < EMA50 (death cross), Price < SMA50
+[2026-03-13 11:32:35]   BEAR SIGNAL: GOOGL — score 3 — EMA20 < EMA50 (death cross), Price < SMA50
+[2026-03-13 11:32:35]   BULL SIGNAL: LMT — score 3 — EMA20 > EMA50, Price > SMA50
+[2026-03-13 11:32:35]   BULL SIGNAL: NOC — score 3 — EMA20 > EMA50, Price > SMA50
+[2026-03-13 11:32:35]   BULL SIGNAL: RTX — score 3 — EMA20 > EMA50, Price > SMA50
+[2026-03-13 11:32:36] Connected (client 70)
+[2026-03-13 11:32:36]   No option chains for MNTS
+[2026-03-13 11:32:36]   No suitable option found for MNTS
+[2026-03-13 12:30:01] IPO Mode: PRE_IPO (scanning proxies)
+[2026-03-13 13:31:08] Connected (client 70)
+[2026-03-13 13:31:08] IPO Mode: PRE_IPO (scanning proxies)
+[2026-03-13 13:31:08] Connected (client 71)
+[2026-03-13 13:31:18]   No signal: RKLB
+[2026-03-13 13:31:18]   No signal: ASTS
+[2026-03-13 13:31:18]   No signal: BKSY
+[2026-03-13 13:31:18]   No signal: LUNR
+[2026-03-13 13:31:18]   BEAR SIGNAL: MNTS — score 3 — EMA20 < EMA50 (death cross), Price < SMA50
+[2026-03-13 13:31:18]   BEAR SIGNAL: GOOGL — score 3 — EMA20 < EMA50 (death cross), Price < SMA50
+[2026-03-13 13:31:19]   BULL SIGNAL: LMT — score 3 — EMA20 > EMA50, Price > SMA50
+[2026-03-13 13:31:19]   BULL SIGNAL: NOC — score 3 — EMA20 > EMA50, Price > SMA50
+[2026-03-13 13:31:19]   BULL SIGNAL: RTX — score 3 — EMA20 > EMA50, Price > SMA50
+[2026-03-13 13:31:19] Connected (client 70)
+[2026-03-13 13:31:20]   No option chains for MNTS
+[2026-03-13 13:31:20]   No suitable option found for MNTS
+[2026-03-13 14:30:53] Connected (client 70)
+[2026-03-13 14:30:53] IPO Mode: PRE_IPO (scanning proxies)
+[2026-03-13 14:30:53] Connected (client 71)
+[2026-03-13 14:31:03]   No signal: RKLB
+[2026-03-13 14:31:03]   No signal: ASTS
+[2026-03-13 14:31:03]   No signal: BKSY
+[2026-03-13 14:31:03]   No signal: LUNR
+[2026-03-13 14:31:04]   BEAR SIGNAL: MNTS — score 3 — EMA20 < EMA50 (death cross), Price < SMA50
+[2026-03-13 14:31:04]   BEAR SIGNAL: GOOGL — score 3 — EMA20 < EMA50 (death cross), Price < SMA50
+[2026-03-13 14:31:04]   BULL SIGNAL: LMT — score 3 — EMA20 > EMA50, Price > SMA50
+[2026-03-13 14:31:04]   BULL SIGNAL: NOC — score 3 — EMA20 > EMA50, Price > SMA50
+[2026-03-13 14:31:04]   BULL SIGNAL: RTX — score 3 — EMA20 > EMA50, Price > SMA50
+[2026-03-13 14:31:04] Connected (client 70)
+[2026-03-13 14:31:05]   No option chains for MNTS
+[2026-03-13 14:31:05]   No suitable option found for MNTS
+[2026-03-13 15:30:42] IPO Mode: PRE_IPO (scanning proxies)
+[2026-03-16 09:30:02] IPO Mode: PRE_IPO (scanning proxies)
+[2026-03-16 10:30:01] IPO Mode: PRE_IPO (scanning proxies)
+[2026-03-16 11:31:06] Connected (client 70)
+[2026-03-16 11:31:06] IPO Mode: PRE_IPO (scanning proxies)
+[2026-03-16 11:31:07] Connected (client 71)
+[2026-03-16 11:31:17] EXIT: LUNR 20260515 $19.0C — Stop loss hit (-31%)
+[2026-03-16 11:31:20]   No signal: RKLB
+[2026-03-16 11:31:20]   No signal: ASTS
+[2026-03-16 11:31:20]   No signal: BKSY
+[2026-03-16 11:31:20]   No signal: LUNR
+[2026-03-16 11:31:20]   BEAR SIGNAL: MNTS — score 3 — EMA20 < EMA50 (death cross), Price < SMA50
+[2026-03-16 11:31:20]   BEAR SIGNAL: GOOGL — score 3 — EMA20 < EMA50 (death cross), Price < SMA50
+[2026-03-16 11:31:20]   BULL SIGNAL: LMT — score 3 — EMA20 > EMA50, Price > SMA50
+[2026-03-16 11:31:20]   BULL SIGNAL: NOC — score 3 — EMA20 > EMA50, Price > SMA50
+[2026-03-16 11:31:21]   BULL SIGNAL: RTX — score 3 — EMA20 > EMA50, Price > SMA50
+[2026-03-16 11:31:21] Connected (client 70)
+[2026-03-16 11:31:21]   No option chains for MNTS
+[2026-03-16 11:31:21]   No suitable option found for MNTS
+[2026-03-16 11:31:22] Connected (client 70)
+[2026-03-16 11:31:22]   Could not qualify option GOOGL 20260501 297.5P
+[2026-03-16 11:31:22]   No suitable option found for GOOGL

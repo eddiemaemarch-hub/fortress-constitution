@@ -1,0 +1,53 @@
+{
+  "test_suite": "BMNR/ETH v2.8+ Cross-Ticker Validation",
+  "timestamp": "2026-03-20T15:58:18.445475",
+  "asset": "BMNR",
+  "crypto_backing": "ETH",
+  "hypothetical_capital": 10000,
+  "status": "RESEARCH_ONLY",
+  "verdicts": {
+    "Flash Crash (ETH)": "PASS",
+    "Monte Carlo (ETH Vol)": "FAIL",
+    "eNAV Apocalypse": "PASS",
+    "Backtest Sim ($10K)": "FAIL",
+    "Dual Correlation": "PASS"
+  },
+  "overall_verdict": "FAIL",
+  "flash_crash": {
+    "scenarios_passed": 5,
+    "scenarios_conditional": 0,
+    "scenarios_failed": 0,
+    "kill_switch_fires_at": "NEVER",
+    "overall_verdict": "PASS"
+  },
+  "monte_carlo": {
+    "verdict": "FAIL",
+    "p95_dd": 96.77,
+    "exceed_40_dd": 99.96
+  },
+  "enav_apocalypse": {
+    "zero_intrinsic_premium": null,
+    "kill_switch_threshold": 0.75,
+    "kill_switch_protects_scenarios": 2,
+    "scenarios_passed": 6,
+    "scenarios_failed": 0,
+    "overall_verdict": "PASS",
+    "note": "0.75x eNAV kill switch protects 2 scenarios that would otherwise fail"
+  },
+  "backtest": {
+    "final_equity": 10000.0,
+    "total_return_pct": 0.0,
+    "max_drawdown_pct": 0.0,
+    "sharpe_ratio": 0.0,
+    "total_entries": 0,
+    "total_exits": 0,
+    "trade_log_count": 0
+  },
+  "dual_correlation": {
+    "scenarios_tested": 5,
+    "kill_switch_fires": 0,
+    "highest_risk": "Protocol Risk (ETH -50%)",
+    "overall_verdict": "PASS",
+    "note": "Dual correlation creates unique risk not present in pure BTC plays like MSTR"
+  }
+}

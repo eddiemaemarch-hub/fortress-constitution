@@ -1,0 +1,13 @@
+[2026-03-22 16:14:52] [INFO] ==================================================
+[2026-03-22 16:14:52] [INFO] MSTR Treasury Update — Starting
+[2026-03-22 16:14:53] [INFO] Updated trader state: 761,068 BTC, 12,000,000 shares
+[2026-03-22 16:14:53] [INFO] Initial load: 761,068 BTC, 12,000,000 shares
+[2026-03-22 16:14:54] [INFO] MSTR Treasury Update — Complete
+[2026-03-22 16:16:08] [INFO] ==================================================
+[2026-03-22 16:16:08] [INFO] MSTR Treasury Update — Starting
+[2026-03-22 16:16:09] [INFO] Parsed holdings from bitbo: 761,068 BTC
+[2026-03-22 16:16:09] [INFO] Parsed avg cost from bitbo: $66,384.56
+[2026-03-22 16:16:09] [INFO] Parsed diluted shares from embedded data: 293,157,000
+[2026-03-22 16:16:09] [INFO] Updated trader state: 761,068 BTC, 293,157,000 shares
+[2026-03-22 16:16:09] [INFO] No change in holdings: 761,068 BTC, 293,157,000 shares
+[2026-03-22 16:16:09] [INFO] MSTR Treasury Update — Complete

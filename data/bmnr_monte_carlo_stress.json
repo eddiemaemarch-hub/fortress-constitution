@@ -1,0 +1,55 @@
+{
+  "test_name": "BMNR Monte Carlo Path Dependency (ETH Vol Profile)",
+  "timestamp": "2026-03-20T15:58:18.439908",
+  "asset": "BMNR",
+  "crypto_backing": "ETH",
+  "parameters": {
+    "n_simulations": 5000,
+    "n_weeks": 200,
+    "annual_vol": 1.0,
+    "annual_return": 0.6,
+    "weekly_vol": 0.1387,
+    "weekly_mu": 0.0091,
+    "fat_tail_df": 4,
+    "sma_period": 100,
+    "note": "100W SMA (not 200W) due to BMNR's 4.5yr history"
+  },
+  "max_drawdown_percentiles": {
+    "p5": 57.0,
+    "p25": 71.46,
+    "p50": 81.54,
+    "p75": 89.94,
+    "p95": 96.77,
+    "p99": 98.66
+  },
+  "final_return_percentiles": {
+    "p5": -92.09,
+    "p25": -60.63,
+    "p50": 25.4,
+    "p75": 288.28,
+    "p95": 1893.45
+  },
+  "drawdown_exceedance": {
+    "exceed_40pct": 99.96,
+    "exceed_50pct": 98.9,
+    "exceed_60pct": 92.4
+  },
+  "risk_limit_triggers": {
+    "daily_2pct_loss_trigger_pct": 100.0,
+    "consecutive_5_loss_trigger_pct": 93.32,
+    "kill_switch_fires_pct": 34.14
+  },
+  "dip_reclaim_stats": {
+    "mean_fires_per_path": 1.69,
+    "median_fires": 1.0,
+    "paths_with_zero_fires_pct": 23.14
+  },
+  "barbell_analysis": {
+    "survives_95th_percentile": false,
+    "survives_99th_percentile": false,
+    "p95_max_dd": 96.77,
+    "p99_max_dd": 98.66,
+    "positive_return_pct": 55.5
+  },
+  "overall_verdict": "FAIL"
+}

@@ -1,0 +1,262 @@
+[2026-03-11 09:30:02]   BULL SIGNAL: GLD — score 3 — Golden Cross, Price > SMA50
+[2026-03-11 09:30:02]   BULL SIGNAL: GDX — score 3 — Golden Cross, Price > SMA50
+[2026-03-11 09:30:02]   BULL SIGNAL: NEM — score 3 — Golden Cross, Price > SMA50
+[2026-03-11 09:30:02]   BULL SIGNAL: GOLD — score 4 — Golden Cross, RSI oversold (24), Price > SMA50
+[2026-03-11 09:30:02]   BULL SIGNAL: SLV — score 3 — Golden Cross, Price > SMA50
+[2026-03-11 09:30:03]   BULL SIGNAL: PAAS — score 3 — Golden Cross, Price > SMA50
+[2026-03-11 09:30:03]   BULL SIGNAL: AG — score 3 — Golden Cross, Price > SMA50
+[2026-03-11 09:30:03]   No signal: HL
+[2026-03-11 09:30:03]   BULL SIGNAL: MP — score 3 — Golden Cross, Price > SMA50
+[2026-03-11 09:30:03]   BULL SIGNAL: REMX — score 3 — Golden Cross, Price > SMA50
+[2026-03-11 09:30:03]   No signal: LAC
+[2026-03-11 10:30:01]   BULL SIGNAL: GLD — score 3 — Golden Cross, Price > SMA50
+[2026-03-11 10:30:01]   BULL SIGNAL: GDX — score 3 — Golden Cross, Price > SMA50
+[2026-03-11 10:30:01]   No signal: NEM
+[2026-03-11 10:30:02]   BULL SIGNAL: GOLD — score 4 — Golden Cross, RSI oversold (17), Price > SMA50
+[2026-03-11 10:30:02]   No signal: SLV
+[2026-03-11 10:30:02]   BULL SIGNAL: PAAS — score 3 — Golden Cross, Price > SMA50
+[2026-03-11 10:30:02]   BULL SIGNAL: AG — score 3 — Golden Cross, Price > SMA50
+[2026-03-11 10:30:02]   No signal: HL
+[2026-03-11 10:30:02]   BULL SIGNAL: MP — score 3 — Golden Cross, Price > SMA50
+[2026-03-11 10:30:02]   BULL SIGNAL: REMX — score 3 — Golden Cross, Price > SMA50
+[2026-03-11 10:30:02]   BULL SIGNAL: LAC — score 3 — Golden Cross, MACD bullish crossover
+[2026-03-11 11:30:01]   BULL SIGNAL: GLD — score 3 — Golden Cross, Price > SMA50
+[2026-03-11 11:30:02]   No signal: GDX
+[2026-03-11 11:30:02]   No signal: NEM
+[2026-03-11 11:30:02]   BULL SIGNAL: GOLD — score 4 — Golden Cross, RSI oversold (17), Price > SMA50
+[2026-03-11 11:30:02]   No signal: SLV
+[2026-03-11 11:30:02]   BULL SIGNAL: PAAS — score 3 — Golden Cross, Price > SMA50
+[2026-03-11 11:30:02]   BULL SIGNAL: AG — score 3 — Golden Cross, Price > SMA50
+[2026-03-11 11:30:02]   No signal: HL
+[2026-03-11 11:30:02]   BULL SIGNAL: MP — score 3 — Golden Cross, Price > SMA50
+[2026-03-11 11:30:02]   BULL SIGNAL: REMX — score 3 — Golden Cross, Price > SMA50
+[2026-03-11 11:30:03]   No signal: LAC
+[2026-03-11 12:30:43]   BULL SIGNAL: GLD — score 3 — Golden Cross, Price > SMA50
+[2026-03-11 12:30:43]   No signal: GDX
+[2026-03-11 12:30:43]   No signal: NEM
+[2026-03-11 12:30:44]   BULL SIGNAL: GOLD — score 4 — Golden Cross, RSI oversold (17), Price > SMA50
+[2026-03-11 12:30:44]   No signal: SLV
+[2026-03-11 12:30:44]   BULL SIGNAL: PAAS — score 3 — Golden Cross, Price > SMA50
+[2026-03-11 12:30:44]   BULL SIGNAL: AG — score 3 — Golden Cross, Price > SMA50
+[2026-03-11 12:30:44]   No signal: HL
+[2026-03-11 12:30:44]   BULL SIGNAL: MP — score 3 — Golden Cross, Price > SMA50
+[2026-03-11 12:30:44]   BULL SIGNAL: REMX — score 3 — Golden Cross, Price > SMA50
+[2026-03-11 12:30:44]   No signal: LAC
+[2026-03-11 12:30:45] Connected (client 60)
+[2026-03-11 12:30:45]   Found option: GOLD 20260515 $50.0C (65 DTE)
+[2026-03-11 12:30:48] ENTERING GOLD: 1 contracts 20260515 $50.0C @ $5.90 ($590)
+[2026-03-11 12:30:55]   FILLED: 1x GOLD 20260515 $50.0C @ $6.60
+[2026-03-11 12:30:56] Connected (client 60)
+[2026-03-11 12:30:57]   Could not qualify option GLD 20260515 484.0C
+[2026-03-11 12:30:57]   No suitable option found for GLD
+[2026-03-11 12:30:58] Connected (client 60)
+[2026-03-11 12:30:58]   Could not qualify option PAAS 20260515 61.0C
+[2026-03-11 12:30:58]   No suitable option found for PAAS
+[2026-03-11 12:30:58] Connected (client 60)
+[2026-03-11 12:30:59]   Found option: AG 20260717 $26.0C (128 DTE)
+[2026-03-11 12:31:02] ENTERING AG: 1 contracts 20260717 $26.0C @ $4.85 ($485)
+[2026-03-11 12:31:04]   FILLED: 1x AG 20260717 $26.0C @ $4.90
+[2026-03-11 12:31:05] Connected (client 60)
+[2026-03-11 12:31:05]   Could not qualify option MP 20260515 62.0C
+[2026-03-11 12:31:05]   No suitable option found for MP
+[2026-03-11 13:30:29] Connected (client 61)
+[2026-03-11 13:30:35]   BULL SIGNAL: GLD — score 3 — Golden Cross, Price > SMA50
+[2026-03-11 13:30:36]   No signal: GDX
+[2026-03-11 13:30:36]   No signal: NEM
+[2026-03-11 13:30:36]   No signal: GOLD
+[2026-03-11 13:30:36]   No signal: SLV
+[2026-03-11 13:30:36]   BULL SIGNAL: PAAS — score 3 — Golden Cross, Price > SMA50
+[2026-03-11 13:30:36]   No signal: AG
+[2026-03-11 13:30:36]   No signal: HL
+[2026-03-11 13:30:36]   BULL SIGNAL: MP — score 3 — Golden Cross, Price > SMA50
+[2026-03-11 13:30:37]   BULL SIGNAL: REMX — score 3 — Golden Cross, Price > SMA50
+[2026-03-11 13:30:37]   No signal: LAC
+[2026-03-11 13:30:37] Connected (client 60)
+[2026-03-11 13:30:37]   Found option: GLD 20260515 $485.0C (65 DTE)
+[2026-03-11 14:34:59] Connected (client 61)
+[2026-03-11 14:35:05]   BULL SIGNAL: GLD — score 3 — Golden Cross, Price > SMA50
+[2026-03-11 14:35:06]   BULL SIGNAL: GDX — score 3 — Golden Cross, Price > SMA50
+[2026-03-11 14:35:06]   No signal: NEM
+[2026-03-11 14:35:06]   No signal: GOLD
+[2026-03-11 14:35:06]   No signal: SLV
+[2026-03-11 14:35:06]   BULL SIGNAL: PAAS — score 3 — Golden Cross, Price > SMA50
+[2026-03-11 14:35:06]   No signal: AG
+[2026-03-11 14:35:06]   No signal: HL
+[2026-03-11 14:35:06]   BULL SIGNAL: MP — score 3 — Golden Cross, Price > SMA50
+[2026-03-11 14:35:07]   BULL SIGNAL: REMX — score 3 — Golden Cross, Price > SMA50
+[2026-03-11 14:35:07]   No signal: LAC
+[2026-03-11 14:35:07] Connected (client 60)
+[2026-03-11 14:35:07]   Found option: GLD 20260515 $485.0C (65 DTE)
+[2026-03-11 14:35:10] ENTERING GLD: 1 contracts 20260515 $485.0C @ $19.05 ($1,905)
+[2026-03-11 14:35:12]   FILLED: 1x GLD 20260515 $485.0C @ $19.80
+[2026-03-11 14:35:13] Connected (client 60)
+[2026-03-11 14:35:14]   Found option: GDX 20260515 $103.0C (65 DTE)
+[2026-03-11 14:35:17] ENTERING GDX: 1 contracts 20260515 $103.0C @ $9.60 ($960)
+[2026-03-11 14:35:36]   FILLED: 1x GDX 20260515 $103.0C @ $8.75
+[2026-03-11 14:35:37] Connected (client 60)
+[2026-03-11 14:35:37]   Could not qualify option PAAS 20260515 61.0C
+[2026-03-11 14:35:37]   No suitable option found for PAAS
+[2026-03-11 15:30:30] Connected (client 61)
+[2026-03-11 15:30:43]   No signal: GLD
+[2026-03-11 15:30:43]   No signal: GDX
+[2026-03-11 15:30:43]   No signal: NEM
+[2026-03-11 15:30:43]   No signal: GOLD
+[2026-03-11 15:30:43]   No signal: SLV
+[2026-03-11 15:30:43]   BULL SIGNAL: PAAS — score 3 — Golden Cross, Price > SMA50
+[2026-03-11 15:30:43]   No signal: AG
+[2026-03-11 15:30:43]   No signal: HL
+[2026-03-11 15:30:43]   BULL SIGNAL: MP — score 3 — Golden Cross, Price > SMA50
+[2026-03-11 15:30:44]   BULL SIGNAL: REMX — score 3 — Golden Cross, Price > SMA50
+[2026-03-11 15:30:44]   No signal: LAC
+[2026-03-11 15:30:44] Connected (client 60)
+[2026-03-11 15:30:44]   Could not qualify option PAAS 20260515 62.0C
+[2026-03-11 15:30:44]   No suitable option found for PAAS
+[2026-03-12 09:30:33] Connected (client 61)
+[2026-03-12 09:30:49]   No signal: GLD
+[2026-03-12 09:30:49]   No signal: GDX
+[2026-03-12 09:30:49]   No signal: NEM
+[2026-03-12 09:30:49]   No signal: GOLD
+[2026-03-12 09:30:49]   BULL SIGNAL: SLV — score 3 — Golden Cross, Price > SMA50
+[2026-03-12 09:30:49]   BULL SIGNAL: PAAS — score 3 — Golden Cross, Price > SMA50
+[2026-03-12 09:30:49]   No signal: AG
+[2026-03-12 09:30:49]   No signal: HL
+[2026-03-12 09:30:50]   BULL SIGNAL: MP — score 3 — Golden Cross, Price > SMA50
+[2026-03-12 09:30:50]   BULL SIGNAL: REMX — score 3 — Golden Cross, Price > SMA50
+[2026-03-12 09:30:50]   No signal: LAC
+[2026-03-12 09:30:50] Connected (client 60)
+[2026-03-12 09:30:51]   Found option: SLV 20260501 $80.0C (50 DTE)
+[2026-03-12 10:30:31] Connected (client 61)
+[2026-03-12 10:30:44]   No signal: GLD
+[2026-03-12 10:30:44]   No signal: GDX
+[2026-03-12 10:30:44]   No signal: NEM
+[2026-03-12 10:30:44]   No signal: GOLD
+[2026-03-12 10:30:44]   No signal: SLV
+[2026-03-12 10:30:44]   BULL SIGNAL: PAAS — score 3 — Golden Cross, Price > SMA50
+[2026-03-12 10:30:44]   No signal: AG
+[2026-03-12 10:30:45]   No signal: HL
+[2026-03-12 10:30:45]   No signal: MP
+[2026-03-12 10:30:45]   BULL SIGNAL: REMX — score 3 — Golden Cross, Price > SMA50
+[2026-03-12 10:30:45]   No signal: LAC
+[2026-03-12 10:30:45] Connected (client 60)
+[2026-03-12 10:30:46]   Found option: PAAS 20260501 $61.0C (50 DTE)
+[2026-03-12 12:31:27] Connected (client 61)
+[2026-03-12 12:31:40]   No signal: GLD
+[2026-03-12 12:31:40]   No signal: GDX
+[2026-03-12 12:31:40]   No signal: NEM
+[2026-03-12 12:31:40]   No signal: GOLD
+[2026-03-12 12:31:40]   No signal: SLV
+[2026-03-12 12:31:40]   BULL SIGNAL: PAAS — score 3 — Golden Cross, Price > SMA50
+[2026-03-12 12:31:40]   No signal: AG
+[2026-03-12 12:31:41]   No signal: HL
+[2026-03-12 12:31:41]   No signal: MP
+[2026-03-12 12:31:41]   BULL SIGNAL: REMX — score 3 — Golden Cross, Price > SMA50
+[2026-03-12 12:31:41]   No signal: LAC
+[2026-03-12 12:31:41] Connected (client 60)
+[2026-03-12 12:31:42]   Found option: PAAS 20260501 $61.0C (50 DTE)
+[2026-03-12 13:30:25] Connected (client 61)
+[2026-03-12 13:30:38]   No signal: GLD
+[2026-03-12 13:30:38]   No signal: GDX
+[2026-03-12 13:30:38]   No signal: NEM
+[2026-03-12 13:30:38]   No signal: GOLD
+[2026-03-12 13:30:38]   No signal: SLV
+[2026-03-12 13:30:39]   BULL SIGNAL: PAAS — score 3 — Golden Cross, Price > SMA50
+[2026-03-12 13:30:39]   No signal: AG
+[2026-03-12 13:30:39]   No signal: HL
+[2026-03-12 13:30:39]   No signal: MP
+[2026-03-12 13:30:39]   BULL SIGNAL: REMX — score 3 — Golden Cross, Price > SMA50
+[2026-03-12 13:30:39]   No signal: LAC
+[2026-03-12 13:30:39] Connected (client 60)
+[2026-03-12 13:30:40]   Found option: PAAS 20260501 $61.0C (50 DTE)
+[2026-03-12 14:30:26] Connected (client 61)
+[2026-03-12 14:30:40]   No signal: GLD
+[2026-03-12 14:30:40]   No signal: GDX
+[2026-03-12 14:30:40]   No signal: NEM
+[2026-03-12 14:30:40]   No signal: GOLD
+[2026-03-12 14:30:40]   No signal: SLV
+[2026-03-12 14:30:40]   BULL SIGNAL: PAAS — score 3 — Golden Cross, Price > SMA50
+[2026-03-12 14:30:40]   No signal: AG
+[2026-03-12 14:30:41]   No signal: HL
+[2026-03-12 14:30:41]   No signal: MP
+[2026-03-12 14:30:41]   BULL SIGNAL: REMX — score 3 — Golden Cross, Price > SMA50
+[2026-03-12 14:30:41]   No signal: LAC
+[2026-03-12 14:30:41] Connected (client 60)
+[2026-03-12 14:30:41]   Found option: PAAS 20260501 $61.0C (50 DTE)
+[2026-03-12 15:30:29] Connected (client 61)
+[2026-03-12 15:30:42]   No signal: GLD
+[2026-03-12 15:30:42]   No signal: GDX
+[2026-03-12 15:30:42]   No signal: NEM
+[2026-03-12 15:30:42]   No signal: GOLD
+[2026-03-12 15:30:42]   No signal: SLV
+[2026-03-12 15:30:43]   BULL SIGNAL: PAAS — score 3 — Golden Cross, Price > SMA50
+[2026-03-12 15:30:43]   No signal: AG
+[2026-03-12 15:30:43]   No signal: HL
+[2026-03-12 15:30:43]   No signal: MP
+[2026-03-12 15:30:43]   BULL SIGNAL: REMX — score 3 — Golden Cross, Price > SMA50
+[2026-03-12 15:30:43]   No signal: LAC
+[2026-03-12 15:30:44] Connected (client 60)
+[2026-03-12 15:30:44]   Found option: PAAS 20260501 $61.0C (50 DTE)
+[2026-03-13 09:30:56] Connected (client 61)
+[2026-03-13 09:31:10]   No signal: GLD
+[2026-03-13 09:31:10]   No signal: GDX
+[2026-03-13 09:31:10]   No signal: NEM
+[2026-03-13 09:31:10]   No signal: GOLD
+[2026-03-13 09:31:10]   No signal: SLV
+[2026-03-13 09:31:10]   No signal: PAAS
+[2026-03-13 09:31:10]   No signal: AG
+[2026-03-13 09:31:11]   No signal: HL
+[2026-03-13 09:31:11]   No signal: MP
+[2026-03-13 09:31:11]   BULL SIGNAL: REMX — score 3 — Golden Cross, Price > SMA50
+[2026-03-13 09:31:11]   No signal: LAC
+[2026-03-13 09:31:11] Connected (client 60)
+[2026-03-13 09:31:12]   Found option: REMX 20260515 $95.0C (63 DTE)
+[2026-03-13 10:46:07] Connected (client 61)
+[2026-03-13 10:46:20]   No signal: GLD
+[2026-03-13 10:46:20]   No signal: GDX
+[2026-03-13 10:46:20]   BULL SIGNAL: NEM — score 3 — Golden Cross, RSI oversold (30)
+[2026-03-13 10:46:20]   No signal: GOLD
+[2026-03-13 10:46:21]   No signal: SLV
+[2026-03-13 10:46:21]   No signal: PAAS
+[2026-03-13 10:46:21]   No signal: AG
+[2026-03-13 10:46:21]   No signal: HL
+[2026-03-13 10:46:21]   No signal: MP
+[2026-03-13 10:46:21]   BULL SIGNAL: REMX — score 3 — Golden Cross, Price > SMA50
+[2026-03-13 10:46:21]   No signal: LAC
+[2026-03-13 10:46:22] Connected (client 60)
+[2026-03-13 10:46:22]   Found option: NEM 20260501 $113.0C (49 DTE)
+[2026-03-13 11:31:44] Connected (client 61)
+[2026-03-13 11:31:57]   No signal: GLD
+[2026-03-13 11:31:57]   No signal: GDX
+[2026-03-13 11:31:57]   BULL SIGNAL: NEM — score 3 — Golden Cross, RSI oversold (29)
+[2026-03-13 11:31:57]   No signal: GOLD
+[2026-03-13 11:31:57]   No signal: SLV
+[2026-03-13 11:31:57]   No signal: PAAS
+[2026-03-13 11:31:57]   No signal: AG
+[2026-03-13 11:31:57]   No signal: HL
+[2026-03-13 11:31:57]   No signal: MP
+[2026-03-13 11:31:58]   BULL SIGNAL: REMX — score 3 — Golden Cross, Price > SMA50
+[2026-03-13 11:31:58]   No signal: LAC
+[2026-03-13 11:31:58] Connected (client 60)
+[2026-03-13 11:31:58]   Found option: NEM 20260501 $113.0C (49 DTE)
+[2026-03-13 11:32:01] ENTERING NEM: 1 contracts 20260501 $113.0C @ $10.50 ($1,050)
+[2026-03-13 11:32:23]   FILLED: 1x NEM 20260501 $113.0C @ $8.45
+[2026-03-13 13:30:51] Connected (client 61)
+[2026-03-13 13:31:08] At max positions (5/5)
+[2026-03-13 14:30:36] Connected (client 61)
+[2026-03-13 14:30:53] At max positions (5/5)
+[2026-03-16 11:30:38] Connected (client 61)
+[2026-03-16 11:30:52] EXIT: GDX 20260515 $103.0C — Stop loss hit (-49%)
+[2026-03-16 11:30:58]   No signal: GLD
+[2026-03-16 11:30:58]   BULL SIGNAL: GDX — score 3 — Golden Cross, RSI oversold (25)
+[2026-03-16 11:30:58]   No signal: NEM
+[2026-03-16 11:30:58]   No signal: GOLD
+[2026-03-16 11:30:58]   No signal: SLV
+[2026-03-16 11:30:59]   BULL SIGNAL: PAAS — score 3 — Golden Cross, RSI oversold (28)
+[2026-03-16 11:30:59]   No signal: AG
+[2026-03-16 11:30:59]   No signal: HL
+[2026-03-16 11:30:59]   No signal: MP
+[2026-03-16 11:30:59]   No signal: REMX
+[2026-03-16 11:30:59]   BULL SIGNAL: LAC — score 3 — Golden Cross, RSI oversold (27)
+[2026-03-16 11:31:00] Connected (client 60)
+[2026-03-16 11:31:00]   Found option: GDX 20260501 $95.5C (46 DTE)
+[2026-03-16 11:31:03] ENTERING GDX: 1 contracts 20260501 $95.5C @ $6.39 ($639)
+[2026-03-16 11:31:05]   FILLED: 1x GDX 20260501 $95.5C @ $8.05

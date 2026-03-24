@@ -1,0 +1,868 @@
+{
+  "current": {
+    "regime": "SIDEWAYS",
+    "confidence": 65,
+    "reasoning": "The VIX at 18.5 indicates moderate but not extreme fear, while the S&P 500 shows a slight decline of -0.3% and market breadth is positive at 1.2, suggesting mixed signals without clear directional momentum.",
+    "adjustments": {
+      "position_size_mult": 0.8,
+      "aggression": "conservative",
+      "avoid_entries": false,
+      "hedge_up": true
+    },
+    "outlook": "Expect continued choppy, range-bound trading with low conviction moves until a clearer trend emerges from economic data or catalysts.",
+    "timestamp": "2026-03-23T19:03:46.359632",
+    "inputs": {
+      "vix": 18.5,
+      "sp500_change": -0.3,
+      "breadth": 1.2
+    }
+  },
+  "history": [
+    {
+      "regime": "SIDEWAYS",
+      "confidence": 65,
+      "reasoning": "The VIX at 18.5 indicates moderate but not extreme fear, while the S&P 500 shows a slight decline of -0.3% and market breadth is positive at 1.2, suggesting mixed signals without clear directional momentum.",
+      "adjustments": {
+        "position_size_mult": 0.8,
+        "aggression": "conservative",
+        "avoid_entries": false,
+        "hedge_up": true
+      },
+      "outlook": "Expect choppy, range-bound trading with low conviction moves until a clearer trend emerges from economic data or catalysts.",
+      "timestamp": "2026-03-10T20:23:42.986093",
+      "inputs": {
+        "vix": 18.5,
+        "sp500_change": -0.3,
+        "breadth": 1.2
+      }
+    },
+    {
+      "regime": "SIDEWAYS",
+      "confidence": 65,
+      "reasoning": "Global markets are experiencing mixed signals with persistent inflation concerns, central bank policy uncertainty, and geopolitical tensions creating volatility without clear directional momentum. Major indices have been range-bound with alternating periods of risk-on and risk-off sentiment, lacking sustained trends in either direction.",
+      "adjustments": {
+        "position_size_mult": 0.8,
+        "aggression": "conservative",
+        "avoid_entries": false,
+        "hedge_up": true
+      },
+      "outlook": "Expect continued choppy trading with elevated volatility until clearer macroeconomic catalysts emerge, likely maintaining range-bound conditions with occasional breakout attempts that may fail to sustain.",
+      "timestamp": "2026-03-10T20:47:39.034607",
+      "inputs": {
+        "vix": null,
+        "sp500_change": null,
+        "breadth": null
+      }
+    },
+    {
+      "regime": "SIDEWAYS",
+      "confidence": 65,
+      "reasoning": "Global markets are experiencing mixed signals with persistent inflation concerns and uncertain monetary policy outlooks, leading to choppy price action without clear directional momentum. Major indices have been range-bound with elevated volatility as investors weigh economic resilience against restrictive interest rates.",
+      "adjustments": {
+        "position_size_mult": 0.8,
+        "aggression": "conservative",
+        "avoid_entries": false,
+        "hedge_up": true
+      },
+      "outlook": "Expect continued range-bound trading with intermittent volatility spikes until clearer signals emerge on inflation trajectory and central bank policy paths.",
+      "timestamp": "2026-03-11T14:30:34.497657",
+      "inputs": {
+        "vix": null,
+        "sp500_change": null,
+        "breadth": null
+      }
+    },
+    {
+      "regime": "SIDEWAYS",
+      "confidence": 65,
+      "reasoning": "Global markets are experiencing mixed signals with persistent inflation concerns and uncertain monetary policy outlooks, leading to choppy price action without clear directional momentum. Major indices have been range-bound with elevated volatility as investors weigh economic resilience against restrictive interest rates.",
+      "adjustments": {
+        "position_size_mult": 0.8,
+        "aggression": "conservative",
+        "avoid_entries": false,
+        "hedge_up": true
+      },
+      "outlook": "Expect continued range-bound trading with periodic breakouts that may fail to sustain, as markets await clearer signals on inflation trajectory and central bank policy shifts.",
+      "timestamp": "2026-03-11T15:31:19.547872",
+      "inputs": {
+        "vix": null,
+        "sp500_change": null,
+        "breadth": null
+      }
+    },
+    {
+      "regime": "SIDEWAYS",
+      "confidence": 65,
+      "reasoning": "Global markets are experiencing mixed signals with persistent inflation concerns and uncertain monetary policy outlooks, creating a choppy trading environment without clear directional momentum. Major indices have been range-bound with elevated volatility as investors weigh economic resilience against restrictive interest rates.",
+      "adjustments": {
+        "position_size_mult": 0.8,
+        "aggression": "conservative",
+        "avoid_entries": false,
+        "hedge_up": true
+      },
+      "outlook": "Expect continued range-bound trading with periodic breakouts that may fail to sustain, as markets await clearer signals on inflation trajectory and central bank policy shifts.",
+      "timestamp": "2026-03-11T16:05:05.145885",
+      "inputs": {
+        "vix": null,
+        "sp500_change": null,
+        "breadth": null
+      }
+    },
+    {
+      "regime": "SIDEWAYS",
+      "confidence": 65,
+      "reasoning": "Global markets are experiencing mixed signals with persistent inflation concerns, elevated interest rates, and geopolitical tensions creating volatility. However, strong corporate earnings in certain sectors and resilient economic data are preventing a sustained downturn, leading to range-bound trading.",
+      "adjustments": {
+        "position_size_mult": 0.8,
+        "aggression": "conservative",
+        "avoid_entries": false,
+        "hedge_up": true
+      },
+      "outlook": "Expect continued choppy, directionless price action with sector rotation until clearer macroeconomic catalysts emerge, likely maintaining a consolidation phase over the near term.",
+      "timestamp": "2026-03-11T19:00:08.532713",
+      "inputs": {
+        "vix": null,
+        "sp500_change": null,
+        "breadth": null
+      }
+    },
+    {
+      "regime": "SIDEWAYS",
+      "confidence": 65,
+      "reasoning": "Global markets are experiencing mixed signals with persistent inflation concerns and uncertain monetary policy outlooks, leading to choppy price action without clear directional momentum. Major indices have been range-bound with elevated volatility as investors weigh economic resilience against restrictive interest rates.",
+      "adjustments": {
+        "position_size_mult": 0.8,
+        "aggression": "conservative",
+        "avoid_entries": false,
+        "hedge_up": true
+      },
+      "outlook": "Expect continued range-bound trading with periodic breakouts that may fail to sustain, as markets await clearer signals on inflation trajectory and central bank policy shifts.",
+      "timestamp": "2026-03-12T07:45:24.511878",
+      "inputs": {
+        "vix": null,
+        "sp500_change": null,
+        "breadth": null
+      }
+    },
+    {
+      "regime": "SIDEWAYS",
+      "confidence": 65,
+      "reasoning": "Global markets are experiencing mixed signals with persistent inflation concerns and uncertain monetary policy outlooks, creating a choppy trading environment without clear directional momentum. Major indices have been range-bound with elevated volatility as investors weigh economic resilience against restrictive interest rates.",
+      "adjustments": {
+        "position_size_mult": 0.8,
+        "aggression": "conservative",
+        "avoid_entries": false,
+        "hedge_up": true
+      },
+      "outlook": "Expect continued range-bound trading with occasional breakouts that may fail to sustain, as markets await clearer signals on inflation trajectories and central bank policy shifts.",
+      "timestamp": "2026-03-12T08:00:12.335524",
+      "inputs": {
+        "vix": null,
+        "sp500_change": null,
+        "breadth": null
+      }
+    },
+    {
+      "regime": "SIDEWAYS",
+      "confidence": 65,
+      "reasoning": "Global markets are experiencing mixed signals with persistent inflation concerns and uncertain monetary policy outlooks, leading to choppy price action without clear directional momentum. Major indices have been range-bound with elevated volatility as investors weigh economic resilience against restrictive interest rates.",
+      "adjustments": {
+        "position_size_mult": 0.8,
+        "aggression": "conservative",
+        "avoid_entries": false,
+        "hedge_up": true
+      },
+      "outlook": "Expect continued range-bound trading with intermittent volatility spikes until clearer signals emerge on inflation trajectory and central bank policy paths.",
+      "timestamp": "2026-03-12T08:00:14.681748",
+      "inputs": {
+        "vix": null,
+        "sp500_change": null,
+        "breadth": null
+      }
+    },
+    {
+      "regime": "SIDEWAYS",
+      "confidence": 65,
+      "reasoning": "Global markets are experiencing mixed signals with persistent inflation concerns and uncertain central bank policy paths, creating choppy price action without clear directional momentum. Major indices have been range-bound with elevated volatility, reflecting indecision among market participants.",
+      "adjustments": {
+        "position_size_mult": 0.8,
+        "aggression": "conservative",
+        "avoid_entries": false,
+        "hedge_up": true
+      },
+      "outlook": "Expect continued range-bound trading with potential for breakout in either direction once macroeconomic clarity emerges, likely requiring patience through this consolidation phase.",
+      "timestamp": "2026-03-12T09:31:33.747971",
+      "inputs": {
+        "vix": null,
+        "sp500_change": null,
+        "breadth": null
+      }
+    },
+    {
+      "regime": "SIDEWAYS",
+      "confidence": 65,
+      "reasoning": "Global markets are experiencing mixed signals with persistent inflation concerns and uncertain central bank policy paths, creating a choppy trading environment without clear directional momentum. Volatility has increased but remains within typical ranges, suggesting consolidation rather than trending behavior.",
+      "adjustments": {
+        "position_size_mult": 0.8,
+        "aggression": "conservative",
+        "avoid_entries": false,
+        "hedge_up": true
+      },
+      "outlook": "Expect continued range-bound trading with potential for breakout in either direction depending on upcoming economic data and policy decisions. Market likely to remain sensitive to inflation reports and geopolitical developments.",
+      "timestamp": "2026-03-12T10:31:25.746568",
+      "inputs": {
+        "vix": null,
+        "sp500_change": null,
+        "breadth": null
+      }
+    },
+    {
+      "regime": "SIDEWAYS",
+      "confidence": 65,
+      "reasoning": "Global markets are experiencing mixed signals with persistent inflation concerns and uncertain central bank policy paths, creating a choppy trading environment without clear directional momentum. Equity indices have been range-bound with elevated volatility, while economic data shows both resilience and warning signs.",
+      "adjustments": {
+        "position_size_mult": 0.8,
+        "aggression": "conservative",
+        "avoid_entries": false,
+        "hedge_up": true
+      },
+      "outlook": "Expect continued range-bound trading with periodic breakouts that may fail to sustain, as markets await clearer signals on inflation trajectory and economic growth. Volatility is likely to remain elevated until a decisive catalyst emerges.",
+      "timestamp": "2026-03-12T11:30:10.729203",
+      "inputs": {
+        "vix": null,
+        "sp500_change": null,
+        "breadth": null
+      }
+    },
+    {
+      "regime": "SIDEWAYS",
+      "confidence": 65,
+      "reasoning": "Global markets are experiencing mixed signals with persistent inflation concerns, elevated interest rates, and geopolitical tensions creating volatility. However, strong corporate earnings and economic resilience in some regions are preventing sustained directional moves, resulting in choppy, range-bound trading.",
+      "adjustments": {
+        "position_size_mult": 0.8,
+        "aggression": "conservative",
+        "avoid_entries": false,
+        "hedge_up": true
+      },
+      "outlook": "Expect continued volatility with no clear directional bias in the near term as markets await clearer signals on inflation trajectories and central bank policy paths.",
+      "timestamp": "2026-03-12T12:00:11.464223",
+      "inputs": {
+        "vix": null,
+        "sp500_change": null,
+        "breadth": null
+      }
+    },
+    {
+      "regime": "SIDEWAYS",
+      "confidence": 65,
+      "reasoning": "Global markets are experiencing mixed signals with persistent inflation concerns, elevated interest rates, and geopolitical tensions creating volatility. However, strong corporate earnings and economic resilience in some regions are preventing sustained directional moves, resulting in choppy, range-bound trading.",
+      "adjustments": {
+        "position_size_mult": 0.8,
+        "aggression": "conservative",
+        "avoid_entries": false,
+        "hedge_up": true
+      },
+      "outlook": "Expect continued volatility with limited directional conviction until clearer signals emerge on inflation trajectory, central bank policies, or economic growth trends.",
+      "timestamp": "2026-03-12T12:32:21.084556",
+      "inputs": {
+        "vix": null,
+        "sp500_change": null,
+        "breadth": null
+      }
+    },
+    {
+      "regime": "SIDEWAYS",
+      "confidence": 65,
+      "reasoning": "Global markets are experiencing mixed signals with persistent inflation concerns, elevated interest rates, and geopolitical tensions creating volatility. However, strong corporate earnings in certain sectors and resilient economic data are preventing a sustained downturn, leading to range-bound trading.",
+      "adjustments": {
+        "position_size_mult": 0.8,
+        "aggression": "conservative",
+        "avoid_entries": false,
+        "hedge_up": true
+      },
+      "outlook": "Expect continued choppy, directionless price action with sector rotation until clearer macroeconomic catalysts emerge, likely maintaining a consolidation phase over the near term.",
+      "timestamp": "2026-03-12T13:31:18.556844",
+      "inputs": {
+        "vix": null,
+        "sp500_change": null,
+        "breadth": null
+      }
+    },
+    {
+      "regime": "SIDEWAYS",
+      "confidence": 65,
+      "reasoning": "Without specific market data, I'm assuming a neutral baseline. Current global markets show mixed signals with persistent inflation concerns, geopolitical tensions, and central bank policy uncertainty creating choppy trading conditions across major indices. Volatility remains elevated but without clear directional momentum.",
+      "adjustments": {
+        "position_size_mult": 0.8,
+        "aggression": "conservative",
+        "avoid_entries": false,
+        "hedge_up": true
+      },
+      "outlook": "Expect continued range-bound trading with occasional breakouts that may fail to sustain, requiring careful risk management and selective entry points during mean reversion opportunities.",
+      "timestamp": "2026-03-12T14:31:19.698283",
+      "inputs": {
+        "vix": null,
+        "sp500_change": null,
+        "breadth": null
+      }
+    },
+    {
+      "regime": "SIDEWAYS",
+      "confidence": 65,
+      "reasoning": "Global markets are experiencing mixed signals with persistent inflation concerns and uncertain monetary policy paths, leading to choppy price action without clear directional momentum. Major indices have been range-bound with elevated volatility, reflecting indecision between growth optimism and recession fears.",
+      "adjustments": {
+        "position_size_mult": 0.8,
+        "aggression": "conservative",
+        "avoid_entries": false,
+        "hedge_up": true
+      },
+      "outlook": "Expect continued range-bound trading with intermittent volatility spikes until clearer macroeconomic catalysts emerge, likely requiring a breakout from key technical levels for sustained directional movement.",
+      "timestamp": "2026-03-12T15:31:21.537483",
+      "inputs": {
+        "vix": null,
+        "sp500_change": null,
+        "breadth": null
+      }
+    },
+    {
+      "regime": "SIDEWAYS",
+      "confidence": 65,
+      "reasoning": "Global markets are experiencing mixed signals with persistent inflation concerns and uncertain monetary policy outlooks, leading to choppy price action without clear directional momentum. Major indices have been range-bound with elevated volatility as investors weigh economic resilience against restrictive interest rates.",
+      "adjustments": {
+        "position_size_mult": 0.8,
+        "aggression": "conservative",
+        "avoid_entries": false,
+        "hedge_up": true
+      },
+      "outlook": "Expect continued range-bound trading with periodic breakouts that may fail to sustain, requiring nimble positioning until clearer macroeconomic trends emerge in the coming quarters.",
+      "timestamp": "2026-03-12T16:00:08.313155",
+      "inputs": {
+        "vix": null,
+        "sp500_change": null,
+        "breadth": null
+      }
+    },
+    {
+      "regime": "SIDEWAYS",
+      "confidence": 65,
+      "reasoning": "Global markets are experiencing mixed signals with persistent inflation concerns and uncertain monetary policy outlooks, leading to choppy price action without clear directional momentum. Major indices have been range-bound with elevated volatility as investors weigh economic resilience against restrictive interest rates.",
+      "adjustments": {
+        "position_size_mult": 0.8,
+        "aggression": "conservative",
+        "avoid_entries": false,
+        "hedge_up": true
+      },
+      "outlook": "Expect continued range-bound trading with intermittent volatility spikes until clearer signals emerge on inflation trajectory and central bank policy paths.",
+      "timestamp": "2026-03-12T16:05:07.985891",
+      "inputs": {
+        "vix": null,
+        "sp500_change": null,
+        "breadth": null
+      }
+    },
+    {
+      "regime": "SIDEWAYS",
+      "confidence": 65,
+      "reasoning": "Global markets are experiencing mixed signals with persistent inflation concerns and uncertain monetary policy outlooks, leading to choppy price action without clear directional momentum. Major indices have been range-bound with elevated volatility as investors weigh economic resilience against restrictive interest rates.",
+      "adjustments": {
+        "position_size_mult": 0.8,
+        "aggression": "conservative",
+        "avoid_entries": false,
+        "hedge_up": true
+      },
+      "outlook": "Expect continued range-bound trading with intermittent volatility spikes until clearer signals emerge on inflation trajectory and central bank policy paths.",
+      "timestamp": "2026-03-12T19:00:07.917043",
+      "inputs": {
+        "vix": null,
+        "sp500_change": null,
+        "breadth": null
+      }
+    },
+    {
+      "regime": "SIDEWAYS",
+      "confidence": 65,
+      "reasoning": "Global markets are experiencing mixed signals with persistent inflation concerns and uncertain monetary policy outlooks, leading to choppy price action without clear directional momentum. Major indices have been range-bound with elevated volatility as investors weigh economic resilience against restrictive interest rates.",
+      "adjustments": {
+        "position_size_mult": 0.8,
+        "aggression": "conservative",
+        "avoid_entries": false,
+        "hedge_up": true
+      },
+      "outlook": "Expect continued range-bound trading with periodic breakouts that may fail to sustain, as markets await clearer signals on inflation trajectory and central bank policy shifts.",
+      "timestamp": "2026-03-13T08:00:11.123997",
+      "inputs": {
+        "vix": null,
+        "sp500_change": null,
+        "breadth": null
+      }
+    },
+    {
+      "regime": "SIDEWAYS",
+      "confidence": 65,
+      "reasoning": "Global markets are experiencing mixed signals with persistent inflation concerns and uncertain monetary policy outlooks, creating a choppy trading environment without clear directional momentum. Major indices have been range-bound with elevated volatility as investors weigh economic resilience against restrictive interest rates.",
+      "adjustments": {
+        "position_size_mult": 0.8,
+        "aggression": "conservative",
+        "avoid_entries": false,
+        "hedge_up": true
+      },
+      "outlook": "Expect continued range-bound trading with occasional breakouts that may fail to sustain, as markets await clearer signals on inflation trajectory and central bank policy shifts.",
+      "timestamp": "2026-03-13T08:00:13.693656",
+      "inputs": {
+        "vix": null,
+        "sp500_change": null,
+        "breadth": null
+      }
+    },
+    {
+      "regime": "SIDEWAYS",
+      "confidence": 65,
+      "reasoning": "Global markets are experiencing mixed signals with persistent inflation concerns and uncertain monetary policy outlooks, leading to choppy price action without clear directional momentum. Major indices have been range-bound with elevated volatility as investors weigh economic resilience against restrictive interest rates.",
+      "adjustments": {
+        "position_size_mult": 0.8,
+        "aggression": "conservative",
+        "avoid_entries": false,
+        "hedge_up": true
+      },
+      "outlook": "Expect continued range-bound trading with intermittent volatility spikes until clearer signals emerge on inflation trajectory and central bank policy paths.",
+      "timestamp": "2026-03-13T09:34:39.296366",
+      "inputs": {
+        "vix": null,
+        "sp500_change": null,
+        "breadth": null
+      }
+    },
+    {
+      "regime": "SIDEWAYS",
+      "confidence": 65,
+      "reasoning": "Global markets are experiencing mixed signals with persistent inflation concerns and uncertain monetary policy outlooks. Major indices have been range-bound with elevated volatility, lacking clear directional momentum in either direction.",
+      "adjustments": {
+        "position_size_mult": 0.8,
+        "aggression": "conservative",
+        "avoid_entries": false,
+        "hedge_up": true
+      },
+      "outlook": "Expect continued choppy trading with potential for breakouts in either direction depending on upcoming economic data and central bank communications.",
+      "timestamp": "2026-03-13T10:47:15.179903",
+      "inputs": {
+        "vix": null,
+        "sp500_change": null,
+        "breadth": null
+      }
+    },
+    {
+      "regime": "SIDEWAYS",
+      "confidence": 65,
+      "reasoning": "Global markets are experiencing mixed signals with persistent inflation concerns and uncertain monetary policy outlooks. Major indices have shown elevated volatility without clear directional trends, while economic indicators present conflicting narratives about growth prospects.",
+      "adjustments": {
+        "position_size_mult": 0.8,
+        "aggression": "conservative",
+        "avoid_entries": false,
+        "hedge_up": true
+      },
+      "outlook": "Expect continued range-bound trading with elevated volatility until clearer macroeconomic signals emerge regarding inflation trajectories and central bank policies.",
+      "timestamp": "2026-03-13T11:34:18.940315",
+      "inputs": {
+        "vix": null,
+        "sp500_change": null,
+        "breadth": null
+      }
+    },
+    {
+      "regime": "SIDEWAYS",
+      "confidence": 65,
+      "reasoning": "Global markets are experiencing mixed signals with persistent inflation concerns and uncertain monetary policy outlooks, leading to choppy price action without clear directional momentum. Major indices have been range-bound with elevated volatility as investors weigh economic resilience against restrictive interest rates.",
+      "adjustments": {
+        "position_size_mult": 0.8,
+        "aggression": "conservative",
+        "avoid_entries": false,
+        "hedge_up": true
+      },
+      "outlook": "Expect continued range-bound trading with periodic breakouts that may fail to sustain, as markets await clearer signals on inflation trajectory and central bank policy shifts.",
+      "timestamp": "2026-03-13T12:00:11.219895",
+      "inputs": {
+        "vix": null,
+        "sp500_change": null,
+        "breadth": null
+      }
+    },
+    {
+      "regime": "SIDEWAYS",
+      "confidence": 65,
+      "reasoning": "Global markets are experiencing mixed signals with persistent inflation concerns and uncertain monetary policy outlooks across major economies. Equity indices have shown elevated volatility without clear directional momentum, while bond markets remain sensitive to central bank communications.",
+      "adjustments": {
+        "position_size_mult": 0.8,
+        "aggression": "conservative",
+        "avoid_entries": false,
+        "hedge_up": true
+      },
+      "outlook": "Expect continued range-bound trading with intermittent volatility spikes until clearer macroeconomic catalysts emerge, likely requiring several months for sustained directional trends to develop.",
+      "timestamp": "2026-03-13T12:30:11.528901",
+      "inputs": {
+        "vix": null,
+        "sp500_change": null,
+        "breadth": null
+      }
+    },
+    {
+      "regime": "SIDEWAYS",
+      "confidence": 65,
+      "reasoning": "Global markets are experiencing mixed signals with persistent inflation concerns and uncertain monetary policy outlooks, leading to choppy price action without clear directional momentum. Major indices have been range-bound with elevated volatility as investors weigh economic resilience against restrictive interest rates.",
+      "adjustments": {
+        "position_size_mult": 0.8,
+        "aggression": "conservative",
+        "avoid_entries": false,
+        "hedge_up": true
+      },
+      "outlook": "Expect continued range-bound trading with intermittent volatility spikes until clearer signals emerge on inflation trajectory and central bank policy paths.",
+      "timestamp": "2026-03-13T13:33:33.134662",
+      "inputs": {
+        "vix": null,
+        "sp500_change": null,
+        "breadth": null
+      }
+    },
+    {
+      "regime": "SIDEWAYS",
+      "confidence": 65,
+      "reasoning": "Global markets are experiencing mixed signals with persistent inflation concerns, elevated interest rates, and geopolitical tensions creating volatility. However, strong corporate earnings in certain sectors and resilient economic data are preventing a sustained bearish trend, resulting in choppy, range-bound price action across major indices.",
+      "adjustments": {
+        "position_size_mult": 0.8,
+        "aggression": "conservative",
+        "avoid_entries": false,
+        "hedge_up": true
+      },
+      "outlook": "Expect continued volatility with no clear directional bias in the near term, as markets await clearer signals on inflation trajectories and central bank policy shifts. Breakouts from current ranges will likely determine the next sustained regime.",
+      "timestamp": "2026-03-13T14:32:36.844800",
+      "inputs": {
+        "vix": null,
+        "sp500_change": null,
+        "breadth": null
+      }
+    },
+    {
+      "regime": "SIDEWAYS",
+      "confidence": 65,
+      "reasoning": "Global markets are experiencing mixed signals with persistent inflation concerns, elevated interest rates, and geopolitical tensions creating volatility. However, strong corporate earnings and economic resilience in some regions are preventing sustained directional moves, resulting in choppy, range-bound conditions.",
+      "adjustments": {
+        "position_size_mult": 0.8,
+        "aggression": "conservative",
+        "avoid_entries": false,
+        "hedge_up": true
+      },
+      "outlook": "Expect continued volatility with limited directional conviction until clearer signals emerge on inflation trajectories, central bank policies, or geopolitical developments.",
+      "timestamp": "2026-03-13T15:32:02.040980",
+      "inputs": {
+        "vix": null,
+        "sp500_change": null,
+        "breadth": null
+      }
+    },
+    {
+      "regime": "SIDEWAYS",
+      "confidence": 65,
+      "reasoning": "Global markets are experiencing mixed signals with persistent inflation concerns, elevated interest rates, and geopolitical tensions creating volatility. However, strong corporate earnings in certain sectors and resilient economic data are preventing a sustained bearish trend, resulting in choppy, range-bound price action across major indices.",
+      "adjustments": {
+        "position_size_mult": 0.8,
+        "aggression": "conservative",
+        "avoid_entries": false,
+        "hedge_up": true
+      },
+      "outlook": "Expect continued volatility with no clear directional bias in the near term, as markets await clearer signals on inflation trajectories and central bank policy shifts.",
+      "timestamp": "2026-03-13T16:00:08.351661",
+      "inputs": {
+        "vix": null,
+        "sp500_change": null,
+        "breadth": null
+      }
+    },
+    {
+      "regime": "SIDEWAYS",
+      "confidence": 65,
+      "reasoning": "Global markets are experiencing mixed signals with persistent inflation concerns and uncertain monetary policy outlooks. Major indices are trading in ranges without clear directional momentum, while volatility remains elevated compared to historical norms.",
+      "adjustments": {
+        "position_size_mult": 0.8,
+        "aggression": "conservative",
+        "avoid_entries": false,
+        "hedge_up": true
+      },
+      "outlook": "Expect continued choppy trading with potential for breakouts in either direction depending on upcoming economic data and central bank communications.",
+      "timestamp": "2026-03-13T16:05:15.138578",
+      "inputs": {
+        "vix": null,
+        "sp500_change": null,
+        "breadth": null
+      }
+    },
+    {
+      "regime": "SIDEWAYS",
+      "confidence": 65,
+      "reasoning": "Global markets are experiencing mixed signals with persistent inflation concerns and uncertain monetary policy outlooks, creating a choppy trading environment. Major indices have been range-bound with elevated volatility, lacking clear directional momentum in either direction.",
+      "adjustments": {
+        "position_size_mult": 0.8,
+        "aggression": "conservative",
+        "avoid_entries": false,
+        "hedge_up": true
+      },
+      "outlook": "Expect continued range-bound trading with potential for breakouts in either direction depending on upcoming economic data and central bank communications.",
+      "timestamp": "2026-03-13T19:00:08.798524",
+      "inputs": {
+        "vix": null,
+        "sp500_change": null,
+        "breadth": null
+      }
+    },
+    {
+      "regime": "SIDEWAYS",
+      "confidence": 65,
+      "reasoning": "Global markets are experiencing mixed signals with persistent inflation concerns and uncertain monetary policy outlooks across major economies. Equity indices have shown elevated volatility without clear directional trends, while bond markets reflect uncertainty about future rate paths.",
+      "adjustments": {
+        "position_size_mult": 0.8,
+        "aggression": "conservative",
+        "avoid_entries": false,
+        "hedge_up": true
+      },
+      "outlook": "Expect continued range-bound trading with periodic volatility spikes until clearer macroeconomic catalysts emerge, likely requiring several months for sustained directional movement.",
+      "timestamp": "2026-03-14T10:00:11.080470",
+      "inputs": {
+        "vix": null,
+        "sp500_change": null,
+        "breadth": null
+      }
+    },
+    {
+      "regime": "SIDEWAYS",
+      "confidence": 65,
+      "reasoning": "Global markets are experiencing mixed signals with persistent inflation concerns and uncertain monetary policy outlooks, creating a choppy trading environment without clear directional momentum. Major indices have been range-bound with elevated volatility as investors weigh economic resilience against restrictive financial conditions.",
+      "adjustments": {
+        "position_size_mult": 0.8,
+        "aggression": "conservative",
+        "avoid_entries": false,
+        "hedge_up": true
+      },
+      "outlook": "Expect continued range-bound trading with periodic breakouts that may fail to sustain, requiring nimble positioning and readiness for regime transition as economic data evolves.",
+      "timestamp": "2026-03-15T10:00:11.888832",
+      "inputs": {
+        "vix": null,
+        "sp500_change": null,
+        "breadth": null
+      }
+    },
+    {
+      "regime": "SIDEWAYS",
+      "confidence": 65,
+      "reasoning": "Global markets are experiencing mixed signals with persistent inflation concerns and uncertain monetary policy outlooks, creating a choppy trading environment without clear directional momentum. Major indices have been range-bound with elevated volatility as investors weigh economic resilience against restrictive interest rates.",
+      "adjustments": {
+        "position_size_mult": 0.8,
+        "aggression": "conservative",
+        "avoid_entries": false,
+        "hedge_up": true
+      },
+      "outlook": "Expect continued range-bound trading with occasional breakouts that may fail to sustain, as markets await clearer signals on inflation trajectory and central bank policy shifts.",
+      "timestamp": "2026-03-16T08:00:12.323945",
+      "inputs": {
+        "vix": null,
+        "sp500_change": null,
+        "breadth": null
+      }
+    },
+    {
+      "regime": "SIDEWAYS",
+      "confidence": 65,
+      "reasoning": "Global markets are experiencing mixed signals with persistent inflation concerns and uncertain monetary policy outlooks, leading to choppy price action without clear directional momentum. Major indices have been range-bound with elevated volatility as investors weigh economic resilience against restrictive interest rates.",
+      "adjustments": {
+        "position_size_mult": 0.8,
+        "aggression": "conservative",
+        "avoid_entries": false,
+        "hedge_up": true
+      },
+      "outlook": "Expect continued range-bound trading with periodic breakouts that may fail to sustain, as markets await clearer signals on inflation trajectory and central bank policy shifts.",
+      "timestamp": "2026-03-16T08:00:14.165913",
+      "inputs": {
+        "vix": null,
+        "sp500_change": null,
+        "breadth": null
+      }
+    },
+    {
+      "regime": "SIDEWAYS",
+      "confidence": 65,
+      "reasoning": "Global markets are experiencing mixed signals with persistent inflation concerns and uncertain central bank policy paths, leading to choppy price action without clear directional momentum. Major indices have been range-bound with elevated volatility, reflecting indecision between growth optimism and recession fears.",
+      "adjustments": {
+        "position_size_mult": 0.8,
+        "aggression": "conservative",
+        "avoid_entries": false,
+        "hedge_up": true
+      },
+      "outlook": "Expect continued range-trading with potential for breakout in either direction depending on upcoming economic data and policy decisions; maintain flexible positioning to adapt to regime shifts.",
+      "timestamp": "2026-03-16T09:30:12.101777",
+      "inputs": {
+        "vix": null,
+        "sp500_change": null,
+        "breadth": null
+      }
+    },
+    {
+      "regime": "SIDEWAYS",
+      "confidence": 65,
+      "reasoning": "Global markets are experiencing mixed signals with persistent inflation concerns and uncertain monetary policy outlooks across major economies. Equity indices have shown elevated volatility without clear directional trends, while bond markets remain sensitive to central bank communications.",
+      "adjustments": {
+        "position_size_mult": 0.8,
+        "aggression": "conservative",
+        "avoid_entries": false,
+        "hedge_up": true
+      },
+      "outlook": "Expect continued range-bound trading with intermittent volatility spikes until clearer macroeconomic catalysts emerge, likely requiring several months for sustained directional moves to develop.",
+      "timestamp": "2026-03-16T10:30:21.310278",
+      "inputs": {
+        "vix": null,
+        "sp500_change": null,
+        "breadth": null
+      }
+    },
+    {
+      "regime": "SIDEWAYS",
+      "confidence": 65,
+      "reasoning": "Without specific market data, I'm assuming a neutral baseline. Current global markets show mixed signals with persistent inflation concerns, geopolitical tensions, and central bank policy uncertainty creating choppy, range-bound conditions across many asset classes. There's no clear directional momentum favoring sustained bullish or bearish trends.",
+      "adjustments": {
+        "position_size_mult": 0.8,
+        "aggression": "conservative",
+        "avoid_entries": false,
+        "hedge_up": true
+      },
+      "outlook": "Expect continued volatility with limited directional conviction until clearer macroeconomic catalysts emerge, likely maintaining range-bound trading with occasional breakouts that may prove temporary.",
+      "timestamp": "2026-03-16T11:32:57.154036",
+      "inputs": {
+        "vix": null,
+        "sp500_change": null,
+        "breadth": null
+      }
+    },
+    {
+      "regime": "SIDEWAYS",
+      "confidence": 65,
+      "reasoning": "Global markets are experiencing mixed signals with persistent inflation concerns and uncertain monetary policy outlooks, leading to choppy price action without clear directional momentum. Major indices have been range-bound with elevated volatility as investors weigh economic resilience against restrictive interest rates.",
+      "adjustments": {
+        "position_size_mult": 0.8,
+        "aggression": "conservative",
+        "avoid_entries": false,
+        "hedge_up": true
+      },
+      "outlook": "Expect continued range-bound trading with intermittent volatility spikes until clearer signals emerge on inflation trajectory and central bank policy paths.",
+      "timestamp": "2026-03-16T12:00:08.412201",
+      "inputs": {
+        "vix": null,
+        "sp500_change": null,
+        "breadth": null
+      }
+    },
+    {
+      "regime": "SIDEWAYS",
+      "confidence": 65,
+      "reasoning": "Global markets are experiencing mixed signals with persistent inflation concerns, elevated interest rates, and geopolitical tensions creating volatility. However, strong corporate earnings in certain sectors and resilient economic data are preventing a sustained downturn, leading to range-bound trading.",
+      "adjustments": {
+        "position_size_mult": 0.8,
+        "aggression": "conservative",
+        "avoid_entries": false,
+        "hedge_up": true
+      },
+      "outlook": "Expect continued choppy, directionless price action with sector rotation until clearer macroeconomic catalysts emerge, likely maintaining a consolidation phase in the near term.",
+      "timestamp": "2026-03-16T16:00:06.678361",
+      "inputs": {
+        "vix": null,
+        "sp500_change": null,
+        "breadth": null
+      }
+    },
+    {
+      "regime": "SIDEWAYS",
+      "confidence": 65,
+      "reasoning": "Global markets are experiencing mixed signals with persistent inflation concerns, elevated interest rates, and geopolitical tensions creating volatility. However, strong corporate earnings and economic resilience in some regions are preventing sustained directional moves, resulting in choppy, range-bound conditions.",
+      "adjustments": {
+        "position_size_mult": 0.8,
+        "aggression": "conservative",
+        "avoid_entries": false,
+        "hedge_up": true
+      },
+      "outlook": "Expect continued volatility with limited directional conviction until clearer signals emerge on inflation trajectory, central bank policies, or economic growth trends.",
+      "timestamp": "2026-03-16T16:05:06.969004",
+      "inputs": {
+        "vix": null,
+        "sp500_change": null,
+        "breadth": null
+      }
+    },
+    {
+      "regime": "SIDEWAYS",
+      "confidence": 65,
+      "reasoning": "Global markets are experiencing mixed signals with persistent inflation concerns and uncertain monetary policy outlooks, leading to choppy price action without clear directional momentum. Major indices have been range-bound with elevated volatility as investors weigh economic resilience against restrictive interest rates.",
+      "adjustments": {
+        "position_size_mult": 0.8,
+        "aggression": "conservative",
+        "avoid_entries": false,
+        "hedge_up": true
+      },
+      "outlook": "Expect continued range-bound trading with periodic breakouts that may fail to sustain, as markets await clearer signals on inflation trajectory and central bank policy shifts.",
+      "timestamp": "2026-03-16T19:00:08.977101",
+      "inputs": {
+        "vix": null,
+        "sp500_change": null,
+        "breadth": null
+      }
+    },
+    {
+      "regime": "SIDEWAYS",
+      "confidence": 65,
+      "reasoning": "Global markets are experiencing mixed signals with persistent inflation concerns and uncertain monetary policy outlooks, leading to choppy price action without clear directional momentum. Major indices have been range-bound with elevated volatility as investors weigh economic resilience against restrictive interest rates.",
+      "adjustments": {
+        "position_size_mult": 0.8,
+        "aggression": "conservative",
+        "avoid_entries": false,
+        "hedge_up": true
+      },
+      "outlook": "Expect continued range-bound trading with periodic breakouts that may fail to sustain, as markets await clearer signals on inflation trajectory and central bank policy shifts.",
+      "timestamp": "2026-03-17T08:00:10.402147",
+      "inputs": {
+        "vix": null,
+        "sp500_change": null,
+        "breadth": null
+      }
+    },
+    {
+      "regime": "SIDEWAYS",
+      "confidence": 65,
+      "reasoning": "Global markets are experiencing mixed signals with persistent inflation concerns and uncertain monetary policy outlooks, creating a choppy trading environment without clear directional momentum. Major indices have been range-bound with elevated volatility as investors weigh economic resilience against restrictive interest rates.",
+      "adjustments": {
+        "position_size_mult": 0.8,
+        "aggression": "conservative",
+        "avoid_entries": false,
+        "hedge_up": true
+      },
+      "outlook": "Expect continued range-bound trading with occasional breakouts that may fail to sustain, as markets await clearer signals on inflation trajectory and central bank policy shifts.",
+      "timestamp": "2026-03-17T08:00:13.981216",
+      "inputs": {
+        "vix": null,
+        "sp500_change": null,
+        "breadth": null
+      }
+    },
+    {
+      "regime": "SIDEWAYS",
+      "confidence": 65,
+      "reasoning": "The VIX at 18.5 indicates moderate but not extreme fear, while the S&P 500 shows a slight decline of -0.3% and market breadth is positive at 1.2, suggesting mixed signals without clear directional momentum.",
+      "adjustments": {
+        "position_size_mult": 0.8,
+        "aggression": "conservative",
+        "avoid_entries": false,
+        "hedge_up": true
+      },
+      "outlook": "Expect continued choppy, range-bound trading with low conviction moves until a clearer trend emerges from economic data or catalysts.",
+      "timestamp": "2026-03-23T19:03:46.359632",
+      "inputs": {
+        "vix": 18.5,
+        "sp500_change": -0.3,
+        "breadth": 1.2
+      }
+    }
+  ]
+}

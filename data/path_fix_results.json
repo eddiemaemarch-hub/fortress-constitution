@@ -1,0 +1,42 @@
+[
+  {
+    "start_year": 2016,
+    "description": "2016 (original)",
+    "net": 126.533,
+    "dd": 49.7,
+    "sharpe": 0.258,
+    "orders": 132
+  },
+  {
+    "start_year": 2017,
+    "description": "2017",
+    "net": 126.533,
+    "dd": 49.7,
+    "sharpe": 0.279,
+    "orders": 132
+  },
+  {
+    "start_year": 2018,
+    "description": "2018",
+    "net": 126.533,
+    "dd": 49.7,
+    "sharpe": 0.308,
+    "orders": 132
+  },
+  {
+    "start_year": 2019,
+    "description": "2019",
+    "net": 126.533,
+    "dd": 49.7,
+    "sharpe": 0.347,
+    "orders": 132
+  },
+  {
+    "start_year": 2020,
+    "description": "2020 (BTC era start)",
+    "net": 126.533,
+    "dd": 49.7,
+    "sharpe": 0.398,
+    "orders": 132
+  }
+]

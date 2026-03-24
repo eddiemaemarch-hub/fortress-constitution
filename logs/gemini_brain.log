@@ -1,0 +1,80 @@
+[2026-03-22 15:17:05] Running Gemini regime cross-check...
+[2026-03-22 15:17:05] Gemini API error: 404 Client Error: Not Found for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=AIzaSyCmv7Hsz8gvLd1KCWvjHDWUo1lYun-5NuQ
+[2026-03-22 15:17:05] Generating Gemini news digest...
+[2026-03-22 15:17:06] Gemini API error: 404 Client Error: Not Found for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=AIzaSyCmv7Hsz8gvLd1KCWvjHDWUo1lYun-5NuQ
+[2026-03-22 15:17:06] Saved Gemini analysis
+[2026-03-22 15:17:06] Gemini Brain complete
+[2026-03-22 15:17:30] Running Gemini regime cross-check...
+[2026-03-22 15:17:37] Failed to parse Gemini response: ```json
+{
+  "regime": "MARKDOWN",
+  "confidence": 8,
+  "reasoning": "A 45.5% drawdown from a recent ATH (5 months ago), combined with a weekly StochRSI of 0, indicates
+[2026-03-22 15:17:37] Generating Gemini news digest...
+[2026-03-22 15:17:45] Digest generated (257 chars)
+[2026-03-22 15:17:45] Saved Gemini analysis
+[2026-03-22 15:17:46] Telegram sent: 🧠 *Gemini Morning Brief*
+━━━━━━━━━━━━━━━━
+📈 Overnight saw Bi...
+[2026-03-22 15:17:46] Gemini Brain complete
+[2026-03-22 15:18:00] Running Gemini regime cross-check...
+[2026-03-22 15:18:07] Failed to parse Gemini response: ```json
+{
+  "regime": "DISTRIBUTION",
+  "confidence": 8,
+  "reasoning": "The market is 5 months post-ATH with a significant 45.5% drawdown, indicating profit-taking after a peak that aligns with histo
+[2026-03-22 15:18:07] Generating Gemini news digest...
+[2026-03-22 15:18:14] Digest generated (459 chars)
+[2026-03-22 15:18:14] Saved Gemini analysis
+[2026-03-22 15:18:14] Telegram sent: 🧠 *Gemini Morning Brief*
+━━━━━━━━━━━━━━━━
+📈 Crypto markets s...
+[2026-03-22 15:18:14] Gemini Brain complete
+[2026-03-22 15:18:52] Running Gemini regime cross-check...
+[2026-03-22 15:18:59] Failed to parse Gemini response (substring not found): ```json
+{
+  "regime": "MARKDOWN",
+  "confidence": 8,
+  "reasoning": "The market is 5 months post-ATH with a significant 45.5% drawdown, indicating an active downtrend. The weekly StochR
+[2026-03-22 15:18:59] Generating Gemini news digest...
+[2026-03-22 15:19:07] Digest generated (513 chars)
+[2026-03-22 15:19:07] Saved Gemini analysis
+[2026-03-22 15:19:07] Gemini Brain complete
+[2026-03-22 15:19:21] Running Gemini regime cross-check...
+[2026-03-22 15:19:34] Regime: DISTRIBUTION (0.9%) | S13: DISTRIBUTION | Consensus: YES
+[2026-03-22 15:19:34] Generating Gemini news digest...
+[2026-03-22 15:19:42] Digest generated (414 chars)
+[2026-03-22 15:19:42] Saved Gemini analysis
+[2026-03-22 15:19:42] Gemini Brain complete
+[2026-03-23 19:03:40] Running Gemini regime cross-check...
+[2026-03-23 19:03:41] Google GenAI client initialized (Google Search grounding enabled)
+[2026-03-23 19:03:41] Grounded query error (404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.0-flash is no longer available to new users. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}) — falling back to raw REST
+[2026-03-23 19:04:00] Regime: DISTRIBUTION (0.85%) | S13: DISTRIBUTION | Consensus: YES
+[2026-03-23 19:04:00] Generating Gemini news digest...
+[2026-03-23 19:04:00] Grounded query error (404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.0-flash is no longer available to new users. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}) — falling back to raw REST
+[2026-03-23 19:04:06] Digest generated (539 chars)
+[2026-03-23 19:04:06] Saved Gemini analysis
+[2026-03-23 19:04:06] Telegram sent: 🧠 *Gemini Morning Brief*
+━━━━━━━━━━━━━━━━
+*   🌍 Crypto marke...
+[2026-03-23 19:04:07] Telegram sent: ✅ *Regime Consensus: DISTRIBUTION*
+System 13: DISTRIBUTION |...
+[2026-03-23 19:04:08] Telegram sent: 📊 *Gemini Outlook*
+30d: Expect continued volatility with pot...
+[2026-03-23 19:04:08] Gemini Brain complete
+[2026-03-23 20:00:05] Running Gemini regime cross-check...
+[2026-03-23 20:00:06] Google GenAI client initialized (Google Search grounding enabled)
+[2026-03-23 20:00:06] Grounded query error (404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.0-flash is no longer available to new users. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}) — falling back to raw REST
+[2026-03-23 20:00:19] Regime: DISTRIBUTION (4%) | S13: DISTRIBUTION | Consensus: YES
+[2026-03-23 20:00:19] Generating Gemini news digest...
+[2026-03-23 20:00:20] Grounded query error (404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.0-flash is no longer available to new users. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}) — falling back to raw REST
+[2026-03-23 20:00:29] Digest generated (469 chars)
+[2026-03-23 20:00:29] Saved Gemini analysis
+[2026-03-23 20:00:30] Telegram sent: 🧠 *Gemini Morning Brief*
+━━━━━━━━━━━━━━━━
+🌍 Crypto saw modes...
+[2026-03-23 20:00:31] Telegram sent: ✅ *Regime Consensus: DISTRIBUTION*
+System 13: DISTRIBUTION |...
+[2026-03-23 20:00:31] Telegram sent: 📊 *Gemini Outlook*
+30d: Expect continued volatility with a l...
+[2026-03-23 20:00:31] Gemini Brain complete

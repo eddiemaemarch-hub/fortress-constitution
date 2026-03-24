@@ -1,0 +1,1113 @@
+[
+  {
+    "timestamp": "2026-03-11T08:44:05.864850",
+    "gemini": {
+      "sp500_trend": "bullish",
+      "vix_level": "low",
+      "fed_stance": "neutral",
+      "key_themes": [
+        "AI enthusiasm driving tech stocks",
+        "Inflation concerns persist, but moderating",
+        "Interest rate expectations shifting",
+        "Geopolitical tensions remain a background factor"
+      ],
+      "risk_level": "medium"
+    },
+    "grok": {
+      "x_mood": "bullish",
+      "trending_tickers": [
+        "AAPL",
+        "TSLA",
+        "NVDA",
+        "MSFT",
+        "AMD"
+      ],
+      "key_narratives": [
+        "Strong earnings expectations for Big Tech driving optimism",
+        "Speculation around AI advancements boosting semiconductor stocks",
+        "Macroeconomic data suggesting potential rate cuts"
+      ],
+      "fear_greed": "greed"
+    }
+  },
+  {
+    "timestamp": "2026-03-11T09:30:06.448220",
+    "gemini": {},
+    "grok": {}
+  },
+  {
+    "timestamp": "2026-03-11T10:30:05.840903",
+    "gemini": {},
+    "grok": {}
+  },
+  {
+    "timestamp": "2026-03-11T11:30:07.225583",
+    "gemini": {},
+    "grok": {}
+  },
+  {
+    "timestamp": "2026-03-11T12:32:05.397894",
+    "gemini": {},
+    "grok": {}
+  },
+  {
+    "timestamp": "2026-03-11T13:31:00.109678",
+    "gemini": {},
+    "grok": {}
+  },
+  {
+    "timestamp": "2026-03-11T14:44:08.949950",
+    "gemini": {
+      "sp500_trend": "bullish",
+      "vix_level": "low",
+      "fed_stance": "neutral",
+      "key_themes": [
+        "AI-driven growth optimism",
+        "Inflation concerns easing but still present",
+        "Strong corporate earnings",
+        "Geopolitical stability (relatively)"
+      ],
+      "risk_level": "medium"
+    },
+    "grok": {
+      "x_mood": "bullish",
+      "trending_tickers": [
+        "AAPL",
+        "TSLA",
+        "NVDA",
+        "MSFT",
+        "AMD"
+      ],
+      "key_narratives": [
+        "Strong earnings expectations for Big Tech driving optimism",
+        "AI sector growth speculation fueling bullish sentiment",
+        "Macroeconomic data suggesting potential rate cuts"
+      ],
+      "fear_greed": "greed"
+    }
+  },
+  {
+    "timestamp": "2026-03-11T14:52:08.712285",
+    "gemini": {},
+    "grok": {}
+  },
+  {
+    "timestamp": "2026-03-11T15:43:48.448695",
+    "gemini": {
+      "sp500_trend": "bullish",
+      "vix_level": "low",
+      "fed_stance": "neutral",
+      "key_themes": [
+        "AI enthusiasm driving tech stocks",
+        "Inflation concerns easing but still present",
+        "Strong corporate earnings season",
+        "Geopolitical stability (relative)"
+      ],
+      "risk_level": "medium"
+    },
+    "grok": {
+      "x_mood": "bullish",
+      "trending_tickers": [
+        "AAPL",
+        "TSLA",
+        "NVDA",
+        "MSFT",
+        "AMD"
+      ],
+      "key_narratives": [
+        "Strong earnings expectations for tech sector driving optimism",
+        "Speculation around AI advancements boosting semiconductor stocks",
+        "Macroeconomic data suggesting potential rate cuts"
+      ],
+      "fear_greed": "greed"
+    }
+  },
+  {
+    "timestamp": "2026-03-11T16:16:45.108752",
+    "gemini": {
+      "sp500_trend": "bullish",
+      "vix_level": "low",
+      "fed_stance": "neutral",
+      "key_themes": [
+        "AI-driven growth expectations",
+        "Inflation moderation and potential rate cuts",
+        "Strong corporate earnings",
+        "Geopolitical stability (relative)"
+      ],
+      "risk_level": "medium"
+    },
+    "grok": {
+      "x_mood": "bullish",
+      "trending_tickers": [
+        "AAPL",
+        "TSLA",
+        "NVDA",
+        "MSFT",
+        "AMD"
+      ],
+      "key_narratives": [
+        "Strong earnings expectations for Big Tech driving optimism",
+        "AI sector growth speculation continues to fuel bullish sentiment",
+        "Concerns over potential Fed rate hikes being downplayed"
+      ],
+      "fear_greed": "greed"
+    }
+  },
+  {
+    "timestamp": "2026-03-11T19:11:01.542454",
+    "gemini": {
+      "sp500_trend": "bullish",
+      "vix_level": "low",
+      "fed_stance": "neutral",
+      "key_themes": [
+        "AI enthusiasm driving tech stocks",
+        "Inflation concerns persist, but moderating",
+        "Strong corporate earnings season",
+        "Geopolitical tensions remain a background risk"
+      ],
+      "risk_level": "medium"
+    },
+    "grok": {
+      "x_mood": "bullish",
+      "trending_tickers": [
+        "AAPL",
+        "TSLA",
+        "NVDA",
+        "MSFT",
+        "AMD"
+      ],
+      "key_narratives": [
+        "Strong earnings expectations for tech sector driving optimism",
+        "Speculation around AI advancements boosting semiconductor stocks",
+        "Anticipation of Federal Reserve rate cuts fueling risk-on sentiment"
+      ],
+      "fear_greed": "greed"
+    }
+  },
+  {
+    "timestamp": "2026-03-12T08:14:09.619284",
+    "gemini": {
+      "sp500_trend": "bullish",
+      "vix_level": "low",
+      "fed_stance": "neutral",
+      "key_themes": [
+        "AI-driven growth optimism",
+        "Inflation concerns easing but still present",
+        "Strong corporate earnings",
+        "Interest rate uncertainty (potential cuts later in the year)"
+      ],
+      "risk_level": "medium"
+    },
+    "grok": {
+      "x_mood": "bullish",
+      "trending_tickers": [
+        "AAPL",
+        "TSLA",
+        "NVDA",
+        "MSFT",
+        "AMD"
+      ],
+      "key_narratives": [
+        "Strong earnings expectations for Big Tech driving optimism",
+        "Speculation around AI advancements boosting semiconductor stocks",
+        "Macroeconomic data suggesting potential rate cuts"
+      ],
+      "fear_greed": "greed"
+    }
+  },
+  {
+    "timestamp": "2026-03-12T09:45:34.759077",
+    "gemini": {
+      "sp500_trend": "bullish",
+      "vix_level": "low",
+      "fed_stance": "neutral",
+      "key_themes": [
+        "AI enthusiasm driving tech stocks",
+        "Inflation concerns persist but show signs of easing",
+        "Interest rate expectations remain a key focus",
+        "Geopolitical tensions creating pockets of volatility"
+      ],
+      "risk_level": "medium"
+    },
+    "grok": {
+      "x_mood": "bullish",
+      "trending_tickers": [
+        "AAPL",
+        "TSLA",
+        "NVDA",
+        "MSFT",
+        "AMD"
+      ],
+      "key_narratives": [
+        "Strong earnings expectations for tech sector driving optimism",
+        "Speculation around AI advancements boosting semiconductor stocks",
+        "Anticipation of Federal Reserve rate cuts fueling risk-on sentiment"
+      ],
+      "fear_greed": "greed"
+    }
+  },
+  {
+    "timestamp": "2026-03-12T10:41:38.345763",
+    "gemini": {
+      "sp500_trend": "bullish",
+      "vix_level": "low",
+      "fed_stance": "neutral",
+      "key_themes": [
+        "AI-driven growth optimism",
+        "Inflation concerns easing but still present",
+        "Strong corporate earnings",
+        "Geopolitical stability (relative)"
+      ],
+      "risk_level": "medium"
+    },
+    "grok": {
+      "x_mood": "bullish",
+      "trending_tickers": [
+        "AAPL",
+        "TSLA",
+        "NVDA",
+        "MSFT",
+        "AMD"
+      ],
+      "key_narratives": [
+        "Strong earnings reports from tech giants driving optimism",
+        "Speculation around AI and semiconductor growth",
+        "Anticipation of Federal Reserve rate cuts"
+      ],
+      "fear_greed": "greed"
+    }
+  },
+  {
+    "timestamp": "2026-03-12T11:37:25.630112",
+    "gemini": {
+      "sp500_trend": "bullish",
+      "vix_level": "low",
+      "fed_stance": "neutral",
+      "key_themes": [
+        "AI enthusiasm driving tech stocks",
+        "Inflation concerns moderating but still present",
+        "Interest rate cut expectations fluctuating",
+        "Geopolitical tensions remain a background risk"
+      ],
+      "risk_level": "medium"
+    },
+    "grok": {
+      "x_mood": "bullish",
+      "trending_tickers": [
+        "AAPL",
+        "TSLA",
+        "NVDA",
+        "MSFT",
+        "AMD"
+      ],
+      "key_narratives": [
+        "Strong earnings expectations for tech sector driving optimism",
+        "Speculation around AI advancements boosting semiconductor stocks",
+        "Anticipation of Federal Reserve rate cuts fueling risk-on sentiment"
+      ],
+      "fear_greed": "greed"
+    }
+  },
+  {
+    "timestamp": "2026-03-12T12:39:29.341059",
+    "gemini": {
+      "sp500_trend": "bullish",
+      "vix_level": "low",
+      "fed_stance": "neutral",
+      "key_themes": [
+        "AI-driven growth optimism",
+        "Inflation moderation and potential rate cuts",
+        "Resilient consumer spending",
+        "Geopolitical tensions and supply chain considerations"
+      ],
+      "risk_level": "medium"
+    },
+    "grok": {
+      "x_mood": "bullish",
+      "trending_tickers": [
+        "AAPL",
+        "TSLA",
+        "NVDA",
+        "MSFT",
+        "AMD"
+      ],
+      "key_narratives": [
+        "Strong earnings expectations for Big Tech driving optimism",
+        "AI sector growth fueling bullish sentiment on semiconductor stocks",
+        "Speculation around Fed rate cuts boosting risk appetite"
+      ],
+      "fear_greed": "greed"
+    }
+  },
+  {
+    "timestamp": "2026-03-12T13:37:54.420875",
+    "gemini": {
+      "sp500_trend": "bullish",
+      "vix_level": "low",
+      "fed_stance": "neutral",
+      "key_themes": [
+        "AI enthusiasm driving tech stocks",
+        "Inflation concerns persist but show signs of easing",
+        "Interest rate expectations remain a key focus",
+        "Geopolitical tensions continue to be a background factor"
+      ],
+      "risk_level": "medium"
+    },
+    "grok": {
+      "x_mood": "bullish",
+      "trending_tickers": [
+        "AAPL",
+        "TSLA",
+        "NVDA",
+        "MSFT",
+        "AMD"
+      ],
+      "key_narratives": [
+        "Strong earnings expectations for Big Tech driving optimism",
+        "Speculation around AI sector growth with NVDA leading",
+        "Positive sentiment on Tesla's upcoming product announcements"
+      ],
+      "fear_greed": "greed"
+    }
+  },
+  {
+    "timestamp": "2026-03-12T14:38:21.792686",
+    "gemini": {
+      "sp500_trend": "bullish",
+      "vix_level": "low",
+      "fed_stance": "neutral",
+      "key_themes": [
+        "AI enthusiasm driving tech stocks",
+        "Inflation concerns persist, but moderating",
+        "Geopolitical risks remain a background factor",
+        "Interest rate expectations influencing bond markets"
+      ],
+      "risk_level": "medium"
+    },
+    "grok": {
+      "x_mood": "bullish",
+      "trending_tickers": [
+        "AAPL",
+        "TSLA",
+        "NVDA",
+        "MSFT",
+        "AMD"
+      ],
+      "key_narratives": [
+        "Strong earnings expectations for Big Tech driving optimism",
+        "Speculation around AI advancements boosting semiconductor stocks",
+        "Anticipation of Federal Reserve rate cuts fueling risk-on sentiment"
+      ],
+      "fear_greed": "greed"
+    }
+  },
+  {
+    "timestamp": "2026-03-12T15:38:47.277856",
+    "gemini": {
+      "sp500_trend": "bullish",
+      "vix_level": "low",
+      "fed_stance": "neutral",
+      "key_themes": [
+        "AI enthusiasm driving tech stocks",
+        "Inflation concerns moderating but still present",
+        "Interest rate cut expectations fluctuating",
+        "Geopolitical tensions remain a background risk"
+      ],
+      "risk_level": "medium"
+    },
+    "grok": {
+      "x_mood": "bullish",
+      "trending_tickers": [
+        "AAPL",
+        "TSLA",
+        "NVDA",
+        "MSFT",
+        "AMD"
+      ],
+      "key_narratives": [
+        "Strong earnings expectations for Big Tech driving optimism",
+        "AI sector growth fueling investor excitement",
+        "Speculation around Fed rate cuts boosting risk appetite"
+      ],
+      "fear_greed": "greed"
+    }
+  },
+  {
+    "timestamp": "2026-03-12T16:12:53.965643",
+    "gemini": {
+      "sp500_trend": "bullish",
+      "vix_level": "low",
+      "fed_stance": "neutral",
+      "key_themes": [
+        "AI enthusiasm driving tech stocks",
+        "Inflation concerns persist, but moderating",
+        "Interest rate expectations shifting",
+        "Geopolitical risks remain a background factor"
+      ],
+      "risk_level": "medium"
+    },
+    "grok": {
+      "x_mood": "bullish",
+      "trending_tickers": [
+        "AAPL",
+        "TSLA",
+        "NVDA",
+        "MSFT",
+        "AMD"
+      ],
+      "key_narratives": [
+        "Strong earnings expectations for tech sector driving optimism",
+        "Speculation around AI advancements boosting semiconductor stocks",
+        "Macroeconomic data suggesting potential rate cuts"
+      ],
+      "fear_greed": "greed"
+    }
+  },
+  {
+    "timestamp": "2026-03-12T19:06:59.422683",
+    "gemini": {
+      "sp500_trend": "bullish",
+      "vix_level": "low",
+      "fed_stance": "neutral",
+      "key_themes": [
+        "AI enthusiasm driving tech stocks",
+        "Inflation concerns persist but moderating",
+        "Interest rate cut expectations fluctuating",
+        "Strong corporate earnings in select sectors"
+      ],
+      "risk_level": "medium"
+    },
+    "grok": {
+      "x_mood": "bullish",
+      "trending_tickers": [
+        "AAPL",
+        "TSLA",
+        "NVDA",
+        "MSFT",
+        "AMD"
+      ],
+      "key_narratives": [
+        "Strong earnings expectations for Big Tech driving optimism",
+        "Speculation around AI advancements boosting semiconductor stocks",
+        "Macro concerns easing with positive inflation data"
+      ],
+      "fear_greed": "greed"
+    }
+  },
+  {
+    "timestamp": "2026-03-13T08:07:39.789775",
+    "gemini": {
+      "sp500_trend": "bullish",
+      "vix_level": "low",
+      "fed_stance": "neutral",
+      "key_themes": [
+        "AI enthusiasm driving tech stocks",
+        "Inflation concerns persist, but moderating",
+        "Interest rate expectations shifting",
+        "Geopolitical risks remain a background factor"
+      ],
+      "risk_level": "medium"
+    },
+    "grok": {
+      "x_mood": "bullish",
+      "trending_tickers": [
+        "AAPL",
+        "TSLA",
+        "NVDA",
+        "MSFT",
+        "AMD"
+      ],
+      "key_narratives": [
+        "Strong earnings expectations for tech sector driving optimism",
+        "AI and semiconductor growth narratives gaining traction",
+        "Speculation around upcoming Fed rate decisions"
+      ],
+      "fear_greed": "greed"
+    }
+  },
+  {
+    "timestamp": "2026-03-13T09:42:26.102902",
+    "gemini": {
+      "sp500_trend": "bullish",
+      "vix_level": "low",
+      "fed_stance": "neutral",
+      "key_themes": [
+        "AI-driven growth expectations",
+        "Inflation moderation and potential rate cuts",
+        "Strong corporate earnings",
+        "Geopolitical stability (relative)"
+      ],
+      "risk_level": "medium"
+    },
+    "grok": {
+      "x_mood": "bullish",
+      "trending_tickers": [
+        "AAPL",
+        "TSLA",
+        "NVDA",
+        "MSFT",
+        "AMD"
+      ],
+      "key_narratives": [
+        "Strong earnings expectations for Big Tech driving optimism",
+        "Speculation around AI advancements boosting semiconductor stocks",
+        "Concerns over inflation data being overshadowed by positive sentiment"
+      ],
+      "fear_greed": "greed"
+    }
+  },
+  {
+    "timestamp": "2026-03-13T10:54:23.030972",
+    "gemini": {
+      "sp500_trend": "bullish",
+      "vix_level": "low",
+      "fed_stance": "neutral",
+      "key_themes": [
+        "AI-driven growth optimism",
+        "Inflation concerns moderating",
+        "Interest rate stability expectations",
+        "Strong corporate earnings"
+      ],
+      "risk_level": "medium"
+    },
+    "grok": {
+      "x_mood": "bullish",
+      "trending_tickers": [
+        "AAPL",
+        "TSLA",
+        "NVDA",
+        "MSFT",
+        "AMD"
+      ],
+      "key_narratives": [
+        "Strong earnings expectations for Big Tech driving optimism",
+        "AI sector growth fueling bullish sentiment on semiconductor stocks",
+        "Speculation around upcoming Fed rate decisions"
+      ],
+      "fear_greed": "greed"
+    }
+  },
+  {
+    "timestamp": "2026-03-13T11:41:20.247326",
+    "gemini": {
+      "sp500_trend": "bullish",
+      "vix_level": "low",
+      "fed_stance": "neutral",
+      "key_themes": [
+        "AI enthusiasm driving tech stocks",
+        "Inflation concerns persist but show signs of easing",
+        "Strong corporate earnings supporting market gains",
+        "Geopolitical tensions remain a background risk"
+      ],
+      "risk_level": "medium"
+    },
+    "grok": {
+      "x_mood": "bullish",
+      "trending_tickers": [
+        "AAPL",
+        "TSLA",
+        "NVDA",
+        "MSFT",
+        "AMD"
+      ],
+      "key_narratives": [
+        "Strong earnings expectations for Big Tech driving optimism",
+        "AI sector growth fueling bullish sentiment for semiconductor stocks",
+        "Speculation around upcoming Fed rate decisions"
+      ],
+      "fear_greed": "greed"
+    }
+  },
+  {
+    "timestamp": "2026-03-13T12:39:42.029567",
+    "gemini": {
+      "sp500_trend": "bullish",
+      "vix_level": "low",
+      "fed_stance": "neutral",
+      "key_themes": [
+        "AI-driven growth optimism",
+        "Inflation moderation and potential rate cuts",
+        "Strong corporate earnings",
+        "Geopolitical stability concerns"
+      ],
+      "risk_level": "medium"
+    },
+    "grok": {
+      "x_mood": "bullish",
+      "trending_tickers": [
+        "AAPL",
+        "TSLA",
+        "NVDA",
+        "MSFT",
+        "AMD"
+      ],
+      "key_narratives": [
+        "Strong earnings expectations for tech sector driving optimism",
+        "Speculation around AI advancements boosting semiconductor stocks",
+        "Anticipation of Federal Reserve rate cuts fueling risk-on sentiment"
+      ],
+      "fear_greed": "greed"
+    }
+  },
+  {
+    "timestamp": "2026-03-13T13:40:33.344616",
+    "gemini": {
+      "sp500_trend": "bullish",
+      "vix_level": "low",
+      "fed_stance": "neutral",
+      "key_themes": [
+        "AI enthusiasm driving tech stocks",
+        "Inflation concerns persist, but moderating",
+        "Interest rate expectations influencing bond yields",
+        "Geopolitical tensions remain a background risk"
+      ],
+      "risk_level": "medium"
+    },
+    "grok": {
+      "x_mood": "bullish",
+      "trending_tickers": [
+        "AAPL",
+        "TSLA",
+        "NVDA",
+        "MSFT",
+        "AMD"
+      ],
+      "key_narratives": [
+        "Strong earnings expectations for Big Tech driving optimism",
+        "AI sector growth fueling interest in semiconductor stocks",
+        "Speculation around upcoming Fed rate decisions"
+      ],
+      "fear_greed": "greed"
+    }
+  },
+  {
+    "timestamp": "2026-03-13T14:40:34.812826",
+    "gemini": {
+      "sp500_trend": "bullish",
+      "vix_level": "low",
+      "fed_stance": "neutral",
+      "key_themes": [
+        "AI enthusiasm driving tech stocks",
+        "Inflation concerns persist but show signs of easing",
+        "Interest rate expectations remain a key focus",
+        "Geopolitical tensions continue to be a background risk"
+      ],
+      "risk_level": "medium"
+    },
+    "grok": {
+      "x_mood": "bullish",
+      "trending_tickers": [
+        "AAPL",
+        "TSLA",
+        "NVDA",
+        "MSFT",
+        "AMD"
+      ],
+      "key_narratives": [
+        "Strong earnings expectations for Big Tech driving optimism",
+        "AI sector growth fueling excitement around semiconductor stocks",
+        "Speculation on upcoming Fed rate decisions"
+      ],
+      "fear_greed": "greed"
+    }
+  },
+  {
+    "timestamp": "2026-03-13T15:38:34.748728",
+    "gemini": {
+      "sp500_trend": "bullish",
+      "vix_level": "low",
+      "fed_stance": "neutral",
+      "key_themes": [
+        "AI enthusiasm driving tech stocks",
+        "Inflation concerns persist, but moderating",
+        "Geopolitical tensions remain a background risk",
+        "Interest rate expectations are a key focus"
+      ],
+      "risk_level": "medium"
+    },
+    "grok": {
+      "x_mood": "bullish",
+      "trending_tickers": [
+        "AAPL",
+        "TSLA",
+        "NVDA",
+        "MSFT",
+        "AMD"
+      ],
+      "key_narratives": [
+        "Strong earnings expectations for tech sector driving optimism",
+        "Speculation around AI advancements boosting semiconductor stocks",
+        "Anticipation of Federal Reserve rate cuts fueling risk-on sentiment"
+      ],
+      "fear_greed": "greed"
+    }
+  },
+  {
+    "timestamp": "2026-03-13T16:11:24.298944",
+    "gemini": {
+      "sp500_trend": "bullish",
+      "vix_level": "low",
+      "fed_stance": "neutral",
+      "key_themes": [
+        "AI-driven growth optimism",
+        "Inflation concerns easing",
+        "Interest rate stability expectations",
+        "Resilient consumer spending"
+      ],
+      "risk_level": "medium"
+    },
+    "grok": {
+      "x_mood": "bullish",
+      "trending_tickers": [
+        "AAPL",
+        "TSLA",
+        "NVDA",
+        "MSFT",
+        "AMD"
+      ],
+      "key_narratives": [
+        "Strong earnings expectations for tech sector driving optimism",
+        "Speculation around AI advancements boosting semiconductor stocks",
+        "Macroeconomic data suggesting potential rate cuts"
+      ],
+      "fear_greed": "greed"
+    }
+  },
+  {
+    "timestamp": "2026-03-13T19:06:28.096375",
+    "gemini": {
+      "sp500_trend": "bullish",
+      "vix_level": "low",
+      "fed_stance": "neutral",
+      "key_themes": [
+        "AI-driven growth optimism",
+        "Inflation concerns moderating",
+        "Interest rate stability expectations",
+        "Strong corporate earnings"
+      ],
+      "risk_level": "medium"
+    },
+    "grok": {
+      "x_mood": "bullish",
+      "trending_tickers": [
+        "AAPL",
+        "TSLA",
+        "NVDA",
+        "MSFT",
+        "AMD"
+      ],
+      "key_narratives": [
+        "Strong earnings expectations for tech sector driving optimism",
+        "Speculation around AI advancements boosting semiconductor stocks",
+        "Anticipation of Federal Reserve rate cuts fueling risk-on sentiment"
+      ],
+      "fear_greed": "greed"
+    }
+  },
+  {
+    "timestamp": "2026-03-14T10:06:57.756679",
+    "gemini": {
+      "sp500_trend": "bullish",
+      "vix_level": "low",
+      "fed_stance": "neutral",
+      "key_themes": [
+        "AI enthusiasm driving tech stocks",
+        "Inflation concerns persist but moderating",
+        "Interest rate cut expectations fluctuating",
+        "Geopolitical tensions remain a background risk"
+      ],
+      "risk_level": "medium"
+    },
+    "grok": {
+      "x_mood": "bullish",
+      "trending_tickers": [
+        "AAPL",
+        "TSLA",
+        "NVDA",
+        "MSFT",
+        "AMD"
+      ],
+      "key_narratives": [
+        "Strong earnings expectations for tech sector driving optimism",
+        "Speculation around AI advancements boosting semiconductor stocks",
+        "Anticipation of Federal Reserve rate cuts fueling risk-on sentiment"
+      ],
+      "fear_greed": "greed"
+    }
+  },
+  {
+    "timestamp": "2026-03-15T10:07:31.394870",
+    "gemini": {
+      "sp500_trend": "bullish",
+      "vix_level": "low",
+      "fed_stance": "neutral",
+      "key_themes": [
+        "AI enthusiasm driving tech stocks",
+        "Inflation concerns persist but show signs of moderation",
+        "Interest rate expectations remain a key focus",
+        "Geopolitical tensions creating pockets of volatility"
+      ],
+      "risk_level": "medium"
+    },
+    "grok": {
+      "x_mood": "bullish",
+      "trending_tickers": [
+        "AAPL",
+        "TSLA",
+        "NVDA",
+        "MSFT",
+        "AMD"
+      ],
+      "key_narratives": [
+        "Strong earnings expectations for Big Tech driving optimism",
+        "Speculation around AI and semiconductor growth",
+        "Concerns over potential Fed rate hikes being downplayed"
+      ],
+      "fear_greed": "greed"
+    }
+  },
+  {
+    "timestamp": "2026-03-15T12:00:00.000000",
+    "type": "mstr_strategy_analysis",
+    "source": "commander_briefing",
+    "ticker": "MSTR",
+    "ema_analysis": {
+      "monthly_200ema": {
+        "price_position": "above",
+        "trend_toward_ema": true,
+        "interpretation": "Long-term uptrend (16+ years) intact. 200-month EMA acting as dynamic support. Macro bull market for MSTR as BTC treasury proxy has NOT been broken. Corrections staying above this line are healthy shakeouts, not trend reversals."
+      },
+      "weekly_200ema": {
+        "price_position": "below",
+        "trend_toward_ema": true,
+        "ema_zone": "$150-$180 historically",
+        "interpretation": "Classic mid-cycle correction after parabolic run. 2024-2025 bull leg pushed MSTR to $457-$543 ATH. 2025-2026 correction took it down ~60-70% to ~$139 consolidation. Price below 200W EMA but heading toward it = correction is maturing."
+      },
+      "combined_signal": "TEXTBOOK CYCLE-LOW SETUP. Monthly above 200 EMA = long-term bull intact with macro tailwinds. Weekly below 200 EMA but approaching = intermediate correction nearing exhaustion. This is GREEN LIGHT confirmation for the cycle-low LEAP moonshot entry.",
+      "strategy_alignment": "This is NOT a broken trend. NOT chasing a top. Waiting for the exact compression/recovery inflection where deep OTM calls are cheapest and have maximum convexity."
+    },
+    "entry_signals_to_watch": {
+      "weekly_200ema_reclaim": "When price reclaims weekly 200 EMA (~$150-$180) with volume + green weeks + premium <= 1.5x = confluence entry signal (thick white line crossover + filters)",
+      "btc_stabilization": "BTC needs to stabilize/turn up from $45-$50k bottom for cycle confirmation",
+      "premium_compression": "MSTR premium stays compressed near 1x NAV = ideal entry zone"
+    },
+    "risk_assessment": "This is precisely the prelude to the kind of move the $130k lottery ticket strategy is designed for. The chart shows the exact environment where deep OTM LEAPs have maximum convexity. Not fighting the tape \u2014 aligned with the macro cycle."
+  },
+  {
+    "timestamp": "2026-03-16T08:07:51.574425",
+    "gemini": {
+      "sp500_trend": "bullish",
+      "vix_level": "low",
+      "fed_stance": "neutral",
+      "key_themes": [
+        "AI enthusiasm driving tech stocks",
+        "Inflation concerns persist but moderating",
+        "Interest rate expectations stabilizing",
+        "Geopolitical tensions remain a background risk"
+      ],
+      "risk_level": "medium"
+    },
+    "grok": {
+      "x_mood": "bullish",
+      "trending_tickers": [
+        "AAPL",
+        "TSLA",
+        "NVDA",
+        "MSFT",
+        "AMD"
+      ],
+      "key_narratives": [
+        "Strong earnings expectations for Big Tech driving optimism",
+        "Speculation around AI advancements boosting semiconductor stocks",
+        "Concerns over inflation data being overshadowed by positive sentiment"
+      ],
+      "fear_greed": "greed"
+    }
+  },
+  {
+    "timestamp": "2026-03-16T09:38:18.510869",
+    "gemini": {
+      "sp500_trend": "bullish",
+      "vix_level": "low",
+      "fed_stance": "neutral",
+      "key_themes": [
+        "AI enthusiasm driving tech stocks",
+        "Inflation concerns moderating but still present",
+        "Interest rate cut expectations shifting",
+        "Strong corporate earnings season"
+      ],
+      "risk_level": "medium"
+    },
+    "grok": {
+      "x_mood": "bullish",
+      "trending_tickers": [
+        "AAPL",
+        "TSLA",
+        "NVDA",
+        "MSFT",
+        "AMD"
+      ],
+      "key_narratives": [
+        "Strong earnings expectations for Big Tech driving optimism",
+        "Speculation around AI advancements boosting semiconductor stocks",
+        "Macroeconomic data suggesting potential rate cuts"
+      ],
+      "fear_greed": "greed"
+    }
+  },
+  {
+    "timestamp": "2026-03-16T10:38:15.834283",
+    "gemini": {
+      "sp500_trend": "bullish",
+      "vix_level": "low",
+      "fed_stance": "neutral",
+      "key_themes": [
+        "AI enthusiasm driving tech stocks",
+        "Inflation concerns easing but still present",
+        "Strong corporate earnings season",
+        "Geopolitical risks remain a background factor"
+      ],
+      "risk_level": "medium"
+    },
+    "grok": {
+      "x_mood": "bullish",
+      "trending_tickers": [
+        "AAPL",
+        "TSLA",
+        "NVDA",
+        "MSFT",
+        "AMD"
+      ],
+      "key_narratives": [
+        "Strong earnings expectations for Big Tech driving optimism",
+        "Speculation around AI advancements boosting semiconductor stocks",
+        "Macroeconomic data suggesting potential rate cuts"
+      ],
+      "fear_greed": "greed"
+    }
+  },
+  {
+    "timestamp": "2026-03-16T11:41:19.752797",
+    "gemini": {
+      "sp500_trend": "bullish",
+      "vix_level": "low",
+      "fed_stance": "neutral",
+      "key_themes": [
+        "AI-driven growth optimism",
+        "Inflation concerns easing but still present",
+        "Strong corporate earnings",
+        "Geopolitical stability (relative)"
+      ],
+      "risk_level": "medium"
+    },
+    "grok": {
+      "x_mood": "bullish",
+      "trending_tickers": [
+        "AAPL",
+        "TSLA",
+        "NVDA",
+        "MSFT",
+        "AMD"
+      ],
+      "key_narratives": [
+        "Strong earnings expectations for Big Tech driving optimism",
+        "AI sector growth fueling bullish sentiment on semiconductor stocks",
+        "Speculation around upcoming Fed rate decisions"
+      ],
+      "fear_greed": "greed"
+    }
+  },
+  {
+    "timestamp": "2026-03-16T16:12:56.966278",
+    "gemini": {
+      "sp500_trend": "bullish",
+      "vix_level": "low",
+      "fed_stance": "neutral",
+      "key_themes": [
+        "AI enthusiasm driving tech stocks",
+        "Inflation concerns persist but show signs of easing",
+        "Geopolitical tensions remain a background risk",
+        "Interest rate expectations influencing bond markets"
+      ],
+      "risk_level": "medium"
+    },
+    "grok": {
+      "x_mood": "bullish",
+      "trending_tickers": [
+        "AAPL",
+        "TSLA",
+        "NVDA",
+        "MSFT",
+        "AMD"
+      ],
+      "key_narratives": [
+        "Strong earnings expectations for Big Tech driving optimism",
+        "AI sector growth fueling investor excitement",
+        "Speculation around Fed rate cuts boosting risk appetite"
+      ],
+      "fear_greed": "greed"
+    }
+  },
+  {
+    "timestamp": "2026-03-16T19:07:50.151384",
+    "gemini": {
+      "sp500_trend": "bullish",
+      "vix_level": "low",
+      "fed_stance": "neutral",
+      "key_themes": [
+        "AI enthusiasm driving tech stocks",
+        "Inflation concerns persist but moderating",
+        "Interest rate expectations stabilizing",
+        "Geopolitical tensions remain a backdrop"
+      ],
+      "risk_level": "medium"
+    },
+    "grok": {
+      "x_mood": "bullish",
+      "trending_tickers": [
+        "AAPL",
+        "TSLA",
+        "NVDA",
+        "MSFT",
+        "AMD"
+      ],
+      "key_narratives": [
+        "Strong earnings expectations for Big Tech driving optimism",
+        "AI sector growth fueling investor excitement",
+        "Speculation around upcoming Fed rate decisions"
+      ],
+      "fear_greed": "greed"
+    }
+  },
+  {
+    "timestamp": "2026-03-17T08:06:42.505464",
+    "gemini": {
+      "sp500_trend": "bullish",
+      "vix_level": "low",
+      "fed_stance": "neutral",
+      "key_themes": [
+        "AI enthusiasm driving tech stocks",
+        "Inflation concerns persist but moderating",
+        "Interest rate uncertainty remains",
+        "Geopolitical tensions continue to be a background factor"
+      ],
+      "risk_level": "medium"
+    },
+    "grok": {
+      "x_mood": "bullish",
+      "trending_tickers": [
+        "AAPL",
+        "TSLA",
+        "NVDA",
+        "MSFT",
+        "AMD"
+      ],
+      "key_narratives": [
+        "Strong earnings expectations for Big Tech driving optimism",
+        "Speculation around AI advancements boosting semiconductor stocks",
+        "Macroeconomic data suggesting potential rate cuts"
+      ],
+      "fear_greed": "greed"
+    }
+  }
+]

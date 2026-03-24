@@ -1,0 +1,320 @@
+[VerifyT23 2026-03-23 16:39:01] ============================================================
+[VerifyT23 2026-03-23 16:39:01] Execution Path Verify T2+T3 — Monday Mar 23 16:39 ET (CLOSE)
+[VerifyT23 2026-03-23 16:39:01] ============================================================
+[VerifyT23 2026-03-23 16:39:01] 
+[SHARED] IBKR Connection
+[VerifyT23 2026-03-23 16:39:01]   ✅ IBKR TWS port 7496 open (shared check)
+[VerifyT23 2026-03-23 16:39:01] 
+[SHARED] Telegram HITL
+[VerifyT23 2026-03-23 16:39:02]   ✅ Telegram HITL reachable — exit approvals WILL deliver
+[VerifyT23 2026-03-23 16:39:02] 
+──────────────────────────────────────────────────
+[VerifyT23 2026-03-23 16:39:02] Trader2 (MSTR $50 Put) — trader2_mstr_put.py
+[VerifyT23 2026-03-23 16:39:02] ──────────────────────────────────────────────────
+[VerifyT23 2026-03-23 16:39:02] 
+  Trader2 — Daemon
+[VerifyT23 2026-03-23 16:39:02]   ✅ Trader2 daemon running (PID 78755)
+[VerifyT23 2026-03-23 16:39:02] 
+  Trader2 — LaunchAgent
+[VerifyT23 2026-03-23 16:39:02]   ✅ LaunchAgent com.rudy.trader2 registered
+[VerifyT23 2026-03-23 16:39:02] 
+  Trader2 — State Fresh
+[VerifyT23 2026-03-23 16:39:02]   ✅ Trader2 state fresh — last check 0.6h ago
+[VerifyT23 2026-03-23 16:39:02] 
+  Trader2 — State Valid
+[VerifyT23 2026-03-23 16:39:02]   ✅ Trader2 state file valid and writable
+[VerifyT23 2026-03-23 16:39:02] 
+  Trader2 — IBKR Position
+[VerifyT23 2026-03-23 16:39:02]   ✅ Trader2 position confirmed in IBKR: MSTR $50P qty=0 avg=$0.00 exp=20280121
+[VerifyT23 2026-03-23 16:39:02] 
+  Trader2 — Ladder Status
+[VerifyT23 2026-03-23 16:39:02]   🔴 Current gain: -21.2% | Value: $987.01
+[VerifyT23 2026-03-23 16:39:02]   Activated: ⏳ Not yet
+[VerifyT23 2026-03-23 16:39:02]   Contracts remaining: 1
+[VerifyT23 2026-03-23 16:39:02]   Tiers hit: None yet
+[VerifyT23 2026-03-23 16:39:02]   Next trigger: Tier 1 at +150% (need +171% more | trail will set to 20%)
+[VerifyT23 2026-03-23 16:39:02]   ⚠️  Trader2 monitoring — at -21.2% | activates at +150%
+[VerifyT23 2026-03-23 16:39:02] 
+  Trader2 — Expiry
+[VerifyT23 2026-03-23 16:39:02]   ✅ Trader2 expiry OK — 668d to Jan 21 2028
+[VerifyT23 2026-03-23 16:39:02] 
+  Trader2 — PID Lock
+[VerifyT23 2026-03-23 16:39:02]   ✅ Trader2 PID lock present (PID 78755)
+[VerifyT23 2026-03-23 16:39:02] 
+  Trader2 — Exit Code
+[VerifyT23 2026-03-23 16:39:02]   ✅ Trader2 exit code path importable — Trader2() clean
+[VerifyT23 2026-03-23 16:39:02] 
+──────────────────────────────────────────────────
+[VerifyT23 2026-03-23 16:39:02] Trader3 (SPY $430 Put) — trader3_spy_put.py
+[VerifyT23 2026-03-23 16:39:02] ──────────────────────────────────────────────────
+[VerifyT23 2026-03-23 16:39:02] 
+  Trader3 — Daemon
+[VerifyT23 2026-03-23 16:39:02]   ✅ Trader3 daemon running (PID 78766)
+[VerifyT23 2026-03-23 16:39:02] 
+  Trader3 — LaunchAgent
+[VerifyT23 2026-03-23 16:39:02]   ✅ LaunchAgent com.rudy.trader3 registered
+[VerifyT23 2026-03-23 16:39:02] 
+  Trader3 — State Fresh
+[VerifyT23 2026-03-23 16:39:02]   ✅ Trader3 state fresh — last check 0.7h ago
+[VerifyT23 2026-03-23 16:39:02] 
+  Trader3 — State Valid
+[VerifyT23 2026-03-23 16:39:02]   ✅ Trader3 state file valid and writable
+[VerifyT23 2026-03-23 16:39:02] 
+  Trader3 — IBKR Position
+[VerifyT23 2026-03-23 16:39:02]   ✅ Trader3 position confirmed in IBKR: SPY $430P qty=0 avg=$0.00 exp=20270115
+[VerifyT23 2026-03-23 16:39:02] 
+  Trader3 — Ladder Status
+[VerifyT23 2026-03-23 16:39:02]   🟢 Current gain: +24.9% | Value: $618.29
+[VerifyT23 2026-03-23 16:39:02]   Activated: ⏳ Not yet
+[VerifyT23 2026-03-23 16:39:02]   Contracts remaining: 1
+[VerifyT23 2026-03-23 16:39:02]   Tiers hit: None yet
+[VerifyT23 2026-03-23 16:39:02]   Next trigger: Tier 1 at +100% (need +75% more | trail will set to 20%)
+[VerifyT23 2026-03-23 16:39:02]   ⚠️  Trader3 monitoring — at +24.9% | activates at +100%
+[VerifyT23 2026-03-23 16:39:02] 
+  Trader3 — Expiry
+[VerifyT23 2026-03-23 16:39:02]   ✅ Trader3 expiry OK — 297d to Jan 15 2027
+[VerifyT23 2026-03-23 16:39:02] 
+  Trader3 — PID Lock
+[VerifyT23 2026-03-23 16:39:02]   ✅ Trader3 PID lock present (PID 78766)
+[VerifyT23 2026-03-23 16:39:02] 
+  Trader3 — Exit Code
+[VerifyT23 2026-03-23 16:39:02]   ✅ Trader3 exit code path importable — Trader3() clean
+[VerifyT23 2026-03-23 16:39:03] 
+Result: 20/20 passed | 0 failures | 2 warnings
+[VerifyT23 2026-03-23 16:45:23] ============================================================
+[VerifyT23 2026-03-23 16:45:23] Execution Path Verify T2+T3 — Monday Mar 23 16:45 ET (CLOSE)
+[VerifyT23 2026-03-23 16:45:23] ============================================================
+[VerifyT23 2026-03-23 16:45:23] 
+[SHARED] IBKR Connection
+[VerifyT23 2026-03-23 16:45:23]   ✅ IBKR TWS port 7496 open (shared check)
+[VerifyT23 2026-03-23 16:45:23] 
+[SHARED] Telegram HITL
+[VerifyT23 2026-03-23 16:45:24]   ✅ Telegram HITL reachable — exit approvals WILL deliver
+[VerifyT23 2026-03-23 16:45:24] 
+──────────────────────────────────────────────────
+[VerifyT23 2026-03-23 16:45:24] Trader2 (MSTR $50 Put) — trader2_mstr_put.py
+[VerifyT23 2026-03-23 16:45:24] ──────────────────────────────────────────────────
+[VerifyT23 2026-03-23 16:45:24] 
+  Trader2 — Daemon
+[VerifyT23 2026-03-23 16:45:24]   ✅ Trader2 daemon running (PID 78755)
+[VerifyT23 2026-03-23 16:45:24] 
+  Trader2 — LaunchAgent
+[VerifyT23 2026-03-23 16:45:24]   ✅ LaunchAgent com.rudy.trader2 registered
+[VerifyT23 2026-03-23 16:45:24] 
+  Trader2 — State Fresh
+[VerifyT23 2026-03-23 16:45:24]   ✅ Trader2 state fresh — last check 0.8h ago
+[VerifyT23 2026-03-23 16:45:24] 
+  Trader2 — State Valid
+[VerifyT23 2026-03-23 16:45:24]   ✅ Trader2 state file valid and writable
+[VerifyT23 2026-03-23 16:45:24] 
+  Trader2 — IBKR Position
+[VerifyT23 2026-03-23 16:45:24]   ✅ Trader2 position confirmed in IBKR: MSTR $50P qty=0 avg=$0.00 exp=20280121
+[VerifyT23 2026-03-23 16:45:24] 
+  Trader2 — Ladder Status
+[VerifyT23 2026-03-23 16:45:24]   🔴 Current gain: -21.2% | Value: $987.01
+[VerifyT23 2026-03-23 16:45:24]   Activated: ⏳ Not yet
+[VerifyT23 2026-03-23 16:45:24]   Contracts remaining: 1
+[VerifyT23 2026-03-23 16:45:24]   Tiers hit: None yet
+[VerifyT23 2026-03-23 16:45:24]   Next trigger: Tier 1 at +150% (need +171% more | trail will set to 20%)
+[VerifyT23 2026-03-23 16:45:24]   ⚠️  Trader2 monitoring — at -21.2% | activates at +150%
+[VerifyT23 2026-03-23 16:45:24] 
+  Trader2 — Trail Stop Math
+[VerifyT23 2026-03-23 16:45:24]   ✅ Trader2 not yet activated — trail math N/A (waiting for first tier)
+[VerifyT23 2026-03-23 16:45:24] 
+  Trader2 — Pending Sell
+[VerifyT23 2026-03-23 16:45:24]   ✅ Trader2 no pending sell — clean
+[VerifyT23 2026-03-23 16:45:24] 
+  Trader2 — Profit-Taking Sequence
+[VerifyT23 2026-03-23 16:45:24]   Trader2 Profit-Taking Roadmap:
+[VerifyT23 2026-03-23 16:45:24]     ⏳ +171% away Tier 1: +150% → tighten trail only | trail→20%
+[VerifyT23 2026-03-23 16:45:24]     ⏳ +321% away Tier 2: +300% → sell 25% remaining | trail→18%
+[VerifyT23 2026-03-23 16:45:24]     ⏳ +521% away Tier 3: +500% → sell 33% remaining | trail→15%
+[VerifyT23 2026-03-23 16:45:24]     ⏳ +821% away Tier 4: +800% → sell 50% remaining | trail→12%
+[VerifyT23 2026-03-23 16:45:24]   ✅ Trader2 profit-taking sequence intact | Monitoring: +171% to Tier 1 | Full ladder: +150% → +300% → +500% → +800% → runner 15%
+[VerifyT23 2026-03-23 16:45:24] 
+  Trader2 — Execute Sell Path
+[VerifyT23 2026-03-23 16:45:24]   ✅ Trader2 execute_sell() path clean — execute_sell + approve_pending_sell + _trigger_trail_stop + approve_expiry_roll all present
+[VerifyT23 2026-03-23 16:45:24] 
+  Trader2 — Expiry
+[VerifyT23 2026-03-23 16:45:24]   ✅ Trader2 expiry OK — 668d to Jan 21 2028
+[VerifyT23 2026-03-23 16:45:24] 
+  Trader2 — PID Lock
+[VerifyT23 2026-03-23 16:45:24]   ✅ Trader2 PID lock present (PID 78755)
+[VerifyT23 2026-03-23 16:45:24] 
+  Trader2 — Exit Code
+[VerifyT23 2026-03-23 16:45:24]   ✅ Trader2 exit code path importable — Trader2() clean
+[VerifyT23 2026-03-23 16:45:24] 
+──────────────────────────────────────────────────
+[VerifyT23 2026-03-23 16:45:24] Trader3 (SPY $430 Put) — trader3_spy_put.py
+[VerifyT23 2026-03-23 16:45:24] ──────────────────────────────────────────────────
+[VerifyT23 2026-03-23 16:45:24] 
+  Trader3 — Daemon
+[VerifyT23 2026-03-23 16:45:24]   ✅ Trader3 daemon running (PID 78766)
+[VerifyT23 2026-03-23 16:45:24] 
+  Trader3 — LaunchAgent
+[VerifyT23 2026-03-23 16:45:24]   ✅ LaunchAgent com.rudy.trader3 registered
+[VerifyT23 2026-03-23 16:45:24] 
+  Trader3 — State Fresh
+[VerifyT23 2026-03-23 16:45:24]   ✅ Trader3 state fresh — last check 0.8h ago
+[VerifyT23 2026-03-23 16:45:24] 
+  Trader3 — State Valid
+[VerifyT23 2026-03-23 16:45:24]   ✅ Trader3 state file valid and writable
+[VerifyT23 2026-03-23 16:45:24] 
+  Trader3 — IBKR Position
+[VerifyT23 2026-03-23 16:45:24]   ✅ Trader3 position confirmed in IBKR: SPY $430P qty=0 avg=$0.00 exp=20270115
+[VerifyT23 2026-03-23 16:45:24] 
+  Trader3 — Ladder Status
+[VerifyT23 2026-03-23 16:45:24]   🟢 Current gain: +24.9% | Value: $618.29
+[VerifyT23 2026-03-23 16:45:24]   Activated: ⏳ Not yet
+[VerifyT23 2026-03-23 16:45:24]   Contracts remaining: 1
+[VerifyT23 2026-03-23 16:45:24]   Tiers hit: None yet
+[VerifyT23 2026-03-23 16:45:24]   Next trigger: Tier 1 at +100% (need +75% more | trail will set to 20%)
+[VerifyT23 2026-03-23 16:45:24]   ⚠️  Trader3 monitoring — at +24.9% | activates at +100%
+[VerifyT23 2026-03-23 16:45:24] 
+  Trader3 — Trail Stop Math
+[VerifyT23 2026-03-23 16:45:24]   ✅ Trader3 not yet activated — trail math N/A (waiting for first tier)
+[VerifyT23 2026-03-23 16:45:24] 
+  Trader3 — Pending Sell
+[VerifyT23 2026-03-23 16:45:24]   ✅ Trader3 no pending sell — clean
+[VerifyT23 2026-03-23 16:45:24] 
+  Trader3 — Profit-Taking Sequence
+[VerifyT23 2026-03-23 16:45:24]   Trader3 Profit-Taking Roadmap:
+[VerifyT23 2026-03-23 16:45:24]     ⏳ +75% away Tier 1: +100% → tighten trail only | trail→20%
+[VerifyT23 2026-03-23 16:45:24]     ⏳ +175% away Tier 2: +200% → tighten trail only | trail→18%
+[VerifyT23 2026-03-23 16:45:24]     ⏳ +375% away Tier 3: +400% → tighten trail only | trail→15%
+[VerifyT23 2026-03-23 16:45:24]     ⏳ +675% away Tier 4: +700% → tighten trail only | trail→12%
+[VerifyT23 2026-03-23 16:45:24]   ✅ Trader3 profit-taking sequence intact | Monitoring: +75% to Tier 1 | Full ladder: +100% → +200% → +400% → +700% → runner 15%
+[VerifyT23 2026-03-23 16:45:24] 
+  Trader3 — Execute Sell Path
+[VerifyT23 2026-03-23 16:45:24]   ✅ Trader3 execute_sell() path clean — execute_sell + approve_pending_sell + _trigger_trail_stop + approve_expiry_roll all present
+[VerifyT23 2026-03-23 16:45:24] 
+  Trader3 — Expiry
+[VerifyT23 2026-03-23 16:45:24]   ✅ Trader3 expiry OK — 297d to Jan 15 2027
+[VerifyT23 2026-03-23 16:45:24] 
+  Trader3 — PID Lock
+[VerifyT23 2026-03-23 16:45:24]   ✅ Trader3 PID lock present (PID 78766)
+[VerifyT23 2026-03-23 16:45:24] 
+  Trader3 — Exit Code
+[VerifyT23 2026-03-23 16:45:25]   ✅ Trader3 exit code path importable — Trader3() clean
+[VerifyT23 2026-03-23 16:45:25] 
+Result: 28/28 passed | 0 failures | 2 warnings
+[VerifyT23 2026-03-23 16:55:46] ============================================================
+[VerifyT23 2026-03-23 16:55:46] Execution Path Verify T2+T3 — Monday Mar 23 16:55 ET (CLOSE)
+[VerifyT23 2026-03-23 16:55:46] ============================================================
+[VerifyT23 2026-03-23 16:55:46] 
+[SHARED] IBKR Connection
+[VerifyT23 2026-03-23 16:55:46]   ✅ IBKR TWS port 7496 open (shared check)
+[VerifyT23 2026-03-23 16:55:46] 
+[SHARED] Clone Prohibition (Article XI)
+[VerifyT23 2026-03-23 16:55:46]   ✅ Clone check clean — no unauthorized traders running
+[VerifyT23 2026-03-23 16:55:46] 
+[SHARED] Telegram HITL
+[VerifyT23 2026-03-23 16:55:47]   ✅ Telegram HITL reachable — exit approvals WILL deliver
+[VerifyT23 2026-03-23 16:55:47] 
+──────────────────────────────────────────────────
+[VerifyT23 2026-03-23 16:55:47] Trader2 (MSTR $50 Put) — trader2_mstr_put.py
+[VerifyT23 2026-03-23 16:55:47] ──────────────────────────────────────────────────
+[VerifyT23 2026-03-23 16:55:47] 
+  Trader2 — Daemon
+[VerifyT23 2026-03-23 16:55:47]   ✅ Trader2 daemon running (PID 78755)
+[VerifyT23 2026-03-23 16:55:47] 
+  Trader2 — LaunchAgent
+[VerifyT23 2026-03-23 16:55:47]   ✅ LaunchAgent com.rudy.trader2 registered
+[VerifyT23 2026-03-23 16:55:47] 
+  Trader2 — State Fresh
+[VerifyT23 2026-03-23 16:55:47]   ✅ Trader2 state fresh — last check 0.9h ago
+[VerifyT23 2026-03-23 16:55:47] 
+  Trader2 — State Valid
+[VerifyT23 2026-03-23 16:55:47]   ✅ Trader2 state file valid and writable
+[VerifyT23 2026-03-23 16:55:47] 
+  Trader2 — IBKR Position
+[VerifyT23 2026-03-23 16:55:47]   ✅ Trader2 position confirmed in IBKR: MSTR $50P qty=0 avg=$0.00 exp=20280121
+[VerifyT23 2026-03-23 16:55:47] 
+  Trader2 — Ladder Status
+[VerifyT23 2026-03-23 16:55:47]   🔴 Current gain: -21.2% | Value: $987.01
+[VerifyT23 2026-03-23 16:55:47]   Activated: ⏳ Not yet
+[VerifyT23 2026-03-23 16:55:47]   Contracts remaining: 1
+[VerifyT23 2026-03-23 16:55:47]   Tiers hit: None yet
+[VerifyT23 2026-03-23 16:55:47]   Next trigger: Tier 1 at +150% (need +171% more | trail will set to 20%)
+[VerifyT23 2026-03-23 16:55:47]   ⚠️  Trader2 monitoring — at -21.2% | activates at +150%
+[VerifyT23 2026-03-23 16:55:47] 
+  Trader2 — Trail Stop Math
+[VerifyT23 2026-03-23 16:55:47]   ✅ Trader2 not yet activated — trail math N/A (waiting for first tier)
+[VerifyT23 2026-03-23 16:55:47] 
+  Trader2 — Pending Sell
+[VerifyT23 2026-03-23 16:55:47]   ✅ Trader2 no pending sell — clean
+[VerifyT23 2026-03-23 16:55:47] 
+  Trader2 — Profit-Taking Sequence
+[VerifyT23 2026-03-23 16:55:47]   Trader2 Profit-Taking Roadmap:
+[VerifyT23 2026-03-23 16:55:47]     ⏳ +171% away Tier 1: +150% → tighten trail only | trail→20%
+[VerifyT23 2026-03-23 16:55:47]     ⏳ +321% away Tier 2: +300% → sell 25% remaining | trail→18%
+[VerifyT23 2026-03-23 16:55:47]     ⏳ +521% away Tier 3: +500% → sell 33% remaining | trail→15%
+[VerifyT23 2026-03-23 16:55:47]     ⏳ +821% away Tier 4: +800% → sell 50% remaining | trail→12%
+[VerifyT23 2026-03-23 16:55:47]   ✅ Trader2 profit-taking sequence intact | Monitoring: +171% to Tier 1 | Full ladder: +150% → +300% → +500% → +800% → runner 15%
+[VerifyT23 2026-03-23 16:55:47] 
+  Trader2 — Execute Sell Path
+[VerifyT23 2026-03-23 16:55:47]   ✅ Trader2 execute_sell() path clean — execute_sell + approve_pending_sell + _trigger_trail_stop + approve_expiry_roll all present
+[VerifyT23 2026-03-23 16:55:47] 
+  Trader2 — Expiry
+[VerifyT23 2026-03-23 16:55:47]   ✅ Trader2 expiry OK — 668d to Jan 21 2028
+[VerifyT23 2026-03-23 16:55:47] 
+  Trader2 — PID Lock
+[VerifyT23 2026-03-23 16:55:47]   ✅ Trader2 PID lock present (PID 78755)
+[VerifyT23 2026-03-23 16:55:47] 
+  Trader2 — Exit Code
+[VerifyT23 2026-03-23 16:55:47]   ✅ Trader2 exit code path importable — Trader2() clean
+[VerifyT23 2026-03-23 16:55:47] 
+──────────────────────────────────────────────────
+[VerifyT23 2026-03-23 16:55:47] Trader3 (SPY $430 Put) — trader3_spy_put.py
+[VerifyT23 2026-03-23 16:55:47] ──────────────────────────────────────────────────
+[VerifyT23 2026-03-23 16:55:47] 
+  Trader3 — Daemon
+[VerifyT23 2026-03-23 16:55:47]   ✅ Trader3 daemon running (PID 78766)
+[VerifyT23 2026-03-23 16:55:47] 
+  Trader3 — LaunchAgent
+[VerifyT23 2026-03-23 16:55:47]   ✅ LaunchAgent com.rudy.trader3 registered
+[VerifyT23 2026-03-23 16:55:47] 
+  Trader3 — State Fresh
+[VerifyT23 2026-03-23 16:55:47]   ✅ Trader3 state fresh — last check 0.9h ago
+[VerifyT23 2026-03-23 16:55:47] 
+  Trader3 — State Valid
+[VerifyT23 2026-03-23 16:55:47]   ✅ Trader3 state file valid and writable
+[VerifyT23 2026-03-23 16:55:47] 
+  Trader3 — IBKR Position
+[VerifyT23 2026-03-23 16:55:47]   ✅ Trader3 position confirmed in IBKR: SPY $430P qty=0 avg=$0.00 exp=20270115
+[VerifyT23 2026-03-23 16:55:47] 
+  Trader3 — Ladder Status
+[VerifyT23 2026-03-23 16:55:47]   🟢 Current gain: +24.9% | Value: $618.29
+[VerifyT23 2026-03-23 16:55:47]   Activated: ⏳ Not yet
+[VerifyT23 2026-03-23 16:55:47]   Contracts remaining: 1
+[VerifyT23 2026-03-23 16:55:47]   Tiers hit: None yet
+[VerifyT23 2026-03-23 16:55:47]   Next trigger: Tier 1 at +100% (need +75% more | trail will set to 20%)
+[VerifyT23 2026-03-23 16:55:47]   ⚠️  Trader3 monitoring — at +24.9% | activates at +100%
+[VerifyT23 2026-03-23 16:55:47] 
+  Trader3 — Trail Stop Math
+[VerifyT23 2026-03-23 16:55:47]   ✅ Trader3 not yet activated — trail math N/A (waiting for first tier)
+[VerifyT23 2026-03-23 16:55:47] 
+  Trader3 — Pending Sell
+[VerifyT23 2026-03-23 16:55:47]   ✅ Trader3 no pending sell — clean
+[VerifyT23 2026-03-23 16:55:47] 
+  Trader3 — Profit-Taking Sequence
+[VerifyT23 2026-03-23 16:55:47]   Trader3 Profit-Taking Roadmap:
+[VerifyT23 2026-03-23 16:55:47]     ⏳ +75% away Tier 1: +100% → tighten trail only | trail→20%
+[VerifyT23 2026-03-23 16:55:47]     ⏳ +175% away Tier 2: +200% → tighten trail only | trail→18%
+[VerifyT23 2026-03-23 16:55:47]     ⏳ +375% away Tier 3: +400% → tighten trail only | trail→15%
+[VerifyT23 2026-03-23 16:55:47]     ⏳ +675% away Tier 4: +700% → tighten trail only | trail→12%
+[VerifyT23 2026-03-23 16:55:47]   ✅ Trader3 profit-taking sequence intact | Monitoring: +75% to Tier 1 | Full ladder: +100% → +200% → +400% → +700% → runner 15%
+[VerifyT23 2026-03-23 16:55:47] 
+  Trader3 — Execute Sell Path
+[VerifyT23 2026-03-23 16:55:48]   ✅ Trader3 execute_sell() path clean — execute_sell + approve_pending_sell + _trigger_trail_stop + approve_expiry_roll all present
+[VerifyT23 2026-03-23 16:55:48] 
+  Trader3 — Expiry
+[VerifyT23 2026-03-23 16:55:48]   ✅ Trader3 expiry OK — 297d to Jan 15 2027
+[VerifyT23 2026-03-23 16:55:48] 
+  Trader3 — PID Lock
+[VerifyT23 2026-03-23 16:55:48]   ✅ Trader3 PID lock present (PID 78766)
+[VerifyT23 2026-03-23 16:55:48] 
+  Trader3 — Exit Code
+[VerifyT23 2026-03-23 16:55:48]   ✅ Trader3 exit code path importable — Trader3() clean
+[VerifyT23 2026-03-23 16:55:48] 
+Result: 28/28 passed | 0 failures | 2 warnings

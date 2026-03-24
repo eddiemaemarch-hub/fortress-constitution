@@ -1,0 +1,13 @@
+[2026-03-22 19:59:26] [INFO] Target: Q4 2025 (2025-10-01 → 2025-12-31)
+[2026-03-22 19:59:26] [INFO] ============================================================
+[2026-03-22 19:59:26] [INFO] RUDY v2.8+ QUARTERLY RE-VALIDATION
+[2026-03-22 19:59:26] [INFO] OOS Window: Q4 2025 (2025-10-01 → 2025-12-31)
+[2026-03-22 19:59:26] [INFO] IS Window:  2016-01-01 → 2025-09-30
+[2026-03-22 19:59:26] [INFO] ============================================================
+[2026-03-22 19:59:26] [INFO] System 13 regime during OOS: DISTRIBUTION/MARKUP
+[2026-03-22 19:59:26] [INFO] Historical 'standard_medium_safety' win rate: 0/7 WF windows
+[2026-03-22 19:59:26] [INFO] Parameter grid: 27 combinations
+[2026-03-22 19:59:26] [INFO] DRY RUN — no backtests will be executed.
+[2026-03-22 19:59:26] [INFO] Would test IS period: 2016-01-01 → 2025-09-30
+[2026-03-22 19:59:26] [INFO] Would test OOS period: 2025-10-01 → 2025-12-31
+[2026-03-22 19:59:26] [INFO] Would run 27 IS backtests + 1 OOS backtest = 28 total

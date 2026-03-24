@@ -1,0 +1,98 @@
+{
+  "current_regime": "DISTRIBUTION",
+  "confidence": 0.8222,
+  "all_probabilities": {
+    "ACCUMULATION": 0.0,
+    "MARKUP": 0.0,
+    "DISTRIBUTION": 0.8222,
+    "MARKDOWN": 0.1778
+  },
+  "features_used": [
+    "rsi_14",
+    "sma_20_ratio",
+    "sma_50_ratio",
+    "sma_200_ratio",
+    "roc_4w",
+    "roc_12w",
+    "roc_26w",
+    "volatility_20w",
+    "volume_proxy",
+    "mvrv_like",
+    "ath_ratio",
+    "sma_20_slope",
+    "rsi_momentum"
+  ],
+  "last_updated": "2026-03-21T12:50:02.464084",
+  "btc_price_gbtc_proxy": 54780.0,
+  "btc_price": 70280,
+  "data_date": "2026-03-21",
+  "regime_history": [
+    {
+      "date": "2026-01-03",
+      "regime": "DISTRIBUTION",
+      "confidence": 1.0
+    },
+    {
+      "date": "2026-01-10",
+      "regime": "DISTRIBUTION",
+      "confidence": 1.0
+    },
+    {
+      "date": "2026-01-17",
+      "regime": "DISTRIBUTION",
+      "confidence": 1.0
+    },
+    {
+      "date": "2026-01-24",
+      "regime": "DISTRIBUTION",
+      "confidence": 1.0
+    },
+    {
+      "date": "2026-01-31",
+      "regime": "DISTRIBUTION",
+      "confidence": 1.0
+    },
+    {
+      "date": "2026-02-07",
+      "regime": "DISTRIBUTION",
+      "confidence": 1.0
+    },
+    {
+      "date": "2026-02-14",
+      "regime": "DISTRIBUTION",
+      "confidence": 1.0
+    },
+    {
+      "date": "2026-02-21",
+      "regime": "DISTRIBUTION",
+      "confidence": 0.9099
+    },
+    {
+      "date": "2026-02-28",
+      "regime": "DISTRIBUTION",
+      "confidence": 0.835
+    },
+    {
+      "date": "2026-03-07",
+      "regime": "DISTRIBUTION",
+      "confidence": 0.8222
+    },
+    {
+      "date": "2026-03-14",
+      "regime": "DISTRIBUTION",
+      "confidence": 0.8222
+    },
+    {
+      "date": "2026-03-21",
+      "regime": "DISTRIBUTION",
+      "confidence": 0.8222
+    }
+  ],
+  "transition_alert": null,
+  "model_accuracy": 0.9556,
+  "raw_confidence": 0.8222,
+  "rl_adjustment": 1.0,
+  "rl_rolling_accuracy": 1.0,
+  "rl_total_predictions": 0,
+  "rl_model_generation": 1
+}

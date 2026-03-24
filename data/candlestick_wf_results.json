@@ -1,0 +1,582 @@
+{
+  "none": {
+    "windows": [
+      {
+        "window": "W1",
+        "oos_start": [
+          2021,
+          7,
+          1
+        ],
+        "oos_end": [
+          2022,
+          12,
+          31
+        ],
+        "net_return": 0.0,
+        "drawdown": 0.0,
+        "sharpe": 0.0,
+        "trades": 0,
+        "win_rate": 0.0,
+        "status": "OK"
+      },
+      {
+        "window": "W2",
+        "oos_start": [
+          2022,
+          7,
+          1
+        ],
+        "oos_end": [
+          2023,
+          12,
+          31
+        ],
+        "net_return": 1.595,
+        "drawdown": 3.1,
+        "sharpe": -1.091,
+        "trades": 0,
+        "win_rate": 0.0,
+        "status": "OK"
+      },
+      {
+        "window": "W3",
+        "oos_start": [
+          2023,
+          1,
+          1
+        ],
+        "oos_end": [
+          2024,
+          6,
+          30
+        ],
+        "net_return": 24.655,
+        "drawdown": 31.1,
+        "sharpe": 0.347,
+        "trades": 0,
+        "win_rate": 30.0,
+        "status": "OK"
+      },
+      {
+        "window": "W4",
+        "oos_start": [
+          2023,
+          7,
+          1
+        ],
+        "oos_end": [
+          2024,
+          12,
+          31
+        ],
+        "net_return": 70.873,
+        "drawdown": 38.4,
+        "sharpe": 0.818,
+        "trades": 0,
+        "win_rate": 33.0,
+        "status": "OK"
+      },
+      {
+        "window": "W5",
+        "oos_start": [
+          2024,
+          1,
+          1
+        ],
+        "oos_end": [
+          2025,
+          6,
+          30
+        ],
+        "net_return": 0.0,
+        "drawdown": 0.0,
+        "sharpe": 0.0,
+        "trades": 0,
+        "win_rate": 0.0,
+        "status": "OK"
+      },
+      {
+        "window": "W6",
+        "oos_start": [
+          2024,
+          7,
+          1
+        ],
+        "oos_end": [
+          2025,
+          12,
+          31
+        ],
+        "net_return": 0.0,
+        "drawdown": 0.0,
+        "sharpe": 0.0,
+        "trades": 0,
+        "win_rate": 0.0,
+        "status": "OK"
+      },
+      {
+        "window": "W7",
+        "oos_start": [
+          2025,
+          1,
+          1
+        ],
+        "oos_end": [
+          2026,
+          3,
+          14
+        ],
+        "net_return": 0.0,
+        "drawdown": 0.0,
+        "sharpe": 0.0,
+        "trades": 0,
+        "win_rate": 0.0,
+        "status": "OK"
+      }
+    ],
+    "aggregate": {
+      "avg_return": 13.874714285714287,
+      "avg_drawdown": 10.37142857142857,
+      "avg_sharpe": 0.010571428571428565,
+      "total_trades": 0,
+      "windows_ok": 7,
+      "windows_total": 7
+    }
+  },
+  "strict": {
+    "windows": [
+      {
+        "window": "W1",
+        "oos_start": [
+          2021,
+          7,
+          1
+        ],
+        "oos_end": [
+          2022,
+          12,
+          31
+        ],
+        "net_return": 0.0,
+        "drawdown": 0.0,
+        "sharpe": 0.0,
+        "trades": 0,
+        "win_rate": 0.0,
+        "status": "OK"
+      },
+      {
+        "window": "W2",
+        "oos_start": [
+          2022,
+          7,
+          1
+        ],
+        "oos_end": [
+          2023,
+          12,
+          31
+        ],
+        "net_return": 0.991,
+        "drawdown": 0.8,
+        "sharpe": -3.179,
+        "trades": 0,
+        "win_rate": 0.0,
+        "status": "OK"
+      },
+      {
+        "window": "W3",
+        "oos_start": [
+          2023,
+          1,
+          1
+        ],
+        "oos_end": [
+          2024,
+          6,
+          30
+        ],
+        "net_return": -3.781,
+        "drawdown": 6.2,
+        "sharpe": -3.24,
+        "trades": 0,
+        "win_rate": 0.0,
+        "status": "OK"
+      },
+      {
+        "window": "W4",
+        "oos_start": [
+          2023,
+          7,
+          1
+        ],
+        "oos_end": [
+          2024,
+          12,
+          31
+        ],
+        "net_return": 32.624,
+        "drawdown": 22.1,
+        "sharpe": 0.509,
+        "trades": 0,
+        "win_rate": 43.0,
+        "status": "OK"
+      },
+      {
+        "window": "W5",
+        "oos_start": [
+          2024,
+          1,
+          1
+        ],
+        "oos_end": [
+          2025,
+          6,
+          30
+        ],
+        "net_return": 0.0,
+        "drawdown": 0.0,
+        "sharpe": 0.0,
+        "trades": 0,
+        "win_rate": 0.0,
+        "status": "OK"
+      },
+      {
+        "window": "W6",
+        "oos_start": [
+          2024,
+          7,
+          1
+        ],
+        "oos_end": [
+          2025,
+          12,
+          31
+        ],
+        "net_return": 0.0,
+        "drawdown": 0.0,
+        "sharpe": 0.0,
+        "trades": 0,
+        "win_rate": 0.0,
+        "status": "OK"
+      },
+      {
+        "window": "W7",
+        "oos_start": [
+          2025,
+          1,
+          1
+        ],
+        "oos_end": [
+          2026,
+          3,
+          14
+        ],
+        "net_return": 0.0,
+        "drawdown": 0.0,
+        "sharpe": 0.0,
+        "trades": 0,
+        "win_rate": 0.0,
+        "status": "OK"
+      }
+    ],
+    "aggregate": {
+      "avg_return": 4.2620000000000005,
+      "avg_drawdown": 4.1571428571428575,
+      "avg_sharpe": -0.8442857142857143,
+      "total_trades": 0,
+      "windows_ok": 7,
+      "windows_total": 7
+    }
+  },
+  "window_3": {
+    "windows": [
+      {
+        "window": "W1",
+        "oos_start": [
+          2021,
+          7,
+          1
+        ],
+        "oos_end": [
+          2022,
+          12,
+          31
+        ],
+        "net_return": 0.0,
+        "drawdown": 0.0,
+        "sharpe": 0.0,
+        "trades": 0,
+        "win_rate": 0.0,
+        "status": "OK"
+      },
+      {
+        "window": "W2",
+        "oos_start": [
+          2022,
+          7,
+          1
+        ],
+        "oos_end": [
+          2023,
+          12,
+          31
+        ],
+        "net_return": 0.991,
+        "drawdown": 0.8,
+        "sharpe": -3.179,
+        "trades": 0,
+        "win_rate": 0.0,
+        "status": "OK"
+      },
+      {
+        "window": "W3",
+        "oos_start": [
+          2023,
+          1,
+          1
+        ],
+        "oos_end": [
+          2024,
+          6,
+          30
+        ],
+        "net_return": -7.175,
+        "drawdown": 12.4,
+        "sharpe": -1.051,
+        "trades": 0,
+        "win_rate": 0.0,
+        "status": "OK"
+      },
+      {
+        "window": "W4",
+        "oos_start": [
+          2023,
+          7,
+          1
+        ],
+        "oos_end": [
+          2024,
+          12,
+          31
+        ],
+        "net_return": 23.012,
+        "drawdown": 23.0,
+        "sharpe": 0.319,
+        "trades": 0,
+        "win_rate": 23.0,
+        "status": "OK"
+      },
+      {
+        "window": "W5",
+        "oos_start": [
+          2024,
+          1,
+          1
+        ],
+        "oos_end": [
+          2025,
+          6,
+          30
+        ],
+        "net_return": 0.0,
+        "drawdown": 0.0,
+        "sharpe": 0.0,
+        "trades": 0,
+        "win_rate": 0.0,
+        "status": "OK"
+      },
+      {
+        "window": "W6",
+        "oos_start": [
+          2024,
+          7,
+          1
+        ],
+        "oos_end": [
+          2025,
+          12,
+          31
+        ],
+        "net_return": 0.0,
+        "drawdown": 0.0,
+        "sharpe": 0.0,
+        "trades": 0,
+        "win_rate": 0.0,
+        "status": "OK"
+      },
+      {
+        "window": "W7",
+        "oos_start": [
+          2025,
+          1,
+          1
+        ],
+        "oos_end": [
+          2026,
+          3,
+          14
+        ],
+        "net_return": 0.0,
+        "drawdown": 0.0,
+        "sharpe": 0.0,
+        "trades": 0,
+        "win_rate": 0.0,
+        "status": "OK"
+      }
+    ],
+    "aggregate": {
+      "avg_return": 2.404,
+      "avg_drawdown": 5.171428571428572,
+      "avg_sharpe": -0.5587142857142856,
+      "total_trades": 0,
+      "windows_ok": 7,
+      "windows_total": 7
+    }
+  },
+  "high_prob": {
+    "windows": [
+      {
+        "window": "W1",
+        "oos_start": [
+          2021,
+          7,
+          1
+        ],
+        "oos_end": [
+          2022,
+          12,
+          31
+        ],
+        "net_return": 0.0,
+        "drawdown": 0.0,
+        "sharpe": 0.0,
+        "trades": 0,
+        "win_rate": 0.0,
+        "status": "OK"
+      },
+      {
+        "window": "W2",
+        "oos_start": [
+          2022,
+          7,
+          1
+        ],
+        "oos_end": [
+          2023,
+          12,
+          31
+        ],
+        "net_return": 0.991,
+        "drawdown": 0.8,
+        "sharpe": -3.179,
+        "trades": 0,
+        "win_rate": 0.0,
+        "status": "OK"
+      },
+      {
+        "window": "W3",
+        "oos_start": [
+          2023,
+          1,
+          1
+        ],
+        "oos_end": [
+          2024,
+          6,
+          30
+        ],
+        "net_return": -3.781,
+        "drawdown": 6.2,
+        "sharpe": -3.24,
+        "trades": 0,
+        "win_rate": 0.0,
+        "status": "OK"
+      },
+      {
+        "window": "W4",
+        "oos_start": [
+          2023,
+          7,
+          1
+        ],
+        "oos_end": [
+          2024,
+          12,
+          31
+        ],
+        "net_return": -4.121,
+        "drawdown": 6.2,
+        "sharpe": -3.395,
+        "trades": 0,
+        "win_rate": 0.0,
+        "status": "OK"
+      },
+      {
+        "window": "W5",
+        "oos_start": [
+          2024,
+          1,
+          1
+        ],
+        "oos_end": [
+          2025,
+          6,
+          30
+        ],
+        "net_return": 0.0,
+        "drawdown": 0.0,
+        "sharpe": 0.0,
+        "trades": 0,
+        "win_rate": 0.0,
+        "status": "OK"
+      },
+      {
+        "window": "W6",
+        "oos_start": [
+          2024,
+          7,
+          1
+        ],
+        "oos_end": [
+          2025,
+          12,
+          31
+        ],
+        "net_return": 0.0,
+        "drawdown": 0.0,
+        "sharpe": 0.0,
+        "trades": 0,
+        "win_rate": 0.0,
+        "status": "OK"
+      },
+      {
+        "window": "W7",
+        "oos_start": [
+          2025,
+          1,
+          1
+        ],
+        "oos_end": [
+          2026,
+          3,
+          14
+        ],
+        "net_return": 0.0,
+        "drawdown": 0.0,
+        "sharpe": 0.0,
+        "trades": 0,
+        "win_rate": 0.0,
+        "status": "OK"
+      }
+    ],
+    "aggregate": {
+      "avg_return": -0.9872857142857143,
+      "avg_drawdown": 1.8857142857142857,
+      "avg_sharpe": -1.402,
+      "total_trades": 0,
+      "windows_ok": 7,
+      "windows_total": 7
+    }
+  }
+}

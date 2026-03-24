@@ -1,0 +1,43 @@
+{
+  "regime_crosscheck": {
+    "regime": "DISTRIBUTION",
+    "confidence": 4,
+    "reasoning": "BTC is 5 months post-ATH with a 43.8% drawdown, aligning with historical post-halving cycle peaks. Price remains above key long-term moving averages (200W/250W SMA), indicating profit-taking and weakening rallies rather than full capitulation.",
+    "btc_outlook_30d": "Expect continued volatility with a likely downward bias or sideways consolidation; rallies are prone to being sold into.",
+    "key_risk": "Breakdown below the 200W/250W MAs, signaling a deeper markdown phase and increased capitulation risk.",
+    "key_opportunity": "Short-term trading opportunities on bounces, or strategic accumulation if price tests strong long-term support levels.",
+    "timestamp": "2026-03-23T20:00:19.726947",
+    "source": "gemini",
+    "model": "gemini-2.5-flash",
+    "system13_regime": "DISTRIBUTION",
+    "system13_confidence": 0.8222,
+    "consensus": true
+  },
+  "news_digest": {
+    "digest": "\ud83c\udf0d Crypto saw modest consolidation overnight with no major macro catalysts; Fed speakers reiterated data dependency, keeping rate cut expectations stable and risk assets range-bound.\n\ud83d\udcc8 Watch $70,000 as immediate support for Bitcoin today; a sustained break below could signal further downside pressure towards $68,500.\n\u2696\ufe0f Today presents a critical test for BTC's short-term trend, offering either a bounce opportunity from current levels or risk of deeper consolidation.",
+    "timestamp": "2026-03-23T20:00:29.567058",
+    "source": "gemini",
+    "btc_at_time": 70873
+  },
+  "last_updated": "2026-03-23T20:00:29.567358",
+  "regime_history": [
+    {
+      "regime": "DISTRIBUTION",
+      "confidence": 0.9,
+      "consensus": true,
+      "timestamp": "2026-03-22T15:19:34.929595"
+    },
+    {
+      "regime": "DISTRIBUTION",
+      "confidence": 0.85,
+      "consensus": true,
+      "timestamp": "2026-03-23T19:04:00.181920"
+    },
+    {
+      "regime": "DISTRIBUTION",
+      "confidence": 4,
+      "consensus": true,
+      "timestamp": "2026-03-23T20:00:19.726947"
+    }
+  ]
+}

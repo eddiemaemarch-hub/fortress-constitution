@@ -1,0 +1,68 @@
+{
+  "strategy": "BMNR eNAV Discount Accumulation v1.0",
+  "author": "Rudy AI",
+  "status": "RESEARCH_ONLY",
+  "timestamp": "2026-03-20T16:08:26.959135",
+  "overall_verdict": "FAIL",
+  "backtest": {
+    "final_equity": 8979.87,
+    "total_return_pct": -10.2,
+    "max_drawdown_pct": 17.82,
+    "sharpe_ratio": -0.381,
+    "total_entries": 4,
+    "total_exits": 4,
+    "win_rate_pct": 0.0,
+    "consecutive_loss_halt": true
+  },
+  "monte_carlo": {
+    "test_name": "BMNR eNAV Discount \u2014 Monte Carlo Robustness",
+    "timestamp": "2026-03-20T16:08:26.930013",
+    "n_simulations": 500,
+    "return_distribution": {
+      "p5": -18.38,
+      "p25": -9.07,
+      "median": -1.83,
+      "mean": 7.52,
+      "p75": 4.43,
+      "p95": 77.37
+    },
+    "max_drawdown_distribution": {
+      "p5": 0.0,
+      "p25": 6.9,
+      "median": 13.65,
+      "p75": 21.18,
+      "p95": 31.62
+    },
+    "sharpe_distribution": {
+      "p5": -0.73,
+      "median": -0.03,
+      "mean": -0.06,
+      "p95": 0.75
+    },
+    "risk_metrics": {
+      "positive_return_pct": 30.2,
+      "return_gt_50pct": 7.0,
+      "max_dd_below_50pct": 99.6,
+      "halt_rate_pct": 26.2,
+      "zero_trade_rate_pct": 13.2
+    },
+    "overall_verdict": "FAIL"
+  },
+  "stress_tests": {
+    "test_name": "BMNR eNAV Discount Strategy \u2014 Stress Tests",
+    "timestamp": "2026-03-20T16:08:26.958909",
+    "permanent_premium": {
+      "pass": true,
+      "pct_below_1": 26.4
+    },
+    "protocol_crisis": {
+      "pass": true,
+      "final_equity": 8482.95
+    },
+    "dilution_bomb": {
+      "pass": true,
+      "verdict": "CONDITIONAL"
+    },
+    "overall": "CONDITIONAL PASS"
+  }
+}

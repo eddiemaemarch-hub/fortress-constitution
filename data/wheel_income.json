@@ -1,0 +1,43 @@
+{
+  "total_premium": 72.5,
+  "trades": [
+    {
+      "date": "2026-03-13T09:33:16.088290",
+      "type": "short_call_sold",
+      "strike": 32.0,
+      "expiry": "20260417",
+      "premium": 17.5
+    },
+    {
+      "date": "2026-03-13T11:33:35.121050",
+      "type": "short_call_sold",
+      "strike": 32.0,
+      "expiry": "20260417",
+      "premium": 17.5
+    },
+    {
+      "date": "2026-03-13T13:32:46.106566",
+      "type": "short_call_sold",
+      "strike": 32.0,
+      "expiry": "20260417",
+      "premium": 17.5
+    },
+    {
+      "date": "2026-03-16T11:31:59.356548",
+      "type": "short_call_profit",
+      "strike": 32.0,
+      "expiry": "20260417",
+      "premium": 9.999999999999998
+    },
+    {
+      "date": "2026-03-16T11:32:05.081029",
+      "type": "short_call_profit",
+      "strike": 32.0,
+      "expiry": "20260417",
+      "premium": 9.999999999999998
+    }
+  ],
+  "monthly": {
+    "2026-03": 72.5
+  }
+}

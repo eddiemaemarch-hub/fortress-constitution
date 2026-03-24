@@ -1,0 +1,54 @@
+[2026-03-11 15:31:13] [SYS12] Momentum Score: -30 | TQQQ $49.10 | QQQ RSI: 52.1 | TQQQ vs EMA50: BELOW
+[2026-03-11 15:31:13] [SYS12] Neutral score -30 — no entry (need >= 40 or <= -40)
+[2026-03-12 09:31:21] [SYS12] Momentum Score: -40 | TQQQ $48.15 | QQQ RSI: 46.0 | TQQQ vs EMA50: BELOW
+[2026-03-12 09:31:21] [SYS12] BEARISH signal (score -40) — looking for puts
+[2026-03-12 09:31:24] [SYS12] No suitable P option found
+[2026-03-12 10:31:13] [SYS12] Momentum Score: -50 | TQQQ $47.20 | QQQ RSI: 43.5 | TQQQ vs EMA50: BELOW
+[2026-03-12 10:31:13] [SYS12] BEARISH signal (score -50) — looking for puts
+[2026-03-12 10:31:15] [SYS12] No suitable P option found
+[2026-03-12 11:30:01] [SYS12] IBKR connection failed: [Errno 61] Connect call failed ('127.0.0.1', 7497)
+[2026-03-12 12:32:09] [SYS12] Momentum Score: -50 | TQQQ $47.35 | QQQ RSI: 43.8 | TQQQ vs EMA50: BELOW
+[2026-03-12 12:32:09] [SYS12] BEARISH signal (score -50) — looking for puts
+[2026-03-12 12:32:12] [SYS12] No suitable P option found
+[2026-03-12 13:31:07] [SYS12] Momentum Score: -50 | TQQQ $47.53 | QQQ RSI: 44.3 | TQQQ vs EMA50: BELOW
+[2026-03-12 13:31:07] [SYS12] BEARISH signal (score -50) — looking for puts
+[2026-03-12 13:31:09] [SYS12] No suitable P option found
+[2026-03-12 14:31:09] [SYS12] Momentum Score: -50 | TQQQ $47.32 | QQQ RSI: 43.8 | TQQQ vs EMA50: BELOW
+[2026-03-12 14:31:09] [SYS12] BEARISH signal (score -50) — looking for puts
+[2026-03-12 14:31:11] [SYS12] No suitable P option found
+[2026-03-12 15:31:11] [SYS12] Momentum Score: -50 | TQQQ $47.28 | QQQ RSI: 43.7 | TQQQ vs EMA50: BELOW
+[2026-03-12 15:31:11] [SYS12] BEARISH signal (score -50) — looking for puts
+[2026-03-12 15:31:13] [SYS12] No suitable P option found
+[2026-03-13 09:34:17] [SYS12] Momentum Score: -60 | TQQQ $47.45 | QQQ RSI: 49.2 | TQQQ vs EMA50: BELOW
+[2026-03-13 09:34:17] [SYS12] BEARISH signal (score -60) — looking for puts
+[2026-03-13 09:34:29] [SYS12] TRAILING STOP: TQQQ $47.5P x1 | Trail $1.33 (30% of $4.45) | Status: Inactive
+[2026-03-13 09:34:29] [SYS12]   IBKR rejected stop — stop_monitor.py will enforce
+[2026-03-13 09:34:29] [SYS12] [SYS12 TQQQ] Bought 1x PUT $47.5 exp 20260424 @ $4.45
+  Cost: $445 | Score: -60
+[2026-03-13 10:47:04] [SYS12] Momentum Score: -70 | TQQQ $46.84 | QQQ RSI: 47.3 | TQQQ vs EMA50: BELOW
+[2026-03-13 10:47:04] [SYS12] BEARISH signal (score -70) — looking for puts
+[2026-03-13 10:47:06] [SYS12] No suitable P option found
+[2026-03-13 11:33:58] [SYS12] Momentum Score: -70 | TQQQ $46.31 | QQQ RSI: 45.8 | TQQQ vs EMA50: BELOW
+[2026-03-13 11:33:58] [SYS12] BEARISH signal (score -70) — looking for puts
+[2026-03-13 11:34:09] [SYS12] TRAILING STOP: TQQQ $46.5P x1 | Trail $1.30 (30% of $4.33) | Status: Inactive
+[2026-03-13 11:34:09] [SYS12]   IBKR rejected stop — stop_monitor.py will enforce
+[2026-03-13 11:34:10] [SYS12] [SYS12 TQQQ] Bought 1x PUT $46.5 exp 20260424 @ $4.33
+  Cost: $432 | Score: -70
+[2026-03-13 12:30:02] [SYS12] IBKR connection failed: [Errno 61] Connect call failed ('127.0.0.1', 7497)
+[2026-03-13 12:30:02] [SYS12] IBKR connection failed: [Errno 61] Connect call failed ('127.0.0.1', 7497)
+[2026-03-13 13:33:12] [SYS12] Momentum Score: -70 | TQQQ $46.13 | QQQ RSI: 45.3 | TQQQ vs EMA50: BELOW
+[2026-03-13 13:33:12] [SYS12] BEARISH signal (score -70) — looking for puts
+[2026-03-13 13:33:23] [SYS12] TRAILING STOP: TQQQ $46.0P x1 | Trail $1.35 (30% of $4.50) | Status: Inactive
+[2026-03-13 13:33:23] [SYS12]   IBKR rejected stop — stop_monitor.py will enforce
+[2026-03-13 13:33:24] [SYS12] [SYS12 TQQQ] Bought 1x PUT $46.0 exp 20260424 @ $4.50
+  Cost: $450 | Score: -70
+[2026-03-13 14:32:27] [SYS12] Max positions (3) reached
+[2026-03-13 15:31:38] [SYS12] IBKR connection failed: 
+[2026-03-13 15:31:46] [SYS12] IBKR connection failed: 
+[2026-03-16 09:30:02] [SYS12] IBKR connection failed: [Errno 61] Connect call failed ('127.0.0.1', 7497)
+[2026-03-16 09:30:02] [SYS12] IBKR connection failed: [Errno 61] Connect call failed ('127.0.0.1', 7497)
+[2026-03-16 10:30:02] [SYS12] IBKR connection failed: [Errno 61] Connect call failed ('127.0.0.1', 7497)
+[2026-03-16 10:30:02] [SYS12] IBKR connection failed: [Errno 61] Connect call failed ('127.0.0.1', 7497)
+[2026-03-16 11:32:33] [SYS12] VCA: Adding 1 contracts at $3.48
+[2026-03-16 11:32:38] [SYS12] [SYS12 TQQQ] VCA +1 P $46.0 @ $3.48 | New avg: $3.99
+[2026-03-16 11:32:38] [SYS12] Max positions (3) reached

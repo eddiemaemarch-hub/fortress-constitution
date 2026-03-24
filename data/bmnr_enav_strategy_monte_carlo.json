@@ -1,0 +1,34 @@
+{
+  "test_name": "BMNR eNAV Discount \u2014 Monte Carlo Robustness",
+  "timestamp": "2026-03-20T16:08:26.930013",
+  "n_simulations": 500,
+  "return_distribution": {
+    "p5": -18.38,
+    "p25": -9.07,
+    "median": -1.83,
+    "mean": 7.52,
+    "p75": 4.43,
+    "p95": 77.37
+  },
+  "max_drawdown_distribution": {
+    "p5": 0.0,
+    "p25": 6.9,
+    "median": 13.65,
+    "p75": 21.18,
+    "p95": 31.62
+  },
+  "sharpe_distribution": {
+    "p5": -0.73,
+    "median": -0.03,
+    "mean": -0.06,
+    "p95": 0.75
+  },
+  "risk_metrics": {
+    "positive_return_pct": 30.2,
+    "return_gt_50pct": 7.0,
+    "max_dd_below_50pct": 99.6,
+    "halt_rate_pct": 26.2,
+    "zero_trade_rate_pct": 13.2
+  },
+  "overall_verdict": "FAIL"
+}

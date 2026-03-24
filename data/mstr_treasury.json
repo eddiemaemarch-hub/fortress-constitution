@@ -1,0 +1,10 @@
+{
+  "btc_holdings": 761068,
+  "avg_cost_per_btc": 66384.56,
+  "diluted_shares": 293157000,
+  "last_updated": "2026-03-22T16:16:09.532404",
+  "source_holdings": "bitbo.io",
+  "source_shares": "stockanalysis.com",
+  "btc_delta_from_last": 0,
+  "shares_delta_from_last": 281157000
+}

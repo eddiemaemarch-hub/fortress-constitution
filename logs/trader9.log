@@ -1,0 +1,61 @@
+[2026-03-11 14:38:14] [SYS9] No open positions
+[2026-03-11 14:38:14] [SYS9] SCHD Score: 7.5/10 | Close: $30.98 | RSI: 33.0 | EMA21>50: True
+[2026-03-11 14:38:16] [SYS9] Disconnected
+[2026-03-11 15:31:06] [SYS9] No open positions
+[2026-03-11 15:31:06] [SYS9] SCHD Score: 7.5/10 | Close: $30.94 | RSI: 31.6 | EMA21>50: True
+[2026-03-11 15:31:09] [SYS9] Disconnected
+[2026-03-12 09:31:14] [SYS9] No open positions
+[2026-03-12 09:31:14] [SYS9] SCHD Score: 7.5/10 | Close: $30.79 | RSI: 28.9 | EMA21>50: True
+[2026-03-12 09:31:17] [SYS9] Disconnected
+[2026-03-12 10:31:07] [SYS9] No open positions
+[2026-03-12 10:31:07] [SYS9] SCHD Score: 7.5/10 | Close: $30.87 | RSI: 30.1 | EMA21>50: True
+[2026-03-12 10:31:09] [SYS9] Disconnected
+[2026-03-12 11:30:01] [SYS9] No open positions
+[2026-03-12 11:30:01] [SYS9] SCHD Score: 7.5/10 | Close: $31.01 | RSI: 32.8 | EMA21>50: True
+[2026-03-12 11:30:01] [SYS9] IBKR connection failed: [Errno 61] Connect call failed ('127.0.0.1', 7497)
+[2026-03-12 12:32:02] [SYS9] No open positions
+[2026-03-12 12:32:02] [SYS9] SCHD Score: 7.5/10 | Close: $30.97 | RSI: 31.7 | EMA21>50: True
+[2026-03-12 12:32:05] [SYS9] Disconnected
+[2026-03-12 13:31:00] [SYS9] No open positions
+[2026-03-12 13:31:01] [SYS9] SCHD Score: 7.5/10 | Close: $30.97 | RSI: 31.8 | EMA21>50: True
+[2026-03-12 13:31:03] [SYS9] Disconnected
+[2026-03-12 14:31:02] [SYS9] No open positions
+[2026-03-12 14:31:03] [SYS9] SCHD Score: 7.5/10 | Close: $30.94 | RSI: 31.4 | EMA21>50: True
+[2026-03-12 14:31:05] [SYS9] Disconnected
+[2026-03-12 15:31:04] [SYS9] No open positions
+[2026-03-12 15:31:04] [SYS9] SCHD Score: 7.5/10 | Close: $30.91 | RSI: 30.8 | EMA21>50: True
+[2026-03-12 15:31:07] [SYS9] Disconnected
+[2026-03-13 09:32:40] [SYS9] No open positions
+[2026-03-13 09:32:40] [SYS9] SCHD Score: 7.5/10 | Close: $30.92 | RSI: 34.2 | EMA21>50: True
+[2026-03-13 09:32:59] [SYS9] [SYS9 PMCC] Bought LEAP CALL SCHD $29.67 exp 20270115 | Cost $2.85 | Score 7.5
+[2026-03-13 09:33:16] [SYS9] [SYS9 PMCC] Sold short CALL SCHD $32.0 against LEAP | Premium $0.17
+[2026-03-13 09:33:16] [SYS9] Disconnected
+[2026-03-13 10:46:51] [SYS9] SCHD Score: 7.5/10 | Close: $30.83 | RSI: 30.8 | EMA21>50: True
+[2026-03-13 10:46:54] [SYS9] Disconnected
+[2026-03-13 11:33:01] [SYS9] SCHD Score: 7.5/10 | Close: $30.84 | RSI: 31.2 | EMA21>50: True
+[2026-03-13 11:33:18] [SYS9] [SYS9 PMCC] Bought LEAP CALL SCHD $29.33 exp 20270115 | Cost $2.95 | Score 7.5
+[2026-03-13 11:33:35] [SYS9] [SYS9 PMCC] Sold short CALL SCHD $32.0 against LEAP | Premium $0.17
+[2026-03-13 11:33:35] [SYS9] Disconnected
+[2026-03-13 12:30:01] [SYS9] IBKR connection failed: [Errno 61] Connect call failed ('127.0.0.1', 7497)
+[2026-03-13 12:30:02] [SYS9] SCHD Score: 7.5/10 | Close: $30.85 | RSI: 31.9 | EMA21>50: True
+[2026-03-13 12:30:02] [SYS9] IBKR connection failed: [Errno 61] Connect call failed ('127.0.0.1', 7497)
+[2026-03-13 13:32:11] [SYS9] SCHD Score: 7.5/10 | Close: $30.87 | RSI: 32.4 | EMA21>50: True
+[2026-03-13 13:32:29] [SYS9] [SYS9 PMCC] Bought LEAP CALL SCHD $29.33 exp 20270115 | Cost $2.35 | Score 7.5
+[2026-03-13 13:32:46] [SYS9] [SYS9 PMCC] Sold short CALL SCHD $32.0 against LEAP | Premium $0.17
+[2026-03-13 13:32:46] [SYS9] Disconnected
+[2026-03-13 14:32:00] [SYS9] SCHD Score: 7.5/10 | Close: $30.85 | RSI: 31.9 | EMA21>50: True
+[2026-03-13 14:32:00] [SYS9] Max positions (3) reached — no new LEAPs
+[2026-03-13 15:31:06] [SYS9] IBKR connection failed: 
+[2026-03-13 15:31:06] [SYS9] SCHD Score: 7.5/10 | Close: $30.85 | RSI: 31.7 | EMA21>50: True
+[2026-03-13 15:31:06] [SYS9] Max positions (3) reached — no new LEAPs
+[2026-03-16 09:30:02] [SYS9] IBKR connection failed: [Errno 61] Connect call failed ('127.0.0.1', 7497)
+[2026-03-16 09:30:02] [SYS9] SCHD Score: 7.5/10 | Close: $30.80 | RSI: 30.3 | EMA21>50: True
+[2026-03-16 09:30:02] [SYS9] Max positions (3) reached — no new LEAPs
+[2026-03-16 10:30:01] [SYS9] IBKR connection failed: [Errno 61] Connect call failed ('127.0.0.1', 7497)
+[2026-03-16 10:30:02] [SYS9] SCHD Score: 7.5/10 | Close: $30.95 | RSI: 31.9 | EMA21>50: True
+[2026-03-16 10:30:02] [SYS9] Max positions (3) reached — no new LEAPs
+[2026-03-16 11:31:43] [SYS9] LEAP $29.67 at -32% — STOP LOSS hit
+[2026-03-16 11:31:49] [SYS9] [SYS9 PMCC] STOP LOSS: Closed LEAP SCHD $29.67 at -32%
+[2026-03-16 11:31:56] [SYS9] Short CALL $32.0 at 57% profit — closing
+[2026-03-16 11:32:00] [SYS9] [SYS9 PMCC] Closed short CALL SCHD $32.0 +$10
+[2026-03-16 11:32:02] [SYS9] Short CALL $32.0 at 57% profit — closing

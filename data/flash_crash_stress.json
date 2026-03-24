@@ -1,0 +1,236 @@
+{
+  "test_name": "Flash Crash Liquidity Stress (Gap-and-Trap)",
+  "timestamp": "2026-03-20T12:51:55.278247",
+  "baseline": {
+    "mstr_price": 350.0,
+    "btc_price": 85000.0,
+    "spy_price": 570.0,
+    "account_nlv": 7900.0,
+    "mstr_put_value": 4.32,
+    "spy_put_value": 0.21,
+    "assumed_entry": 300.0,
+    "assumed_hwm": 380.0,
+    "peak_leap_gain_pct": 88.0
+  },
+  "scenarios": [
+    {
+      "gap_pct": "-10%",
+      "mstr_gap_price": 315.0,
+      "btc_gap_price": 81600.0,
+      "spy_gap_price": 558.6,
+      "mstr_put_value": 1155.35,
+      "spy_put_value": 104.24,
+      "mstr_put_pnl": -97.7,
+      "spy_put_pnl": -390.75,
+      "trail_stop": {
+        "tier": "NONE",
+        "trail_pct": 0,
+        "stop_level": 0,
+        "gap_through": false,
+        "slippage_pct": 0,
+        "actual_fill": 0,
+        "damage_vs_stop": 0
+      },
+      "premium_analysis": {
+        "new_premium": 1.954,
+        "old_premium": 2.085,
+        "premium_drop_pct": 6.2,
+        "compression_alert_fires": false,
+        "new_band": "FAIR",
+        "roll_recommended": true
+      },
+      "leap_impact": {
+        "stock_gain_pct": 5.0,
+        "leap_gain_pct": 16.5,
+        "panic_floor_hit": false,
+        "initial_floor_hit": false,
+        "exit_trigger": "NONE"
+      },
+      "portfolio_impact": {
+        "total_position_value": 1259.58,
+        "net_pnl": -488.46,
+        "portfolio_impact_pct": -6.2,
+        "account_value_after": 7411.54,
+        "survival": true
+      },
+      "verdict": "PASS"
+    },
+    {
+      "gap_pct": "-15%",
+      "mstr_gap_price": 297.5,
+      "btc_gap_price": 79900.0,
+      "spy_gap_price": 552.9,
+      "mstr_put_value": 1571.5,
+      "spy_put_value": 183.04,
+      "mstr_put_pnl": 318.45,
+      "spy_put_pnl": -311.95,
+      "trail_stop": {
+        "tier": "NONE",
+        "trail_pct": 0,
+        "stop_level": 0,
+        "gap_through": false,
+        "slippage_pct": 0,
+        "actual_fill": 0,
+        "damage_vs_stop": 0
+      },
+      "premium_analysis": {
+        "new_premium": 1.885,
+        "old_premium": 2.085,
+        "premium_drop_pct": 9.6,
+        "compression_alert_fires": false,
+        "new_band": "FAIR",
+        "roll_recommended": true
+      },
+      "leap_impact": {
+        "stock_gain_pct": -0.8,
+        "leap_gain_pct": -2.8,
+        "panic_floor_hit": false,
+        "initial_floor_hit": false,
+        "exit_trigger": "NONE"
+      },
+      "portfolio_impact": {
+        "total_position_value": 1754.54,
+        "net_pnl": 6.5,
+        "portfolio_impact_pct": 0.1,
+        "account_value_after": 7906.5,
+        "survival": true
+      },
+      "verdict": "PASS"
+    },
+    {
+      "gap_pct": "-20%",
+      "mstr_gap_price": 280.0,
+      "btc_gap_price": 78200.0,
+      "spy_gap_price": 547.2,
+      "mstr_put_value": 1988.12,
+      "spy_put_value": 291.04,
+      "mstr_put_pnl": 735.07,
+      "spy_put_pnl": -203.95,
+      "trail_stop": {
+        "tier": "NONE",
+        "trail_pct": 0,
+        "stop_level": 0,
+        "gap_through": false,
+        "slippage_pct": 0,
+        "actual_fill": 0,
+        "damage_vs_stop": 0
+      },
+      "premium_analysis": {
+        "new_premium": 1.813,
+        "old_premium": 2.085,
+        "premium_drop_pct": 13.0,
+        "compression_alert_fires": false,
+        "new_band": "FAIR",
+        "roll_recommended": true
+      },
+      "leap_impact": {
+        "stock_gain_pct": -6.7,
+        "leap_gain_pct": -22.0,
+        "panic_floor_hit": false,
+        "initial_floor_hit": false,
+        "exit_trigger": "NONE"
+      },
+      "portfolio_impact": {
+        "total_position_value": 2279.16,
+        "net_pnl": 531.12,
+        "portfolio_impact_pct": 6.7,
+        "account_value_after": 8431.12,
+        "survival": true
+      },
+      "verdict": "PASS"
+    },
+    {
+      "gap_pct": "-25%",
+      "mstr_gap_price": 262.5,
+      "btc_gap_price": 76500.0,
+      "spy_gap_price": 541.5,
+      "mstr_put_value": 2386.73,
+      "spy_put_value": 429.33,
+      "mstr_put_pnl": 1133.68,
+      "spy_put_pnl": -65.66,
+      "trail_stop": {
+        "tier": "NONE",
+        "trail_pct": 0,
+        "stop_level": 0,
+        "gap_through": false,
+        "slippage_pct": 0,
+        "actual_fill": 0,
+        "damage_vs_stop": 0
+      },
+      "premium_analysis": {
+        "new_premium": 1.737,
+        "old_premium": 2.085,
+        "premium_drop_pct": 16.7,
+        "compression_alert_fires": true,
+        "new_band": "FAIR",
+        "roll_recommended": true
+      },
+      "leap_impact": {
+        "stock_gain_pct": -12.5,
+        "leap_gain_pct": -41.2,
+        "panic_floor_hit": true,
+        "initial_floor_hit": false,
+        "exit_trigger": "PANIC_FLOOR"
+      },
+      "portfolio_impact": {
+        "total_position_value": 2816.07,
+        "net_pnl": 1068.03,
+        "portfolio_impact_pct": 13.5,
+        "account_value_after": 8968.03,
+        "survival": true
+      },
+      "verdict": "CONDITIONAL PASS"
+    },
+    {
+      "gap_pct": "-30%",
+      "mstr_gap_price": 245.0,
+      "btc_gap_price": 74800.0,
+      "spy_gap_price": 535.8,
+      "mstr_put_value": 2755.13,
+      "spy_put_value": 597.72,
+      "mstr_put_pnl": 1502.08,
+      "spy_put_pnl": 102.73,
+      "trail_stop": {
+        "tier": "NONE",
+        "trail_pct": 0,
+        "stop_level": 0,
+        "gap_through": false,
+        "slippage_pct": 0,
+        "actual_fill": 0,
+        "damage_vs_stop": 0
+      },
+      "premium_analysis": {
+        "new_premium": 1.658,
+        "old_premium": 2.085,
+        "premium_drop_pct": 20.5,
+        "compression_alert_fires": true,
+        "new_band": "FAIR",
+        "roll_recommended": true
+      },
+      "leap_impact": {
+        "stock_gain_pct": -18.3,
+        "leap_gain_pct": -60.5,
+        "panic_floor_hit": true,
+        "initial_floor_hit": false,
+        "exit_trigger": "PANIC_FLOOR"
+      },
+      "portfolio_impact": {
+        "total_position_value": 3352.86,
+        "net_pnl": 1604.82,
+        "portfolio_impact_pct": 20.3,
+        "account_value_after": 9504.82,
+        "survival": true
+      },
+      "verdict": "CONDITIONAL PASS"
+    }
+  ],
+  "summary": {
+    "graceful_handling_15pct_gap": true,
+    "scenarios_passed": 3,
+    "scenarios_conditional": 2,
+    "scenarios_failed": 0,
+    "critical_gap_threshold": "NONE",
+    "worst_portfolio_impact_pct": -6.2,
+    "overall_verdict": "PASS"
+  }
+}

@@ -1,0 +1,79 @@
+[2026-03-18 12:00:00,885] [INFO] ============================================================
+[2026-03-18 12:00:00,886] [INFO] 📋 POSITION AUDIT STARTING
+[2026-03-18 12:00:00,887] [INFO] ============================================================
+[2026-03-18 12:00:01,109] [INFO] Connecting to 127.0.0.1:7497 with clientId 56...
+[2026-03-18 12:00:01,109] [INFO] Disconnecting
+[2026-03-18 12:00:01,110] [ERROR] API connection failed: ConnectionRefusedError(61, "Connect call failed ('127.0.0.1', 7497)")
+[2026-03-18 12:00:01,110] [ERROR] Make sure API port on TWS/IBG is open
+[2026-03-18 12:00:01,110] [ERROR] ❌ Position audit FAILED — cannot connect to TWS: [Errno 61] Connect call failed ('127.0.0.1', 7497)
+[2026-03-18 12:00:01,110] [WARNING] Telegram error: [Errno 2] No such file or directory: '/Users/eddiemae/rudy/config/config.json'
+[2026-03-19 12:00:00,997] [INFO] ============================================================
+[2026-03-19 12:00:00,999] [INFO] 📋 POSITION AUDIT STARTING
+[2026-03-19 12:00:00,999] [INFO] ============================================================
+[2026-03-19 12:00:01,390] [INFO] Connecting to 127.0.0.1:7497 with clientId 56...
+[2026-03-19 12:00:01,399] [INFO] Disconnecting
+[2026-03-19 12:00:01,399] [ERROR] API connection failed: ConnectionRefusedError(61, "Connect call failed ('127.0.0.1', 7497)")
+[2026-03-19 12:00:01,399] [ERROR] Make sure API port on TWS/IBG is open
+[2026-03-19 12:00:01,399] [ERROR] ❌ Position audit FAILED — cannot connect to TWS: [Errno 61] Connect call failed ('127.0.0.1', 7497)
+[2026-03-19 12:00:01,400] [WARNING] Telegram error: [Errno 2] No such file or directory: '/Users/eddiemae/rudy/config/config.json'
+[2026-03-20 12:00:00,711] [INFO] ============================================================
+[2026-03-20 12:00:00,713] [INFO] 📋 POSITION AUDIT STARTING
+[2026-03-20 12:00:00,713] [INFO] ============================================================
+[2026-03-20 12:00:00,975] [INFO] Connecting to 127.0.0.1:7496 with clientId 56...
+[2026-03-20 12:00:00,977] [INFO] Connected
+[2026-03-20 12:00:00,984] [INFO] Logged on to server version 176
+[2026-03-20 12:00:00,985] [INFO] Warning 2104, reqId -1: Market data farm connection is OK:cashfarm
+[2026-03-20 12:00:00,985] [INFO] Warning 2104, reqId -1: Market data farm connection is OK:usfarm.nj
+[2026-03-20 12:00:00,985] [INFO] Warning 2104, reqId -1: Market data farm connection is OK:usopt
+[2026-03-20 12:00:00,985] [INFO] Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+[2026-03-20 12:00:00,985] [INFO] Warning 2106, reqId -1: HMDS data farm connection is OK:euhmds
+[2026-03-20 12:00:00,985] [INFO] Warning 2106, reqId -1: HMDS data farm connection is OK:fundfarm
+[2026-03-20 12:00:00,985] [INFO] Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+[2026-03-20 12:00:00,985] [INFO] Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefil
+[2026-03-20 12:00:00,985] [INFO] API connection ready
+[2026-03-20 12:00:00,986] [INFO] position: Position(account='U15746102', contract=Option(conId=816983615, symbol='MSTR', lastTradeDateOrContractMonth='20280121', strike=50.0, right='P', multiplier='100', currency='USD', localSymbol='MSTR  280121P00050000', tradingClass='MSTR'), position=1.0, avgCost=1253.0513)
+[2026-03-20 12:00:00,986] [INFO] position: Position(account='U15746102', contract=Option(conId=730443288, symbol='SPY', lastTradeDateOrContractMonth='20270115', strike=430.0, right='P', multiplier='100', currency='USD', localSymbol='SPY   270115P00430000', tradingClass='SPY'), position=1.0, avgCost=494.9888)
+[2026-03-20 12:00:01,188] [INFO] updatePortfolio: PortfolioItem(contract=Option(conId=816983615, symbol='MSTR', lastTradeDateOrContractMonth='20280121', strike=50.0, right='P', multiplier='100', primaryExchange='AMEX', currency='USD', localSymbol='MSTR  280121P00050000', tradingClass='MSTR'), position=1.0, marketPrice=9.8291807, marketValue=982.92, averageCost=1253.0513, unrealizedPNL=-270.13, realizedPNL=0.0, account='U15746102')
+[2026-03-20 12:00:01,188] [INFO] updatePortfolio: PortfolioItem(contract=Option(conId=730443288, symbol='SPY', lastTradeDateOrContractMonth='20270115', strike=430.0, right='P', multiplier='100', primaryExchange='AMEX', currency='USD', localSymbol='SPY   270115P00430000', tradingClass='SPY'), position=1.0, marketPrice=6.1441622, marketValue=614.42, averageCost=494.9888, unrealizedPNL=119.43, realizedPNL=0.0, account='U15746102')
+[2026-03-20 12:00:01,289] [INFO] Synchronization complete
+[2026-03-20 12:00:01,341] [INFO] Disconnecting from 127.0.0.1:7496, 711 B sent in 9 messages, 32.6 kB received in 731 messages, session time 366 ms.
+[2026-03-20 12:00:01,341] [INFO] Disconnecting
+[2026-03-20 12:00:01,349] [INFO] Report saved: /Users/eddiemae/rudy/logs/audit_2026-03-20.json
+[2026-03-20 12:00:01,350] [INFO] Account: NLV=$7,902.90 | Cash=$6,305.57 | UnrealizedPnL=$-150.71
+[2026-03-20 12:00:01,350] [INFO] IBKR positions: 2 | Rudy positions: 0 | Open orders: 0
+[2026-03-20 12:00:01,350] [INFO] Status: ⚠️ 2 MISMATCHES
+[2026-03-20 12:00:01,350] [WARNING]   [ORPHAN] MSTR: In IBKR (OPT qty=1.0) but NOT tracked by Rudy
+[2026-03-20 12:00:01,350] [WARNING]   [ORPHAN] SPY: In IBKR (OPT qty=1.0) but NOT tracked by Rudy
+[2026-03-20 12:00:01,350] [WARNING] Telegram error: [Errno 2] No such file or directory: '/Users/eddiemae/rudy/config/config.json'
+[2026-03-20 12:00:01,350] [INFO] Audit complete
+[2026-03-23 12:00:01,169] [INFO] ============================================================
+[2026-03-23 12:00:01,171] [INFO] 📋 POSITION AUDIT STARTING
+[2026-03-23 12:00:01,171] [INFO] ============================================================
+[2026-03-23 12:00:01,529] [INFO] Connecting to 127.0.0.1:7496 with clientId 56...
+[2026-03-23 12:00:01,530] [INFO] Connected
+[2026-03-23 12:00:01,548] [INFO] Logged on to server version 176
+[2026-03-23 12:00:01,550] [INFO] Warning 2104, reqId -1: Market data farm connection is OK:cashfarm
+[2026-03-23 12:00:01,550] [INFO] Warning 2104, reqId -1: Market data farm connection is OK:usopt.nj
+[2026-03-23 12:00:01,550] [INFO] Warning 2104, reqId -1: Market data farm connection is OK:usfarm.nj
+[2026-03-23 12:00:01,550] [INFO] Warning 2104, reqId -1: Market data farm connection is OK:usopt
+[2026-03-23 12:00:01,550] [INFO] Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+[2026-03-23 12:00:01,550] [INFO] Warning 2106, reqId -1: HMDS data farm connection is OK:euhmds
+[2026-03-23 12:00:01,550] [INFO] Warning 2106, reqId -1: HMDS data farm connection is OK:fundfarm
+[2026-03-23 12:00:01,550] [INFO] Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+[2026-03-23 12:00:01,550] [INFO] Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefil
+[2026-03-23 12:00:01,550] [INFO] API connection ready
+[2026-03-23 12:00:01,552] [INFO] position: Position(account='U15746102', contract=Option(conId=816983615, symbol='MSTR', lastTradeDateOrContractMonth='20280121', strike=50.0, right='P', multiplier='100', currency='USD', localSymbol='MSTR  280121P00050000', tradingClass='MSTR'), position=1.0, avgCost=1253.0513)
+[2026-03-23 12:00:01,552] [INFO] position: Position(account='U15746102', contract=Option(conId=730443288, symbol='SPY', lastTradeDateOrContractMonth='20270115', strike=430.0, right='P', multiplier='100', currency='USD', localSymbol='SPY   270115P00430000', tradingClass='SPY'), position=1.0, avgCost=494.9888)
+[2026-03-23 12:00:01,861] [INFO] updatePortfolio: PortfolioItem(contract=Option(conId=816983615, symbol='MSTR', lastTradeDateOrContractMonth='20280121', strike=50.0, right='P', multiplier='100', primaryExchange='AMEX', currency='USD', localSymbol='MSTR  280121P00050000', tradingClass='MSTR'), position=1.0, marketPrice=9.6367922, marketValue=963.68, averageCost=1253.0513, unrealizedPNL=-289.37, realizedPNL=0.0, account='U15746102')
+[2026-03-23 12:00:01,861] [INFO] updatePortfolio: PortfolioItem(contract=Option(conId=730443288, symbol='SPY', lastTradeDateOrContractMonth='20270115', strike=430.0, right='P', multiplier='100', primaryExchange='AMEX', currency='USD', localSymbol='SPY   270115P00430000', tradingClass='SPY'), position=1.0, marketPrice=5.87798595, marketValue=587.8, averageCost=494.9888, unrealizedPNL=92.81, realizedPNL=0.0, account='U15746102')
+[2026-03-23 12:00:01,955] [INFO] Synchronization complete
+[2026-03-23 12:00:02,012] [INFO] Disconnecting from 127.0.0.1:7496, 711 B sent in 9 messages, 32.7 kB received in 732 messages, session time 484 ms.
+[2026-03-23 12:00:02,013] [INFO] Disconnecting
+[2026-03-23 12:00:02,018] [INFO] Report saved: /Users/eddiemae/rudy/logs/audit_2026-03-23.json
+[2026-03-23 12:00:02,018] [INFO] Account: NLV=$7,857.05 | Cash=$6,305.58 | UnrealizedPnL=$-196.56
+[2026-03-23 12:00:02,018] [INFO] IBKR positions: 2 | Rudy positions: 0 | Open orders: 0
+[2026-03-23 12:00:02,018] [INFO] Status: ⚠️ 2 MISMATCHES
+[2026-03-23 12:00:02,019] [WARNING]   [ORPHAN] MSTR: In IBKR (OPT qty=1.0) but NOT tracked by Rudy
+[2026-03-23 12:00:02,019] [WARNING]   [ORPHAN] SPY: In IBKR (OPT qty=1.0) but NOT tracked by Rudy
+[2026-03-23 12:00:02,019] [WARNING] Telegram error: [Errno 2] No such file or directory: '/Users/eddiemae/rudy/config/config.json'
+[2026-03-23 12:00:02,019] [INFO] Audit complete

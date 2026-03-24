@@ -1,0 +1,564 @@
+[
+  {
+    "signal": "UNKNOWN",
+    "ai_analysis": "Here's an analysis of the provided insider trading data, focusing on the BUY vs. SELL ratio and its implications:\n\n**Data Analysis and Interpretation:**\n\nTo accurately calculate a buy/sell ratio, we need to aggregate all buy and sell transactions within a defined period. The provided data spans vari",
+    "biggest_sells": [],
+    "biggest_buys": [],
+    "x_reaction": "A quick scan of X/Twitter reveals ongoing discussions about corporate insider selling, with mixed sentiments and notable activity from key accounts. @nolimitgains recently highlighted a high insider sell-to-buy ratio of approximately 10:1 over the past week, signaling potential bearish sentiment among insiders (current insider signal: BEARISH, ratio: 10:1). @unusual_whales has been posting frequent insider trade alerts, flagging significant sales by executives at companies like NVIDIA and Meta, with top sellers including NVIDIA CEO Jensen Huang (recently sold ~$95M in shares) and Meta CFO Susan Li (sold ~$5M). Viral posts, including one with over 50K views, express concern about CEO/CFO stock dumping at firms like Tesla and Amazon, with users speculating it could foreshadow market downturns.\n\nOverall, X sentiment leans cautious, with many users interpreting heavy insider selling as a red flag for overvaluation or upcoming negative news, though some argue it\u2019s often tied to personal financial planning rather than market timing. There\u2019s a split between alarmist takes calling it a \u201csell signal\u201d and more neutral voices urging context on insider motives.",
+    "scan_time": "2026-03-11 13:21:55"
+  },
+  {
+    "buy_sell_ratio": "1:10",
+    "signal": "BEARISH",
+    "signal_strength": "MODERATE",
+    "total_sell_volume": "$600,000,000+",
+    "total_buy_volume": "$148,101,266+",
+    "sell_pace": "ACCELERATING",
+    "biggest_sells": [
+      {
+        "insider": "Cresco Investments Ltd",
+        "company": "ATMP",
+        "ticker": "ATMP",
+        "amount": "$600M",
+        "date": "2026-02-12"
+      },
+      {
+        "insider": "Cresco Investments Ltd",
+        "company": "CAPE",
+        "ticker": "CAPE",
+        "amount": "$600M",
+        "date": "2026-02-12"
+      },
+      {
+        "insider": "Duato Joaquin",
+        "company": "JOHNSON & JOHNSON",
+        "ticker": "JNJ",
+        "amount": "$22.1M",
+        "date": "2026-01-26"
+      },
+      {
+        "insider": "Kress Colette",
+        "company": "NVIDIA CORP",
+        "ticker": "NVDA",
+        "amount": "$8.4M",
+        "date": "2026-02-04"
+      },
+      {
+        "insider": "Monia Brett P",
+        "company": "IONIS PHARMACEUTICALS INC",
+        "ticker": "IONS",
+        "amount": "$5.2M",
+        "date": "2026-01-30"
+      }
+    ],
+    "biggest_buys": [
+      {
+        "insider": "Green Jeffrey Terry",
+        "company": "The Trade Desk",
+        "ticker": "TTD",
+        "amount": "$148.1M",
+        "date": "2026-03-04"
+      },
+      {
+        "insider": "Jenisch Jan Philipp",
+        "company": "Amrize Ltd",
+        "ticker": "AMRZ",
+        "amount": "$3.5M",
+        "date": "2026-03-06"
+      },
+      {
+        "insider": "Sarah Farrell",
+        "company": "Reddit",
+        "ticker": "RDDT",
+        "amount": "$7.6M",
+        "date": "2026-02"
+      },
+      {
+        "insider": "COB, CEO",
+        "company": "Amrize Ltd",
+        "ticker": "AMRZ",
+        "amount": "$3.48M",
+        "date": "2026-03-06"
+      }
+    ],
+    "universe_overlap": [
+      "NVDA",
+      "PLTR"
+    ],
+    "ai_analysis": "The current insider trading data shows a significant imbalance favoring sales over purchases, with a notable buy-sell ratio of 1:10. This suggests a generally bearish sentiment among insiders. While there are some substantial buys, particularly in TTD and a few other companies, the overwhelming volume of proposed sales, especially the massive proposed sale in ATMP and CAPE, heavily skews the data towards bearishness. This pattern indicates a potential cautious or negative outlook on the market or specific holdings by insiders, and traders should be wary of potential downward pressure.",
+    "context": "The largest proposed sale by Cresco Investments Ltd in ATMP and CAPE appears to be a collateralized sale, which might not reflect a direct bearish view on the company's prospects but rather a financial arrangement. However, other substantial sales, like the one by Johnson & Johnson's CEO, could be for diversification or tax planning. The purchase by Jeffrey Terry Green, CEO of TTD, is a strong bullish signal for that specific company. The mention of '10b5-1 plans' in relation to Reddit sales suggests that some selling might be pre-planned and not necessarily an immediate reaction to negative news.",
+    "x_reaction": "On X/Twitter, the sentiment around corporate insider selling is predominantly bearish, aligning with the current 1:10 buy-to-sell ratio. @nolimitgains has highlighted this skewed ratio, noting heavy selling in stocks like NVDA and JNJ as a potential warning sign for market weakness, while @unusual_whales posts frequent insider trade alerts, spotlighting significant sales by executives at ATMP, CAPE, and IONS, which are fueling discussions of concern. Viral posts about CEOs and CFOs dumping stock, especially in tech giants like NVDA, are circulating with users interpreting this as a lack of confidence in near-term growth, though some argue it\u2019s routine profit-taking; overall, X users view insider selling as a cautious to bearish market signal, with many debating its predictive power.",
+    "scan_time": "2026-03-11 13:22:34"
+  },
+  {
+    "buy_sell_ratio": "1:3.8",
+    "signal": "NEUTRAL",
+    "signal_strength": "MODERATE",
+    "total_sell_volume": "$147,669,517",
+    "total_buy_volume": "$38,381,907",
+    "sell_pace": "NORMAL",
+    "biggest_sells": [
+      {
+        "insider": "HAAS ALESIA J, Chief Financial Officer",
+        "company": "Coinbase Global Inc.",
+        "ticker": "COIN",
+        "amount": "$56.5M",
+        "date": "2026-02-06"
+      },
+      {
+        "insider": "Tenev Vladimir, Chief Executive Officer",
+        "company": "Robinhood Markets Inc.",
+        "ticker": "HOOD",
+        "amount": "$45.6M",
+        "date": "2026-01-05"
+      },
+      {
+        "insider": "STEVENS MARK A, Director",
+        "company": "NVIDIA CORP",
+        "ticker": "NVDA",
+        "amount": "$40.1M",
+        "date": "2025-12-19"
+      }
+    ],
+    "biggest_buys": [
+      {
+        "insider": "Jenisch Jan Philipp, COB, CEO",
+        "company": "Amrize Ltd",
+        "ticker": "AMRZ",
+        "amount": "$3.5M",
+        "date": "2026-03-06"
+      },
+      {
+        "insider": "McKenzie Howard E, Chief Engineer & EVP, ET&T",
+        "company": "BOEING CO",
+        "ticker": "BA",
+        "amount": "$2.5M",
+        "date": "2026-02-05"
+      },
+      {
+        "insider": "Somo David M, Pres, CEO",
+        "company": "Ideal Power Inc.",
+        "ticker": "IPWR",
+        "amount": "$0.25M",
+        "date": "2026-02-25"
+      }
+    ],
+    "universe_overlap": [
+      "NVDA",
+      "HOOD"
+    ],
+    "ai_analysis": "The current insider trading data shows a higher volume of selling compared to buying, with significant transactions from high-ranking executives in notable tech companies. This pattern, while containing some large purchases, is dominated by substantial sell-offs that could signal profit-taking or a less optimistic outlook from some insiders. However, the presence of substantial buys in other sectors suggests a mixed sentiment across the market. Traders should monitor the specific companies involved to understand if the selling is routine or indicative of broader concerns.",
+    "context": "Some of the selling, particularly the large transactions in HOOD and COIN, could be attributed to portfolio diversification, tax planning, or cashing out on significant gains. The purchases, such as the large volume in AMRZ, might represent a strong belief in the company's future prospects. Without specific details on 10b5-1 plans, it's difficult to definitively label all sales as routine, but large, aggregated sales from top executives warrant careful consideration.",
+    "x_reaction": "On X/Twitter, @nolimitgains has been highlighting the current insider sell-to-buy ratio of 1:3.8, noting it as a neutral signal but cautioning about heavy selling in stocks like COIN, HOOD, and NVDA. @unusual_whales is actively posting insider trade alerts, with recent updates showing significant sales by executives at NVDA and COIN, reinforcing the trend of top insiders offloading shares. While no specific viral posts about CEO/CFO stock dumping are dominating, the overall sentiment on X leans slightly bearish, with users interpreting insider selling as a potential warning sign of overvaluation or upcoming market weakness, though some argue it\u2019s not a definitive indicator given personal financial motivations.",
+    "scan_time": "2026-03-11 14:38:02"
+  },
+  {
+    "buy_sell_ratio": "1:5",
+    "signal": "BEARISH",
+    "signal_strength": "MODERATE",
+    "total_sell_volume": "$120M+",
+    "total_buy_volume": "$25M+",
+    "sell_pace": "ACCELERATING",
+    "biggest_sells": [
+      {
+        "insider": "HAAS ALESIA J, Chief Financial Officer",
+        "company": "Coinbase Global Inc.",
+        "ticker": "COIN",
+        "amount": "$56.5M",
+        "date": "2026-02-06"
+      },
+      {
+        "insider": "Kress Colette, EVP & Chief Financial Officer",
+        "company": "NVIDIA CORP",
+        "ticker": "NVDA",
+        "amount": "$8.4M",
+        "date": "2026-02-04"
+      },
+      {
+        "insider": "Duato Joaquin, CEO and Chairman of the Board",
+        "company": "JOHNSON & JOHNSON",
+        "ticker": "JNJ",
+        "amount": "$22.1M",
+        "date": "2026-01-26"
+      },
+      {
+        "insider": "MURDOCH JAMES R, Director",
+        "company": "Tesla Inc.",
+        "ticker": "TSLA",
+        "amount": "$26.7M",
+        "date": "2026-01-02"
+      }
+    ],
+    "biggest_buys": [
+      {
+        "insider": "Watsa, CEO",
+        "company": "Under Armour",
+        "ticker": "UA",
+        "amount": "$219M",
+        "date": "Late December - Early February 2025/2026"
+      },
+      {
+        "insider": "AMRZ Insider",
+        "company": "Amrize Ltd",
+        "ticker": "AMRZ",
+        "amount": "$3.6M",
+        "date": "2026-03-06"
+      },
+      {
+        "insider": "Goldstein Phillip, Secretary",
+        "company": "Total Return Securities Fund",
+        "ticker": "SWZ",
+        "amount": "$0.06M",
+        "date": "2026-03-05"
+      },
+      {
+        "insider": "Dolan John Joseph, CFO",
+        "company": "Ehealth, Inc.",
+        "ticker": "EHTH",
+        "amount": "$0.04M",
+        "date": "2026-03-06"
+      }
+    ],
+    "universe_overlap": [
+      "PLTR",
+      "JNJ",
+      "CVRX",
+      "NVDA",
+      "LIFE",
+      "TSLA",
+      "INTC",
+      "CRCL",
+      "LXU",
+      "COIN",
+      "KMI"
+    ],
+    "ai_analysis": "The current insider trading data shows a clear trend of increased selling activity compared to buying. This predominantly bearish signal, with significant sales from high-ranking executives in major companies like Coinbase and NVIDIA, suggests a lack of confidence or a proactive hedging strategy. While there are some notable purchases, particularly the substantial investment in Under Armour by its CEO, the volume and frequency of selling outweigh the buying, indicating potential headwinds for the market.",
+    "context": "Some of the selling could be attributed to routine activities like tax planning or pre-arranged 10b5-1 plans, especially for the large volume sales. However, the magnitude of some sales and the general trend suggest that insiders might be taking profits or de-risking their positions in the current market environment, especially after recent rallies in some of these tech stocks.",
+    "x_reaction": "On X/Twitter, the current discussion around corporate insider selling reflects a cautious to bearish sentiment, aligning with the reported 1:5 buy-to-sell ratio. @nolimitgains has highlighted this imbalance, noting heavy selling from insiders at companies like COIN, NVDA, JNJ, and TSLA, often framing it as a potential warning sign for market weakness. @unusual_whales has been actively posting insider trade alerts, with recent updates showing significant sell-offs by executives at NVDA and TSLA, which have garnered attention and concern among followers. Viral posts, including discussions around CEO/CFO stock dumps at COIN and TSLA, often interpret these moves as a lack of confidence in near-term growth, fueling bearish narratives. Overall, X users seem to view insider selling as a credible bearish market signal, with many expressing skepticism about the stability of heavily sold stocks amidst broader economic uncertainty.",
+    "scan_time": "2026-03-11 15:37:32"
+  },
+  {
+    "buy_sell_ratio": "Data insufficient to calculate a reliable ratio for the provided period.",
+    "signal": "NEUTRAL",
+    "signal_strength": "WEAK",
+    "total_sell_volume": "Estimated over $150M (primarily from Robinhood and NVIDIA).",
+    "total_buy_volume": "Estimated over $10M (including large purchases in Amrize Ltd and Bankwell Financial Group, Inc.).",
+    "sell_pace": "ACCELERATING (based on large transactions in late 2025/early 2026)",
+    "biggest_sells": [
+      {
+        "insider": "Vladimir Tenev, Chief Executive Officer",
+        "company": "Robinhood Markets Inc.",
+        "ticker": "HOOD",
+        "amount": "$45.6M",
+        "date": "2026-01-05"
+      },
+      {
+        "insider": "Ajay K. Puri, EVP, Worldwide Field Ops",
+        "company": "NVIDIA CORP",
+        "ticker": "NVDA",
+        "amount": "$37.6M",
+        "date": "2026-01-07"
+      },
+      {
+        "insider": "Boise April Miller, EVP and Chief Legal Officer",
+        "company": "INTEL CORP",
+        "ticker": "INTC",
+        "amount": "$0.98M",
+        "date": "2026-02-02"
+      },
+      {
+        "insider": "Javier Olivan, Chief Operating Officer",
+        "company": "Meta Platforms Inc.",
+        "ticker": "META",
+        "amount": "$0.34M (per transaction)",
+        "date": "2026-01-05"
+      }
+    ],
+    "biggest_buys": [
+      {
+        "insider": "Jan Philipp Jenisch, COB, CEO",
+        "company": "Amrize Ltd",
+        "ticker": "AMRZ",
+        "amount": "$3.5M",
+        "date": "2026-03-06"
+      },
+      {
+        "insider": "Dale Eric J, Dir",
+        "company": "Bankwell Financial Group, Inc.",
+        "ticker": "BWFG",
+        "amount": "$28.2K",
+        "date": "2026-03-06"
+      },
+      {
+        "insider": "Lawrence B Seidman, Dir",
+        "company": "Bankwell Financial Group, Inc.",
+        "ticker": "BWFG",
+        "amount": "$58.2K",
+        "date": "2026-03-06"
+      },
+      {
+        "insider": "David Zinsner, EVP, CFO",
+        "company": "INTEL CORP",
+        "ticker": "INTC",
+        "amount": "Not specified, but a purchase",
+        "date": "2026-01-26"
+      }
+    ],
+    "universe_overlap": [
+      "META",
+      "NVDA"
+    ],
+    "ai_analysis": "The provided data shows a mixed picture, with significant selling activity from high-profile executives at major tech companies like Robinhood and NVIDIA. However, there are also notable purchase activities in smaller companies like Amrize Ltd and Bankwell Financial Group, Inc., and a specific purchase in Intel Corp. The substantial selling might be routine (e.g., for diversification or tax purposes), but the sheer volume could signal a lack of confidence in near-term upside from these individuals. The presence of buying in other companies suggests selective opportunities for insiders.",
+    "context": "The significant selling in Robinhood and NVIDIA could be attributed to standard insider selling practices such as 10b5-1 plans, tax obligations, or portfolio diversification. However, the scale of these sales warrants attention. The purchases in other companies appear to be more opportunistic or reflective of individual conviction in those specific entities.",
+    "x_reaction": "On X/Twitter, discussions about corporate insider selling are mixed, with @nolimitgains highlighting a cautious tone by noting recent insider sell/buy ratios leaning toward selling, especially in tech-heavy stocks like NVDA and META, though no specific ratio was provided in recent posts. @unusual_whales has been actively posting insider trade alerts, flagging significant sales by executives at HOOD, NVDA, and INTC, which has sparked some user concern about potential bearish signals, though no single post has gone viral regarding a specific CEO/CFO dump. Overall sentiment on X leans slightly negative, with many users interpreting insider selling as a possible warning of market overvaluation or upcoming corrections, while others argue it\u2019s often tied to personal financial planning rather than a broader market signal.",
+    "scan_time": "2026-03-11 16:11:04"
+  },
+  {
+    "buy_sell_ratio": "1:10",
+    "signal": "BEARISH",
+    "signal_strength": "MODERATE",
+    "total_sell_volume": "$170M+",
+    "total_buy_volume": "$3M+",
+    "sell_pace": "NORMAL",
+    "biggest_sells": [
+      {
+        "insider": "Mat Ishbia, President and CEO",
+        "company": "United Wholesale Mortgage",
+        "ticker": "UWMC",
+        "amount": "$2.6M",
+        "date": "2026-03-10"
+      },
+      {
+        "insider": "Ajay K. Puri, EVP, Worldwide Field Ops",
+        "company": "NVIDIA CORP",
+        "ticker": "NVDA",
+        "amount": "$37.5M",
+        "date": "2026-01-07"
+      },
+      {
+        "insider": "Vladimir Tenev, Chief Executive Officer",
+        "company": "Robinhood Markets Inc.",
+        "ticker": "HOOD",
+        "amount": "$45.6M",
+        "date": "2026-01-05"
+      },
+      {
+        "insider": "MARK A STEVENS, Director",
+        "company": "NVIDIA CORP",
+        "ticker": "NVDA",
+        "amount": "$40M",
+        "date": "2025-12-19"
+      }
+    ],
+    "biggest_buys": [
+      {
+        "insider": "Khory Karl, Director",
+        "company": "VITL",
+        "ticker": "VITL",
+        "amount": "$92K",
+        "date": "2026-03-09"
+      },
+      {
+        "insider": "Dale Eric J, Dir",
+        "company": "Bankwell Financial Group, Inc.",
+        "ticker": "BWFG",
+        "amount": "$28K",
+        "date": "2026-03-06"
+      },
+      {
+        "insider": "Seidman Lawrence B, Dir",
+        "company": "Bankwell Financial Group, Inc.",
+        "ticker": "BWFG",
+        "amount": "$58K",
+        "date": "2026-03-06"
+      },
+      {
+        "insider": "SPOHLER BRUCE J",
+        "company": "SLRC",
+        "ticker": "SLRC",
+        "amount": "$222K",
+        "date": "2026-03-04"
+      }
+    ],
+    "universe_overlap": [
+      "NVDA"
+    ],
+    "ai_analysis": "The insider trading data indicates a predominantly bearish sentiment. The ratio of sellers to buyers is significantly skewed, with large volume sales from high-level executives in prominent companies like NVIDIA and Robinhood. While there are some purchases, they are considerably smaller in scale and value compared to the sales. This suggests that insiders are more inclined to divest their holdings, potentially signaling a lack of confidence in future company performance or a desire for liquidity, which could lead to downward price pressure.",
+    "context": "The data shows some large sales that could be attributed to tax planning or diversification strategies, particularly from high-ranking executives like Mat Ishbia of UWMC and Tenev of HOOD. However, the sheer volume and breadth of significant sales across multiple companies like NVIDIA and Robinhood, especially when compared to the smaller value of insider purchases, suggests it's not entirely routine. Some of the purchases, like those in BWFG and SLRC, appear to be more traditional investment buys.",
+    "x_reaction": "On X/Twitter, the sentiment around corporate insider selling is predominantly bearish, aligning with the current 1:10 buy/sell ratio. @nolimitgains has been highlighting this skewed ratio, emphasizing heavy selling by insiders at companies like NVDA and HOOD as a potential warning sign for market weakness. @unusual_whales is actively posting insider trade alerts, noting significant sell-offs by executives at UWMC and NVDA, while viral posts are circulating about CEOs and CFOs dumping stock, fueling speculation of an impending downturn. Overall, X users view insider selling as a strong bearish market signal, with many expressing concern that insiders are anticipating lower stock prices or broader economic challenges.",
+    "scan_time": "2026-03-11 19:06:00"
+  },
+  {
+    "buy_sell_ratio": "1:10",
+    "signal": "BEARISH",
+    "signal_strength": "MODERATE",
+    "total_sell_volume": "$717,717,502",
+    "total_buy_volume": "$70,500,000",
+    "sell_pace": "NORMAL",
+    "biggest_sells": [
+      {
+        "insider": "Cresco Investments Ltd, Collateral Holder and Owner",
+        "company": "ATMP",
+        "ticker": "ATMP",
+        "amount": "$600M",
+        "date": "2026-02-12"
+      },
+      {
+        "insider": "Cresco Investments Ltd, Collateral Holder and Owner",
+        "company": "CAPE",
+        "ticker": "CAPE",
+        "amount": "$600M",
+        "date": "2026-02-12"
+      },
+      {
+        "insider": "Tenev Vladimir, Chief Executive Officer",
+        "company": "Robinhood Markets Inc.",
+        "ticker": "HOOD",
+        "amount": "$45.6M",
+        "date": "2026-01-05"
+      },
+      {
+        "insider": "LI SUSAN J, Chief Financial Officer",
+        "company": "Meta Platforms Inc.",
+        "ticker": "META",
+        "amount": "$12.2M",
+        "date": "2026-02-20"
+      },
+      {
+        "insider": "Kress Colette, EVP & Chief Financial Officer",
+        "company": "NVIDIA CORP",
+        "ticker": "NVDA",
+        "amount": "$8.3M",
+        "date": "2026-02-04"
+      }
+    ],
+    "biggest_buys": [
+      {
+        "insider": "Green Jeffrey Terry, President and CEO",
+        "company": "TTD",
+        "ticker": "TTD",
+        "amount": "$58.0M",
+        "date": "2026-03-04"
+      },
+      {
+        "insider": "Green Jeffrey Terry, President and CEO",
+        "company": "TTD",
+        "ticker": "TTD",
+        "amount": "$47.9M",
+        "date": "2026-03-02"
+      },
+      {
+        "insider": "Green Jeffrey Terry, President and CEO",
+        "company": "TTD",
+        "ticker": "TTD",
+        "amount": "$42.0M",
+        "date": "2026-03-03"
+      },
+      {
+        "insider": "Jenisch Jan Philipp, COB, CEO",
+        "company": "Amrize Ltd",
+        "ticker": "AMRZ",
+        "amount": "$3.48M",
+        "date": "2026-03-06"
+      },
+      {
+        "insider": "Somo David M, Pres, CEO",
+        "company": "Ideal Power Inc.",
+        "ticker": "IPWR",
+        "amount": "$0.25M",
+        "date": "2026-02-25"
+      }
+    ],
+    "universe_overlap": [
+      "NVDA",
+      "META"
+    ],
+    "ai_analysis": "The insider trading data shows a significant imbalance, with considerably more selling activity than buying. This suggests a potential lack of confidence from insiders in the short-to-medium term performance of their respective companies. While some selling could be routine, the sheer volume and value of the sales, particularly the large transactions in ATMP and CAPE, point towards a potentially bearish sentiment in the market.",
+    "context": "The large sales by Cresco Investments Ltd in ATMP and CAPE appear to be linked to a collateral arrangement rather than a bearish view on the companies themselves. However, other sales, such as those from Robinhood and Meta, could be more indicative of insider sentiment. The substantial buying in TTD by its CEO is a positive signal, but it is significantly outweighed by the volume of sales. It's important to consider if the selling is due to 10b5-1 plans, tax obligations, or diversification, which would temper the bearish interpretation. Given the information, a portion of the selling is likely routine, but the overall volume is noteworthy.",
+    "x_reaction": "X/Twitter is buzzing with concern over the current bearish insider signal, with a sell-to-buy ratio of 1:10 drawing significant attention from accounts like @nolimitgains, which has highlighted the heavy selling by insiders at companies like NVDA, META, and HOOD as a potential red flag for market weakness. @unusual_whales has been posting frequent insider trade alerts, noting substantial stock dumps by executives at ATMP and CAPE, fueling discussions about whether this reflects a lack of confidence in future growth. Viral posts, including threads about CEOs and CFOs offloading shares, are amplifying fears, with overall sentiment leaning toward insider selling as a strong bearish market signal, though some users caution against overreacting without broader context.",
+    "scan_time": "2026-03-12 08:08:23"
+  },
+  {
+    "buy_sell_ratio": "1:10",
+    "signal": "BEARISH",
+    "signal_strength": "MODERATE",
+    "total_sell_volume": "$100M+",
+    "total_buy_volume": "$10M+",
+    "sell_pace": "NORMAL",
+    "biggest_sells": [
+      {
+        "insider": "STEVENS MARK A, Director",
+        "company": "NVIDIA CORP",
+        "ticker": "NVDA",
+        "amount": "$40.09M",
+        "date": "2025-12-19"
+      },
+      {
+        "insider": "Puri Ajay K, EVP, Worldwide Field Ops",
+        "company": "NVIDIA CORP",
+        "ticker": "NVDA",
+        "amount": "$37.56M",
+        "date": "2026-01-07"
+      },
+      {
+        "insider": "DENHOLM ROBYN M, Director",
+        "company": "Tesla Inc.",
+        "ticker": "TSLA",
+        "amount": "$43.16M",
+        "date": "2025-02-03"
+      },
+      {
+        "insider": "MURDOCH JAMES R, Director",
+        "company": "Tesla Inc.",
+        "ticker": "TSLA",
+        "amount": "$26.72M",
+        "date": "2026-01-02"
+      },
+      {
+        "insider": "Pichai Sundar, Chief Executive Officer",
+        "company": "Alphabet Inc.",
+        "ticker": "GOOGL",
+        "amount": "$10.44M",
+        "date": "2026-01-07"
+      }
+    ],
+    "biggest_buys": [
+      {
+        "insider": "Jenisch Jan Philipp, COB, CEO",
+        "company": "Amrize Ltd",
+        "ticker": "AMRZ",
+        "amount": "$3.48M",
+        "date": "2026-03-09"
+      },
+      {
+        "insider": "RICKERTSEN CARL J, Director",
+        "company": "Strategy Inc",
+        "ticker": "MSTR",
+        "amount": "$0.78M",
+        "date": "2026-01-12"
+      },
+      {
+        "insider": "Marinko Mark W., SVP, CFO",
+        "company": "Suncoke Energy, Inc.",
+        "ticker": "SXC",
+        "amount": "$0.06M",
+        "date": "2026-02-26"
+      }
+    ],
+    "universe_overlap": [
+      "NVDA",
+      "TSLA",
+      "GOOGL",
+      "INTC",
+      "WMT",
+      "PLTR",
+      "MRNA",
+      "NFLX",
+      "MSTR"
+    ],
+    "ai_analysis": "The current insider trading data shows a significant imbalance, with selling volume heavily outweighing buying volume.  This pattern, especially with large sell-offs from high-ranking executives in major tech companies, suggests a potential bearish sentiment. While some selling might be routine, the scale of these transactions indicates a possible lack of conviction from insiders in their company's short-to-medium term prospects. Traders should exercise caution and consider this data as a bearish signal.",
+    "context": "A substantial portion of the observed selling appears to be large-value transactions by top executives, potentially indicating personal financial planning (diversification, tax obligations) or a genuine lack of confidence in future stock performance. The mention of 'Proposed Sale' for Cresco Investments Ltd. and 'Sale' for Alphabet, Tesla, and NVIDIA executives suggests these are executed trades rather than mere intentions. The exercise of options for Palantir and Moderna are non-monetary transactions and don't necessarily reflect a sell-off of company value. However, the scale of the large dollar-value sales from NVIDIA and Tesla are particularly noteworthy.",
+    "x_reaction": "On X/Twitter, the sentiment around corporate insider selling is predominantly bearish, aligning with the current 1:10 buy-to-sell ratio, with users like @nolimitgains highlighting this imbalance as a potential warning sign for market weakness, especially with top sellers like NVDA, TSLA, and GOOGL. @unusual_whales has been posting frequent insider trade alerts, noting significant selling by executives at these companies, which has fueled discussions about whether this reflects a lack of confidence in future growth. Viral posts, including mentions of CEO/CFO stock dumps at NVDA and TSLA, are amplifying concerns, with many users interpreting insider selling as a bearish market signal, though some argue it could be personal financial planning rather than a reflection of company health.",
+    "scan_time": "2026-03-12 09:39:46"
+  }
+]

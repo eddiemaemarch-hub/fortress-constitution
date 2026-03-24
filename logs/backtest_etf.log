@@ -1,0 +1,20 @@
+[2026-03-11 13:48:28] [BACKTEST-ETF] ============================================================
+[2026-03-11 13:48:28] [BACKTEST-ETF] ETF Strategy Backtester starting
+[2026-03-11 13:48:28] [BACKTEST-ETF] Fetching SCHD data from 2012-01-01 to 2025-12-31
+[2026-03-11 13:48:29] [BACKTEST-ETF]   Got 3519 bars from 2012-01-03 to 2025-12-30
+[2026-03-11 13:48:29] [BACKTEST-ETF] Fetching SPY data from 2010-01-01 to 2025-12-31
+[2026-03-11 13:48:30] [BACKTEST-ETF]   Got 4023 bars from 2010-01-04 to 2025-12-30
+[2026-03-11 13:48:30] [BACKTEST-ETF] Fetching QQQ data from 2010-01-01 to 2025-12-31
+[2026-03-11 13:48:30] [BACKTEST-ETF]   Got 4023 bars from 2010-01-04 to 2025-12-30
+[2026-03-11 13:48:30] [BACKTEST-ETF] Fetching TQQQ data from 2010-03-01 to 2025-12-31
+[2026-03-11 13:48:30] [BACKTEST-ETF]   Got 3985 bars from 2010-03-01 to 2025-12-30
+[2026-03-11 13:48:30] [BACKTEST-ETF] Running SCHD Wheel backtest...
+[2026-03-11 13:48:30] [BACKTEST-ETF] Wheel: $25,000 -> $32,171 | CAGR 1.8%
+[2026-03-11 13:48:30] [BACKTEST-ETF] Running SPY PMCC backtest...
+[2026-03-11 13:48:30] [BACKTEST-ETF] PMCC: $20,000 -> $25,298 | CAGR 1.5%
+[2026-03-11 13:48:30] [BACKTEST-ETF] Running QQQ Collar backtest...
+[2026-03-11 13:48:30] [BACKTEST-ETF] Collar: $15,000 -> $15,745 | CAGR 0.3%
+[2026-03-11 13:48:30] [BACKTEST-ETF] Running TQQQ Momentum backtest...
+[2026-03-11 13:48:30] [BACKTEST-ETF] TQQQ: $10,000 -> $5,513 | CAGR -3.7%
+[2026-03-11 13:48:30] [BACKTEST-ETF] Results saved to /Users/eddiemae/rudy/data/backtest_etf_results.json
+[2026-03-11 13:48:30] [BACKTEST-ETF] Backtester complete

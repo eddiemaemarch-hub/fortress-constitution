@@ -1,0 +1,678 @@
+[2026-03-17 01:18:56] [INFO] TEST MODE — no orders will be placed
+[2026-03-17 01:18:56] [WARN] Connection attempt 1/5 failed: [Errno 61] Connect call failed ('127.0.0.1', 7497)
+[2026-03-17 01:18:57] [WARN] Connection attempt 2/5 failed: [Errno 61] Connect call failed ('127.0.0.1', 7497)
+[2026-03-17 01:18:59] [WARN] Connection attempt 3/5 failed: [Errno 61] Connect call failed ('127.0.0.1', 7497)
+[2026-03-17 01:19:03] [WARN] Connection attempt 4/5 failed: [Errno 61] Connect call failed ('127.0.0.1', 7497)
+[2026-03-17 01:19:11] [WARN] Connection attempt 5/5 failed: [Errno 61] Connect call failed ('127.0.0.1', 7497)
+[2026-03-17 01:19:11] [ERROR] Failed to connect to TWS after all retries
+[2026-03-17 01:19:11] [ERROR] Could not connect to TWS
+[2026-03-17 01:23:12] [INFO] TEST MODE — no orders will be placed
+[2026-03-17 01:23:13] [INFO] Connected to TWS port 7497 | Accounts: ['DUA724990']
+[2026-03-17 01:23:13] [INFO] 
+============================================================
+[2026-03-17 01:23:13] [INFO] RUDY v2.8 EVALUATE (WEEKLY) — 2026-03-17 01:23
+[2026-03-17 01:23:13] [INFO] ============================================================
+[2026-03-17 01:23:15] [INFO] MSTR: $148.11 | BTC: $74,269
+[2026-03-17 01:23:15] [ERROR] No weekly MSTR data returned
+[2026-03-17 01:23:16] [INFO] Fetched 251 daily MSTR bars
+[2026-03-17 01:23:16] [ERROR] Missing historical data — skipping
+[2026-03-17 01:23:16] [INFO] Disconnected from TWS
+[2026-03-17 01:23:39] [INFO] TEST MODE — no orders will be placed
+[2026-03-17 01:23:39] [INFO] Connected to TWS port 7497 | Accounts: ['DUA724990']
+[2026-03-17 01:23:39] [INFO] 
+============================================================
+[2026-03-17 01:23:39] [INFO] RUDY v2.8 EVALUATE (WEEKLY) — 2026-03-17 01:23
+[2026-03-17 01:23:39] [INFO] ============================================================
+[2026-03-17 01:23:41] [INFO] MSTR: $148.11 | BTC: $74,249
+[2026-03-17 01:23:42] [INFO] Fetched 522 weekly MSTR bars (oldest: 2016-03-24)
+[2026-03-17 01:23:42] [INFO] Fetched 251 daily MSTR bars
+[2026-03-17 01:23:43] [INFO] Fetched 0 BTC weekly closes from CoinGecko
+[2026-03-17 01:23:43] [INFO] DIP BELOW 200W: MSTR=$147.52 < SMA=$149.59
+[2026-03-17 01:23:43] [INFO] FILTERS: Armed=False | BTC200W=False | StRSI=100(False) | Prem=1.01x(True) | PremExp=True | NoDiv=True | ATR=True | ALL=False
+[2026-03-17 01:23:43] [INFO] Evaluation complete. Next: waiting for signal
+[2026-03-17 01:23:43] [INFO] Disconnected from TWS
+[2026-03-17 01:24:30] [INFO] Loaded state from /Users/eddiemae/rudy/data/trader_v28_state.json
+[2026-03-17 01:24:30] [INFO] TEST MODE — no orders will be placed
+[2026-03-17 01:24:30] [INFO] Connected to TWS port 7497 | Accounts: ['DUA724990']
+[2026-03-17 01:24:30] [INFO] 
+============================================================
+[2026-03-17 01:24:30] [INFO] RUDY v2.8 EVALUATE (WEEKLY) — 2026-03-17 01:24
+[2026-03-17 01:24:30] [INFO] ============================================================
+[2026-03-17 01:24:32] [INFO] MSTR: $148.19 | BTC: $74,249
+[2026-03-17 01:24:33] [INFO] Fetched 522 weekly MSTR bars (oldest: 2016-03-24)
+[2026-03-17 01:24:33] [INFO] Fetched 251 daily MSTR bars
+[2026-03-17 01:24:34] [INFO] Fetched 472 BTC weekly closes via GBTC proxy
+[2026-03-17 01:24:34] [INFO] FILTERS: Armed=False | BTC200W=True | StRSI=100(False) | Prem=1.01x(True) | PremExp=True | NoDiv=True | ATR=True | ALL=False
+[2026-03-17 01:24:34] [INFO] Evaluation complete. Next: waiting for signal
+[2026-03-17 01:24:34] [INFO] Disconnected from TWS
+[2026-03-17 17:55:51] [INFO] Loaded state from /Users/eddiemae/rudy/data/trader_v28_state.json
+[2026-03-17 17:55:51] [INFO] 
+============================================================
+[2026-03-17 17:55:51] [INFO] RUDY v2.8 DYNAMIC BLEND — STANDALONE DAEMON
+[2026-03-17 17:55:51] [INFO] Mode: PAPER | Resolution: daily
+[2026-03-17 17:55:51] [INFO] Port: 7497 | State: /Users/eddiemae/rudy/data/trader_v28_state.json
+[2026-03-17 17:55:51] [INFO] ============================================================
+
+[2026-03-17 17:55:52] [INFO] Scheduled: Every weekday at 15:45 ET
+[2026-03-17 17:55:52] [INFO] Running initial evaluation...
+[2026-03-17 17:55:52] [INFO] 
+============================================================
+[2026-03-17 17:55:52] [INFO] RUDY v2.8 EVALUATE (DAILY) — 2026-03-17 17:55
+[2026-03-17 17:55:52] [INFO] ============================================================
+[2026-03-17 17:55:52] [INFO] Reconnecting to TWS...
+[2026-03-17 17:55:52] [INFO] Connected to TWS port 7497 | Accounts: ['DUA724990']
+[2026-03-17 17:55:54] [INFO] MSTR: $151.00 | BTC: $74,699
+[2026-03-17 17:55:54] [INFO] Fetched 522 weekly MSTR bars (oldest: 2016-03-24)
+[2026-03-17 17:55:55] [INFO] Fetched 251 daily MSTR bars
+[2026-03-17 17:55:56] [INFO] Fetched 472 BTC weekly closes via GBTC proxy
+[2026-03-17 17:55:56] [INFO] FILTERS: Armed=False | BTC200W=True | StRSI=78(False) | Prem=1.02x(True) | PremExp=True | NoDiv=True | ATR=True | ALL=False | TV=none
+[2026-03-17 17:55:56] [INFO] Evaluation complete. Next: waiting for signal
+[2026-03-17 20:05:51] [INFO] Loaded state from /Users/eddiemae/rudy/data/trader_v28_state.json
+[2026-03-17 20:05:51] [INFO] 
+============================================================
+[2026-03-17 20:05:51] [INFO] RUDY v2.8 DYNAMIC BLEND — STANDALONE DAEMON
+[2026-03-17 20:05:51] [INFO] Mode: PAPER | Resolution: daily
+[2026-03-17 20:05:51] [INFO] Port: 7497 | State: /Users/eddiemae/rudy/data/trader_v28_state.json
+[2026-03-17 20:05:51] [INFO] ============================================================
+
+[2026-03-17 20:05:52] [INFO] Scheduled: Every weekday at 15:45 ET
+[2026-03-17 20:05:52] [INFO] Running initial evaluation...
+[2026-03-17 20:05:52] [INFO] 
+============================================================
+[2026-03-17 20:05:52] [INFO] RUDY v2.8 EVALUATE (DAILY) — 2026-03-17 20:05
+[2026-03-17 20:05:52] [INFO] ============================================================
+[2026-03-17 20:05:52] [INFO] Reconnecting to TWS...
+[2026-03-17 20:05:52] [INFO] Connected to TWS port 7497 | Accounts: ['DUA724990']
+[2026-03-17 20:05:54] [INFO] MSTR: $149.57 | BTC: $73,909
+[2026-03-17 20:05:55] [INFO] Fetched 522 weekly MSTR bars (oldest: 2016-03-24)
+[2026-03-17 20:05:55] [INFO] Fetched 251 daily MSTR bars
+[2026-03-17 20:05:56] [INFO] Fetched 472 BTC weekly closes via GBTC proxy
+[2026-03-17 20:05:56] [INFO] 🔫 ARMED: MSTR=$150.28 | SMA=$149.60 | GreenWks=2
+[2026-03-17 20:05:56] [INFO] FILTERS: Armed=True | BTC200W=True | StRSI=78(False) | Prem=1.02x(True) | PremExp=True | NoDiv=True | ATR=True | ALL=False | TV=none
+[2026-03-17 20:05:56] [INFO] Evaluation complete. Next: waiting for signal
+[2026-03-17 20:05:58] [INFO] Loaded state from /Users/eddiemae/rudy/data/trader_v28_state.json
+[2026-03-17 20:05:58] [INFO] 
+============================================================
+[2026-03-17 20:05:58] [INFO] RUDY v2.8 DYNAMIC BLEND — STANDALONE DAEMON
+[2026-03-17 20:05:58] [INFO] Mode: PAPER | Resolution: daily
+[2026-03-17 20:05:58] [INFO] Port: 7497 | State: /Users/eddiemae/rudy/data/trader_v28_state.json
+[2026-03-17 20:05:58] [INFO] ============================================================
+
+[2026-03-17 20:05:59] [INFO] Scheduled: Every weekday at 15:45 ET
+[2026-03-17 20:05:59] [INFO] Running initial evaluation...
+[2026-03-17 20:05:59] [INFO] 
+============================================================
+[2026-03-17 20:05:59] [INFO] RUDY v2.8 EVALUATE (DAILY) — 2026-03-17 20:05
+[2026-03-17 20:05:59] [INFO] ============================================================
+[2026-03-17 20:05:59] [INFO] Reconnecting to TWS...
+[2026-03-17 20:06:03] [WARN] Connection attempt 1/5 failed: 
+[2026-03-17 20:06:08] [WARN] Connection attempt 2/5 failed: 
+[2026-03-17 20:06:14] [WARN] Connection attempt 3/5 failed: 
+[2026-03-17 20:06:22] [WARN] Connection attempt 4/5 failed: 
+[2026-03-17 20:06:37] [INFO] Loaded state from /Users/eddiemae/rudy/data/trader_v28_state.json
+[2026-03-17 20:06:37] [INFO] 
+============================================================
+[2026-03-17 20:06:37] [INFO] RUDY v2.8 DYNAMIC BLEND — STANDALONE DAEMON
+[2026-03-17 20:06:37] [INFO] Mode: PAPER | Resolution: daily
+[2026-03-17 20:06:37] [INFO] Port: 7497 | State: /Users/eddiemae/rudy/data/trader_v28_state.json
+[2026-03-17 20:06:37] [INFO] ============================================================
+
+[2026-03-17 20:06:38] [INFO] Scheduled: Every weekday at 15:45 ET
+[2026-03-17 20:06:38] [INFO] Running initial evaluation...
+[2026-03-17 20:06:38] [INFO] 
+============================================================
+[2026-03-17 20:06:38] [INFO] RUDY v2.8 EVALUATE (DAILY) — 2026-03-17 20:06
+[2026-03-17 20:06:38] [INFO] ============================================================
+[2026-03-17 20:06:38] [INFO] Reconnecting to TWS...
+[2026-03-17 20:06:38] [INFO] Connected to TWS port 7497 | Accounts: ['DUA724990']
+[2026-03-17 20:06:40] [INFO] MSTR: $149.46 | BTC: $73,938
+[2026-03-17 20:06:41] [INFO] Fetched 522 weekly MSTR bars (oldest: 2016-03-24)
+[2026-03-17 20:06:41] [INFO] Fetched 251 daily MSTR bars
+[2026-03-17 20:06:43] [INFO] Fetched 472 BTC weekly closes via GBTC proxy
+[2026-03-17 20:06:43] [INFO] FILTERS: Armed=True | BTC200W=True | StRSI=78(False) | Prem=1.02x(True) | PremExp=True | NoDiv=True | ATR=True | ALL=False | TV=none
+[2026-03-17 20:06:43] [INFO] Evaluation complete. Next: waiting for signal
+[2026-03-17 20:50:33] [INFO] Loaded state from /Users/eddiemae/rudy/data/trader_v28_state.json
+[2026-03-17 20:50:33] [INFO] 
+============================================================
+[2026-03-17 20:50:33] [INFO] RUDY v2.8 DYNAMIC BLEND — STANDALONE DAEMON
+[2026-03-17 20:50:33] [INFO] Mode: PAPER | Resolution: daily
+[2026-03-17 20:50:33] [INFO] Port: 7497 | State: /Users/eddiemae/rudy/data/trader_v28_state.json
+[2026-03-17 20:50:33] [INFO] ============================================================
+
+[2026-03-17 20:50:33] [INFO] Scheduled: Every weekday at 15:45 ET
+[2026-03-17 20:50:33] [INFO] Running initial evaluation...
+[2026-03-17 20:50:33] [INFO] 
+============================================================
+[2026-03-17 20:50:33] [INFO] RUDY v2.8 EVALUATE (DAILY) — 2026-03-17 20:50
+[2026-03-17 20:50:33] [INFO] ============================================================
+[2026-03-17 20:50:33] [INFO] Reconnecting to TWS...
+[2026-03-17 20:50:34] [INFO] Connected to TWS port 7497 | Accounts: ['DUA724990']
+[2026-03-17 20:50:36] [INFO] MSTR: $149.75 | BTC: $73,809
+[2026-03-17 20:50:36] [INFO] Fetched 522 weekly MSTR bars (oldest: 2016-03-24)
+[2026-03-17 20:50:37] [INFO] Fetched 251 daily MSTR bars
+[2026-03-17 20:50:37] [INFO] Fetched 472 BTC weekly closes via GBTC proxy
+[2026-03-17 20:50:37] [INFO] FILTERS: Armed=True | BTC200W=True | StRSI=78(False) | Prem=1.03x(True) | PremExp=True | NoDiv=True | ATR=True | ALL=False | TV=none
+[2026-03-17 20:50:37] [ERROR] Evaluation error: type str doesn't define __round__ method
+[2026-03-17 20:50:37] [ERROR] Traceback (most recent call last):
+  File "/Users/eddiemae/rudy/scripts/trader_v28.py", line 1197, in evaluate
+    self.state["last_premium"] = round(filters.get("premium", 0), 4)
+TypeError: type str doesn't define __round__ method
+
+/Users/eddiemae/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+[2026-03-18 04:06:28] [INFO] Loaded state from /Users/eddiemae/rudy/data/trader_v28_state.json
+[2026-03-18 04:06:28] [INFO] Loaded state from /Users/eddiemae/rudy/data/trader_v28_state.json
+[2026-03-18 04:06:28] [INFO] 
+============================================================
+[2026-03-18 04:06:28] [INFO] 
+============================================================
+[2026-03-18 04:06:28] [INFO] RUDY v2.8+ TREND ADDER — STANDALONE DAEMON
+[2026-03-18 04:06:28] [INFO] RUDY v2.8+ TREND ADDER — STANDALONE DAEMON
+[2026-03-18 04:06:28] [INFO] Mode: LIVE | Resolution: daily
+[2026-03-18 04:06:28] [INFO] Mode: LIVE | Resolution: daily
+[2026-03-18 04:06:28] [INFO] Port: 7496 | State: /Users/eddiemae/rudy/data/trader_v28_state.json
+[2026-03-18 04:06:28] [INFO] Port: 7496 | State: /Users/eddiemae/rudy/data/trader_v28_state.json
+[2026-03-18 04:06:28] [INFO] ============================================================
+
+[2026-03-18 04:06:28] [INFO] ============================================================
+
+[2026-03-18 04:06:28] [INFO] Scheduled: Every weekday at 15:45 ET
+[2026-03-18 04:06:28] [INFO] Scheduled: Every weekday at 15:45 ET
+[2026-03-18 04:06:28] [INFO] Running initial evaluation...
+[2026-03-18 04:06:28] [INFO] Running initial evaluation...
+[2026-03-18 04:06:28] [INFO] 
+============================================================
+[2026-03-18 04:06:28] [INFO] 
+============================================================
+[2026-03-18 04:06:28] [INFO] RUDY v2.8 EVALUATE (DAILY) — 2026-03-18 04:06
+[2026-03-18 04:06:28] [INFO] RUDY v2.8 EVALUATE (DAILY) — 2026-03-18 04:06
+[2026-03-18 04:06:28] [INFO] ============================================================
+[2026-03-18 04:06:28] [INFO] ============================================================
+[2026-03-18 04:06:28] [INFO] Reconnecting to TWS...
+[2026-03-18 04:06:28] [INFO] Reconnecting to TWS...
+API connection failed: ConnectionRefusedError(61, "Connect call failed ('127.0.0.1', 7496)")
+Make sure API port on TWS/IBG is open
+[2026-03-18 04:06:28] [WARN] Connection attempt 1/5 failed: [Errno 61] Connect call failed ('127.0.0.1', 7496)
+[2026-03-18 04:06:28] [WARN] Connection attempt 1/5 failed: [Errno 61] Connect call failed ('127.0.0.1', 7496)
+API connection failed: ConnectionRefusedError(61, "Connect call failed ('127.0.0.1', 7496)")
+Make sure API port on TWS/IBG is open
+[2026-03-18 04:06:29] [WARN] Connection attempt 2/5 failed: [Errno 61] Connect call failed ('127.0.0.1', 7496)
+[2026-03-18 04:06:29] [WARN] Connection attempt 2/5 failed: [Errno 61] Connect call failed ('127.0.0.1', 7496)
+API connection failed: ConnectionRefusedError(61, "Connect call failed ('127.0.0.1', 7496)")
+Make sure API port on TWS/IBG is open
+[2026-03-18 04:06:31] [WARN] Connection attempt 3/5 failed: [Errno 61] Connect call failed ('127.0.0.1', 7496)
+[2026-03-18 04:06:31] [WARN] Connection attempt 3/5 failed: [Errno 61] Connect call failed ('127.0.0.1', 7496)
+API connection failed: ConnectionRefusedError(61, "Connect call failed ('127.0.0.1', 7496)")
+Make sure API port on TWS/IBG is open
+[2026-03-18 04:06:35] [WARN] Connection attempt 4/5 failed: [Errno 61] Connect call failed ('127.0.0.1', 7496)
+[2026-03-18 04:06:35] [WARN] Connection attempt 4/5 failed: [Errno 61] Connect call failed ('127.0.0.1', 7496)
+API connection failed: ConnectionRefusedError(61, "Connect call failed ('127.0.0.1', 7496)")
+Make sure API port on TWS/IBG is open
+[2026-03-18 04:06:43] [WARN] Connection attempt 5/5 failed: [Errno 61] Connect call failed ('127.0.0.1', 7496)
+[2026-03-18 04:06:43] [WARN] Connection attempt 5/5 failed: [Errno 61] Connect call failed ('127.0.0.1', 7496)
+[2026-03-18 04:06:43] [ERROR] Failed to connect to TWS after all retries
+[2026-03-18 04:06:43] [ERROR] Failed to connect to TWS after all retries
+[2026-03-18 04:06:44] [ERROR] Missing price data — skipping evaluation
+[2026-03-18 04:06:44] [ERROR] Missing price data — skipping evaluation
+/Users/eddiemae/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+[2026-03-18 04:14:26] [INFO] Loaded state from /Users/eddiemae/rudy/data/trader_v28_state.json
+[2026-03-18 04:14:26] [INFO] Loaded state from /Users/eddiemae/rudy/data/trader_v28_state.json
+[2026-03-18 04:14:26] [INFO] 
+============================================================
+[2026-03-18 04:14:26] [INFO] 
+============================================================
+[2026-03-18 04:14:26] [INFO] RUDY v2.8+ TREND ADDER — STANDALONE DAEMON
+[2026-03-18 04:14:26] [INFO] RUDY v2.8+ TREND ADDER — STANDALONE DAEMON
+[2026-03-18 04:14:26] [INFO] Mode: LIVE | Resolution: daily
+[2026-03-18 04:14:26] [INFO] Mode: LIVE | Resolution: daily
+[2026-03-18 04:14:26] [INFO] Port: 7496 | State: /Users/eddiemae/rudy/data/trader_v28_state.json
+[2026-03-18 04:14:26] [INFO] Port: 7496 | State: /Users/eddiemae/rudy/data/trader_v28_state.json
+[2026-03-18 04:14:26] [INFO] ============================================================
+
+[2026-03-18 04:14:26] [INFO] ============================================================
+
+[2026-03-18 04:14:26] [INFO] Scheduled: Every weekday at 15:45 ET
+[2026-03-18 04:14:26] [INFO] Scheduled: Every weekday at 15:45 ET
+[2026-03-18 04:14:26] [INFO] Running initial evaluation...
+[2026-03-18 04:14:26] [INFO] Running initial evaluation...
+[2026-03-18 04:14:26] [INFO] 
+============================================================
+[2026-03-18 04:14:26] [INFO] 
+============================================================
+[2026-03-18 04:14:26] [INFO] RUDY v2.8 EVALUATE (DAILY) — 2026-03-18 04:14
+[2026-03-18 04:14:26] [INFO] RUDY v2.8 EVALUATE (DAILY) — 2026-03-18 04:14
+[2026-03-18 04:14:26] [INFO] ============================================================
+[2026-03-18 04:14:26] [INFO] ============================================================
+[2026-03-18 04:14:26] [INFO] Reconnecting to TWS...
+[2026-03-18 04:14:26] [INFO] Reconnecting to TWS...
+[2026-03-18 04:14:27] [INFO] Connected to TWS port 7496 | Accounts: ['U15746102']
+[2026-03-18 04:14:27] [INFO] Connected to TWS port 7496 | Accounts: ['U15746102']
+[2026-03-18 04:14:29] [INFO] MSTR: $150.05 | BTC: $74,002
+[2026-03-18 04:14:29] [INFO] MSTR: $150.05 | BTC: $74,002
+[2026-03-18 04:14:29] [INFO] Fetched 522 weekly MSTR bars (oldest: 2016-03-24)
+[2026-03-18 04:14:29] [INFO] Fetched 522 weekly MSTR bars (oldest: 2016-03-24)
+[2026-03-18 04:14:30] [INFO] Fetched 251 daily MSTR bars
+[2026-03-18 04:14:30] [INFO] Fetched 251 daily MSTR bars
+[2026-03-18 04:14:31] [INFO] Fetched 472 BTC weekly closes via GBTC proxy
+[2026-03-18 04:14:31] [INFO] Fetched 472 BTC weekly closes via GBTC proxy
+[2026-03-18 04:14:31] [INFO] FILTERS: Armed=True | BTC200W=True | StRSI=78(False) | Prem=1.03x(True) | PremExp=True | NoDiv=True | ATR=True | ALL=False | TV=none
+[2026-03-18 04:14:31] [INFO] FILTERS: Armed=True | BTC200W=True | StRSI=78(False) | Prem=1.03x(True) | PremExp=True | NoDiv=True | ATR=True | ALL=False | TV=none
+[2026-03-18 04:14:31] [INFO] Evaluation complete. Next: waiting for signal
+[2026-03-18 04:14:31] [INFO] Evaluation complete. Next: waiting for signal
+/Users/eddiemae/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+[2026-03-18 09:44:59] [INFO] Lockfile acquired — no duplicate daemons allowed
+[2026-03-18 09:44:59] [INFO] Lockfile acquired — no duplicate daemons allowed
+[2026-03-18 09:44:59] [INFO] Loaded state from /Users/eddiemae/rudy/data/trader_v28_state.json
+[2026-03-18 09:44:59] [INFO] Loaded state from /Users/eddiemae/rudy/data/trader_v28_state.json
+[2026-03-18 09:44:59] [INFO] 
+============================================================
+[2026-03-18 09:44:59] [INFO] 
+============================================================
+[2026-03-18 09:44:59] [INFO] RUDY v2.8+ TREND ADDER — STANDALONE DAEMON
+[2026-03-18 09:44:59] [INFO] RUDY v2.8+ TREND ADDER — STANDALONE DAEMON
+[2026-03-18 09:44:59] [INFO] Mode: LIVE | Resolution: daily
+[2026-03-18 09:44:59] [INFO] Mode: LIVE | Resolution: daily
+[2026-03-18 09:44:59] [INFO] Port: 7496 | State: /Users/eddiemae/rudy/data/trader_v28_state.json
+[2026-03-18 09:44:59] [INFO] Port: 7496 | State: /Users/eddiemae/rudy/data/trader_v28_state.json
+[2026-03-18 09:44:59] [INFO] ============================================================
+
+[2026-03-18 09:44:59] [INFO] ============================================================
+
+[2026-03-18 09:45:00] [INFO] Scheduled: Every weekday at 15:45 ET
+[2026-03-18 09:45:00] [INFO] Scheduled: Every weekday at 15:45 ET
+[2026-03-18 09:45:00] [INFO] Running initial evaluation...
+[2026-03-18 09:45:00] [INFO] Running initial evaluation...
+[2026-03-18 09:45:00] [INFO] 
+============================================================
+[2026-03-18 09:45:00] [INFO] 
+============================================================
+[2026-03-18 09:45:00] [INFO] RUDY v2.8 EVALUATE (DAILY) — 2026-03-18 09:45
+[2026-03-18 09:45:00] [INFO] RUDY v2.8 EVALUATE (DAILY) — 2026-03-18 09:45
+[2026-03-18 09:45:00] [INFO] ============================================================
+[2026-03-18 09:45:00] [INFO] ============================================================
+[2026-03-18 09:45:00] [INFO] Reconnecting to TWS...
+[2026-03-18 09:45:00] [INFO] Reconnecting to TWS...
+[2026-03-18 09:45:00] [INFO] Connected to TWS port 7496 | Accounts: ['U15746102']
+[2026-03-18 09:45:00] [INFO] Connected to TWS port 7496 | Accounts: ['U15746102']
+[2026-03-18 09:45:02] [INFO] MSTR: $145.74 | BTC: $72,435
+[2026-03-18 09:45:02] [INFO] MSTR: $145.74 | BTC: $72,435
+[2026-03-18 09:45:03] [INFO] Fetched 522 weekly MSTR bars (oldest: 2016-03-24)
+[2026-03-18 09:45:03] [INFO] Fetched 522 weekly MSTR bars (oldest: 2016-03-24)
+[2026-03-18 09:45:03] [INFO] Fetched 251 daily MSTR bars
+[2026-03-18 09:45:03] [INFO] Fetched 251 daily MSTR bars
+[2026-03-18 09:45:04] [INFO] Fetched 472 BTC weekly closes via GBTC proxy
+[2026-03-18 09:45:04] [INFO] Fetched 472 BTC weekly closes via GBTC proxy
+[2026-03-18 09:45:04] [INFO] FILTERS: Armed=False | BTC200W=True | StRSI=67(True) | Prem=1.02x(True) | PremExp=True | NoDiv=True | ATR=True | ALL=False | TV=none
+[2026-03-18 09:45:04] [INFO] FILTERS: Armed=False | BTC200W=True | StRSI=67(True) | Prem=1.02x(True) | PremExp=True | NoDiv=True | ATR=True | ALL=False | TV=none
+[2026-03-18 09:45:04] [INFO] Evaluation complete. Next: waiting for signal
+[2026-03-18 09:45:04] [INFO] Evaluation complete. Next: waiting for signal
+/Users/eddiemae/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+[2026-03-18 15:42:25] [INFO] Lockfile acquired — no duplicate daemons allowed
+[2026-03-18 15:42:25] [INFO] Lockfile acquired — no duplicate daemons allowed
+[2026-03-18 15:42:25] [INFO] Loaded state from /Users/eddiemae/rudy/data/trader_v28_state.json
+[2026-03-18 15:42:25] [INFO] Loaded state from /Users/eddiemae/rudy/data/trader_v28_state.json
+[2026-03-18 15:42:25] [INFO] 
+============================================================
+[2026-03-18 15:42:25] [INFO] 
+============================================================
+[2026-03-18 15:42:25] [INFO] RUDY v2.8+ TREND ADDER — STANDALONE DAEMON
+[2026-03-18 15:42:25] [INFO] RUDY v2.8+ TREND ADDER — STANDALONE DAEMON
+[2026-03-18 15:42:25] [INFO] Mode: LIVE | Resolution: daily
+[2026-03-18 15:42:25] [INFO] Mode: LIVE | Resolution: daily
+[2026-03-18 15:42:25] [INFO] Port: 7496 | State: /Users/eddiemae/rudy/data/trader_v28_state.json
+[2026-03-18 15:42:25] [INFO] Port: 7496 | State: /Users/eddiemae/rudy/data/trader_v28_state.json
+[2026-03-18 15:42:25] [INFO] ============================================================
+
+[2026-03-18 15:42:25] [INFO] ============================================================
+
+[2026-03-18 15:42:26] [INFO] Scheduled: Every weekday at 15:45 ET
+[2026-03-18 15:42:26] [INFO] Scheduled: Every weekday at 15:45 ET
+[2026-03-18 15:42:26] [INFO] Running initial evaluation...
+[2026-03-18 15:42:26] [INFO] Running initial evaluation...
+[2026-03-18 15:42:26] [INFO] 
+============================================================
+[2026-03-18 15:42:26] [INFO] 
+============================================================
+[2026-03-18 15:42:26] [INFO] RUDY v2.8 EVALUATE (DAILY) — 2026-03-18 15:42
+[2026-03-18 15:42:26] [INFO] RUDY v2.8 EVALUATE (DAILY) — 2026-03-18 15:42
+[2026-03-18 15:42:26] [INFO] ============================================================
+[2026-03-18 15:42:26] [INFO] ============================================================
+[2026-03-18 15:42:26] [INFO] Reconnecting to TWS...
+[2026-03-18 15:42:26] [INFO] Reconnecting to TWS...
+[2026-03-18 15:42:26] [INFO] Connected to TWS port 7496 | Accounts: ['U15746102']
+[2026-03-18 15:42:26] [INFO] Connected to TWS port 7496 | Accounts: ['U15746102']
+[2026-03-18 15:42:28] [INFO] MSTR: $142.13 | BTC: $71,155
+[2026-03-18 15:42:28] [INFO] MSTR: $142.13 | BTC: $71,155
+[2026-03-18 15:42:29] [INFO] Fetched 522 weekly MSTR bars (oldest: 2016-03-24)
+[2026-03-18 15:42:29] [INFO] Fetched 522 weekly MSTR bars (oldest: 2016-03-24)
+[2026-03-18 15:42:29] [INFO] Fetched 251 daily MSTR bars
+[2026-03-18 15:42:29] [INFO] Fetched 251 daily MSTR bars
+[2026-03-18 15:42:30] [INFO] Fetched 472 BTC weekly closes via GBTC proxy
+[2026-03-18 15:42:30] [INFO] Fetched 472 BTC weekly closes via GBTC proxy
+[2026-03-18 15:42:30] [INFO] FILTERS: Armed=False | BTC200W=True | StRSI=52(True) | Prem=1.01x(True) | PremExp=True | NoDiv=True | ATR=True | ALL=False | TV=none
+[2026-03-18 15:42:30] [INFO] FILTERS: Armed=False | BTC200W=True | StRSI=52(True) | Prem=1.01x(True) | PremExp=True | NoDiv=True | ATR=True | ALL=False | TV=none
+[2026-03-18 15:42:30] [INFO] Evaluation complete. Next: waiting for signal
+[2026-03-18 15:42:30] [INFO] Evaluation complete. Next: waiting for signal
+[2026-03-18 15:45:00] [INFO] 
+============================================================
+[2026-03-18 15:45:00] [INFO] 
+============================================================
+[2026-03-18 15:45:00] [INFO] RUDY v2.8 EVALUATE (DAILY) — 2026-03-18 15:45
+[2026-03-18 15:45:00] [INFO] RUDY v2.8 EVALUATE (DAILY) — 2026-03-18 15:45
+[2026-03-18 15:45:00] [INFO] ============================================================
+[2026-03-18 15:45:00] [INFO] ============================================================
+[2026-03-18 15:45:02] [INFO] MSTR: $141.92 | BTC: $71,080
+[2026-03-18 15:45:02] [INFO] MSTR: $141.92 | BTC: $71,080
+[2026-03-18 15:45:03] [INFO] Fetched 522 weekly MSTR bars (oldest: 2016-03-24)
+[2026-03-18 15:45:03] [INFO] Fetched 522 weekly MSTR bars (oldest: 2016-03-24)
+[2026-03-18 15:45:03] [INFO] Fetched 251 daily MSTR bars
+[2026-03-18 15:45:03] [INFO] Fetched 251 daily MSTR bars
+[2026-03-18 15:45:04] [INFO] Fetched 472 BTC weekly closes via GBTC proxy
+[2026-03-18 15:45:04] [INFO] Fetched 472 BTC weekly closes via GBTC proxy
+[2026-03-18 15:45:04] [INFO] FILTERS: Armed=False | BTC200W=True | StRSI=51(True) | Prem=1.01x(True) | PremExp=True | NoDiv=True | ATR=True | ALL=False | TV=none
+[2026-03-18 15:45:04] [INFO] FILTERS: Armed=False | BTC200W=True | StRSI=51(True) | Prem=1.01x(True) | PremExp=True | NoDiv=True | ATR=True | ALL=False | TV=none
+[2026-03-18 15:45:04] [INFO] Evaluation complete. Next: waiting for signal
+[2026-03-18 15:45:04] [INFO] Evaluation complete. Next: waiting for signal
+[2026-03-19 15:45:22] [INFO] 
+============================================================
+[2026-03-19 15:45:22] [INFO] 
+============================================================
+[2026-03-19 15:45:22] [INFO] RUDY v2.8 EVALUATE (DAILY) — 2026-03-19 15:45
+[2026-03-19 15:45:22] [INFO] RUDY v2.8 EVALUATE (DAILY) — 2026-03-19 15:45
+[2026-03-19 15:45:22] [INFO] ============================================================
+[2026-03-19 15:45:22] [INFO] ============================================================
+[Errno 54] Connection reset by peer
+[2026-03-19 15:45:22] [ERROR] Evaluation error: Socket disconnect
+[2026-03-19 15:45:22] [ERROR] Evaluation error: Socket disconnect
+[2026-03-19 15:45:22] [ERROR] Traceback (most recent call last):
+  File "/Users/eddiemae/Library/Python/3.9/lib/python/site-packages/ib_insync/ib.py", line 1798, in qualifyContractsAsync
+    detailsLists = await asyncio.gather(
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/eddiemae/Library/Python/3.9/lib/python/site-packages/ib_insync/util.py", line 341, in run
+    result = loop.run_until_complete(task)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/asyncio/base_events.py", line 642, in run_until_complete
+    return future.result()
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/eddiemae/rudy/scripts/trader_v28.py", line 1395, in evaluate
+    self.state["second_entry_done"] = False
+  File "/Users/eddiemae/rudy/scripts/trader_v28.py", line 422, in fetch_mstr_price
+    return None
+  File "/Users/eddiemae/Library/Python/3.9/lib/python/site-packages/ib_insync/ib.py", line 570, in qualifyContracts
+    return self._run(self.qualifyContractsAsync(*contracts))
+  File "/Users/eddiemae/Library/Python/3.9/lib/python/site-packages/ib_insync/ib.py", line 318, in _run
+    return util.run(*awaitables, timeout=self.RequestTimeout)
+  File "/Users/eddiemae/Library/Python/3.9/lib/python/site-packages/ib_insync/util.py", line 343, in run
+    raise globalErrorEvent.value() or e
+ConnectionError: Socket disconnect
+
+[2026-03-19 15:45:22] [ERROR] Traceback (most recent call last):
+  File "/Users/eddiemae/Library/Python/3.9/lib/python/site-packages/ib_insync/ib.py", line 1798, in qualifyContractsAsync
+    detailsLists = await asyncio.gather(
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/eddiemae/Library/Python/3.9/lib/python/site-packages/ib_insync/util.py", line 341, in run
+    result = loop.run_until_complete(task)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/asyncio/base_events.py", line 642, in run_until_complete
+    return future.result()
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/eddiemae/rudy/scripts/trader_v28.py", line 1395, in evaluate
+    self.state["second_entry_done"] = False
+  File "/Users/eddiemae/rudy/scripts/trader_v28.py", line 422, in fetch_mstr_price
+    return None
+  File "/Users/eddiemae/Library/Python/3.9/lib/python/site-packages/ib_insync/ib.py", line 570, in qualifyContracts
+    return self._run(self.qualifyContractsAsync(*contracts))
+  File "/Users/eddiemae/Library/Python/3.9/lib/python/site-packages/ib_insync/ib.py", line 318, in _run
+    return util.run(*awaitables, timeout=self.RequestTimeout)
+  File "/Users/eddiemae/Library/Python/3.9/lib/python/site-packages/ib_insync/util.py", line 343, in run
+    raise globalErrorEvent.value() or e
+ConnectionError: Socket disconnect
+
+[2026-03-20 09:49:57] [INFO] Lockfile acquired — no duplicate daemons allowed
+[2026-03-20 09:49:57] [INFO] Loaded state from /Users/eddiemae/rudy/data/trader_v28_state.json
+[2026-03-20 09:49:57] [INFO] 
+============================================================
+[2026-03-20 09:49:57] [INFO] RUDY v2.8+ TREND ADDER — STANDALONE DAEMON
+[2026-03-20 09:49:57] [INFO] Mode: LIVE | Resolution: daily
+[2026-03-20 09:49:57] [INFO] Port: 7496 | State: /Users/eddiemae/rudy/data/trader_v28_state.json
+[2026-03-20 09:49:57] [INFO] ============================================================
+
+[2026-03-20 09:49:58] [INFO] Scheduled: Every weekday at 15:45 ET
+[2026-03-20 09:49:58] [INFO] Scheduled: Self-evaluation every 4 hours (10:00, 14:00 ET weekdays)
+[2026-03-20 09:49:58] [INFO] Running initial evaluation...
+[2026-03-20 09:49:58] [INFO] 
+============================================================
+[2026-03-20 09:49:58] [INFO] RUDY v2.8 EVALUATE (DAILY) — 2026-03-20 09:49
+[2026-03-20 09:49:58] [INFO] ============================================================
+[2026-03-20 09:49:58] [INFO] Reconnecting to TWS...
+[2026-03-20 09:49:59] [INFO] Connected to TWS port 7496 | Accounts: ['U15746102']
+[2026-03-20 09:49:59] [INFO] Daily NLV open recorded: $7,883.13
+[2026-03-20 09:49:59] [INFO] Daily P&L: +0.0% (limit: -2.0%)
+[2026-03-20 09:50:01] [INFO] MSTR: $137.68 | BTC: $70,280
+[2026-03-20 09:50:02] [INFO] Fetched 522 weekly MSTR bars (oldest: 2016-03-24)
+[2026-03-20 09:50:02] [INFO] Fetched 251 daily MSTR bars
+[2026-03-20 09:50:04] [INFO] Fetched 472 BTC weekly closes via GBTC proxy
+[2026-03-20 09:50:04] [INFO] FILTERS: Armed=False | BTC200W=True | StRSI=4(True) | Prem=0.99x(True) | PremExp=True | NoDiv=True | ATR=True | ALL=False | TV=none
+[2026-03-20 09:50:04] [INFO] Evaluation complete. Next: waiting for signal
+[2026-03-20 10:00:04] [INFO] 
+========================================
+[2026-03-20 10:00:04] [INFO] SELF-EVALUATION — 2026-03-20 10:00
+[2026-03-20 10:00:04] [INFO] ========================================
+[2026-03-20 10:00:04] [INFO] Self-eval complete | Trades: 0 | Wins: 0 (0%) | ConsecL: 0 ConsecW: 0 | Connected: True
+[2026-03-20 14:00:06] [INFO] 
+========================================
+[2026-03-20 14:00:06] [INFO] SELF-EVALUATION — 2026-03-20 14:00
+[2026-03-20 14:00:06] [INFO] ========================================
+[2026-03-20 14:00:06] [INFO] Self-eval complete | Trades: 0 | Wins: 0 (0%) | ConsecL: 0 ConsecW: 0 | Connected: True
+[2026-03-20 15:45:08] [INFO] 
+============================================================
+[2026-03-20 15:45:08] [INFO] RUDY v2.8 EVALUATE (DAILY) — 2026-03-20 15:45
+[2026-03-20 15:45:08] [INFO] ============================================================
+[2026-03-20 15:45:08] [INFO] Daily P&L: +0.0% (limit: -2.0%)
+[2026-03-20 15:45:08] [ERROR] Evaluation error: Socket disconnect
+[2026-03-20 15:45:08] [ERROR] Traceback (most recent call last):
+  File "/Users/eddiemae/Library/Python/3.9/lib/python/site-packages/ib_insync/ib.py", line 1798, in qualifyContractsAsync
+    detailsLists = await asyncio.gather(
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/eddiemae/Library/Python/3.9/lib/python/site-packages/ib_insync/util.py", line 341, in run
+    result = loop.run_until_complete(task)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/asyncio/base_events.py", line 642, in run_until_complete
+    return future.result()
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/eddiemae/rudy/scripts/trader_v28.py", line 1506, in evaluate
+    mstr_price = self.fetch_mstr_price()
+  File "/Users/eddiemae/rudy/scripts/trader_v28.py", line 425, in fetch_mstr_price
+    self.ib.qualifyContracts(contract)
+  File "/Users/eddiemae/Library/Python/3.9/lib/python/site-packages/ib_insync/ib.py", line 570, in qualifyContracts
+    return self._run(self.qualifyContractsAsync(*contracts))
+  File "/Users/eddiemae/Library/Python/3.9/lib/python/site-packages/ib_insync/ib.py", line 318, in _run
+    return util.run(*awaitables, timeout=self.RequestTimeout)
+  File "/Users/eddiemae/Library/Python/3.9/lib/python/site-packages/ib_insync/util.py", line 343, in run
+    raise globalErrorEvent.value() or e
+ConnectionError: Socket disconnect
+
+[2026-03-22 13:15:31] [INFO] Lockfile acquired — no duplicate daemons allowed
+[2026-03-22 13:15:31] [INFO] Loaded state from /Users/eddiemae/rudy/data/trader_v28_state.json
+[2026-03-22 13:15:31] [INFO] 
+============================================================
+[2026-03-22 13:15:31] [INFO] RUDY v2.8+ TREND ADDER — STANDALONE DAEMON
+[2026-03-22 13:15:31] [INFO] Mode: LIVE | Resolution: daily
+[2026-03-22 13:15:31] [INFO] Port: 7496 | State: /Users/eddiemae/rudy/data/trader_v28_state.json
+[2026-03-22 13:15:31] [INFO] ============================================================
+
+[2026-03-22 13:15:31] [INFO] Scheduled: Monday 9:30 AM sentinel check (early eval on weekend BTC moves)
+[2026-03-22 13:15:31] [INFO] Scheduled: Every weekday at 15:45 ET
+[2026-03-22 13:15:31] [INFO] Scheduled: Self-evaluation every 4 hours (10:00, 14:00 ET weekdays)
+[2026-03-22 13:15:31] [INFO] Running initial evaluation...
+[2026-03-22 13:15:31] [INFO] 
+============================================================
+[2026-03-22 13:15:31] [INFO] RUDY v2.8 EVALUATE (DAILY) — 2026-03-22 13:15
+[2026-03-22 13:15:31] [INFO] ============================================================
+[2026-03-22 13:15:31] [INFO] Reconnecting to TWS...
+[2026-03-22 13:15:32] [INFO] Connected to TWS port 7496 | Accounts: ['U15746102']
+[2026-03-22 13:15:32] [INFO] Daily NLV open recorded: $7,910.85
+[2026-03-22 13:15:32] [INFO] Daily P&L: +0.0% (limit: -2.0%)
+[2026-03-22 13:15:32] [INFO] CYCLE INTEL: Mar | Phase: 🔴 BEAR | Action: BRACE | Hist avg: -14.8% | Standard
+[2026-03-22 13:15:32] [INFO]   → High volatility; bounce before drop
+[2026-03-22 13:15:32] [INFO]   → System 13: 🟡 DISTRIBUTION (82.2% confidence)
+[2026-03-22 13:15:32] [INFO]   → Transition pressure: MARKDOWN at 17.8%
+[2026-03-22 13:15:35] [INFO] MSTR: $135.66 | BTC: $68,814
+[2026-03-22 13:15:35] [INFO] Fetched 522 weekly MSTR bars (oldest: 2016-03-24)
+[2026-03-22 13:15:35] [INFO] Fetched 251 daily MSTR bars
+[2026-03-22 13:15:37] [INFO] Fetched 472 BTC weekly closes via GBTC proxy
+[2026-03-22 13:15:37] [INFO] FILTERS: Armed=False | BTC200W=True | StRSI=0(True) | Prem=1.00x(True) | PremExp=True | NoDiv=True | ATR=True | ALL=False | TV=none | Regime=DISTRIBUTION(82%)
+[2026-03-22 13:15:37] [INFO] Evaluation complete. Next: waiting for signal
+[2026-03-23 09:30:04] [INFO] Monday sentinel check: BTC moved +0.0% over weekend — no early eval needed
+[2026-03-23 10:00:12] [INFO] 
+========================================
+[2026-03-23 10:00:12] [INFO] SELF-EVALUATION — 2026-03-23 10:00
+[2026-03-23 10:00:12] [INFO] ========================================
+[2026-03-23 10:00:12] [INFO] Self-eval complete | Trades: 0 | Wins: 0 (0%) | ConsecL: 0 ConsecW: 0 | Connected: True
+[2026-03-23 14:00:18] [INFO] 
+========================================
+[2026-03-23 14:00:18] [INFO] SELF-EVALUATION — 2026-03-23 14:00
+[2026-03-23 14:00:18] [INFO] ========================================
+[2026-03-23 14:00:18] [WARN] ⚠️ *SELF-EVAL: STALE DAEMON*
+Last evaluation was 25 hours ago.
+Daemon may be stuck or disconnected.
+[2026-03-23 14:00:20] [INFO] Self-eval complete | Trades: 0 | Wins: 0 (0%) | ConsecL: 0 ConsecW: 0 | Connected: True
+[2026-03-23 15:25:01] [INFO] Lockfile acquired — no duplicate daemons allowed
+[2026-03-23 15:25:01] [INFO] Loaded state from /Users/eddiemae/rudy/data/trader_v28_state.json
+[2026-03-23 15:25:01] [INFO] 
+============================================================
+[2026-03-23 15:25:01] [INFO] RUDY v2.8+ TREND ADDER — STANDALONE DAEMON
+[2026-03-23 15:25:01] [INFO] Mode: LIVE | Resolution: daily
+[2026-03-23 15:25:01] [INFO] Port: 7496 | State: /Users/eddiemae/rudy/data/trader_v28_state.json
+[2026-03-23 15:25:01] [INFO] ============================================================
+
+[2026-03-23 15:25:02] [INFO] Scheduled: Monday 9:30 AM sentinel check (early eval on weekend BTC moves)
+[2026-03-23 15:25:02] [INFO] Scheduled: Every weekday at 15:45 ET
+[2026-03-23 15:25:02] [INFO] Scheduled: Self-evaluation every 4 hours (10:00, 14:00 ET weekdays)
+[2026-03-23 15:25:02] [INFO] Running initial evaluation...
+[2026-03-23 15:25:02] [INFO] 
+============================================================
+[2026-03-23 15:25:02] [INFO] RUDY v2.8 EVALUATE (DAILY) — 2026-03-23 15:25
+[2026-03-23 15:25:02] [INFO] ============================================================
+[2026-03-23 15:25:02] [INFO] Reconnecting to TWS...
+[2026-03-23 15:25:02] [INFO] Connected to TWS port 7496 | Accounts: ['U15746102']
+[2026-03-23 15:25:02] [INFO] Daily NLV open recorded: $7,823.08
+[2026-03-23 15:25:02] [INFO] Daily P&L: +0.0% (limit: -2.0%)
+[2026-03-23 15:25:02] [INFO] CYCLE INTEL: Mar | Phase: 🔴 BEAR | Action: BRACE | Hist avg: -14.8% | Standard
+[2026-03-23 15:25:02] [INFO]   → High volatility; bounce before drop
+[2026-03-23 15:25:02] [INFO]   → System 13: 🟡 DISTRIBUTION (82.2% confidence)
+[2026-03-23 15:25:02] [INFO]   → Transition pressure: MARKDOWN at 17.8%
+[2026-03-23 15:25:02] [INFO]   → BTC: $70,935 | ATH DD: 43.8%
+[2026-03-23 15:25:04] [INFO] MSTR: $138.46 | BTC: $70,935
+[2026-03-23 15:25:05] [INFO] Fetched 522 weekly MSTR bars (oldest: 2016-04-01)
+[2026-03-23 15:25:05] [INFO] Fetched 251 daily MSTR bars
+[2026-03-23 15:25:06] [INFO] Fetched 473 BTC weekly closes via GBTC proxy
+[2026-03-23 15:25:07] [INFO] ⚠️ PREMIUM COMPRESSION ALERT: 1.03x → 0.75x (26.8%) | Roll: FAIR→DEPRESSED
+[2026-03-23 15:25:07] [INFO] FILTERS: Armed=False | BTC200W=True | StRSI=35(True) | Prem=0.75x(True) | PremExp=False | NoDiv=True | ATR=True | ALL=False | TV=none | Regime=DISTRIBUTION(82%)
+[2026-03-23 15:25:07] [INFO] Evaluation complete. Next: waiting for signal
+[2026-03-23 15:25:07] [INFO] Force eval triggered by Commander via MCP
+[2026-03-23 15:25:07] [INFO] 
+============================================================
+[2026-03-23 15:25:07] [INFO] RUDY v2.8 EVALUATE (DAILY) — 2026-03-23 15:25
+[2026-03-23 15:25:07] [INFO] ============================================================
+[2026-03-23 15:25:07] [INFO] Daily P&L: +0.0% (limit: -2.0%)
+[2026-03-23 15:25:07] [INFO] CYCLE INTEL: Mar | Phase: 🔴 BEAR | Action: BRACE | Hist avg: -14.8% | Standard
+[2026-03-23 15:25:07] [INFO]   → High volatility; bounce before drop
+[2026-03-23 15:25:07] [INFO]   → System 13: 🟡 DISTRIBUTION (82.2% confidence)
+[2026-03-23 15:25:07] [INFO]   → Transition pressure: MARKDOWN at 17.8%
+[2026-03-23 15:25:07] [INFO]   → BTC: $70,935 | ATH DD: 43.8%
+[2026-03-23 15:25:10] [INFO] MSTR: $138.49 | BTC: $70,962
+[2026-03-23 15:25:10] [INFO] Fetched 522 weekly MSTR bars (oldest: 2016-04-01)
+[2026-03-23 15:25:10] [INFO] Fetched 251 daily MSTR bars
+[2026-03-23 15:25:12] [INFO] Fetched 473 BTC weekly closes via GBTC proxy
+[2026-03-23 15:25:12] [INFO] FILTERS: Armed=False | BTC200W=True | StRSI=36(True) | Prem=0.75x(True) | PremExp=False | NoDiv=True | ATR=True | ALL=False | TV=none | Regime=DISTRIBUTION(82%)
+[2026-03-23 15:25:12] [INFO] Evaluation complete. Next: waiting for signal
+[2026-03-23 15:35:31] [INFO] Lockfile acquired — no duplicate daemons allowed
+[2026-03-23 15:35:31] [INFO] Loaded state from /Users/eddiemae/rudy/data/trader_v28_state.json
+[2026-03-23 15:35:31] [INFO] 
+============================================================
+[2026-03-23 15:35:31] [INFO] RUDY v2.8+ TREND ADDER — STANDALONE DAEMON
+[2026-03-23 15:35:31] [INFO] Mode: LIVE | Resolution: daily
+[2026-03-23 15:35:31] [INFO] Port: 7496 | State: /Users/eddiemae/rudy/data/trader_v28_state.json
+[2026-03-23 15:35:31] [INFO] ============================================================
+
+[2026-03-23 15:35:32] [INFO] Scheduled: Monday 9:30 AM sentinel check (early eval on weekend BTC moves)
+[2026-03-23 15:35:32] [INFO] Scheduled: Every weekday at 15:45 ET
+[2026-03-23 15:35:32] [INFO] Scheduled: Self-evaluation every 4 hours (10:00, 14:00 ET weekdays)
+[2026-03-23 15:35:32] [INFO] Running initial evaluation...
+[2026-03-23 15:35:32] [INFO] 
+============================================================
+[2026-03-23 15:35:32] [INFO] RUDY v2.8 EVALUATE (DAILY) — 2026-03-23 15:35
+[2026-03-23 15:35:32] [INFO] ============================================================
+[2026-03-23 15:35:32] [INFO] Reconnecting to TWS...
+[2026-03-23 15:35:33] [INFO] Connected to TWS port 7496 | Accounts: ['U15746102']
+[2026-03-23 15:35:33] [INFO] Daily P&L: +0.1% (limit: -2.0%)
+[2026-03-23 15:35:33] [INFO] CYCLE INTEL: Mar | Phase: 🔴 BEAR | Action: BRACE | Hist avg: -14.8% | Standard
+[2026-03-23 15:35:33] [INFO]   → High volatility; bounce before drop
+[2026-03-23 15:35:33] [INFO]   → System 13: 🟡 DISTRIBUTION (82.2% confidence)
+[2026-03-23 15:35:33] [INFO]   → Transition pressure: MARKDOWN at 17.8%
+[2026-03-23 15:35:33] [INFO]   → BTC: $70,935 | ATH DD: 43.8%
+[2026-03-23 15:35:35] [INFO] MSTR: $138.40 | BTC: $71,008
+[2026-03-23 15:35:36] [INFO] Fetched 522 weekly MSTR bars (oldest: 2016-04-01)
+[2026-03-23 15:35:36] [INFO] Fetched 251 daily MSTR bars
+[2026-03-23 15:35:37] [INFO] Fetched 473 BTC weekly closes via GBTC proxy
+[2026-03-23 15:35:37] [INFO] FILTERS: Armed=False | BTC200W=True | StRSI=35(True) | Prem=0.75x(True) | PremExp=False | NoDiv=True | ATR=True | ALL=False | TV=none | Regime=DISTRIBUTION(82%)
+[2026-03-23 15:35:37] [INFO] Evaluation complete. Next: waiting for signal
+[2026-03-23 15:45:09] [INFO] 
+============================================================
+[2026-03-23 15:45:09] [INFO] RUDY v2.8 EVALUATE (DAILY) — 2026-03-23 15:45
+[2026-03-23 15:45:09] [INFO] ============================================================
+[2026-03-23 15:45:09] [INFO] Daily P&L: +0.1% (limit: -2.0%)
+[2026-03-23 15:45:09] [INFO] CYCLE INTEL: Mar | Phase: 🔴 BEAR | Action: BRACE | Hist avg: -14.8% | Standard
+[2026-03-23 15:45:09] [INFO]   → High volatility; bounce before drop
+[2026-03-23 15:45:09] [INFO]   → System 13: 🟡 DISTRIBUTION (82.2% confidence)
+[2026-03-23 15:45:09] [INFO]   → Transition pressure: MARKDOWN at 17.8%
+[2026-03-23 15:45:09] [INFO]   → BTC: $70,924 | ATH DD: 43.8%
+[2026-03-23 15:45:11] [INFO] MSTR: $138.35 | BTC: $70,873
+[2026-03-23 15:45:11] [INFO] Fetched 522 weekly MSTR bars (oldest: 2016-04-01)
+[2026-03-23 15:45:12] [INFO] Fetched 251 daily MSTR bars
+[2026-03-23 15:45:13] [INFO] Fetched 473 BTC weekly closes via GBTC proxy
+[2026-03-23 15:45:13] [INFO] FILTERS: Armed=False | BTC200W=True | StRSI=35(True) | Prem=0.75x(True) | PremExp=False | NoDiv=True | ATR=True | ALL=False | TV=none | Regime=DISTRIBUTION(82%)
+[2026-03-23 15:45:13] [INFO] Evaluation complete. Next: waiting for signal
+[2026-03-23 16:33:13] [INFO] Loaded state from /Users/eddiemae/rudy/data/trader_v28_state.json
+[2026-03-23 16:41:59] [INFO] Loaded state from /Users/eddiemae/rudy/data/trader_v28_state.json
+[2026-03-23 16:45:22] [INFO] Loaded state from /Users/eddiemae/rudy/data/trader_v28_state.json
+[2026-03-23 16:45:22] [INFO] Loaded state from /Users/eddiemae/rudy/data/trader_v28_state.json
+[2026-03-23 16:45:36] [INFO] Loaded state from /Users/eddiemae/rudy/data/trader_v28_state.json
+[2026-03-23 16:45:45] [INFO] Loaded state from /Users/eddiemae/rudy/data/trader_v28_state.json
+[2026-03-23 16:46:32] [INFO] Loaded state from /Users/eddiemae/rudy/data/trader_v28_state.json
+[2026-03-23 16:46:32] [INFO] Loaded state from /Users/eddiemae/rudy/data/trader_v28_state.json
+[2026-03-23 16:55:45] [INFO] Loaded state from /Users/eddiemae/rudy/data/trader_v28_state.json
+[2026-03-23 16:55:45] [INFO] Loaded state from /Users/eddiemae/rudy/data/trader_v28_state.json
+[2026-03-23 17:05:07] [INFO] Loaded state from /Users/eddiemae/rudy/data/trader_v28_state.json
+[2026-03-23 17:05:38] [INFO] Loaded state from /Users/eddiemae/rudy/data/trader_v28_state.json
+[2026-03-23 17:05:39] [INFO] Loaded state from /Users/eddiemae/rudy/data/trader_v28_state.json
+[2026-03-23 17:05:39] [INFO] Loaded state from /Users/eddiemae/rudy/data/trader_v28_state.json
+[2026-03-23 17:10:17] [INFO] Loaded state from /Users/eddiemae/rudy/data/trader_v28_state.json
+[2026-03-23 17:12:43] [INFO] Loaded state from /Users/eddiemae/rudy/data/trader_v28_state.json
+[2026-03-23 17:12:43] [INFO] Loaded state from /Users/eddiemae/rudy/data/trader_v28_state.json
+[2026-03-23 17:12:43] [INFO] Loaded state from /Users/eddiemae/rudy/data/trader_v28_state.json

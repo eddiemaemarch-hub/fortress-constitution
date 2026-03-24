@@ -1,0 +1,39 @@
+name: Rudy v2.0 Tests
+
+on:
+  push:
+    paths:
+      - 'scripts/**'
+      - 'tests/**'
+      - 'web/app.py'
+  pull_request:
+    paths:
+      - 'scripts/**'
+      - 'tests/**'
+      - 'web/app.py'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install ib_insync requests
+
+      - name: Run unit tests (ladder + sim + edge)
+        run: python tests/run_tests.py --unit --verbose
+
+      - name: Run integration tests (breaker + mid-execution)
+        run: python tests/run_tests.py --integration --verbose
+
+      - name: Run fast battery (smoke test)
+        run: python tests/run_tests.py --fast

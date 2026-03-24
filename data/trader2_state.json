@@ -1,0 +1,17 @@
+{
+  "activated": false,
+  "current_tier": 0,
+  "peak_value": 0,
+  "peak_gain_pct": 0,
+  "trail_stop_value": 0,
+  "trail_stop_pct": 0,
+  "contracts_remaining": 1,
+  "total_realized": 0,
+  "tiers_hit": [],
+  "pending_sell": null,
+  "last_check": "2026-03-23T16:00:12.933941",
+  "history": [],
+  "last_value": 987.01,
+  "last_gain_pct": -21.231395395235623,
+  "last_mid": 9.8701
+}

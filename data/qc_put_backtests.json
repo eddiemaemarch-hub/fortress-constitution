@@ -1,0 +1,9 @@
+{
+  "MSTR CycleHigh PUT v1.0 Weekly": {
+    "project_id": 29065184,
+    "compile_id": "6d2e5863cbd423bac387d75fd7407797-c7386649d9cead744ff1a94b47e58356",
+    "backtest_id": "ba2f861e925c0063aac77e44e3e7a714",
+    "resolution": "weekly",
+    "status": "running"
+  }
+}

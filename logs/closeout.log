@@ -1,0 +1,72 @@
+[2026-03-17 11:39:59] 
+==================================================
+[2026-03-17 11:39:59] CLOSING TRADER3: 4 open positions
+[2026-03-17 11:39:59] ==================================================
+[2026-03-17 11:39:59]   Closing: FANG 20260417 $180.0C x1 (energy_momentum)
+[2026-03-17 11:40:02]     SOLD: FANG x1 @ $0.00 | Status: Cancelled
+[2026-03-17 11:40:02]   Closing: OXY 20260417 $60.0C x2 (energy_momentum)
+[2026-03-17 11:40:06]     SOLD: OXY x2 @ $0.00 | Status: Cancelled
+[2026-03-17 11:40:06]   Closing: CVX 20260417 $200.0C x1 (energy_momentum)
+[2026-03-17 11:40:09]     SOLD: CVX x1 @ $6.35 | Status: Filled
+[2026-03-17 11:40:09]   Closing: XOM 20260417 $160.0C x1 (energy_momentum)
+[2026-03-17 11:40:12]     SOLD: XOM x1 @ $5.65 | Status: Filled
+[2026-03-17 11:40:12]   Saved /Users/eddiemae/rudy/data/trader3_positions.json
+[2026-03-17 11:40:12] 
+==================================================
+[2026-03-17 11:40:12] CLOSING TRADER4: 3 open positions
+[2026-03-17 11:40:12] ==================================================
+[2026-03-17 11:40:12]   Closing: MARA 20260327 $10.5C x9 (short_squeeze)
+[2026-03-17 11:40:16]     SOLD: MARA x9 @ $0.15 | Status: Filled
+[2026-03-17 11:40:16]   Closing: COIN 20260327 $210.0C x1 (short_squeeze)
+[2026-03-17 11:40:19]     SOLD: COIN x1 @ $7.20 | Status: Filled
+[2026-03-17 11:40:19]   Closing: GME 20260327 $25.5C x8 (short_squeeze)
+[2026-03-17 11:40:22]     SOLD: GME x8 @ $0.35 | Status: Submitted
+[2026-03-17 11:40:22]   Saved /Users/eddiemae/rudy/data/trader4_positions.json
+[2026-03-17 11:40:22] 
+==================================================
+[2026-03-17 11:40:22] CLOSING TRADER5: 2 open positions
+[2026-03-17 11:40:22] ==================================================
+[2026-03-17 11:40:22]   Closing: AAPL 20260325 $250.0P x1 (sideways_condor)
+[2026-03-17 11:40:25]     SOLD: AAPL x1 @ $2.21 | Status: Filled
+[2026-03-17 11:40:25]   Closing: MSFT 20260325 $385.0P x1 (sideways_condor)
+[2026-03-17 11:40:29]     SOLD: MSFT x1 @ $1.95 | Status: Filled
+[2026-03-17 11:40:29]   Saved /Users/eddiemae/rudy/data/trader5_positions.json
+[2026-03-17 11:40:29] 
+==================================================
+[2026-03-17 11:40:29] CLOSING TRADER6: 5 open positions
+[2026-03-17 11:40:29] ==================================================
+[2026-03-17 11:40:29]   Closing: GOLD 20260515 $50.0C x1 (metals_momentum)
+[2026-03-17 11:40:32]     SOLD: GOLD x1 @ $3.50 | Status: Filled
+[2026-03-17 11:40:32]   Closing: AG 20260717 $26.0C x1 (metals_momentum)
+[2026-03-17 11:40:35]     SOLD: AG x1 @ $2.53 | Status: Filled
+[2026-03-17 11:40:35]   Closing: GLD 20260515 $485.0C x1 (metals_momentum)
+[2026-03-17 11:40:39]     SOLD: GLD x1 @ $10.50 | Status: Filled
+[2026-03-17 11:40:39]   Closing: NEM 20260501 $113.0C x1 (metals_momentum)
+[2026-03-17 11:40:42]     SOLD: NEM x1 @ $6.70 | Status: Filled
+[2026-03-17 11:40:42]   Closing: GDX 20260501 $95.5C x1 (metals_momentum)
+[2026-03-17 11:40:45]     SOLD: GDX x1 @ $5.30 | Status: Filled
+[2026-03-17 11:40:45]   Saved /Users/eddiemae/rudy/data/trader6_positions.json
+[2026-03-17 11:40:45] 
+==================================================
+[2026-03-17 11:40:45] CLOSING TRADER7: 2 open positions
+[2026-03-17 11:40:45] ==================================================
+[2026-03-17 11:40:45]   Closing: RKLB 20260515 $70.0P x1 (spacex_ipo)
+[2026-03-17 11:40:48]     SOLD: RKLB x1 @ $0.00 | Status: Cancelled
+[2026-03-17 11:40:48]   Closing: BKSY 20260515 $25.0C x1 (spacex_ipo)
+[2026-03-17 11:40:52]     SOLD: BKSY x1 @ $4.30 | Status: Filled
+[2026-03-17 11:40:52]   Saved /Users/eddiemae/rudy/data/trader7_positions.json
+[2026-03-17 11:40:52] 
+==================================================
+[2026-03-17 11:40:52] CLOSING TRADER8: 3 open positions
+[2026-03-17 11:40:52] ==================================================
+[2026-03-17 11:40:52]   Closing: DNA 20260618 $6.0P x3 (10x_moonshot)
+[2026-03-17 11:40:55]     SOLD: DNA x3 @ $0.00 | Status: Cancelled
+[2026-03-17 11:40:55]   Closing: SOUN 20260515 $7.0P x3 (10x_moonshot)
+[2026-03-17 11:40:58]     SOLD: SOUN x3 @ $0.61 | Status: Filled
+[2026-03-17 11:40:58]   Closing: BFLY 20260717 $4.0C x3 (10x_moonshot)
+[2026-03-17 11:41:01]     SOLD: BFLY x3 @ $0.95 | Status: Filled
+[2026-03-17 11:41:01]   Saved /Users/eddiemae/rudy/data/trader8_positions.json
+[2026-03-17 11:41:01] 
+==================================================
+[2026-03-17 11:41:01] CLOSEOUT COMPLETE: 19 positions closed
+[2026-03-17 11:41:01] ==================================================

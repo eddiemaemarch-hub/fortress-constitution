@@ -1,0 +1,66 @@
+{
+  "_description": "BTC Phase-Aware Seasonality Table (Month x Cycle Phase). Based on historical BTC cycle analysis 2011-2025.",
+  "_updated": "2026-03-21",
+  "BULL": {
+    "January": {"direction": "green", "avg_return": 0.12, "description": "Reversal start; green but volatile, often recovering from year-end dip"},
+    "February": {"direction": "green", "avg_return": 0.15, "description": "Strong recovery rally, momentum building from January reversal"},
+    "March": {"direction": "green", "avg_return": 0.08, "description": "Continuation, moderate gains, consolidation after Feb surge"},
+    "April": {"direction": "green", "avg_return": 0.18, "description": "Historically strongest month in bull markets, breakout territory"},
+    "May": {"direction": "neutral", "avg_return": 0.02, "description": "Sell in May effect weakened in crypto, mild consolidation"},
+    "June": {"direction": "red", "avg_return": -0.03, "description": "Seasonal weakness, profit taking after Q1-Q2 rally"},
+    "July": {"direction": "green", "avg_return": 0.10, "description": "Summer recovery, historically strong in bull years"},
+    "August": {"direction": "neutral", "avg_return": 0.01, "description": "Low volume summer doldrums, sideways action"},
+    "September": {"direction": "red", "avg_return": -0.05, "description": "Historically weakest month across all markets, BTC included"},
+    "October": {"direction": "green", "avg_return": 0.22, "description": "Uptober — strongest month historically, Q4 rally ignition"},
+    "November": {"direction": "green", "avg_return": 0.20, "description": "Bull continuation, FOMO builds, strong momentum"},
+    "December": {"direction": "neutral", "avg_return": 0.05, "description": "Mixed — profit taking vs year-end rally, volatile close"}
+  },
+  "BEAR": {
+    "January": {"direction": "red", "avg_return": -0.10, "description": "Deep red; continuation of sell-off from previous year"},
+    "February": {"direction": "green", "avg_return": 0.05, "description": "Dead cat bounce, brief relief rally"},
+    "March": {"direction": "red", "avg_return": -0.08, "description": "Resumption of downtrend after Feb relief, capitulation risk"},
+    "April": {"direction": "neutral", "avg_return": -0.02, "description": "Flat to slightly negative, bear market grinding lower"},
+    "May": {"direction": "red", "avg_return": -0.12, "description": "Severe sell-off month in bear markets, capitulation events"},
+    "June": {"direction": "red", "avg_return": -0.15, "description": "Worst month in bear markets, forced liquidations, cascading failures"},
+    "July": {"direction": "green", "avg_return": 0.08, "description": "Relief rally after June capitulation, bottom fishing begins"},
+    "August": {"direction": "neutral", "avg_return": -0.01, "description": "Sideways grind, low volume, exhaustion of sellers"},
+    "September": {"direction": "red", "avg_return": -0.06, "description": "Seasonal weakness compounded by bear sentiment"},
+    "October": {"direction": "neutral", "avg_return": 0.02, "description": "Early signs of stabilization, smart money accumulation begins"},
+    "November": {"direction": "red", "avg_return": -0.10, "description": "Late bear capitulation events (FTX Nov 2022, Mt Gox aftermath)"},
+    "December": {"direction": "neutral", "avg_return": -0.03, "description": "Tax loss selling meets early accumulation, bottoming process"}
+  },
+  "ACCUMULATION": {
+    "January": {"direction": "green", "avg_return": 0.06, "description": "Post-bear optimism begins, early recovery signals"},
+    "February": {"direction": "green", "avg_return": 0.10, "description": "Momentum building, smart money positioning intensifies"},
+    "March": {"direction": "neutral", "avg_return": 0.03, "description": "Consolidation after initial recovery, testing support levels"},
+    "April": {"direction": "green", "avg_return": 0.12, "description": "Breakout attempts, first major moves above resistance"},
+    "May": {"direction": "neutral", "avg_return": 0.01, "description": "Retracement after April strength, healthy pullback"},
+    "June": {"direction": "neutral", "avg_return": 0.00, "description": "Range-bound, building base for next leg up"},
+    "July": {"direction": "green", "avg_return": 0.08, "description": "Summer breakout setup, volume returning"},
+    "August": {"direction": "neutral", "avg_return": 0.02, "description": "Low volatility, coiling before move, Bollinger squeeze"},
+    "September": {"direction": "red", "avg_return": -0.04, "description": "Seasonal dip even in accumulation, shaking out weak hands"},
+    "October": {"direction": "green", "avg_return": 0.15, "description": "Breakout month, transition to markup phase often begins here"},
+    "November": {"direction": "green", "avg_return": 0.12, "description": "Confirmation of new uptrend, volume surge"},
+    "December": {"direction": "green", "avg_return": 0.08, "description": "Year-end positioning for new cycle, institutional entries"}
+  },
+  "DISTRIBUTION": {
+    "January": {"direction": "green", "avg_return": 0.08, "description": "Final push higher, retail FOMO at peak, euphoric sentiment"},
+    "February": {"direction": "neutral", "avg_return": 0.02, "description": "First signs of exhaustion, momentum divergences appear"},
+    "March": {"direction": "red", "avg_return": -0.05, "description": "Correction from overextension, first scare for latecomers"},
+    "April": {"direction": "green", "avg_return": 0.06, "description": "Dead cat bounce / second peak attempt, classic double top setup"},
+    "May": {"direction": "red", "avg_return": -0.15, "description": "Sharp reversal, historically marks distribution climax events"},
+    "June": {"direction": "red", "avg_return": -0.10, "description": "Cascading sells, reality check, support levels breaking"},
+    "July": {"direction": "neutral", "avg_return": 0.03, "description": "Relief rally, hopium that worst is over"},
+    "August": {"direction": "red", "avg_return": -0.05, "description": "Lower highs confirming, trend change solidifying"},
+    "September": {"direction": "red", "avg_return": -0.08, "description": "Acceleration of selling, fund redemptions, forced selling"},
+    "October": {"direction": "neutral", "avg_return": -0.02, "description": "False hope, failed rally attempts, transition to markdown"},
+    "November": {"direction": "red", "avg_return": -0.12, "description": "Full transition to markdown, capitulation events"},
+    "December": {"direction": "red", "avg_return": -0.08, "description": "Tax loss selling amplifies decline, year-end despair"}
+  },
+  "_mapping_to_rudy_filters": {
+    "ACCUMULATION": "Prime entry zone — all entry filters should be watched closely",
+    "MARKUP": "Hold and ride — trailing stops active, no new entries after mid-phase",
+    "DISTRIBUTION": "Tighten stops, reduce position size, watch for exit signals",
+    "MARKDOWN": "No entries — survival mode, capital preservation priority"
+  }
+}

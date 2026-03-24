@@ -1,0 +1,58 @@
+[2026-03-09 13:43:37] POST / HTTP/1.1
+[2026-03-09 13:43:45] POST / HTTP/1.1
+[2026-03-09 15:01:19] POST / HTTP/1.1
+[2026-03-10 10:20:36] POST / HTTP/1.1
+[2026-03-12 09:35:20] TV SIGNAL: BUY MSTR | Strategy: Rudy MSTR Lottery v2 | Price: 320.5 | Comment: Golden Cross entry
+[2026-03-12 09:35:22] REJECTED: Bad secret from 127.0.0.1
+[2026-03-12 09:35:38] System1 executed: {'status': 'executed', 'legs': [{'strike': 420.0, 'qty': 108, 'cost': 54000.0, 'type': 'primary'}, {'strike': 270.0, 'qty': 90, 'type': 'hedge'}], 'total_cost': 54000.0}
+[2026-03-12 09:37:00] TV SIGNAL: BUY MSTR | Strategy: Rudy MSTR Lottery v2 | Price: 320.5 | Comment: Test from ngrok
+[2026-03-12 09:37:11] System1 executed: {'status': 'executed', 'legs': [], 'total_cost': 0}
+[2026-03-12 10:02:22] TV SIGNAL: BUY MSTR | Strategy: Rudy MSTR Lottery v2 | Price: 320.5 | Comment: Cloudflare test
+[2026-03-12 10:02:42] System1 executed: {'status': 'executed', 'legs': [{'strike': 420.0, 'qty': 108, 'cost': 54000.0, 'type': 'primary'}, {'strike': 500.0, 'qty': 90, 'cost': 27000.0, 'type': 'secondary'}, {'strike': 270.0, 'qty': 22, 'type': 'hedge'}], 'total_cost': 81000.0}
+[2026-03-12 10:11:53] [TEST] TV SIGNAL: BUY MSTR | Strategy: Rudy MSTR Lottery v2 | Price: 320.5 | Comment: Safety test
+[2026-03-14 12:44:38] [TEST] TV SIGNAL: BUY MSTR | Strategy: MSTR Lottery | Price: 350.0 | Comment: 
+[2026-03-14 12:44:38] BLOCKED by circuit breaker: MSTR — GLOBAL HALT active since 2026-03-14T12:44:38.035218: Webhook block test
+[2026-03-14 13:20:51] [TEST] TV SIGNAL: BUY MSTR | Strategy: MSTR Lottery | Price: 350.0 | Comment: 
+[2026-03-14 13:20:51] BLOCKED by circuit breaker: MSTR — GLOBAL HALT active since 2026-03-14T13:20:51.256069: Webhook block test
+[2026-03-14 18:51:01] [TEST] TV SIGNAL: BUY MSTR | Strategy: MSTR Lottery | Price: 350.0 | Comment: 
+[2026-03-14 18:51:01] BLOCKED by circuit breaker: MSTR — GLOBAL HALT active since 2026-03-14T18:51:01.013462: Webhook gate test
+[2026-03-14 18:51:58] [TEST] TV SIGNAL: BUY MSTR | Strategy: MSTR Lottery | Price: 350.0 | Comment: 
+[2026-03-14 18:51:58] BLOCKED by circuit breaker: MSTR — GLOBAL HALT active since 2026-03-14T18:51:57.946413: Webhook gate test
+[2026-03-14 21:09:10] [TEST] TV SIGNAL: BUY MSTR | Strategy: MSTR Lottery | Price: 350.0 | Comment: 
+[2026-03-14 21:09:10] BLOCKED by circuit breaker: MSTR — GLOBAL HALT active since 2026-03-14T21:09:09.885022: Webhook gate test
+[2026-03-14 21:09:34] [TEST] TV SIGNAL: BUY MSTR | Strategy: MSTR Lottery | Price: 5.0 | Comment: 
+[2026-03-14 21:09:34] [TEST] TV SIGNAL: BUY NVDA | Strategy: Breakout | Price: 10.0 | Comment: 
+[2026-03-14 21:09:35] [TEST] TV SIGNAL: BUY GME | Strategy: Squeeze | Price: 3.0 | Comment: 
+[2026-03-14 21:09:35] BLOCKED by circuit breaker: GME — GLOBAL HALT active since 2026-03-14T21:09:35.256335: Webhook mid-batch test
+[2026-03-14 21:09:36] [TEST] TV SIGNAL: BUY TSLA | Strategy: Breakout | Price: 8.0 | Comment: 
+[2026-03-14 21:09:36] BLOCKED by circuit breaker: TSLA — GLOBAL HALT active since 2026-03-14T21:09:35.256335: Webhook mid-batch test
+[2026-03-14 21:09:38] [TEST] TV SIGNAL: SELL MSTR | Strategy: MSTR Lottery | Price: 15.0 | Comment: 
+[2026-03-14 21:10:46] [TEST] TV SIGNAL: BUY MSTR | Strategy: MSTR Lottery | Price: 350.0 | Comment: 
+[2026-03-14 21:10:46] BLOCKED by circuit breaker: MSTR — GLOBAL HALT active since 2026-03-14T21:10:46.423863: Webhook gate test
+[2026-03-14 21:11:10] [TEST] TV SIGNAL: BUY MSTR | Strategy: MSTR Lottery | Price: 5.0 | Comment: 
+[2026-03-14 21:11:11] [TEST] TV SIGNAL: BUY NVDA | Strategy: Breakout | Price: 10.0 | Comment: 
+[2026-03-14 21:11:12] [TEST] TV SIGNAL: BUY GME | Strategy: Squeeze | Price: 3.0 | Comment: 
+[2026-03-14 21:11:12] BLOCKED by circuit breaker: GME — GLOBAL HALT active since 2026-03-14T21:11:11.718689: Webhook mid-batch test
+[2026-03-14 21:11:12] [TEST] TV SIGNAL: BUY TSLA | Strategy: Breakout | Price: 8.0 | Comment: 
+[2026-03-14 21:11:12] BLOCKED by circuit breaker: TSLA — GLOBAL HALT active since 2026-03-14T21:11:11.718689: Webhook mid-batch test
+[2026-03-14 21:11:14] [TEST] TV SIGNAL: SELL MSTR | Strategy: MSTR Lottery | Price: 15.0 | Comment: 
+[2026-03-14 21:30:15] [TEST] TV SIGNAL: BUY MSTR | Strategy: MSTR Lottery | Price: 350.0 | Comment: 
+[2026-03-14 21:30:15] BLOCKED by circuit breaker: MSTR — GLOBAL HALT active since 2026-03-14T21:30:14.501145: Webhook gate test
+[2026-03-14 21:30:38] [TEST] TV SIGNAL: BUY MSTR | Strategy: MSTR Lottery | Price: 5.0 | Comment: 
+[2026-03-14 21:30:39] [TEST] TV SIGNAL: BUY NVDA | Strategy: Breakout | Price: 10.0 | Comment: 
+[2026-03-14 21:30:40] [TEST] TV SIGNAL: BUY GME | Strategy: Squeeze | Price: 3.0 | Comment: 
+[2026-03-14 21:30:40] BLOCKED by circuit breaker: GME — GLOBAL HALT active since 2026-03-14T21:30:39.910718: Webhook mid-batch test
+[2026-03-14 21:30:40] [TEST] TV SIGNAL: BUY TSLA | Strategy: Breakout | Price: 8.0 | Comment: 
+[2026-03-14 21:30:40] BLOCKED by circuit breaker: TSLA — GLOBAL HALT active since 2026-03-14T21:30:39.910718: Webhook mid-batch test
+[2026-03-14 21:30:42] [TEST] TV SIGNAL: SELL MSTR | Strategy: MSTR Lottery | Price: 15.0 | Comment: 
+[2026-03-15 09:48:06] [TEST] TV SIGNAL: BUY MSTR | Strategy: MSTR Lottery | Price: 350.0 | Comment: 
+[2026-03-15 09:48:06] BLOCKED by circuit breaker: MSTR — GLOBAL HALT active since 2026-03-15T09:48:06.427976: Webhook gate test
+[2026-03-16 08:52:41] [TEST] TV SIGNAL: BUY MSTR | Strategy: MSTR Lottery | Price: 350.0 | Comment: 
+[2026-03-16 08:52:41] BLOCKED by circuit breaker: MSTR — GLOBAL HALT active since 2026-03-16T08:52:41.309788: Webhook gate test
+[2026-03-16 08:53:05] [TEST] TV SIGNAL: BUY MSTR | Strategy: MSTR Lottery | Price: 5.0 | Comment: 
+[2026-03-16 08:53:06] [TEST] TV SIGNAL: BUY NVDA | Strategy: Breakout | Price: 10.0 | Comment: 
+[2026-03-16 08:53:07] [TEST] TV SIGNAL: BUY GME | Strategy: Squeeze | Price: 3.0 | Comment: 
+[2026-03-16 08:53:07] BLOCKED by circuit breaker: GME — GLOBAL HALT active since 2026-03-16T08:53:06.652005: Webhook mid-batch test
+[2026-03-16 08:53:07] [TEST] TV SIGNAL: BUY TSLA | Strategy: Breakout | Price: 8.0 | Comment: 
+[2026-03-16 08:53:07] BLOCKED by circuit breaker: TSLA — GLOBAL HALT active since 2026-03-16T08:53:06.652005: Webhook mid-batch test
+[2026-03-16 08:53:09] [TEST] TV SIGNAL: SELL MSTR | Strategy: MSTR Lottery | Price: 15.0 | Comment: 

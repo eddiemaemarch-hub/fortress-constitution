@@ -1,0 +1,16 @@
+{
+    "algorithm-type-name": "MSTRCycleLowLeap",
+    "algorithm-language": "Python",
+    "algorithm-location": "MSTRCycleLowLeap.py",
+    "parameters": {
+        "trend-length": "200",
+        "premium-max": "1.5",
+        "rsi-threshold": "50",
+        "start-date": "2020-01-01",
+        "end-date": "2026-03-14",
+        "initial-cash": "100000"
+    },
+    "description": "MSTR Cycle-Low LEAP Entry Strategy — dynamic 200W EMA crossover + BTC cycle-low filter + premium <= 1.5x NAV. Laddered trailing stop with partial profit taking.",
+    "cloud-id": null,
+    "local-id": "mstr-cycle-low-leap-v1"
+}

@@ -1,0 +1,203 @@
+//@version=6
+// Rudy v2 - Short Squeeze / Momentum Burst Strategy
+// Share-based momentum trading — alerts fire for Trader to execute options
+// Tuned for PLTR daily: 8% position, 12% target, 5% stop, trail lets runners go
+// Apply to: PLTR, GME, AMC, SOFI, COIN, MARA, RIOT, RIVN, LCID
+strategy("Rudy Squeeze Momentum v2", overlay=true, default_qty_type=strategy.percent_of_equity, default_qty_value=8, initial_capital=10000, commission_type=strategy.commission.percent, commission_value=0.5, slippage=5, pyramiding=0)
+
+// --- Core Parameters ---
+p_ema_fast   = input.int(21, "Fast EMA", group="Squeeze Detection")
+p_ema_mid    = input.int(50, "Mid EMA", group="Squeeze Detection")
+p_rsi        = input.int(14, "RSI Period", group="Squeeze Detection")
+p_rsi_max    = input.int(78, "RSI Maximum", group="Squeeze Detection")
+p_vol_avg    = input.int(20, "Volume Average Bars", group="Squeeze Detection")
+p_vol_mult   = input.float(1.3, "Volume Spike Multiplier", group="Squeeze Detection")
+p_atr_len    = input.int(14, "ATR Length", group="Squeeze Detection")
+
+// --- Risk Management ---
+p_profit     = input.float(12.0, "Profit Target %", group="Risk") / 100
+p_atr_mult   = input.float(2.0, "ATR Stop Multiplier", group="Risk")
+p_trail_en   = input.bool(true, "Enable Trailing Stop", group="Risk")
+p_trail_act  = input.float(7.0, "Trail Activation %", group="Risk") / 100
+p_trail_off  = input.float(3.5, "Trail Offset %", group="Risk") / 100
+p_max_bars   = input.int(30, "Max Hold Bars", group="Risk")
+p_hwm_trail_pct = input.float(30.0, "HWM Trail Floor %", group="Risk")
+p_hwm_lookback  = input.int(252, "HWM Lookback Bars", group="Risk")
+
+// Laddered Trailing Stop (tightens as gains grow)
+p_lad_t1_gain  = input.float(30,   "Ladder Tier 1 at +%", group="Laddered Trail")
+p_lad_t1_trail = input.float(20.0, "Ladder Tier 1 Trail %", group="Laddered Trail")
+p_lad_t2_gain  = input.float(50,   "Ladder Tier 2 at +%", group="Laddered Trail")
+p_lad_t2_trail = input.float(15.0, "Ladder Tier 2 Trail %", group="Laddered Trail")
+p_lad_t3_gain  = input.float(100,  "Ladder Tier 3 at +%", group="Laddered Trail")
+p_lad_t3_trail = input.float(12.0, "Ladder Tier 3 Trail %", group="Laddered Trail")
+
+// --- Profit Taking ---
+p_pt_tier1_pct  = input.float(50.0, "Tier 1 Profit %", group="Profit Taking")
+p_pt_tier1_sell = input.float(33.0, "Tier 1 Sell %", group="Profit Taking")
+p_pt_tier2_pct  = input.float(100.0, "Tier 2 Profit %", group="Profit Taking")
+p_pt_tier2_sell = input.float(33.0, "Tier 2 Sell %", group="Profit Taking")
+
+// --- Filters ---
+p_use_spy    = input.bool(true, "SPY Market Filter", group="Filters")
+p_spy_ticker = input.symbol("SPY", "SPY Symbol", group="Filters")
+
+// --- SPY Filter (non-repainting) ---
+spy_close = request.security(p_spy_ticker, timeframe.period, close, barmerge.gaps_off, barmerge.lookahead_off)
+spy_ema50 = request.security(p_spy_ticker, timeframe.period, ta.ema(close, 50), barmerge.gaps_off, barmerge.lookahead_off)
+spy_bullish = spy_close > spy_ema50
+
+// --- Calculations ---
+emaFast = ta.ema(close, p_ema_fast)
+emaMid = ta.ema(close, p_ema_mid)
+rsiVal = ta.rsi(close, p_rsi)
+volAvg = ta.sma(volume, p_vol_avg)
+volRatio = volume / volAvg
+mom5 = (close - close[5]) / close[5] * 100
+mom10 = (close - close[10]) / close[10] * 100
+atr_val = ta.atr(p_atr_len)
+
+// --- Entry Logic ---
+// Trend up + above both EMAs + momentum positive + volume decent + not overbought
+trendUp = emaFast > emaMid
+aboveEmas = close > emaFast
+momPositive = mom5 > 0
+volOk = volRatio > p_vol_mult
+notOverbought = rsiVal < p_rsi_max
+
+squeezeBuy = trendUp and aboveEmas and momPositive and notOverbought
+squeezeBuy := squeezeBuy and (not p_use_spy or spy_bullish)
+
+// --- Exit Signals ---
+trendLost = ta.crossunder(close, emaMid)
+
+inPosition = strategy.position_size > 0
+flat = strategy.position_size == 0
+bars_in_trade = ta.barssince(flat[1] and not flat)
+max_hold_exit = p_max_bars > 0 and inPosition and bars_in_trade >= p_max_bars
+
+// --- Execution ---
+if squeezeBuy and flat
+    strategy.entry("SQ_Long", strategy.long)
+    stopPrice = close - (atr_val * p_atr_mult)
+    if p_trail_en
+        strategy.exit("SQ_Exit", "SQ_Long", stop=stopPrice, limit=close * (1 + p_profit), trail_price=close * (1 + p_trail_act), trail_offset=close * p_trail_off)
+    else
+        strategy.exit("SQ_Exit", "SQ_Long", stop=stopPrice, limit=close * (1 + p_profit))
+
+// --- Profit Taking Tiers ---
+var bool pt_tier1_done = false
+var bool pt_tier2_done = false
+
+if strategy.opentrades > 0
+    entry_price_pt = strategy.opentrades.entry_price(0)
+    gain_pct_pt = (close - entry_price_pt) / entry_price_pt * 100
+
+    if gain_pct_pt >= p_pt_tier1_pct and not pt_tier1_done
+        strategy.close(strategy.opentrades.entry_id(0), comment="PROFIT T1 +" + str.tostring(p_pt_tier1_pct, "#") + "%", qty_percent=p_pt_tier1_sell)
+        pt_tier1_done := true
+
+    if gain_pct_pt >= p_pt_tier2_pct and not pt_tier2_done
+        strategy.close(strategy.opentrades.entry_id(0), comment="PROFIT T2 +" + str.tostring(p_pt_tier2_pct, "#") + "%", qty_percent=p_pt_tier2_sell)
+        pt_tier2_done := true
+
+// Reset on new trade
+if strategy.opentrades == 0
+    pt_tier1_done := false
+    pt_tier2_done := false
+
+if trendLost and inPosition
+    strategy.close("SQ_Long", comment="Trend Lost")
+
+if max_hold_exit
+    strategy.close("SQ_Long", comment="Max Hold")
+
+// --- LADDERED Trailing Stop from HWM (Constitution v45.0) ---
+var float pos_hwm = 0.0
+if inPosition
+    pos_hwm := math.max(pos_hwm, high)
+if flat
+    pos_hwm := 0.0
+hwm_val = pos_hwm > 0 ? pos_hwm : close
+float entry_px_lad = strategy.position_avg_price
+float gain_pct_lad = entry_px_lad > 0 ? (close - entry_px_lad) / entry_px_lad * 100 : 0
+float peak_gain_pct = inPosition and entry_px_lad > 0 ? (pos_hwm - entry_px_lad) / entry_px_lad * 100 : 0
+
+var float active_trail = p_hwm_trail_pct
+var string ladder_tier_str = "30% (floor)"
+
+if inPosition
+    if peak_gain_pct >= p_lad_t3_gain
+        active_trail := p_lad_t3_trail
+        ladder_tier_str := str.tostring(p_lad_t3_gain,"#") + "%+ | " + str.tostring(p_lad_t3_trail,"#") + "% LOCK"
+    else if peak_gain_pct >= p_lad_t2_gain
+        active_trail := p_lad_t2_trail
+        ladder_tier_str := str.tostring(p_lad_t2_gain,"#") + "%+ | " + str.tostring(p_lad_t2_trail,"#") + "% trail"
+    else if peak_gain_pct >= p_lad_t1_gain
+        active_trail := p_lad_t1_trail
+        ladder_tier_str := str.tostring(p_lad_t1_gain,"#") + "%+ | " + str.tostring(p_lad_t1_trail,"#") + "% trail"
+    else
+        active_trail := p_hwm_trail_pct
+        ladder_tier_str := str.tostring(p_hwm_trail_pct,"#") + "% (floor)"
+else
+    active_trail := p_hwm_trail_pct
+    ladder_tier_str := str.tostring(p_hwm_trail_pct,"#") + "% (floor)"
+
+hwm_trail_stop = hwm_val * (1 - active_trail / 100)
+hwm_trail_triggered = inPosition and close < hwm_trail_stop
+if hwm_trail_triggered
+    strategy.close("SQ_Long", comment="Ladder Trail " + str.tostring(active_trail,"#") + "%")
+
+// --- Visuals ---
+plot(emaFast, "EMA 21", color.new(#2196F3, 0), 2)
+plot(emaMid, "EMA 50", color.new(#9C27B0, 30), 2)
+barcolor(volRatio > 1.5 ? color.new(#00E676, 0) : na)
+bgcolor(squeezeBuy and flat ? color.new(#4CAF50, 90) : na)
+plotshape(squeezeBuy and flat, "Buy", shape.labelup, location.belowbar, color.new(#00E676, 0), size=size.small, text="BUY")
+plotshape(trendLost and inPosition, "Exit", shape.labeldown, location.abovebar, color.new(#F44336, 0), size=size.small, text="SELL")
+plotshape(max_hold_exit, "Max Hold", shape.xcross, location.abovebar, color.new(#FF9800, 0), size=size.tiny, text="MH")
+plotshape(strategy.opentrades > 0 and pt_tier1_done and not pt_tier1_done[1], "PT1 Hit", shape.flag, location.abovebar, color.new(#00E676, 0), size=size.tiny, text="PT1")
+plotshape(strategy.opentrades > 0 and pt_tier2_done and not pt_tier2_done[1], "PT2 Hit", shape.flag, location.abovebar, color.new(#00BCD4, 0), size=size.tiny, text="PT2")
+plot(inPosition ? strategy.position_avg_price - (atr_val * p_atr_mult) : na, "ATR Stop", color.new(color.red, 0), 1, plot.style_circles)
+plot(inPosition ? hwm_trail_stop : na, "HWM Trail Stop", color.new(#FF00FF, 0), 2, plot.style_stepline)
+
+// --- Dashboard ---
+var table dash = table.new(position.top_right, 2, 16, bgcolor=color.new(#000000, 80), border_width=1)
+if barstate.islast
+    table.cell(dash, 0, 0, "SQUEEZE", text_color=color.new(#00E676, 0), text_size=size.normal)
+    table.cell(dash, 1, 0, trendUp ? "BULL" : "BEAR", text_color=trendUp ? color.lime : color.red, text_size=size.small)
+    table.cell(dash, 0, 1, "RSI", text_color=color.white, text_size=size.small)
+    table.cell(dash, 1, 1, str.tostring(rsiVal, "#.#"), text_color=rsiVal < p_rsi_max ? color.lime : color.red, text_size=size.small)
+    table.cell(dash, 0, 2, "Vol", text_color=color.white, text_size=size.small)
+    table.cell(dash, 1, 2, str.tostring(volRatio, "#.#") + "x", text_color=volRatio > 1.3 ? color.lime : color.gray, text_size=size.small)
+    table.cell(dash, 0, 3, "Mom5d", text_color=color.white, text_size=size.small)
+    table.cell(dash, 1, 3, str.tostring(mom5, "#.#") + "%", text_color=mom5 > 0 ? color.lime : color.red, text_size=size.small)
+    table.cell(dash, 0, 4, "SPY", text_color=color.white, text_size=size.small)
+    table.cell(dash, 1, 4, p_use_spy ? (spy_bullish ? "BULL" : "BEAR") : "OFF", text_color=p_use_spy ? (spy_bullish ? color.lime : color.red) : color.gray, text_size=size.small)
+    table.cell(dash, 0, 5, "Hold", text_color=color.white, text_size=size.small)
+    table.cell(dash, 1, 5, inPosition ? str.tostring(bars_in_trade) + "/" + str.tostring(p_max_bars) : "-", text_color=max_hold_exit ? color.orange : color.white, text_size=size.small)
+    table.cell(dash, 0, 6, "P&L", text_color=color.white, text_size=size.small)
+    table.cell(dash, 1, 6, inPosition ? str.tostring((close - strategy.position_avg_price) / strategy.position_avg_price * 100, "#.#") + "%" : "-", text_color=inPosition and close > strategy.position_avg_price ? color.lime : color.red, text_size=size.small)
+    table.cell(dash, 0, 7, "Signal", text_color=color.white, text_size=size.small)
+    table.cell(dash, 1, 7, squeezeBuy and flat ? "BUY" : trendLost ? "EXIT" : "HOLD", text_color=squeezeBuy and flat ? color.lime : trendLost ? color.red : color.gray, text_size=size.small)
+    table.cell(dash, 0, 8, "Peak Gain", text_color=color.white, text_size=size.small)
+    table.cell(dash, 1, 8, inPosition ? str.tostring(peak_gain_pct, "+#.#") + "%" : "-", text_color=color.new(#FFD700, 0), text_size=size.small)
+    table.cell(dash, 0, 9, "Pos Peak", text_color=color.white, text_size=size.small)
+    table.cell(dash, 1, 9, inPosition ? "$" + str.tostring(pos_hwm, "#.##") : "-", text_color=color.white, text_size=size.small)
+    table.cell(dash, 0, 10, "Trail Tier", text_color=color.white, text_size=size.small)
+    table.cell(dash, 1, 10, ladder_tier_str, text_color=color.new(#FF00FF, 0), text_size=size.small)
+    table.cell(dash, 0, 11, "Trail %", text_color=color.white, text_size=size.small)
+    table.cell(dash, 1, 11, str.tostring(active_trail, "#") + "% from peak", text_color=color.new(#FF00FF, 0), text_size=size.small)
+    table.cell(dash, 0, 12, "Trail Price", text_color=color.white, text_size=size.small)
+    table.cell(dash, 1, 12, inPosition ? str.tostring(hwm_trail_stop, "#.##") : "-", text_color=hwm_trail_triggered ? color.red : color.new(#FF00FF, 0), text_size=size.small)
+    table.cell(dash, 0, 13, "Profit T1", text_color=color.white, text_size=size.small)
+    table.cell(dash, 1, 13, str.tostring(p_pt_tier1_pct, "#") + "% → " + str.tostring(p_pt_tier1_sell, "#") + "% sell" + (pt_tier1_done ? " ✓" : ""), text_color=pt_tier1_done ? color.lime : color.gray, text_size=size.small)
+    table.cell(dash, 0, 14, "Profit T2", text_color=color.white, text_size=size.small)
+    table.cell(dash, 1, 14, str.tostring(p_pt_tier2_pct, "#") + "% → " + str.tostring(p_pt_tier2_sell, "#") + "% sell" + (pt_tier2_done ? " ✓" : ""), text_color=pt_tier2_done ? color.lime : color.gray, text_size=size.small)
+
+alertcondition(squeezeBuy and flat, "Squeeze Buy", "Squeeze BUY — Trader execute CALL options")
+alertcondition(trendLost and inPosition, "Trend Lost", "Trend lost — Trader close calls")
+alertcondition(max_hold_exit, "Max Hold", "Max hold — Trader close position")
+alertcondition(hwm_trail_triggered, "Ladder Trail", "Ladder trailing stop triggered — Trader close position")
+alertcondition(strategy.opentrades > 0 and pt_tier1_done and not pt_tier1_done[1], "Profit T1", "Profit Tier 1 hit — sold 33% of position")
+alertcondition(strategy.opentrades > 0 and pt_tier2_done and not pt_tier2_done[1], "Profit T2", "Profit Tier 2 hit — sold 33% of position")

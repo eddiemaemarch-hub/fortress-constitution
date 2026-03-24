@@ -1,0 +1,20 @@
+{
+  "MSTR CycleLow v2.2 Monthly": {
+    "project_id": 29042365,
+    "compile_id": "8954a19818a3d03a1642546825fb13ce-f82a8a56dee89e097ed2c896d923c866",
+    "backtest_id": "",
+    "status": "running"
+  },
+  "MSTR CycleLow v2.2 Weekly": {
+    "project_id": 29042378,
+    "compile_id": "8e484895ac385b6a117448ff62d26cfb-bf6f38f28f5a4af1fa17dbeed101e738",
+    "backtest_id": "",
+    "status": "running"
+  },
+  "MSTR CycleLow v2.2 Daily": {
+    "project_id": 29042388,
+    "compile_id": "5350f2698fee87900007f50f4f3f9a02-0a0d4f1e93e2966aacffa3aaea32269c",
+    "backtest_id": "",
+    "status": "running"
+  }
+}

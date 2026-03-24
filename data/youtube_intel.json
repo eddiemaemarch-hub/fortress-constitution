@@ -1,0 +1,2339 @@
+[
+  {
+    "timestamp": "2026-03-10T21:42:26.026783",
+    "scanner": "youtube",
+    "type": "quick_scan",
+    "ticker": "MSTR",
+    "overall_sentiment": "bullish",
+    "summary": "Recent YouTube videos analyze MicroStrategy (MSTR) primarily through the lens of its significant Bitcoin holdings. The sentiment is largely bullish, with many videos suggesting potential upside driven by Bitcoin's performance and MSTR's unique position as a Bitcoin proxy. However, the leveraged nature of its Bitcoin strategy and potential class-action news are identified as key risks.",
+    "signals": [
+      {
+        "signal": "buy",
+        "confidence": "medium",
+        "reason": "Several videos suggest MSTR is poised for a breakout, especially with Bitcoin showing signs of a trend reversal and bouncing. The stock is described as a 'Bitcoin proxy' and some analysts believe it's undervalued given its Bitcoin holdings.",
+        "source_channel": "Unknown (e.g., 'Why Bitcoin's $88K Bounce is a Game Changer for MSTR Stock?')"
+      },
+      {
+        "signal": "buy",
+        "confidence": "medium",
+        "reason": "One video title explicitly states 'We ARE Buying MORE Then They Can SELL!', indicating a strong bullish conviction from the creator regarding MSTR's future performance.",
+        "source_channel": "Unknown ('$MSTR We ARE Buying MORE Then They Can SELL!')"
+      },
+      {
+        "signal": "watch",
+        "confidence": "high",
+        "reason": "The videos consistently highlight MSTR's massive Bitcoin holdings and its strategy of accumulating Bitcoin. The stock's performance is directly tied to Bitcoin's price movements, making it a key factor to monitor.",
+        "source_channel": "Multiple (e.g., 'Can Strategy Really Double in 2025? - MSTR Stock Analysis', 'MICROSTRATEGY (MSTR STOCK): Analysis, Valuation and Better ...')"
+      }
+    ],
+    "catalysts": [
+      "Bitcoin price movements and potential trend reversals",
+      "MSTR's strategy to double holdings by 2025",
+      "Upcoming earnings reports",
+      "Potential breakout from current price levels"
+    ],
+    "risks": [
+      "MicroStrategy's massive leverage in its Bitcoin strategy",
+      "Impact of class-action news on the stock",
+      "The company is no longer seen as a traditional software company but as a leveraged Bitcoin play"
+    ],
+    "hot_tickers": [
+      "MSTR"
+    ],
+    "notable_videos": [],
+    "videos_found": 9
+  },
+  {
+    "summary": "Found 90 recent finance videos. Gemini analysis unavailable.",
+    "overall_sentiment": "unknown",
+    "signals": [],
+    "hot_tickers": [
+      "MSTR",
+      "Aristotle Investments",
+      "IBIT"
+    ],
+    "catalysts": [],
+    "risks": [],
+    "notable_videos": [
+      {
+        "title": "4 SECRETS 8 FIGURE MILLIONAIRES ARE HIDING! - Aristotle LIVE E014 (podcast)",
+        "channel": "Unknown",
+        "ticker": "Aristotle Investments",
+        "sentiment": "unknown",
+        "views": 0
+      },
+      {
+        "title": "Hustler of the Week: Aristotle of Aristotle Investments",
+        "channel": "Unknown",
+        "ticker": "Aristotle Investments",
+        "sentiment": "unknown",
+        "views": 0
+      },
+      {
+        "title": "Aristotle Investments Speaks On Being The Blue Print In The Stock Options/ Trading Community",
+        "channel": "Unknown",
+        "ticker": "Aristotle Investments",
+        "sentiment": "unknown",
+        "views": 0
+      },
+      {
+        "title": "From 40K A Year To Millionaire Before 30 w/ Aristotle Investments@honeydripnet",
+        "channel": "Unknown",
+        "ticker": "Aristotle Investments",
+        "sentiment": "unknown",
+        "views": 0
+      },
+      {
+        "title": "Why MSTR Stock is about To Go Parabolic!",
+        "channel": "Unknown",
+        "ticker": "MSTR",
+        "sentiment": "unknown",
+        "views": 0
+      },
+      {
+        "title": "Can Strategy Really Double in 2025? - MSTR Stock Analysis",
+        "channel": "Unknown",
+        "ticker": "MSTR",
+        "sentiment": "unknown",
+        "views": 0
+      },
+      {
+        "title": "My Full MSTR Stock Analysis At A 52 Week Low",
+        "channel": "Unknown",
+        "ticker": "MSTR",
+        "sentiment": "unknown",
+        "views": 0
+      },
+      {
+        "title": "IBIT iShares Bitcoin Trust: After BTC Back Below $90K",
+        "channel": "Unknown",
+        "ticker": "IBIT",
+        "sentiment": "unknown",
+        "views": 0
+      },
+      {
+        "title": "IBIT Analysis: Can iShares Bitcoin Trust Bounce Back After Trump ...",
+        "channel": "Unknown",
+        "ticker": "IBIT",
+        "sentiment": "unknown",
+        "views": 0
+      },
+      {
+        "title": "Unlocking the Future of IBIT: Nasdaq Listings, Crypto ETFs & What It ...",
+        "channel": "Unknown",
+        "ticker": "IBIT",
+        "sentiment": "unknown",
+        "views": 0
+      }
+    ],
+    "timestamp": "2026-03-11T14:36:49.355317",
+    "scanner": "youtube",
+    "videos_found": 90
+  },
+  {
+    "summary": "Finance YouTube is heavily focused on Bitcoin-related assets, particularly MicroStrategy (MSTR) and the iShares Bitcoin Trust (IBIT), with multiple videos analyzing their price action and potential. The energy sector, specifically uranium stocks like CCJ and UEC, is also a significant topic, driven by revenue surges and strategic deals. Bitcoin itself is being closely watched for key support levels. Other areas of interest include general financial literacy discussions featuring 'Aristotle Investments'.",
+    "overall_sentiment": "mixed",
+    "signals": [
+      {
+        "ticker": "MSTR",
+        "signal": "watch",
+        "confidence": "high",
+        "reason": "Multiple videos analyze MSTR's strategy and valuation, noting its significant Bitcoin holdings and substantial past gains. The 'Can Strategy Really Double in 2025? - MSTR Stock Analysis' video specifically discusses its current trading price relative to its Bitcoin value.",
+        "source_channel": "Unknown (system1/MSTR)"
+      },
+      {
+        "ticker": "IBIT",
+        "signal": "watch",
+        "confidence": "high",
+        "reason": "Several videos are dedicated to IBIT, discussing its price analysis, forecasts, and potential bounce-back after Bitcoin's price movements. The mention of Nasdaq listings and crypto ETFs suggests ongoing interest and potential developments.",
+        "source_channel": "Unknown (system1/IBIT)"
+      },
+      {
+        "ticker": "CCJ",
+        "signal": "buy",
+        "confidence": "high",
+        "reason": "Videos highlight a 21% revenue surge and a 'Big US Deal' for CCJ, along with analysis of its nuclear power play. This suggests strong fundamental momentum.",
+        "source_channel": "Unknown (trader3/CCJ)"
+      },
+      {
+        "ticker": "UEC",
+        "signal": "buy",
+        "confidence": "high",
+        "reason": "Analysis of UEC suggests a shift in the energy trade towards execution in 2026, with specific mention of Elliott Wave analysis and trade setups, indicating potential for upward movement.",
+        "source_channel": "Unknown (trader3/UEC)"
+      },
+      {
+        "ticker": "XOM",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "XOM stock analysis is tied to oil price dynamics and geopolitical developments. While not explicitly a buy/sell signal, the analysis suggests it's a key player to monitor in the current energy landscape.",
+        "source_channel": "Unknown (trader3/XOM)"
+      },
+      {
+        "ticker": "BTC",
+        "signal": "watch",
+        "confidence": "high",
+        "reason": "Multiple Bitcoin technical analysis videos are present, focusing on key levels, support levels (e.g., $86,000), and trade setups. This indicates active trading interest and the importance of these levels for future price action.",
+        "source_channel": "Unknown (system1/Bitcoin)"
+      }
+    ],
+    "hot_tickers": [
+      "MSTR",
+      "IBIT",
+      "BTC",
+      "CCJ",
+      "UEC"
+    ],
+    "catalysts": [
+      "MSTR's Bitcoin treasury strategy",
+      "IBIT's Nasdaq listing and crypto ETF status",
+      "CCJ's revenue surge and US deal",
+      "UEC's role in the evolving energy trade",
+      "Bitcoin price action and key support/resistance levels"
+    ],
+    "risks": [
+      "Bitcoin price dropping below key support levels ($86,000 mentioned)",
+      "Geopolitical developments impacting oil prices (for XOM)"
+    ],
+    "notable_videos": [
+      {
+        "title": "Can Strategy Really Double in 2025? - MSTR Stock Analysis",
+        "channel": "Unknown (system1/MSTR)",
+        "ticker": "MSTR",
+        "sentiment": "neutral",
+        "views": 0
+      },
+      {
+        "title": "IBIT iShares Bitcoin Trust: After BTC Back Below $90K",
+        "channel": "Unknown (system1/IBIT)",
+        "ticker": "IBIT",
+        "sentiment": "neutral",
+        "views": 0
+      },
+      {
+        "title": "CCJ Soars 21% Revenue Surge & Big US Deal! CCJ Stock Analysis",
+        "channel": "Unknown (trader3/CCJ)",
+        "ticker": "CCJ",
+        "sentiment": "bullish",
+        "views": 0
+      },
+      {
+        "title": "Uranium Energy Corp (NYSE: UEC) Stock Analysis",
+        "channel": "Unknown (trader3/UEC)",
+        "ticker": "UEC",
+        "sentiment": "bullish",
+        "views": 0
+      },
+      {
+        "title": "Bitcoin Price Analysis: Bulls Must Break This Level",
+        "channel": "Unknown (system1/Bitcoin)",
+        "ticker": "BTC",
+        "sentiment": "neutral",
+        "views": 0
+      },
+      {
+        "title": "Aristotle Investments; Wife, Asia On Entrepreneurship ...",
+        "channel": "Unknown (priority/Aristotle Investments)",
+        "ticker": "N/A",
+        "sentiment": "neutral",
+        "views": 40000
+      }
+    ],
+    "timestamp": "2026-03-11T15:36:25.021340",
+    "scanner": "youtube",
+    "videos_found": 91
+  },
+  {
+    "summary": "Finance YouTube is heavily focused on Bitcoin-related assets, particularly MicroStrategy (MSTR) and the iShares Bitcoin ETF (IBIT), with a generally bullish sentiment driven by Bitcoin's performance and potential upside. Energy stocks, especially uranium miners like CCJ and UEC, are also seeing significant attention due to revenue surges and strategic deals, indicating a strong bullish outlook for the sector. While some Bitcoin analysis points to potential downside, the overall narrative for these assets is positive, with a focus on momentum and growth.",
+    "overall_sentiment": "bullish",
+    "signals": [
+      {
+        "ticker": "MSTR",
+        "signal": "buy",
+        "confidence": "high",
+        "reason": "Multiple videos highlight MSTR's significant Bitcoin holdings and its substantial gains since adopting its Bitcoin strategy. One video specifically asks if it can 'Double in 2025?' and another analyzes it 'At A 52 Week Low', suggesting a bullish outlook and potential for further upside.",
+        "source_channel": "Unknown (system1/MSTR, system1/MicroStrategy)"
+      },
+      {
+        "ticker": "IBIT",
+        "signal": "buy",
+        "confidence": "high",
+        "reason": "Several videos are dedicated to IBIT, with titles like 'Will IBIT Soar 100% in 2025?' and 'Here's my take on the iShares Bitcoin ETF ($IBIT)'. The inclusion of IBIT alongside GLD and AAPL in one video also suggests it's a significant ETF to watch.",
+        "source_channel": "Unknown (system1/IBIT)"
+      },
+      {
+        "ticker": "CCJ",
+        "signal": "buy",
+        "confidence": "high",
+        "reason": "CCJ is highlighted for a '21% Revenue Surge & Big US Deal!' and a 'Nuclear Power Play Just Got Real!'. These are strong positive catalysts for the stock.",
+        "source_channel": "Unknown (trader3/CCJ)"
+      },
+      {
+        "ticker": "UEC",
+        "signal": "buy",
+        "confidence": "high",
+        "reason": "UEC is analyzed with a focus on 'Elliott Wave + Trade Setup' and the broader energy trade shifting to 'execution'. The context of uranium as a significant part of portfolios in 2025 suggests bullish momentum.",
+        "source_channel": "Unknown (trader3/UEC)"
+      },
+      {
+        "ticker": "XOM",
+        "signal": "buy",
+        "confidence": "medium",
+        "reason": "XOM is noted for reaching 'Record Highs at $122.65' and 'ExxonMobil's Record Growth & Cash Tsunami!'. It's described as 'outpacing its entire sector with gains sitting roughly between uh 19 and 24%'.",
+        "source_channel": "Unknown (trader3/XOM)"
+      },
+      {
+        "ticker": "CVX",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "CVX is described as a 'Cash Machine' and relevant for investors researching 'oil stocks, dividend stocks, or undervalued value plays'. While positive, the emphasis is more on its fundamental value rather than immediate explosive momentum.",
+        "source_channel": "Unknown (trader3/CVX)"
+      },
+      {
+        "ticker": "BTC",
+        "signal": "watch",
+        "confidence": "mixed",
+        "reason": "Bitcoin analysis is mixed, with some videos discussing 'More Downside Ahead?' and 'Bulls Must Break This Level', while others focus on trade setups and price targets. This suggests a cautious but potentially opportunistic approach.",
+        "source_channel": "Unknown (system1/Bitcoin)"
+      }
+    ],
+    "hot_tickers": [
+      "MSTR",
+      "IBIT",
+      "CCJ",
+      "UEC",
+      "BTC",
+      "XOM"
+    ],
+    "catalysts": [
+      "MSTR's Bitcoin holdings and strategy",
+      "IBIT ETF performance and forecast",
+      "CCJ's revenue surge and US deal",
+      "UEC's role in the energy trade execution",
+      "XOM's record highs and growth",
+      "Bitcoin price action and key levels"
+    ],
+    "risks": [
+      "Potential downside for Bitcoin price as indicated by some technical analysis videos.",
+      "The 'lottery calls & bear puts' nature of system1 suggests inherent volatility and risk in MSTR/IBIT."
+    ],
+    "notable_videos": [
+      {
+        "title": "Can Strategy Really Double in 2025? - MSTR Stock Analysis",
+        "channel": "Unknown",
+        "ticker": "MSTR",
+        "sentiment": "bullish",
+        "views": 0
+      },
+      {
+        "title": "Will IBIT Soar 100% in 2025? Key Insights You Need to Know!",
+        "channel": "Unknown",
+        "ticker": "IBIT",
+        "sentiment": "bullish",
+        "views": 0
+      },
+      {
+        "title": "CCJ Soars 21% Revenue Surge & Big US Deal! CCJ Stock Analysis",
+        "channel": "Unknown",
+        "ticker": "CCJ",
+        "sentiment": "bullish",
+        "views": 0
+      },
+      {
+        "title": "Cameco's Nuclear Power Play Just Got Real! CCJ Stock Analysis",
+        "channel": "Unknown",
+        "ticker": "CCJ",
+        "sentiment": "bullish",
+        "views": 0
+      },
+      {
+        "title": "Exxon Mobil (XOM) Stock Analysis 2026: $122.65 Record Highs & 5 ...",
+        "channel": "Unknown",
+        "ticker": "XOM",
+        "sentiment": "bullish",
+        "views": 0
+      },
+      {
+        "title": "Bitcoin More Downside Ahead? | #BTC Price Analysis",
+        "channel": "Unknown",
+        "ticker": "BTC",
+        "sentiment": "mixed",
+        "views": 0
+      }
+    ],
+    "timestamp": "2026-03-11T16:09:58.407220",
+    "scanner": "youtube",
+    "videos_found": 88
+  },
+  {
+    "summary": "YouTube finance content is heavily focused on MicroStrategy (MSTR) and the iShares Bitcoin Trust (IBIT), with discussions ranging from MSTR's Bitcoin holdings and potential to IBIT's performance and Bitcoin's price targets. The energy sector, particularly uranium stocks like CCJ and UEC, is also a significant topic, driven by revenue surges and strategic deals. Exxon Mobil (XOM) is being analyzed for its potential to outperform due to oil price dynamics and geopolitical factors. Overall, the sentiment leans bullish for these specific assets.",
+    "overall_sentiment": "bullish",
+    "signals": [
+      {
+        "ticker": "MSTR",
+        "signal": "buy",
+        "confidence": "high",
+        "reason": "Multiple videos highlight MicroStrategy's substantial Bitcoin holdings and discuss its potential, with one video mentioning it's trading at a discount relative to its Bitcoin value. The analysis suggests a bullish outlook for MSTR as a leveraged play on Bitcoin.",
+        "source_channel": "Various MSTR-focused channels"
+      },
+      {
+        "ticker": "IBIT",
+        "signal": "buy",
+        "confidence": "high",
+        "reason": "Videos are discussing IBIT's performance in relation to Bitcoin's price movements, with some suggesting Bitcoin could reach $112K and potentially $150K, implying a bullish outlook for the ETF.",
+        "source_channel": "Various IBIT-focused channels"
+      },
+      {
+        "ticker": "CCJ",
+        "signal": "buy",
+        "confidence": "high",
+        "reason": "A video specifically highlights CCJ's 21% revenue surge and a significant US deal, indicating strong positive momentum and fundamental strength.",
+        "source_channel": "Unknown (CCJ Stock Analysis)"
+      },
+      {
+        "ticker": "UEC",
+        "signal": "buy",
+        "confidence": "medium",
+        "reason": "Analysis using Elliott Wave and technical indicators suggests a potential trade setup for UEC, indicating bullish momentum in uranium energy stocks.",
+        "source_channel": "The Trade Setup"
+      },
+      {
+        "ticker": "XOM",
+        "signal": "buy",
+        "confidence": "medium",
+        "reason": "Exxon Mobil is being analyzed as a potential outperformer in the energy sector, with its stock performance closely tied to elevated crude oil prices due to supply concerns and geopolitical developments.",
+        "source_channel": "Various XOM-focused channels"
+      }
+    ],
+    "hot_tickers": [
+      "MSTR",
+      "IBIT",
+      "Bitcoin",
+      "CCJ",
+      "UEC",
+      "XOM"
+    ],
+    "catalysts": [
+      "Bitcoin price targets ($112K, $150K)",
+      "CCJ's 21% revenue surge and US deal",
+      "Elevated crude oil prices due to supply concerns and geopolitical developments for XOM"
+    ],
+    "risks": [
+      "MSTR is described as 'massively leveraged Bitcoin', implying inherent volatility and risk associated with its Bitcoin holdings."
+    ],
+    "notable_videos": [
+      {
+        "title": "MicroStrategy: Stock Analysis, Fundamentals, Future, $42B Plan ...",
+        "channel": "Unknown",
+        "ticker": "MSTR",
+        "sentiment": "bullish",
+        "views": 0
+      },
+      {
+        "title": "Can Strategy Really Double in 2025? - MSTR Stock Analysis",
+        "channel": "Unknown",
+        "ticker": "MSTR",
+        "sentiment": "bullish",
+        "views": 0
+      },
+      {
+        "title": "IBIT: Bitcoin Hits $112K! Will It Soar to $150K Next? Price ...",
+        "channel": "Unknown",
+        "ticker": "IBIT",
+        "sentiment": "bullish",
+        "views": 0
+      },
+      {
+        "title": "CCJ Soars 21% Revenue Surge & Big US Deal! CCJ Stock Analysis",
+        "channel": "Unknown",
+        "ticker": "CCJ",
+        "sentiment": "bullish",
+        "views": 0
+      },
+      {
+        "title": "Uranium Energy : UEC Stock Analysis with Elliott Wave + Trade Setup",
+        "channel": "The Trade Setup",
+        "ticker": "UEC",
+        "sentiment": "bullish",
+        "views": 197
+      },
+      {
+        "title": "Is Exxon Mobil Stock a Buy Now!? | XOM Stock Analysis! |",
+        "channel": "Unknown",
+        "ticker": "XOM",
+        "sentiment": "bullish",
+        "views": 0
+      }
+    ],
+    "timestamp": "2026-03-11T19:05:02.331812",
+    "scanner": "youtube",
+    "videos_found": 94
+  },
+  {
+    "timestamp": "2026-03-12T07:50:13.814999",
+    "scanner": "youtube",
+    "type": "quick_scan",
+    "ticker": "IONQ",
+    "overall_sentiment": "mixed",
+    "summary": "Recent YouTube videos analyzing IonQ (IONQ) present a mixed outlook. While some highlight potential for significant growth and a \"quantum breakout year\" in 2026, others suggest caution due to the speculative nature of quantum computing and potential for a bubble burst. The stock has seen substantial past gains, making it a focus for investors.",
+    "signals": [
+      {
+        "signal": "buy",
+        "confidence": "medium",
+        "reason": "Several videos suggest IonQ is entering a \"massive growth phase\" and that 2026 could be a \"Quantum Breakout Year,\" driven by strong earnings and strategic acquisitions. One analysis specifically asks if it's a \"Good Time To Buy Now?\" and another mentions a bullish stance even after past gains.",
+        "source_channel": "StockAnalyticsAI (implied from title), various"
+      },
+      {
+        "signal": "watch",
+        "confidence": "high",
+        "reason": "The presence of videos discussing a potential \"Quantum Computing Bubble Bursting!\" and questioning if it's \"Too Late to Buy After...\" indicates significant uncertainty and risk. This warrants close observation rather than immediate action.",
+        "source_channel": "Various"
+      }
+    ],
+    "catalysts": [
+      "Record-breaking 2025 earnings",
+      "Strategic acquisition of SkyWater",
+      "Key catalysts driving price action (unspecified)",
+      "Upcoming 2025 Q3 Earnings"
+    ],
+    "risks": [
+      "Quantum computing bubble bursting",
+      "Speculative 'science project' nature of the technology",
+      "High past gains may lead to overvaluation"
+    ],
+    "hot_tickers": [
+      "IONQ"
+    ],
+    "notable_videos": [],
+    "videos_found": 8
+  },
+  {
+    "summary": "Recent YouTube finance content shows significant buzz around MicroStrategy (MSTR) and the iShares Bitcoin ETF (IBIT), with multiple analyses focusing on their connection to Bitcoin's price movements and future potential. The energy sector, particularly uranium stocks like CCJ and UEC, is also a strong focus, driven by revenue surges and strategic deals. Bitcoin itself is being closely watched for key support levels and potential price targets.",
+    "overall_sentiment": "bullish",
+    "signals": [
+      {
+        "ticker": "MSTR",
+        "signal": "buy",
+        "confidence": "high",
+        "reason": "Multiple videos analyze MSTR's fundamentals, valuation, and its significant Bitcoin holdings, suggesting potential for substantial growth, with one video highlighting a ~2000% increase since adopting its Bitcoin strategy.",
+        "source_channel": "Various (e.g., Strategy Inc., unnamed analysis videos)"
+      },
+      {
+        "ticker": "IBIT",
+        "signal": "buy",
+        "confidence": "high",
+        "reason": "Videos discuss IBIT's performance in relation to Bitcoin's price, with some suggesting potential for significant price appreciation towards $150K, indicating strong bullish sentiment for the ETF.",
+        "source_channel": "Various (e.g., Schwab Network, unnamed analysis videos)"
+      },
+      {
+        "ticker": "CCJ",
+        "signal": "buy",
+        "confidence": "high",
+        "reason": "CCJ is highlighted for a 21% revenue surge and a significant US deal, with analyses suggesting it deserves a spot in portfolios due to the nuclear energy resurgence.",
+        "source_channel": "Various (e.g., unnamed analysis videos, Stocks Telegraph)"
+      },
+      {
+        "ticker": "UEC",
+        "signal": "buy",
+        "confidence": "high",
+        "reason": "UEC is presented as a potentially top uranium stock for 2025, with strong market positioning and Elliott Wave analysis indicating a favorable trade setup.",
+        "source_channel": "Various (e.g., Stock Analysis Podcast, unnamed analysis videos)"
+      },
+      {
+        "ticker": "BTC",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Bitcoin is being closely monitored for approaching key support levels, with analysis focusing on trade setups and potential price targets, indicating a critical juncture for its price action.",
+        "source_channel": "Wicked Stocks, unnamed analysis videos"
+      }
+    ],
+    "hot_tickers": [
+      "MSTR",
+      "IBIT",
+      "BTC",
+      "CCJ",
+      "UEC"
+    ],
+    "catalysts": [
+      "Bitcoin price movements impacting MSTR and IBIT.",
+      "Strategic deals and revenue surges for uranium companies like CCJ.",
+      "Nuclear energy resurgence as a driver for uranium stocks.",
+      "Potential for Bitcoin to reach $112K and $150K."
+    ],
+    "risks": [
+      "MSTR trading at a 'High-Risk' juncture around $284.92.",
+      "Bitcoin approaching key support levels, implying potential for downside if not held."
+    ],
+    "notable_videos": [
+      {
+        "title": "MicroStrategy: Stock Analysis, Fundamentals, Future, $42B Plan ...",
+        "channel": "[Unknown]",
+        "ticker": "MSTR",
+        "sentiment": "bullish",
+        "views": 0
+      },
+      {
+        "title": "MSTR STOCK: Analysis & Forecast , price target ,Key ...",
+        "channel": "[Unknown]",
+        "ticker": "MSTR",
+        "sentiment": "neutral",
+        "views": 0
+      },
+      {
+        "title": "Can Strategy Really Double in 2025? - MSTR Stock Analysis",
+        "channel": "[Unknown]",
+        "ticker": "MSTR",
+        "sentiment": "bullish",
+        "views": 0
+      },
+      {
+        "title": "Here's my take on the iShares Bitcoin ETF ($IBIT)",
+        "channel": "[Unknown]",
+        "ticker": "IBIT",
+        "sentiment": "bullish",
+        "views": 0
+      },
+      {
+        "title": "The Big 3: GLD, IBIT, AAPL",
+        "channel": "[Unknown]",
+        "ticker": "IBIT",
+        "sentiment": "neutral",
+        "views": 0
+      },
+      {
+        "title": "IBIT: Bitcoin Hits $112K! Will It Soar to $150K Next? Price ...",
+        "channel": "[Unknown]",
+        "ticker": "IBIT",
+        "sentiment": "bullish",
+        "views": 0
+      },
+      {
+        "title": "Bitcoin Approaching Key Support Level | #BTC Price Analysis",
+        "channel": "Wicked Stocks",
+        "ticker": "BTC",
+        "sentiment": "neutral",
+        "views": 1632
+      },
+      {
+        "title": "CCJ Soars 21% Revenue Surge & Big US Deal! CCJ Stock Analysis",
+        "channel": "[Unknown]",
+        "ticker": "CCJ",
+        "sentiment": "bullish",
+        "views": 0
+      },
+      {
+        "title": "Should You Be Buying Cameco Corporation (CCJ) Stock ...",
+        "channel": "[Unknown]",
+        "ticker": "CCJ",
+        "sentiment": "bullish",
+        "views": 0
+      },
+      {
+        "title": "Is Uranium Energy Corp UEC Stock a Good Time to Buy Now?",
+        "channel": "[Unknown]",
+        "ticker": "UEC",
+        "sentiment": "neutral",
+        "views": 333
+      },
+      {
+        "title": "Why UEC Could Be the Best Uranium Stock to Buy in 2025",
+        "channel": "[Unknown]",
+        "ticker": "UEC",
+        "sentiment": "bullish",
+        "views": 0
+      },
+      {
+        "title": "Uranium Energy : UEC Stock Analysis with Elliott Wave + Trade Setup",
+        "channel": "[Unknown]",
+        "ticker": "UEC",
+        "sentiment": "bullish",
+        "views": 0
+      }
+    ],
+    "timestamp": "2026-03-12T08:07:18.517343",
+    "scanner": "youtube",
+    "videos_found": 93
+  },
+  {
+    "timestamp": "2026-03-12T08:35:51.756996",
+    "scanner": "youtube",
+    "type": "quick_scan",
+    "ticker": "MSTR",
+    "overall_sentiment": "mixed",
+    "summary": "Recent YouTube videos on MicroStrategy (MSTR) present a mixed outlook, with some highlighting its significant Bitcoin holdings and potential for future gains, while others focus on its current volatility and the risks associated with its leveraged Bitcoin strategy. The analysis often revolves around its dual nature as a software company and a de facto Bitcoin investment vehicle.",
+    "signals": [
+      {
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Several videos analyze MSTR's price action and offer price targets, suggesting it's a stock actively being monitored for trading opportunities. The mention of 'critical junctures' and '52-week lows' indicates potential entry or exit points are being discussed.",
+        "source_channel": "Unknown (multiple videos)"
+      },
+      {
+        "signal": "watch",
+        "confidence": "low",
+        "reason": "The question of whether MSTR can 'double in 2025' and the comparison to 'Palantir or Nvidia' suggest a speculative interest and a potential for significant upside, but also imply a need for careful observation before committing.",
+        "source_channel": "Unknown (multiple videos)"
+      },
+      {
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Videos discussing the 'downside continues' and 'plummeting' stock price, alongside questions about whether a 'surge is coming,' indicate a period of uncertainty and volatility that warrants close monitoring rather than immediate action.",
+        "source_channel": "Unknown (multiple videos)"
+      }
+    ],
+    "catalysts": [
+      "Future Bitcoin price movements",
+      "Michael Saylor's strategy and leverage",
+      "Potential for stock to double in 2025"
+    ],
+    "risks": [
+      "High volatility associated with Bitcoin",
+      "Leveraged Bitcoin strategy",
+      "The stock's dependence on Michael Saylor's decisions",
+      "The company's transition from a software company to a Bitcoin holder"
+    ],
+    "hot_tickers": [
+      "MSTR"
+    ],
+    "notable_videos": [],
+    "videos_found": 10
+  },
+  {
+    "summary": "Recent finance YouTube content is heavily focused on MicroStrategy (MSTR) and the iShares Bitcoin Trust (IBIT), with many videos predicting parabolic moves and significant upside for both, largely driven by Bitcoin's performance. The energy and uranium sectors, particularly Cameco (CCJ) and Uranium Energy Corp (UEC), are also seeing bullish sentiment due to revenue surges and strategic deals. While Bitcoin itself is being analyzed for key pivot lines and support levels, there's also a notable absence of discussion around the short squeeze tickers (GME, AMC, SOFI, RIVN) and breakout momentum stocks (NVDA, TSLA, AMD, META, AMZN, NFLX) in the provided list.",
+    "overall_sentiment": "bullish",
+    "signals": [
+      {
+        "ticker": "MSTR",
+        "signal": "buy",
+        "confidence": "high",
+        "reason": "Multiple videos, including 'Why MSTR Stock is about To Go Parabolic!' and 'Can Strategy Really Double in 2025? - MSTR Stock Analysis', suggest significant upside potential and parabolic moves for MicroStrategy, driven by its Bitcoin holdings.",
+        "source_channel": "Various MSTR-focused channels"
+      },
+      {
+        "ticker": "IBIT",
+        "signal": "buy",
+        "confidence": "high",
+        "reason": "Videos like 'IBIT: Bitcoin Hits $112K! Will It Soar to $150K Next? Price ...' and 'Here's my take on Bitcoin and the iShares Bitcoin Trust ($IBIT)' highlight bullish price targets for Bitcoin and its ETF, implying strong demand for IBIT.",
+        "source_channel": "Various IBIT-focused channels"
+      },
+      {
+        "ticker": "CCJ",
+        "signal": "buy",
+        "confidence": "high",
+        "reason": "'CCJ Soars 21% Revenue Surge & Big US Deal! CCJ Stock Analysis' and 'Cameco's Nuclear Power Play Just Got Real! CCJ Stock Analysis' point to strong revenue growth and significant deals, indicating positive momentum for Cameco.",
+        "source_channel": "Various CCJ-focused channels"
+      },
+      {
+        "ticker": "UEC",
+        "signal": "buy",
+        "confidence": "high",
+        "reason": "'Is Uranium Energy Corp UEC Stock a Good Time to Buy Now?' and 'Why UEC Could Be the Best Uranium Stock to Buy in 2025' suggest UEC is a strong contender in the uranium sector with potential for significant growth.",
+        "source_channel": "Various UEC-focused channels"
+      },
+      {
+        "ticker": "Bitcoin",
+        "signal": "watch",
+        "confidence": "high",
+        "reason": "Multiple videos like 'Bitcoin And Ethereum - The Key Pivot Lines, Trades And Forecast' and 'Bitcoin Price Analysis: $BTC Must Hold $86,000 Support Level' are providing detailed technical analysis and identifying key support levels, crucial for understanding the direction of MSTR and IBIT.",
+        "source_channel": "Various Bitcoin-focused channels"
+      }
+    ],
+    "hot_tickers": [
+      "MSTR",
+      "IBIT",
+      "Bitcoin",
+      "CCJ",
+      "UEC"
+    ],
+    "catalysts": [
+      "Bitcoin price movements (potential to $112K-$150K)",
+      "MicroStrategy's Bitcoin holdings and strategy",
+      "Cameco's revenue surge and US deal",
+      "Uranium Energy Corp's market position and 2025 potential"
+    ],
+    "risks": [
+      "MicroStrategy's stock plummeting (mentioned in one video, though context suggests it might be a short-term dip)",
+      "Bitcoin needing to hold $86,000 support level"
+    ],
+    "notable_videos": [
+      {
+        "title": "Why MSTR Stock is about To Go Parabolic!",
+        "channel": "Bitcoin & Strategy Technical Analysis & News Updates",
+        "ticker": "MSTR",
+        "sentiment": "bullish",
+        "views": 0
+      },
+      {
+        "title": "IBIT: Bitcoin Hits $112K! Will It Soar to $150K Next? Price ...",
+        "channel": "Stockinvest.us",
+        "ticker": "IBIT",
+        "sentiment": "bullish",
+        "views": 0
+      },
+      {
+        "title": "CCJ Soars 21% Revenue Surge & Big US Deal! CCJ Stock Analysis",
+        "channel": "Stock Analysis",
+        "ticker": "CCJ",
+        "sentiment": "bullish",
+        "views": 0
+      },
+      {
+        "title": "Why UEC Could Be the Best Uranium Stock to Buy in 2025",
+        "channel": "Investing Talk Podcast",
+        "ticker": "UEC",
+        "sentiment": "bullish",
+        "views": 0
+      },
+      {
+        "title": "Bitcoin Price Analysis: $BTC Must Hold $86,000 Support Level",
+        "channel": "Crypto Insights",
+        "ticker": "Bitcoin",
+        "sentiment": "neutral",
+        "views": 0
+      }
+    ],
+    "timestamp": "2026-03-12T09:38:36.451211",
+    "scanner": "youtube",
+    "videos_found": 97
+  },
+  {
+    "summary": "Recent YouTube finance content features a strong focus on Aristotle Investments, highlighting his journey to millionaire status and discussions on financial literacy. While specific trading signals are not directly provided in these videos, the emphasis on personal finance success and investment principles could indirectly influence market sentiment. The content is largely biographical and educational, offering insights into a successful trader's background rather than immediate market calls.",
+    "overall_sentiment": "neutral",
+    "signals": [],
+    "hot_tickers": [],
+    "catalysts": [],
+    "risks": [],
+    "notable_videos": [
+      {
+        "title": "Hustler of the Week: Aristotle of Aristotle Investments",
+        "channel": "The Morning Hustle",
+        "ticker": null,
+        "sentiment": "neutral",
+        "views": 3400
+      },
+      {
+        "title": "From 40K A Year To Millionaire Before 30 w/ Aristotle Investments ...",
+        "channel": "Aristotle Investments",
+        "ticker": null,
+        "sentiment": "neutral",
+        "views": 0
+      },
+      {
+        "title": "Aristotle Investments On Financial Literacy, Investing 101 ...",
+        "channel": "Aristotle Investments",
+        "ticker": null,
+        "sentiment": "neutral",
+        "views": 0
+      }
+    ],
+    "timestamp": "2026-03-12T10:35:28.236479",
+    "scanner": "youtube",
+    "videos_found": 3
+  },
+  {
+    "timestamp": "2026-03-13T17:37:08.258179",
+    "scanner": "youtube",
+    "type": "quick_scan",
+    "ticker": "doctor of pump and dump",
+    "overall_sentiment": "bearish",
+    "summary": "The provided YouTube videos from the 'doctor of pump and dump' channel predominantly focus on Bitcoin (BTC) price predictions. The content largely suggests bearish sentiment, anticipating further price declines and warning of potential bull traps and liquidations. While some videos mention specific market events, the overall narrative leans towards caution and expecting new lows.",
+    "signals": [
+      {
+        "signal": "sell",
+        "confidence": "high",
+        "reason": "Multiple videos explicitly state 'New Lows Coming for BTC', 'CRASH WAVE 3 of CRASH WAVE 5 about to Start Soon', and 'The Last Leg Down of the BTC CRASH'. The titles also frequently mention 'BULL TRAP' and 'DEAD CAT BOUNCE', indicating a belief that any upward movements are temporary and will lead to further declines.",
+        "source_channel": "doctor of pump and dump"
+      },
+      {
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "One video titled 'A BITCOIN EMERGENCY\ud83d\udea8 : DON'T IGNORE THIS VIDEO - BTC is About to get a Liquidity Sweep & Then Bottom' suggests a potential bottom after a liquidity sweep. This implies a period of volatility and a potential turning point, warranting close observation.",
+        "source_channel": "doctor of pump and dump"
+      },
+      {
+        "signal": "watch",
+        "confidence": "low",
+        "reason": "The video 'Bitcoin Rallies Over 5.50% on ISM Manufacturing Data - THIS CHANGES EVERYTHING! Watch Immediately!' presents a sudden positive catalyst. However, given the overwhelming bearish sentiment in other videos, this signal is treated with caution and suggests monitoring the immediate impact of this news rather than a definitive buy signal.",
+        "source_channel": "doctor of pump and dump"
+      }
+    ],
+    "catalysts": [
+      "ISM Manufacturing Data (mentioned as a positive catalyst in one video)",
+      "Liquidity Sweep (mentioned as a precursor to a potential bottom)"
+    ],
+    "risks": [
+      "Further price declines and new lows for BTC",
+      "Bull traps and dead cat bounces deceiving traders",
+      "Liquidation events",
+      "Overconfidence in permabull narratives leading to losses"
+    ],
+    "hot_tickers": [
+      "doctor of pump and dump"
+    ],
+    "notable_videos": [],
+    "videos_found": 10
+  },
+  {
+    "timestamp": "2026-03-13T17:41:36.204532",
+    "scanner": "youtube",
+    "type": "quick_scan",
+    "ticker": "doctor of pump and dump",
+    "overall_sentiment": "bearish",
+    "summary": "The \"Doctor of Pump & Dump\" channel consistently provides bearish outlooks on Bitcoin, focusing on technical analysis and market structure. The videos warn of impending crashes, liquidation events, and dead cat bounces, advising viewers to avoid buying dips and highlighting the dangers of overconfidence.",
+    "signals": [
+      {
+        "signal": "sell",
+        "confidence": "high",
+        "reason": "Multiple videos, including 'Bitcoin CRASH WAVE 3 of CRASH WAVE 5 about to Start Soon' and 'BITCOIN BULL TRAP: The DEAD CAT BOUNCE was Corrective in a 3 Leg Rebound - New Lows Coming for BTC', explicitly predict further downside and new lows for Bitcoin.",
+        "source_channel": "Doctor of Pump & Dump"
+      },
+      {
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "The video 'Another BTC Liquidation Move Coming -So Far Bitcoin is Getting Rejection @ the 50 Day Moving Average' suggests an imminent liquidation move and highlights resistance at the 50-day moving average, implying a potential shorting opportunity or a need to monitor for further bearish confirmation.",
+        "source_channel": "Doctor of Pump & Dump"
+      },
+      {
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "The video 'Bitcoin's Market Structure - Learn it and You'll Stop Buying the BTC Dip that Keeps on Dipping' emphasizes understanding market structure to avoid falling into the trap of buying dips that continue to decline, suggesting a cautious approach and a focus on learning proper trading techniques rather than immediate action.",
+        "source_channel": "Doctor of Pump & Dump"
+      }
+    ],
+    "catalysts": [
+      "impending crash wave 3 of crash wave 5",
+      "liquidation move",
+      "rejection at the 50-day moving average"
+    ],
+    "risks": [
+      "buying the dip that keeps on dipping",
+      "overconfidence leading to being rekt",
+      "dead cat bounce leading to new lows"
+    ],
+    "hot_tickers": [
+      "doctor of pump and dump"
+    ],
+    "notable_videos": [],
+    "videos_found": 5
+  },
+  {
+    "timestamp": "2026-03-13T17:47:26.134539",
+    "scanner": "youtube",
+    "type": "quick_scan",
+    "ticker": "DOCTER OF PUMP & DUMP",
+    "overall_sentiment": "bearish",
+    "summary": "The \"Doctor of Pump & Dump\" YouTube channel consistently provides bearish outlooks on Bitcoin, focusing on market structure, potential crashes, and debunking bullish predictions. The content suggests a belief that current price action is part of a larger downtrend, with upcoming liquidations and new lows anticipated.",
+    "signals": [
+      {
+        "signal": "sell",
+        "confidence": "high",
+        "reason": "Multiple videos, including 'Bitcoin CRASH WAVE 3 of CRASH WAVE 5 about to Start Soon' and 'BITCOIN BULL TRAP: The DEAD CAT BOUNCE was Corrective in a 3 Leg Rebound - New Lows Coming for BTC', explicitly predict further downside and new lows for Bitcoin. The 'Another BTC Liquidation Move Coming' video also suggests bearish pressure.",
+        "source_channel": "Doctor of Pump & Dump"
+      },
+      {
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "The video 'Bitcoin's Market Structure - Learn it and You'll Stop Buying the BTC Dip that Keeps on Dipping' suggests that understanding market structure is key to avoiding losing trades. While not a direct sell signal, it implies that current buying opportunities are likely to be traps.",
+        "source_channel": "Doctor of Pump & Dump"
+      }
+    ],
+    "catalysts": [
+      "Upcoming liquidation moves",
+      "Potential start of 'CRASH WAVE 3 of CRASH WAVE 5'"
+    ],
+    "risks": [
+      "Overconfidence in trading",
+      "Buying dips that continue to dip",
+      "Bull traps and dead cat bounces",
+      "Rejection at the 50-day moving average"
+    ],
+    "hot_tickers": [
+      "DOCTER OF PUMP & DUMP"
+    ],
+    "notable_videos": [],
+    "videos_found": 5
+  },
+  {
+    "summary": "YouTube finance content is heavily focused on MicroStrategy (MSTR) and Bitcoin ETFs like IBIT, with discussions ranging from potential price crashes to significant intraday gains and the correlation of IBIT with Bitcoin. Uranium stocks, particularly CCJ and UEC, are also seeing attention due to their role in the AI boom and nuclear power plays. There's a general buzz around momentum and breakout plays, though specific actionable signals are scarce due to the low view counts of most recent videos.",
+    "overall_sentiment": "mixed",
+    "signals": [
+      {
+        "ticker": "MSTR",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Multiple videos from Aristotle Investments, Trade with Harp, ImpossibleAnalysis, Wallstreet Brief, and MSTR & the Treasury Titans discuss MSTR, with some highlighting significant intraday gains and others debating potential crashes. The sheer volume of coverage suggests continued volatility and potential trading opportunities.",
+        "source_channel": "Wallstreet Brief"
+      },
+      {
+        "ticker": "IBIT",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Several videos from Bitcoin Katie, Bro Gets Rich, and InvestAnswers Clips are dedicated to IBIT, discussing its correlation with Bitcoin and whether it's a smart investment for options. This indicates ongoing interest and potential for option plays.",
+        "source_channel": "InvestAnswers Clips"
+      },
+      {
+        "ticker": "CCJ",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Smart Wealth With Joshua and StockInvest.us provide analysis on CCJ, with StockInvest.us suggesting reasons for a surge. Cramer . WTF also mentions CCJ, indicating it's on the radar.",
+        "source_channel": "StockInvest.us"
+      },
+      {
+        "ticker": "UEC",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "US Stock Podcast and The Trade Setup are analyzing UEC, with The Trade Setup providing Elliott Wave analysis. The connection to the AI boom is also highlighted, suggesting potential momentum.",
+        "source_channel": "The Trade Setup"
+      }
+    ],
+    "hot_tickers": [
+      "MSTR",
+      "IBIT",
+      "CCJ",
+      "UEC"
+    ],
+    "catalysts": [
+      "Bitcoin price movements (affecting MSTR and IBIT)",
+      "AI boom (mentioned for UEC)",
+      "Nuclear power plays (mentioned for CCJ)"
+    ],
+    "risks": [
+      "Potential Bitcoin crash impacting MSTR and IBIT (ImpossibleAnalysis)",
+      "77% of corporate Bitcoin holders in loss (Bitcoin Updates, impacting sentiment for Bitcoin-related assets)"
+    ],
+    "notable_videos": [
+      {
+        "title": "MSTR Strategy Bitcoin BOTTOM or CRASH TO $90? MSTR STOCK Price Prediction and Technical Analysis",
+        "channel": "ImpossibleAnalysis",
+        "ticker": "MSTR",
+        "sentiment": "mixed",
+        "views": 0
+      },
+      {
+        "title": "\ud83d\udd25 MSTR +5% at Open \u2014 Top 3 Stocks Moving Right Now",
+        "channel": "Wallstreet Brief",
+        "ticker": "MSTR",
+        "sentiment": "bullish",
+        "views": 0
+      },
+      {
+        "title": "Does IBIT Price Correlate to BTC: Should I Buy IBIT Options?",
+        "channel": "InvestAnswers Clips",
+        "ticker": "IBIT",
+        "sentiment": "neutral",
+        "views": 0
+      },
+      {
+        "title": "Cameco's Nuclear Power Play Just Got Real! CCJ Stock Analysis",
+        "channel": "Smart Wealth With Joshua",
+        "ticker": "CCJ",
+        "sentiment": "bullish",
+        "views": 0
+      },
+      {
+        "title": "UEC Stock: In-Depth Analysis of the 'Uranium King' Powering the AI Boom",
+        "channel": "US Stock Podcast",
+        "ticker": "UEC",
+        "sentiment": "bullish",
+        "views": 0
+      }
+    ],
+    "timestamp": "2026-03-13T19:01:17.178659",
+    "scanner": "youtube",
+    "videos_found": 106
+  },
+  {
+    "timestamp": "2026-03-13T23:38:37.176367",
+    "scanner": "youtube",
+    "type": "quick_scan",
+    "ticker": "EARN AT YOUR LEISURE",
+    "overall_sentiment": "neutral",
+    "summary": "This analysis of recent Earn Your Leisure YouTube videos reveals a mixed bag of content. While some videos touch on business growth and personal development, others delve into geopolitical events and relationship dynamics. There's no direct discussion of trading signals or specific investment advice related to the ticker itself.",
+    "signals": [
+      {
+        "signal": "watch",
+        "confidence": "low",
+        "reason": "The video 'Stop Buying Ads: Here Is The Secret To Growing Your Business With INFLUENCE' discusses business growth strategies. While not a direct trading signal, understanding business fundamentals can indirectly inform investment decisions. However, the content is general and not specific to $EARN AT YOUR LEISURE.",
+        "source_channel": "Earn Your Leisure"
+      },
+      {
+        "signal": "watch",
+        "confidence": "low",
+        "reason": "The video 'Why You Must STOP Chasing Volatility Right Now' offers advice on investment strategy. This suggests a cautious approach to trading, which could be relevant to investors in any market. However, it does not provide specific buy/sell signals for $EARN AT YOUR LEISURE.",
+        "source_channel": "Earn Your Leisure"
+      }
+    ],
+    "catalysts": [
+      "The video 'Mr. Tendernism Breaks Silence On Going Independent, No Equity & Fight For The \u201cTendernism\u201d Trademark' might suggest potential business developments for Mr. Tendernism, which could indirectly impact the Earn Your Leisure brand or its associated ventures, but this is speculative."
+    ],
+    "risks": [
+      "The video 'Why You Should NEVER Invest With Your Friends' highlights potential risks in collaborative ventures, which could be a general cautionary note for any business or investment partnership.",
+      "The videos discussing US-Iran conflict ('Targeted Strikes or TERRORISM? The Truth About the US-Iran Conflict' and 'The $100 BILLION War: 3 Hidden Reasons Why the US Struck Iran') point to geopolitical risks that can impact broader market sentiment and specific industries, though not directly tied to $EARN AT YOUR LEISURE.",
+      "The video 'Why This Political Move Is The Biggest SCAM In American History' suggests potential risks associated with political decisions that could have economic ramifications."
+    ],
+    "hot_tickers": [
+      "EARN AT YOUR LEISURE"
+    ],
+    "notable_videos": [],
+    "videos_found": 10
+  },
+  {
+    "summary": "YouTube finance content is heavily focused on MicroStrategy (MSTR) and the Bitcoin ETF (IBIT), with discussions around their correlation to Bitcoin and potential breakout plays. Energy stocks, particularly Cameco (CCJ) and Uranium Energy Corp (UEC), are also seeing significant attention due to momentum and specific company catalysts. Some channels are exploring beginner options strategies and small account growth, while others are monitoring potential short squeeze candidates.",
+    "overall_sentiment": "mixed",
+    "signals": [
+      {
+        "ticker": "MSTR",
+        "signal": "watch",
+        "confidence": "high",
+        "reason": "Multiple videos from 'TRADING NEWS', 'The Opening Bell Report', and 'Trade with Harp' are analyzing MSTR, discussing its price drivers, potential breakouts, and comparing it to other stocks. 'ImpossibleAnalysis' is also providing technical analysis and price predictions.",
+        "source_channel": "TRADING NEWS"
+      },
+      {
+        "ticker": "IBIT",
+        "signal": "watch",
+        "confidence": "high",
+        "reason": "IBIT is frequently mentioned in 'Bro Gets Rich', 'InvestAnswers Clips', and 'CNBC Television' regarding its correlation to BTC, investment potential, and inclusion in 'Final Trades'.",
+        "source_channel": "Bro Gets Rich"
+      },
+      {
+        "ticker": "CCJ",
+        "signal": "watch",
+        "confidence": "high",
+        "reason": "Cameco (CCJ) is highlighted in 'CNBC Television', 'Smart Wealth With Joshua', and 'Cramer . WTF' with discussions around its nuclear power play and inclusion in 'Final Trades'.",
+        "source_channel": "CNBC Television"
+      },
+      {
+        "ticker": "UEC",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "'Eyes on the charts' provides technical analysis for UEC, indicating momentum interest.",
+        "source_channel": "Eyes on the charts"
+      },
+      {
+        "ticker": "DNN",
+        "signal": "watch",
+        "confidence": "low",
+        "reason": "'MARKETSnap' is providing an investment review for Denison Mines Corp (DNN), which is in the uranium sector, but without explicit trading signals.",
+        "source_channel": "MARKETSnap"
+      },
+      {
+        "ticker": "BTC",
+        "signal": "watch",
+        "confidence": "high",
+        "reason": "Bitcoin (BTC) is a recurring theme in 'Super Trader SP', 'MARATHA TRADER LIVE', and 'ForexWebStore', with live trading, scalping, and indicator discussions, directly impacting MSTR and IBIT.",
+        "source_channel": "Super Trader SP"
+      }
+    ],
+    "hot_tickers": [
+      "MSTR",
+      "IBIT",
+      "BTC",
+      "CCJ"
+    ],
+    "catalysts": [
+      "MicroStrategy's price drivers (MSTR)",
+      "IBIT's correlation to Bitcoin",
+      "Cameco's nuclear power play (CCJ)",
+      "Uranium sector momentum"
+    ],
+    "risks": [
+      "Potential Bitcoin crash to $90 mentioned in 'ImpossibleAnalysis' for MSTR."
+    ],
+    "notable_videos": [
+      {
+        "title": "MicroStrategy (MSTR) Stock: What\u2019s REALLY Driving the Price?\ud83d\udea8 #mstr #microstrategy",
+        "channel": "TRADING NEWS",
+        "ticker": "MSTR",
+        "sentiment": "neutral",
+        "views": 0
+      },
+      {
+        "title": "ASST: The Next MicroStrategy? Why This $9 Stock is Mimicking the MSTR Playbook! ASST STOCK PODCAST ",
+        "channel": "The Opening Bell Report",
+        "ticker": "MSTR",
+        "sentiment": "bullish",
+        "views": 0
+      },
+      {
+        "title": "ORCL, MU, MSTR Analysis | Best Stocks I\u2019m Buying Now",
+        "channel": "Trade with Harp",
+        "ticker": "MSTR",
+        "sentiment": "bullish",
+        "views": 0
+      },
+      {
+        "title": "Picking Up 100 Shares Of IBIT BITCOIN ETF  - Smart Investment Move?",
+        "channel": "Bro Gets Rich",
+        "ticker": "IBIT",
+        "sentiment": "bullish",
+        "views": 0
+      },
+      {
+        "title": "Does IBIT Price Correlate to BTC: Should I Buy IBIT Options?",
+        "channel": "InvestAnswers Clips",
+        "ticker": "IBIT",
+        "sentiment": "neutral",
+        "views": 0
+      },
+      {
+        "title": "Final Trades: Amazon, Alphabet, CRH and the IBIT",
+        "channel": "CNBC Television",
+        "ticker": "IBIT",
+        "sentiment": "neutral",
+        "views": 0
+      },
+      {
+        "title": "Final Trades: Cameco Corp, Devon Energy, Toast and the SLV",
+        "channel": "CNBC Television",
+        "ticker": "CCJ",
+        "sentiment": "neutral",
+        "views": 0
+      },
+      {
+        "title": "Cameco's Nuclear Power Play Just Got Real! CCJ Stock Analysis",
+        "channel": "Smart Wealth With Joshua",
+        "ticker": "CCJ",
+        "sentiment": "bullish",
+        "views": 0
+      },
+      {
+        "title": "Energy Fuels (UUUU) + UEC technical analysis -13/03/2026-",
+        "channel": "Eyes on the charts",
+        "ticker": "UEC",
+        "sentiment": "neutral",
+        "views": 0
+      },
+      {
+        "title": "MSTR Strategy Bitcoin BOTTOM or CRASH TO $90? MSTR STOCK Price Prediction and Technical Analysis",
+        "channel": "ImpossibleAnalysis",
+        "ticker": "MSTR",
+        "sentiment": "mixed",
+        "views": 0
+      }
+    ],
+    "timestamp": "2026-03-14T10:01:27.565690",
+    "scanner": "youtube",
+    "videos_found": 103
+  },
+  {
+    "summary": "Recent YouTube finance content shows a strong focus on Bitcoin-related assets, particularly MicroStrategy (MSTR) and the IBIT ETF, with discussions around their correlation to Bitcoin and investment potential. Uranium stocks like CCJ and UEC are also gaining traction, with analysts exploring their role in the AI boom and potential for long-term investment. Energy stocks like XOM are being analyzed for potential upcoming moves, while short squeeze candidates like GME and AMC are notably absent from recent discussions.",
+    "overall_sentiment": "mixed",
+    "signals": [
+      {
+        "ticker": "MSTR",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Multiple videos discuss MSTR in relation to Bitcoin and IBIT, with one video directly comparing Bitcoin spot vs. MSTR for investment. Another highlights a significant loss for Strategy (likely referring to a related entity or investment) on its Bitcoin bet, suggesting potential volatility.",
+        "source_channel": "\ud654\ubca0\uc758\ub3c8\uacf5\ubd80, SwapHunt"
+      },
+      {
+        "ticker": "IBIT",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Several videos are dedicated to IBIT, questioning its correlation to BTC and whether it's a good option for buying calls. The 'Bro Gets Rich' video mentions picking up shares, indicating some positive interest.",
+        "source_channel": "Bro Gets Rich, InvestAnswers Clips, Bitcoin Katie"
+      },
+      {
+        "ticker": "CCJ",
+        "signal": "buy",
+        "confidence": "high",
+        "reason": "Multiple analyses of CCJ highlight its potential to surge, with specific mentions of 'nuclear power play' and '5 Reasons It Could Surge'. CNBC also included it in 'Final Trades'.",
+        "source_channel": "Smart Wealth With Joshua, StockInvest.us, CNBC Television"
+      },
+      {
+        "ticker": "UEC",
+        "signal": "buy",
+        "confidence": "high",
+        "reason": "UEC is analyzed in-depth, with mentions of powering the AI boom and Elliott Wave analysis suggesting a trade setup. The 'Uranium King' narrative is strong.",
+        "source_channel": "US Stock Podcast, The Trade Setup"
+      },
+      {
+        "ticker": "XOM",
+        "signal": "watch",
+        "confidence": "low",
+        "reason": "One video analyzes XOM for a 'Big Move Coming?', but lacks detailed bullish or bearish conviction. It's mentioned alongside other energy stocks in a broader context.",
+        "source_channel": "Shah Faisal Shah"
+      }
+    ],
+    "hot_tickers": [
+      "MSTR",
+      "IBIT",
+      "CCJ",
+      "UEC",
+      "Bitcoin"
+    ],
+    "catalysts": [
+      "AI boom driving demand for uranium",
+      "Potential for Bitcoin price appreciation impacting MSTR and IBIT",
+      "Geopolitical crises and their impact on Bitcoin's performance"
+    ],
+    "risks": [
+      "Strategy's significant loss on Bitcoin bet (potentially impacting MSTR)",
+      "Uncertainty around IBIT's correlation to BTC and option buying strategy",
+      "Brutal selloff in uranium stocks mentioned, suggesting potential for further downside despite bullish outlooks"
+    ],
+    "notable_videos": [
+      {
+        "title": "MicroStrategy (MSTR) Stock: What\u2019s REALLY Driving the Price?\ud83d\udea8",
+        "channel": "TRADING NEWS",
+        "ticker": "MSTR",
+        "sentiment": "neutral",
+        "views": 0
+      },
+      {
+        "title": "Picking Up 100 Shares Of IBIT BITCOIN ETF  - Smart Investment Move?",
+        "channel": "Bro Gets Rich",
+        "ticker": "IBIT",
+        "sentiment": "bullish",
+        "views": 0
+      },
+      {
+        "title": "The Problem with BlackRock\u2019s Bitcoin ETF",
+        "channel": "Bitcoin Katie",
+        "ticker": "IBIT",
+        "sentiment": "bearish",
+        "views": 0
+      },
+      {
+        "title": "Does IBIT Price Correlate to BTC: Should I Buy IBIT Options?",
+        "channel": "InvestAnswers Clips",
+        "ticker": "IBIT",
+        "sentiment": "neutral",
+        "views": 0
+      },
+      {
+        "title": "Cameco's Nuclear Power Play Just Got Real! CCJ Stock Analysis",
+        "channel": "Smart Wealth With Joshua",
+        "ticker": "CCJ",
+        "sentiment": "bullish",
+        "views": 0
+      },
+      {
+        "title": "CCJ Cameco Stock Analysis: 5 Reasons It Could Surge - Monday Predicted Opening Price? \ud83d\ude80",
+        "channel": "StockInvest.us",
+        "ticker": "CCJ",
+        "sentiment": "bullish",
+        "views": 0
+      },
+      {
+        "title": "UEC Stock: In-Depth Analysis of the 'Uranium King' Powering the AI Boom",
+        "channel": "US Stock Podcast",
+        "ticker": "UEC",
+        "sentiment": "bullish",
+        "views": 0
+      },
+      {
+        "title": "Uranium Energy : UEC Stock Analysis with Elliott Wave + Trade Setup",
+        "channel": "The Trade Setup",
+        "ticker": "UEC",
+        "sentiment": "bullish",
+        "views": 0
+      },
+      {
+        "title": "While Everyone Watches Oil\u2026 Uranium Moves",
+        "channel": "Bullmarket Lifestyle by Daniel Wilhelmi",
+        "ticker": "uranium",
+        "sentiment": "bullish",
+        "views": 0
+      },
+      {
+        "title": "Uranium Stocks Breakdown: Brutal Selloff & What\u2019s Next?",
+        "channel": "Bullmarket Lifestyle by Daniel Wilhelmi",
+        "ticker": "uranium",
+        "sentiment": "mixed",
+        "views": 0
+      },
+      {
+        "title": "Exxon Mobil Corporation (XOM) Stock Analysis \u2013 Big Move Coming?",
+        "channel": "Shah Faisal Shah",
+        "ticker": "XOM",
+        "sentiment": "neutral",
+        "views": 0
+      },
+      {
+        "title": "\ube44\ud2b8\ucf54\uc778 \ud604\ubb3c vs MSTR \ubb34\uc5c7\uc774 \ub354 \uc88b\uc740 \uc120\ud0dd\uc778\uac00? Bitcoin vs MSTR: Which is Better?",
+        "channel": "\ud654\ubca0\uc758\ub3c8\uacf5\ubd80",
+        "ticker": "MSTR",
+        "sentiment": "neutral",
+        "views": 0
+      },
+      {
+        "title": "Strategy In BIG Trouble \ud83d\udea8",
+        "channel": "SwapHunt",
+        "ticker": "MSTR",
+        "sentiment": "bearish",
+        "views": 0
+      }
+    ],
+    "timestamp": "2026-03-15T10:01:49.129016",
+    "scanner": "youtube",
+    "videos_found": 90
+  },
+  {
+    "summary": "YouTube finance content is heavily focused on MicroStrategy (MSTR) and its Bitcoin holdings, with multiple videos analyzing its price drivers and potential as a strong buy. The IBIT Bitcoin ETF is also a frequent topic, with discussions on its correlation to Bitcoin and whether it's a smart investment. Energy stocks, particularly uranium (CCJ, UEC, DNN, UUUU) and oil (XOM, CVX), are seeing analysis for potential momentum and price targets. There's also a mention of a potential MSTR-like stock in BMNR.",
+    "overall_sentiment": "bullish",
+    "signals": [
+      {
+        "ticker": "MSTR",
+        "signal": "buy",
+        "confidence": "high",
+        "reason": "Multiple videos highlight MSTR's recent Bitcoin acquisition and present it as a strong buy with several reasons cited. The narrative suggests a significant turning point for the stock.",
+        "source_channel": "MSTR Investor, Stock US Radar, Stocks Moon Radar"
+      },
+      {
+        "ticker": "IBIT",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Videos discuss whether IBIT is a smart investment and analyze its correlation to BTC, suggesting it's a topic of interest for options traders.",
+        "source_channel": "Bro Gets Rich, InvestAnswers Clips"
+      },
+      {
+        "ticker": "CCJ",
+        "signal": "watch",
+        "confidence": "low",
+        "reason": "Mentioned as part of the energy/uranium momentum watchlist, but no specific bullish or bearish signal is provided in the snippet.",
+        "source_channel": "trader3"
+      },
+      {
+        "ticker": "UEC",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Technical analysis is being performed on UEC with price predictions, indicating potential momentum plays.",
+        "source_channel": "MCO Global Aktien"
+      },
+      {
+        "ticker": "XOM",
+        "signal": "buy",
+        "confidence": "medium",
+        "reason": "One video poses the question of whether XOM is about to explode higher with oil potentially reaching $100, suggesting a bullish outlook.",
+        "source_channel": "Stock Market Palantir"
+      },
+      {
+        "ticker": "CVX",
+        "signal": "buy",
+        "confidence": "medium",
+        "reason": "Videos suggest CVX is about to soar, with one specifically mentioning a 'Venezuela Oil Play' and another providing stock signals and predicted opening prices.",
+        "source_channel": "Market Mechanics, StockInvest.us, Schwab Network and StocksToTrade"
+      },
+      {
+        "ticker": "DNN",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Stock prediction and analysis are being provided for DNN, suggesting it's a ticker to monitor for potential moves.",
+        "source_channel": "Stock Analysis by Vikram Singh"
+      },
+      {
+        "ticker": "UUUU",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Stock prediction and analysis are being provided for UUUU, indicating it's a ticker to monitor within the uranium sector.",
+        "source_channel": "Stratton Markets"
+      },
+      {
+        "ticker": "BMNR",
+        "signal": "watch",
+        "confidence": "low",
+        "reason": "BMNR is being compared to MSTR as a potential high-beta Ethereum play, suggesting it's a speculative opportunity to watch.",
+        "source_channel": "Stocks Moon Radar"
+      }
+    ],
+    "hot_tickers": [
+      "MSTR",
+      "IBIT",
+      "CVX",
+      "XOM",
+      "UEC",
+      "DNN",
+      "UUUU"
+    ],
+    "catalysts": [
+      "MicroStrategy's latest Bitcoin acquisition",
+      "Potential oil price surge to $100",
+      "Venezuela oil play for Chevron"
+    ],
+    "risks": [
+      "The problem with BlackRock's Bitcoin ETF is mentioned, though not elaborated on.",
+      "One crypto trading challenge day resulted in a loss, indicating the inherent risks in crypto trading."
+    ],
+    "notable_videos": [
+      {
+        "title": "MicroStrategy (MSTR) Stock: What\u2019s REALLY Driving the Price?\ud83d\udea8 #mstr #microstrategy",
+        "channel": "TRADING NEWS",
+        "ticker": "MSTR",
+        "sentiment": "neutral",
+        "views": 0
+      },
+      {
+        "title": "5 Reasons MSTR Stock Is a Strong Buy",
+        "channel": "MSTR Investor",
+        "ticker": "MSTR",
+        "sentiment": "bullish",
+        "views": 0
+      },
+      {
+        "title": "Picking Up 100 Shares Of IBIT BITCOIN ETF  - Smart Investment Move?",
+        "channel": "Bro Gets Rich",
+        "ticker": "IBIT",
+        "sentiment": "bullish",
+        "views": 0
+      },
+      {
+        "title": "Does IBIT Price Correlate to BTC: Should I Buy IBIT Options?",
+        "channel": "InvestAnswers Clips",
+        "ticker": "IBIT",
+        "sentiment": "neutral",
+        "views": 0
+      },
+      {
+        "title": "Oil to $100 Is Exxon About to Explode Higher? | XOM stock analysis | Exxon Mobil stock prediction",
+        "channel": "Stock Market Palantir",
+        "ticker": "XOM",
+        "sentiment": "bullish",
+        "views": 0
+      },
+      {
+        "title": "Chevron (CVX Stock) About to SOAR? The Venezuela Oil Play Explained!",
+        "channel": "Market Mechanics",
+        "ticker": "CVX",
+        "sentiment": "bullish",
+        "views": 0
+      },
+      {
+        "title": "CVX Chevron: 5 Stock Signals - Tuesday Predicted Opening Price & Price Target After Gulf Supply Shoc",
+        "channel": "StockInvest.us",
+        "ticker": "CVX",
+        "sentiment": "bullish",
+        "views": 0
+      },
+      {
+        "title": "Is BMNR the Next MSTR? Bitmine Immersion Stock Analysis &amp; Prediction",
+        "channel": "Stocks Moon Radar",
+        "ticker": "BMNR",
+        "sentiment": "bullish",
+        "views": 0
+      }
+    ],
+    "timestamp": "2026-03-16T08:01:32.968673",
+    "scanner": "youtube",
+    "videos_found": 96
+  },
+  {
+    "summary": "Recent YouTube finance content is heavily focused on MicroStrategy (MSTR) and its Bitcoin holdings, with multiple videos analyzing its price drivers and potential as a strong buy. The IBIT Bitcoin ETF is also a topic of discussion, with questions arising about its price correlation to Bitcoin and whether it's a smart investment. Uranium stocks like DNN, UEC, and UUUU are being analyzed for momentum, with some Elliott Wave and technical analysis presented. Exxon Mobil (XOM) and Chevron (CVX) are also seeing attention, with discussions around oil prices and potential upward movements.",
+    "overall_sentiment": "mixed",
+    "signals": [
+      {
+        "ticker": "MSTR",
+        "signal": "buy",
+        "confidence": "high",
+        "reason": "Multiple videos from 'MSTR Investor', 'Stock US Radar', and 'Stocks Moon Radar' highlight MicroStrategy's recent Bitcoin acquisition and suggest it's a strong buy, with one video citing 5 reasons for a strong buy. 'TRADING NEWS' also discusses what's driving the price, implying continued interest.",
+        "source_channel": "MSTR Investor"
+      },
+      {
+        "ticker": "IBIT",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "'InvestAnswers Clips' directly asks if IBIT options should be bought, indicating a need for further analysis. 'Bro Gets Rich' shows a purchase, suggesting some positive sentiment, while 'Bitcoin Katie' raises concerns, creating a mixed outlook.",
+        "source_channel": "InvestAnswers Clips"
+      },
+      {
+        "ticker": "DNN",
+        "signal": "watch",
+        "confidence": "low",
+        "reason": "'Stock Analysis by Vikram Singh' provides an analysis and prediction for DNN stock, indicating it's being monitored.",
+        "source_channel": "Stock Analysis by Vikram Singh"
+      },
+      {
+        "ticker": "UEC",
+        "signal": "watch",
+        "confidence": "low",
+        "reason": "'MCO Global Aktien' provides an Elliott Wave technical analysis and price forecast for UEC, suggesting it's under technical scrutiny.",
+        "source_channel": "MCO Global Aktien"
+      },
+      {
+        "ticker": "UUUU",
+        "signal": "watch",
+        "confidence": "low",
+        "reason": "'Stratton Markets' offers a stock prediction, analysis, and news for UUUU, indicating it's being tracked.",
+        "source_channel": "Stratton Markets"
+      },
+      {
+        "ticker": "XOM",
+        "signal": "buy",
+        "confidence": "medium",
+        "reason": "'Stock Market Palantir' explicitly asks if Exxon is about to explode higher and suggests oil could reach $100, implying a bullish outlook. 'Ido Yahalomi' includes XOM in a market pulse analysis.",
+        "source_channel": "Stock Market Palantir"
+      },
+      {
+        "ticker": "CVX",
+        "signal": "buy",
+        "confidence": "medium",
+        "reason": "'Market Mechanics' suggests Chevron is about to soar, and 'StockInvest.us' provides 5 stock signals and a predicted opening price, indicating a bullish technical outlook.",
+        "source_channel": "Market Mechanics"
+      }
+    ],
+    "hot_tickers": [
+      "MSTR",
+      "IBIT",
+      "XOM",
+      "CVX",
+      "DNN",
+      "UEC",
+      "UUUU"
+    ],
+    "catalysts": [
+      "MicroStrategy's latest Bitcoin acquisition",
+      "Potential oil price increases to $100 (for XOM)",
+      "Venezuela oil play (for CVX)",
+      "Upcoming uranium reserve and production data for 2025"
+    ],
+    "risks": [
+      "Concerns about the correlation of IBIT price to BTC, as raised by 'Bitcoin Katie'."
+    ],
+    "notable_videos": [
+      {
+        "title": "MicroStrategy (MSTR) Stock: What\u2019s REALLY Driving the Price?\ud83d\udea8 #mstr #microstrategy",
+        "channel": "TRADING NEWS",
+        "ticker": "MSTR",
+        "sentiment": "neutral",
+        "views": 0
+      },
+      {
+        "title": "5 Reasons MSTR Stock Is a Strong Buy",
+        "channel": "MSTR Investor",
+        "ticker": "MSTR",
+        "sentiment": "bullish",
+        "views": 0
+      },
+      {
+        "title": "Picking Up 100 Shares Of IBIT BITCOIN ETF  - Smart Investment Move?",
+        "channel": "Bro Gets Rich",
+        "ticker": "IBIT",
+        "sentiment": "bullish",
+        "views": 0
+      },
+      {
+        "title": "The Problem with BlackRock\u2019s Bitcoin ETF",
+        "channel": "Bitcoin Katie",
+        "ticker": "IBIT",
+        "sentiment": "bearish",
+        "views": 0
+      },
+      {
+        "title": "Does IBIT Price Correlate to BTC: Should I Buy IBIT Options?",
+        "channel": "InvestAnswers Clips",
+        "ticker": "IBIT",
+        "sentiment": "neutral",
+        "views": 0
+      },
+      {
+        "title": "MicroStrategy Stock Breaking News: Is MSTR a Buy After New BTC Buy?",
+        "channel": "Stock US Radar",
+        "ticker": "MSTR",
+        "sentiment": "bullish",
+        "views": 0
+      },
+      {
+        "title": "Strategy (MSTR) Stock Alert: Massive Bitcoin Buy Analysis!",
+        "channel": "Stocks Moon Radar",
+        "ticker": "MSTR",
+        "sentiment": "bullish",
+        "views": 0
+      },
+      {
+        "title": "DNN Stock (Denison Mines stock) DNN STOCK PREDICTION DNN STOCK analysis DNN stock news today DNN",
+        "channel": "Stock Analysis by Vikram Singh",
+        "ticker": "DNN",
+        "sentiment": "neutral",
+        "views": 0
+      },
+      {
+        "title": "Uranium Energy UEC Aktie Elliott Wellen Technische Analyse - Preisprognose",
+        "channel": "MCO Global Aktien",
+        "ticker": "UEC",
+        "sentiment": "neutral",
+        "views": 0
+      },
+      {
+        "title": "UUUU Stock (Energy Fuels stock analysis) UUUU STOCK PREDICTION UUUU STOCK analysis and news today",
+        "channel": "Stratton Markets",
+        "ticker": "UUUU",
+        "sentiment": "neutral",
+        "views": 0
+      },
+      {
+        "title": "Oil to $100 Is Exxon About to Explode Higher? | XOM stock analysis | Exxon Mobil stock prediction",
+        "channel": "Stock Market Palantir",
+        "ticker": "XOM",
+        "sentiment": "bullish",
+        "views": 0
+      },
+      {
+        "title": "Chevron (CVX Stock) About to SOAR? The Venezuela Oil Play Explained!",
+        "channel": "Market Mechanics",
+        "ticker": "CVX",
+        "sentiment": "bullish",
+        "views": 0
+      },
+      {
+        "title": "CVX Chevron: 5 Stock Signals - Tuesday Predicted Opening Price & Price Target After Gulf Supply Shoc",
+        "channel": "StockInvest.us",
+        "ticker": "CVX",
+        "sentiment": "bullish",
+        "views": 0
+      }
+    ],
+    "timestamp": "2026-03-16T09:31:29.454202",
+    "scanner": "youtube",
+    "videos_found": 105
+  },
+  {
+    "summary": "YouTube finance content is heavily focused on MicroStrategy (MSTR) and its Bitcoin holdings, with several videos analyzing its recent Bitcoin purchases and potential as a strong buy. The Bitcoin ETF (IBIT) is also a recurring theme, with discussions on its correlation to BTC and whether it's a smart investment. Uranium stocks (CCJ, UEC, DNN, UUUU) are seeing analysis, particularly regarding their price predictions and technicals. Energy stocks like XOM and CVX are also being discussed, with some suggesting potential upside.",
+    "overall_sentiment": "bullish",
+    "signals": [
+      {
+        "ticker": "MSTR",
+        "signal": "buy",
+        "confidence": "high",
+        "reason": "Multiple videos highlight MSTR's recent large Bitcoin acquisition and present '5 Reasons MSTR Stock Is a Strong Buy' and analyze it as a 'Massive Bitcoin Buy Analysis!' suggesting strong bullish sentiment.",
+        "source_channel": "MSTR Investor, Stocks Moon Radar, Stock US Radar"
+      },
+      {
+        "ticker": "IBIT",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Videos discuss whether IBIT is a smart investment and analyze its price correlation to BTC, indicating interest and potential for options plays, though direct buy/sell signals are less pronounced.",
+        "source_channel": "Bro Gets Rich, InvestAnswers Clips"
+      },
+      {
+        "ticker": "CCJ",
+        "signal": "watch",
+        "confidence": "low",
+        "reason": "While CCJ is on the watchlist for trader3, the provided video content for this ticker is limited to a general mention within a broader energy/uranium context, lacking specific actionable signals.",
+        "source_channel": "trader3"
+      },
+      {
+        "ticker": "UEC",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "A video provides 'Elliott Wellen Technische Analyse - Preisprognose' for UEC, suggesting technical analysis is being performed, which can inform options strategies.",
+        "source_channel": "MCO Global Aktien"
+      },
+      {
+        "ticker": "XOM",
+        "signal": "buy",
+        "confidence": "medium",
+        "reason": "Videos suggest 'Oil to $100 Is Exxon About to Explode Higher?' and analyze XOM, indicating potential bullish momentum for options.",
+        "source_channel": "Stock Market Palantir"
+      },
+      {
+        "ticker": "CVX",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "A video asks 'Chevron (CVX Stock) About to SOAR?' and explains a 'Venezuela Oil Play', suggesting potential upside and warranting monitoring for options.",
+        "source_channel": "Market Mechanics"
+      },
+      {
+        "ticker": "DNN",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "A video provides 'DNN Stock PREDICTION DNN STOCK analysis DNN stock news today DNN stock forecast', indicating active analysis and potential for trading signals.",
+        "source_channel": "Stock Analysis by Vikram Singh"
+      },
+      {
+        "ticker": "UUUU",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "A video offers 'UUUU STOCK PREDICTION UUUU STOCK analysis and news today', suggesting technical and fundamental analysis that could lead to options opportunities.",
+        "source_channel": "Stratton Markets"
+      }
+    ],
+    "hot_tickers": [
+      "MSTR",
+      "IBIT",
+      "XOM",
+      "UEC",
+      "DNN",
+      "UUUU"
+    ],
+    "catalysts": [
+      "MicroStrategy's continued Bitcoin acquisitions",
+      "Potential for oil prices to reach $100 (for XOM)",
+      "Venezuela oil plays (for CVX)",
+      "Upcoming uranium reserve and production data (for uranium stocks)"
+    ],
+    "risks": [
+      "The problem with BlackRock's Bitcoin ETF (mentioned by Bitcoin Katie) could indicate potential headwinds for IBIT.",
+      "No explicit bearish signals were found for MSTR, IBIT, XOM, CVX, UEC, DNN, or UUUU in the provided snippets, but general market volatility is always a risk."
+    ],
+    "notable_videos": [
+      {
+        "title": "The Market Finally Picked a Direction\u2026 My 4 Best Trades Right Now",
+        "channel": "Aristotle Investments",
+        "ticker": "N/A (general market)",
+        "sentiment": "bullish",
+        "views": 0
+      },
+      {
+        "title": "Is BMNR the Next MSTR? Bitmine Immersion Stock Analysis & Prediction",
+        "channel": "Stocks Moon Radar",
+        "ticker": "BMNR",
+        "sentiment": "bullish",
+        "views": 0
+      },
+      {
+        "title": "MicroStrategy (MSTR) Stock: What\u2019s REALLY Driving the Price?\ud83d\udea8 #mstr #microstrategy",
+        "channel": "TRADING NEWS",
+        "ticker": "MSTR",
+        "sentiment": "bullish",
+        "views": 0
+      },
+      {
+        "title": "5 Reasons MSTR Stock Is a Strong Buy",
+        "channel": "MSTR Investor",
+        "ticker": "MSTR",
+        "sentiment": "bullish",
+        "views": 0
+      },
+      {
+        "title": "Picking Up 100 Shares Of IBIT BITCOIN ETF  - Smart Investment Move?",
+        "channel": "Bro Gets Rich",
+        "ticker": "IBIT",
+        "sentiment": "bullish",
+        "views": 0
+      },
+      {
+        "title": "The Problem with BlackRock\u2019s Bitcoin ETF",
+        "channel": "Bitcoin Katie",
+        "ticker": "IBIT",
+        "sentiment": "bearish",
+        "views": 0
+      },
+      {
+        "title": "Does IBIT Price Correlate to BTC: Should I Buy IBIT Options?",
+        "channel": "InvestAnswers Clips",
+        "ticker": "IBIT",
+        "sentiment": "neutral",
+        "views": 0
+      },
+      {
+        "title": "MicroStrategy Stock Breaking News: Is MSTR a Buy After New BTC Buy?",
+        "channel": "Stock US Radar",
+        "ticker": "MSTR",
+        "sentiment": "bullish",
+        "views": 0
+      },
+      {
+        "title": "Strategy (MSTR) Stock Alert: Massive Bitcoin Buy Analysis!",
+        "channel": "Stocks Moon Radar",
+        "ticker": "MSTR",
+        "sentiment": "bullish",
+        "views": 0
+      },
+      {
+        "title": "DNN Stock (Denison Mines stock) DNN STOCK PREDICTION DNN STOCK analysis DNN stock news today DNN",
+        "channel": "Stock Analysis by Vikram Singh",
+        "ticker": "DNN",
+        "sentiment": "bullish",
+        "views": 0
+      },
+      {
+        "title": "Uranium Energy UEC Aktie Elliott Wellen Technische Analyse - Preisprognose",
+        "channel": "MCO Global Aktien",
+        "ticker": "UEC",
+        "sentiment": "neutral",
+        "views": 0
+      },
+      {
+        "title": "UUUU Stock (Energy Fuels stock analysis) UUUU STOCK PREDICTION UUUU STOCK analysis and news today",
+        "channel": "Stratton Markets",
+        "ticker": "UUUU",
+        "sentiment": "bullish",
+        "views": 0
+      },
+      {
+        "title": "Oil to $100 Is Exxon About to Explode Higher? | XOM stock analysis | Exxon Mobil stock prediction",
+        "channel": "Stock Market Palantir",
+        "ticker": "XOM",
+        "sentiment": "bullish",
+        "views": 0
+      },
+      {
+        "title": "Chevron (CVX Stock) About to SOAR? The Venezuela Oil Play Explained!",
+        "channel": "Market Mechanics",
+        "ticker": "CVX",
+        "sentiment": "bullish",
+        "views": 0
+      }
+    ],
+    "timestamp": "2026-03-16T10:31:48.607045",
+    "scanner": "youtube",
+    "videos_found": 108
+  },
+  {
+    "raw_text": "{\n    \"summary\": \"The finance YouTube sphere is heavily focused on MicroStrategy (MSTR) and its potential upside, with multiple analysts predicting significant price targets. Bitcoin ETFs, particularly IBIT, are also a hot topic, with discussions around their correlation to Bitcoin and potential for options trading. Uranium stocks like CCJ and UEC are seeing bullish sentiment driven by nuclear power and AI demand.  However, there's also a general market sentiment that a range is about to break, suggesting potential for both upside and downside moves.\",\n    \"overall_sentiment\": \"mixed\",\n    \"signals\": [\n        {\n            \"ticker\": \"MSTR\",\n            \"signal\": \"buy\",\n            \"confidence\": \"high\",\n            \"reason\": \"Multiple videos from 'Adam Livingston', 'Everything Money Plus', and 'Jo Bhakdi' are highly bullish on MSTR, with 'Adam Livingston' predicting $8,000 per share and 'Jo Bhakdi' calling it a 'SCREAMING BUY' due to a Bitcoin reversal. 'Mark Moss' also predicts a $1,600 price target.\",\n            \"source_channel\": \"Adam Livingston\"\n        },\n        {\n            \"ticker\": \"IBIT\",\n            \"signal\": \"watch\",\n            \"confidence\": \"medium\",\n            \"reason\": \"Videos from 'Bro Gets Rich', 'Bitcoin Katie', and 'InvestAnswers Clips' discuss IBIT. 'Bro Gets Rich' is buying shares, while 'InvestAnswers Clips' directly questions whether to buy IBIT options, indicating interest in its potential.\",\n            \"source_channel\": \"InvestAnswers Clips\"\n        },\n        {\n            \"ticker\": \"CCJ\",\n            \"signal\": \"buy\",\n            \"confidence\": \"high\",\n            \"reason\": \"Several videos from 'CNBC Television', 'Smart Wealth With Joshua', and 'StockInvest.us' highlight positive outlooks for Cameco Corp (CCJ). 'StockInvest.us' lists 5 reasons it could surge, and 'Smart Wealth With Joshua' discusses its 'Nuclear Power Play'.\",\n            \"source_channel\": \"StockInvest.us\"\n        },\n        {\n            \"ticker\": \"UEC\",\n            \"signal\": \"buy\",\n            \"confidence\": \"high\",\n            \"reason\": \"Both 'US Stock Podcast' and 'The Trade Setup' provide in-depth bullish analyses of UEC. 'US Stock Podcast' specifically links UEC to powering the AI boom, and 'The Trade Setup' includes Elliott Wave analysis and a trade setup.\",\n            \"source_channel\": \"The Trade Setup\"\n        },\n        {\n            \"ticker\": \"BTC\",\n            \"signal\": \"watch\",\n            \"confidence\": \"medium\",\n            \"reason\": \"Multiple Bitcoin-focused channels like 'More Crypto Online', 'BitcoinHyper', and 'PlanB' are providing market analysis. 'More Crypto Online' is looking for impulse waves, and 'BitcoinHyper' warns of an upcoming move, suggesting active market dynamics.\",\n            \"source_channel\": \"More Crypto Online\"\n        },\n        {\n            \"ticker\": \"NVDA\",\n            \"signal\": \"watch\",\n            \"confidence\": \"low\",\n            \"reason\": \"While not explicitly mentioned in the provided list of videos, the 'Aristotle Investments' videos discussing market range breaks and high probability setups could potentially include breakout momentum stocks like NVDA, which is a common focus in such analyses.\",\n            \"source_channel\": \"Aristotle Investments & HONEYDRIPNETWORK\"\n        },\n        {\n            \"ticker\": \"TSLA\",\n            \"signal\": \"watch\",\n            \"confidence\": \"low\",\n            \"reason\": \"Similar to NVDA, TSLA is a common stock for breakout momentum strategies, and the 'Aristotle Investments' videos discussing market range breaks and high probability setups might implicitly cover it.\",\n            \"source_channel\": \"Aristotle Investments & HONEYDRIPNETWORK\"\n        },\n        {\n            \"ticker\": \"AMD\",\n            \"signal\": \"watch\",\n            \"confidence\": \"low\",\n            \"reason\": \"AMD is another stock that fits the breakout momentum profile. The 'Aristotle Investments' videos on market range breaks and high probability setups could be relevant.\",\n            \"source_channel\": \"Aristotle Investments & HONEYDRIPNETWORK\"\n        },\n        {\n            \"ticker\": \"META\",\n            \"signal\": \"watch\",\n            \"confidence\": \"low\",\n            \"reason\": \"META is a frequent subject for breakout momentum strategies. The 'Aristotle Investments' videos discussing market range breaks and high probability setups might implicitly cover it.\",\n            \"source_channel\": \"Aristotle Investments & HONEYDRIPNETWORK\"\n        },\n        {\n            \"ticker\": \"AMZN\",\n            \"signal\": \"watch\",\n            \"confidence\": \"low\",\n            \"reason\": \"AMZN is a typical stock for breakout momentum analysis. The 'Aristotle Investments' videos on market range breaks and high probability setups could be relevant.\",\n            \"source_channel\": \"Aristotle Investments & HONEYDRIPNETWORK\"\n        },\n        {\n            \"ticker\": \"NFLX\",\n            \"signal\": \"watch\",\n            \"confidence\": \"low\",\n            \"reason\": \"NFLX is often included in breakout momentum watchlists. The 'Aristotle Investments' videos discussing market range breaks and high probability setups might implicitly cover it.\",\n            \"source_channel\": \"Aristotle Investments & HONEYDRIPNETWORK\"\n        }\n    ],\n    \"hot_tickers\": [\n        \"MSTR\",\n        \"IBIT\",\n        \"CCJ\",\n        \"UEC\",\n        \"BTC\"\n    ],\n    \"catalysts\": [\n        \"Bitcoin reversal (mentioned for MSTR)\",\n        \"Nuclear power plays (mentioned for CCJ)\",\n        \"AI boom demand (mentioned for UEC)\",\n        \"Market range breaks (general market sentiment)\"\n    ],\n    \"risks\": [\n        \"Potential for market range to break in either direction (general market sentiment)\",\n        \"The 'problem' with BlackRock's Bitcoin ETF (mentioned by Bitcoin Katie, though not elaborated on)\"\n    ],\n    \"notable_videos\": [\n        {\n            \"title\": \"WHY MSTR WILL BE $8,000 PER SHARE - EASILY!!!\",\n            \"channel\": \"Adam Livingston\",\n            \"ticker\": \"MSTR\",\n            \"sentiment\": \"bullish\",\n            \"views\": 0\n        },\n        {\n            \"title\": \"My Full MSTR Stock Analysis At A 52 Week Low\",\n            \"channel\": \"Everything Money Plus\",\n            \"ticker\": \"MSTR\",\n            \"sentiment\": \"bullish\",\n            \"views\": 0\n        },\n        {\n            \"title\": \"Why MSTR Stock Is a SCREAMING BUY for Me (Bitcoin Reversal!)\",\n            \"channel\": \"Jo Bhakdi\",\n            \"ticker\": \"MSTR\",\n            \"sentiment\": \"bullish\",\n            \"views\": 0\n        },\n        {\n            \"title\": \"Cameco Corp, Devon Energy, Toast and the SLV\",\n            \"channel\": \"CNBC Television\",\n            \"ticker\": \"CCJ\",\n            \"sentiment\": \"bullish\",\n            \"views\": 0\n        },\n        {\n            \"title\": \"Cameco's Nuclear Power Play Just Got Real! CCJ Stock Analysis\",\n            \"channel\": \"Smart Wealth With Joshua\",\n            \"ticker\": \"CCJ\",\n            \"sentiment\": \"bullish\",\n            \"views\": 0\n        },\n        {\n            \"title\": \"CCJ Cameco Stock Analysis: 5 Reasons It Could Surge - Monday Predicted Opening Price? \ud83d\ude80\",\n            \"channel\": \"StockInvest.us\",\n            \"ticker\": \"CCJ\",\n            \"sentiment\": \"bullish\",\n            \"views\": 0\n        },\n        {\n            \"title\": \"UEC Stock: In-Depth Analysis of the 'Uranium King' Powering the AI Boom\",\n            \"channel\": \"US Stock Podcast\",\n            \"ticker\": \"UEC\",\n            \"sentiment\": \"bullish\",\n            \"views\": 0\n        },\n        {\n            \"title\": \"Uranium Energy : UEC Stock Analysis with Elliott Wave + Trade Setup\",\n            \"channel\": \"The Trade Setup\",\n            \"ticker\": \"UEC\",\n            \"sentiment\": \"bullish\",\n            \"views\": 0\n        },\n        {\n            \"title\": \"This Market Range Is About To Break\u2026 Here Are My 4 Trades\",\n            \"channel\": \"Aristotle Investments & HONEYDRIPNETWORK\",\n            \"ticker\": \"Market\",\n            \"sentiment\": \"neutral\",\n            \"views\": 0\n        },\n        {\n            \"title\": \"The Problem with BlackRock\u2019s Bitcoin ETF\",\n            \"channel\": \"Bitcoin Katie\",\n            \"ticker\": \"IBIT\",\n            \"sentiment\": \"bearish\",\n            \"views\": 0\n        }\n    ]",
+    "summary": "",
+    "overall_sentiment": "neutral",
+    "signals": [],
+    "hot_tickers": [],
+    "catalysts": [],
+    "risks": [],
+    "notable_videos": [],
+    "timestamp": "2026-03-16T11:35:20.877081",
+    "scanner": "youtube",
+    "videos_found": 104
+  },
+  {
+    "summary": "The finance YouTube sphere is heavily focused on Bitcoin and its related stocks, particularly MicroStrategy (MSTR) and the IBIT ETF. There's significant bullish sentiment surrounding Bitcoin's potential price appreciation, with analysts predicting substantial gains for MSTR. Uranium stocks like CCJ and UEC are also seeing attention due to their role in the AI boom and nuclear power plays. Energy stocks like XOM and CVX are mentioned in passing, but with less specific bullish conviction compared to the crypto and uranium sectors.",
+    "overall_sentiment": "bullish",
+    "signals": [
+      {
+        "ticker": "MSTR",
+        "signal": "buy",
+        "confidence": "high",
+        "reason": "Multiple videos, including 'Adam Livingston' and 'Mark Moss', are extremely bullish on MSTR, with predictions of $8,000 and $1,600 per share respectively, driven by Bitcoin's performance. 'Everything Money Plus' also provides a full analysis at a 52-week low, suggesting a potential buying opportunity.",
+        "source_channel": "Adam Livingston, Mark Moss, Everything Money Plus"
+      },
+      {
+        "ticker": "IBIT",
+        "signal": "buy",
+        "confidence": "medium",
+        "reason": "'Bro Gets Rich' is picking up shares of IBIT, framing it as a smart investment. 'InvestAnswers Clips' directly addresses whether to buy IBIT options, indicating interest and potential for options plays, though 'Bitcoin Katie' raises a concern about BlackRock's ETF.",
+        "source_channel": "Bro Gets Rich, InvestAnswers Clips"
+      },
+      {
+        "ticker": "CCJ",
+        "signal": "buy",
+        "confidence": "medium",
+        "reason": "'Smart Wealth With Joshua' highlights Cameco's nuclear power play as getting 'real' and provides a stock analysis. 'CNBC Television' also lists Cameco Corp as a 'Final Trade', suggesting a positive short-term outlook.",
+        "source_channel": "Smart Wealth With Joshua, CNBC Television"
+      },
+      {
+        "ticker": "UEC",
+        "signal": "buy",
+        "confidence": "medium",
+        "reason": "Multiple videos from 'The Trade Setup' offer in-depth analysis of UEC stock, including Elliott Wave and trade setups, indicating active interest and potential for momentum plays. 'US Stock Podcast' also provides an in-depth analysis, linking UEC to the AI boom.",
+        "source_channel": "The Trade Setup, US Stock Podcast"
+      },
+      {
+        "ticker": "BTC-USD",
+        "signal": "buy",
+        "confidence": "high",
+        "reason": "'Gareth Soloway' points to exact signals indicating Bitcoin to $85k, driven by retail emotion and technical analysis. 'BitcoinHyper' warns of an upcoming move, and 'Jedith' features Michael Saylor discussing a Bitcoin bull run, all contributing to a strong bullish narrative.",
+        "source_channel": "Gareth Soloway, BitcoinHyper, Jedith"
+      }
+    ],
+    "hot_tickers": [
+      "MSTR",
+      "IBIT",
+      "BTC-USD",
+      "CCJ",
+      "UEC"
+    ],
+    "catalysts": [
+      "Bitcoin bull run",
+      "Nuclear power plays for Cameco",
+      "AI boom driving uranium demand"
+    ],
+    "risks": [
+      "Potential concerns with BlackRock's Bitcoin ETF (Bitcoin Katie)",
+      "The general volatility of crypto and related stocks"
+    ],
+    "notable_videos": [
+      {
+        "title": "My Full MSTR Stock Analysis At A 52 Week Low",
+        "channel": "Everything Money Plus",
+        "ticker": "MSTR",
+        "sentiment": "bullish",
+        "views": 0
+      },
+      {
+        "title": "WHY MSTR WILL BE $8,000 PER SHARE - EASILY!!!",
+        "channel": "Adam Livingston",
+        "ticker": "MSTR",
+        "sentiment": "bullish",
+        "views": 0
+      },
+      {
+        "title": "RETAIL EMOTION + TECHNICAL ANALYSIS: The Exact Signals Pointing Bitcoin to $85k \ud83d\ude80",
+        "channel": "Gareth Soloway",
+        "ticker": "BTC-USD",
+        "sentiment": "bullish",
+        "views": 0
+      },
+      {
+        "title": "Cameco's Nuclear Power Play Just Got Real! CCJ Stock Analysis",
+        "channel": "Smart Wealth With Joshua",
+        "ticker": "CCJ",
+        "sentiment": "bullish",
+        "views": 0
+      },
+      {
+        "title": "UEC Stock: In-Depth Analysis of the 'Uranium King' Powering the AI Boom",
+        "channel": "US Stock Podcast",
+        "ticker": "UEC",
+        "sentiment": "bullish",
+        "views": 0
+      }
+    ],
+    "timestamp": "2026-03-16T16:07:20.758059",
+    "scanner": "youtube",
+    "videos_found": 100
+  },
+  {
+    "summary": "MicroStrategy (MSTR) and Bitcoin ETFs (IBIT) are generating significant buzz, with strong bullish sentiment and price targets discussed. Uranium stocks (CCJ, UEC) are also seeing attention due to their connection to AI and nuclear power. Short squeeze candidates and general market direction are being explored by Aristotle Investments, though their content has zero views currently.",
+    "overall_sentiment": "bullish",
+    "signals": [
+      {
+        "ticker": "MSTR",
+        "signal": "buy",
+        "confidence": "high",
+        "reason": "Multiple videos, including 'WHY MSTR WILL BE $8,000 PER SHARE - EASILY!!!' by Adam Livingston and 'Microstrategy will reach $1,600 per share... here's how I know' by Mark Moss, express extremely bullish outlooks with specific high price targets.",
+        "source_channel": "Adam Livingston"
+      },
+      {
+        "ticker": "MSTR",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Everything Money Plus provides a full stock analysis at a 52-week low, suggesting potential for a rebound or opportunity.",
+        "source_channel": "Everything Money Plus"
+      },
+      {
+        "ticker": "IBIT",
+        "signal": "buy",
+        "confidence": "medium",
+        "reason": "Bro Gets Rich discusses picking up 100 shares of IBIT as a smart investment move, indicating positive sentiment.",
+        "source_channel": "Bro Gets Rich"
+      },
+      {
+        "ticker": "IBIT",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "InvestAnswers Clips questions whether IBIT price correlates to BTC and if IBIT options should be bought, suggesting a need for further analysis.",
+        "source_channel": "InvestAnswers Clips"
+      },
+      {
+        "ticker": "CCJ",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "CNBC Television's 'Final Trades' mentions Cameco Corp, and Smart Wealth With Joshua provides an analysis of Cameco's nuclear power play, indicating interest in the stock.",
+        "source_channel": "CNBC Television"
+      },
+      {
+        "ticker": "UEC",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "US Stock Podcast and The Trade Setup offer in-depth analyses of UEC stock, highlighting its role in the AI boom and using Elliott Wave analysis, suggesting potential trading opportunities.",
+        "source_channel": "US Stock Podcast"
+      }
+    ],
+    "hot_tickers": [
+      "MSTR",
+      "IBIT",
+      "CCJ",
+      "UEC",
+      "BTC"
+    ],
+    "catalysts": [
+      "Bitcoin price movements (implied by IBIT and MSTR analysis)",
+      "Nuclear power demand (for CCJ, UEC)",
+      "AI boom (for UEC)"
+    ],
+    "risks": [
+      "The problem with BlackRock's Bitcoin ETF (Bitcoin Katie) suggests potential headwinds for IBIT.",
+      "BitcoinHyper warns to 'Watch Out for This Move!' in Bitcoin, indicating potential volatility."
+    ],
+    "notable_videos": [
+      {
+        "title": "WHY MSTR WILL BE $8,000 PER SHARE - EASILY!!!",
+        "channel": "Adam Livingston",
+        "ticker": "MSTR",
+        "sentiment": "bullish",
+        "views": 0
+      },
+      {
+        "title": "My Full MSTR Stock Analysis At A 52 Week Low",
+        "channel": "Everything Money Plus",
+        "ticker": "MSTR",
+        "sentiment": "neutral",
+        "views": 0
+      },
+      {
+        "title": "Picking Up 100 Shares Of IBIT BITCOIN ETF  - Smart Investment Move?",
+        "channel": "Bro Gets Rich",
+        "ticker": "IBIT",
+        "sentiment": "bullish",
+        "views": 0
+      },
+      {
+        "title": "The Problem with BlackRock\u2019s Bitcoin ETF",
+        "channel": "Bitcoin Katie",
+        "ticker": "IBIT",
+        "sentiment": "bearish",
+        "views": 0
+      },
+      {
+        "title": "Cameco Corp, Devon Energy, Toast and the SLV",
+        "channel": "CNBC Television",
+        "ticker": "CCJ",
+        "sentiment": "neutral",
+        "views": 0
+      },
+      {
+        "title": "UEC Stock: In-Depth Analysis of the 'Uranium King' Powering the AI Boom",
+        "channel": "US Stock Podcast",
+        "ticker": "UEC",
+        "sentiment": "bullish",
+        "views": 0
+      },
+      {
+        "title": "Bitcoin BTC Chart Analysis - Has Bitcoin Formed an Impulse? Elliott Wave Analysis",
+        "channel": "More Crypto Online",
+        "ticker": "BTC",
+        "sentiment": "neutral",
+        "views": 0
+      },
+      {
+        "title": "BITCOIN: Watch Out for This Move! (it's coming) - BTC, ETH, XRP Price Prediction Today",
+        "channel": "BitcoinHyper",
+        "ticker": "BTC",
+        "sentiment": "bearish",
+        "views": 0
+      }
+    ],
+    "timestamp": "2026-03-16T19:02:28.685890",
+    "scanner": "youtube",
+    "videos_found": 98
+  },
+  {
+    "summary": "YouTube finance content is heavily focused on MicroStrategy (MSTR) and its Bitcoin acquisitions, driving bullish sentiment for the stock and related ETFs like IBIT. Uranium stocks, particularly Cameco (CCJ) and Uranium Energy Corp (UEC), are also seeing significant analysis, with a mixed outlook due to broader market trends and specific company plays. Energy giants like ExxonMobil (XOM) are being discussed in the context of oil prices and geopolitical risks. There's also a general buzz around Bitcoin's performance and its impact on related assets.",
+    "overall_sentiment": "mixed",
+    "signals": [
+      {
+        "ticker": "MSTR",
+        "signal": "buy",
+        "confidence": "high",
+        "reason": "Multiple videos from 'Stocks Moon Radar', 'StockInvest.us', and 'Stock US Radar' highlight MicroStrategy's recent massive Bitcoin acquisition and Michael Saylor doubling down, indicating strong bullish momentum and positive outlook.",
+        "source_channel": "Stocks Moon Radar"
+      },
+      {
+        "ticker": "IBIT",
+        "signal": "buy",
+        "confidence": "medium",
+        "reason": "'MoltStreet' provides a specific bullish target of $43.20 for IBIT within 5 days, supported by AI agent sentiment, suggesting short-term upside potential.",
+        "source_channel": "MoltStreet"
+      },
+      {
+        "ticker": "CCJ",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "CNBC Television's 'Final Trades' mentions Cameco Corp, and 'Smart Wealth With Joshua' and 'StockInvest.us' provide analysis, suggesting it's a ticker of interest within the energy/uranium sector, though specific buy/sell signals are not explicitly stated.",
+        "source_channel": "CNBC Television"
+      },
+      {
+        "ticker": "UEC",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Multiple videos from 'US Stock Podcast' and 'The Trade Setup' focus on UEC, framing it as a key player in the 'Uranium King' narrative and powering the AI boom, indicating significant attention and potential for momentum.",
+        "source_channel": "US Stock Podcast"
+      },
+      {
+        "ticker": "XOM",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "'Seeking Alpha' and 'StockInvest.us' analyze XOM in the context of significant cash flow and the energy outlook, while 'Ido Yahalomi' includes it in daily market analysis, marking it as a significant energy stock under observation.",
+        "source_channel": "Seeking Alpha"
+      }
+    ],
+    "hot_tickers": [
+      "MSTR",
+      "IBIT",
+      "CCJ",
+      "UEC",
+      "XOM",
+      "Bitcoin"
+    ],
+    "catalysts": [
+      "MicroStrategy's ongoing Bitcoin acquisitions",
+      "Uranium demand driven by AI boom",
+      "Oil price movements and geopolitical risks (e.g., Iran risk for XOM)",
+      "Bitcoin expiry events (mentioned for March 16-17)"
+    ],
+    "risks": [
+      "Potential selloff in uranium stocks (as mentioned by Bullmarket Lifestyle)",
+      "Geopolitical risks impacting oil prices and energy stocks (e.g., Iran risk for XOM)"
+    ],
+    "notable_videos": [
+      {
+        "title": "MicroStrategy Stock Prediction: Why MSTR is Surging Right Now",
+        "channel": "Stocks Moon Radar",
+        "ticker": "MSTR",
+        "sentiment": "bullish",
+        "views": 0
+      },
+      {
+        "title": "MSTR MicroStrategy Stock Analysis: 5 Signals After 35% Rally - Tuesday Predicted Opening Price? \ud83d\ude80",
+        "channel": "StockInvest.us",
+        "ticker": "MSTR",
+        "sentiment": "bullish",
+        "views": 0
+      },
+      {
+        "title": "$IBIT \ud83d\udcc8 +3.0% Target $43",
+        "channel": "MoltStreet",
+        "ticker": "IBIT",
+        "sentiment": "bullish",
+        "views": 0
+      },
+      {
+        "title": "Cameco's Nuclear Power Play Just Got Real! CCJ Stock Analysis",
+        "channel": "Smart Wealth With Joshua",
+        "ticker": "CCJ",
+        "sentiment": "neutral",
+        "views": 0
+      },
+      {
+        "title": "UEC Stock: In-Depth Analysis of the 'Uranium King' Powering the AI Boom",
+        "channel": "US Stock Podcast",
+        "ticker": "UEC",
+        "sentiment": "bullish",
+        "views": 0
+      },
+      {
+        "title": "XOM Stock: $51 Billion in Cash Flow & the 2026 Energy Outlook | 2-Minute Analysis",
+        "channel": "Seeking Alpha",
+        "ticker": "XOM",
+        "sentiment": "neutral",
+        "views": 0
+      }
+    ],
+    "timestamp": "2026-03-17T08:01:30.775187",
+    "scanner": "youtube",
+    "videos_found": 89
+  },
+  {
+    "summary": "YouTube finance content in the last 24 hours is heavily focused on Bitcoin and its related stocks like MSTR and the IBIT ETF, with discussions ranging from bull runs to potential crashes. Uranium stocks, particularly CCJ and UEC, are also a significant topic, with analyses highlighting their role in the AI boom and nuclear power plays. Other areas of interest include general trading strategies and specific stock analyses for companies like Strategy Inc.",
+    "overall_sentiment": "mixed",
+    "signals": [
+      {
+        "ticker": "MSTR",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Multiple videos discuss Michael Saylor's views on MSTR and Bitcoin, covering both bull run and crash scenarios, indicating significant interest and potential volatility. The 'lottery calls & bear puts' system suggests a need to monitor both upside and downside potential.",
+        "source_channel": "Classic Truck Rescue, Rich Zigz, TRADING NEWS, Stratton Markets"
+      },
+      {
+        "ticker": "IBIT",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Several videos are dedicated to the IBIT Bitcoin ETF, with discussions on its correlation to BTC and whether it's a smart investment, directly relevant to the 'lottery calls & bear puts' system.",
+        "source_channel": "Bro Gets Rich, Bitcoin Katie, InvestAnswers Clips"
+      },
+      {
+        "ticker": "CCJ",
+        "signal": "watch",
+        "confidence": "high",
+        "reason": "Multiple channels are analyzing CCJ, with mentions of its 'nuclear power play' and inclusion in 'Final Trades,' aligning with the energy/uranium momentum system.",
+        "source_channel": "Smart Wealth With Joshua, CNBC Television, Cramer . WTF"
+      },
+      {
+        "ticker": "UEC",
+        "signal": "watch",
+        "confidence": "high",
+        "reason": "UEC is highlighted as the 'Uranium King' powering the AI boom, with in-depth analyses and Elliott Wave setups, fitting the energy/uranium momentum system.",
+        "source_channel": "US Stock Podcast, The Trade Setup, Martyn Lucas INVESTOR"
+      },
+      {
+        "ticker": "URANIUM",
+        "signal": "watch",
+        "confidence": "medium",
+        "reason": "Broader discussions on uranium stocks like URG and UUUU are present, suggesting continued interest in the sector for the energy/uranium momentum system.",
+        "source_channel": "Ez Money Show, Stratton Markets"
+      }
+    ],
+    "hot_tickers": [
+      "MSTR",
+      "IBIT",
+      "CCJ",
+      "UEC",
+      "Bitcoin"
+    ],
+    "catalysts": [
+      "Michael Saylor's keynotes on Bitcoin and MSTR (though past events, they are being re-shared)",
+      "Discussions around the AI boom potentially driving uranium demand",
+      "General market sentiment around Bitcoin bull runs"
+    ],
+    "risks": [
+      "Michael Saylor's discussions on Bitcoin crash scenarios for MSTR",
+      "Concerns about the structure or performance of the IBIT Bitcoin ETF",
+      "Potential rejection zones for Kaspa (KAS) in crypto markets"
+    ],
+    "notable_videos": [
+      {
+        "title": "LIVE: Michael Saylor on Bitcoin Bull Run & MSTR Stock \u2013 BTC Price Analysis",
+        "channel": "Classic Truck Rescue",
+        "ticker": "MSTR",
+        "sentiment": "mixed",
+        "views": 0
+      },
+      {
+        "title": "LIVE: Michael Saylor on Bitcoin Crash & MSTR Stock Drop \u2013 BTC Price Prediction",
+        "channel": "Rich Zigz",
+        "ticker": "MSTR",
+        "sentiment": "mixed",
+        "views": 0
+      },
+      {
+        "title": "Picking Up 100 Shares Of IBIT BITCOIN ETF  - Smart Investment Move?",
+        "channel": "Bro Gets Rich",
+        "ticker": "IBIT",
+        "sentiment": "neutral",
+        "views": 0
+      },
+      {
+        "title": "The Problem with BlackRock\u2019s Bitcoin ETF",
+        "channel": "Bitcoin Katie",
+        "ticker": "IBIT",
+        "sentiment": "bearish",
+        "views": 0
+      },
+      {
+        "title": "Does IBIT Price Correlate to BTC: Should I Buy IBIT Options?",
+        "channel": "InvestAnswers Clips",
+        "ticker": "IBIT",
+        "sentiment": "neutral",
+        "views": 0
+      },
+      {
+        "title": "Cameco's Nuclear Power Play Just Got Real! CCJ Stock Analysis",
+        "channel": "Smart Wealth With Joshua",
+        "ticker": "CCJ",
+        "sentiment": "bullish",
+        "views": 0
+      },
+      {
+        "title": "Final Trades: Cameco Corp, Devon Energy, Toast and the SLV",
+        "channel": "CNBC Television",
+        "ticker": "CCJ",
+        "sentiment": "neutral",
+        "views": 0
+      },
+      {
+        "title": "UEC Stock: In-Depth Analysis of the 'Uranium King' Powering the AI Boom",
+        "channel": "US Stock Podcast",
+        "ticker": "UEC",
+        "sentiment": "bullish",
+        "views": 0
+      },
+      {
+        "title": "Uranium Energy : UEC Stock Analysis with Elliott Wave + Trade Setup",
+        "channel": "The Trade Setup",
+        "ticker": "UEC",
+        "sentiment": "bullish",
+        "views": 0
+      }
+    ],
+    "timestamp": "2026-03-23T14:49:50.191656",
+    "scanner": "youtube",
+    "videos_found": 84
+  }
+]

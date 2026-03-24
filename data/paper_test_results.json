@@ -1,0 +1,145 @@
+{
+  "timestamp": "2026-03-10T12:41:45.217576",
+  "passed": 6,
+  "total": 6,
+  "all_passed": true,
+  "results": [
+    {
+      "test": "market_entry",
+      "symbol": "SPY",
+      "status": "Filled",
+      "fill_price": 681.47,
+      "qty": 10,
+      "passed": true
+    },
+    {
+      "test": "trailing_stop",
+      "symbol": "SPY",
+      "status": "PreSubmitted",
+      "order_id": 10,
+      "trail_pct": 1.0,
+      "qty": 5,
+      "passed": true
+    },
+    {
+      "test": "laddered_stops",
+      "symbol": "NVDA",
+      "entry_price": 185.6,
+      "ladders": [
+        {
+          "label": "Tight (2%)",
+          "qty": 2,
+          "trail_pct": 2.0,
+          "status": "PreSubmitted",
+          "order_id": 15
+        },
+        {
+          "label": "Medium (5%)",
+          "qty": 2,
+          "trail_pct": 5.0,
+          "status": "PreSubmitted",
+          "order_id": 16
+        },
+        {
+          "label": "Wide (10%)",
+          "qty": 2,
+          "trail_pct": 10.0,
+          "status": "PreSubmitted",
+          "order_id": 17
+        }
+      ],
+      "passed": true
+    },
+    {
+      "test": "limit_entry",
+      "symbol": "AMD",
+      "limit_price": 203.95,
+      "status": "Filled",
+      "fill_price": 204.53,
+      "qty": 5,
+      "passed": true
+    },
+    {
+      "test": "partial_exit",
+      "exits": [
+        {
+          "symbol": "IBIT",
+          "sold": 50,
+          "of": 100,
+          "fill": 40.4,
+          "status": "Filled"
+        },
+        {
+          "symbol": "LLY",
+          "sold": 100,
+          "of": 200,
+          "fill": 1005.51,
+          "status": "Filled"
+        },
+        {
+          "symbol": "SPY",
+          "sold": 5,
+          "of": 10,
+          "fill": 681.43,
+          "status": "Filled"
+        },
+        {
+          "symbol": "NVDA",
+          "sold": 3,
+          "of": 6,
+          "fill": 185.55,
+          "status": "Filled"
+        },
+        {
+          "symbol": "AMD",
+          "sold": 2,
+          "of": 5,
+          "fill": 204.38,
+          "status": "Filled"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "test": "full_exit",
+      "exits": [
+        {
+          "symbol": "IBIT",
+          "action": "SELL",
+          "qty": 50,
+          "fill": 40.42,
+          "status": "Filled"
+        },
+        {
+          "symbol": "LLY",
+          "action": "SELL",
+          "qty": 100,
+          "fill": 1005.51,
+          "status": "Filled"
+        },
+        {
+          "symbol": "SPY",
+          "action": "SELL",
+          "qty": 5,
+          "fill": 681.44,
+          "status": "Filled"
+        },
+        {
+          "symbol": "NVDA",
+          "action": "SELL",
+          "qty": 3,
+          "fill": 185.55,
+          "status": "Filled"
+        },
+        {
+          "symbol": "AMD",
+          "action": "SELL",
+          "qty": 3,
+          "fill": 204.41,
+          "status": "Filled"
+        }
+      ],
+      "passed": true
+    }
+  ]
+}

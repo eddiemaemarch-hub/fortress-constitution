@@ -1,0 +1,9 @@
+[2026-03-09 13:43:36] {"system": "system2", "ticker": "AAPL", "action": "BUY", "structure": "LEAP Call", "strike": "$200 Jan2027", "expiry": "2027-01-15", "risk": 180, "layers_passed": 10}
+[2026-03-09 13:43:44] {"system": "system2", "ticker": "MSTR", "action": "BUY", "structure": "LEAP Call", "risk": 200}
+[2026-03-09 15:01:18] {"system": "system2", "ticker": "MSTR", "action": "BUY", "risk": 0}
+[2026-03-12 09:35:20] {"secret": "rudy_tv_secret_2026", "ticker": "MSTR", "action": "BUY", "strategy": "Rudy MSTR Lottery v2", "price": 320.5, "comment": "Golden Cross entry"}
+[2026-03-12 09:37:00] {"secret": "rudy_tv_secret_2026", "ticker": "MSTR", "action": "BUY", "strategy": "Rudy MSTR Lottery v2", "price": 320.5, "comment": "Test from ngrok"}
+[2026-03-12 10:02:22] {"secret": "rudy_tv_secret_2026", "ticker": "MSTR", "action": "BUY", "strategy": "Rudy MSTR Lottery v2", "price": 320.5, "comment": "Cloudflare test"}
+[2026-03-12 10:11:53] {"secret": "rudy_tv_secret_2026", "ticker": "MSTR", "action": "BUY", "strategy": "Rudy MSTR Lottery v2", "price": 320.5, "comment": "Safety test"}
+[2026-03-14 12:44:38] {"secret": "rudy_tv_secret_2026", "ticker": "MSTR", "action": "BUY", "strategy": "MSTR Lottery", "price": 350.0, "test": false}
+[2026-03-14 13:20:51] {"secret": "rudy_tv_secret_2026", "ticker": "MSTR", "action": "BUY", "strategy": "MSTR Lottery", "price": 350.0, "test": false}
