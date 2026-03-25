@@ -175,6 +175,13 @@ Prevents losing positions to time decay when the market is flat.
 - **`com.rudy.mstr-treasury`** → `mstr_treasury_updater.py` (Monday 8:30am — local backup to Cloud task)
 - **`com.rudy.scanner`** → `scanner.py` (Mon-Fri 9:25am/11am/1pm/3:25pm/4:05pm)
 
+### Equity Curve Charts — matplotlib + seaborn (March 25, 2026)
+- **Libraries:** `matplotlib` + `seaborn` installed via pip into Rudy Python environment
+- **Data source:** `/Users/eddiemae/rudy/data/pnl_history.json` — appended daily by auditor at 4 PM (date, T2 value, T2 pct, T3 value, T3 pct, NLV)
+- **Feature 1 — Auditor Telegram chart:** After daily audit at 4 PM, auditor logs snapshot to pnl_history.json then generates 2-panel equity curve (top: T2/T3 position values with cost basis lines; bottom: NLV fill). Sent via Telegram `sendPhoto`. Dark theme (#1a1a2e background). Only sends if ≥2 data points exist.
+- **Feature 2 — Dashboard endpoint:** `/api/equity_chart` — returns PNG image directly (Content-Type: image/png, no-cache). Reads pnl_history.json. Embedded in Command Center dashboard as `<img src="/api/equity_chart">`. Returns 404 JSON if insufficient data.
+- **Shared helper:** `generate_equity_chart_bytes(history)` — single function used by both auditor and app.py. Non-interactive backend (`matplotlib.use('Agg')`).
+
 ### Dashboard Updates (March 2026)
 - Capital Deployment Plan card added
 - Positions panel fixed to show ALL IBKR positions (removed old filter that hid some)

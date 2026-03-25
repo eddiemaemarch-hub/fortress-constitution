@@ -58,6 +58,7 @@ type: reference
 - `/Users/eddiemae/rudy/data/btc_sentinel_state.json` — Sentinel state
 - `/Users/eddiemae/rudy/data/breaker_state.json` — Circuit breaker state
 - `/Users/eddiemae/rudy/data/pending_repairs.json` — Self-repair proposals and history
+- `/Users/eddiemae/rudy/data/pnl_history.json` — **Daily P&L snapshot history** (March 25, 2026). Written by auditor.py at 4 PM each trading day. Stores date, T2 value, T2 pct, T3 value, T3 pct, NLV. Used to generate equity curve charts for Telegram + dashboard.
 
 ### Logs
 - `/Users/eddiemae/rudy/logs/execution_path_verify.log` — Trader1 19-check verifier log (runs 2×/day)
