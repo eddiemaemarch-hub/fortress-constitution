@@ -136,12 +136,13 @@ Prevents losing positions to time decay when the market is flat.
 
 ### v2.8+ Live Signal State (March 26, 2026)
 - **Armed:** No
-- **Dipped below 200W SMA:** YES ✅ — condition met, clock started
+- **Dipped below 200W SMA:** YES ✅ — condition met
 - **Green weeks:** 0/2 — needs 2 consecutive Friday closes above MSTR 200W SMA
 - **BTC price:** $71,001
 - **Regime:** DISTRIBUTION 79.2% confidence
-- **Status:** Waiting for MSTR to close above its 200W SMA on two consecutive Fridays → ENTRY fires
-- **Note:** 200W SMA in memory (~$59,433) was STALE. Actual BTC 200W SMA is ~$72K (confirmed from chart). MSTR 200W SMA is the reclaim trigger for green week count.
+- **Status:** Watch mode — entry NOT expected imminently
+- **Commander outlook (March 26, 2026):** BTC showing bear flag on BOTH daily AND 4H charts. Expecting further downside from here. Entry NOT expected until ~October 2026 — aligns perfectly with Phase 3 capital arrival ($130K, Aug-Oct 2026). T2/T3 puts benefit from the continued drop. System stays in watch mode until BTC bottoms and MSTR reclaims its 200W SMA.
+- **Note:** 200W SMA in memory (~$59,433) was STALE. Actual BTC 200W SMA ~$72K (confirmed from chart March 26). MSTR 200W SMA is the reclaim trigger for green week count.
 
 ### BTC Cycle Intelligence
 - Phase: Distribution → Early Winter (BTC ~$71K, -44% from $126K ATH)
