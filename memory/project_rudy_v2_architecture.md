@@ -332,6 +332,7 @@ All three external AI brains now use live web search grounding for real-time con
 - AVGO: +501.5%, Sharpe 0.888 — cross-ticker validation only
 - BMNR: Discussed but NOT implemented — research only
 - WhatsApp integration for Meta glasses — discussed, not yet implemented
+- **Heikin Ashi RSI Oscillator — REJECTED (March 25, 2026):** Tested as additive entry filter on v2.8+ via `backtest_ha_rsi_v28plus.py`. Too restrictive — filtered out ALL 4 baseline trades, generating zero entries across 20 walk-forward windows and 8 stress scenarios. Baseline v2.8+: 4 trades, 50% WR, +58% return, 0.28 Sharpe, 3.25 PF. HA RSI: 0 trades. Do NOT add to v2.8+ signal logic.
 
 ### Future Roadmap — DEAP (Genetic Programming / Evolutionary Algorithms)
 - **Library:** DEAP (Distributed Evolutionary Algorithms in Python) — `pip install deap`
