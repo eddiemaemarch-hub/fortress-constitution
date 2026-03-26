@@ -134,9 +134,18 @@ Prevents losing positions to time decay when the market is flat.
 - Total: ~$139,650 all feeding ONE v2.8+ MSTR LEAP position
 - Constitution updated with V28_CAPITAL_PHASE variables
 
+### v2.8+ Live Signal State (March 26, 2026)
+- **Armed:** No
+- **Dipped below 200W SMA:** YES ✅ — condition met, clock started
+- **Green weeks:** 0/2 — needs 2 consecutive Friday closes above MSTR 200W SMA
+- **BTC price:** $71,001
+- **Regime:** DISTRIBUTION 79.2% confidence
+- **Status:** Waiting for MSTR to close above its 200W SMA on two consecutive Fridays → ENTRY fires
+- **Note:** 200W SMA in memory (~$59,433) was STALE. Actual BTC 200W SMA is ~$72K (confirmed from chart). MSTR 200W SMA is the reclaim trigger for green week count.
+
 ### BTC Cycle Intelligence
-- Phase: Distribution → Early Winter (BTC ~$70K, -44% from $126K ATH)
-- System 13 regime: DISTRIBUTION at 82.2%, MARKDOWN at 17.8%
+- Phase: Distribution → Early Winter (BTC ~$71K, -44% from $126K ATH)
+- System 13 regime: DISTRIBUTION at 79.2%, updated March 26, 2026
 - Phase detection: System 13 regime maps to bull/bear (ACCUMULATION/MARKUP → bull, DISTRIBUTION/MARKDOWN → bear), falls back to threshold if stale
 - ATH tracked dynamically in trader state (`btc_ath`), not hardcoded
 - Phase-aware monthly seasonality table (Month x Phase) wired into trader1
