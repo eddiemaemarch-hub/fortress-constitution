@@ -332,3 +332,14 @@ All three external AI brains now use live web search grounding for real-time con
 - AVGO: +501.5%, Sharpe 0.888 — cross-ticker validation only
 - BMNR: Discussed but NOT implemented — research only
 - WhatsApp integration for Meta glasses — discussed, not yet implemented
+
+### Future Roadmap — DEAP (Genetic Programming / Evolutionary Algorithms)
+- **Library:** DEAP (Distributed Evolutionary Algorithms in Python) — `pip install deap`
+- **Docs:** https://deap.readthedocs.io/en/master/tutorials/advanced/gp.html
+- **Intended use:** Strategy discovery engine — evolve new trading rules from scratch via genetic programming. NOT for modifying v2.8+ (constitutionally locked). Candidate uses:
+  - Evolve new entry/exit filter combinations for future trader candidates
+  - Optimize System 13 feature selection via evolutionary search
+  - Symbolic regression on MSTR/BTC price relationships
+  - Generate Pine Script strategy candidates for TradingView backtesting
+- **Constitutional requirement:** Any DEAP-evolved strategy that trades real capital requires a new authorized trader (Article XI constitution amendment + Commander approval). DEAP output = research only until constitution updated.
+- **Status:** Planned — not yet installed or implemented (March 25, 2026)
