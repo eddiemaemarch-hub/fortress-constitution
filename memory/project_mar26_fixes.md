@@ -1,31 +1,37 @@
 ---
-name: March 26 2026 — Dashboard, Gemini, Premium, Verify Fixes
-description: Major fixes across dashboard live values, Gemini prompt accuracy, premium persistence, and morning Telegram alerts
+name: March 25-27 2026 — Complete System Overhaul
+description: Dashboard real-time, HITL entry, LEAP execution, Gemini/Grok fixes, premium bug, verify alerts, backtests
 type: project
 ---
 
-Session on 2026-03-25 to 2026-03-26 — comprehensive system fixes:
+Major session March 25-27, 2026:
 
-**Why:** Multiple panels showing stale/incorrect data, morning Telegram alerts missing, Gemini hallucinating.
+**Why:** Dashboard panels stale, entries auto-executing without approval, buying stock instead of LEAPs, Gemini/Grok hallucinating.
 
-**Fixes applied:**
+**Dashboard — Real-Time Fix (March 27):**
+- All endpoints now share ONE IBKR connection via `_ibkr_cache` with 15s TTL
+- `/api/account-live` is the single source of truth — queries IBKR fresh every 15s
+- `/api/status`, `/api/positions`, `/api/status-dump` all read from shared cache
+- No more separate clientId connections per endpoint (was causing IBKR connection limits)
+- Strike engine (`updateSAE`) computes premium live from cached MSTR/BTC prices
+- BTC price from sentinel (15min) overlaid on top
 
-1. **position_audit.py** — Added Trader2/3 state file recognition (was showing false ORPHAN alerts). Fixed Telegram to use shared telegram.py module instead of missing config/config.json.
+**HITL Entry + LEAP Execution (March 26):**
+- `_request_entry_approval()` sends Telegram with full details, waits for YES/NO
+- `_check_pending_entry()` reads approval flag each eval cycle
+- `_execute_entry()` rewritten: buys MSTR CALL LEAPs (barbell: safety + spec strikes), NOT stock
+- `_get_leap_expiry()` targets January ~2yr out
+- em_bot.py handles YES/NO for v2.8+ entries
+- Dashboard: `/api/entry/approve`, `/api/entry/reject`
+- Constitution Article XI Section 1A: NO STOCK PURCHASES, options only
 
-2. **execution_path_verify_t23.py** — Pre-market state freshness threshold raised to 18h (was failing at 9:20 AM because traders only poll during market hours). Added Telegram send logging. Added file lock to prevent duplicate runs.
+**Other Fixes:**
+- Premium persistence bug (string "0.76x" → float)
+- Gemini prompt: resistance/support rule, drawdown thresholds, S13 weighting
+- Grok CT: migrated to `search` API, temp 0.7, live price grounding, randomized prompts
+- Position audit: Trader2/3 state recognition, shared telegram module
+- Verify alerts: pre-market threshold, Telegram logging, file locks
+- Equity chart: shared charts.py, Telegram + dashboard
+- Daily status: System 13 regime + 200W SMA status in Telegram
 
-3. **execution_path_verify.py** — Added Telegram send logging + file lock.
-
-4. **daily_status.py** — Added System 13 regime display + MSTR 200W SMA status (below/reclaiming/above) to Telegram. Added equity chart generation + Telegram photo send. Uses shared charts.py module.
-
-5. **charts.py** — New shared chart module (GitHub-dark theme, monospace font, annotated values, cost basis lines).
-
-6. **web/app.py (dashboard)** — Fixed /api/status to use live IBKR position lookups instead of stale state files. Fixed DeepSeek panel to compute premium live from IBKR+sentinel prices instead of stale eval state. Added 200W SMA status (below/reclaiming/above) to DeepSeek panel JS. Added equity chart card + /api/equity_chart endpoint. Added make_response import. Added reqAccountUpdates to IBKR background feed.
-
-7. **trader_v28.py** — Fixed premium persistence bug: filters dict stored premium as "0.76x" (string), float() conversion failed silently → stored 0.0. Now strips trailing "x" before converting.
-
-8. **gemini_brain.py** — Added MSTR 200W SMA status to prompt. Added resistance/support rule (below MA = resistance, not support). Added clearer regime definitions with drawdown thresholds (>25% = MARKDOWN not DISTRIBUTION). Told Gemini to weight System 13's ML call heavily.
-
-9. **Backtests run:** HA RSI (REJECTED), MA Bounce/Breakout 5 variants (all REJECTED), EMA+Stoch Reversal standalone+filter (REJECTED). v2.8+ baseline remains untouchable.
-
-**How to apply:** If dashboard panels show stale data, check: (1) IBKR background feed connected (dashboard.log), (2) trader daemon state file timestamps fresh, (3) premium not 0.0 in state file.
+**How to apply:** If dashboard panels freeze, check `_ibkr_cache["_last_query_ts"]` age. If premium shows 0.0, check trader_v28_state.json `last_premium` field for trailing "x" string.
