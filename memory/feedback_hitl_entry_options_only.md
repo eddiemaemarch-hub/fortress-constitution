@@ -16,4 +16,8 @@ Additionally: ABSOLUTELY NO STOCK PURCHASES. Only option (LEAP/PUT) buys are aut
 - em_bot.py handles YES/NO replies for v2.8+ entries
 - Dashboard has /api/entry/approve and /api/entry/reject endpoints
 - Constitution Article XI Section 1A codifies this rule
-- `_execute_entry()` still buys MSTR stock — needs to be updated to buy MSTR CALL LEAPs using the strike recommendation engine output
+- `_execute_entry()` now buys MSTR CALL LEAPs (barbell: safety + spec strikes) via IBKR Option contracts
+- `_get_leap_expiry()` targets January ~2 years out (e.g., Jan 2028 for 2026 entry)
+- Each strike gets proportional capital allocation based on safety/spec weights
+- All filled contracts stored in state as `leap_contracts` array with type/strike/expiry/qty/price/cost
+- Telegram confirmation shows every filled contract with costs
