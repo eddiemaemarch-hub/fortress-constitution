@@ -22,5 +22,13 @@
 - [project_capital_plan.md](project_capital_plan.md) — Three-phase capital deployment ($7.9K → $130K → $139.6K)
 - [project_btc_cycle_phase.md](project_btc_cycle_phase.md) — BTC cycle intelligence, phase-aware seasonality, System 13 regime
 
+- [project_position_audit_fix.md](project_position_audit_fix.md) — Position audit fixed for Trader2/3 recognition (2026-03-25)
+- [project_equity_chart.md](project_equity_chart.md) — Daily equity curve chart to Telegram + dashboard /api/equity_chart (2026-03-25)
+- [project_mar26_fixes.md](project_mar26_fixes.md) — Dashboard live values, Gemini prompt, premium bug, verify alerts, backtests (2026-03-26)
+
+## Feedback
+- [feedback_communication_style.md](feedback_communication_style.md) — When told "fix everything", do it all without per-item confirmation
+- [feedback_hitl_entry_options_only.md](feedback_hitl_entry_options_only.md) — ALL entries need Commander YES/NO. No stock buys — options (LEAPs) only.
+
 ## Reference
 - [reference_key_files.md](reference_key_files.md) — All critical file paths (scripts, config, data, LaunchAgents)

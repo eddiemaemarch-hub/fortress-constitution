@@ -40,9 +40,20 @@ Twice-daily checks that every component from signal detection to order submissio
 ### Authorized Trader Registry (Article XI — Constitution v50.0)
 | Identity | Script | Authority |
 |---|---|---|
-| **Trader1** | `trader_v28.py` | BUY + SELL (v2.8+ LEAP only) |
+| **Trader1** | `trader_v28.py` | BUY + SELL (v2.8+ LEAP only, HITL approval required) |
 | **Trader2** | `trader2_mstr_put.py` | SELL ONLY (MSTR Put exit, HITL required) |
 | **Trader3** | `trader3_spy_put.py` | SELL ONLY (SPY Put exit, HITL required) |
+
+**Article XI Section 1A — HITL Entry + Options-Only Rule (March 26, 2026):**
+- ALL entry orders require Commander YES/NO approval via Telegram before execution
+- ABSOLUTELY NO STOCK PURCHASES — only MSTR CALL LEAP options
+- Trader1 entry flow: signal fires → `_request_entry_approval()` sends Telegram with full strike rec + capital allocation → Commander replies YES/NO → `_check_pending_entry()` reads flag on next eval → `_execute_entry()` buys MSTR CALL LEAPs (barbell: safety + spec strikes)
+- Entry approval also available via dashboard `/api/entry/approve` and `/api/entry/reject`
+- E.M. bot (`em_bot.py`) handles YES/NO Telegram replies for v2.8+ entries
+- Strike Adjustment Engine selects strikes by premium band (DISCOUNT/DEPRESSED/FAIR/ELEVATED/EUPHORIC)
+- LEAP expiry targets January ~2yr out (e.g., Jan 2028 for 2026 entry)
+- Capital allocated by safety/spec weights, each strike gets proportional allocation
+- All filled contracts stored in `state.leap_contracts` with full audit trail
 
 **All other trader scripts are LOCKED (authority guard block at top):** trader1.py, trader2.py, trader3.py, trader4–12.py, trader_moonshot.py, trader_v30.py. These exit immediately on run.
 
