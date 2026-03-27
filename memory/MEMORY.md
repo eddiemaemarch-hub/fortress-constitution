@@ -28,6 +28,7 @@
 
 ## Feedback
 - [feedback_communication_style.md](feedback_communication_style.md) — When told "fix everything", do it all without per-item confirmation
+- [feedback_hitl_entry_options_only.md](feedback_hitl_entry_options_only.md) — ALL entries need Commander YES/NO. No stock buys — options (LEAPs) only.
 
 ## Reference
 - [reference_key_files.md](reference_key_files.md) — All critical file paths (scripts, config, data, LaunchAgents)
