@@ -30,3 +30,4 @@
 
 ## Reference
 - [reference_key_files.md](reference_key_files.md) — All critical file paths (scripts, config, data, LaunchAgents)
+- [reference_firecrawl.md](reference_firecrawl.md) — Firecrawl web scraping: headlines into Grok/Gemini prompts
