@@ -152,8 +152,8 @@ Prevents losing positions to time decay when the market is flat.
 - **BTC price:** $71,001
 - **Regime:** DISTRIBUTION 79.2% confidence
 - **Status:** Watch mode — entry NOT expected imminently
-- **Commander outlook (March 26, 2026):** BTC showing bear flag on BOTH daily AND 4H charts. Expecting further downside from here. Entry NOT expected until ~October 2026 — aligns perfectly with Phase 3 capital arrival ($130K, Aug-Oct 2026). T2/T3 puts benefit from the continued drop. System stays in watch mode until BTC bottoms and MSTR reclaims its 200W SMA.
-- **Note:** 200W SMA in memory (~$59,433) was STALE. Actual BTC 200W SMA ~$72K (confirmed from chart March 26). MSTR 200W SMA is the reclaim trigger for green week count.
+- **Commander outlook (March 31, 2026):** BTC showing bear flag on BOTH daily AND 4H charts. Expecting further downside toward 250W MA (~$56K). Jordan Camirand "BRACE YOURSELF" (March 31) confirms: BTC historically dips BELOW 250W MA (2015, March 2020, June 2022) before launching next cycle — projects "fifth wave" down to ~$56K. Entry NOT expected until ~October 2026. Aligns perfectly with Phase 3 capital arrival ($130K, Aug-Oct 2026). T2/T3 puts benefit from continued drop. System stays in watch mode until BTC bottoms (~$56K), then must reclaim 200W SMA (~$72K), AND MSTR must reclaim its 200W SMA (2 consecutive Friday closes).
+- **Note:** BTC 200W SMA ~$72K (corrected March 26 from stale $59,433). MSTR 200W SMA is the reclaim trigger for green week count.
 
 ### BTC Cycle Intelligence
 - Phase: Distribution → Early Winter (BTC ~$71K, -44% from $126K ATH)
@@ -228,7 +228,7 @@ Prevents losing positions to time decay when the market is flat.
 - **weekly-report** (4:30 PM ET, Fridays only): Full week summary — regime changes, signal proximity, capital plan status, RL confidence
 
 **Weekend Monitoring:**
-- **btc-weekend-sentinel** (every 4 hours Sat/Sun — 8am/12pm/4pm/8pm ET): Weekend BTC monitoring — alert on >3% moves, proximity to 200W SMA ($59,433), 250W MA ($56K), 300W MA ($50K), Monday early eval prep
+- **btc-weekend-sentinel** (every 4 hours Sat/Sun — 8am/12pm/4pm/8pm ET): Weekend BTC monitoring — alert on >3% moves, proximity to 200W SMA (~$72K), 250W MA ($56K), 300W MA ($50K), Monday early eval prep
 
 **Daily Maintenance + Self-Repair:**
 - **daily-maintenance** (8:00 AM daily, every day including weekends): Full system health check — verifies all 3 daemons alive, IBKR connected, circuit breakers clear, both put positions exist, BTC/MSTR prices not stale, sends ONE Telegram report with pass/fail status. Weekend-aware (doesn't flag $0 prices on Sat/Sun). Now includes self-repair: detected issues trigger a Telegram repair proposal with YES/NO inline buttons for Commander approval before execution.
