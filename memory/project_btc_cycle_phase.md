@@ -66,4 +66,11 @@ Same month means opposite things in bull vs bear. Key examples:
 - ABOVE ALL MAs = normal operations
 - 250W and 300W are AWARENESS levels only — they do NOT trigger entries, exits, or modify v2.8+ logic
 
-Source: DeepSeek analysis + CoinGlass/Bitbo/Bitcoin Suisse/StatMuse data + System 13 regime classifier + Jordan Camirand (250W/300W).
+**Stealth Recession Thesis (Commander, April 2026):**
+- Commander thesis: US has been in a stealth/hidden recession since 2024 — this is why BTC failed to produce a typical retail euphoria blow-off top this cycle
+- Supporting evidence: Consumer credit delinquencies at multi-decade highs (credit cards, auto loans, BNPL). Small/mid-cap business conditions consistent with contraction despite positive headline GDP. Commercial real estate effectively collapsed. "Vibecession" — consumer sentiment crashed well below reported GDP numbers, a historical leading indicator of downward GDP revisions.
+- Why euphoria was suppressed: The 2024-2025 bull was *institutional* (ETF flows, MicroStrategy, sovereign interest) — NOT retail-driven. Retail never showed up in size. No retail FOMO = no blow-off. BTC topped at $126K without classic euphoria candles.
+- **The next cycle thesis:** 2024-2026 = stealth recession suppresses euphoria → BTC capitulates to ~$56K (250W MA) → recession becomes undeniable → Fed forced into aggressive cuts + fresh liquidity injection → retail finally returns → 2027-2028 = the actual blow-off that should have happened this cycle. MSTR leveraged exposure goes parabolic.
+- **v2.8+ alignment:** October 2026 entry window sits right at the transition: recession acknowledged, cuts deepening, BTC bottomed, retail returning. LEAPs entered at the bottom of the stealth recession = maximum leverage into the real euphoria run.
+
+Source: DeepSeek analysis + CoinGlass/Bitbo/Bitcoin Suisse/StatMuse data + System 13 regime classifier + Jordan Camirand (250W/300W) + Commander macro thesis (April 2026).
