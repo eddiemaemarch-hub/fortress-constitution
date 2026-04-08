@@ -59,14 +59,15 @@ Same month means opposite things in bull vs bear. Key examples:
 
 **BTC Chart Structure (April 8, 2026 — 1D chart, $71,727):**
 - Correct hierarchy (outermost → innermost):
-  1. **Bearish pennant** (red converging triangle) — dominant/outermost structure, contains everything
-  2. **Bear flag** (light blue parallel channel) — inside the pennant
-  3. **Head & Shoulders** — inside the bear flag (H&S neckline ~$60K)
-- All three nested structures sitting at 200W SMA resistance (~$72K)
+  1. **Bearish pennant** (red converging triangle) — dominant/outermost structure
+  2. **Bear flag** (light blue) — inside the pennant
+  3. **Rising wedge** — inside the bear flag
+  4. **Head & Shoulders** — inside the bear flag (H&S neckline ~$60K)
+- All structures sitting at 200W SMA resistance (~$72K)
 - **H&S downside targets:** ~$60K (neckline) → ~$52K → ~$48K
 - $48-52K targets are BELOW the 250W MA ($56K) — capitulation could overshoot Camirand's $56K projection
-- Pennant is the controlling pattern — breakdown from it triggers the full measured move
-- **v2.8+ note:** Entry does NOT catch the bottom — waits for BTC to reclaim 200W SMA ($72K) on the way back UP after capitulation
+- Bearish pennant is the controlling/dominant pattern — breakdown triggers full measured move
+- **v2.8+ note:** Entry does NOT catch the bottom — waits for BTC to reclaim 200W SMA (~$72K) on the way back UP after capitulation
 
 **Proximity Zone Detection (in trader1):**
 - BELOW 300W = absolute floor zone
