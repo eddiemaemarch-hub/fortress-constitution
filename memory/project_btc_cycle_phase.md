@@ -58,14 +58,14 @@ Same month means opposite things in bull vs bear. Key examples:
 - **v2.8+ implication:** If BTC bottoms near $56K, it will need to reclaim $72K+ (200W SMA) on the way back up — that reclaim + MSTR 200W SMA reclaim is the entry trigger. October 2026 is the expected window.
 
 **BTC Chart Structure (April 8, 2026 — 1D chart, $71,727):**
-- **Bear flag** (light blue parallel channel) — consolidation after sharp drop
-- **Bearish pennant** (red converging triangle) — price compressing inside it; bear flag is nested inside the pennant
-- Both nested inside the **Right Shoulder** of a larger **Head & Shoulders** pattern
-- H&S neckline: ~$60,000
-- Three layered bearish structures all converging at 200W SMA resistance (~$72K) — strong confluence
-- **H&S downside targets:** ~$60K (neckline break) → ~$52K (below 250W MA) → ~$48K (descending channel bottom)
-- Note: $48-52K targets are BELOW the 250W MA ($56K) — capitulation could be deeper than Camirand's $56K projection
-- Pennant/flag resolution expected to the downside given broader bear structure
+- Correct hierarchy (outermost → innermost):
+  1. **Bearish pennant** (red converging triangle) — dominant/outermost structure, contains everything
+  2. **Bear flag** (light blue parallel channel) — inside the pennant
+  3. **Head & Shoulders** — inside the bear flag (H&S neckline ~$60K)
+- All three nested structures sitting at 200W SMA resistance (~$72K)
+- **H&S downside targets:** ~$60K (neckline) → ~$52K → ~$48K
+- $48-52K targets are BELOW the 250W MA ($56K) — capitulation could overshoot Camirand's $56K projection
+- Pennant is the controlling pattern — breakdown from it triggers the full measured move
 - **v2.8+ note:** Entry does NOT catch the bottom — waits for BTC to reclaim 200W SMA ($72K) on the way back UP after capitulation
 
 **Proximity Zone Detection (in trader1):**
