@@ -32,6 +32,16 @@ Three-phase deployment. All capital converges into ONE v2.8+ position.
 
 **Constitution integration:** V28_CAPITAL_PHASE variables added to constitution_v39.py to track which deployment phase is active.
 
+### BTC Cycle Bottom & Next ATH Predictions (April 8, 2026)
+| Source | Bottom | Next ATH |
+|---|---|---|
+| Claude (math extrapolation) | ~$34,100 (73% drop) | ~$204,000 (6x from bottom) |
+| Commander (intuition) | ~$35,300 (72% drop) | — |
+| Camirand 250W MA thesis | ~$56,000 | — |
+| H&S chart targets | $48,000-$52,000 | — |
+- Diminishing returns pattern: drops getting shallower each cycle (87% → 84% → 77% → ~73%), gains compressing (131x → 22x → 8x → ~6x)
+- All scenarios: v2.8+ fires on MSTR 200W SMA reclaim on the way back up — bottom depth doesn't change entry logic
+
 ### MSTR Price Scenario Projections (March 2026)
 - **BTC $80K** -> MSTR ~$185-$210 (+32-50% from current)
 - **BTC $100K** -> MSTR ~$280-$330 (+100-135%)

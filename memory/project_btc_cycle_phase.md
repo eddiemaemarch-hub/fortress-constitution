@@ -69,7 +69,26 @@ Same month means opposite things in bull vs bear. Key examples:
 - Bearish pennant is the controlling/dominant pattern — breakdown triggers full measured move
 - **v2.8+ note:** Entry does NOT catch the bottom — waits for BTC to reclaim 200W SMA (~$72K) on the way back UP after capitulation
 
-**Proximity Zone Detection (in trader1):**
+**Cycle Diminishing Returns Model (Claude mathematical extrapolation, April 8 2026):**
+
+Bottom % drop per cycle (getting shallower):
+- 2013 ATH → 2015 bottom: ~87% drop
+- 2017 ATH → 2018 bottom: ~84% drop
+- 2021 ATH → 2022 bottom: ~77% drop
+- **2025 ATH → 2026 bottom (extrapolated): ~73% drop → ~$34,100**
+
+Next ATH multiplier from bottom (diminishing returns):
+- 2015 bottom → 2017 ATH: ~131x
+- 2018 bottom → 2021 ATH: ~22x
+- 2022 bottom → 2025 ATH: ~8x
+- **Next bottom → next ATH (extrapolated): ~6x → ~$204,000**
+
+**Claude's prediction: $34K bottom / $204K next ATH**
+- Commander's independent prediction: ~$35,300 (72% drop) — closely aligned
+- Camirand 250W MA thesis: ~$56K — shallower, possible if recession is mild
+- H&S chart targets: $48-52K — intermediate scenario
+- Note: $34K would be ~73% from ATH, below 300W MA (~$50K), deepest capitulation scenario
+- **All scenarios still result in v2.8+ firing on the reclaim of 200W SMA (~$72K+) on the way back up**
 - BELOW 300W = absolute floor zone
 - BELOW 250W = capitulation zone
 - BELOW 200W = v2.8+ arm zone
