@@ -7,7 +7,7 @@ type: project
 **Current Phase (March 2026):** DISTRIBUTION at 82.2% confidence (System 13)
 - MARKDOWN pressure rising at 17.8%
 - ATH: $126,200 (Oct 6, 2025)
-- Current: ~$71,000 (44-47% drawdown from ATH)
+- Current: $71,717 (April 8, 2026 — ~43% drawdown from ATH)
 - 23 months post April 2024 halving
 - Bull/bear threshold: $78,500-$80,000
 - 200W SMA: ~$72,000 (updated March 2026 — was stale at $59,433)

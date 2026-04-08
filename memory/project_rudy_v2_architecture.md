@@ -145,18 +145,18 @@ Prevents losing positions to time decay when the market is flat.
 - Total: ~$139,650 all feeding ONE v2.8+ MSTR LEAP position
 - Constitution updated with V28_CAPITAL_PHASE variables
 
-### v2.8+ Live Signal State (March 26, 2026)
+### v2.8+ Live Signal State (April 8, 2026)
 - **Armed:** No
 - **Dipped below 200W SMA:** YES ✅ — condition met
 - **Green weeks:** 0/2 — needs 2 consecutive Friday closes above MSTR 200W SMA
-- **BTC price:** $71,001
+- **BTC price:** $71,717
 - **Regime:** DISTRIBUTION 79.2% confidence
 - **Status:** Watch mode — entry NOT expected imminently
 - **Commander outlook (March 31, 2026):** BTC showing bear flag on BOTH daily AND 4H charts. Expecting further downside toward 250W MA (~$56K). Jordan Camirand "BRACE YOURSELF" (March 31) confirms: BTC historically dips BELOW 250W MA (2015, March 2020, June 2022) before launching next cycle — projects "fifth wave" down to ~$56K. Entry NOT expected until ~October 2026. Aligns perfectly with Phase 3 capital arrival ($130K, Aug-Oct 2026). T2/T3 puts benefit from continued drop. System stays in watch mode until BTC bottoms (~$56K), then must reclaim 200W SMA (~$72K), AND MSTR must reclaim its 200W SMA (2 consecutive Friday closes).
 - **Note:** BTC 200W SMA ~$72K (corrected March 26 from stale $59,433). MSTR 200W SMA is the reclaim trigger for green week count.
 
 ### BTC Cycle Intelligence
-- Phase: Distribution → Early Winter (BTC ~$71K, -44% from $126K ATH)
+- Phase: Distribution → Early Winter (BTC $71,717 as of April 8, 2026 — -43% from $126K ATH)
 - System 13 regime: DISTRIBUTION at 79.2%, updated March 26, 2026
 - Phase detection: System 13 regime maps to bull/bear (ACCUMULATION/MARKUP → bull, DISTRIBUTION/MARKDOWN → bear), falls back to threshold if stale
 - ATH tracked dynamically in trader state (`btc_ath`), not hardcoded
