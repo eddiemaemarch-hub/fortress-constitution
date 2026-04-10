@@ -1,37 +1,84 @@
 # Meta Glasses Video Editor — Config File
-# Edit this file, then run: python3 meta_video_editor.py video_config.yaml
+# Run: python3 meta_video_editor.py video_config.yaml
 
-# Where your AirDropped clips live (default: Downloads folder)
-clips_dir: /Users/eddiemae/Downloads
+project_name: "my_video_01"        # used in output filenames
 
-# Where your music files live
-music_dir: /Users/eddiemae/Music
+clips_dir: /Users/eddiemae/Downloads   # where AirDropped clips land
+music_dir: /Users/eddiemae/Music       # where your music files live
+output_dir: /Users/eddiemae/Desktop    # where finished videos are saved
 
-# Output file (saved to same folder you run the script from)
-output: /Users/eddiemae/Desktop/final_video.mp4
-
-# Clips in the order you want them — just filenames, no full path needed
+# Clips in the order you want them spliced
 clips:
   - IMG_1071.MOV
   - IMG_1072.MOV
   - IMG_1073.MOV
 
-# Music tracks — add as many as you want
+# Music — add as many tracks as you want
 music:
-  - file: song1.mp3       # filename in music_dir
-    start: 0              # seconds into the VIDEO where music starts
-    end: 45               # seconds into the VIDEO where music ends
-    fade_in: 1.5          # fade in over 1.5 seconds (set to 0 for hard cut)
-    fade_out: 2.0         # fade out over 2 seconds (set to 0 for hard cut)
-    hard_cut: false       # true = ignore fades, hard cut in/out
-    volume: 0.7           # music volume: 0.0 (silent) to 1.0 (full)
-    replace_audio: false  # false = mix under original audio | true = replace original audio
+  - file: song1.mp3
+    start: 0           # seconds into video where music starts
+    end: 45            # seconds into video where music ends
+    fade_in: 1.5       # fade in over 1.5s | set to 0 for hard cut
+    fade_out: 2.0      # fade out over 2s  | set to 0 for hard cut
+    hard_cut: false    # true = ignore fades, instant in/out
+    volume: 0.7        # 0.0 (silent) → 1.0 (full)
+    replace_audio: false   # false = mix under original audio | true = replace it
 
   - file: song2.mp3
-    start: 90
-    end: 140
+    start: 60
+    end: 110
     fade_in: 1.0
-    fade_out: 1.0
+    fade_out: 1.5
     hard_cut: false
     volume: 0.8
     replace_audio: false
+
+# ── MASTER OUTPUT (always rendered, no styling) ──────────────────────────────
+master:
+  style: none            # no color grade
+  aspect: original       # keeps original aspect ratio from glasses
+
+# ── STYLED VERSIONS (only renders when enabled: true) ────────────────────────
+styled_versions:
+
+  - name: reels_cinematic
+    enabled: false        # ← flip to true when you want this version
+    aspect: "9:16"        # vertical crop for Instagram Reels / TikTok
+    style: cinematic_warm # warm film look
+    stabilize: true       # smooth out any shakiness
+    text_overlays:
+      - text: "Gainesville lunch spot"
+        start: 1.0        # text appears at 1 second
+        end: 4.5          # text disappears at 4.5 seconds
+        position: bottom_center   # bottom_center | top_center | bottom_left | bottom_right
+        fontsize: 52
+
+  - name: youtube_cinematic
+    enabled: false
+    aspect: "16:9"
+    style: cinematic_cool  # cool/blue film look
+    stabilize: false
+    text_overlays: []      # no text
+
+  - name: square_vivid
+    enabled: false
+    aspect: "1:1"          # square for Instagram feed
+    style: vivid           # punchy colors
+    stabilize: false
+    text_overlays: []
+
+# ── STYLE OPTIONS ─────────────────────────────────────────────────────────────
+# style:
+#   none           → no grade, raw footage
+#   cinematic_warm → warm tones, slight vignette (golden hour feel)
+#   cinematic_cool → cool/blue tones, slight vignette (moody feel)
+#   vivid          → boosted saturation and contrast
+#   bw             → black and white
+
+# ── ASPECT RATIO OPTIONS ──────────────────────────────────────────────────────
+# aspect:
+#   original → keeps glasses native ratio
+#   16:9     → standard widescreen (YouTube)
+#   9:16     → vertical (Reels, TikTok, Shorts)
+#   1:1      → square (Instagram feed)
+#   4:3      → classic TV ratio
