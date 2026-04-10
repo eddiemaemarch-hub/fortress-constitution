@@ -25,6 +25,7 @@
 - [project_position_audit_fix.md](project_position_audit_fix.md) — Position audit fixed for Trader2/3 recognition (2026-03-25)
 - [project_equity_chart.md](project_equity_chart.md) — Daily equity curve chart to Telegram + dashboard /api/equity_chart (2026-03-25)
 - [project_mar26_fixes.md](project_mar26_fixes.md) — Dashboard live values, Gemini prompt, premium bug, verify alerts, backtests (2026-03-26)
+- [project_video_editor.md](project_video_editor.md) — Meta glasses video editor: splice MOV clips, add music, cinematic styles. 34-track music library documented.
 
 ## Feedback
 - [feedback_communication_style.md](feedback_communication_style.md) — When told "fix everything", do it all without per-item confirmation
