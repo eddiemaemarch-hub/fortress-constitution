@@ -28,6 +28,10 @@
 - [project_mar26_fixes.md](project_mar26_fixes.md) — Complete overhaul: real-time dash, HITL LEAP entry, Gemini/Grok, backtests (Mar 25-27)
 - [project_backtest_results.md](project_backtest_results.md) — 6 backtest suites all REJECTED — v2.8+ baseline untouchable
 
+## Project Context (continued)
+- [project_btc_bottom_detector.md](project_btc_bottom_detector.md) — BTC 8-signal bottom detector: QC validated (100% WR), live scanner, WF+stress pipeline
+
 ## Reference
 - [reference_key_files.md](reference_key_files.md) — All critical file paths (scripts, config, data, LaunchAgents)
 - [reference_firecrawl.md](reference_firecrawl.md) — Firecrawl web scraping: headlines into Grok/Gemini prompts
+- [reference_opencli.md](reference_opencli.md) — opencli-rs at ~/bin/ — 55+ websites as CLI commands, intel scanner daemon

@@ -58,3 +58,11 @@ type: project
 - WFE ratio check: OOS/IS score must exceed 0.50 to confirm non-overfitting
 - Scheduled: First Monday of each quarter at 6 AM (register via fresh Claude session as `quarterly-oos-revalidation`)
 - Current Q4 2025 dry run: confirmed 28 backtests planned (27 IS + 1 OOS)
+
+### Enhanced Diagnostics (March 28, 2026)
+Four risk mitigations added per external review:
+1. **Rolling 4Q OOS average** — smooths single-quarter anomalies, prevents false alerts from outlier quarters
+2. **Grid winner stability tracking** — flags if >2 unique winners in last 4 quarters (noise-fitting signal)
+3. **Consecutive drift alert escalation** — 1=monitor, 2=mandatory walk-forward review, 3+=re-optimize or pause strategy. Persistent tracker in `data/oos_revalidation_history.json`
+4. **Regime-aware verdict** — MARKDOWN/DISTRIBUTION regimes soften DRIFT_ALERT→WARN if rolling avg still positive (distinguishes decay from temporary adverse conditions)
+- IS development set is **rolling anchored**: fixed start 2016-01-01, expanding end each quarter
