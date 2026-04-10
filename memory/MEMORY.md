@@ -35,3 +35,5 @@
 - [reference_key_files.md](reference_key_files.md) — All critical file paths (scripts, config, data, LaunchAgents)
 - [reference_firecrawl.md](reference_firecrawl.md) — Firecrawl web scraping: headlines into Grok/Gemini prompts
 - [reference_opencli.md](reference_opencli.md) — opencli-rs at ~/bin/ — 55+ websites as CLI commands, intel scanner daemon
+- [reference_video_editing.md](reference_video_editing.md) — Mac mini video workflow: meta_video_editor.py + video_config.yaml pipeline
+- [reference_music_library.md](reference_music_library.md) — 34 mp3s in ~/Music used by the video editor workflow
