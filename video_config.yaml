@@ -1,0 +1,37 @@
+# Meta Glasses Video Editor — Config File
+# Edit this file, then run: python3 meta_video_editor.py video_config.yaml
+
+# Where your AirDropped clips live (default: Downloads folder)
+clips_dir: /Users/eddiemae/Downloads
+
+# Where your music files live
+music_dir: /Users/eddiemae/Music
+
+# Output file (saved to same folder you run the script from)
+output: /Users/eddiemae/Desktop/final_video.mp4
+
+# Clips in the order you want them — just filenames, no full path needed
+clips:
+  - IMG_1071.MOV
+  - IMG_1072.MOV
+  - IMG_1073.MOV
+
+# Music tracks — add as many as you want
+music:
+  - file: song1.mp3       # filename in music_dir
+    start: 0              # seconds into the VIDEO where music starts
+    end: 45               # seconds into the VIDEO where music ends
+    fade_in: 1.5          # fade in over 1.5 seconds (set to 0 for hard cut)
+    fade_out: 2.0         # fade out over 2 seconds (set to 0 for hard cut)
+    hard_cut: false       # true = ignore fades, hard cut in/out
+    volume: 0.7           # music volume: 0.0 (silent) to 1.0 (full)
+    replace_audio: false  # false = mix under original audio | true = replace original audio
+
+  - file: song2.mp3
+    start: 90
+    end: 140
+    fade_in: 1.0
+    fade_out: 1.0
+    hard_cut: false
+    volume: 0.8
+    replace_audio: false
