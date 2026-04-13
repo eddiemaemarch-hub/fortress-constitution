@@ -368,3 +368,10 @@ All three external AI brains now use live web search grounding for real-time con
   - Generate Pine Script strategy candidates for TradingView backtesting
 - **Constitutional requirement:** Any DEAP-evolved strategy that trades real capital requires a new authorized trader (Article XI constitution amendment + Commander approval). DEAP output = research only until constitution updated.
 - **Status:** Planned — not yet installed or implemented (March 25, 2026)
+
+### Future Roadmap — Pinecone Vector Memory (RAG)
+- **What it is:** Pinecone 2.0 vector database + RAG (Retrieval-Augmented Generation) — gives Claude semantic search over large unstructured knowledge bases
+- **Video reference:** "Claude Code + Pinecone 2.0 = UNSTOPPABLE Memory" — Jack Roberts (April 9, 2026)
+- **Why NOT needed now:** fortress-constitution IS the persistent memory system. ~20 structured markdown files loaded every session = zero forgotten context, zero cost, zero maintenance. Pinecone solves unstructured-data-at-scale problems that don't apply at current memory size.
+- **When it WOULD add value:** If knowledge base grows to hundreds of documents (X posts, YouTube transcripts, chart analyses, raw PDFs) requiring semantic search across unstructured content
+- **Status:** Future roadmap — revisit if memory scales beyond structured markdown files
