@@ -8,6 +8,8 @@ type: user
 - Role: Commander — sole operator of Rudy v2.0 trading system
 - IBKR Account: U15746102 (LIVE trading, port 7496)
 - Primary device: MacBook + iPhone (accesses dashboard via Cloudflare tunnel)
+- **Command Center URL (April 13, 2026):** https://anchor-quad-parish-lucy.trycloudflare.com (public) | http://localhost:3001 (local)
+- Note: Cloudflare tunnel URLs change each restart — update this when it changes
 - Wearable: Meta Ray-Ban smart glasses + Meta display glasses (wants WhatsApp relay for voice alerts, Telegram notification mirroring to glasses)
 - Communication: Telegram bot for trading alerts, wants updates throughout the day
 - Interest: WhatsApp integration for Meta glasses — discussed, not yet implemented
