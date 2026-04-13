@@ -16,6 +16,7 @@
 - [feedback_no_clone_traders.md](feedback_no_clone_traders.md) — Only Trader1/2/3 authorized. All others LOCKED. Article XI.
 - [feedback_communication_style.md](feedback_communication_style.md) — When told "fix everything", do it all without per-item confirmation
 - [feedback_hitl_entry_options_only.md](feedback_hitl_entry_options_only.md) — ALL entries need Commander YES/NO. No stock buys — LEAPs only.
+- [feedback_voice_samantha.md](feedback_voice_samantha.md) — Voice output uses macOS "say -v Samantha"
 
 ## Project Context
 - [project_rudy_v2_architecture.md](project_rudy_v2_architecture.md) — Full system architecture, HITL LEAP entry, Article XI, 3 traders, daemons, safety
