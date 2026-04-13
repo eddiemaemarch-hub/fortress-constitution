@@ -26,9 +26,15 @@ type: project
 **Phase-Aware Seasonality (Month x Phase table):**
 Same month means opposite things in bull vs bear. Key examples:
 - Mar BULL = Very bullish, strong close | Mar BEAR = High volatility, often a bounce before drop
+- **Apr BULL = Continuation, steady gains (+18%) | Apr BEAR = Relief rally trap (-2%) | Apr DISTRIBUTION = Dead cat bounce, double top setup (+6%)**
+- **May BULL = Pause before summer (+2%) | May BEAR = Severe sell-off, capitulation events (-12%) | May DISTRIBUTION = Sharp reversal, distribution climax (-15%)**
+- **Jun BULL = Shallow pullback, BUY opportunity (-3%) | Jun BEAR = WORST month, forced liquidations, cascading (-15%) | Jun DISTRIBUTION = Cascading sells, support breaking (-10%)**
 - Sep BULL = best buying opportunity | Sep BEAR = worst month, devastating drops
 - Oct BULL = Uptober, parabolic run starts | Oct BEAR = dead cat trap
 - Nov BULL = massive parabolic gains | Nov BEAR = capitulation/cycle bottom
+
+**Current Thesis Alignment (April 2026):**
+System 13 reads DISTRIBUTION at 82.2% confidence. April–June in DISTRIBUTION phase = dangerous stretch: April dead cat bounce (+6%) lures late buyers before May distribution climax (-15%) and June cascading sells (-10%). This aligns with the defensive posture — no new entries, tighten stops, capital preservation. If regime shifts to MARKDOWN, April–June becomes even worse (relief trap → capitulation → forced liquidations).
 
 **Morgan Stanley Four Seasons Framework:** Used alongside System 13 for macro regime context.
 
