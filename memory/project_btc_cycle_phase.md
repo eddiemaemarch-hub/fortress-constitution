@@ -27,9 +27,14 @@ type: project
 **Phase-Aware Seasonality (Month x Phase table):**
 Same month means opposite things in bull vs bear. Key examples:
 - Mar BULL = Very bullish, strong close | Mar BEAR = High volatility, often a bounce before drop
+- **Apr BULL = continuation rally, momentum building | Apr BEAR = relief bounce / mini rally — fakeout before more downside**
+- **May BULL = strong continuation | May BEAR = weakness resumes, "Sell in May" applies — historically negative**
+- **Jun BULL = consolidation, healthy pullback | Jun BEAR = continued weakness / flush — one of the worst bear months**
 - Sep BULL = best buying opportunity | Sep BEAR = worst month, devastating drops
 - Oct BULL = Uptober, parabolic run starts | Oct BEAR = dead cat trap
 - Nov BULL = massive parabolic gains | Nov BEAR = capitulation/cycle bottom
+
+**April 2026 Seasonal Context:** BTC in BEAR phase. Historical pattern: April = mini relief rally → May/June = weakness resumes. Any April bounce is a fakeout, NOT the bottom. Aligns with pennant/flag breakdown thesis and October 2026 entry window. Source: "Pump in April, Then Sell in May?" (April 12, 2026) + calendar.thebettertraders.com seasonal data.
 
 **Morgan Stanley Four Seasons Framework:** Used alongside System 13 for macro regime context.
 
