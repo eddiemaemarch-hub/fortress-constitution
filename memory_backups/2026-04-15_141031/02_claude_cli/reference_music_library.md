@@ -47,9 +47,6 @@ type: reference
 - young_jock_i_know_you_see_it.mp3
 - ytb_fatt_get_back.mp3
 
-### Playlist
-- `~/Music/rudy_playlist.m3u` — flat playlist of all 37 tracks in alphabetical order. Double-click to open in Music.app or any M3U-compatible player.
-
 ### Notes
 - `ti_war.mp3` is ~1MB — may be a short/partial version.
 - `*_alt.mp3` files are alternate cuts of the primary track.
