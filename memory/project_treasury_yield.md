@@ -34,3 +34,8 @@ Yahoo Finance `^TNX` (CBOE 10-Year Treasury Note Yield Index). No API key requir
 - 10Y: 4.275% | Change: +1.9bps today
 - Regime: ELEVATED (mild BTC headwind)
 - Aligns with DISTRIBUTION phase defensive posture
+
+### v2.8+ Integration (awareness only, v2.8+ logic unchanged)
+1. **HITL Entry Approval Alerts** — `trader_v28.py _request_entry_approval()` now includes a `🌐 Macro (awareness)` section showing 10Y yield, regime, and BTC implication so Commander has macro context before approving YES/NO.
+2. **Dashboard Panel** — `📉 10Y Treasury — Macro` card in sidebar. Shows yield, change in bps, regime color-coded (red=HIGH/EXTREME_HIGH, green=SUPPORTIVE/LOW), BTC implication, last update. Refreshes every 60s.
+3. **No filter/threshold modifications** — v2.8+ entry filters and exit logic remain untouched per Commander's Article XI rule.
