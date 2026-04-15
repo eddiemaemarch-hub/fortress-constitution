@@ -1,0 +1,24 @@
+name: BTC Cloud Sentinel
+
+on:
+  schedule:
+    # Every 4 hours UTC (00, 04, 08, 12, 16, 20)
+    - cron: '0 */4 * * *'
+  workflow_dispatch:  # manual trigger from GitHub UI
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Run BTC Cloud Sentinel
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python .github/scripts/btc_cloud_sentinel.py
