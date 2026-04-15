@@ -1,13 +1,13 @@
 ---
 name: Music Library
-description: 35 mp3 tracks in ~/Music used by the video editor workflow (meta_video_editor.py + video_config.yaml)
+description: 37 mp3 tracks in ~/Music used by the video editor workflow (meta_video_editor.py + video_config.yaml)
 type: reference
 ---
 
 ### Location
 `~/Music/` — flat directory of `.mp3` files referenced by name in `video_config.yaml` under the `music:` list.
 
-### Tracks (35 total, as of 2026-04-15)
+### Tracks (37 total, as of 2026-04-15)
 
 - bally_baby_hustlin_mf.mp3
 - bankroll_fresh_dirty_game.mp3
@@ -25,6 +25,8 @@ type: reference
 - mo3_everybody_aint_your_friend.mp3
 - mo3_oh_yeah.mp3
 - nba_youngboy_crossed_me.mp3
+- outkast_black_ice_sky_high.mp3
+- outkast_get_up_get_out.mp3
 - pride_to_the_side_alt.mp3
 - pride_to_the_side_yo_gotti.mp3
 - r_kelly_ima_flirt.mp3
