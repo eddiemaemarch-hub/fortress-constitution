@@ -32,6 +32,7 @@
 ## Project Context (continued)
 - [project_btc_bottom_detector.md](project_btc_bottom_detector.md) — BTC 8-signal bottom detector: QC validated (100% WR), live scanner, WF+stress pipeline
 - [project_treasury_yield.md](project_treasury_yield.md) — 10Y Treasury yield macro tracker, hourly daemon, BTC headwind/tailwind regime
+- [project_cloud_sentinel.md](project_cloud_sentinel.md) — GitHub Actions BTC + 10Y monitor, 4h schedule, cloud backup for local sentinel
 
 ## Reference
 - [reference_key_files.md](reference_key_files.md) — All critical file paths (scripts, config, data, LaunchAgents)
