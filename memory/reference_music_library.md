@@ -1,13 +1,13 @@
 ---
 name: Music Library
-description: 38 mp3 tracks in ~/Music used by the video editor workflow (meta_video_editor.py + video_config.yaml)
+description: 39 mp3 tracks in ~/Music used by the video editor workflow (meta_video_editor.py + video_config.yaml)
 type: reference
 ---
 
 ### Location
 `~/Music/` — flat directory of `.mp3` files referenced by name in `video_config.yaml` under the `music:` list.
 
-### Tracks (38 total, as of 2026-04-15)
+### Tracks (39 total, as of 2026-04-16)
 
 - bally_baby_hustlin_mf.mp3
 - bankroll_fresh_dirty_game.mp3
@@ -19,6 +19,7 @@ type: reference
 - creep_dog_instrumental_alt.mp3
 - earth_wind_fire_its_all_about_love.mp3
 - gmy_ville_sticky.mp3
+- young_thug_good_times.mp3
 - jam_pony_clear.mp3
 - jam_pony_man_made.mp3
 - justin_bieber_peaches.mp3
