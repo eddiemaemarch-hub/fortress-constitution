@@ -1,15 +1,17 @@
 ---
 name: Music Library
-description: 39 mp3 tracks in ~/Music used by the video editor workflow (meta_video_editor.py + video_config.yaml)
+description: 47 mp3 tracks in ~/Music used by the video editor workflow (meta_video_editor.py + video_config.yaml)
 type: reference
 ---
 
 ### Location
 `~/Music/` — flat directory of `.mp3` files referenced by name in `video_config.yaml` under the `music:` list.
 
-### Tracks (39 total, as of 2026-04-16)
+### Tracks (47 total, as of 2026-04-16)
 
+- aretha_franklin_im_in_love.mp3
 - bally_baby_hustlin_mf.mp3
+- betty_wright_a_song_for_you.mp3
 - bankroll_fresh_dirty_game.mp3
 - black_sherif_kwaku_the_traveller.mp3
 - bossman_dlow_motion_party.mp3
@@ -18,11 +20,15 @@ type: reference
 - creep_dog_instrumental.mp3
 - creep_dog_instrumental_alt.mp3
 - earth_wind_fire_its_all_about_love.mp3
+- gap_band_seasons_no_reasons.mp3
 - gmy_ville_sticky.mp3
 - young_thug_good_times.mp3
 - jam_pony_clear.mp3
 - jam_pony_man_made.mp3
 - justin_bieber_peaches.mp3
+- kenny_brown_why_did_you_do_this.mp3
+- maze_happy_feelings.mp3
+- maze_we_are_one.mp3
 - mc_boo_freeze.mp3
 - mo3_everybody_aint_your_friend.mp3
 - mo3_oh_yeah.mp3
@@ -37,6 +43,7 @@ type: reference
 - robin_thicke_magic.mp3
 - standing_ovation_alt.mp3
 - standing_ovation_young_jeezy.mp3
+- tela_sho_nuff.mp3
 - ti_asap.mp3
 - ti_live_your_life.mp3
 - ti_motivation.mp3
@@ -46,6 +53,7 @@ type: reference
 - yo_gotti_fuck_you.mp3
 - young_dolph_preach.mp3
 - young_jeezy_gangsta_music.mp3
+- young_bleed_how_you_do_that.mp3
 - young_jock_i_know_you_see_it.mp3
 - ytb_fatt_get_back.mp3
 
