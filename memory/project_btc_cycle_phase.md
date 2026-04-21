@@ -109,4 +109,16 @@ Next ATH multiplier from bottom (diminishing returns):
 - **The next cycle thesis:** 2024-2026 = stealth recession suppresses euphoria → BTC capitulates to ~$56K (250W MA) → recession becomes undeniable → Fed forced into aggressive cuts + fresh liquidity injection → retail finally returns → 2027-2028 = the actual blow-off that should have happened this cycle. MSTR leveraged exposure goes parabolic.
 - **v2.8+ alignment:** October 2026 entry window sits right at the transition: recession acknowledged, cuts deepening, BTC bottomed, retail returning. LEAPs entered at the bottom of the stealth recession = maximum leverage into the real euphoria run.
 
+**Buffett Indicator Macro Context (April 2026):**
+- **What it is:** Total US stock market cap ÷ US GDP — Warren Buffett called it "probably the best single measure of where valuations stand"
+- **Correlation with BTC/MSTR:** Both are liquidity-driven. Same monetary conditions that inflate/deflate stocks inflate/deflate BTC. MSTR is double-exposed: equity risk + BTC risk hit simultaneously from the same root cause (liquidity drain)
+- **Historical alignment:**
+  - 2021: Indicator ~220% (ATH) → BTC $69K → MSTR peak — all peaked on same liquidity excess
+  - 2022: Indicator crashed → BTC $15.5K → MSTR lost 90%+ — same liquidity drain, double hit on MSTR
+  - 2025: Indicator extremely elevated → BTC $126K → MSTR peaked
+  - 2026: Indicator correcting → BTC bear market → MSTR down
+- **MSTR double-exposure:** Equity selloff (Buffett Indicator correcting) hits MSTR as a stock AND BTC dropping hits MSTR through its holdings — same macro event damages MSTR twice
+- **Recovery signal:** Buffett Indicator bottoming = recession being priced in, Fed pivoting, liquidity returning. This is a SUPPORTING macro condition that makes BTC recovery more likely — NOT a guarantee that v2.8+ fires at that exact moment
+- **Important caveat:** Buffett Indicator bottom timing and BTC 200W SMA reclaim timing may not coincide exactly. v2.8+ fires when its OWN conditions are met (dip + 2 consecutive MSTR Friday closes above MSTR 200W SMA) — macro context informs probability, does not trigger the system
+
 Source: DeepSeek analysis + CoinGlass/Bitbo/Bitcoin Suisse/StatMuse data + System 13 regime classifier + Jordan Camirand (250W/300W) + Commander macro thesis (April 2026).
