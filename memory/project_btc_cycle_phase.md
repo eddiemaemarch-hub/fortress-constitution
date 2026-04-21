@@ -111,6 +111,8 @@ Next ATH multiplier from bottom (diminishing returns):
 
 **Buffett Indicator Macro Context (April 2026):**
 - **What it is:** Total US stock market cap ÷ US GDP — Warren Buffett called it "probably the best single measure of where valuations stand"
+- **Current reading (April 21, 2026): 232% — highest in 100+ years of recorded history.** Prior extremes: dot-com peak 2000 (~150-160%), 1929. At 232%, objectively in unprecedented territory by any historical standard. Aligns with CAPE/Shiller P/E and Tobin's Q also flashing extreme caution.
+- **Historical implication:** Readings above 200% have preceded poor forward 10-year returns or significant corrections. NOT a precise timing tool — markets can stay irrational for years (1990s bubble ran hot for a decade before crashing).
 - **Correlation with BTC/MSTR:** Both are liquidity-driven. Same monetary conditions that inflate/deflate stocks inflate/deflate BTC. MSTR is double-exposed: equity risk + BTC risk hit simultaneously from the same root cause (liquidity drain)
 - **Historical alignment:**
   - 2021: Indicator ~220% (ATH) → BTC $69K → MSTR peak — all peaked on same liquidity excess
