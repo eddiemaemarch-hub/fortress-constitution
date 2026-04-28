@@ -10,17 +10,19 @@ Three-phase deployment. All capital converges into ONE v2.8+ position.
 
 **Phase 2 (On put close):** MSTR $50P Jan28 ($1,253.05 avg cost, currently **-25.0% / $940 value**, activates at +150% = $3,132) + SPY $430P Jan27 ($494.99 avg cost, currently **+20.6% / $597 value**, activates at +100% = $990) proceeds → stay in account for v2.8+. Do NOT withdraw. Do NOT open new puts. Put proceeds are v2.8+ fuel, not hedge replacements. The trailing ladder will close these positions automatically. Put proceeds message added to trader2 and trader3 sell confirmations.
 
-**Live position status (March 23, 2026) — STALE, update from live dashboard:**
-- MSTR $50P: $940 current | needs +233% more to hit Tier 1 ($2,192 away)
-- SPY $430P: $597 current | needs +66% more to hit Tier 1 ($393 away)
-- Neither put near activation — both in hold-and-watch mode
-- **mNAV WARNING:** 4 consecutive readings at ~0.751x — 0.1% above kill switch (fires at <0.75x). Monitor closely.
+**Live position status (April 27, 2026) — FROM TELEGRAM BOT:**
+- MSTR $50P: **-43.1%** | activates at +150%
+- SPY $430P: **-34.2%** | activates at +100%
+- Both puts deeply underwater — MSTR/BTC rallied hard since March
 
-**⚡ v2.8+ SIGNAL STATUS (March 26, 2026):**
-- Dipped below 200W SMA: YES — BTC at $71,001, below ~$72K 200W SMA
-- Armed: NO — waiting for 2 consecutive Friday MSTR closes above MSTR 200W SMA
-- Green weeks: 0/2
-- **Entry could fire as soon as next Friday if MSTR reclaims its 200W SMA**
+**⚡ v2.8+ SIGNAL STATUS (April 27, 2026) — 🚨 ARMED:**
+- **ARMED: YES ✅ — all filters green**
+- BTC: $77,653 — above 200W SMA (~$72K), reclaim confirmed
+- MSTR: $171.46
+- 2 consecutive Friday closes above MSTR 200W SMA: ✅ MET
+- Status: Waiting for daily eval trigger
+- **⚠️ CRITICAL: Eval Freshness FAILING (check 4/19) — must fix or entry cannot execute**
+- All other 18/19 checks passed
 
 **Phase 3 (Aug-Oct 2026):** $130,000 external capital injection → full scale-in via trend adder / second entry.
 
