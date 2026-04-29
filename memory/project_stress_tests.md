@@ -66,3 +66,12 @@ Four risk mitigations added per external review:
 3. **Consecutive drift alert escalation** — 1=monitor, 2=mandatory walk-forward review, 3+=re-optimize or pause strategy. Persistent tracker in `data/oos_revalidation_history.json`
 4. **Regime-aware verdict** — MARKDOWN/DISTRIBUTION regimes soften DRIFT_ALERT→WARN if rolling avg still positive (distinguishes decay from temporary adverse conditions)
 - IS development set is **rolling anchored**: fixed start 2016-01-01, expanding end each quarter
+
+### Q1 2026 OOS Revalidation (April 29, 2026)
+- **Verdict: ✅ PASS**
+- Best IS params: `standard_tight_minimal` (score 0.7764, net +161.6%)
+- OOS score: 0.7681 (net +160.6%)
+- WFE ratio: 0.99 (excellent — OOS nearly matches IS)
+- Live params rank: #5/27 (100% of winner score)
+- Regime context: DISTRIBUTION (adverse)
+- LaunchAgent `com.rudy.oos-revalidation` created — runs quarterly (Jan/Apr/Jul/Oct 1st Monday 6AM)
