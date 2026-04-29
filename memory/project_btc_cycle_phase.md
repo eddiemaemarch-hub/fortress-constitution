@@ -64,3 +64,9 @@ System 13 reads DISTRIBUTION at 82.2% confidence. April–June in DISTRIBUTION p
 - 250W and 300W are AWARENESS levels only — they do NOT trigger entries, exits, or modify v2.8+ logic
 
 Source: DeepSeek analysis + CoinGlass/Bitbo/Bitcoin Suisse/StatMuse data + System 13 regime classifier + Jordan Camirand (250W/300W).
+
+**Daily Telegram Report (added 2026-04-29):**
+The daily status report (3x/day: 9:35, 12:00, 16:05 ET) now includes:
+- BTC Bottom Scanner score/20 with active signals and alert level
+- 10Y Treasury yield with macro regime and BTC implication
+- Helps Commander track bottom approach and macro headwinds without checking dashboard
