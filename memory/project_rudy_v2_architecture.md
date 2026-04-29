@@ -5,7 +5,7 @@ type: project
 ---
 
 ## Rudy v2.0 — Autonomous Trading System
-**Constitution:** v50.0 (file: `constitution_v39.py`)
+**Constitution:** v50.1 (file: `constitution_v39.py`)
 **Strategy:** v2.8+ Trend Adder — MSTR Cycle-Low LEAP (LIVE on IBKR U15746102)
 **Dashboard:** Command Center at localhost:3001, accessible via Cloudflare tunnel on iPhone
 
@@ -325,3 +325,16 @@ All three external AI brains now use live web search grounding for real-time con
 - AVGO: +501.5%, Sharpe 0.888 — cross-ticker validation only
 - BMNR: Discussed but NOT implemented — research only
 - WhatsApp integration for Meta glasses — discussed, not yet implemented
+
+### v50.1 Revalidation Gate (2026-04-29)
+**Problem:** `_check_pending_entry()` ran BEFORE filter re-evaluation. If Commander approved an entry and conditions deteriorated overnight (MSTR dropped below 200W SMA, system disarmed), the entry would execute on stale prices.
+
+**Fix:** Revalidation gate added to `_check_pending_entry()`. Before executing an approved entry:
+1. Fetches LIVE MSTR price + weekly bars from IBKR
+2. Fetches LIVE BTC price
+3. Checks: Is system still armed? Is MSTR still above 200W SMA?
+4. If ANY check fails → entry CANCELLED + Commander notified via Telegram
+5. If checks pass → executes with LIVE prices (not stale approval prices)
+6. If connection fails → entry HELD (not cancelled) for retry next eval
+
+Also fixed HITL Telegram message: says "LEAP Call Options" not "shares", shows barbell strike breakdown with dollar allocations.
