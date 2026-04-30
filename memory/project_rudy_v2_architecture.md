@@ -359,3 +359,15 @@ Also fixed HITL Telegram message: says "LEAP Call Options" not "shares", shows b
 - Revalidation gate only checks armed + 200W SMA, not full filter set
 - Traders 2/3: missing save_state() in _trigger_tier() and _trigger_trail_stop()
 - Traders 2/3: missing state key initialization for first-run values
+
+### v50.2 Research Agent Bug Fixes (2026-04-30)
+
+**OOS Revalidation:**
+- Wrapped telegram.send() calls in try-except (lines 812, 902) — prevented crash on Telegram failure
+- LaunchAgent runs every Monday of quarter months, not just first Monday (known issue, needs script guard)
+
+**Treasury Yield Tracker:**
+- Fixed falsy-check division pattern (lines 90-91) — `if prev` → `if prev is not None and prev != 0`
+- Added JSON parse error handling (line 39) — catches malformed Yahoo API responses
+
+**BTC Bottom Scanner:** No critical bugs. Code is clean. Minor style issues only.
