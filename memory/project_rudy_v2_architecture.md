@@ -371,3 +371,10 @@ Also fixed HITL Telegram message: says "LEAP Call Options" not "shares", shows b
 - Added JSON parse error handling (line 39) — catches malformed Yahoo API responses
 
 **BTC Bottom Scanner:** No critical bugs. Code is clean. Minor style issues only.
+
+### v50.3 Critical Gain Calculation Fix (2026-04-30)
+**CRITICAL BUG in Trader 1:** `entry_price` stored OPTION COST (e.g. $4,000/contract) instead of MSTR STOCK PRICE at entry (e.g. $157). ALL position management (trailing stops, profit tiers, safety floors) compared stock price vs option cost → gains always showed ~-96% → NO exit mechanism would EVER fire.
+
+**Fix:** `entry_price` now stores MSTR stock price at entry. Option cost tracked separately in `leap_avg_cost` and `leap_total_cost`. All trailing stops, profit tiers (10x/20x/50x/100x), safety floors (35% initial, -35% panic), and euphoria sell (3.5x premium) now calculate correctly against stock price × LEAP multiplier.
+
+**Traders 2 & 3:** NOT affected. They correctly use option market_value vs option cost_basis (apples to apples).
