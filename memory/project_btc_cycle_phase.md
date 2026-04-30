@@ -74,6 +74,33 @@ Same month means opposite things in bull vs bear. Key examples:
 - Bearish pennant is the controlling/dominant pattern — breakdown triggers full measured move
 - **v2.8+ note:** Entry does NOT catch the bottom — waits for BTC to reclaim 200W SMA (~$72K) on the way back UP after capitulation
 
+**BTC Monthly Chart — Linear Regression Channel Analysis (April 30, 2026 — BTC $76,222):**
+- Chart type: BTC/USD 1M (monthly) — Coinbase via TradingView
+- Structure: Two nested linear regression channels
+  - **Outer blue channel** — long-term macro ascending channel
+  - **Inner red channel** — tighter regression channel (current price action inside this)
+- **Key level:** Lower blue support line of the RED channel = the target bottom zone
+- Commander read: BTC needs to drop another **30-33% from $76K** to reach lower red channel support
+- 30% from $76,222 = **~$53,400** | 33% = **~$51,100**
+
+**Four-Signal Bottom Confluence ($51-53K zone):**
+| Signal | Target |
+|---|---|
+| Monthly linear regression channel (lower red support) | ~$51-53K |
+| Daily H&S measured targets | $48-52K |
+| Commander 30-33% drop thesis | ~$51-53K |
+| Camirand 250W MA | ~$56K (shallowest scenario) |
+- All four independent methods converge on $51-53K as the bottom zone
+- Claude mathematical extrapolation: ~$34K (deepest scenario — recession overshoot)
+- **Working bottom target: $51-53K** (strongest confluence)
+
+**v2.8+ Entry Status (April 29, 2026):**
+- Entry 1/2 fired: MSTR $157.48 | BTC $75,420 | Premium 0.75x mNAV (DEPRESSED band)
+- Deploy: $913 (25% × 50% of NLV $7,306) | Commander approved YES at 3:47 PM
+- Strike recommendation: Conservative — Safety 100/200/500 (45%) | Spec 800/1000 (55%)
+- **Phase 1 is deployed.** LEAPs will face drawdown if BTC drops to $51-53K — time value (2+ years) keeps position alive through the bottom
+- Phase 3 ($130K, Aug-Oct 2026) scales in near the bottom — the drop is the opportunity
+
 **Cycle Diminishing Returns Model (Claude mathematical extrapolation, April 8 2026):**
 
 Bottom % drop per cycle (getting shallower):

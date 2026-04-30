@@ -6,9 +6,11 @@ type: project
 
 Three-phase deployment. All capital converges into ONE v2.8+ position.
 
-**Phase 1 (Now → October 2026):** **$7,832.62 net liq (live IBKR, March 23, 2026)** → enter immediately if v2.8+ signal fires. Do NOT wait for full $130K.
+**Phase 1 — DEPLOYED (April 29, 2026):** Entry fired. MSTR $157.48 | BTC $75,420 | $913 deployed (25%×50% of NLV $7,306). Commander approved YES 3:47 PM. Strike: Safety 100/200/500 (45%) + Spec 800/1000 (55%). LEAPs will face drawdown if BTC drops to $51-53K — time value (2+ years) keeps position alive through the bottom.
 
-**Phase 2 (On put close):** MSTR $50P Jan28 ($1,253.05 avg cost, currently **-25.0% / $940 value**, activates at +150% = $3,132) + SPY $430P Jan27 ($494.99 avg cost, currently **+20.6% / $597 value**, activates at +100% = $990) proceeds → stay in account for v2.8+. Do NOT withdraw. Do NOT open new puts. Put proceeds are v2.8+ fuel, not hedge replacements. The trailing ladder will close these positions automatically. Put proceeds message added to trader2 and trader3 sell confirmations.
+**Phase 2 (On put close):** MSTR $50P Jan28 ($1,253.05 avg cost, activates at +150% = $3,132) + SPY $430P Jan27 ($494.99 avg cost, activates at +100% = $990) proceeds → stay in account for v2.8+. Do NOT withdraw. Do NOT open new puts. Put proceeds are v2.8+ fuel.
+- **If BTC drops to $51-53K (working bottom target), both puts recover hard and hit activation — Phase 2 capital becomes available exactly when Phase 3 is scaling in near the bottom**
+- MSTR $50P currently -43.1% | SPY $430P currently -33.8% — deeply underwater but positioned correctly for the next leg down
 
 **Live position status (April 27, 2026) — FROM TELEGRAM BOT:**
 - MSTR $50P: **-43.1%** | activates at +150%
