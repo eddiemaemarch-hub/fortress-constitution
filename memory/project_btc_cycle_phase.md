@@ -65,6 +65,35 @@ System 13 reads DISTRIBUTION at 82.2% confidence. April–June in DISTRIBUTION p
 
 Source: DeepSeek analysis + CoinGlass/Bitbo/Bitcoin Suisse/StatMuse data + System 13 regime classifier + Jordan Camirand (250W/300W).
 
+### BTC Cycle Projection Table (April 2026)
+
+**Commander's target: $288K next ATH** — backed by 85% R² fit on monthly LRC.
+
+| Bottom Scenario | Target | Next ATH (5x from bottom) |
+|---|---|---|
+| **$51-53K (H&S + Monthly LRC)** | Primary | **~$255-265K** |
+| **$56-58K (250W MA / Camirand)** | Secondary | **~$280-290K** |
+| **$34K (deep capitulation)** | Extreme | **~$204K** |
+
+**Monthly LRC (Lower Red Channel):**
+- $51-53K support zone = strongest historical BTC channel
+- 85% R² fit — this is pattern recognition, not a guess
+- Aligns with Head & Shoulders neckline target
+- Aligns with Commander's thesis (expects further decline)
+- Aligns with Camirand 250W MA capitulation zone ($53-56K)
+
+**4-Signal Confluence → $51-53K bottom zone:**
+1. Monthly LRC support
+2. Head & Shoulders measured move target
+3. Commander's independent thesis
+4. Jordan Camirand 250W MA analysis
+
+**Implication for v2.8+:**
+- Phase 1 LEAP deployed at $75K BTC — has 2-year expiry runway to survive drawdown
+- If BTC reaches $51-53K, puts go deep ITM → fund Phase 2 scale-in
+- Phase 3 ($130K) arrives Aug-Oct 2026 → deploy at or near cycle bottom
+- All three capital phases converge at maximum opportunity zone
+
 **Daily Telegram Report (added 2026-04-29):**
 The daily status report (3x/day: 9:35, 12:00, 16:05 ET) now includes:
 - BTC Bottom Scanner score/20 with active signals and alert level
