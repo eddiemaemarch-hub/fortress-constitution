@@ -94,6 +94,22 @@ Same month means opposite things in bull vs bear. Key examples:
 - Claude mathematical extrapolation: ~$34K (deepest scenario — recession overshoot)
 - **Working bottom target: $51-53K** (strongest confluence)
 
+**LRC 400% Cycle Projection (Commander, April 30, 2026):**
+- Monthly linear regression channel (R²=0.848 — 85% of BTC price variance explained by linear trend = strong fit)
+- Pattern observed: LRC lower red channel support (Aug 2023) ~$25-26K → Oct 2025 ATH $126,200 = ~400% gain
+- Applying same 400% to next LRC bottom:
+
+| Bottom | × 5 (400%) | Next ATH |
+|---|---|---|
+| $51K (H&S / LRC confluence) | × 5 | ~$255K |
+| $53K | × 5 | ~$265K |
+| $56-58K (250W MA / shallower) | × 5 | ~$280-290K |
+
+- Commander projection: **~$288K next ATH** (implies ~$57-58K bottom — aligns with 250W MA scenario)
+- This exceeds Claude's $204K mathematical extrapolation — possible if diminishing returns trend breaks due to institutional adoption / ETF flows
+- **Next ATH range: $255-290K** depending on bottom depth
+- Note: R²=0.848 gives this channel strong historical credibility across full BTC history (2015-2026)
+
 **v2.8+ Entry Status (April 29, 2026):**
 - Entry 1/2 fired: MSTR $157.48 | BTC $75,420 | Premium 0.75x mNAV (DEPRESSED band)
 - Deploy: $913 (25% × 50% of NLV $7,306) | Commander approved YES at 3:47 PM
