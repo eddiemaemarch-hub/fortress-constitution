@@ -338,3 +338,24 @@ All three external AI brains now use live web search grounding for real-time con
 6. If connection fails → entry HELD (not cancelled) for retry next eval
 
 Also fixed HITL Telegram message: says "LEAP Call Options" not "shares", shows barbell strike breakdown with dollar allocations.
+
+### v50.2 Bug Audit & Fixes (2026-04-30)
+
+**Trader 1 (trader_v28.py) — 3 CRITICAL bugs fixed:**
+1. **Expiry roll wrong arg order** (lines 1548, 1582): `build_stealth_order(contract, action, qty)` → fixed to `(action, qty, contract)`. Would have crashed on LEAP roll.
+2. **mNAV kill switch undefined function** (line 2404): Called `_execute_adder_exit()` which doesn't exist → fixed to `_exit_trend_adder()`. Emergency exit would have crashed.
+3. **mNAV kill switch wrong state key** (line 2377): Checked `adder_entry_price` → fixed to `trend_adder_entry_price`. Kill switch would never detect trend adder.
+
+**Also fixed:** HITL Telegram callback handler was never wired up for entry approve/reject — only handled repair callbacks. Commander's YES button was silently ignored. Fixed in dashboard callback poller.
+
+**Trader 2 (trader2_mstr_put.py) — 1 bug fixed:**
+- `send_telegram()` didn't accept `hitl=True` parameter → added hitl support
+
+**Trader 3 (trader3_spy_put.py) — 2 bugs fixed:**
+- Same `send_telegram()` hitl fix
+- PID lockfile missing `PermissionError` catch (same bug Trader 2 had)
+
+**Known medium-severity issues (documented, not yet fixed):**
+- Revalidation gate only checks armed + 200W SMA, not full filter set
+- Traders 2/3: missing save_state() in _trigger_tier() and _trigger_trail_stop()
+- Traders 2/3: missing state key initialization for first-run values
