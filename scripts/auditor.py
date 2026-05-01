@@ -66,6 +66,12 @@ AUTHORIZED_TRADERS = {
     },
 }
 
+# Backward-compat alias for legacy tests (test_breaker_integration,
+# test_breaker_mid_execution still reference auditor.SYSTEMS). The pre-v50.0
+# auditor exposed a SYSTEMS dict (Systems 1-14) — it was renamed AUTHORIZED_TRADERS
+# in the v50.0 rewrite. Tests only iterate keys / len, so the alias works.
+SYSTEMS = AUTHORIZED_TRADERS
+
 # ── Constitution v50.0 limits ──
 RULES = {
     "daily_loss_cap_pct":     0.02,
