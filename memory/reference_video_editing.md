@@ -48,4 +48,7 @@ Output files on Desktop:
 **Aspect options:** `original` / `16:9` / `9:16` / `1:1` / `4:3`
 
 ### Music Library
-See `reference_music_library.md` — 34 tracks in `~/Music/`, referenced by filename under the `music:` list.
+See `reference_music_library.md` — 49 tracks in `~/Music/`, referenced by filename under the `music:` list.
+
+### Status: ✅ LIVE (created April 30, 2026)
+`~/meta_video_editor.py` and `~/video_config.yaml` are on disk and functional. Requires ffmpeg (`brew install ffmpeg`) and PyYAML.
