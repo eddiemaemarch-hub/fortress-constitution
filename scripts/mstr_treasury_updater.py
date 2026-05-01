@@ -198,11 +198,12 @@ def run():
 
     # Alert if significant change
     if btc_delta > 0:
+        avg_line = f"Avg Cost: ${avg_cost:,.2f}\n" if avg_cost else ""
         msg = (
             f"📊 *MSTR Treasury Update*\n"
             f"━━━━━━━━━━━━━━━━\n"
             f"BTC Holdings: {holdings:,} (+{btc_delta:,} new)\n"
-            f"Avg Cost: ${avg_cost:,.2f}\n" if avg_cost else f"BTC Holdings: {holdings:,} (+{btc_delta:,} new)\n"
+            f"{avg_line}"
             f"Diluted Shares: {shares:,}\n"
             f"━━━━━━━━━━━━━━━━\n"
             f"mNAV data updated for trader1"

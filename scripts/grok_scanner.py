@@ -12,6 +12,17 @@ from datetime import datetime
 sys.path.insert(0, os.path.dirname(__file__))
 import telegram
 
+# Load env vars from ~/.agent_zero_env if not already set (under launchctl,
+# the user's shell env is NOT inherited, so GROK_API_KEY would otherwise be empty)
+_env_file = os.path.expanduser("~/.agent_zero_env")
+if os.path.exists(_env_file):
+    with open(_env_file) as _f:
+        for _line in _f:
+            _line = _line.strip()
+            if "=" in _line and not _line.startswith("#"):
+                _key, _val = _line.split("=", 1)
+                os.environ.setdefault(_key.strip(), _val.strip())
+
 LOG_DIR = os.path.expanduser("~/rudy/logs")
 DATA_DIR = os.path.expanduser("~/rudy/data")
 GROK_INTEL_FILE = os.path.join(DATA_DIR, "grok_intel.json")
@@ -23,19 +34,19 @@ GROK_URL = "https://api.x.ai/v1/chat/completions"
 GROK_BASE_URL = "https://api.x.ai/v1"
 GROK_MODEL = "grok-3-fast-latest"
 
-# ── OpenAI-compat SDK client (grounded queries with web_search) ──
+# ── OpenAI-compat SDK client (grounded queries with live_search) ──
 _grounded_client = None
 
 
 def _init_grounded_client():
-    """Initialize OpenAI-compat client pointing at xAI for web_search grounding."""
+    """Initialize OpenAI-compat client pointing at xAI for live_search grounding."""
     global _grounded_client
     if _grounded_client is not None:
         return _grounded_client
     try:
         from openai import OpenAI
         _grounded_client = OpenAI(api_key=GROK_API_KEY, base_url=GROK_BASE_URL)
-        log("xAI OpenAI-compat client initialized (web_search grounding enabled)")
+        log("xAI OpenAI-compat client initialized (live_search grounding enabled)")
         return _grounded_client
     except Exception as e:
         log(f"OpenAI SDK unavailable ({e}) — falling back to raw REST")
@@ -138,7 +149,7 @@ def ask_grok_grounded(system_prompt, user_prompt, max_tokens=3000):
                 {"role": "system", "content": system_prompt},
                 {"role": "user", "content": user_prompt},
             ],
-            tools=[{"type": "web_search"}],
+            tools=[{"type": "live_search"}],
             temperature=0.3,
             max_tokens=max_tokens,
         )

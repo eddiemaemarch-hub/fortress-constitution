@@ -136,6 +136,21 @@ def send_telegram(msg, hitl=False):
         log(f"Telegram send failed (non-critical)", "WARN")
 
 
+def send_telegram_with_chart(msg, symbol="MSTR", timeframe="1W", hitl=False):
+    """Send Telegram alert followed by a TradingView chart screenshot."""
+    send_telegram(msg, hitl=hitl)
+    try:
+        sys.path.insert(0, os.path.expanduser("~/rudy/scripts"))
+        import tradingview_cdp
+        if tradingview_cdp.is_running():
+            import telegram as tg
+            png = tradingview_cdp.capture_chart(symbol=symbol, timeframe=timeframe)
+            if png:
+                tg.send_photo(png, caption=f"📊 *{symbol} {timeframe}* — Trader1")
+    except Exception:
+        pass  # Chart is best-effort, never block trading
+
+
 class RudyV28:
     """Rudy v2.8 Dynamic Blend — Standalone IBKR Trader.
 
@@ -367,6 +382,20 @@ class RudyV28:
                     log(f"  ⚠️ Order timeout after {timeout}s, status={status}", "WARN")
                     if status == "PreSubmitted":
                         return True, 0.0, 0, "PreSubmitted"
+                    # Cancel pending order to prevent silent late fill after we return failure.
+                    # Race window: TWS popup unblocks → fill lands AFTER cancel request.
+                    # Re-check status after cancel; if filled despite cancel, recover the fill.
+                    try:
+                        self.ib.cancelOrder(order)
+                        self.ib.sleep(3)
+                    except Exception as e:
+                        log(f"  cancelOrder failed: {e}", "WARN")
+                    final_status = trade.orderStatus.status
+                    final_filled = trade.orderStatus.filled or 0
+                    if final_status == "Filled" or final_filled > 0:
+                        fp = trade.orderStatus.avgFillPrice or 0.0
+                        log(f"  ⚠️ LATE FILL recovered after timeout: {final_filled} @ ${fp:.2f}", "WARN")
+                        return True, fp, int(final_filled), "Filled-LateRecovery"
                     return False, 0.0, 0, f"Timeout({status})"
 
             except Exception as e:
@@ -1530,7 +1559,7 @@ class RudyV28:
             )
             return {"status": "error", "message": f"qualifyContracts old failed: {e}"}
 
-        sell_order = self.build_stealth_order(old_contract, "SELL", qty)
+        sell_order = self.build_stealth_order("SELL", qty, old_contract)
         success_sell, sell_price, sell_qty, sell_status = self.execute_with_confirmation(
             old_contract, sell_order, timeout=120, max_retries=2
         )
@@ -1564,7 +1593,7 @@ class RudyV28:
             )
             return {"status": "partial", "message": f"qualifyContracts new failed: {e}"}
 
-        buy_order = self.build_stealth_order(new_contract, "BUY", qty)
+        buy_order = self.build_stealth_order("BUY", qty, new_contract)
         success_buy, buy_price, buy_qty, buy_status = self.execute_with_confirmation(
             new_contract, buy_order, timeout=120, max_retries=2
         )
@@ -1665,17 +1694,389 @@ class RudyV28:
                 return float(item.value)
         return 100000
 
+    def _request_entry_approval(self, mstr_price, btc_price, entry_num):
+        """Send HITL Telegram approval request for entry. Does NOT execute until approved."""
+        premium = self.compute_mstr_premium(mstr_price, btc_price)
+        band, safety, spec, strike_note, block_entry = self.get_strike_recommendation(premium, mstr_price)
+
+        if block_entry:
+            log(f"⛔ ENTRY BLOCKED by Strike Engine — {band} band ({premium:.2f}x)", "WARN")
+            send_telegram(self.format_strike_telegram(band, safety, spec, strike_note, premium))
+            return
+
+        nlv = self._get_account_value()
+        risk_capital = nlv * self.risk_capital_pct
+        deploy = risk_capital * 0.50
+        qty = int(deploy / mstr_price)
+
+        self.state["pending_entry"] = {
+            "mstr_price": mstr_price,
+            "btc_price": btc_price,
+            "entry_num": entry_num,
+            "premium": round(premium, 4),
+            "band": band,
+            "safety_strikes": safety["strikes"],
+            "safety_weight": safety["weight"],
+            "spec_strikes": spec["strikes"],
+            "spec_weight": spec["weight"],
+            "strike_note": strike_note,
+            "qty": qty,
+            "deploy_capital": round(deploy, 2),
+            "nlv": round(nlv, 2),
+            "timestamp": datetime.now().isoformat(),
+        }
+        self._save_state()
+
+        # Load macro context (10Y Treasury yield awareness)
+        macro_line = ""
+        try:
+            import json as _json
+            yield_path = os.path.join(os.path.dirname(__file__), "..", "data", "treasury_yield.json")
+            if os.path.exists(yield_path):
+                with open(yield_path) as _yf:
+                    yd = _json.load(_yf)
+                y_pct = yd.get("yield_pct", "?")
+                regime = yd.get("macro_regime", "?")
+                impl = yd.get("btc_implication", "")
+                macro_line = (
+                    f"🌐 *Macro (awareness)*\n"
+                    f"  10Y Treasury: {y_pct}% — {regime}\n"
+                    f"  {impl}\n\n"
+                )
+        except Exception:
+            pass
+
+        msg = (
+            f"🎯 *ENTRY SIGNAL — APPROVAL REQUIRED*\n"
+            f"━━━━━━━━━━━━━━━━\n"
+            f"Entry {entry_num}/2 | {band} band\n\n"
+            f"📊 *Market*\n"
+            f"  MSTR: ${mstr_price:.2f}\n"
+            f"  BTC: ${btc_price:,.0f}\n"
+            f"  Premium: {premium:.2f}x mNAV\n\n"
+            f"{macro_line}"
+            f"💰 *LEAP Call Options*\n"
+            f"  Deploy: ${deploy:,.0f} (25% × 50%)\n"
+            f"  NLV: ${nlv:,.0f}\n\n"
+            f"⚙️ *Strike Recommendation (Barbell)*\n"
+            f"  Band: {band}\n"
+            f"  {strike_note}\n"
+            f"  Safety LEAPs: {safety['strikes']} ({safety['weight']:.0%} = ${deploy * safety['weight']:,.0f})\n"
+            f"  Spec LEAPs: {spec['strikes']} ({spec['weight']:.0%} = ${deploy * spec['weight']:,.0f})\n\n"
+            f"✅ Reply YES to approve | ❌ Reply NO to reject"
+        )
+        send_telegram_with_chart(msg, symbol="MSTR", timeframe="1W", hitl=True)
+        log(f"ENTRY APPROVAL REQUESTED — pending Commander decision (entry {entry_num})")
+
+    def _check_pending_entry(self):
+        """Check if Commander approved a pending entry. Called each eval cycle.
+
+        v50.1 REVALIDATION GATE: Re-checks ALL filters with LIVE prices before
+        executing. If conditions have deteriorated since approval, entry is
+        cancelled and Commander is notified. This prevents stale-price execution.
+        """
+        pending = self.state.get("pending_entry")
+        if not pending:
+            return
+
+        if self.state.get("entry_approved"):
+            log("Commander APPROVED entry — revalidating filters with LIVE prices...")
+
+            # ── REVALIDATION GATE (v50.1) ──
+            # Re-check critical conditions with LIVE prices before executing.
+            # Prevents stale-price execution if market moved against us overnight.
+            try:
+                if not self.ensure_connected():
+                    raise Exception("TWS disconnected")
+
+                from ib_insync import Stock
+                mstr_contract = Stock("MSTR", "SMART", "USD")
+                self.ib.qualifyContracts(mstr_contract)
+
+                # Get live MSTR price
+                bars = self.ib.reqHistoricalData(
+                    mstr_contract, endDateTime="", durationStr="10 Y",
+                    barSizeSetting="1 week", whatToShow="TRADES", useRTH=True)
+                if not bars:
+                    raise Exception("No MSTR bars returned")
+                live_mstr = bars[-1].close
+                weekly_closes = [b.close for b in bars]
+
+                # Get live BTC
+                live_btc = self.fetch_btc_price()
+
+                # Critical checks
+                armed = self.state.get("is_armed", False)
+                sma_200w = self.compute_sma(weekly_closes, self.sma_weekly_period)
+                if not sma_200w:
+                    raise Exception("200W SMA computation returned None — refusing to revalidate")
+                above_200w = live_mstr > sma_200w
+                premium = self.compute_mstr_premium(live_mstr, live_btc)
+
+                log(f"REVALIDATION: MSTR=${live_mstr:.2f} | SMA200W=${sma_200w:.2f} | Above={above_200w} | BTC=${live_btc:,.0f} | Armed={armed} | Prem={premium:.2f}x")
+
+                if not armed:
+                    log("⛔ REVALIDATION FAILED — system DISARMED since approval. Entry CANCELLED.", "WARN")
+                    send_telegram(
+                        f"🚫 *ENTRY CANCELLED — REVALIDATION FAILED*\n"
+                        f"━━━━━━━━━━━━━━━━\n"
+                        f"System disarmed since your approval.\n"
+                        f"MSTR: ${live_mstr:.2f} | BTC: ${live_btc:,.0f}\n"
+                        f"Reason: Armed=False\n"
+                        f"⚠️ Entry will re-signal when conditions return."
+                    )
+                    self.state["entry_approved"] = False
+                    self.state["pending_entry"] = None
+                    self._save_state()
+                    return
+
+                if not above_200w:
+                    log(f"⛔ REVALIDATION FAILED — MSTR below 200W SMA (${live_mstr:.2f} < ${sma_200w:.2f}). Entry CANCELLED.", "WARN")
+                    send_telegram(
+                        f"🚫 *ENTRY CANCELLED — REVALIDATION FAILED*\n"
+                        f"━━━━━━━━━━━━━━━━\n"
+                        f"MSTR dropped below 200W SMA since your approval.\n"
+                        f"MSTR: ${live_mstr:.2f} | 200W SMA: ${sma_200w:.2f}\n"
+                        f"⚠️ Entry will re-signal when conditions return."
+                    )
+                    self.state["entry_approved"] = False
+                    self.state["pending_entry"] = None
+                    self._save_state()
+                    return
+
+                log("✅ REVALIDATION PASSED — armed, above 200W SMA, live prices confirmed. Executing entry.")
+
+            except Exception as e:
+                log(f"⛔ REVALIDATION ERROR — cannot verify live conditions: {e}. Entry HELD (not cancelled).", "ERROR")
+                send_telegram(
+                    f"⚠️ *ENTRY HELD — REVALIDATION ERROR*\n"
+                    f"Cannot fetch live prices: {e}\n"
+                    f"Entry NOT cancelled — will retry next eval."
+                )
+                return
+
+            # ── Execute with LIVE prices (not stale approval prices) ──
+            self.state["entry_approved"] = False
+            entry_num = pending["entry_num"]
+            self.state["pending_entry"] = None
+            self._save_state()
+            self._execute_entry(live_mstr, live_btc, entry_num)
+
+        elif self.state.get("entry_rejected"):
+            log("Commander REJECTED entry — clearing pending")
+            self.state["entry_rejected"] = False
+            self.state["pending_entry"] = None
+            self._save_state()
+            send_telegram("❌ *Entry REJECTED by Commander* — signal cleared, waiting for next eval.")
+
+    def _check_entry_resume(self):
+        """v50.4: Auto-finish a partial-fill barbell entry.
+
+        If _execute_entry left some legs unfilled (TWS popup blocks, no quote, etc.),
+        retries them on subsequent eval cycles using the original allocation. The
+        Commander's HITL YES on the original entry already authorized full deploy —
+        no second approval needed for the same cycle.
+
+        Drops the resume on:
+          - All legs filled
+          - Window expiry (5 trading days from entry)
+          - Per-leg attempts >= MAX_RESUME_ATTEMPTS
+          - Revalidation fails (system disarmed or below 200W)
+        """
+        unfilled = self.state.get("unfilled_strikes") or []
+        if not unfilled:
+            return
+
+        # Market-hours guard: only retry during regular session (9:30-16:00 ET, Mon-Fri).
+        # Outside RTH, orders go PreSubmitted and would queue → next eval re-places →
+        # duplicate orders at open. Hold the list and retry next eval cycle.
+        now_et = datetime.now()
+        if now_et.weekday() >= 5:
+            log("RESUME: weekend — holding for Monday eval")
+            return
+        market_minutes = now_et.hour * 60 + now_et.minute
+        if market_minutes < 9 * 60 + 30 or market_minutes >= 16 * 60:
+            log(f"RESUME: outside RTH ({now_et.strftime('%H:%M')} ET) — holding for next session")
+            return
+
+        # Window check
+        window_until_str = self.state.get("entry_resume_window_until")
+        if window_until_str:
+            try:
+                window_until = datetime.fromisoformat(window_until_str)
+                if datetime.now() > window_until:
+                    self._drop_unfilled_strikes("window expired")
+                    return
+            except Exception:
+                pass
+
+        if not self.ensure_connected():
+            log("RESUME: IBKR disconnected — will retry next eval", "WARN")
+            return
+
+        # Revalidation: same gate as v50.1 entry path
+        try:
+            mstr_contract = Stock("MSTR", "SMART", "USD")
+            self.ib.qualifyContracts(mstr_contract)
+            bars = self.ib.reqHistoricalData(
+                mstr_contract, endDateTime="", durationStr="10 Y",
+                barSizeSetting="1 week", whatToShow="TRADES", useRTH=True)
+            if not bars:
+                log("RESUME: no MSTR bars — skipping", "WARN")
+                return
+            live_mstr = bars[-1].close
+            weekly_closes = [b.close for b in bars]
+            sma_200w = self.compute_sma(weekly_closes, self.sma_weekly_period)
+            armed = self.state.get("is_armed", False)
+            above_200w = (sma_200w is None) or (live_mstr > sma_200w)
+            if not armed or not above_200w:
+                log(f"RESUME: revalidation failed (armed={armed} mstr=${live_mstr:.2f} sma=${sma_200w}) — holding", "WARN")
+                return
+        except Exception as e:
+            log(f"RESUME: revalidation error: {e} — holding", "WARN")
+            return
+
+        log(f"📋 RESUME: {len(unfilled)} unfilled leg(s) to retry...")
+        MAX_RESUME_ATTEMPTS = 5
+        new_fills = []
+        new_total_cost = 0.0
+        remaining = []
+        dropped_legs = []
+
+        for leg in unfilled:
+            attempt_no = leg.get("attempts", 0) + 1
+            if attempt_no > MAX_RESUME_ATTEMPTS:
+                log(f"  ⏭ ${leg['strike']}C ({leg['type']}) — exceeded {MAX_RESUME_ATTEMPTS} attempts, dropping", "WARN")
+                dropped_legs.append(leg)
+                continue
+
+            contract = Option("MSTR", leg["expiry"], leg["strike"], "C", "SMART")
+            try:
+                self.ib.qualifyContracts(contract)
+            except Exception as e:
+                log(f"  ⏭ ${leg['strike']}C qualify failed: {e}", "WARN")
+                leg["attempts"] = attempt_no
+                leg["last_status"] = f"QualifyFailed:{e}"
+                remaining.append(leg)
+                continue
+
+            self.ib.reqMktData(contract, '', False, False)
+            self.ib.sleep(2)
+            ticker = self.ib.ticker(contract)
+            ask = ticker.ask if ticker.ask and ticker.ask > 0 else 0
+            mid = ((ticker.bid or 0) + ask) / 2 if ask > 0 else 0
+            opt_price = mid if mid > 0 else ask
+            if opt_price <= 0:
+                log(f"  ⏭ ${leg['strike']}C — no live price, holding", "WARN")
+                leg["attempts"] = attempt_no
+                leg["last_status"] = "NoPrice"
+                remaining.append(leg)
+                continue
+
+            contract_cost = opt_price * 100
+            qty = max(1, int(leg["alloc_capital"] / contract_cost))
+
+            order = self.build_stealth_order("BUY", qty, contract)
+            success, fill_price, fill_qty, status = self.execute_with_confirmation(
+                contract, order, timeout=120, max_retries=2)
+            if success and fill_qty > 0:
+                cost = fill_price * 100 * fill_qty
+                new_total_cost += cost
+                new_fills.append({
+                    "type": leg["type"], "strike": leg["strike"], "expiry": leg["expiry"],
+                    "qty": fill_qty, "price": fill_price, "cost": cost, "resumed": True
+                })
+                log(f"  ✅ Resume fill: ${leg['strike']}C ×{fill_qty} @ ${fill_price:.2f}")
+            else:
+                log(f"  ❌ Resume failed: ${leg['strike']}C — {status}", "WARN")
+                leg["attempts"] = attempt_no
+                leg["last_status"] = status
+                remaining.append(leg)
+
+        # Apply fills to state
+        if new_fills:
+            old_contracts = self.state.get("leap_contracts", []) or []
+            self.state["leap_contracts"] = old_contracts + new_fills
+            old_qty = self.state.get("position_qty", 0)
+            added_qty = sum(f["qty"] for f in new_fills)
+            self.state["position_qty"] = old_qty + added_qty
+            old_total_cost = self.state.get("leap_total_cost", 0) or 0
+            self.state["leap_total_cost"] = old_total_cost + new_total_cost
+            if self.state["position_qty"] > 0:
+                self.state["leap_avg_cost"] = self.state["leap_total_cost"] / self.state["position_qty"]
+
+            fills_str = "\n".join(
+                f"  {'🛡' if f['type']=='safety' else '🎯'} ${f['strike']}C ×{f['qty']} @ ${f['price']:.2f} (${f['cost']:,.0f})"
+                for f in new_fills
+            )
+            send_telegram(
+                f"🟢 *Resume Fills — {len(new_fills)} leg(s)*\n"
+                f"━━━━━━━━━━━━━━━━\n{fills_str}\n"
+                f"━━━━━━━━━━━━━━━━\n"
+                f"Position: {self.state['position_qty']} contracts | "
+                f"Avg cost: ${self.state['leap_avg_cost']:.2f}\n"
+                f"Remaining unfilled: {len(remaining)}"
+            )
+
+        if dropped_legs:
+            legs_str = ", ".join(f"${l['strike']}C(last:{l.get('last_status')})" for l in dropped_legs)
+            send_telegram(
+                f"⚠️ *Resume Legs Dropped (max attempts)*\n"
+                f"Dropped: {legs_str}\n"
+                f"Remaining unfilled: {len(remaining)}"
+            )
+
+        self.state["unfilled_strikes"] = remaining
+        if not remaining:
+            self.state["entry_resume_window_until"] = None
+            log("✅ RESUME COMPLETE — barbell finished")
+            send_telegram("✅ *Barbell Entry Complete* — all legs filled.")
+        self._save_state()
+
+    def _drop_unfilled_strikes(self, reason):
+        """Helper for _check_entry_resume — clear unfilled list and notify."""
+        unfilled = self.state.get("unfilled_strikes") or []
+        if unfilled:
+            legs_str = ", ".join(f"${u['strike']}C" for u in unfilled)
+            log(f"RESUME DROPPED: {reason} — {len(unfilled)} legs ({legs_str})", "WARN")
+            send_telegram(
+                f"⚠️ *Resume Window Closed*\n"
+                f"Reason: {reason}\n"
+                f"Unfilled legs dropped: {legs_str}\n"
+                f"Position holds at: {self.state.get('position_qty', 0)} contracts"
+            )
+        self.state["unfilled_strikes"] = []
+        self.state["entry_resume_window_until"] = None
+        self._save_state()
+
+    def _get_leap_expiry(self):
+        """Get target LEAP expiry ~2 years out, January cycle."""
+        target_year = datetime.now().year + 2
+        # MSTR January LEAPs: 3rd Friday of January
+        # Standard format: YYYYMMDD
+        from calendar import monthcalendar
+        jan = monthcalendar(target_year, 1)
+        # 3rd Friday: find all Fridays (index 4), take the 3rd
+        fridays = [week[4] for week in jan if week[4] != 0]
+        third_friday = fridays[2]
+        return f"{target_year}01{third_friday:02d}"
+
     def _execute_entry(self, mstr_price, btc_price, entry_num):
-        """Execute a market buy on MSTR."""
+        """Execute MSTR CALL LEAP buy. Only called after HITL approval.
+
+        Constitution v50.0 Article XI Section 1A:
+        - ABSOLUTELY NO STOCK PURCHASES — options (LEAPs) only
+        - Uses Strike Adjustment Engine to select strikes
+        - Barbell: safety strikes (deep ITM) + spec strikes (OTM)
+        """
         if self.test_mode:
-            log(f"[TEST] Would BUY MSTR @ ${mstr_price:.2f} (entry {entry_num}/2)")
+            log(f"[TEST] Would BUY MSTR CALL LEAP (entry {entry_num}/2)")
             return
 
         if not self.ensure_connected():
             log("Cannot execute entry — TWS disconnected", "ERROR")
             send_telegram(
                 f"🚨 *Rudy v2.8+ ENTRY ABORTED — TWS DISCONNECTED*\n"
-                f"SIGNAL FIRED but could not connect to IBKR TWS.\n"
                 f"MSTR @ ${mstr_price:.2f} | Entry {entry_num}/2\n"
                 f"⚠️ MANUAL INTERVENTION REQUIRED — restart TWS immediately."
             )
@@ -1684,39 +2085,6 @@ class RudyV28:
         nlv = self._get_account_value()
         risk_capital = nlv * self.risk_capital_pct
         deploy = risk_capital * 0.50  # 50/50 scale-in
-        qty = int(deploy / mstr_price)
-
-        if qty <= 0:
-            log(f"Entry qty=0 — insufficient capital (NLV=${nlv:.0f})", "ERROR")
-            send_telegram(
-                f"🚨 *Rudy v2.8+ ENTRY ABORTED — Insufficient Capital*\n"
-                f"NLV: ${nlv:,.0f}\n"
-                f"Risk Capital (25%): ${nlv * self.risk_capital_pct:,.0f}\n"
-                f"Deploy (50%): ${nlv * self.risk_capital_pct * 0.50:,.0f}\n"
-                f"MSTR Price: ${mstr_price:.2f}\n"
-                f"Qty calculated: {qty} — entry BLOCKED\n"
-                f"⚠️ Signal fired but no shares could be purchased. Fund the account."
-            )
-            return
-
-        contract = Stock("MSTR", "SMART", "USD")
-        self.ib.qualifyContracts(contract)
-
-        # v50.0 Safety: cleanup stale orders, then execute with confirmation
-        self.cleanup_stale_orders("MSTR")
-
-        order = self.build_stealth_order("BUY", qty, contract)
-        success, fill_price, fill_qty, status = self.execute_with_confirmation(contract, order)
-
-        if not success:
-            log(f"❌ ENTRY FAILED: Order not filled (status={status})", "ERROR")
-            send_telegram(f"🔴 *Rudy v2.8+ ENTRY FAILED*\nOrder not filled: {status}")
-            return
-
-        if fill_price <= 0:
-            fill_price = mstr_price  # fallback for PreSubmitted (market closed)
-        if fill_qty > 0:
-            qty = fill_qty  # use actual filled qty
 
         premium = self.compute_mstr_premium(mstr_price, btc_price)
         leap_mult = self.get_dynamic_leap_multiplier(premium)
@@ -1726,9 +2094,13 @@ class RudyV28:
         if block_entry:
             log(f"⛔ ENTRY BLOCKED by Strike Engine — {band} band ({premium:.2f}x)", "WARN")
             send_telegram(self.format_strike_telegram(band, safety, spec, strike_note, premium))
-            return  # Do NOT enter in euphoric premium
+            return
 
-        # Store strike recommendation in state for reference
+        expiry = self._get_leap_expiry()
+        safety_deploy = deploy * safety["weight"]
+        spec_deploy = deploy * spec["weight"]
+
+        # Store strike recommendation in state
         self.state["last_strike_recommendation"] = {
             "band": band,
             "safety_strikes": safety["strikes"],
@@ -1736,12 +2108,142 @@ class RudyV28:
             "spec_strikes": spec["strikes"],
             "spec_weight": spec["weight"],
             "premium_at_entry": premium,
+            "expiry": expiry,
             "timestamp": datetime.now().isoformat()
         }
 
+        # v50.0 Safety: cleanup stale orders
+        self.cleanup_stale_orders("MSTR")
+
+        filled_contracts = []
+        total_cost = 0
+
+        # ── Buy safety CALL LEAPs ──
+        for strike in safety["strikes"]:
+            contract = Option("MSTR", expiry, strike, "C", "SMART")
+            try:
+                self.ib.qualifyContracts(contract)
+            except Exception as e:
+                log(f"Cannot qualify MSTR ${strike}C {expiry}: {e}", "WARN")
+                continue
+
+            # Get option price to determine qty
+            self.ib.reqMktData(contract, '', False, False)
+            self.ib.sleep(2)
+            ticker = self.ib.ticker(contract)
+            ask = ticker.ask if ticker.ask and ticker.ask > 0 else 0
+            mid = ((ticker.bid or 0) + ask) / 2 if ask > 0 else 0
+            opt_price = mid if mid > 0 else ask
+            if opt_price <= 0:
+                log(f"No price for MSTR ${strike}C {expiry} — skipping", "WARN")
+                continue
+
+            # Each contract = 100 shares × price
+            contract_cost = opt_price * 100
+            alloc_per_strike = safety_deploy / len(safety["strikes"])
+            qty = max(1, int(alloc_per_strike / contract_cost))
+
+            order = self.build_stealth_order("BUY", qty, contract)
+            success, fill_price, fill_qty, status = self.execute_with_confirmation(
+                contract, order, timeout=120, max_retries=2
+            )
+            if success and fill_qty > 0:
+                cost = fill_price * 100 * fill_qty
+                total_cost += cost
+                filled_contracts.append({
+                    "type": "safety", "strike": strike, "expiry": expiry,
+                    "qty": fill_qty, "price": fill_price, "cost": cost
+                })
+                log(f"✅ Safety LEAP filled: MSTR ${strike}C {expiry} ×{fill_qty} @ ${fill_price:.2f}")
+            else:
+                log(f"❌ Safety LEAP failed: MSTR ${strike}C {expiry} — {status}", "ERROR")
+
+        # ── Buy spec CALL LEAPs ──
+        for strike in spec["strikes"]:
+            contract = Option("MSTR", expiry, strike, "C", "SMART")
+            try:
+                self.ib.qualifyContracts(contract)
+            except Exception as e:
+                log(f"Cannot qualify MSTR ${strike}C {expiry}: {e}", "WARN")
+                continue
+
+            self.ib.reqMktData(contract, '', False, False)
+            self.ib.sleep(2)
+            ticker = self.ib.ticker(contract)
+            ask = ticker.ask if ticker.ask and ticker.ask > 0 else 0
+            mid = ((ticker.bid or 0) + ask) / 2 if ask > 0 else 0
+            opt_price = mid if mid > 0 else ask
+            if opt_price <= 0:
+                log(f"No price for MSTR ${strike}C {expiry} — skipping", "WARN")
+                continue
+
+            contract_cost = opt_price * 100
+            alloc_per_strike = spec_deploy / len(spec["strikes"])
+            qty = max(1, int(alloc_per_strike / contract_cost))
+
+            order = self.build_stealth_order("BUY", qty, contract)
+            success, fill_price, fill_qty, status = self.execute_with_confirmation(
+                contract, order, timeout=120, max_retries=2
+            )
+            if success and fill_qty > 0:
+                cost = fill_price * 100 * fill_qty
+                total_cost += cost
+                filled_contracts.append({
+                    "type": "spec", "strike": strike, "expiry": expiry,
+                    "qty": fill_qty, "price": fill_price, "cost": cost
+                })
+                log(f"✅ Spec LEAP filled: MSTR ${strike}C {expiry} ×{fill_qty} @ ${fill_price:.2f}")
+            else:
+                log(f"❌ Spec LEAP failed: MSTR ${strike}C {expiry} — {status}", "ERROR")
+
+        # ── Late-fill reconciliation: scan IBKR for any attempted strike that filled
+        #    after our timeout (e.g., TWS popup unblocked post-cancel). Belt-and-suspenders
+        #    behind execute_with_confirmation's cancel-and-recheck. ──
+        try:
+            attempted = set(safety["strikes"]) | set(spec["strikes"])
+            already_filled = {fc["strike"] for fc in filled_contracts}
+            for p in self.ib.positions():
+                c = p.contract
+                if (c.secType == "OPT" and c.symbol == "MSTR"
+                        and c.lastTradeDateOrContractMonth == expiry
+                        and c.right == "C" and p.position > 0):
+                    strike = int(c.strike)
+                    if strike in attempted and strike not in already_filled:
+                        ctype = "safety" if strike in safety["strikes"] else "spec"
+                        cost = float(p.avgCost) * float(p.position)
+                        price = float(p.avgCost) / 100.0
+                        filled_contracts.append({
+                            "type": ctype, "strike": strike, "expiry": expiry,
+                            "qty": int(p.position), "price": price, "cost": cost,
+                            "late_fill_recovered": True
+                        })
+                        total_cost += cost
+                        log(f"⚠️ LATE FILL RECOVERED via IBKR scan: MSTR ${strike}C {expiry} "
+                            f"×{int(p.position)} @ ${price:.2f}", "WARN")
+        except Exception as e:
+            log(f"Late-fill reconciliation failed: {e}", "WARN")
+
+        # ── Abort if nothing filled ──
+        if not filled_contracts:
+            log("❌ ALL LEAP ORDERS FAILED — no contracts filled", "ERROR")
+            send_telegram(
+                f"🔴 *Rudy v2.8+ ENTRY FAILED — No LEAPs filled*\n"
+                f"All {len(safety['strikes']) + len(spec['strikes'])} contracts failed.\n"
+                f"⚠️ Check IBKR TWS and option chain availability."
+            )
+            return
+
+        # ── Update state ──
+        total_qty = sum(c["qty"] for c in filled_contracts)
+        avg_option_cost = total_cost / total_qty if total_qty > 0 else 0
+
         if entry_num == 1:
-            self.state["entry_price"] = fill_price
-            self.state["position_hwm"] = fill_price
+            # entry_price = MSTR STOCK price at entry (for trailing stops, floors, profit tiers)
+            # leap_avg_cost = option cost per contract (for P&L tracking)
+            self.state["entry_price"] = mstr_price
+            self.state["leap_avg_cost"] = avg_option_cost
+            self.state["leap_total_cost"] = total_cost
+            self.state["position_hwm"] = mstr_price
             self.state["peak_gain_pct"] = 0
             self.state["pt_hits"] = [False] * len(self.profit_tiers)
             self.state["premium_hwm"] = premium
@@ -1749,34 +2251,77 @@ class RudyV28:
             self.state["euphoria_sell_done"] = False
             self.state["first_entry_done"] = True
             self.state["second_entry_done"] = False
-            self.state["position_qty"] = qty
+            self.state["position_qty"] = total_qty
+            self.state["leap_contracts"] = filled_contracts
         else:
-            # Average in
+            old_contracts = self.state.get("leap_contracts", [])
+            self.state["leap_contracts"] = old_contracts + filled_contracts
             old_qty = self.state.get("position_qty", 0)
-            old_price = self.state.get("entry_price", fill_price)
-            total_qty = old_qty + qty
-            self.state["entry_price"] = (old_price * old_qty + fill_price * qty) / total_qty
+            self.state["position_qty"] = old_qty + total_qty
+            # entry_price stays as MSTR stock price at first entry (reference for gains)
+            # Update leap cost tracking
+            old_leap_cost = self.state.get("leap_total_cost", 0)
+            self.state["leap_total_cost"] = old_leap_cost + total_cost
+            self.state["leap_avg_cost"] = self.state["leap_total_cost"] / self.state["position_qty"] if self.state["position_qty"] > 0 else 0
             self.state["second_entry_done"] = True
             self.state["already_entered_this_cycle"] = True
-            self.state["position_qty"] = total_qty
 
         safety_str = "/".join(f"${s}" for s in safety["strikes"])
         spec_str = "/".join(f"${s}" for s in spec["strikes"])
+        fills_str = "\n".join(
+            f"  {'🛡' if c['type']=='safety' else '🎯'} ${c['strike']}C ×{c['qty']} @ ${c['price']:.2f} (${c['cost']:,.0f})"
+            for c in filled_contracts
+        )
 
-        log(f"🟢 ENTRY {entry_num}/2: MSTR @ ${fill_price:.2f} | Qty={qty} | "
-            f"Prem={premium:.2f}x | LEAP_Mult={leap_mult:.1f}x | Band={band}")
-        send_telegram(
-            f"🟢 *Rudy v2.8+ ENTRY {entry_num}/2*\n"
-            f"MSTR @ ${fill_price:.2f}\n"
-            f"Qty: {qty}\n"
+        log(f"🟢 ENTRY {entry_num}/2: MSTR CALL LEAPs | {len(filled_contracts)} contracts | "
+            f"Total: ${total_cost:,.0f} | Prem={premium:.2f}x | Band={band}")
+        send_telegram_with_chart(
+            f"🟢 *Rudy v2.8+ LEAP ENTRY {entry_num}/2*\n"
+            f"MSTR CALL LEAPs — {expiry}\n"
             f"Premium: {premium:.2f}x | Band: {band}\n"
             f"LEAP Mult: {leap_mult:.1f}x\n"
             f"━━━━━━━━━━━━━━━━\n"
-            f"📊 *Strike Recommendation*\n"
+            f"📊 *Filled Contracts*\n{fills_str}\n\n"
+            f"💰 Total: ${total_cost:,.0f} ({len(filled_contracts)} contracts, {total_qty} lots)\n"
+            f"━━━━━━━━━━━━━━━━\n"
             f"Safety ({int(safety['weight']*100)}%): {safety_str}\n"
             f"Spec ({int(spec['weight']*100)}%): {spec_str}\n"
-            f"_{strike_note}_"
+            f"_{strike_note}_",
+            symbol="MSTR", timeframe="1W"
         )
+
+        # ── v50.4 PARTIAL-FILL RESUME TRACKING ──
+        # If some legs failed, persist them so _check_entry_resume() can finish the barbell
+        # on subsequent eval cycles. Original HITL YES already authorized the full deploy —
+        # no second approval needed for the same entry.
+        filled_strikes = {fc["strike"] for fc in filled_contracts}
+        safety_alloc = safety_deploy / len(safety["strikes"]) if safety["strikes"] else 0
+        spec_alloc = spec_deploy / len(spec["strikes"]) if spec["strikes"] else 0
+        unfilled = []
+        for s in safety["strikes"]:
+            if s not in filled_strikes:
+                unfilled.append({"type": "safety", "strike": s, "expiry": expiry,
+                                 "alloc_capital": safety_alloc, "attempts": 0, "last_status": None})
+        for s in spec["strikes"]:
+            if s not in filled_strikes:
+                unfilled.append({"type": "spec", "strike": s, "expiry": expiry,
+                                 "alloc_capital": spec_alloc, "attempts": 0, "last_status": None})
+        if unfilled:
+            window_until = (datetime.now() + timedelta(days=7)).isoformat()  # ~5 trading days
+            self.state["unfilled_strikes"] = unfilled
+            self.state["entry_resume_window_until"] = window_until
+            self.state["entry_resume_band"] = band
+            unfilled_str = ", ".join(f"${u['strike']}{('C' if u['type'] in ('safety','spec') else '')}" for u in unfilled)
+            log(f"📋 PARTIAL FILL — {len(unfilled)} legs unfilled ({unfilled_str}). Auto-resume window: {window_until[:10]}")
+            send_telegram(
+                f"📋 *Partial Entry — Auto-Resume Armed*\n"
+                f"Filled {len(filled_contracts)}/{len(filled_contracts) + len(unfilled)} legs.\n"
+                f"Will retry next eval cycle: {unfilled_str}\n"
+                f"Window expires: {window_until[:10]} (5 trading days)"
+            )
+        else:
+            self.state["unfilled_strikes"] = []
+            self.state["entry_resume_window_until"] = None
         self._save_state()
 
         # v50.0 Safety: reconcile position after entry
@@ -1807,11 +2352,12 @@ class RudyV28:
                 price = fill_price_actual  # use actual fill price
 
         log(f"🔴 EXIT [{reason}]: MSTR @ ${price:.2f} | Stock: {stock_gain:+.1f}% | LEAP: {leap_gain:+.1f}%")
-        send_telegram(
+        send_telegram_with_chart(
             f"🔴 *Rudy v2.8 EXIT — {reason}*\n"
             f"MSTR @ ${price:.2f}\n"
             f"Stock: {stock_gain:+.1f}%\n"
-            f"LEAP: {leap_gain:+.1f}%"
+            f"LEAP: {leap_gain:+.1f}%",
+            symbol="MSTR", timeframe="1W"
         )
 
         # Record trade
@@ -1826,6 +2372,26 @@ class RudyV28:
             "reason": reason,
         })
         self.state["trade_log"] = trades
+
+        # AI Trade Autopsy — async review via Gemini
+        try:
+            from gemini_brain import trade_autopsy
+            autopsy_data = {
+                "entry_date": self.state.get("entry_date", ""),
+                "exit_date": datetime.now().isoformat(),
+                "entry_price": self.state.get("entry_price", 0),
+                "exit_price": price,
+                "stock_gain_pct": stock_gain,
+                "leap_gain_pct": leap_gain,
+                "bars_in_trade": self.state.get("bars_in_trade", 0),
+                "reason": reason,
+                "entry_confluence": self.state.get("entry_confluence", ""),
+                "regime_at_entry": self.state.get("regime_at_entry", self.state.get("last_regime", "")),
+                "regime_at_exit": self.state.get("last_regime", ""),
+            }
+            trade_autopsy(autopsy_data)
+        except Exception as e:
+            log(f"Trade autopsy skipped: {e}", "WARN")
 
         # Reset position state
         self.state["entry_price"] = 0
@@ -1932,6 +2498,16 @@ class RudyV28:
         log(f"\n{'='*60}")
         log(f"RUDY v2.8 EVALUATE ({self.resolution.upper()}) — {datetime.now().strftime('%Y-%m-%d %H:%M')}")
         log(f"{'='*60}")
+
+        # ── Check pending HITL entry approval ──
+        self._check_pending_entry()
+
+        # ── v50.4: Resume any unfilled legs from a prior partial entry ──
+        # Original HITL YES already authorized — no second approval needed.
+        try:
+            self._check_entry_resume()
+        except Exception as e:
+            log(f"_check_entry_resume error: {e}", "WARN")
 
         # ── SAFETY PRE-CHECK (does not modify strategy logic) ──
         if not self.check_daily_loss_limit():
@@ -2068,12 +2644,12 @@ class RudyV28:
             # Stress tested: safety net fails at 0.5x, so we kill at 0.75x with margin.
             if premium > 0 and premium < 0.75:
                 has_position = self.state.get("entry_price", 0) > 0
-                has_adder = self.state.get("adder_entry_price", 0) > 0
+                has_adder = self.state.get("trend_adder_entry_price", 0) > 0
                 already_killed = self.state.get("mnav_kill_triggered", False)
 
                 if (has_position or has_adder) and not already_killed:
                     log(f"🚨 DEFCON 1: mNAV KILL SWITCH TRIGGERED — premium {premium:.2f}x < 0.75x", "CRITICAL")
-                    send_telegram(
+                    send_telegram_with_chart(
                         f"🚨🚨🚨 *DEFCON 1 — mNAV KILL SWITCH*\n"
                         f"━━━━━━━━━━━━━━━━\n"
                         f"mNAV Premium: *{premium:.2f}x* (below 0.75x threshold)\n"
@@ -2085,16 +2661,19 @@ class RudyV28:
                         f"Stress tests show total loss below 0.5x.\n"
                         f"Killing at 0.75x to preserve capital.\n"
                         f"━━━━━━━━━━━━━━━━\n"
-                        f"Manual restart required after review."
+                        f"Manual restart required after review.",
+                        symbol="MSTR", timeframe="1D"
                     )
 
                     # Close base position
                     if has_position:
-                        self._execute_exit("mNAV KILL SWITCH — premium below 0.75x", mstr_price)
+                        ep = self.state.get("entry_price", 0) or 0
+                        sg = ((mstr_price - ep) / ep) * 100 if ep > 0 else 0
+                        self._execute_exit("mNAV KILL SWITCH — premium below 0.75x", mstr_price, sg, 0)
 
                     # Close adder position
                     if has_adder:
-                        self._execute_adder_exit("mNAV KILL SWITCH — premium below 0.75x", mstr_price)
+                        self._exit_trend_adder("mNAV KILL SWITCH — premium below 0.75x", mstr_price)
 
                     self.state["mnav_kill_triggered"] = True
                     self.state["mnav_kill_date"] = datetime.now().isoformat()
@@ -2102,6 +2681,8 @@ class RudyV28:
                     self._save_state()
 
                     log("🚨 ALL POSITIONS CLOSED — mNAV kill switch. Manual restart required.")
+                    self.state["last_eval"] = datetime.now().isoformat()
+                    self._save_state()
                     return  # Stop evaluation — system is in emergency mode
 
                 elif not has_position and not has_adder and not already_killed:
@@ -2112,6 +2693,11 @@ class RudyV28:
                         f"Premium {premium:.2f}x is below 0.75x threshold.\n"
                         f"No new entries permitted until premium recovers above 1.0x."
                     )
+                    # Still mark eval as completed for dashboard freshness
+                    self.state["last_eval"] = datetime.now().isoformat()
+                    self.state["last_mstr_price"] = mstr_price
+                    self.state["last_btc_price"] = btc_price
+                    self._save_state()
                     return  # Don't evaluate — no entries in DEFCON zone
 
             # Reset kill switch if premium recovers above 1.0x
@@ -2140,7 +2726,7 @@ class RudyV28:
                         and not self.state.get("trend_adder_active", False)
                         and len(weekly_closes) >= 204):
                     confirmed, _, ema50, sma200, dist = self.check_trend_confirmation(weekly_closes)
-                    adder_status = f"GoldenCross={'Y' if confirmed else 'N'} EMA50=${ema50:.2f if ema50 else 0} Dist={dist:.1f}%"
+                    adder_status = f"GoldenCross={'Y' if confirmed else 'N'} EMA50=${(ema50 or 0):.2f} Dist={(dist or 0):.1f}%"
                     log(f"TREND CHECK: {adder_status}")
                     self.state["trend_adder_status"] = adder_status
 
@@ -2185,7 +2771,10 @@ class RudyV28:
                 self.state["last_mstr_price"] = mstr_price
                 self.state["last_btc_price"] = btc_price
                 try:
-                    self.state["last_premium"] = round(float(filters.get("premium", 0)), 4)
+                    prem_raw = filters.get("premium", 0)
+                    if isinstance(prem_raw, str):
+                        prem_raw = prem_raw.replace("x", "").strip()
+                    self.state["last_premium"] = round(float(prem_raw), 4)
                 except (TypeError, ValueError):
                     self.state["last_premium"] = 0.0
                 try:
@@ -2219,9 +2808,9 @@ class RudyV28:
                     if not first_done:
                         self.state["entry_date"] = datetime.now().isoformat()
                         self.state["entry_confluence"] = confluence
-                        self._execute_entry(mstr_price, btc_price, 1)
+                        self._request_entry_approval(mstr_price, btc_price, 1)
                     elif first_done and not second_done:
-                        self._execute_entry(mstr_price, btc_price, 2)
+                        self._request_entry_approval(mstr_price, btc_price, 2)
 
             # Save state
             self.state["last_eval"] = datetime.now().isoformat()
@@ -2650,7 +3239,12 @@ class RudyV28:
                 try:
                     last_dt = datetime.fromisoformat(last_eval)
                     hours_since = (datetime.now() - last_dt).total_seconds() / 3600
-                    if hours_since > 24 and datetime.now().weekday() < 5:  # Weekday
+                    # Weekend-aware stale detection: Mon before 4PM allows up to 72h (Fri 3:45PM → Mon 3:45PM)
+                    now = datetime.now()
+                    is_weekday = now.weekday() < 5
+                    is_monday_before_eval = now.weekday() == 0 and now.hour < 16
+                    stale_threshold = 72 if is_monday_before_eval else 26
+                    if hours_since > stale_threshold and is_weekday:
                         msg = (f"⚠️ *SELF-EVAL: STALE DAEMON*\n"
                                f"Last evaluation was {hours_since:.0f} hours ago.\n"
                                f"Daemon may be stuck or disconnected.")
@@ -2886,12 +3480,21 @@ class RudyV28:
         }
 
     def _save_state(self):
-        """Save state to disk."""
+        """Save state to disk atomically. Mid-write kill must not corrupt JSON."""
+        tmp = STATE_FILE + ".tmp"
         try:
-            with open(STATE_FILE, "w") as f:
+            with open(tmp, "w") as f:
                 json.dump(self.state, f, indent=2, default=str)
+                f.flush()
+                os.fsync(f.fileno())
+            os.replace(tmp, STATE_FILE)
         except Exception as e:
             log(f"Failed to save state: {e}", "ERROR")
+            try:
+                if os.path.exists(tmp):
+                    os.remove(tmp)
+            except Exception:
+                pass
 
     def show_status(self):
         """Display current status."""

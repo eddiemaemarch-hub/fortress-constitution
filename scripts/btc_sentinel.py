@@ -74,6 +74,22 @@ def send_telegram(msg):
         log(f"Telegram error: {e}", "ERROR")
 
 
+def send_telegram_with_chart(msg, symbol="BTCUSD", timeframe="1D"):
+    """Send Telegram message followed by a TradingView chart screenshot."""
+    send_telegram(msg)
+    try:
+        sys.path.insert(0, os.path.expanduser("~/rudy/scripts"))
+        import tradingview_cdp
+        if tradingview_cdp.is_running():
+            import telegram as tg
+            png = tradingview_cdp.capture_chart(symbol=symbol, timeframe=timeframe)
+            if png:
+                tg.send_photo(png, caption=f"📊 *{symbol} {timeframe}* — BTC Sentinel Alert")
+                log("TradingView chart attached to alert")
+    except Exception as e:
+        log(f"Chart capture skipped: {e}", "WARN")
+
+
 # ── State Management ──────────────────────────────────────────────────
 def load_state():
     if os.path.exists(STATE_FILE):
@@ -374,7 +390,7 @@ def run_check(state):
             msg = format_threshold_alert(
                 btc_now, anchor, change_pct, threshold, sma_200w, est_premium
             )
-            send_telegram(msg)
+            send_telegram_with_chart(msg, symbol="BTCUSD", timeframe="1D")
             alerts_sent.append(key)
             state["alerts_sent"] = alerts_sent
             log(f"ALERT SENT: BTC {change_pct:+.1f}% (threshold: {threshold}%)")
@@ -386,7 +402,7 @@ def run_check(state):
 
         if (was_above or not already_alerted) and not already_alerted:
             msg = format_critical_200w_alert(btc_now, sma_200w)
-            send_telegram(msg)
+            send_telegram_with_chart(msg, symbol="BTCUSD", timeframe="1W")
             state["below_200w_alerted"] = True
             log(f"CRITICAL ALERT: BTC ${btc_now:,.0f} below 200W SMA ${sma_200w:,.0f}")
 
@@ -408,7 +424,7 @@ def run_check(state):
                 "\u2501" * 18,
                 "Review position exposure before Monday open!",
             ])
-            send_telegram(msg)
+            send_telegram_with_chart(msg, symbol="BTCUSD", timeframe="1D")
             alerts_sent.append(kill_key)
             state["alerts_sent"] = alerts_sent
             log(f"KILL SWITCH WARNING: est. premium {est_premium:.2f}x")
@@ -499,8 +515,8 @@ def main():
             os.kill(old_pid, 0)  # Check if still alive
             log(f"ABORT: BTC Sentinel already running (PID {old_pid}). Delete {PID_FILE} to override.", "ERROR")
             sys.exit(1)
-        except (ProcessLookupError, ValueError):
-            pass  # Old process is dead, safe to continue
+        except (ProcessLookupError, ValueError, PermissionError):
+            pass  # Old process is dead/inaccessible, safe to continue
 
     os.makedirs(os.path.dirname(PID_FILE), exist_ok=True)
     with open(PID_FILE, "w") as f:
