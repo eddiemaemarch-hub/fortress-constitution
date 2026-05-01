@@ -98,17 +98,35 @@ def log(msg, level="INFO"):
         os.makedirs(os.path.dirname(LOG_FILE), exist_ok=True)
         with open(LOG_FILE, "a") as f:
             f.write(line + "\n")
-    except:
+    except Exception:
         pass
 
 
-def send_telegram(msg):
+def send_telegram(msg, hitl=False):
     try:
         sys.path.insert(0, os.path.expanduser("~/rudy/scripts"))
         import telegram as tg
-        tg.send(msg)
+        if hitl:
+            tg.send_hitl_approval(msg)
+        else:
+            tg.send(msg)
     except Exception as e:
         log(f"Telegram error: {e}", "ERROR")
+
+
+def send_telegram_with_chart(msg, symbol="SPY", timeframe="1D"):
+    """Send Telegram alert followed by a TradingView chart screenshot."""
+    send_telegram(msg)
+    try:
+        sys.path.insert(0, os.path.expanduser("~/rudy/scripts"))
+        import tradingview_cdp
+        if tradingview_cdp.is_running():
+            import telegram as tg
+            png = tradingview_cdp.capture_chart(symbol=symbol, timeframe=timeframe)
+            if png:
+                tg.send_photo(png, caption=f"📊 *{symbol} {timeframe}* — Trader3")
+    except Exception:
+        pass
 
 
 def get_regime():
@@ -189,7 +207,7 @@ def load_state():
     try:
         with open(STATE_FILE) as f:
             return json.load(f)
-    except:
+    except Exception:
         return {
             "activated": False,
             "current_tier": 0,
@@ -202,7 +220,19 @@ def load_state():
             "tiers_hit": [],
             "pending_sell": None,
             "last_check": None,
-            "history": []
+            "history": [],
+            # v50.4: explicitly initialize keys downstream code reads via [..] (not .get).
+            "pending_roll": None,
+            "pending_expiry_roll": None,
+            "expiry_roll_alerted_180d": False,
+            "expiry_roll_alerted_90d": False,
+            "expiry_roll_commander_approved": False,
+            "expiry_roll_commander_rejected": False,
+            "roll_history": [],
+            "last_value": 0,
+            "last_gain_pct": 0,
+            "last_mid": 0,
+            "last_regime": None,
         }
 
 
@@ -232,9 +262,36 @@ class Trader3:
             self.ib.disconnect()
 
     def get_position_value(self):
-        """Get current market value of the SPY put position from IBKR portfolio."""
-        # Primary: use IBKR portfolio valuation (most accurate, matches account page)
+        """Get current market value of the SPY put position.
+        Uses LIVE market data first (always fresh), falls back to portfolio() (can be stale)."""
+        # Primary: live market data via reqMktData (always fresh from IBKR)
         try:
+            contract = Option(SYMBOL, EXPIRY, STRIKE, RIGHT, "SMART")
+            self.ib.qualifyContracts(contract)
+            ticker = self.ib.reqMktData(contract, "", False, False)
+            self.ib.sleep(3)
+
+            mid = None
+            if ticker.bid and ticker.ask and ticker.bid > 0 and ticker.ask > 0:
+                mid = (ticker.bid + ticker.ask) / 2
+            elif ticker.last and ticker.last > 0:
+                mid = ticker.last
+            elif ticker.close and ticker.close > 0:
+                mid = ticker.close
+
+            self.ib.cancelMktData(contract)
+
+            if mid is not None and mid > 0:
+                market_value = mid * 100 * self.state["contracts_remaining"]
+                log(f"Live market data: ${market_value:.2f} (mid ${mid:.2f})")
+                return market_value, mid
+        except Exception as e:
+            log(f"Market data fetch failed: {e}, falling back to portfolio()", "WARN")
+
+        # Fallback: use IBKR portfolio (can be stale across long-running daemon connections)
+        try:
+            self.ib.reqAccountUpdates(True)  # Force refresh
+            self.ib.sleep(1)
             portfolio = self.ib.portfolio()
             for p in portfolio:
                 c = p.contract
@@ -242,33 +299,13 @@ class Trader3:
                         and getattr(c, "right", "") == RIGHT):
                     market_value = float(p.marketValue)
                     mid = market_value / (100 * self.state["contracts_remaining"])
-                    log(f"Using IBKR portfolio value: ${market_value:.2f} (mid ${mid:.2f})")
+                    log(f"Portfolio fallback: ${market_value:.2f} (mid ${mid:.2f})")
                     return market_value, mid
         except Exception as e:
-            log(f"Portfolio fetch failed: {e}, falling back to market data", "WARN")
+            log(f"Portfolio fetch failed: {e}", "ERROR")
 
-        # Fallback: use market data mid price
-        contract = Option(SYMBOL, EXPIRY, STRIKE, RIGHT, "SMART")
-        self.ib.qualifyContracts(contract)
-        ticker = self.ib.reqMktData(contract, "", False, False)
-        self.ib.sleep(3)
-
-        mid = None
-        if ticker.bid and ticker.ask and ticker.bid > 0 and ticker.ask > 0:
-            mid = (ticker.bid + ticker.ask) / 2
-        elif ticker.last and ticker.last > 0:
-            mid = ticker.last
-        elif ticker.close and ticker.close > 0:
-            mid = ticker.close
-
-        self.ib.cancelMktData(contract)
-
-        if mid is None:
-            log("Could not get market data for SPY put", "ERROR")
-            return None
-
-        market_value = mid * 100 * self.state["contracts_remaining"]
-        return market_value, mid
+        log("Could not get position value", "ERROR")
+        return None
 
     def calculate_gain(self, market_value):
         cost_basis = AVG_COST * (self.state["contracts_remaining"] / QTY)
@@ -337,7 +374,7 @@ class Trader3:
                 self.state["current_tier"] = 1
                 self.state["tiers_hit"].append(tier["name"])
 
-                send_telegram(
+                send_telegram_with_chart(
                     f"🎯 *TRADER3: LADDER ACTIVATED*\n"
                     f"SPY $430 Put Jan 2027\n"
                     f"━━━━━━━━━━━━━━━━\n"
@@ -346,7 +383,8 @@ class Trader3:
                     f"Cost: ${cost_basis:.2f}\n"
                     f"━━━━━━━━━━━━━━━━\n"
                     f"Trail Stop: ${trail_value:.2f} ({tier['trail_pct']}% from peak)\n"
-                    f"Next tier: +{LADDER[1]['trigger_pct']}% → tighten trail"
+                    f"Next tier: +{LADDER[1]['trigger_pct']}% → tighten trail",
+                    symbol="SPY", timeframe="1D"
                 )
                 log(f"LADDER ACTIVATED at +{gain_pct:.1f}%")
             else:
@@ -404,6 +442,7 @@ class Trader3:
             f"Trail Stop: ${self.state['trail_stop_value']:.2f}\n"
             f"Peak: ${self.state['peak_value']:.2f}"
         )
+        save_state(self.state)
         log(f"{tier['name']} triggered at +{gain_pct:.1f}% | Trail: {tier['trail_pct']}%")
 
     def _trigger_trail_stop(self, market_value, gain_pct, mid_price):
@@ -420,7 +459,7 @@ class Trader3:
             "timestamp": datetime.now().isoformat()
         }
 
-        send_telegram(
+        send_telegram_with_chart(
             f"🔴 *TRADER3: TRAIL STOP HIT*\n"
             f"SPY $430 Put Jan 2027\n"
             f"━━━━━━━━━━━━━━━━\n"
@@ -431,8 +470,10 @@ class Trader3:
             f"━━━━━━━━━━━━━━━━\n"
             f"🔔 *SELL ALL {remaining} contract(s)?*\n"
             f"Total P&L (incl. realized): ${profit:.2f}\n"
-            f"Awaiting your approval..."
+            f"Awaiting your approval...",
+            symbol="SPY", timeframe="1D"
         )
+        save_state(self.state)
         log(f"TRAIL STOP HIT at +{gain_pct:.1f}% | Peak was +{self.state['peak_gain_pct']:.1f}%")
 
     def execute_sell(self, qty):
@@ -774,8 +815,8 @@ def main():
                 os.kill(old_pid, 0)
                 log(f"ABORT: Trader3 already running (PID {old_pid}). Delete {lockfile} to override.", "ERROR")
                 sys.exit(1)
-            except (ProcessLookupError, ValueError):
-                pass
+            except (ProcessLookupError, PermissionError, ValueError):
+                pass  # Old process is dead or inaccessible, safe to continue
         os.makedirs(os.path.dirname(lockfile), exist_ok=True)
         with open(lockfile, "w") as f:
             f.write(str(os.getpid()))

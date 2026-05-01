@@ -47,8 +47,11 @@ MNAV_KILL_THRESHOLD = 0.75
 MSTR_BTC_MULTIPLIER_LOW = 1.5
 MSTR_BTC_MULTIPLIER_HIGH = 2.0
 
-# Hardcoded 200W SMA fallback — update periodically.
-# As of early 2026 the 200-week SMA sits around $42,000.
+# Hardcoded 200W SMA fallback — used only when live Kraken fetch fails.
+# CONSTITUTION RULE: IBKR is the single source of truth for prices. This
+# fallback is stale-by-design. Recompute and update each quarter from the
+# Kraken weekly history. As of early 2026 the 200-week SMA sits ~$42,000.
+# TODO(quarterly): refresh this constant from `kraken_btc_200w.json` cache.
 HARDCODED_200W_SMA = 42_000
 
 # ── Logging ────────────────────────────────────────────────────────────

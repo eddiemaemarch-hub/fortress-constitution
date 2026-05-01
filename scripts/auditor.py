@@ -20,11 +20,12 @@ sys.path.insert(0, os.path.dirname(__file__))
 # ── Load env ──
 _env = os.path.expanduser("~/.agent_zero_env")
 if os.path.exists(_env):
-    for _ln in open(_env):
-        _ln = _ln.strip()
-        if "=" in _ln and not _ln.startswith("#"):
-            k, v = _ln.split("=", 1)
-            os.environ.setdefault(k.strip(), v.strip())
+    with open(_env) as _f:
+        for _ln in _f:
+            _ln = _ln.strip()
+            if "=" in _ln and not _ln.startswith("#"):
+                k, v = _ln.split("=", 1)
+                os.environ.setdefault(k.strip(), v.strip())
 
 import telegram
 
@@ -52,7 +53,7 @@ AUTHORIZED_TRADERS = {
         "label":     "com.rudy.trader2",
         "state":     "trader2_state.json",
         "desc":      "MSTR $50 Put Jan28",
-        "client_id": 53,
+        "client_id": 12,
         "authority": "CLOSE only (with Commander approval)",
     },
     "trader3": {
@@ -60,7 +61,7 @@ AUTHORIZED_TRADERS = {
         "label":     "com.rudy.trader3",
         "state":     "trader3_state.json",
         "desc":      "SPY $430 Put Jan27",
-        "client_id": 54,
+        "client_id": 13,
         "authority": "CLOSE only (with Commander approval)",
     },
 }

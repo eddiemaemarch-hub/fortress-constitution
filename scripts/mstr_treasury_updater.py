@@ -143,8 +143,23 @@ def update_trader_state(holdings, shares):
     state["mstr_diluted_shares"] = shares
     state["treasury_updated"] = datetime.now().isoformat()
 
-    with open(trader_state_file, "w") as f:
-        json.dump(state, f, indent=2)
+    # Atomic write — racing the trader's own _save_state caused JSON corruption.
+    # Write to .tmp then os.replace so the trader's reader never sees a half-written file.
+    tmp = trader_state_file + ".tmp"
+    try:
+        with open(tmp, "w") as f:
+            json.dump(state, f, indent=2)
+            f.flush()
+            os.fsync(f.fileno())
+        os.replace(tmp, trader_state_file)
+    except Exception as e:
+        log(f"Failed atomic write to trader state: {e}", "ERROR")
+        try:
+            if os.path.exists(tmp):
+                os.remove(tmp)
+        except Exception:
+            pass
+        return
     log(f"Updated trader state: {holdings:,} BTC, {shares:,} shares")
 
 

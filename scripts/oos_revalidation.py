@@ -48,8 +48,11 @@ if os.path.exists(_env_file):
 # ═══════════════════════════════════════════════════════════════
 # CONFIG
 # ═══════════════════════════════════════════════════════════════
-QC_API_TOKEN = "a5e10d30d2c0f483c2c62a124375b2fcf4e0f907d54ab3ae863e7450e50b7688"
-QC_USER_ID = "473242"
+# v50.4 (2026-05-01): token now read from env (set QC_API_TOKEN in
+# ~/.agent_zero_env). The hardcoded literal that lived here is in git
+# history — ROTATE the QuantConnect token to fully invalidate it.
+QC_API_TOKEN = os.environ.get("QC_API_TOKEN", "")
+QC_USER_ID = os.environ.get("QC_USER_ID", "473242")
 QC_BASE = "https://www.quantconnect.com/api/v2"
 PROJECT_ID = 29065184
 
@@ -390,23 +393,159 @@ def get_historical_win_rate(results_data):
 
 
 # ═══════════════════════════════════════════════════════════════
+# QUARTERLY HISTORY (rolling averages, winner stability, streaks)
+# ═══════════════════════════════════════════════════════════════
+
+DRIFT_HISTORY_FILE = os.path.join(DATA_DIR, "oos_revalidation_history.json")
+
+
+def load_all_quarterly_results():
+    """Load all past oos_revalidation_*.json files, sorted chronologically."""
+    import glob as _glob
+    files = sorted(_glob.glob(os.path.join(DATA_DIR, "oos_revalidation_Q*.json")))
+    results = []
+    for fp in files:
+        try:
+            with open(fp) as f:
+                results.append(json.load(f))
+        except Exception:
+            continue
+    return results
+
+
+def load_drift_history():
+    """Load the persistent drift history tracker."""
+    if os.path.exists(DRIFT_HISTORY_FILE):
+        try:
+            with open(DRIFT_HISTORY_FILE) as f:
+                return json.load(f)
+        except Exception:
+            pass
+    return {"quarters": [], "consecutive_drift_alerts": 0, "consecutive_warns": 0}
+
+
+def save_drift_history(history):
+    """Save the persistent drift history tracker."""
+    with open(DRIFT_HISTORY_FILE, "w") as f:
+        json.dump(history, f, indent=2, default=str)
+
+
+def compute_rolling_oos(past_results, current_oos_score, n=4):
+    """Compute rolling N-quarter OOS average including current quarter."""
+    scores = []
+    for r in past_results:
+        oos = r.get("oos_result", {})
+        sc = oos.get("score")
+        if sc is not None and sc > -900:
+            scores.append(sc)
+    scores.append(current_oos_score)
+    recent = scores[-n:]
+    if not recent:
+        return None, 0
+    return round(sum(recent) / len(recent), 4), len(recent)
+
+
+def assess_winner_stability(past_results, current_winner):
+    """Track grid winner across quarters. Flag instability."""
+    winners = []
+    for r in past_results:
+        s = r.get("summary", {})
+        w = s.get("winner")
+        if w:
+            winners.append({"quarter": r.get("label", "?"), "winner": w})
+    winners.append({"quarter": "current", "winner": current_winner})
+
+    if len(winners) < 2:
+        return {"stable": True, "history": winners, "changes": 0, "message": "Insufficient history"}
+
+    # Count how many times winner changed
+    changes = sum(1 for i in range(1, len(winners)) if winners[i]["winner"] != winners[i-1]["winner"])
+    unique_winners = len(set(w["winner"] for w in winners))
+    total = len(winners)
+
+    # Flag if winner changed in >50% of transitions or >2 unique winners in last 4
+    recent = winners[-4:]
+    recent_unique = len(set(w["winner"] for w in recent))
+
+    stable = recent_unique <= 2 and changes <= len(winners) // 2
+    if not stable:
+        msg = (f"UNSTABLE: {recent_unique} different winners in last {len(recent)} quarters "
+               f"({changes} changes total). Grid may be fitting noise.")
+    else:
+        msg = f"Stable: {unique_winners} unique winner(s) across {total} quarter(s), {changes} change(s)"
+
+    return {
+        "stable": stable,
+        "history": winners,
+        "changes": changes,
+        "unique_winners": unique_winners,
+        "recent_unique": recent_unique,
+        "message": msg,
+    }
+
+
+def update_drift_streak(history, verdict, label):
+    """Update consecutive drift/warn counters. Return escalation level."""
+    entry = {"quarter": label, "verdict": verdict, "timestamp": datetime.now().isoformat()}
+    history["quarters"].append(entry)
+
+    if verdict == "DRIFT_ALERT":
+        history["consecutive_drift_alerts"] += 1
+        history["consecutive_warns"] = 0
+    elif verdict == "WARN":
+        history["consecutive_warns"] += 1
+        # Don't reset drift counter on WARN — only on PASS
+    else:  # PASS
+        history["consecutive_drift_alerts"] = 0
+        history["consecutive_warns"] = 0
+
+    streak = history["consecutive_drift_alerts"]
+    if streak >= 3:
+        escalation = "CRITICAL"
+        escalation_msg = (
+            f"🔴 3+ CONSECUTIVE DRIFT ALERTS ({streak} quarters)\n"
+            f"MANDATORY: Re-optimize parameters OR pause strategy.\n"
+            f"Commander must decide: full walk-forward update or strategy halt."
+        )
+    elif streak >= 2:
+        escalation = "MANDATORY_REVIEW"
+        escalation_msg = (
+            f"🟠 2 CONSECUTIVE DRIFT ALERTS\n"
+            f"MANDATORY REVIEW: Run full walk-forward analysis.\n"
+            f"Prepare parameter update proposal for Commander approval."
+        )
+    elif streak >= 1:
+        escalation = "ALERT"
+        escalation_msg = f"🟡 First drift alert. Monitor next quarter closely."
+    else:
+        escalation = "NONE"
+        escalation_msg = ""
+
+    return escalation, escalation_msg, streak
+
+
+# ═══════════════════════════════════════════════════════════════
 # DRIFT VERDICT
 # ═══════════════════════════════════════════════════════════════
 
-def assess_drift(is_results, oos_result, label):
+def assess_drift(is_results, oos_result, label, regime="UNKNOWN"):
     """
     Determine PASS / WARN / DRIFT ALERT based on:
     1. Live param IS rank (must be #1 or close)
     2. Live param OOS score vs IS score (WFE ratio)
     3. Whether a different param set dominates
+    4. Rolling 4-quarter OOS average (smooths single-quarter anomalies)
+    5. Grid winner stability (detects noise-fitting)
+    6. Consecutive drift alert escalation
+    7. Regime context (distinguishes decay from temporary conditions)
     """
     if not is_results:
-        return "ERROR", "No IS results to analyze."
+        return "ERROR", "No IS results to analyze.", {}
 
     # Sort IS results by score
     ranked = sorted(is_results.items(), key=lambda x: x[1]["score"], reverse=True)
     if not ranked:
-        return "ERROR", "All backtests failed."
+        return "ERROR", "All backtests failed.", {}
 
     winner_name, winner_data = ranked[0]
     winner_score = winner_data["score"]
@@ -423,6 +562,20 @@ def assess_drift(is_results, oos_result, label):
     # Relative rank score
     relative_score = (live_score / winner_score) if winner_score > 0 else 0.0
 
+    # ── Rolling 4-quarter OOS average ──
+    past_results = load_all_quarterly_results()
+    rolling_avg, rolling_count = compute_rolling_oos(past_results, oos_score, n=4)
+
+    # ── Winner stability ──
+    stability = assess_winner_stability(past_results, winner_name)
+
+    # ── Regime-aware context ──
+    # MARKDOWN/DISTRIBUTION regimes may naturally produce lower scores
+    # without indicating strategy decay
+    adverse_regimes = {"MARKDOWN", "DISTRIBUTION"}
+    regime_tags = set(regime.split("/")) if regime else set()
+    in_adverse_regime = bool(regime_tags & adverse_regimes)
+
     verdict_lines = [
         f"Live params ({CURRENT_LIVE_PARAMS}) IS rank: #{live_rank}/27",
         f"Live IS score: {live_score:.4f} | Winner IS score: {winner_score:.4f}",
@@ -430,7 +583,15 @@ def assess_drift(is_results, oos_result, label):
         f"OOS score: {oos_score:.4f} | WFE ratio: {wfe:.2f}",
     ]
 
-    # Determine verdict
+    if rolling_avg is not None:
+        verdict_lines.append(f"Rolling {rolling_count}Q OOS avg: {rolling_avg:.4f}")
+
+    verdict_lines.append(f"Winner stability: {stability['message']}")
+
+    if in_adverse_regime:
+        verdict_lines.append(f"⚙️ Regime context: {regime} (adverse — underperformance may be regime-driven)")
+
+    # ── Determine base verdict ──
     if winner_name != CURRENT_LIVE_PARAMS and relative_score < DRIFT_ALERT_THRESHOLD:
         verdict = "DRIFT_ALERT"
         verdict_lines.append(f"⚠️ DRIFT: Winner is '{winner_name}' — live params at {relative_score:.0%} of winner")
@@ -444,6 +605,31 @@ def assess_drift(is_results, oos_result, label):
         verdict = "PASS"
         verdict_lines.append(f"✅ PASS: Live params remain optimal (rank #{live_rank}, {relative_score:.0%} of winner)")
 
+    # ── Regime softening: downgrade DRIFT_ALERT → WARN in adverse regimes ──
+    regime_softened = False
+    if verdict == "DRIFT_ALERT" and in_adverse_regime:
+        # Only soften if rolling average is still healthy (above 0)
+        if rolling_avg is not None and rolling_avg > 0:
+            verdict = "WARN"
+            regime_softened = True
+            verdict_lines.append(
+                f"📉 Regime override: DRIFT→WARN (adverse regime '{regime}' + rolling avg {rolling_avg:.4f} still positive)"
+            )
+
+    # ── Winner instability warning ──
+    if not stability["stable"]:
+        if verdict == "PASS":
+            verdict = "WARN"
+        verdict_lines.append(f"🔀 Winner instability: grid search may be fitting noise — consider fixing params")
+
+    # ── Consecutive drift streak escalation ──
+    drift_history = load_drift_history()
+    escalation, escalation_msg, streak = update_drift_streak(drift_history, verdict, label)
+    save_drift_history(drift_history)
+
+    if escalation_msg:
+        verdict_lines.append(escalation_msg)
+
     return verdict, "\n".join(verdict_lines), {
         "winner": winner_name,
         "winner_score": winner_score,
@@ -453,6 +639,14 @@ def assess_drift(is_results, oos_result, label):
         "oos_score": oos_score,
         "wfe_ratio": wfe,
         "top5": [(n, round(d["score"], 4)) for n, d in ranked[:5]],
+        "rolling_4q_avg": rolling_avg,
+        "rolling_4q_count": rolling_count,
+        "winner_stability": stability,
+        "regime": regime,
+        "regime_softened": regime_softened,
+        "in_adverse_regime": in_adverse_regime,
+        "drift_streak": streak,
+        "escalation": escalation,
     }
 
 
@@ -488,6 +682,40 @@ def build_telegram_msg(label, oos_start, oos_end, verdict, drift_detail, summary
     hist_rate = summary.get("historical_win_rate", None)
     hist_line = f"\nHistorical win rate: {hist_rate:.0%} of prior 7 WF windows" if hist_rate is not None else ""
 
+    # Rolling 4Q OOS average
+    rolling_avg = summary.get("rolling_4q_avg")
+    rolling_count = summary.get("rolling_4q_count", 0)
+    rolling_line = f"\nRolling {rolling_count}Q OOS avg: {rolling_avg:.4f}" if rolling_avg is not None else ""
+
+    # Winner stability
+    stability = summary.get("winner_stability", {})
+    stability_line = f"\nWinner stability: {stability.get('message', 'N/A')}"
+
+    # Regime context
+    regime_softened = summary.get("regime_softened", False)
+    regime_line = ""
+    if summary.get("in_adverse_regime"):
+        regime_line = f"\n📉 Adverse regime ({regime}) — underperformance may be regime-driven"
+        if regime_softened:
+            regime_line += " [verdict softened]"
+
+    # Drift streak escalation
+    streak = summary.get("drift_streak", 0)
+    escalation = summary.get("escalation", "NONE")
+    escalation_line = ""
+    if escalation == "CRITICAL":
+        escalation_line = (
+            f"\n🔴 *{streak} CONSECUTIVE DRIFT ALERTS*\n"
+            f"MANDATORY: Re-optimize parameters OR pause strategy."
+        )
+    elif escalation == "MANDATORY_REVIEW":
+        escalation_line = (
+            f"\n🟠 *{streak} CONSECUTIVE DRIFT ALERTS*\n"
+            f"MANDATORY: Run full walk-forward analysis."
+        )
+    elif escalation == "ALERT" and streak > 0:
+        escalation_line = f"\n🟡 First drift alert — monitor next quarter closely."
+
     action_line = ""
     if verdict == "DRIFT_ALERT":
         action_line = (
@@ -516,7 +744,13 @@ def build_telegram_msg(label, oos_start, oos_end, verdict, drift_detail, summary
         f"📈 *OOS Result ({label})*\n"
         f"Net: {oos_net:+.1f}% | Sharpe: {oos_sharpe:.3f} | DD: {oos_dd:.1f}%\n"
         f"OOS score: {oos_score:.4f} | WFE ratio: {wfe:.2f}\n"
+        f"{rolling_line}"
         f"{hist_line}"
+        f"━━━━━━━━━━━━━━━━\n"
+        f"🔍 *Health Diagnostics*"
+        f"{stability_line}"
+        f"{regime_line}"
+        f"{escalation_line}"
         f"{action_line}\n"
         f"━━━━━━━━━━━━━━━━\n"
         f"Next re-validation: Start of Q{get_next_quarter_label()}"
@@ -578,12 +812,15 @@ def run_revalidation(oos_start, oos_end, label, dry_run=False):
     # ── IN-SAMPLE GRID SEARCH ──
     log(f"\n── IN-SAMPLE: Testing {len(grid)} param combos on {IS_START} → {is_end} ──")
     is_results = {}
-    telegram.send(
-        f"🔬 *OOS Re-Validation started*\n"
-        f"Quarter: {label}\n"
-        f"Running {len(grid)} IS backtests + 1 OOS...\n"
-        f"_This will take ~45–60 minutes._"
-    )
+    try:
+        telegram.send(
+            f"🔬 *OOS Re-Validation started*\n"
+            f"Quarter: {label}\n"
+            f"Running {len(grid)} IS backtests + 1 OOS...\n"
+            f"_This will take ~45–60 minutes._"
+        )
+    except Exception as e:
+        log(f"Telegram send failed: {e}", "ERROR")
 
     for gi, params in enumerate(grid):
         pname = params["name"]
@@ -626,12 +863,15 @@ def run_revalidation(oos_start, oos_end, label, dry_run=False):
     }
     log(f"  OOS score={oos_sc:.4f} | Net={oos_result['net']:.1f}%")
 
-    # ── DRIFT ASSESSMENT ──
-    verdict, drift_detail, summary = assess_drift(is_results, oos_result, label)
+    # ── DRIFT ASSESSMENT (with regime context, rolling avg, stability, streaks) ──
+    verdict, drift_detail, summary = assess_drift(is_results, oos_result, label, regime=regime)
     summary["historical_win_rate"] = hist_rate
     summary["oos_stats"] = oos_result
     log(f"\n  VERDICT: {verdict}")
     log(drift_detail)
+
+    if summary.get("escalation") and summary["escalation"] != "NONE":
+        log(f"  ESCALATION: {summary['escalation']} (streak: {summary.get('drift_streak', 0)})")
 
     # ── SAVE RESULTS ──
     output = {
@@ -650,6 +890,11 @@ def run_revalidation(oos_start, oos_end, label, dry_run=False):
         "historical_win_rate": hist_rate,
         "historical_wins": hist_wins,
         "historical_total": hist_total,
+        "rolling_4q_avg": summary.get("rolling_4q_avg"),
+        "winner_stability": summary.get("winner_stability"),
+        "drift_streak": summary.get("drift_streak"),
+        "escalation": summary.get("escalation"),
+        "regime_softened": summary.get("regime_softened"),
     }
     with open(out_file, "w") as f:
         json.dump(output, f, indent=2, default=str)
@@ -657,8 +902,11 @@ def run_revalidation(oos_start, oos_end, label, dry_run=False):
 
     # ── SEND TELEGRAM ──
     msg = build_telegram_msg(label, oos_start, oos_end, verdict, drift_detail, summary, regime)
-    telegram.send(msg)
-    log("Telegram report sent.")
+    try:
+        telegram.send(msg)
+        log("Telegram report sent.")
+    except Exception as e:
+        log(f"Telegram report failed: {e}", "ERROR")
 
     return output
 
@@ -693,6 +941,26 @@ def print_last_report():
         print(f"  {i+1}. {n}: {s:.4f}{marker}")
     oos = data.get("oos_result", {})
     print(f"\nOOS Result: Net={oos.get('net', 0):+.1f}% | Sharpe={oos.get('sharpe', 0):.3f} | DD={oos.get('dd', 0):.1f}%")
+
+    # Health diagnostics
+    print(f"\n{'─'*40}")
+    print(f"Health Diagnostics:")
+    rolling = data.get("rolling_4q_avg") or summary.get("rolling_4q_avg")
+    if rolling is not None:
+        count = summary.get("rolling_4q_count", "?")
+        print(f"  Rolling {count}Q OOS avg: {rolling:.4f}")
+
+    ws = data.get("winner_stability") or summary.get("winner_stability", {})
+    if ws:
+        print(f"  Winner stability: {ws.get('message', 'N/A')}")
+
+    streak = data.get("drift_streak", summary.get("drift_streak", 0))
+    escalation = data.get("escalation", summary.get("escalation", "NONE"))
+    print(f"  Drift streak: {streak} consecutive | Escalation: {escalation}")
+
+    if data.get("regime_softened") or summary.get("regime_softened"):
+        print(f"  Regime softening: ACTIVE (adverse regime dampened verdict)")
+
     print(f"{'='*60}")
 
 

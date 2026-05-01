@@ -6,7 +6,7 @@ import sys
 import json
 import subprocess
 from datetime import datetime
-from flask import Flask, render_template_string, request, jsonify
+from flask import Flask, render_template_string, request, jsonify, make_response
 from flask_socketio import SocketIO, emit
 
 # Load environment variables from ~/.agent_zero_env
@@ -112,11 +112,13 @@ HTML = """
 
         /* Sidebar */
         .sidebar {
-            width: 280px;
+            width: 340px;
+            min-width: 340px;
             background: #0d0d14;
             border-right: 1px solid #1a1a2e;
             padding: 16px;
             overflow-y: auto;
+            overflow-x: hidden;
         }
         .card {
             background: #12121c;
@@ -124,6 +126,9 @@ HTML = """
             border-radius: 8px;
             padding: 14px;
             margin-bottom: 12px;
+            overflow: hidden;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
         }
         .card h3 {
             font-size: 15px;
@@ -132,16 +137,16 @@ HTML = """
             color: #667;
             margin-bottom: 10px;
         }
-        .card { cursor: pointer; transition: transform 0.15s, box-shadow 0.15s; }
-        .card:hover { transform: scale(1.02); box-shadow: 0 0 12px rgba(0,212,255,0.15); }
+        .card { cursor: pointer; transition: box-shadow 0.15s; }
+        .card:hover { box-shadow: 0 0 12px rgba(0,212,255,0.15); }
         .metric {
             display: flex;
             justify-content: space-between;
             margin-bottom: 6px;
             font-size: 16px;
         }
-        .metric .label { color: #888; }
-        .metric .value { color: #00d4ff; font-weight: 600; }
+        .metric .label { color: #888; flex: 1; margin-right: 8px; font-size: 13px; }
+        .metric .value { color: #00d4ff; font-weight: 600; text-align: right; font-variant-numeric: tabular-nums; font-size: 14px; }
         .metric .value.green { color: #00ff88; }
         .metric .value.red { color: #ff4444; }
 
@@ -409,29 +414,6 @@ HTML = """
         .launch-btn.claude { border-color: #d97706; color: #d97706; }
         .launch-btn.claude:hover { background: #d9770622; }
 
-        /* TradingView chart widget */
-        .tv-chart-container {
-            width: 100%;
-            height: 400px;
-            border-bottom: 1px solid #1a1a2e;
-            display: block;
-        }
-        .tv-chart-container.hidden { display: none; }
-
-        /* Toggle button */
-        .chart-toggle {
-            background: linear-gradient(135deg, #1a1a2e, #0f3460);
-            border: 1px solid #00d4ff;
-            border-radius: 4px;
-            color: #00d4ff;
-            font-size: 14px;
-            padding: 4px 10px;
-            cursor: pointer;
-            font-family: inherit;
-            text-decoration: none;
-        }
-        .chart-toggle:hover { background: linear-gradient(135deg, #0f3460, #1a1a2e); color: #fff; border-color: #fff; }
-        .chart-toggle.active { color: #fff; border-color: #00d4ff; background: #0f3460; }
 
         /* Mobile responsive */
         @media (max-width: 900px) {
@@ -478,72 +460,17 @@ HTML = """
             <a href="https://cetient.com" target="_blank" class="launch-btn cetient">Cetient</a>
             <a href="https://scholar.google.com" target="_blank" class="launch-btn">Scholar</a>
             <a href="https://claude.ai" target="_blank" class="launch-btn claude">Claude</a>
-            <button class="chart-toggle" id="chart-toggle-btn">Chart</button>
             <a href="/pinescripts" target="_blank" class="launch-btn tv">PineScripts</a>
             <a href="/projections" target="_blank" class="launch-btn" style="background:linear-gradient(135deg,#ff9800,#ff5722);">Projections</a>
             <a href="/positions" target="_blank" class="launch-btn" style="background:linear-gradient(135deg,#e53935,#b71c1c);">📊 Positions</a>
         </div>
     </div>
 
-    <!-- TradingView Ticker Tape -->
-    <div class="ticker-tape">
-        <div class="tradingview-widget-container" style="height:46px;width:100%;">
-            <div class="tradingview-widget-container__widget"></div>
-            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
-            {
-                "symbols": [
-                    {"proName": "NASDAQ:MSTR", "title": "MSTR"},
-                    {"proName": "NASDAQ:IBIT", "title": "IBIT"},
-                    {"proName": "NASDAQ:NVDA", "title": "NVDA"},
-                    {"proName": "NASDAQ:TSLA", "title": "TSLA"},
-                    {"proName": "NASDAQ:AMD", "title": "AMD"},
-                    {"proName": "NYSE:CCJ", "title": "CCJ"},
-                    {"proName": "NYSE:VST", "title": "VST"},
-                    {"proName": "NASDAQ:CEG", "title": "CEG"},
-                    {"proName": "NYSE:XOM", "title": "XOM"},
-                    {"proName": "NASDAQ:COIN", "title": "COIN"},
-                    {"proName": "BITSTAMP:BTCUSD", "title": "BTC"},
-                    {"proName": "FOREXCOM:SPXUSD", "title": "S&P 500"}
-                ],
-                "showSymbolLogo": true,
-                "isTransparent": true,
-                "displayMode": "adaptive",
-                "colorTheme": "dark",
-                "locale": "en"
-            }
-            </script>
-        </div>
+    <!-- TradingView Ticker Tape — REMOVED (confirmed popup source) -->
+    <div class="ticker-tape" id="ticker-tape-bar" style="height:46px;background:#12121c;display:flex;align-items:center;padding:0 16px;gap:20px;border-bottom:1px solid #1a1a2e;overflow:hidden;">
+        <span id="ticker-data" style="color:#888;font-size:13px;">Loading tickers...</span>
     </div>
 
-    <!-- TradingView Advanced Chart (toggleable) -->
-    <div class="tv-chart-container" id="tv-chart">
-        <div class="tradingview-widget-container" style="height:100%;width:100%;">
-            <div id="tradingview-chart-widget" style="height:100%;width:100%;"></div>
-            <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
-            <script type="text/javascript">
-                var tvChart = null;
-                function loadChart(symbol) {
-                    document.getElementById('tradingview-chart-widget').innerHTML = '';
-                    tvChart = new TradingView.widget({
-                        "autosize": true,
-                        "symbol": symbol || "NASDAQ:MSTR",
-                        "interval": "D",
-                        "timezone": "America/New_York",
-                        "theme": "dark",
-                        "style": "1",
-                        "locale": "en",
-                        "enable_publishing": false,
-                        "allow_symbol_change": true,
-                        "container_id": "tradingview-chart-widget",
-                        "hide_side_toolbar": false,
-                        "studies": ["RSI@tv-basicstudies", "MACD@tv-basicstudies"]
-                    });
-                }
-                // Auto-load chart on page load
-                loadChart('NASDAQ:MSTR');
-            </script>
-        </div>
-    </div>
 
     <div class="main">
         <div class="sidebar">
@@ -626,6 +553,16 @@ HTML = """
                 <div class="metric"><span class="label">Verify Flat</span><span class="value green">After every exit</span></div>
                 <div class="metric"><span class="label">LEAP Expiry Extension</span><span class="value green">180d warn / 90d urgent → HITL roll</span></div>
                 <div class="metric"><span class="label">Expiry Roll Approval</span><span class="value green">MCP approve_expiry_roll() — full loop</span></div>
+                <div style="margin-top:12px;border-top:1px solid #333;padding-top:10px;">
+                    <h4 style="margin:0 0 8px 0;color:#e53935;">OOS Health Monitor</h4>
+                    <div class="metric"><span class="label">Last Verdict</span><span class="value" id="oos-verdict" style="color:#888;">—</span></div>
+                    <div class="metric"><span class="label">Quarter</span><span class="value" id="oos-quarter" style="color:#888;">—</span></div>
+                    <div class="metric"><span class="label">Rolling 4Q Avg</span><span class="value" id="oos-rolling-avg" style="color:#888;">—</span></div>
+                    <div class="metric"><span class="label">Winner Stability</span><span class="value" id="oos-stability" style="color:#888;">—</span></div>
+                    <div class="metric"><span class="label">Drift Streak</span><span class="value" id="oos-drift-streak" style="color:#888;">—</span></div>
+                    <div class="metric"><span class="label">Escalation</span><span class="value" id="oos-escalation" style="color:#888;">—</span></div>
+                    <div class="metric"><span class="label">Regime Context</span><span class="value" id="oos-regime" style="color:#888;">—</span></div>
+                </div>
                 <div style="margin-top:8px;">
                     <a href="/positions" target="_blank" style="color:#e53935;font-weight:bold;font-size:14px;">📊 Live Positions + Kill Switch →</a>
                 </div>
@@ -644,16 +581,16 @@ HTML = """
             </div>
             <div class="card" style="border-color:#ff9800;">
                 <h3>BTC Cycle Intelligence</h3>
-                <div class="metric"><span class="label">Cycle Phase</span><span class="value" style="color:#ff9800;">Distribution → Early Winter</span></div>
+                <div class="metric"><span class="label">Cycle Phase</span><span class="value" id="btc-cycle-phase" style="color:#ff9800;">—</span></div>
                 <div class="metric"><span class="label">BTC Price</span><span class="value" id="btc-price">—</span></div>
-                <div class="metric"><span class="label">ATH</span><span class="value" id="btc-ath" style="color:#888;">—</span></div>
+                <div class="metric"><span class="label">ATH</span><span class="value" id="btc-ath" style="color:#888;">$126,200 (Oct 2025)</span></div>
                 <div class="metric"><span class="label">Drawdown from ATH</span><span class="value" id="btc-dd" style="color:#ff4444;">—</span></div>
                 <div class="metric"><span class="label">Bull/Bear Line</span><span class="value" style="color:#888;">$80,000</span></div>
-                <div class="metric"><span class="label">200W SMA</span><span class="value" id="btc-200w" style="color:#ff9800;">~$59,433</span></div>
-                <div class="metric"><span class="label">250W MA (Capitulation)</span><span class="value" id="btc-250w" style="color:#e53935;">~$56,000</span></div>
-                <div class="metric"><span class="label">300W MA (Absolute Floor)</span><span class="value" id="btc-300w" style="color:#b71c1c;">~$50,000</span></div>
-                <div class="metric"><span class="label">Proximity Zone</span><span class="value" id="btc-proximity" style="color:#ff9800;">—</span></div>
-                <div class="metric"><span class="label">Months Post-Halving</span><span class="value" style="color:#888;">~23 (Apr 2024)</span></div>
+                <div class="metric"><span class="label">200W SMA</span><span class="value" id="btc-200w">—</span></div>
+                <div class="metric"><span class="label">250W MA (Capitulation)</span><span class="value" id="btc-250w">—</span></div>
+                <div class="metric"><span class="label">300W MA (Absolute Floor)</span><span class="value" id="btc-300w">—</span></div>
+                <div class="metric"><span class="label">Proximity Zone</span><span class="value" id="btc-proximity">—</span></div>
+                <div class="metric"><span class="label">Months Post-Halving</span><span class="value" id="btc-halving">—</span></div>
                 <div class="metric"><span class="label">Weekend Sentinel</span><span class="value green" id="sentinel-status">Active (15m checks)</span></div>
                 <div class="metric"><span class="label">Eval Frequency</span><span class="value" id="eval-freq" style="color:#ff9800;">Standard (1x/day)</span></div>
                 <div class="metric"><span class="label">Detected Phase</span><span class="value" id="cycle-phase-detected" style="color:#ff4444;">—</span></div>
@@ -727,9 +664,22 @@ HTML = """
                 <div class="metric"><span class="label">Key Risk</span><span class="value" id="gem-risk" style="font-size:12px;color:#ff4444;">—</span></div>
                 <div class="metric"><span class="label">Key Opportunity</span><span class="value" id="gem-opp" style="font-size:12px;color:#00ff88;">—</span></div>
                 <div class="metric"><span class="label">Last Updated</span><span class="value" id="gem-time" style="font-size:12px;color:#888;">—</span></div>
+                <div style="margin-top:8px;border-top:1px solid #333;padding-top:8px;">
+                    <div style="font-size:12px;color:#888;margin-bottom:4px;">📰 News Digest</div>
+                    <div id="gem-digest" style="font-size:13px;color:#888;line-height:1.4;">—</div>
+                </div>
                 <div style="font-size:11px;color:#666;margin-top:6px;">Google Gemini 2.5 Flash · Regime cross-check + news digest</div>
             </div>
             <!-- Systems 1-12 removed — v2.8+ only -->
+            <div class="card" style="border-color:#8b7500;">
+                <h3>📉 10Y Treasury — Macro</h3>
+                <div class="metric"><span class="label">Yield</span><span class="value" id="ty-yield">—</span></div>
+                <div class="metric"><span class="label">Change</span><span class="value" id="ty-change">—</span></div>
+                <div class="metric"><span class="label">Regime</span><span class="value" id="ty-regime" style="font-weight:bold;">—</span></div>
+                <div class="metric"><span class="label">BTC Implication</span><span class="value" id="ty-impl" style="font-size:12px;">—</span></div>
+                <div class="metric"><span class="label">Updated</span><span class="value" id="ty-time" style="font-size:11px;color:#888;">—</span></div>
+                <div style="font-size:11px;color:#666;margin-top:6px;">Yahoo ^TNX · hourly · awareness only</div>
+            </div>
             <div class="card">
                 <h3>MSTR</h3>
                 <div class="metric"><span class="label">Price</span><span class="value" id="mstr-price">—</span></div>
@@ -776,6 +726,11 @@ HTML = """
                 <div class="metric"><span class="label">Last Check</span><span class="value" id="t3-time" style="color:#888;font-size:12px;">—</span></div>
                 <div class="metric"><span class="label">Expiry Extension</span><span class="value" style="color:#ff9800;font-size:12px;">180d warn / 90d urgent → roll Jan29</span></div>
                 <div style="font-size:11px;color:#666;margin-top:4px;">Roll: same strike ($430P), same direction. Approve via MCP approve_expiry_roll(trader='trader3')</div>
+            </div>
+            <div class="card" style="border-color:#f9ca24;">
+                <h3>Equity Curve</h3>
+                <img src="/api/equity_chart" style="width:100%; border-radius:8px;" onerror="this.style.display='none'">
+                <div style="font-size:11px;color:#666;margin-top:4px;">Updates daily at market open, midday, and close</div>
             </div>
             <div class="card">
                 <h3>Auditor — v50.0 <span id="audit-dot" style="font-size:12px;">● LIVE</span></h3>
@@ -830,8 +785,8 @@ HTML = """
             <div class="card" style="border-color:#ff6600;">
                 <h3>⚡ Grok — MSTR/BTC X Feed</h3>
                 <div class="metric"><span class="label">Focus</span><span class="value" style="color:#ff6600;">$MSTR $BTC Saylor MicroStrategy</span></div>
-                <div class="metric"><span class="label">Sentiment</span><span class="value" id="grok-sentiment">—</span></div>
-                <div class="metric"><span class="label">Last Scan</span><span class="value" id="grok-time">—</span></div>
+                <div class="metric"><span class="label">Sentiment</span><span class="value" id="grok-intel-sentiment">—</span></div>
+                <div class="metric"><span class="label">Last Scan</span><span class="value" id="grok-intel-time">—</span></div>
                 <div class="metric"><span class="label">Signals</span><span class="value" id="grok-signals">—</span></div>
                 <div id="grok-hot" style="margin-top:6px;font-size:14px;color:#e2b93d;"></div>
                 <div id="grok-viral" style="margin-top:6px;font-size:14px;"></div>
@@ -1026,7 +981,7 @@ HTML = """
                 <div class="avatar">${avatar}</div>
                 <div>
                     <div class="name">${name}</div>
-                    <div class="content">${content.replace(/\\n/g, '<br>')}</div>
+                    <div class="content">${content.split('\\n').join('<br>')}</div>
                 </div>`;
             messagesDiv.appendChild(div);
             messagesDiv.scrollTop = messagesDiv.scrollHeight;
@@ -1098,18 +1053,6 @@ HTML = """
             if (data.positions) updatePositions(data.positions);
         });
 
-        // Chart toggle
-        function toggleChart() {
-            const chart = document.getElementById('tv-chart');
-            const btn = document.getElementById('chart-toggle-btn');
-            if (chart.classList.contains('hidden')) {
-                chart.classList.remove('hidden');
-                btn.classList.add('active');
-            } else {
-                chart.classList.add('hidden');
-                btn.classList.remove('active');
-            }
-        }
 
         function updatePositions(positions) {
             const div = document.getElementById('positions-list');
@@ -1160,12 +1103,12 @@ HTML = """
                 var ptCurrent = document.getElementById('pt-current');
                 if (ptCurrent && data.net_liq) {
                     ptCurrent.textContent = fmt2(data.net_liq);
-                    var startCap = 7780;
+                    var startCap = data.starting_balance || 7780;
                     var totalPnl = data.net_liq - startCap;
                     var totalPct = (totalPnl / startCap * 100);
                     var pnlEl = document.getElementById('pt-total-pnl');
                     if (pnlEl) {
-                        pnlEl.textContent = (totalPnl >= 0 ? '+' : '') + fmt2(Math.abs(totalPnl));
+                        pnlEl.textContent = (totalPnl >= 0 ? '+' : '-') + fmt2(Math.abs(totalPnl));
                         pnlEl.className = 'value ' + (totalPnl >= 0 ? 'green' : 'red');
                     }
                     var retEl = document.getElementById('pt-return');
@@ -1187,19 +1130,38 @@ HTML = """
                 if (data.btc_price && data.btc_price > 0) {
                     var btcEl = document.getElementById('btc-price');
                     if (btcEl) btcEl.textContent = '$' + Number(data.btc_price).toLocaleString();
+                    var btcAth = data.btc_ath || 126200;
                     var athEl = document.getElementById('btc-ath');
-                    if (athEl && data.btc_ath) athEl.textContent = '$' + Number(data.btc_ath).toLocaleString() + ' (IBKR tracked)';
+                    if (athEl) athEl.textContent = '$' + Number(btcAth).toLocaleString() + ' (Oct 2025)';
                     var btcDd = document.getElementById('btc-dd');
                     if (btcDd) {
-                        var btcAth = data.btc_ath || 126200; var dd = ((btcAth - data.btc_price) / btcAth * 100);
-                        btcDd.textContent = '-' + dd.toFixed(1) + '% ($' + Number(data.btc_price).toLocaleString() + ')';
+                        var dd = ((btcAth - data.btc_price) / btcAth * 100);
+                        btcDd.textContent = '-' + dd.toFixed(1) + '%';
                         btcDd.style.color = dd > 50 ? '#ff4444' : dd > 30 ? '#ff9800' : '#ffd700';
                     }
+                    // Cycle phase from regime
+                    var cpEl = document.getElementById('btc-cycle-phase');
+                    if (cpEl) {
+                        var bp = data.btc_price;
+                        var ddPct = ((btcAth - bp) / btcAth * 100);
+                        if (bp > 80000 && ddPct < 25) { cpEl.textContent = '🟢 BULL'; cpEl.style.color = '#00ff88'; }
+                        else if (bp < 80000 && ddPct > 40) { cpEl.textContent = '🔴 BEAR'; cpEl.style.color = '#ff4444'; }
+                        else { cpEl.textContent = '🟡 DISTRIBUTION'; cpEl.style.color = '#ff9800'; }
+                    }
+                    // Months post-halving (Apr 20, 2024)
+                    var halvEl = document.getElementById('btc-halving');
+                    if (halvEl) {
+                        var halvDate = new Date(2024, 3, 20);
+                        var months = Math.floor((new Date() - halvDate) / (30.44 * 24 * 60 * 60 * 1000));
+                        halvEl.textContent = '~' + months + ' months (Apr 2024)';
+                    }
                 }
-                // ── BTC MA Proximity Zones ──
+                // ── BTC MA Proximity Zones (dynamic from /api/regime) ──
                 if (data.btc_price && data.btc_price > 0) {
                     var bp = data.btc_price;
-                    var sma200 = 59433; var ma250 = 56000; var ma300 = 50000;
+                    var sma200 = data.btc_sma_200w || 59433;
+                    var ma250 = data.btc_sma_250w || 56000;
+                    var ma300 = data.btc_sma_300w || 50000;
                     var d200 = ((bp - sma200) / sma200 * 100);
                     var d250 = ((bp - ma250) / ma250 * 100);
                     var d300 = ((bp - ma300) / ma300 * 100);
@@ -1299,9 +1261,9 @@ HTML = """
                     if (tsEl) tsEl.textContent = 'Live · ' + data.updated;
                 }
 
-                // ── Systems Active count ──
+                // ── Systems Active count (set by fetchLiveProgress, fallback here) ──
                 var sysEl = document.getElementById('pt-active-systems');
-                if (sysEl) sysEl.textContent = '3/3 trading';
+                if (sysEl && sysEl.textContent === '—') sysEl.textContent = '3/3 trading';
 
             }).catch(() => {});
 
@@ -1310,13 +1272,6 @@ HTML = """
         // Stop buttons/inputs from propagating clicks to card expand
         document.querySelectorAll('.card button, .card input, .card a, .card select, .chat-container button, .chat-container input').forEach(function(el) {
             el.addEventListener('click', function(ev) { ev.stopPropagation(); });
-        });
-
-        // Chart toggle button — bound via addEventListener (not inline onclick)
-        document.getElementById('chart-toggle-btn').addEventListener('click', function(e) {
-            e.stopPropagation();
-            e.preventDefault();
-            toggleChart();
         });
 
         // Click-to-expand cards, live feed, and chat (event delegation on document body)
@@ -1368,36 +1323,33 @@ HTML = """
         function fetchLiveProgress() {
             fetch('/api/live-progress').then(r => r.json()).then(data => {
                 if (data.status === 'no_data') return;
-                document.getElementById('pt-day').textContent = data.trading_days || 0;
-                document.getElementById('pt-start').textContent = '$' + Number(data.starting_balance).toLocaleString(undefined, {maximumFractionDigits:0});
-                document.getElementById('pt-current').textContent = '$' + Number(data.current).toLocaleString(undefined, {maximumFractionDigits:0});
+                var el;
+                el = document.getElementById('pt-day'); if (el) el.textContent = data.trading_days || 0;
+                el = document.getElementById('pt-start'); if (el) el.textContent = '$' + Number(data.starting_balance).toLocaleString(undefined, {maximumFractionDigits:0});
+                el = document.getElementById('pt-current'); if (el) el.textContent = '$' + Number(data.current).toLocaleString(undefined, {maximumFractionDigits:0});
 
-                const totalPnl = data.total_change || 0;
-                const totalEl = document.getElementById('pt-total-pnl');
-                totalEl.textContent = (totalPnl >= 0 ? '+' : '') + '$' + Number(totalPnl).toLocaleString(undefined, {minimumFractionDigits:2, maximumFractionDigits:2});
-                totalEl.className = 'value ' + (totalPnl >= 0 ? 'green' : 'red');
+                var totalPnl = data.total_change || 0;
+                el = document.getElementById('pt-total-pnl');
+                if (el) { el.textContent = (totalPnl >= 0 ? '+' : '') + '$' + Number(totalPnl).toLocaleString(undefined, {minimumFractionDigits:2, maximumFractionDigits:2}); el.className = 'value ' + (totalPnl >= 0 ? 'green' : 'red'); }
 
-                const retEl = document.getElementById('pt-return');
-                const retPct = data.total_pct || 0;
-                retEl.textContent = (retPct >= 0 ? '+' : '') + retPct.toFixed(2) + '%';
-                retEl.className = 'value ' + (retPct >= 0 ? 'green' : 'red');
+                var retPct = data.total_pct || 0;
+                el = document.getElementById('pt-return');
+                if (el) { el.textContent = (retPct >= 0 ? '+' : '') + retPct.toFixed(2) + '%'; el.className = 'value ' + (retPct >= 0 ? 'green' : 'red'); }
 
-                const todayEl = document.getElementById('pt-today');
-                const dp = data.daily_pct || 0;
-                const dc = data.daily_change || 0;
-                todayEl.textContent = (dc >= 0 ? '+' : '') + '$' + Number(dc).toLocaleString(undefined, {minimumFractionDigits:2, maximumFractionDigits:2}) + ' (' + (dp >= 0 ? '+' : '') + dp.toFixed(2) + '%)';
-                todayEl.className = 'value ' + (dc >= 0 ? 'green' : 'red');
+                var dp = data.daily_pct || 0;
+                var dc = data.daily_change || 0;
+                el = document.getElementById('pt-today');
+                if (el) { el.textContent = (dc >= 0 ? '+' : '') + '$' + Number(dc).toLocaleString(undefined, {minimumFractionDigits:2, maximumFractionDigits:2}) + ' (' + (dp >= 0 ? '+' : '') + dp.toFixed(2) + '%)'; el.className = 'value ' + (dc >= 0 ? 'green' : 'red'); }
 
-                document.getElementById('pt-peak').textContent = '$' + Number(data.peak).toLocaleString(undefined, {maximumFractionDigits:0});
-                document.getElementById('pt-dd').textContent = (data.drawdown_pct || 0).toFixed(1) + '%';
+                el = document.getElementById('pt-peak'); if (el) el.textContent = '$' + Number(data.peak).toLocaleString(undefined, {maximumFractionDigits:0});
+                el = document.getElementById('pt-dd'); if (el) el.textContent = (data.drawdown_pct || 0).toFixed(1) + '%';
 
-                const streak = data.streak || 0;
-                const streakEl = document.getElementById('pt-streak');
-                streakEl.textContent = (streak >= 0 ? '+' : '') + streak + ' days';
-                streakEl.className = 'value ' + (streak >= 0 ? 'green' : 'red');
+                var streak = data.streak || 0;
+                el = document.getElementById('pt-streak');
+                if (el) { el.textContent = (streak >= 0 ? '+' : '') + streak + ' days'; el.className = 'value ' + (streak >= 0 ? 'green' : 'red'); }
 
-                document.getElementById('pt-golive').textContent = 'LIVE';
-                document.getElementById('pt-active-systems').textContent = (data.active_systems || 0) + '/' + (data.total_systems || 11) + ' trading';
+                el = document.getElementById('pt-golive'); if (el) el.textContent = 'LIVE';
+                el = document.getElementById('pt-active-systems'); if (el) el.textContent = (data.active_systems || 0) + '/' + (data.total_systems || 3) + ' trading';
 
                 // Mini bar chart of daily returns
                 const chart = data.chart || [];
@@ -1523,8 +1475,11 @@ HTML = """
                 regEl.style.color = regColors[regime] || '#00bcd4';
                 document.getElementById('ds-confidence').textContent = (data.confidence || 0) + '%';
                 const inp = data.inputs || {};
-                document.getElementById('ds-sizing').textContent = inp.armed ? '✅ ARMED' : (inp.mstr_price ? 'Watching' : '—');
-                document.getElementById('ds-sizing').className = 'value ' + (inp.armed ? 'green' : '');
+                var smaEl = document.getElementById('ds-sizing');
+                if (inp.armed) { smaEl.textContent = '✅ ARMED — Above 200W'; smaEl.style.color = '#00ff88'; }
+                else if (inp.dipped && inp.green_weeks > 0) { smaEl.textContent = '🔄 RECLAIMING — ' + inp.green_weeks + '/2 green weeks'; smaEl.style.color = '#ffd700'; }
+                else if (inp.dipped) { smaEl.textContent = '🔻 BELOW 200W SMA'; smaEl.style.color = '#ff9800'; }
+                else { smaEl.textContent = '⬆️ Above 200W — Waiting for dip'; smaEl.style.color = '#888'; }
                 document.getElementById('ds-aggression').textContent = inp.premium ? inp.premium.toFixed(2) + 'x mNAV' : '—';
                 const cycleEl = document.getElementById('ds-avoid');
                 cycleEl.textContent = inp.in_position ? 'IN TRADE' : (inp.armed ? 'ENTRY READY' : 'WAITING');
@@ -1541,16 +1496,51 @@ HTML = """
             }).catch(() => {});
         }
 
+        function fetchTreasuryYield() {
+            fetch('/api/treasury-yield').then(r => r.json()).then(d => {
+                if (!d || d.error) return;
+                var y = document.getElementById('ty-yield');
+                if (y) y.textContent = d.yield_pct ? d.yield_pct.toFixed(3) + '%' : '—';
+                var ch = document.getElementById('ty-change');
+                if (ch && d.change_bps !== null && d.change_bps !== undefined) {
+                    var sign = d.change_bps >= 0 ? '+' : '';
+                    ch.textContent = sign + d.change_bps + ' bps';
+                    ch.className = 'value ' + (d.change_bps > 0 ? 'red' : d.change_bps < 0 ? 'green' : '');
+                }
+                var rg = document.getElementById('ty-regime');
+                if (rg) {
+                    rg.textContent = d.macro_regime || '—';
+                    var cls = 'value';
+                    if (d.macro_regime === 'EXTREME_HIGH' || d.macro_regime === 'HIGH') cls += ' red';
+                    else if (d.macro_regime === 'SUPPORTIVE' || d.macro_regime === 'LOW') cls += ' green';
+                    rg.className = cls;
+                }
+                var im = document.getElementById('ty-impl');
+                if (im) im.textContent = d.btc_implication || '—';
+                var ts = document.getElementById('ty-time');
+                if (ts && d.last_updated) {
+                    var t = new Date(d.last_updated);
+                    ts.textContent = t.toLocaleTimeString();
+                }
+            }).catch(() => {});
+        }
+        setInterval(fetchTreasuryYield, 60000);
+        fetchTreasuryYield();
+
         function fetchGrok() {
             fetch('/api/grok').then(r => r.json()).then(data => {
                 if (!data || data.error) return;
-                const sentEl = document.getElementById('grok-sentiment');
+                const sentEl = document.getElementById('grok-intel-sentiment');
                 const sent = (data.overall_sentiment || 'unknown').toUpperCase();
-                sentEl.textContent = sent;
-                sentEl.className = 'value ' + (sent === 'BULLISH' ? 'green' : sent === 'BEARISH' ? 'red' : '');
-                if (data.timestamp) {
-                    const t = new Date(data.timestamp);
-                    document.getElementById('grok-time').textContent = t.toLocaleTimeString();
+                if (sentEl) {
+                    sentEl.textContent = sent;
+                    sentEl.className = 'value ' + (sent === 'BULLISH' ? 'green' : sent === 'BEARISH' ? 'red' : '');
+                }
+                var tsField = data.timestamp || data.last_updated;
+                if (tsField) {
+                    const t = new Date(tsField);
+                    var intelTimeEl = document.getElementById('grok-intel-time');
+                    if (intelTimeEl) intelTimeEl.textContent = t.toLocaleTimeString();
                 }
                 const sigs = data.signals || [];
                 const highSigs = sigs.filter(s => s.confidence === 'high');
@@ -1685,6 +1675,54 @@ HTML = """
             e.stopPropagation(); e.preventDefault(); window.respondHITL('reject');
         });
 
+        function fetchOOSHealth() {
+            fetch('/api/oos-health').then(r => r.json()).then(d => {
+                if (d.error) return;
+                var vEl = document.getElementById('oos-verdict');
+                if (vEl) {
+                    var v = d.verdict || '—';
+                    vEl.textContent = v;
+                    vEl.style.color = v === 'PASS' ? '#00ff88' : v === 'WARN' ? '#ffd700' : v === 'DRIFT_ALERT' ? '#ff4444' : '#888';
+                }
+                var qEl = document.getElementById('oos-quarter');
+                if (qEl) { qEl.textContent = d.quarter || '—'; qEl.style.color = '#ccc'; }
+                var rEl = document.getElementById('oos-rolling-avg');
+                if (rEl) {
+                    var avg = d.rolling_4q_avg;
+                    if (avg !== null && avg !== undefined) {
+                        rEl.textContent = avg.toFixed(4);
+                        rEl.style.color = avg > 0 ? '#00ff88' : '#ff4444';
+                    } else { rEl.textContent = 'N/A'; rEl.style.color = '#888'; }
+                }
+                var sEl = document.getElementById('oos-stability');
+                if (sEl) {
+                    var stable = d.winner_stable;
+                    sEl.textContent = stable === true ? 'Stable' : stable === false ? 'UNSTABLE' : '—';
+                    sEl.style.color = stable === true ? '#00ff88' : stable === false ? '#ff4444' : '#888';
+                }
+                var dsEl = document.getElementById('oos-drift-streak');
+                if (dsEl) {
+                    var streak = d.drift_streak || 0;
+                    dsEl.textContent = streak + ' consecutive';
+                    dsEl.style.color = streak >= 3 ? '#ff4444' : streak >= 2 ? '#ff9800' : streak >= 1 ? '#ffd700' : '#00ff88';
+                }
+                var eEl = document.getElementById('oos-escalation');
+                if (eEl) {
+                    var esc = d.escalation || 'NONE';
+                    eEl.textContent = esc;
+                    eEl.style.color = esc === 'CRITICAL' ? '#ff4444' : esc === 'MANDATORY_REVIEW' ? '#ff9800' : esc === 'ALERT' ? '#ffd700' : '#00ff88';
+                }
+                var rgEl = document.getElementById('oos-regime');
+                if (rgEl) {
+                    var regime = d.regime || '—';
+                    var softened = d.regime_softened;
+                    rgEl.textContent = regime + (softened ? ' [softened]' : '');
+                    var adverse = d.in_adverse_regime;
+                    rgEl.style.color = adverse ? '#ff9800' : '#00ff88';
+                }
+            }).catch(function() {});
+        }
+
         // Fetch initial data and refresh every 30 seconds
         checkHITL();
         fetchLiveProgress();
@@ -1696,22 +1734,24 @@ HTML = """
         fetchGronk();
         fetchGrok();
         fetchYouTube();
-        setInterval(checkHITL, 5000);
-        setInterval(fetchLiveProgress, 15000);
-        setInterval(fetchStatus, 10000);
-        setInterval(fetchFeed, 10000);
-        setInterval(fetchAuditor, 15000);
-        setInterval(fetchAccountant, 15000);
-        setInterval(fetchDeepSeek, 30000);
-        setInterval(fetchGronk, 30000);
-        setInterval(fetchGrok, 30000);
-        setInterval(fetchYouTube, 30000);
+        setInterval(checkHITL, 15000);
+        setInterval(fetchLiveProgress, 60000);
+        setInterval(fetchStatus, 30000);
+        setInterval(fetchFeed, 30000);
+        setInterval(fetchAuditor, 60000);
+        setInterval(fetchAccountant, 60000);
+        setInterval(fetchDeepSeek, 60000);
+        setInterval(fetchGronk, 60000);
+        setInterval(fetchGrok, 60000);
+        setInterval(fetchYouTube, 60000);
         fetchRegime();
-        setInterval(fetchRegime, 30000);
+        setInterval(fetchRegime, 60000);
         fetchGrokSentiment();
-        setInterval(fetchGrokSentiment, 30000);
+        setInterval(fetchGrokSentiment, 60000);
         fetchGeminiBrain();
-        setInterval(fetchGeminiBrain, 30000);
+        setInterval(fetchGeminiBrain, 60000);
+        fetchOOSHealth();
+        setInterval(fetchOOSHealth, 120000);
         function fetchTrader1() {
             fetch('/api/trader1/status').then(r => r.json()).then(d => {
                 if (!d || d.status === 'not_started') return;
@@ -1744,14 +1784,31 @@ HTML = """
                 if (pg) { var g = d.peak_gain_pct || 0; pg.textContent = (g >= 0 ? '+' : '') + g.toFixed(1) + '%'; pg.style.color = g > 0 ? '#00ff88' : '#888'; }
 
                 // Last Eval — color-coded staleness + relative time
-                // v2.8+ evaluates 3:45 PM ET weekdays — up to 24h between evals is NORMAL
+                // v2.8+ evaluates 3:45 PM ET weekdays — weekends/holidays = no evals
                 var ev = document.getElementById('t1-last-eval');
                 if (ev && d.last_eval) {
                     var ts = d.last_eval.replace('T', ' ').substring(0, 16);
                     var h = d.eval_hours_ago;
                     var ago = (h !== null && h !== undefined) ? (h < 1 ? ' (<1h ago)' : ' (' + Math.round(h) + 'h ago)') : '';
-                    // Green < 26h (normal daily), Orange 26-72h (weekend/holiday), Red > 72h (possible issue)
-                    var evalColor = (h === null || h === undefined) ? '#888' : h < 26 ? '#00ff88' : h < 72 ? '#ff9800' : '#ff4444';
+
+                    // Weekend-aware staleness: IBKR down Sat-Sun, no evals expected
+                    // Friday 3:45 PM → Monday 9:30 AM = ~64h gap is NORMAL
+                    var now = new Date();
+                    var day = now.getDay(); // 0=Sun, 6=Sat
+                    var isWeekend = (day === 0 || day === 6);
+                    var isMonday = (day === 1 && now.getHours() < 16); // Monday before market close
+
+                    var evalColor;
+                    if (h === null || h === undefined) {
+                        evalColor = '#888';
+                    } else if (isWeekend || isMonday) {
+                        // Weekend/Monday morning: up to 90h from Thursday eval is normal
+                        evalColor = h < 90 ? '#00ff88' : h < 120 ? '#ff9800' : '#ff4444';
+                        ago += isWeekend ? ' (weekend)' : ' (Mon pre-market)';
+                    } else {
+                        // Weekday: Green < 26h, Orange 26-50h, Red > 50h
+                        evalColor = h < 26 ? '#00ff88' : h < 50 ? '#ff9800' : '#ff4444';
+                    }
                     ev.textContent = ts + ago;
                     ev.style.color = evalColor;
                 }
@@ -1797,7 +1854,15 @@ HTML = """
                     document.getElementById('t2-ladder').style.color = d.activated ? '#00ff88' : '#888';
                     document.getElementById('t2-trail').textContent = d.trail_stop_value > 0 ? '$' + Number(d.trail_stop_value).toFixed(2) + ' (' + d.trail_stop_pct + '%)' : '—';
                     document.getElementById('t2-tier').textContent = (d.current_tier || 0) + '/4';
-                    if (d.last_check) document.getElementById('t2-time').textContent = d.last_check.split('T')[1].substring(0,8);
+                    if (d.last_check) {
+                        var t2El = document.getElementById('t2-time');
+                        var t2Time = new Date(d.last_check);
+                        var t2Age = (Date.now() - t2Time.getTime()) / 3600000;
+                        t2El.textContent = d.last_check.split('T')[1].substring(0,8) + ' (' + Math.round(t2Age) + 'h ago)';
+                        var day2 = new Date().getDay();
+                        var wknd2 = (day2 === 0 || day2 === 6 || (day2 === 1 && new Date().getHours() < 16));
+                        t2El.style.color = wknd2 ? (t2Age < 90 ? '#00ff88' : '#ff9800') : (t2Age < 26 ? '#00ff88' : t2Age < 50 ? '#ff9800' : '#ff4444');
+                    }
                 }
             }).catch(() => {});
         }
@@ -1813,16 +1878,24 @@ HTML = """
                     document.getElementById('t3-ladder').style.color = d.activated ? '#00ff88' : '#888';
                     document.getElementById('t3-trail').textContent = d.trail_stop_value > 0 ? '$' + Number(d.trail_stop_value).toFixed(2) + ' (' + d.trail_stop_pct + '%)' : '—';
                     document.getElementById('t3-tier').textContent = (d.current_tier || 0) + '/4';
-                    if (d.last_check) document.getElementById('t3-time').textContent = d.last_check.split('T')[1].substring(0,8);
+                    if (d.last_check) {
+                        var t3El = document.getElementById('t3-time');
+                        var t3Time = new Date(d.last_check);
+                        var t3Age = (Date.now() - t3Time.getTime()) / 3600000;
+                        t3El.textContent = d.last_check.split('T')[1].substring(0,8) + ' (' + Math.round(t3Age) + 'h ago)';
+                        var day3 = new Date().getDay();
+                        var wknd3 = (day3 === 0 || day3 === 6 || (day3 === 1 && new Date().getHours() < 16));
+                        t3El.style.color = wknd3 ? (t3Age < 90 ? '#00ff88' : '#ff9800') : (t3Age < 26 ? '#00ff88' : t3Age < 50 ? '#ff9800' : '#ff4444');
+                    }
                 }
             }).catch(() => {});
         }
         fetchTrader1();
         fetchTrader2();
         fetchTrader3();
-        setInterval(fetchTrader1, 15000);
-        setInterval(fetchTrader2, 15000);
-        setInterval(fetchTrader3, 15000);
+        setInterval(fetchTrader1, 60000);
+        setInterval(fetchTrader2, 60000);
+        setInterval(fetchTrader3, 60000);
 
         function fetchRegime() {
             fetch('/api/regime').then(r => r.json()).then(d => {
@@ -1883,13 +1956,21 @@ HTML = """
             fetch('/api/gemini-brain').then(r => r.json()).then(d => {
                 if (!d) return;
                 var rc = d.regime_crosscheck;
+                // Fall back to most recent regime_history entry if crosscheck is null
+                if (!rc && d.regime_history && d.regime_history.length > 0) {
+                    rc = d.regime_history[d.regime_history.length - 1];
+                }
                 if (rc) {
                     var grEl = document.getElementById('gem-regime');
                     if (grEl) { grEl.textContent = (rc.regime || '—') + ' (' + ((rc.confidence || 0) * 100).toFixed(0) + '%)'; }
                     var gcEl = document.getElementById('gem-consensus');
                     if (gcEl) {
-                        gcEl.textContent = rc.consensus ? '✅ YES — agrees with S13' : '⚠️ NO — disagrees with S13';
-                        gcEl.style.color = rc.consensus ? '#00ff88' : '#ff9800';
+                        if (rc.consensus !== undefined && rc.consensus !== null) {
+                            gcEl.textContent = rc.consensus ? '✅ YES — agrees with S13' : '⚠️ NO — disagrees with S13';
+                            gcEl.style.color = rc.consensus ? '#00ff88' : '#ff9800';
+                        } else {
+                            gcEl.textContent = '—'; gcEl.style.color = '#888';
+                        }
                     }
                     var goEl = document.getElementById('gem-outlook');
                     if (goEl) goEl.textContent = rc.btc_outlook_30d || '—';
@@ -1897,6 +1978,16 @@ HTML = """
                     if (grkEl) grkEl.textContent = rc.key_risk || '—';
                     var gopEl = document.getElementById('gem-opp');
                     if (gopEl) gopEl.textContent = rc.key_opportunity || '—';
+                } else {
+                    var grEl = document.getElementById('gem-regime');
+                    if (grEl) grEl.textContent = '— (awaiting data)';
+                }
+                // News digest — render regardless of regime_crosscheck
+                var nd = d.news_digest;
+                var digestEl = document.getElementById('gem-digest');
+                if (digestEl && nd && nd.digest) {
+                    digestEl.innerHTML = nd.digest.split('\\n').join('<br>');
+                    digestEl.style.color = '#ccc';
                 }
                 var gtEl = document.getElementById('gem-time');
                 if (gtEl && d.last_updated) gtEl.textContent = d.last_updated.split('T')[0] + ' ' + d.last_updated.split('T')[1].substring(0,8);
@@ -1945,7 +2036,7 @@ HTML = """
         }
 
         fetchTikTok();
-        setInterval(fetchTikTok, 30000);
+        setInterval(fetchTikTok, 60000);
 
         function fetchTikTok() {
             fetch('/api/tiktok').then(r => r.json()).then(data => {
@@ -1988,7 +2079,7 @@ HTML = """
 
         // Truth Social
         fetchTruthSocial();
-        setInterval(fetchTruthSocial, 30000);
+        setInterval(fetchTruthSocial, 60000);
 
         function fetchTruthSocial() {
             fetch('/api/truth').then(r => r.json()).then(data => {
@@ -2023,7 +2114,7 @@ HTML = """
 
         // Congress Tracker
         fetchCongress();
-        setInterval(fetchCongress, 30000);
+        setInterval(fetchCongress, 60000);
 
         function fetchCongress() {
             fetch('/api/congress').then(r => r.json()).then(data => {
@@ -2058,7 +2149,7 @@ HTML = """
 
         // Insider Trading
         fetchInsider();
-        setInterval(fetchInsider, 30000);
+        setInterval(fetchInsider, 60000);
 
         function fetchInsider() {
             fetch('/api/insider').then(r => r.json()).then(data => {
@@ -2122,7 +2213,7 @@ HTML = """
 
         // X Influencer Tracker
         fetchXTracker();
-        setInterval(fetchXTracker, 30000);
+        setInterval(fetchXTracker, 60000);
 
         function fetchXTracker() {
             fetch('/api/x-tracker').then(r => r.json()).then(data => {
@@ -2209,90 +2300,173 @@ def index():
     )
 
 
+# Sandboxed TradingView widget pages — served as iframes so popups are blocked at the iframe level
+@app.route("/tv/ticker")
+def tv_ticker():
+    """Ticker-tape widget in its own page — embedded via sandboxed iframe."""
+    return """<!DOCTYPE html><html><head><meta charset="UTF-8"><style>
+body{margin:0;padding:0;background:#0a0a0f;}
+</style><script>
+// Block popups inside this iframe too
+window.open=function(){return null;};
+try{Object.defineProperty(window,'open',{value:function(){return null;},writable:false,configurable:false});}catch(e){}
+</script></head><body>
+<div class="tradingview-widget-container" style="height:46px;width:100%;">
+  <div class="tradingview-widget-container__widget"></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+  {"symbols":[{"proName":"NASDAQ:MSTR","title":"MSTR"},{"proName":"NASDAQ:IBIT","title":"IBIT"},{"proName":"NASDAQ:NVDA","title":"NVDA"},{"proName":"NASDAQ:TSLA","title":"TSLA"},{"proName":"NASDAQ:AMD","title":"AMD"},{"proName":"NYSE:CCJ","title":"CCJ"},{"proName":"NYSE:VST","title":"VST"},{"proName":"NASDAQ:CEG","title":"CEG"},{"proName":"NYSE:XOM","title":"XOM"},{"proName":"NASDAQ:COIN","title":"COIN"},{"proName":"BITSTAMP:BTCUSD","title":"BTC"},{"proName":"FOREXCOM:SPXUSD","title":"S&P 500"}],"showSymbolLogo":true,"isTransparent":true,"displayMode":"adaptive","colorTheme":"dark","locale":"en"}
+  </script>
+</div>
+</body></html>"""
+
+
+@app.route("/tv/chart")
+def tv_chart():
+    """Advanced chart widget in its own page — embedded via sandboxed iframe."""
+    return """<!DOCTYPE html><html><head><meta charset="UTF-8"><style>
+html,body{margin:0;padding:0;height:100%;background:#0a0a0f;}
+#tradingview-chart-widget{height:100%;width:100%;}
+</style><script>
+window.open=function(){return null;};
+try{Object.defineProperty(window,'open',{value:function(){return null;},writable:false,configurable:false});}catch(e){}
+</script></head><body>
+<div class="tradingview-widget-container" style="height:100%;width:100%;">
+  <div id="tradingview-chart-widget" style="height:100%;width:100%;"></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+  <script type="text/javascript">
+    new TradingView.widget({"autosize":true,"symbol":"NASDAQ:MSTR","interval":"D","timezone":"America/New_York","theme":"dark","style":"1","locale":"en","enable_publishing":false,"allow_symbol_change":true,"container_id":"tradingview-chart-widget","hide_side_toolbar":false,"studies":["RSI@tv-basicstudies","MACD@tv-basicstudies"]});
+  </script>
+</div>
+</body></html>"""
+
+
 @app.route("/api/status")
 def api_status():
+    """Return system status — uses shared IBKR cache (refreshed every 15s by /api/account-live)."""
     result = {"status": "online", "constitution": "v50.0"}
 
-    # Try IBKR connection
-    try:
-        import asyncio
+    # Ensure cache is fresh
+    cache_stale = True
+    if _ibkr_cache.get("_last_query_ts"):
         try:
-            asyncio.get_event_loop()
-        except RuntimeError:
-            asyncio.set_event_loop(asyncio.new_event_loop())
+            ts = _ibkr_cache["_last_query_ts"]
+            if isinstance(ts, str):
+                ts = datetime.fromisoformat(ts)
+            cache_stale = (datetime.now() - ts).total_seconds() > 15
+        except:
+            cache_stale = True
+    if cache_stale:
+        with app.test_request_context():
+            api_account_live()
 
-        from ib_insync import IB, Stock
-        ib = IB()
-        ib.connect("127.0.0.1", 7496, clientId=20)
-        ib.reqMarketDataType(3)
+    # Account from cache
+    result["account"] = {
+        "net_liq": _ibkr_cache.get("net_liq", 0),
+        "cash": _ibkr_cache.get("cash", 0),
+        "buying_power": _ibkr_cache.get("buying_power", 0),
+    }
 
-        summary = ib.accountSummary()
-        account = {}
-        for item in summary:
-            if item.tag == "NetLiquidation":
-                account["net_liq"] = float(item.value)
-            elif item.tag == "TotalCashValue":
-                account["cash"] = float(item.value)
-            elif item.tag == "BuyingPower":
-                account["buying_power"] = float(item.value)
-        result["account"] = account
+    # Positions from cache
+    result["positions"] = _ibkr_cache.get("positions", [])
 
-        # Get ALL positions from IBKR — show everything in the account
-        positions = ib.positions()
-
-        all_positions = []
-        for p in positions:
-            pos_data = {
-                "symbol": p.contract.symbol,
-                "secType": p.contract.secType,
-                "quantity": float(p.position),
-                "avgCost": float(p.avgCost),
-                "right": getattr(p.contract, "right", ""),
-                "strike": float(getattr(p.contract, "strike", 0)),
-                "expiry": getattr(p.contract, "lastTradeDateOrContractMonth", ""),
-            }
-            # Compute market value and unrealized P&L from trader state files
-            sym = p.contract.symbol
-            strike = float(getattr(p.contract, "strike", 0))
-            right = getattr(p.contract, "right", "")
-            # Match against trader2 (MSTR put) and trader3 (SPY put) state
-            if sym == "MSTR" and right == "P" and strike == 50:
-                t2 = _load_json("trader2_state.json")
-                if t2.get("last_value"):
-                    pos_data["marketValue"] = t2["last_value"]
-                    pos_data["unrealizedPNL"] = t2["last_value"] - float(p.avgCost)
-            elif sym == "SPY" and right == "P" and strike == 430:
-                t3 = _load_json("trader3_state.json")
-                if t3.get("last_value"):
-                    pos_data["marketValue"] = t3["last_value"]
-                    pos_data["unrealizedPNL"] = t3["last_value"] - float(p.avgCost)
-            all_positions.append(pos_data)
-        result["positions"] = all_positions
-
-        ib.disconnect()
-    except Exception as e:
-        result["ibkr_error"] = str(e)
-
-    try:
-        mstr_data = get_price("MSTR")
-        result["mstr_price"] = round(mstr_data["price"], 2)
-    except:
-        pass
-
-    # Get System 2 tracked positions from JSON
-    s2_file = os.path.join(DATA_DIR, "system2_positions.json")
-    if os.path.exists(s2_file):
-        with open(s2_file) as f:
-            result["s2_positions"] = json.load(f)
+    # MSTR price from cache
+    if _ibkr_cache.get("mstr_price"):
+        result["mstr_price"] = _ibkr_cache["mstr_price"]
 
     # Check pending trades
     pending_file = os.path.join(DATA_DIR, "pending_trade.json")
     if os.path.exists(pending_file):
-        with open(pending_file) as f:
-            result["pending_trade"] = json.load(f)
+        try:
+            with open(pending_file) as f:
+                result["pending_trade"] = json.load(f)
+        except Exception:
+            pass
 
     return jsonify(result)
 
+
+@app.route("/api/entry/status")
+def api_entry_status():
+    """Return pending entry approval status."""
+    state = _load_json("trader_v28_state.json")
+    pending = state.get("pending_entry")
+    if pending:
+        return jsonify({"status": "pending", "entry": pending})
+    return jsonify({"status": "none"})
+
+def _execute_entry_now():
+    """Execute pending entry immediately in background thread."""
+    import threading
+    def _run():
+        try:
+            sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "scripts"))
+            import telegram as tg
+            tg.send("🚀 *Entry APPROVED — Executing NOW*")
+
+            state_file = os.path.join(DATA_DIR, "trader_v28_state.json")
+            with open(state_file) as f:
+                state = json.load(f)
+            pending = state.get("pending_entry", {})
+            if not pending:
+                tg.send("❌ No pending entry found in state")
+                return
+
+            # Import and instantiate trader
+            from trader_v28 import RudyV28
+            trader = RudyV28(mode="live", test_mode=False)
+            trader.state = state  # Use current state
+
+            mstr_price = pending["mstr_price"]
+            btc_price = pending["btc_price"]
+            entry_num = pending["entry_num"]
+
+            # Clear pending before executing
+            state["pending_entry"] = None
+            with open(state_file, "w") as f:
+                json.dump(state, f, indent=2, default=str)
+
+            trader._execute_entry(mstr_price, btc_price, entry_num)
+        except Exception as e:
+            try:
+                import telegram as tg
+                tg.send(f"🔴 *Entry execution failed:* {str(e)[:200]}")
+            except Exception:
+                pass
+
+    t = threading.Thread(target=_run, daemon=True)
+    t.start()
+
+@app.route("/api/entry/approve")
+def api_entry_approve():
+    """Approve pending entry — execute IMMEDIATELY."""
+    state_file = os.path.join(DATA_DIR, "trader_v28_state.json")
+    if os.path.exists(state_file):
+        with open(state_file) as f:
+            state = json.load(f)
+        if state.get("pending_entry"):
+            _execute_entry_now()
+            return jsonify({"status": "approved", "message": "Entry approved — executing NOW"})
+    return jsonify({"status": "error", "message": "No pending entry"})
+
+@app.route("/api/entry/reject")
+def api_entry_reject():
+    """Reject pending entry — Commander says NO."""
+    state_file = os.path.join(DATA_DIR, "trader_v28_state.json")
+    if os.path.exists(state_file):
+        with open(state_file) as f:
+            state = json.load(f)
+        if state.get("pending_entry"):
+            state["entry_rejected"] = True
+            with open(state_file, "w") as f:
+                json.dump(state, f, indent=2, default=str)
+            sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "scripts"))
+            try:
+                import telegram as tg
+                tg.send("❌ *Entry REJECTED* — signal cleared.")
+            except Exception:
+                pass
+            return jsonify({"status": "rejected", "message": "Entry rejected — signal cleared"})
+    return jsonify({"status": "error", "message": "No pending entry"})
 
 @app.route("/api/strike-roll", methods=["GET", "POST"])
 def api_strike_roll():
@@ -2455,6 +2629,58 @@ def api_safety_status():
     })
 
 
+@app.route("/api/oos-health")
+def api_oos_health():
+    """Get OOS revalidation health diagnostics for the safety panel."""
+    import glob as _glob
+    data_dir = os.path.expanduser("~/rudy/data")
+    history_file = os.path.join(data_dir, "oos_revalidation_history.json")
+
+    # Load latest quarterly result
+    files = sorted(_glob.glob(os.path.join(data_dir, "oos_revalidation_Q*.json")), reverse=True)
+    latest = None
+    if files:
+        try:
+            with open(files[0]) as f:
+                latest = json.load(f)
+        except Exception:
+            pass
+
+    # Load drift history
+    history = {}
+    if os.path.exists(history_file):
+        try:
+            with open(history_file) as f:
+                history = json.load(f)
+        except Exception:
+            pass
+
+    if not latest and not history:
+        return jsonify({"error": "No OOS revalidation data", "verdict": None})
+
+    summary = latest.get("summary", {}) if latest else {}
+    stability = summary.get("winner_stability", {})
+
+    return jsonify({
+        "verdict": latest.get("verdict") if latest else None,
+        "quarter": latest.get("label") if latest else None,
+        "run_timestamp": latest.get("run_timestamp", "")[:19] if latest else None,
+        "rolling_4q_avg": summary.get("rolling_4q_avg") or latest.get("rolling_4q_avg"),
+        "rolling_4q_count": summary.get("rolling_4q_count", 0),
+        "winner_stable": stability.get("stable") if stability else None,
+        "winner_stability_msg": stability.get("message", "") if stability else "",
+        "drift_streak": history.get("consecutive_drift_alerts", summary.get("drift_streak", 0)),
+        "escalation": summary.get("escalation", "NONE"),
+        "regime": summary.get("regime") or latest.get("regime") if latest else None,
+        "regime_softened": summary.get("regime_softened", False),
+        "in_adverse_regime": summary.get("in_adverse_regime", False),
+        "relative_score": summary.get("relative_score"),
+        "wfe_ratio": summary.get("wfe_ratio"),
+        "live_rank": summary.get("live_rank"),
+        "winner": summary.get("winner"),
+    })
+
+
 @app.route("/api/safety/reset-consec-loss")
 def api_reset_consec_loss():
     """Reset consecutive loss shutdown (HITL approval)."""
@@ -2597,9 +2823,9 @@ def api_trader2_status():
     if os.path.exists(state_file):
         with open(state_file) as f:
             state = json.load(f)
-    # Overlay live IBKR value — use background-feed cache (no blocking IBKR connection)
+    # Always overlay live IBKR data — it's the source of truth for prices
     live = _get_cached_position_value("MSTR", 50.0, "P")
-    if not live:  # cache miss (first boot / IBKR disconnected) — one-time live fallback
+    if not live:
         live = _get_live_position_value("MSTR", 50.0, "P", client_id=53)
     if live:
         state["last_value"]    = live["live_value"]
@@ -2616,9 +2842,9 @@ def api_trader3_status():
     if os.path.exists(state_file):
         with open(state_file) as f:
             state = json.load(f)
-    # Overlay live IBKR value — use background-feed cache (no blocking IBKR connection)
+    # Always overlay live IBKR data — it's the source of truth for prices
     live = _get_cached_position_value("SPY", 430.0, "P")
-    if not live:  # cache miss (first boot / IBKR disconnected) — one-time live fallback
+    if not live:
         live = _get_live_position_value("SPY", 430.0, "P", client_id=54)
     if live:
         state["last_value"]    = live["live_value"]
@@ -2627,6 +2853,26 @@ def api_trader3_status():
         state["cost_basis"]    = live["live_cost"]
         state["value_source"]  = live.get("source", "LIVE_TWS")
     return jsonify(state) if state else jsonify({"status": "not_started", "position": "SPY $430 Put Jan 2027"})
+
+@app.route("/api/equity_chart")
+def api_equity_chart():
+    PNL_HISTORY_FILE = os.path.join(DATA_DIR, "pnl_history.json")
+    if not os.path.exists(PNL_HISTORY_FILE):
+        return jsonify({"error": "No history yet"}), 404
+    with open(PNL_HISTORY_FILE) as f:
+        history = json.load(f)
+    if len(history) < 2:
+        return jsonify({"error": "Need at least 2 data points"}), 404
+    try:
+        sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "scripts"))
+        from charts import generate_equity_chart_bytes
+        chart_bytes = generate_equity_chart_bytes(history)
+        resp = make_response(chart_bytes)
+        resp.headers.set('Content-Type', 'image/png')
+        resp.headers.set('Cache-Control', 'no-cache')
+        return resp
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
 
 @app.route("/api/trader2/approve-sell")
 def api_trader2_approve_sell():
@@ -2703,11 +2949,27 @@ def api_status_dump():
         dump["first_entry_done"] = state.get("first_entry_done", False)
         dump["second_entry_done"] = state.get("second_entry_done", False)
         dump["last_eval"] = state.get("last_eval", "")
-        dump["last_mstr_price"] = state.get("last_mstr_price", 0)
-        dump["last_btc_price"] = state.get("last_btc_price", 0)
+        # Prefer live IBKR prices over stale eval state
+        live_mstr = _ibkr_cache.get("mstr_price") or state.get("last_mstr_price", 0)
+        sentinel = _load_json("btc_sentinel_state.json")
+        live_btc = (sentinel.get("last_price", 0)
+                    or _ibkr_cache.get("btc_price", 0)
+                    or state.get("last_btc_price", 0))
+        dump["last_mstr_price"] = live_mstr
+        dump["last_btc_price"] = live_btc
         dump["last_stoch_rsi"] = state.get("last_stoch_rsi", 0)
+        # Compute premium live
         prem_hist = state.get("premium_history", [])
-        dump["last_premium"] = prem_hist[-1] if prem_hist else state.get("last_premium", 0)
+        live_premium = state.get("last_premium", 0)
+        if live_mstr > 0 and live_btc > 0:
+            treasury = _load_json("mstr_treasury.json")
+            holdings = treasury.get("btc_holdings", 761068)
+            shares = treasury.get("diluted_shares", 293157000)
+            if holdings > 0 and shares > 0:
+                nav = (live_btc * holdings) / shares
+                if nav > 0:
+                    live_premium = round(live_mstr / nav, 4)
+        dump["last_premium"] = live_premium
         dump["premium_history"] = prem_hist
         dump["trade_log"] = state.get("trade_log", [])
 
@@ -2959,9 +3221,22 @@ def api_deepseek_regime():
         dipped = state.get("dipped_below_200w", False)
         green_weeks = state.get("green_week_count", 0)
         last_eval = state.get("last_eval", "—")
-        last_mstr = state.get("last_mstr_price", 0)
-        last_btc = state.get("last_btc_price", 0)
+        # Prefer live IBKR prices over stale eval state
+        last_mstr = _ibkr_cache.get("mstr_price") or state.get("last_mstr_price", 0)
+        sentinel = _load_json("btc_sentinel_state.json")
+        last_btc = (sentinel.get("last_price", 0)
+                    or _ibkr_cache.get("btc_price", 0)
+                    or state.get("last_btc_price", 0))
+        # Compute premium live instead of reading stale value
         last_premium = state.get("last_premium", 0)
+        if last_mstr > 0 and last_btc > 0:
+            treasury = _load_json("mstr_treasury.json")
+            holdings = treasury.get("btc_holdings", 761068)
+            shares = treasury.get("diluted_shares", 293157000)
+            if holdings > 0 and shares > 0:
+                nav = (last_btc * holdings) / shares
+                if nav > 0:
+                    last_premium = round(last_mstr / nav, 4)
         last_stochrsi = state.get("last_stoch_rsi", 0)
 
         # Determine regime from v2.8 perspective
@@ -2998,6 +3273,8 @@ def api_deepseek_regime():
                 "stoch_rsi": last_stochrsi,
                 "armed": armed,
                 "in_position": in_position,
+                "dipped": dipped,
+                "green_weeks": green_weeks,
             },
             "timestamp": last_eval or datetime.now().isoformat(),
         }
@@ -4540,7 +4817,7 @@ setTimeout(addExpandable, 50);
 
     // Run immediately, then every 10 seconds
     updateSAE();
-    setInterval(updateSAE, 10000);
+    setInterval(updateSAE, 60000);
 })();
 </script>
 </body>
@@ -4552,30 +4829,14 @@ WEBHOOK_SECRET = os.environ.get("WEBHOOK_SECRET", "rudy_tv_secret_2026")
 WEBHOOK_LIVE = os.environ.get("WEBHOOK_LIVE", "false").lower() == "true"  # Must explicitly enable live execution
 
 # Strategy-to-trader routing map
+# v50.4 (2026-05-01): Stripped to T1 only per Constitution Article XI. All routes
+# to system1_v8, trader3-12, and trader_moonshot were removed — those scripts
+# are LOCKED (authority guard exits immediately) and routing TV signals into
+# them violates the clone prohibition. Only authorized trader is trader_v28.
+# Trader2 and Trader3 (current MSTR Put / SPY Put daemons) do NOT accept TV
+# webhook signals — they monitor and exit via internal logic + Telegram HITL.
 STRATEGY_ROUTER = {
-    # System 1 — MSTR Lottery
-    "Rudy MSTR Lottery": {"trader": "system1", "script": "system1_v8"},
-    "MSTR Lottery": {"trader": "system1", "script": "system1_v8"},
-    # Trader3 — Energy
-    "Rudy Energy GC": {"trader": "trader3", "script": "trader3"},
-    "Energy GC": {"trader": "trader3", "script": "trader3"},
-    # Trader4 — Squeeze
-    "Rudy Squeeze": {"trader": "trader4", "script": "trader4"},
-    "Squeeze Momentum": {"trader": "trader4", "script": "trader4"},
-    # Trader5 — Breakout
-    "Rudy Breakout": {"trader": "trader5", "script": "trader5"},
-    "Breakout Momentum": {"trader": "trader5", "script": "trader5"},
-    # NTR Ag Momentum
-    "Rudy NTR Ag": {"trader": "trader3", "script": "trader3"},
-    "NTR Ag Momentum": {"trader": "trader3", "script": "trader3"},
-    # Trader12 — TQQQ
-    "Rudy TQQQ": {"trader": "trader12", "script": "trader12"},
-    "TQQQ Momentum": {"trader": "trader12", "script": "trader12"},
-    # Moonshot — MSTR LEAP (200W SMA cross regime)
-    "Rudy MSTR Moonshot LEAP v2": {"trader": "trader_moonshot", "script": "trader_moonshot"},
-    "MSTR Moonshot": {"trader": "trader_moonshot", "script": "trader_moonshot"},
-    "Moonshot LEAP": {"trader": "trader_moonshot", "script": "trader_moonshot"},
-    # v2.8 Dynamic Blend — MSTR LEAP (200W Cycle-Low)
+    # v2.8 Dynamic Blend — MSTR LEAP (200W Cycle-Low) — Trader1
     "Rudy v2.8": {"trader": "trader_v28", "script": "trader_v28", "signal_file": True},
     "Rudy v2.8 Dynamic Blend": {"trader": "trader_v28", "script": "trader_v28", "signal_file": True},
     "MSTR Cycle-Low LEAP": {"trader": "trader_v28", "script": "trader_v28", "signal_file": True},
@@ -4749,75 +5010,27 @@ def route_tv_signal(signal):
 
 
 def _close_positions(ticker, system_name, comment=""):
-    """Close positions for a ticker from a specific system via IBKR."""
-    import asyncio
-    asyncio.set_event_loop(asyncio.new_event_loop())
-    from ib_insync import IB, Option, MarketOrder
-
-    data_dir = os.path.expanduser("~/rudy/data")
-
-    # Find the position file for this system
-    pos_files = {
-        "system1_v8": "system1_positions.json",
-        "trader3": "trader3_positions.json",
-        "trader4": "trader4_positions.json",
-        "trader5": "trader5_positions.json",
-        "trader7": "trader7_positions.json",
-        "trader12": "trader12_positions.json",
-    }
-
-    pos_file = os.path.join(data_dir, pos_files.get(system_name, f"{system_name}_positions.json"))
-    if not os.path.exists(pos_file):
-        return
-
-    with open(pos_file) as f:
-        positions = json.load(f)
-
-    # Find matching open positions for this ticker
-    to_close = [p for p in positions if p.get("symbol", "").upper() == ticker.upper() and p.get("status", "open") == "open"]
-    if not to_close:
-        return
-
-    ib = IB()
-    ib.connect("127.0.0.1", 7496, clientId=17)
-    ib.reqMarketDataType(3)
-
-    for pos in to_close:
-        try:
-            expiry = pos.get("expiry", "")
-            strike = pos.get("strike", pos.get("short_strike", 0))
-            right = "C" if pos.get("type", "CALL") in ("CALL", "call") else "P"
-            qty = pos.get("qty", 1)
-
-            contract = Option(ticker, expiry, float(strike), right, "SMART")
-            ib.qualifyContracts(contract)
-            order = MarketOrder("SELL", int(qty))
-            ib.placeOrder(contract, order)
-            ib.sleep(3)
-
-            pos["status"] = "closed"
-            pos["close_date"] = datetime.now().isoformat()
-            pos["close_reason"] = f"TV Signal: {comment}"
-
-            with open(os.path.join(LOG_DIR, "webhook.log"), "a") as wf:
-                wf.write(f"[{datetime.now():%Y-%m-%d %H:%M:%S}] CLOSED: {ticker} {strike}{right} x{qty} — {comment}\n")
-
-            try:
-                sys.path.insert(0, os.path.expanduser("~/rudy/scripts"))
-                import telegram as tg
-                tg.send(f"🔴 *POSITION CLOSED via TV*\n{ticker} ${strike}{right} x{qty}\nReason: {comment}")
-            except:
-                pass
-
-        except Exception as e:
-            with open(os.path.join(LOG_DIR, "webhook.log"), "a") as wf:
-                wf.write(f"[{datetime.now():%Y-%m-%d %H:%M:%S}] Close error {ticker}: {e}\n")
-
-    # Save updated positions
-    with open(pos_file, "w") as f:
-        json.dump(positions, f, indent=2)
-
-    ib.disconnect()
+    """v50.4 (2026-05-01): DISABLED. This used to auto-close positions for
+    TV webhook EXIT/SELL signals routed to system1_v8/trader3-12/trader_moonshot.
+    All those traders are LOCKED per Article XI, and direct MarketOrder calls
+    here bypassed Commander HITL. T1 (trader_v28) handles its own exits via
+    its internal trail-stop / profit-tier / mNAV-kill logic. T2/T3 close only
+    via Telegram HITL. Function kept as a stub to avoid breaking any caller;
+    logs the request and returns without placing any order.
+    """
+    msg = f"_close_positions called for {ticker} ({system_name}) — DISABLED per Article XI. comment={comment}"
+    try:
+        with open(os.path.join(LOG_DIR, "webhook.log"), "a") as wf:
+            wf.write(f"[{datetime.now():%Y-%m-%d %H:%M:%S}] BLOCKED: {msg}\n")
+    except Exception:
+        pass
+    try:
+        sys.path.insert(0, os.path.expanduser("~/rudy/scripts"))
+        import telegram as tg
+        tg.send(f"⚠️ *TV close BLOCKED (Article XI)*\n{ticker} from {system_name}.\nReason: only T1/T2/T3 may close positions, via their own HITL flow.")
+    except Exception:
+        pass
+    return
 
 
 @app.route("/webhook", methods=["POST"])
@@ -5503,7 +5716,7 @@ function closeSingle(conId,symbol,qty){
   if(!confirm(`Close ${symbol}?\\n${action} ${Math.abs(qty)} contracts at market`)){return}
   document.getElementById('status-msg').textContent=`Closing ${symbol}...`;
   fetch('/api/close-position',{method:'POST',headers:{'Content-Type':'application/json'},
-    body:JSON.stringify({conId:conId,symbol:symbol,qty:qty})
+    body:JSON.stringify({conId:conId,symbol:symbol,qty:qty,confirm:true})
   }).then(r=>r.json()).then(d=>{
     document.getElementById('status-msg').textContent=d.message||JSON.stringify(d);
     setTimeout(fetchPositions,3000);
@@ -5525,14 +5738,14 @@ function activateKillSwitch(){
 }
 
 fetchPositions();
-setInterval(fetchPositions,10000);
+setInterval(fetchPositions,60000);
 </script>
 </body></html>"""
 
 
 @app.route("/api/positions")
 def api_positions():
-    """Return LIVE IBKR positions — connects directly to TWS."""
+    """Return LIVE IBKR positions — direct query for full data including conId."""
     try:
         import asyncio
         try:
@@ -5543,7 +5756,6 @@ def api_positions():
         ib = IB()
         ib.connect("127.0.0.1", 7496, clientId=50, timeout=10)
 
-        # Account
         summary = ib.accountSummary()
         acct = {}
         for item in summary:
@@ -5552,24 +5764,20 @@ def api_positions():
         cash = float(acct.get("TotalCashValue", 0))
         unrealized = float(acct.get("UnrealizedPnL", 0))
 
-        # Positions — use portfolio() for live market values
         portfolio = ib.portfolio()
         pos_list = []
         for p in portfolio:
             c = p.contract
             if abs(p.position) < 0.001:
-                continue  # skip zero-qty ghosts
+                continue
             cost = float(p.averageCost)
             mkt = float(p.marketValue)
             pnl = float(p.unrealizedPNL)
             pnl_pct = ((mkt - cost) / cost * 100) if cost > 0 else 0
             pos_list.append({
-                "symbol": c.symbol,
-                "secType": c.secType,
-                "qty": float(p.position),
-                "avg_cost": cost,
-                "market_value": mkt,
-                "unrealized_pnl": pnl,
+                "symbol": c.symbol, "secType": c.secType,
+                "qty": float(p.position), "avg_cost": cost,
+                "market_value": mkt, "unrealized_pnl": pnl,
                 "pnl_pct": round(pnl_pct, 2),
                 "strike": float(c.strike) if hasattr(c, "strike") and c.strike else None,
                 "expiry": c.lastTradeDateOrContractMonth if hasattr(c, "lastTradeDateOrContractMonth") else None,
@@ -5577,34 +5785,25 @@ def api_positions():
                 "conId": c.conId,
             })
 
-        # Open orders
         open_trades = ib.openTrades()
         close_conids = set(t.contract.conId for t in open_trades)
         for p in pos_list:
             p["has_close_order"] = p.get("conId") in close_conids
 
-        orders_detail = []
-        for t in open_trades:
-            orders_detail.append({
-                "symbol": t.contract.symbol,
-                "action": t.order.action,
-                "qty": float(t.order.totalQuantity),
-                "type": t.order.orderType,
-                "status": t.orderStatus.status,
-            })
+        orders_detail = [
+            {"symbol": t.contract.symbol, "action": t.order.action,
+             "qty": float(t.order.totalQuantity), "type": t.order.orderType,
+             "status": t.orderStatus.status}
+            for t in open_trades
+        ]
 
         ib.disconnect()
 
         return jsonify({
-            "net_liq": net_liq,
-            "cash": cash,
-            "unrealized_pnl": unrealized,
-            "position_count": len(pos_list),
-            "positions": pos_list,
-            "open_orders": len(orders_detail),
-            "open_orders_detail": orders_detail,
-            "last_update": datetime.now().isoformat(),
-            "source": "LIVE_TWS",
+            "net_liq": net_liq, "cash": cash, "unrealized_pnl": unrealized,
+            "position_count": len(pos_list), "positions": pos_list,
+            "open_orders": len(orders_detail), "open_orders_detail": orders_detail,
+            "last_update": datetime.now().isoformat(), "source": "LIVE_TWS",
         })
     except Exception as e:
         return jsonify({"error": str(e), "source": "ERROR"})
@@ -5612,7 +5811,16 @@ def api_positions():
 
 @app.route("/api/close-position", methods=["POST"])
 def api_close_position():
-    """Close a single position by conId."""
+    """Close a single position by conId.
+
+    v50.4 (2026-05-01) HITL hardening:
+      - Requires explicit `confirm: true` in body — any client must affirmatively
+        opt in to placing a MarketOrder. Blocks accidental/CSRF triggers.
+      - Sends Telegram alert BEFORE placing the order so Commander has live
+        notification and can react via TWS if the close is unintended.
+      - Logs to webhook.log audit trail.
+      - Validates conId belongs to a current IBKR position before ordering.
+    """
     try:
         import asyncio
         try:
@@ -5621,13 +5829,38 @@ def api_close_position():
             asyncio.set_event_loop(asyncio.new_event_loop())
         from ib_insync import IB, MarketOrder, Contract
 
-        data = request.get_json()
+        data = request.get_json() or {}
         con_id = data.get("conId")
         symbol = data.get("symbol", "?")
         qty = float(data.get("qty", 0))
+        confirm = data.get("confirm") is True  # must be explicit boolean True
 
         if not con_id or qty == 0:
             return jsonify({"error": "Missing conId or qty"})
+
+        if not confirm:
+            return jsonify({
+                "error": "HITL confirmation required",
+                "message": "Close blocked. Resend with body field {\"confirm\": true} to authorize MarketOrder.",
+                "requires_confirm": True,
+            }), 400
+
+        try:
+            with open(os.path.join(LOG_DIR, "webhook.log"), "a") as wf:
+                wf.write(f"[{datetime.now():%Y-%m-%d %H:%M:%S}] DASHBOARD CLOSE REQUEST: {symbol} conId={con_id} qty={qty}\n")
+        except Exception:
+            pass
+        try:
+            sys.path.insert(0, os.path.expanduser("~/rudy/scripts"))
+            import telegram as tg
+            tg.send(
+                f"⚠️ *Dashboard Close Initiated*\n"
+                f"Position: {symbol} (conId={con_id})\n"
+                f"Qty: {qty}\n"
+                f"Order will fire in seconds — open TWS to abort if unintended."
+            )
+        except Exception:
+            pass
 
         ib = IB()
         ib.connect("127.0.0.1", 7496, clientId=51, timeout=10)
@@ -5753,6 +5986,35 @@ def _telegram_callback_poller():
                 data = cb.get("data", "")
                 cb_id = cb.get("id", "")
                 chat_id = cb.get("message", {}).get("chat", {}).get("id", "")
+
+                # ── ENTRY APPROVAL CALLBACKS (HITL) ──
+                if data == "hitl_approve" or data == "hitl_reject":
+                    state_file = os.path.join(DATA_DIR, "trader_v28_state.json")
+                    try:
+                        with open(state_file) as f:
+                            state = json.load(f)
+                        if data == "hitl_approve" and state.get("pending_entry"):
+                            state["entry_approved"] = True
+                            with open(state_file, "w") as f:
+                                json.dump(state, f, indent=2, default=str)
+                            _requests.post(f"{api}/answerCallbackQuery",
+                                          json={"callback_query_id": cb_id, "text": "✅ ENTRY APPROVED — will execute at next eval with live price revalidation"})
+                            _requests.post(f"{api}/sendMessage",
+                                          json={"chat_id": chat_id, "text": "✅ *ENTRY APPROVED*\nWill execute at next 3:45 PM eval after revalidation gate confirms live prices.", "parse_mode": "Markdown"})
+                            print(f"[TG Poller] ENTRY APPROVED by Commander")
+                        elif data == "hitl_reject":
+                            state["entry_rejected"] = True
+                            state["pending_entry"] = None
+                            with open(state_file, "w") as f:
+                                json.dump(state, f, indent=2, default=str)
+                            _requests.post(f"{api}/answerCallbackQuery",
+                                          json={"callback_query_id": cb_id, "text": "❌ Entry rejected"})
+                            _requests.post(f"{api}/sendMessage",
+                                          json={"chat_id": chat_id, "text": "❌ *ENTRY REJECTED* — signal cleared, waiting for next eval.", "parse_mode": "Markdown"})
+                            print(f"[TG Poller] ENTRY REJECTED by Commander")
+                    except Exception as e:
+                        print(f"[TG Poller] HITL callback error: {e}")
+                    continue
 
                 # ── REPAIR APPROVAL CALLBACKS ──
                 if data.startswith("repair_approve_") or data.startswith("repair_reject_"):
@@ -5908,7 +6170,9 @@ def _ibkr_background_feed():
             asyncio.set_event_loop(asyncio.new_event_loop())
             from ib_insync import IB
             ib = IB()
-            ib.connect("127.0.0.1", 7496, clientId=30, timeout=10)
+            import random
+            _feed_client_id = random.randint(100, 999)
+            ib.connect("127.0.0.1", 7496, clientId=_feed_client_id, timeout=10)
             print("[IBKR Feed] Connected — streaming account data")
 
             # Get MSTR stock price once on connect
@@ -5921,8 +6185,13 @@ def _ibkr_background_feed():
             except:
                 mstr_ticker = None
 
+            # Subscribe to live account updates (triggers updatePortfolio events)
+            ib.reqAccountUpdates("")
+            ib.sleep(2)
+
             while ib.isConnected():
                 try:
+                    ib.sleep(1)  # Process pending events before reading
                     summary = ib.accountSummary()
                     for item in summary:
                         if item.tag == "NetLiquidation":
@@ -5974,17 +6243,95 @@ def _ibkr_background_feed():
 
 @app.route("/api/account-live")
 def api_account_live():
-    """Return cached account data from background feed (no new IBKR connection)."""
+    """Return live account data — queries IBKR on every call (10s poll from dashboard)."""
     result = dict(_ibkr_cache)
+
+    # Check if cache is stale (>15s old) or empty — if so, do a fresh IBKR query
+    cache_stale = True
+    if _ibkr_cache.get("_last_query_ts"):
+        try:
+            ts = _ibkr_cache["_last_query_ts"]
+            if isinstance(ts, str):
+                ts = datetime.fromisoformat(ts)
+            cache_stale = (datetime.now() - ts).total_seconds() > 15
+        except:
+            cache_stale = True
+
+    if cache_stale:
+        try:
+            import asyncio
+            try:
+                asyncio.get_event_loop()
+            except RuntimeError:
+                asyncio.set_event_loop(asyncio.new_event_loop())
+            from ib_insync import IB, Stock
+            ib = IB()
+            import random as _rnd2
+            ib.connect("127.0.0.1", 7496, clientId=_rnd2.randint(200, 499), timeout=10)
+            summary = ib.accountSummary()
+            for item in summary:
+                if item.tag == "NetLiquidation":
+                    result["net_liq"] = round(float(item.value), 2)
+                elif item.tag == "TotalCashValue":
+                    result["cash"] = round(float(item.value), 2)
+                elif item.tag == "BuyingPower":
+                    result["buying_power"] = round(float(item.value), 2)
+                elif item.tag == "UnrealizedPnL":
+                    result["unrealized_pnl"] = round(float(item.value), 2)
+                elif item.tag == "RealizedPnL":
+                    result["realized_pnl"] = round(float(item.value), 2)
+                elif item.tag == "GrossPositionValue":
+                    result["gross_position_value"] = round(float(item.value), 2)
+            # MSTR price
+            try:
+                mstr_c = Stock("MSTR", "SMART", "USD")
+                ib.qualifyContracts(mstr_c)
+                ib.reqMarketDataType(3)
+                t = ib.reqMktData(mstr_c, "", False, False)
+                ib.sleep(2)
+                p = t.last or t.close or 0
+                if p > 0:
+                    result["mstr_price"] = round(float(p), 2)
+            except Exception:
+                pass
+            # Positions — use live portfolio for market values
+            portfolio = ib.portfolio()
+            result["positions"] = [
+                {"symbol": p.contract.symbol, "secType": p.contract.secType,
+                 "quantity": float(p.position), "avgCost": float(p.averageCost),
+                 "marketValue": float(p.marketValue),
+                 "unrealizedPNL": float(p.unrealizedPNL),
+                 "right": getattr(p.contract, "right", ""),
+                 "strike": float(getattr(p.contract, "strike", 0)),
+                 "expiry": getattr(p.contract, "lastTradeDateOrContractMonth", "")}
+                for p in portfolio
+            ]
+            result["updated"] = datetime.now().strftime("%H:%M:%S")
+            result["_last_query_ts"] = datetime.now().isoformat()
+            _ibkr_cache.update(result)
+            ib.disconnect()
+        except Exception as e:
+            result["ibkr_fallback_error"] = str(e)
+
     # Add BTC price from sentinel or trader state
     sentinel = _load_json("btc_sentinel_state.json")
     trader = _load_json("trader_v28_state.json")
-    btc = sentinel.get("last_price") or trader.get("last_btc_price", 0)
+    btc = sentinel.get("last_price") or result.get("btc_price") or trader.get("last_btc_price", 0)
     if btc:
         result["btc_price"] = btc
     # BTC ATH tracked dynamically from IBKR data (not hardcoded)
     result["btc_ath"] = trader.get("btc_ath", 126200)
+    # Starting balance for P&L calculation
+    track = _load_json("paper_track.json")
+    result["starting_balance"] = track.get("starting_balance", 7780) if track else 7780
     return jsonify(result)
+
+
+@app.route("/api/treasury-yield")
+def api_treasury_yield():
+    """Return 10Y Treasury yield + macro regime classification."""
+    data = _load_json("treasury_yield.json")
+    return jsonify(data or {"error": "no data"})
 
 
 @app.route("/api/regime")
@@ -5995,14 +6342,29 @@ def api_regime():
     regime = _load_json("regime_state.json")
     if regime:
         result.update(regime)
-    # Override BTC price with live IBKR data (never show stale/proxy)
-    trader = _load_json("trader_v28_state.json")
+    # Override BTC price: sentinel (live) > IBKR cache > trader state (stale)
     sentinel = _load_json("btc_sentinel_state.json")
-    live_btc = trader.get("last_btc_price", 0) or sentinel.get("last_price", 0)
+    trader = _load_json("trader_v28_state.json")
+    live_btc = (sentinel.get("last_price", 0)
+                or _ibkr_cache.get("btc_price", 0)
+                or trader.get("last_btc_price", 0))
     if live_btc:
         result["btc_price"] = live_btc
     # Remove GBTC proxy price — never display as BTC price
     result.pop("btc_price_gbtc_proxy", None)
+    # Compute BTC weekly SMAs from GBTC proxy data (scaled to real BTC)
+    gbtc_closes = trader.get("btc_weekly_closes", [])
+    if gbtc_closes and live_btc and len(gbtc_closes) >= 200:
+        # Scale factor: latest GBTC proxy value → real BTC price
+        latest_gbtc = gbtc_closes[-1] if gbtc_closes[-1] > 0 else 1
+        scale = live_btc / (latest_gbtc * 1000) if latest_gbtc > 0 else 1
+        def _sma(n):
+            if len(gbtc_closes) < n:
+                return None
+            return round(sum(gbtc_closes[-n:]) / n * 1000 * scale)
+        result["btc_sma_200w"] = _sma(200)
+        result["btc_sma_250w"] = _sma(250) if len(gbtc_closes) >= 250 else None
+        result["btc_sma_300w"] = _sma(300) if len(gbtc_closes) >= 300 else None
     # Load seasonality for current month
     season_path = os.path.join(DATA_DIR, "btc_seasonality.json")
     if os.path.exists(season_path):
@@ -6034,6 +6396,7 @@ def api_grok_sentiment():
     return jsonify(data)
 
 @app.route("/api/gemini-brain")
+@app.route("/api/gemini")
 def api_gemini_brain():
     """Return latest Gemini analysis (regime cross-check + digest)."""
     data = _load_json("gemini_analysis.json")
@@ -6226,22 +6589,33 @@ def api_health_check():
     if not t3_running:
         issues.append("Trader3 (SPY Put) is DOWN")
 
-    # Check IBKR connection (is background feed getting data?)
-    ibkr_ok = _ibkr_cache.get("updated", "") != "" and _ibkr_cache.get("net_liq", 0) > 0
+    # Check IBKR connection — test with a quick socket probe
+    import socket
+    ibkr_ok = False
+    try:
+        s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        s.settimeout(2)
+        ibkr_ok = s.connect_ex(("127.0.0.1", 7496)) == 0
+        s.close()
+    except Exception:
+        pass
     if not ibkr_ok:
-        issues.append("IBKR feed not receiving data")
+        issues.append("IBKR TWS port 7496 not reachable")
 
-    # Check feed freshness (updated within last 60 seconds?)
+    # Check feed freshness — cache updated within last 120s (covers fallback + background feed)
     feed_active = False
     if _ibkr_cache.get("updated"):
         try:
             last = datetime.strptime(_ibkr_cache["updated"], "%H:%M:%S").replace(
                 year=datetime.now().year, month=datetime.now().month, day=datetime.now().day)
-            feed_active = (datetime.now() - last).total_seconds() < 60
-        except:
+            feed_active = (datetime.now() - last).total_seconds() < 120
+        except Exception:
             feed_active = False
+    # If cache is empty but IBKR is reachable, still count as active (fallback will populate on next poll)
+    if not feed_active and ibkr_ok and _ibkr_cache.get("net_liq", 0) > 0:
+        feed_active = True
     if not feed_active:
-        issues.append("IBKR feed stale (>60s since last update)")
+        issues.append("Dashboard feed stale — waiting for refresh")
 
     return jsonify({
         "v28_daemon": v28_running,

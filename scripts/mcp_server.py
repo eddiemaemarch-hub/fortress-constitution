@@ -120,21 +120,22 @@ def get_position() -> dict:
     mstr = state.get("last_mstr_price", 0)
     stock_gain_pct = ((mstr - entry) / entry * 100) if entry > 0 else 0
 
-    # Estimate LEAP gain using dynamic blend multiplier
+    # Estimate LEAP gain using v2.8 dynamic blend multiplier.
+    # SOURCE OF TRUTH: trader_v28.py:801 get_dynamic_leap_multiplier(). Keep aligned.
     prem_hist = state.get("premium_history", [])
     premium = prem_hist[-1] if prem_hist else 1.0
-    if premium < 0.8:
-        mult = 8.4
-    elif premium < 1.2:
-        mult = 7.5
-    elif premium <= 1.5:
-        mult = 5.6
+    if premium < 0.7:
+        mult = 7.2  # LOW (<0.7)
+    elif premium < 1.0:
+        mult = 6.5  # FAIR (0.7–1.0)
+    elif premium <= 1.3:
+        mult = 4.8  # ELEVATED (1.0–1.3)
     else:
-        mult = 3.9
+        mult = 3.3  # EUPHORIC (>1.3)
     leap_gain_pct = stock_gain_pct * mult
 
-    # Determine active trail tier
-    ladder = [(10000, 15.0), (5000, 25.0), (2000, 30.0), (1000, 35.0), (500, 40.0)]
+    # Active trail tier — SOURCE OF TRUTH: trader_v28.py:196 self.ladder_tiers. Keep aligned.
+    ladder = [(10000, 12.0), (5000, 20.0), (2000, 25.0), (1000, 30.0), (500, 35.0)]
     active_trail = "None (below 5x)"
     for threshold, trail in ladder:
         if leap_gain_pct >= threshold:
@@ -149,7 +150,7 @@ def get_position() -> dict:
         "stock_gain_pct": round(stock_gain_pct, 2),
         "estimated_leap_gain_pct": round(leap_gain_pct, 2),
         "leap_multiplier": mult,
-        "premium_zone": "LOW" if premium < 0.8 else "FAIR" if premium < 1.2 else "ELEVATED" if premium <= 1.5 else "EUPHORIC",
+        "premium_zone": "LOW" if premium < 0.7 else "FAIR" if premium < 1.0 else "ELEVATED" if premium <= 1.3 else "EUPHORIC",
         "position_hwm": state.get("position_hwm"),
         "peak_gain_pct": state.get("peak_gain_pct"),
         "bars_in_trade": state.get("bars_in_trade"),
