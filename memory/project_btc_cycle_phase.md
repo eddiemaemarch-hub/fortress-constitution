@@ -82,16 +82,34 @@ Source: DeepSeek analysis + CoinGlass/Bitbo/Bitcoin Suisse/StatMuse data + Syste
 - Aligns with Commander's thesis (expects further decline)
 - Aligns with Camirand 250W MA capitulation zone ($53-56K)
 
-**4-Signal Confluence → $51-53K bottom zone:**
-1. Monthly LRC support
-2. Head & Shoulders measured move target
-3. Commander's independent thesis
-4. Jordan Camirand 250W MA analysis
+**5-Signal Confluence → $51-53K BTC / $67.50 MSTR bottom zone:**
+1. Monthly LRC support ($51-53K) — 85% R² fit
+2. Head & Shoulders measured move target ($51-53K)
+3. Commander's independent thesis (expects further decline)
+4. Jordan Camirand 250W MA analysis ($53-56K capitulation)
+5. **mNAV analysis** — at BTC $51-53K, MSTR drops to ~$67.50, mNAV 0.57-0.62x (historical capitulation extreme, independently derived from NAV math)
+
+### MSTR mNAV at Bottom Scenarios (April 30, 2026)
+| BTC Bottom | MSTR NAV/share | MSTR Price | mNAV |
+|---|---|---|---|
+| $51K | $109 | ~$67.50 | 0.62x |
+| $53K | $113 | ~$67.50 | 0.60x |
+| $55K | $118 | ~$67.50 | 0.57x |
+
+### ⚠️ Kill Switch Flag
+mNAV kill switch fires at **<0.75x** → triggers at ~MSTR $100-110, well before $67.50 bottom.
+- Phase 1 LEAP gets stopped out during drawdown at ~$100-110
+- This PROTECTS capital for re-entry instead of riding to zero
+- Puts go deep ITM during same drop → fund re-entry at actual bottom
+- Phase 3 ($130K) arrives Aug-Oct → deploy at max discount (mNAV 0.57-0.62x)
+
+**Convergence thesis updated:** Phase 1 is a scout position that may get stopped out. The real deployment happens when all three phases converge at the cycle bottom — puts fund it, $130K arrives, and mNAV is at historical extreme discount.
 
 **Implication for v2.8+:**
-- Phase 1 LEAP deployed at $75K BTC — has 2-year expiry runway to survive drawdown
-- If BTC reaches $51-53K, puts go deep ITM → fund Phase 2 scale-in
+- Phase 1 LEAP deployed at $75K BTC — may get stopped out by kill switch if BTC drops to $51-53K
+- Puts reverse hard during same drop → massive gains → fund Phase 2 scale-in
 - Phase 3 ($130K) arrives Aug-Oct 2026 → deploy at or near cycle bottom
+- Re-entry at mNAV 0.57-0.62x = generational opportunity
 - All three capital phases converge at maximum opportunity zone
 
 **Daily Telegram Report (added 2026-04-29):**
