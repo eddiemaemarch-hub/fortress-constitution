@@ -20,6 +20,7 @@
 
 ## Project Context
 - [project_rudy_v2_architecture.md](project_rudy_v2_architecture.md) — Full system architecture, HITL LEAP entry, Article XI, 3 traders, daemons, safety
+- [project_rudy_overview.md](project_rudy_overview.md) — Rudy v2.0 system overview (3 traders, Constitution v50.3, IBKR live)
 - [project_system13_regime.md](project_system13_regime.md) — System 13 Neural Regime Classifier (CalibratedEnsemble, 95.6% CV)
 - [project_stress_tests.md](project_stress_tests.md) — Stress tests + quarterly OOS re-validation
 - [project_capital_plan.md](project_capital_plan.md) — Three-phase capital deployment ($7.9K → $130K → $139.6K)

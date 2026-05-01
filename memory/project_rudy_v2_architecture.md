@@ -5,7 +5,7 @@ type: project
 ---
 
 ## Rudy v2.0 — Autonomous Trading System
-**Constitution:** v50.1 (file: `constitution_v39.py`)
+**Constitution:** v50.3 (file: `constitution_v39.py`)
 **Strategy:** v2.8+ Trend Adder — MSTR Cycle-Low LEAP (LIVE on IBKR U15746102)
 **Dashboard:** Command Center at localhost:3001, accessible via Cloudflare tunnel on iPhone
 

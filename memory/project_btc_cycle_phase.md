@@ -1,16 +1,16 @@
 ---
 name: BTC Cycle Phase Intelligence
-description: Bitcoin in distribution phase as of March 2026 — System 13 regime classifier, phase-aware seasonality, weekend sentinel
+description: Bitcoin in distribution phase — System 13 regime classifier, phase-aware seasonality, 5-signal confluence to $51-53K bottom
 type: project
 ---
 
-**Current Phase (March 2026):** DISTRIBUTION at 82.2% confidence (System 13)
-- MARKDOWN pressure rising at 17.8%
+**Current Phase (April 2026):** DISTRIBUTION at 97.7% confidence (System 13, retrained April 28)
+- MARKDOWN pressure at 2.3%
 - ATH: $126,200 (Oct 6, 2025)
-- Current: ~$70,500 (44-47% drawdown from ATH)
-- 23 months post April 2024 halving
+- Current: ~$76,500 (39% drawdown from ATH)
+- ~24 months post April 2024 halving
 - Bull/bear threshold: $78,500-$80,000
-- 200W SMA: ~$59,433 (Kraken live)
+- 200W SMA: ~$60,675 (Kraken live)
 
 **System 13 Neural Regime Classifier:**
 - Model: CalibratedEnsemble (RF300 + GB200), 95.6% CV accuracy
